@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
 
 import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
@@ -7,9 +7,28 @@ import LanguageIcon from '@mui/icons-material/Language';
 
 export default function Header() {
   const [isAccordionOpen, setAccordionOpen] = useState(false);
+  const accordionRef = useRef<HTMLDivElement>(null);
 
+  // Close accordion when user clicks outside of it
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (
+        accordionRef.current &&
+        !accordionRef.current.contains(event.target as Node)
+      ) {
+        setAccordionOpen(false);
+      }
+    };
+
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, []);
+
+  // Toggle accordion state
   const handleOpen = () => {
-    setAccordionOpen((prev) => !prev); // Toggle accordion state
+    setAccordionOpen((prev) => !prev);
   };
 
   return (
@@ -19,7 +38,7 @@ export default function Header() {
         <Link to="copy-print">Kopieren & Printen</Link>
 
         {/* Accordion start */}
-        <div className="relative">
+        <div ref={accordionRef} className="relative">
           {/* Drukwerk/Custom printing button */}
           <div
             className="flex items-center cursor-pointer"
@@ -42,19 +61,29 @@ export default function Header() {
           {isAccordionOpen && (
             <ul className="absolute top-[calc(100%+2px)] min-w-[110%] mt-4 bg-white shadow-md rounded-sm">
               <li className="p-2 hover:bg-gray-200">
-                <Link to="/custom-printing/stickers">Stickers</Link>
+                <Link onClick={handleOpen} to="/custom-printing/stickers">
+                  Stickers
+                </Link>
               </li>
               <li className="p-2 hover:bg-gray-200">
-                <Link to="/custom-printing/business-cards">Cards</Link>
+                <Link onClick={handleOpen} to="/custom-printing/business-cards">
+                  Cards
+                </Link>
               </li>
               <li className="p-2 hover:bg-gray-200">
-                <Link to="/custom-printing/flyers">Flyers</Link>
+                <Link onClick={handleOpen} to="/custom-printing/flyers">
+                  Flyers
+                </Link>
               </li>
               <li className="p-2 hover:bg-gray-200">
-                <Link to="/custom-printing/folders">Folders</Link>
+                <Link onClick={handleOpen} to="/custom-printing/folders">
+                  Folders
+                </Link>
               </li>
               <li className="p-2 hover:bg-gray-200">
-                <Link to="/custom-printing/posters">Posters</Link>
+                <Link onClick={handleOpen} to="/custom-printing/posters">
+                  Posters
+                </Link>
               </li>
             </ul>
           )}
