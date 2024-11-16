@@ -21,16 +21,16 @@ export default function Header() {
     i18n.changeLanguage(language);
   };
 
-  // Open the accordion with a delay of 1 second
+  // Open the accordion with a certain amount of delay
   const handleMouseEnter = () => {
     if (closeTimeoutRef.current) clearTimeout(closeTimeoutRef.current);
 
     openTimeoutRef.current = setTimeout(() => {
       setAccordionOpen(true);
-    }, 1000);
+    }, 0);
   };
 
-  // Close the accordion with a delay of 1 second
+  // Close the accordion with a certain amount of delay
   const handleMouseLeave = () => {
     if (openTimeoutRef.current) clearTimeout(openTimeoutRef.current);
 
@@ -77,8 +77,12 @@ export default function Header() {
   return (
     <header>
       <nav className="flex justify-center gap-16 items-center shadow-md h-16">
-        <Link to="/">{t('menu.home')}</Link>
-        <Link to="copy-print">{t('menu.copyPrint')}</Link>
+        <Link className="cursor-default" to="/">
+          {t('menu.home')}
+        </Link>
+        <Link className="cursor-default" to="copy-print">
+          {t('menu.copyPrint')}
+        </Link>
 
         {/* Accordion start */}
         <div
@@ -89,12 +93,12 @@ export default function Header() {
         >
           {/* Drukwerk/Custom printing button */}
           <div
-            className="flex items-center cursor-pointer"
+            className="flex items-center cursor-default"
             onClick={handleOpen}
           >
             <button
               aria-label="Toggle custom printing submenu"
-              className="mr-2"
+              className="cursor-default"
             >
               {t('menu.customPrinting')}
             </button>
@@ -107,32 +111,44 @@ export default function Header() {
 
           {/* Accordion content */}
           {isAccordionOpen && (
-            <ul className="absolute top-[calc(100%+2px)] min-w-[110%] mt-4 bg-white shadow-md rounded-sm">
+            <ul className="absolute top-[calc(100%+18px)] min-w-[110%] bg-white shadow-md rounded-sm">
               <Link to="/custom-printing/stickers" onClick={handleLinkClick}>
-                <li className="p-2 hover:bg-gray-200">Stickers</li>
+                <li className="p-2 hover:bg-gray-200 cursor-default">
+                  Stickers
+                </li>
               </Link>
               <Link
                 to="/custom-printing/business-cards"
                 onClick={handleLinkClick}
               >
-                <li className="p-2 hover:bg-gray-200">{t('menu.cards')}</li>
+                <li className="p-2 hover:bg-gray-200 cursor-default">
+                  {t('menu.cards')}
+                </li>
               </Link>
               <Link to="/custom-printing/flyers" onClick={handleLinkClick}>
-                <li className="p-2 hover:bg-gray-200">Flyers</li>
+                <li className="p-2 hover:bg-gray-200 cursor-default">Flyers</li>
               </Link>
               <Link to="/custom-printing/folders" onClick={handleLinkClick}>
-                <li className="p-2 hover:bg-gray-200">Folders</li>
+                <li className="p-2 hover:bg-gray-200 cursor-default">
+                  Folders
+                </li>
               </Link>
               <Link to="/custom-printing/posters" onClick={handleLinkClick}>
-                <li className="p-2 hover:bg-gray-200">Posters</li>
+                <li className="p-2 hover:bg-gray-200 cursor-default">
+                  Posters
+                </li>
               </Link>
             </ul>
           )}
         </div>
         {/* Accordion end */}
 
-        <Link to="custom-clothing">{t('menu.customClothing')}</Link>
-        <Link to="contact">{t('menu.contact')}</Link>
+        <Link className="cursor-default" to="custom-clothing">
+          {t('menu.customClothing')}
+        </Link>
+        <Link className="cursor-default" to="contact">
+          {t('menu.contact')}
+        </Link>
         <div>
           <span>
             <LanguageIcon fontSize={'small'} />
