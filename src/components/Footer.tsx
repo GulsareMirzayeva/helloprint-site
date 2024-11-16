@@ -1,3 +1,7 @@
+import PhoneIcon from '@mui/icons-material/Phone';
+import AlternateEmailIcon from '@mui/icons-material/AlternateEmail';
+import FacebookIcon from '@mui/icons-material/Facebook';
+
 import { useTranslation } from 'react-i18next';
 
 export default function Footer() {
@@ -39,11 +43,20 @@ export default function Footer() {
           {t('footer.adress.visitGoogleMaps')}
         </a>
       </div>
-      <div>
+      <div className="flex flex-col">
         <p className="text-sm font-bold pb-2">Contact</p>
-        <p className="text-xs">Telefoon: 050-1234567</p>
-        <p className="text-xs">Email: info@mail.nl</p>
-        <p className="text-xs">Facebook</p>
+        <p className="text-xs">
+          <PhoneIcon className="mr-2" style={{ fontSize: '14px' }} />
+          050-1234567
+        </p>
+        <a className="text-xs">
+          <AlternateEmailIcon className="mr-2" style={{ fontSize: '14px' }} />
+          info@mail.nl
+        </a>
+        <a className="text-xs cursor-pointer">
+          <FacebookIcon className="mr-2" style={{ fontSize: '14px' }} />
+          Facebook
+        </a>
       </div>
       <div>
         <p className="text-sm font-bold pb-2">
