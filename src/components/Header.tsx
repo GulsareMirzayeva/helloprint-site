@@ -154,15 +154,15 @@ export default function Header() {
             <LanguageIcon fontSize={'small'} />
           </span>
           <select
-            className="text-xs ml-1 p-1 bg-white border-2 rounded-lg"
+            className="text-xs ml-2 p-1 bg-white border-2 rounded-lg"
             name="language"
             value={language}
             onChange={(e) => {
               changeLanguage(e.target.value);
             }}
           >
-            <option value="nl">&#127475;&#127473; NL</option>
-            <option value="en">&#127468;&#127463; EN</option>
+            <option value="nl">&#127475;&#127473; &nbsp;NL</option>
+            <option value="en">&#127468;&#127463; &nbsp;EN</option>
           </select>
         </div>
       </nav>
