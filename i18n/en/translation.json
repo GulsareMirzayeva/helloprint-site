@@ -6,5 +6,28 @@
     "customClothing": "Custom Clothing",
     "contact": "Contact",
     "cards": "Cards"
+  },
+  "footer": {
+    "agreements": {
+      "title": "Terms & Conditions",
+      "acknowledgment": "Acknowledgment",
+      "proposals": "Proposals",
+      "orders": "Orders",
+      "payment": "Payment",
+      "prices": "Prices",
+      "deliveries": "Deliveries",
+      "complaints": "Complaints"
+    },
+    "adres": {
+      "countryName": "The Netherlands",
+      "visitGoogleMaps": "View on Google Maps"
+    },
+    "openingHours": {
+      "title": "Opening hours",
+      "midweeks": "Monday - Friday",
+      "saturday": "Saturday",
+      "sunday": "Sunday",
+      "closed": "Closed"
+    }
   }
 }

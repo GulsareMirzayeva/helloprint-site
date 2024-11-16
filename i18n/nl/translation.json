@@ -6,5 +6,28 @@
     "customClothing": "Kleding & Textiel",
     "contact": "Contact",
     "cards": "Kaarten"
+  },
+  "footer": {
+    "agreements": {
+      "title": "Voorwaarden",
+      "acknowledgment": "Erkenning",
+      "proposals": "Offertes",
+      "orders": "Bestelling",
+      "payment": "Betaling",
+      "prices": "Prijzen",
+      "deliveries": "Leveringen",
+      "complaints": "Klachten"
+    },
+    "adres": {
+      "countryName": "Nederland",
+      "visitGoogleMaps": "Bekijk op Google Maps"
+    },
+    "openingHours": {
+      "title": "Openingstijden",
+      "midweeks": "Maandag - Vrijdag",
+      "saturday": "Zaterdag",
+      "sunday": "Zondag",
+      "closed": "Gesloten"
+    }
   }
 }
