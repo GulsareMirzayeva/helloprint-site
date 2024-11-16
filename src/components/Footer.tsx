@@ -54,7 +54,10 @@ export default function Footer() {
           info@mail.nl
         </a>
         <a className="text-xs cursor-pointer">
-          <FacebookIcon className="mr-2" style={{ fontSize: '14px' }} />
+          <FacebookIcon
+            className="mr-2 text-[#0165E1]"
+            style={{ fontSize: '14px' }}
+          />
           Facebook
         </a>
       </div>
