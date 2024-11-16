@@ -154,7 +154,7 @@ export default function Header() {
             <LanguageIcon fontSize={'small'} />
           </span>
           <select
-            className="text-xs ml-2 p-1 bg-white border-2 rounded-lg"
+            className="text-xs ml-2 p-1 bg-white border-2 rounded-lg cursor-pointer"
             name="language"
             value={language}
             onChange={(e) => {
