@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 
 import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
+import LanguageIcon from '@mui/icons-material/Language';
 
 export default function Header() {
   const [isAccordionOpen, setAccordionOpen] = useState(false);
@@ -62,13 +63,18 @@ export default function Header() {
 
         <Link to="custom-clothing">Kleding & Textiel</Link>
         <Link to="contact">Contact</Link>
-        <select
-          className="p-1 text-sm bg-white border-2 rounded-lg"
-          name="language"
-        >
-          <option value="nl">Nl &#127475;&#127473;</option>
-          <option value="en">En &#127468;&#127463;</option>
-        </select>
+        <div>
+          <span>
+            <LanguageIcon fontSize={'small'} />
+          </span>
+          <select
+            className="text-xs ml-1 p-1 bg-white border-2 rounded-lg"
+            name="language"
+          >
+            <option value="nl">&#127475;&#127473; NL</option>
+            <option value="en">&#127468;&#127463; EN</option>
+          </select>
+        </div>
       </nav>
     </header>
   );
