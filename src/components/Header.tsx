@@ -62,9 +62,12 @@ export default function Header() {
 
         <Link to="custom-clothing">Kleding & Textiel</Link>
         <Link to="contact">Contact</Link>
-        <select className="p-1" name="language">
-          <option value="nl">Nl</option>
-          <option value="en">En</option>
+        <select
+          className="p-1 text-sm bg-white border-2 rounded-lg"
+          name="language"
+        >
+          <option value="nl">Nl &#127475;&#127473;</option>
+          <option value="en">En &#127468;&#127463;</option>
         </select>
       </nav>
     </header>
