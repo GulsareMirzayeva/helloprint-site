@@ -1,6 +1,8 @@
 import { Outlet } from 'react-router-dom';
 import Footer from './components/Footer';
 import Header from './components/Header';
+
+import './utils/i18';
 // import ErrorPage from './components/pages/ErrorPage';
 
 export default function App() {

@@ -1,3 +1,4 @@
+import { useTranslation } from 'react-i18next';
 import { useEffect, useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
 
@@ -6,10 +7,19 @@ import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 import LanguageIcon from '@mui/icons-material/Language';
 
 export default function Header() {
+  const { t, i18n } = useTranslation();
+  const [language, setLanguage] = useState(i18n.language || 'nl');
+
   const [isAccordionOpen, setAccordionOpen] = useState(false);
   const accordionRef = useRef<HTMLDivElement>(null);
   const openTimeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
   const closeTimeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+
+  // Change language
+  const changeLanguage = (language: string) => {
+    setLanguage(language);
+    i18n.changeLanguage(language);
+  };
 
   // Open the accordion with a delay of 1 second
   const handleMouseEnter = () => {
@@ -67,8 +77,8 @@ export default function Header() {
   return (
     <header>
       <nav className="flex justify-center gap-16 items-center shadow-md h-16">
-        <Link to="/">Home</Link>
-        <Link to="copy-print">Kopieren & Printen</Link>
+        <Link to="/">{t('menu.home')}</Link>
+        <Link to="copy-print">{t('menu.copyPrint')}</Link>
 
         {/* Accordion start */}
         <div
@@ -86,7 +96,7 @@ export default function Header() {
               aria-label="Toggle custom printing submenu"
               className="mr-2"
             >
-              Drukwerk
+              {t('menu.customPrinting')}
             </button>
             {isAccordionOpen ? (
               <KeyboardArrowUpIcon className="mt-1" />
@@ -105,7 +115,7 @@ export default function Header() {
                 to="/custom-printing/business-cards"
                 onClick={handleLinkClick}
               >
-                <li className="p-2 hover:bg-gray-200">Cards</li>
+                <li className="p-2 hover:bg-gray-200">{t('menu.cards')}</li>
               </Link>
               <Link to="/custom-printing/flyers" onClick={handleLinkClick}>
                 <li className="p-2 hover:bg-gray-200">Flyers</li>
@@ -121,8 +131,8 @@ export default function Header() {
         </div>
         {/* Accordion end */}
 
-        <Link to="custom-clothing">Kleding & Textiel</Link>
-        <Link to="contact">Contact</Link>
+        <Link to="custom-clothing">{t('menu.customClothing')}</Link>
+        <Link to="contact">{t('menu.contact')}</Link>
         <div>
           <span>
             <LanguageIcon fontSize={'small'} />
@@ -130,6 +140,10 @@ export default function Header() {
           <select
             className="text-xs ml-1 p-1 bg-white border-2 rounded-lg"
             name="language"
+            value={language}
+            onChange={(e) => {
+              changeLanguage(e.target.value);
+            }}
           >
             <option value="nl">&#127475;&#127473; NL</option>
             <option value="en">&#127468;&#127463; EN</option>

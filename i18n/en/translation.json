@@ -1,0 +1,10 @@
+{
+  "menu": {
+    "home": "Home",
+    "copyPrint": "Copy & Print",
+    "customPrinting": "Custom print",
+    "customClothing": "Custom Clothing",
+    "contact": "Contact",
+    "cards": "Cards"
+  }
+}
