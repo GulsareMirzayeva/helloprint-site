@@ -30,13 +30,13 @@ export default function Footer() {
         </a>
       </div>
       <div>
-        <p className="text-sm font-bold pb-2">Adres</p>
+        <p className="text-sm font-bold pb-2">{t('footer.adress.title')}</p>
         <p className="text-xs">Copy & Printshop</p>
         <p className="text-xs">Straatnaam 123</p>
         <p className="text-xs">1234 AB</p>
-        <p className="text-xs">Groningen, {t('footer.adres.countryName')}</p>
+        <p className="text-xs">Groningen, {t('footer.adress.countryName')}</p>
         <a className="text-xs" href="">
-          {t('footer.adres.visitGoogleMaps')}
+          {t('footer.adress.visitGoogleMaps')}
         </a>
       </div>
       <div>

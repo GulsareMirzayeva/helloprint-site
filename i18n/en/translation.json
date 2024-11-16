@@ -18,7 +18,8 @@
       "deliveries": "Deliveries",
       "complaints": "Complaints"
     },
-    "adres": {
+    "adress": {
+      "title": "Adress",
       "countryName": "The Netherlands",
       "visitGoogleMaps": "View on Google Maps"
     },
