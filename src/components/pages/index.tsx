@@ -1,0 +1,25 @@
+import Home from './Home';
+import BusinessCards from './BusinessCards';
+import Contact from './Contact';
+import CopyPrint from './CopyPrint';
+import CustomClothing from './CustomClothing';
+import CustomPrinting from './CustomPrinting';
+import Flyers from './Flyers';
+import Folders from './Folders';
+import Posters from './Posters';
+import Stickers from './Stickers';
+import ErrorPage from './ErrorPage';
+
+export {
+  Home,
+  BusinessCards,
+  Contact,
+  CopyPrint,
+  CustomClothing,
+  CustomPrinting,
+  Flyers,
+  Folders,
+  Posters,
+  Stickers,
+  ErrorPage,
+};
