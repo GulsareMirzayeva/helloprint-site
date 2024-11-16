@@ -8,8 +8,28 @@ import LanguageIcon from '@mui/icons-material/Language';
 export default function Header() {
   const [isAccordionOpen, setAccordionOpen] = useState(false);
   const accordionRef = useRef<HTMLDivElement>(null);
+  const openTimeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+  const closeTimeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
 
-  // Close accordion when user clicks outside of it
+  // Open the accordion with a delay of 1 second
+  const handleMouseEnter = () => {
+    if (closeTimeoutRef.current) clearTimeout(closeTimeoutRef.current);
+
+    openTimeoutRef.current = setTimeout(() => {
+      setAccordionOpen(true);
+    }, 1000);
+  };
+
+  // Close the accordion with a delay of 1 second
+  const handleMouseLeave = () => {
+    if (openTimeoutRef.current) clearTimeout(openTimeoutRef.current);
+
+    closeTimeoutRef.current = setTimeout(() => {
+      setAccordionOpen(false);
+    }, 1000);
+  };
+
+  // Close the accordion when user clicks outside of it
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
       if (
@@ -17,18 +37,31 @@ export default function Header() {
         !accordionRef.current.contains(event.target as Node)
       ) {
         setAccordionOpen(false);
+        if (openTimeoutRef.current) clearTimeout(openTimeoutRef.current);
+        if (closeTimeoutRef.current) clearTimeout(closeTimeoutRef.current);
       }
     };
 
     document.addEventListener('mousedown', handleClickOutside);
+
+    // Cleanup function removes the eventlistener on the document
     return () => {
       document.removeEventListener('mousedown', handleClickOutside);
     };
   }, []);
 
-  // Toggle accordion state
+  // Toggle accordion state immediately when clicking the "parent" link on the navigation bar
   const handleOpen = () => {
+    if (openTimeoutRef.current) clearTimeout(openTimeoutRef.current);
+    if (closeTimeoutRef.current) clearTimeout(closeTimeoutRef.current);
     setAccordionOpen((prev) => !prev);
+  };
+
+  // Close menu immediately when clicking an accordion link
+  const handleLinkClick = () => {
+    if (openTimeoutRef.current) clearTimeout(openTimeoutRef.current);
+    if (closeTimeoutRef.current) clearTimeout(closeTimeoutRef.current);
+    setAccordionOpen(false);
   };
 
   return (
@@ -38,7 +71,12 @@ export default function Header() {
         <Link to="copy-print">Kopieren & Printen</Link>
 
         {/* Accordion start */}
-        <div ref={accordionRef} className="relative">
+        <div
+          ref={accordionRef}
+          className="relative"
+          onMouseEnter={handleMouseEnter}
+          onMouseLeave={handleMouseLeave}
+        >
           {/* Drukwerk/Custom printing button */}
           <div
             className="flex items-center cursor-pointer"
@@ -60,31 +98,24 @@ export default function Header() {
           {/* Accordion content */}
           {isAccordionOpen && (
             <ul className="absolute top-[calc(100%+2px)] min-w-[110%] mt-4 bg-white shadow-md rounded-sm">
-              <li className="p-2 hover:bg-gray-200">
-                <Link onClick={handleOpen} to="/custom-printing/stickers">
-                  Stickers
-                </Link>
-              </li>
-              <li className="p-2 hover:bg-gray-200">
-                <Link onClick={handleOpen} to="/custom-printing/business-cards">
-                  Cards
-                </Link>
-              </li>
-              <li className="p-2 hover:bg-gray-200">
-                <Link onClick={handleOpen} to="/custom-printing/flyers">
-                  Flyers
-                </Link>
-              </li>
-              <li className="p-2 hover:bg-gray-200">
-                <Link onClick={handleOpen} to="/custom-printing/folders">
-                  Folders
-                </Link>
-              </li>
-              <li className="p-2 hover:bg-gray-200">
-                <Link onClick={handleOpen} to="/custom-printing/posters">
-                  Posters
-                </Link>
-              </li>
+              <Link to="/custom-printing/stickers" onClick={handleLinkClick}>
+                <li className="p-2 hover:bg-gray-200">Stickers</li>
+              </Link>
+              <Link
+                to="/custom-printing/business-cards"
+                onClick={handleLinkClick}
+              >
+                <li className="p-2 hover:bg-gray-200">Cards</li>
+              </Link>
+              <Link to="/custom-printing/flyers" onClick={handleLinkClick}>
+                <li className="p-2 hover:bg-gray-200">Flyers</li>
+              </Link>
+              <Link to="/custom-printing/folders" onClick={handleLinkClick}>
+                <li className="p-2 hover:bg-gray-200">Folders</li>
+              </Link>
+              <Link to="/custom-printing/posters" onClick={handleLinkClick}>
+                <li className="p-2 hover:bg-gray-200">Posters</li>
+              </Link>
             </ul>
           )}
         </div>
