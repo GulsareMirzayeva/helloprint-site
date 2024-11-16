@@ -39,28 +39,26 @@ const router = createBrowserRouter([
       {
         path: 'custom-printing',
         element: <CustomPrinting />,
-        children: [
-          {
-            path: 'custom-printing/stickers',
-            element: <Stickers />,
-          },
-          {
-            path: 'custom-printing/business-cards',
-            element: <BusinessCards />,
-          },
-          {
-            path: 'custom-printing/flyers',
-            element: <Flyers />,
-          },
-          {
-            path: 'custom-printing/folders',
-            element: <Folders />,
-          },
-          {
-            path: 'custom-printing/posters',
-            element: <Posters />,
-          },
-        ],
+      },
+      {
+        path: 'custom-printing/stickers',
+        element: <Stickers />,
+      },
+      {
+        path: 'custom-printing/business-cards',
+        element: <BusinessCards />,
+      },
+      {
+        path: 'custom-printing/flyers',
+        element: <Flyers />,
+      },
+      {
+        path: 'custom-printing/folders',
+        element: <Folders />,
+      },
+      {
+        path: 'custom-printing/posters',
+        element: <Posters />,
       },
     ],
   },
