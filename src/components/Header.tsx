@@ -1,14 +1,19 @@
 import { useTranslation } from 'react-i18next';
 import { useEffect, useRef, useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 
 import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 import LanguageIcon from '@mui/icons-material/Language';
 
 export default function Header() {
+  // Used for translation with the i18next package, set default language to Dutch(nl)
   const { t, i18n } = useTranslation();
   const [language, setLanguage] = useState(i18n.language || 'nl');
+  //
+
+  // Keep track of the active/current page, so the corresponding button can be highlighted
+  const location = useLocation();
 
   const [isAccordionOpen, setAccordionOpen] = useState(false);
   const accordionRef = useRef<HTMLDivElement>(null);
@@ -27,7 +32,7 @@ export default function Header() {
 
     openTimeoutRef.current = setTimeout(() => {
       setAccordionOpen(true);
-    }, 0);
+    }, 2000);
   };
 
   // Close the accordion with a certain amount of delay
@@ -67,8 +72,8 @@ export default function Header() {
     setAccordionOpen((prev) => !prev);
   };
 
-  // Close menu immediately when clicking an accordion link
-  const handleLinkClick = () => {
+  // Close accordion immediately when clicking an link in the accordion
+  const handleAccordionLinkClick = () => {
     if (openTimeoutRef.current) clearTimeout(openTimeoutRef.current);
     if (closeTimeoutRef.current) clearTimeout(closeTimeoutRef.current);
     setAccordionOpen(false);
@@ -77,10 +82,24 @@ export default function Header() {
   return (
     <header>
       <nav className="flex justify-center gap-16 items-center shadow-md h-16">
-        <Link className="cursor-default" to="/">
+        <Link
+          className={`p-1 flex items-center cursor-default border-b-2 ${
+            location.pathname === '/'
+              ? 'border-b-[#FB0036] hover:border-b-gray-[#FB0036]'
+              : 'border-b-white hover:border-b-gray-200'
+          }`}
+          to="/"
+        >
           {t('menu.home')}
         </Link>
-        <Link className="cursor-default" to="copy-print">
+        <Link
+          className={`p-1 flex items-center cursor-default border-b-2 ${
+            location.pathname === '/copy-print'
+              ? 'border-b-[#FB0036] hover:border-b-[#FB0036]'
+              : 'border-b-white hover:border-b-gray-200'
+          }`}
+          to="copy-print"
+        >
           {t('menu.copyPrint')}
         </Link>
 
@@ -91,49 +110,64 @@ export default function Header() {
           onMouseEnter={handleMouseEnter}
           onMouseLeave={handleMouseLeave}
         >
-          {/* Drukwerk/Custom printing button */}
           <div
-            className="flex items-center cursor-default"
+            className={`p-1 flex items-center cursor-default border-b-2 ${
+              location.pathname.startsWith('/custom-printing')
+                ? 'border-b-[#FB0036]'
+                : 'border-b-white'
+            }`}
             onClick={handleOpen}
           >
             <button
               aria-label="Toggle custom printing submenu"
-              className="cursor-default"
+              className="flex cursor-default h-full items-center"
             >
               {t('menu.customPrinting')}
             </button>
             {isAccordionOpen ? (
-              <KeyboardArrowUpIcon className="mt-1" />
+              <KeyboardArrowUpIcon className="mt-1 ml-2" />
             ) : (
-              <KeyboardArrowDownIcon className="mt-1" />
+              <KeyboardArrowDownIcon className="mt-1 ml-2" />
             )}
           </div>
 
           {/* Accordion content */}
           {isAccordionOpen && (
-            <ul className="absolute top-[calc(100%+18px)] min-w-[110%] bg-white shadow-md rounded-sm">
-              <Link to="/custom-printing/stickers" onClick={handleLinkClick}>
+            <ul className="absolute top-[calc(100%+13px)] min-w-[105%] bg-white shadow-md rounded-sm">
+              <Link
+                to="/custom-printing/stickers"
+                onClick={handleAccordionLinkClick}
+              >
                 <li className="p-2 hover:bg-gray-200 cursor-default">
                   Stickers
                 </li>
               </Link>
               <Link
                 to="/custom-printing/business-cards"
-                onClick={handleLinkClick}
+                onClick={handleAccordionLinkClick}
               >
                 <li className="p-2 hover:bg-gray-200 cursor-default">
                   {t('menu.cards')}
                 </li>
               </Link>
-              <Link to="/custom-printing/flyers" onClick={handleLinkClick}>
+              <Link
+                to="/custom-printing/flyers"
+                onClick={handleAccordionLinkClick}
+              >
                 <li className="p-2 hover:bg-gray-200 cursor-default">Flyers</li>
               </Link>
-              <Link to="/custom-printing/folders" onClick={handleLinkClick}>
+              <Link
+                to="/custom-printing/folders"
+                onClick={handleAccordionLinkClick}
+              >
                 <li className="p-2 hover:bg-gray-200 cursor-default">
                   Folders
                 </li>
               </Link>
-              <Link to="/custom-printing/posters" onClick={handleLinkClick}>
+              <Link
+                to="/custom-printing/posters"
+                onClick={handleAccordionLinkClick}
+              >
                 <li className="p-2 hover:bg-gray-200 cursor-default">
                   Posters
                 </li>
@@ -143,10 +177,24 @@ export default function Header() {
         </div>
         {/* Accordion end */}
 
-        <Link className="cursor-default" to="custom-clothing">
+        <Link
+          className={`p-1 flex items-center cursor-default border-b-2 ${
+            location.pathname === '/custom-clothing'
+              ? 'border-b-[#FB0036] hover:border-b-[#FB0036]'
+              : 'border-b-white hover:border-b-gray-200'
+          }`}
+          to="custom-clothing"
+        >
           {t('menu.customClothing')}
         </Link>
-        <Link className="cursor-default" to="contact">
+        <Link
+          className={`p-1 flex items-center cursor-default border-b-2 ${
+            location.pathname === '/contact'
+              ? 'border-b-[#FB0036] hover:border-b-[#FB0036]'
+              : 'border-b-white hover:border-b-gray-200'
+          }`}
+          to="contact"
+        >
           {t('menu.contact')}
         </Link>
         <div>
