@@ -12,6 +12,53 @@
     "subtitle": "A trusted name in Groningen for over 45 years.",
     "introduction": "We are your go-to destination for everything related to copying, printing, and press services. <br /> We also offer a wide range of <b>office supplies</b> and <b>cartridges</b>."
   },
+  "categoryCardsContent": {
+    "copyPrint": {
+      "title": "Copy & Print",
+      "icon": 0,
+      "introduction": "Fast printing or copying, from letters to reports. Make use of our self-service.",
+      "content": [
+        "Colour",
+        "Black/White",
+        "Budget option",
+        "High Quality",
+        "Binding",
+        "Laminating"
+      ]
+    },
+    "customPrinting": {
+      "title": "Custom Print",
+      "icon": 1,
+      "introduction": "Professional printing for your communication materials and promotional tools.",
+      "content": [
+        "Cards",
+        "Stickers",
+        "Flyers",
+        "Folders",
+        "Posters",
+        "Magazines"
+      ]
+    },
+    "customClothing": {
+      "title": "Custom Clothing",
+      "icon": 2,
+      "introduction": "Personalize your clothing and textiles with unique prints.",
+      "content": [
+        "T-shirt",
+        "Own clothes",
+        "Flex/Vinyl",
+        "Polo",
+        "Sweater",
+        "Hoody"
+      ]
+    },
+    "officeSupplies": {
+      "title": "Office Supplies",
+      "icon": 3,
+      "introduction": "Everything you need to set up and optimize your office for efficiency.",
+      "content": ["Paper", "Cardridges", "Maps", "Pencils", "Markers", "etc."]
+    }
+  },
   "footer": {
     "agreements": {
       "title": "Terms & Conditions",

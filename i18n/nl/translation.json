@@ -12,6 +12,60 @@
     "subtitle": "Al ruim 45 jaar een begrip in Groningen.",
     "introduction": "Bij ons bent u aan het juiste adres voor alles op het gebied van kopiëren, printen en drukken. <br /> Wij hebben ook een groot assortiment <b>kantoorartikelen</b> en <b>cartridges</b>."
   },
+  "categoryCardsContent": {
+    "copyPrint": {
+      "title": "Kopiëren & Printen",
+      "icon": 0,
+      "introduction": "Snel printen of kopiëren, van brieven tot verslagen. Maak gebruik van onze self-service",
+      "content": [
+        "Kleur",
+        "Zwart/Wit",
+        "Budgetoptie",
+        "Hoge kwaliteit",
+        "Inbinden",
+        "lamineren"
+      ]
+    },
+    "customPrinting": {
+      "title": "Drukwerk",
+      "icon": 1,
+      "introduction": "Professioneel drukwerk voor jouw communicatiematerialen en promotiemiddelen.",
+      "content": [
+        "Kaarten",
+        "Stickers",
+        "Flyers",
+        "Folders",
+        "Posters",
+        "Magazines"
+      ]
+    },
+    "customClothing": {
+      "title": "Kleding & Textiel",
+      "icon": 2,
+      "introduction": "Laat je kleding en textiel personaliseren met unieke bedrukkingen.",
+      "content": [
+        "T-shirt",
+        "Eigen kleding",
+        "Flex/Vinyl",
+        "Polo",
+        "Trui",
+        "Vest"
+      ]
+    },
+    "officeSupplies": {
+      "title": "Kantoorartikelen",
+      "icon": 3,
+      "introduction": "Alles wat je nodig hebt om je kantoor optimaal in te richten en efficiënt te maken.",
+      "content": [
+        "Papier",
+        "Cardridges",
+        "Ordners",
+        "Pennen",
+        "Markers",
+        "etc."
+      ]
+    }
+  },
   "footer": {
     "agreements": {
       "title": "Voorwaarden",
