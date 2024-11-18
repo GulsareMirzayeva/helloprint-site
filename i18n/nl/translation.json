@@ -7,6 +7,11 @@
     "contact": "Contact",
     "cards": "Kaarten"
   },
+  "home": {
+    "title": "Welkom bij Copy <br /> & Printshop 't Hartje",
+    "subtitle": "Al ruim 45 jaar een begrip in Groningen.",
+    "introduction": "Bij ons bent u aan het juiste adres voor alles op het gebied van kopiëren, printen en drukken. <br /> Wij hebben ook een groot assortiment <b>kantoorartikelen</b> en <b>cartridges</b>."
+  },
   "footer": {
     "agreements": {
       "title": "Voorwaarden",
