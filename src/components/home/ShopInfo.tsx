@@ -6,8 +6,8 @@ export default function ShopInfo() {
   const { t } = useTranslation();
 
   return (
-    <section className="flex items-center justify-center w-full mt-8 bg-[#FB0036]">
-      <div className="flex flex-col justify-center items-end w-full max-w-[800px] h-96 pr-96">
+    <section className="flex justify-center w-full mt-8 bg-[#FB0036]">
+      <div className="flex flex-col justify-center items-start w-full max-w-[600px] h-96">
         <div className="flex flex-col items-center text-white ">
           <p className="text-5xl mb-8">{t('shopInfo.openingHours.title')}</p>
           <p className="text-2xl font-semibold">
@@ -24,7 +24,7 @@ export default function ShopInfo() {
           <p className="text-xl">{t('shopInfo.openingHours.closed')}</p>
         </div>
       </div>
-      <div className="flex flex-col justify-center max-w-[800px] h-96 bg-[#FB0036]">
+      <div className="flex flex-col justify-center max-w-[600px] h-96 bg-[#FB0036]">
         <div className="flex flex-col items-center text-white ">
           <p className="text-5xl mb-8">{t('shopInfo.contact.title')}</p>
           <p className="font-semibold text-center">
