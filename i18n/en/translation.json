@@ -55,7 +55,7 @@
     "officeSupplies": {
       "title": "Office Supplies",
       "icon": 3,
-      "introduction": "Everything you need to set up and optimize your office for efficiency.",
+      "introduction": "Everything you need to set up and optimize your workspace for efficiency.",
       "content": ["Paper", "Cardridges", "Maps", "Pencils", "Markers", "etc."]
     }
   },

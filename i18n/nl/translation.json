@@ -29,7 +29,7 @@
     "customPrinting": {
       "title": "Drukwerk",
       "icon": 1,
-      "introduction": "Professioneel drukwerk voor jouw communicatiematerialen en promotiemiddelen.",
+      "introduction": "Professioneel drukwerk voor uw communicatiematerialen en promotiemiddelen.",
       "content": [
         "Kaarten",
         "Stickers",
@@ -42,7 +42,7 @@
     "customClothing": {
       "title": "Kleding & Textiel",
       "icon": 2,
-      "introduction": "Laat je kleding en textiel personaliseren met unieke bedrukkingen.",
+      "introduction": "Laat uw kleding en textiel personaliseren met unieke bedrukkingen.",
       "content": [
         "T-shirt",
         "Eigen kleding",
@@ -55,7 +55,7 @@
     "officeSupplies": {
       "title": "Kantoorartikelen",
       "icon": 3,
-      "introduction": "Alles wat je nodig hebt om je kantoor optimaal in te richten en efficiënt te maken.",
+      "introduction": "Alles wat u nodig heeft om uw werkplek optimaal in te richten en efficiënt te maken.",
       "content": [
         "Papier",
         "Cardridges",
