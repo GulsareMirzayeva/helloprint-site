@@ -81,6 +81,12 @@
       "saturday": "Saturday",
       "sunday": "Sunday",
       "closed": "Closed"
+    },
+    "contact": {
+      "title": "Got a question?",
+      "subtitle": "Can't find the right product or price? <br/> Or would you like to know more about submitting assignments? <br/><br/>You can always request a free, no-obligation quote.",
+      "email": "info@mail.nl",
+      "telNr": "050-1234567"
     }
   }
 }
