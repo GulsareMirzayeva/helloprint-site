@@ -10,37 +10,39 @@ export default function Footer() {
   return (
     <div className="flex justify-around w-full h-56 border-t-2 border-[#FB0036] py-2">
       <div className="flex flex-col">
-        <p className="text-sm font-bold pb-2">{t('footer.agreements.title')}</p>
+        <p className="text-sm font-bold pb-2">
+          {t('shopInfo.agreements.title')}
+        </p>
         <a className="text-xs" href="">
-          {t('footer.agreements.acknowledgment')}
+          {t('shopInfo.agreements.acknowledgment')}
         </a>
         <a className="text-xs" href="">
-          {t('footer.agreements.proposals')}
+          {t('shopInfo.agreements.proposals')}
         </a>
         <a className="text-xs" href="">
-          {t('footer.agreements.orders')}
+          {t('shopInfo.agreements.orders')}
         </a>
         <a className="text-xs" href="">
-          {t('footer.agreements.payment')}
+          {t('shopInfo.agreements.payment')}
         </a>
         <a className="text-xs" href="">
-          {t('footer.agreements.prices')}
+          {t('shopInfo.agreements.prices')}
         </a>
         <a className="text-xs" href="">
-          {t('footer.agreements.deliveries')}
+          {t('shopInfo.agreements.deliveries')}
         </a>
         <a className="text-xs" href="">
-          {t('footer.agreements.complaints')}
+          {t('shopInfo.agreements.complaints')}
         </a>
       </div>
       <div>
-        <p className="text-sm font-bold pb-2">{t('footer.adress.title')}</p>
+        <p className="text-sm font-bold pb-2">{t('shopInfo.adress.title')}</p>
         <p className="text-xs">Copy & Printshop</p>
         <p className="text-xs">Straatnaam 123</p>
         <p className="text-xs">1234 AB</p>
-        <p className="text-xs">Groningen, {t('footer.adress.countryName')}</p>
+        <p className="text-xs">Groningen, {t('shopInfo.adress.countryName')}</p>
         <a className="text-xs" href="">
-          {t('footer.adress.visitGoogleMaps')}
+          {t('shopInfo.adress.visitGoogleMaps')}
         </a>
       </div>
       <div className="flex flex-col">
@@ -63,20 +65,20 @@ export default function Footer() {
       </div>
       <div>
         <p className="text-sm font-bold pb-2">
-          {t('footer.openingHours.title')}
+          {t('shopInfo.openingHours.title')}
         </p>
         <p className="text-xs font-semibold">
-          {t('footer.openingHours.midweeks')}
+          {t('shopInfo.openingHours.midweeks')}
         </p>
         <p className="text-xs">09:00 - 18:00</p>
         <p className="text-xs font-semibold">
-          {t('footer.openingHours.saturday')}
+          {t('shopInfo.openingHours.saturday')}
         </p>
         <p className="text-xs">10:00 - 17:00</p>
         <p className="text-xs font-semibold">
-          {t('footer.openingHours.sunday')}
+          {t('shopInfo.openingHours.sunday')}
         </p>
-        <p className="text-xs">{t('footer.openingHours.closed')}</p>
+        <p className="text-xs">{t('shopInfo.openingHours.closed')}</p>
       </div>
     </div>
   );

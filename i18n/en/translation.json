@@ -59,7 +59,7 @@
       "content": ["Paper", "Cardridges", "Maps", "Pencils", "Markers", "etc."]
     }
   },
-  "footer": {
+  "shopInfo": {
     "agreements": {
       "title": "Terms & Conditions",
       "acknowledgment": "Acknowledgment",
