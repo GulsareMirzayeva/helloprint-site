@@ -2,7 +2,7 @@ import WelcomeMessage from '../home/WelcomeMessage';
 import ShopCategories from '../home/ShopCategories';
 import Footer from '../Footer';
 import ShopInfo from '../home/ShopInfo';
-import SkylineStrip from '../SkylineStrip';
+// import SkylineStrip from '../SkylineStrip';
 
 export default function Home() {
   return (
@@ -10,7 +10,7 @@ export default function Home() {
       <WelcomeMessage />
       <ShopCategories />
       <ShopInfo />
-      <SkylineStrip />
+      {/* <SkylineStrip /> */}
       <Footer />
     </section>
   );
