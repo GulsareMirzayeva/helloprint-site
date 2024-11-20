@@ -95,5 +95,38 @@
       "email": "info@mail.nl",
       "telNr": "050-1234567"
     }
+  },
+  "customClothingPage": {
+    "introduction": {
+      "title": "Bedrukken van kleding",
+      "text": "Voor het bedrukken van uw kleding hebben wij diverse technieken.<br />We kunnen printen en snijden op flex materiaal, dit is ideaal voor een logo of tekst in 1 kleur.<br />Daarnaast hebben wij ook een DTG machine, DTG staat voor Direct To Garment, hierbij printen we direct op kleding.",
+      "subText": "Wanneer u eigen kleding meeneemt, houd hier dan rekening mee:",
+      "listItem1": "Kleding dient schoon/gewassen te zijn",
+      "listItem2": "Bedrukken op uw eigen kleding is op eigen risico"
+    },
+    "pricingTextile": {
+      "title": "Prijsoverzicht",
+      "tableHeadType": "Textiel los",
+      "tableHeadBlackWhite": "Zwart / Wit",
+      "tableHeadColor": "Kleur",
+      "shirt": "Shirt",
+      "polo": "Polo",
+      "sweater": "Trui",
+      "hoody": "Vest"
+    },
+    "pricingFlexVinyl": {
+      "tableHead": "Flex / Vinyl",
+      "frontChestLogo": "Voorkant borst logo",
+      "frontBackLarge": "Voor- <i>of</i> achterkant groot",
+      "frontSmallBackLarge": "Voorkant klein en achterkant groot"
+    },
+    "pricingDtg": {
+      "tableHead": "DTG",
+      "tableHeadWhiteTextile": "Textiel Wit",
+      "tableHeadcolored": "Textiel Kleur",
+      "frontChestLogo": "Voorkant borst logo",
+      "frontBackLarge": "Voor- <i>of</i> achterkant groot",
+      "frontSmallBackLarge": "Voorkant klein en achterkant groot"
+    }
   }
 }
