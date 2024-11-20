@@ -6,7 +6,6 @@ import {
   Contact,
   CopyPrint,
   CustomClothing,
-  CustomPrinting,
   Flyers,
   Folders,
   Posters,
@@ -35,10 +34,6 @@ const router = createBrowserRouter([
       {
         path: 'contact',
         element: <Contact />,
-      },
-      {
-        path: 'custom-printing',
-        element: <CustomPrinting />,
       },
       {
         path: 'custom-printing/stickers',

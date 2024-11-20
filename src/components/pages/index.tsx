@@ -3,7 +3,6 @@ import BusinessCards from './BusinessCards';
 import Contact from './Contact';
 import CopyPrint from './CopyPrint';
 import CustomClothing from './CustomClothing';
-import CustomPrinting from './CustomPrinting';
 import Flyers from './Flyers';
 import Folders from './Folders';
 import Posters from './Posters';
@@ -16,7 +15,6 @@ export {
   Contact,
   CopyPrint,
   CustomClothing,
-  CustomPrinting,
   Flyers,
   Folders,
   Posters,
