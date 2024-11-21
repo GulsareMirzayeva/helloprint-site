@@ -121,5 +121,11 @@
       "frontBackLarge": "Front <i>or</i> back large",
       "frontSmallBackLarge": "Front small and back large"
     }
+  },
+  "copyPrintPage": {
+    "tableHeadBlackWhite": "Black and White",
+    "tableHeadColor": "Colour",
+    "budget": "Budget",
+    "highQuality": "High Quality"
   }
 }

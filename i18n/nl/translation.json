@@ -128,5 +128,11 @@
       "frontBackLarge": "Voor- <i>of</i> achterkant groot",
       "frontSmallBackLarge": "Voorkant klein en achterkant groot"
     }
+  },
+  "copyPrintPage": {
+    "tableHeadBlackWhite": "Zwart/wit",
+    "tableHeadColor": "Kleur",
+    "budget": "Budget",
+    "highQuality": "Hoge kwaliteit"
   }
 }
