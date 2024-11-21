@@ -8,7 +8,7 @@ export default function Footer() {
   const { t } = useTranslation();
 
   return (
-    <div className="flex justify-center w-full h-56 border-t-2 border-[#FB0036] py-2">
+    <div className="flex justify-center w-full border-t-2 border-[#FB0036] pt-2">
       <div className="flex justify-evenly w-full max-w-[1900px]">
         <div className="flex flex-col">
           <p className="text-sm font-bold pb-2">
