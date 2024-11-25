@@ -1,18 +1,16 @@
 import { useTranslation } from 'react-i18next';
-import TitleBlock from '../../TitleBlock';
 
 export default function CopyPrintBlackWhite() {
   const { t } = useTranslation();
   return (
     <div className="flex flex-col justify-start">
-      <TitleBlock value="Prijsoverzicht" />
       <div className="">
         <table className="table-auto">
           <thead>
             <tr>
-              <th className="border bg-[#FB0036] border-white text-white px-4 py-1 text-left text-4xl">
+              <th className="border border-gray-300 px-4 py-1 text-left text-2xl">
                 <p>{t('copyPrintPage.tableHeadBlackWhite')}</p>
-                <p className="text-sm">(80 gr. papier)</p>
+                <p className="text-sm">(80 grams {t('commonWords.paper')})</p>
               </th>
               <th className="border bg-[#FB0036] border-white px-4 py-1 text-base">
                 <p className="text-white ml-1">{t('copyPrintPage.budget')}</p>
@@ -28,6 +26,17 @@ export default function CopyPrintBlackWhite() {
           <tbody>
             <tr className="border odd:bg-white even:bg-gray-50">
               <td className="border border-gray-300 px-4 py-2">
+                <p>Aantal prints</p>
+              </td>
+              <td className="border border-gray-300 px-4 py-2">
+                <p>Prijs per print</p>
+              </td>
+              <td className="border border-gray-300 px-4 py-2">
+                <p>Prijs per print</p>
+              </td>
+            </tr>
+            <tr className="border odd:bg-white even:bg-gray-50">
+              <td className="border border-gray-300 px-4 py-2">
                 <p>1 - 100</p>
               </td>
               <td className="border border-gray-300 px-4 py-2">
@@ -35,9 +44,6 @@ export default function CopyPrintBlackWhite() {
               </td>
               <td className="flex justify-between items-center px-4 py-2">
                 <p>€ 0,35</p>
-                <p className="text-sm">
-                  <i>p/print</i>
-                </p>
               </td>
             </tr>
             <tr className="border odd:bg-white even:bg-gray-50">
@@ -49,9 +55,6 @@ export default function CopyPrintBlackWhite() {
               </td>
               <td className="flex justify-between items-center px-4 py-2">
                 <p>€ 0,30</p>
-                <p className="text-sm">
-                  <i>p/print</i>
-                </p>
               </td>
             </tr>
             <tr className="border odd:bg-white even:bg-gray-50">
@@ -63,9 +66,6 @@ export default function CopyPrintBlackWhite() {
               </td>
               <td className="flex justify-between items-center px-4 py-2">
                 <p>€ 0,25</p>
-                <p className="text-sm">
-                  <i>p/print</i>
-                </p>
               </td>
             </tr>
             <tr className="border odd:bg-white even:bg-gray-50">
@@ -77,9 +77,6 @@ export default function CopyPrintBlackWhite() {
               </td>
               <td className="flex justify-between items-center px-4 py-2">
                 <p>€ 0,20</p>
-                <p className="text-sm">
-                  <i>p/print</i>
-                </p>
               </td>
             </tr>
           </tbody>
