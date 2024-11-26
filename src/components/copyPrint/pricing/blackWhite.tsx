@@ -1,6 +1,23 @@
 import { useTranslation } from 'react-i18next';
+import { useData } from '../../../context/DataContext';
 
 export default function CopyPrintBlackWhite() {
+  const { prices, isLoading, error } = useData();
+
+  if (!prices) {
+    return <div>Loading...</div>;
+  }
+
+  if (isLoading) {
+    return <div>Loading...</div>;
+  }
+
+  if (error) {
+    return <div>Error: {error.message}</div>;
+  }
+
+  console.log('prices: ', prices);
+
   const { t } = useTranslation();
   return (
     <div className="flex flex-col justify-start">
@@ -40,10 +57,12 @@ export default function CopyPrintBlackWhite() {
                 <p>1 - 100</p>
               </td>
               <td className="border border-gray-300 px-4 py-2">
-                <p>€ 0,15</p>
+                <p>
+                  € {prices.copyPrint.A4.budget.blackWhite['1-100'].toFixed(2)}
+                </p>
               </td>
               <td className="flex justify-between items-center px-4 py-2">
-                <p>€ 0,35</p>
+                <p>€ {prices.copyPrint.A4.hq.blackWhite['1-100'].toFixed(2)}</p>
               </td>
             </tr>
             <tr className="border odd:bg-white even:bg-gray-50">
@@ -51,10 +70,15 @@ export default function CopyPrintBlackWhite() {
                 <p>101 - 250</p>
               </td>
               <td className="border border-gray-300 px-4 py-2">
-                <p>€ 0,10</p>
+                <p>
+                  €{' '}
+                  {prices.copyPrint.A4.budget.blackWhite['101-250'].toFixed(2)}
+                </p>
               </td>
               <td className="flex justify-between items-center px-4 py-2">
-                <p>€ 0,30</p>
+                <p>
+                  € {prices.copyPrint.A4.hq.blackWhite['101-250'].toFixed(2)}
+                </p>
               </td>
             </tr>
             <tr className="border odd:bg-white even:bg-gray-50">
@@ -62,10 +86,15 @@ export default function CopyPrintBlackWhite() {
                 <p>251 - 500</p>
               </td>
               <td className="border border-gray-300 px-4 py-2">
-                <p>€ 0,07</p>
+                <p>
+                  €{' '}
+                  {prices.copyPrint.A4.budget.blackWhite['251-500'].toFixed(2)}
+                </p>
               </td>
               <td className="flex justify-between items-center px-4 py-2">
-                <p>€ 0,25</p>
+                <p>
+                  € {prices.copyPrint.A4.hq.blackWhite['251-500'].toFixed(2)}
+                </p>
               </td>
             </tr>
             <tr className="border odd:bg-white even:bg-gray-50">
@@ -73,10 +102,15 @@ export default function CopyPrintBlackWhite() {
                 <p>501 - 1000</p>
               </td>
               <td className="border border-gray-300 px-4 py-2">
-                <p>€ 0,06</p>
+                <p>
+                  €{' '}
+                  {prices.copyPrint.A4.budget.blackWhite['501-1000'].toFixed(2)}
+                </p>
               </td>
               <td className="flex justify-between items-center px-4 py-2">
-                <p>€ 0,20</p>
+                <p>
+                  € {prices.copyPrint.A4.hq.blackWhite['501-1000'].toFixed(2)}
+                </p>
               </td>
             </tr>
           </tbody>

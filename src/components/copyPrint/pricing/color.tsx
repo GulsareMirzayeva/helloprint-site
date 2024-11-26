@@ -1,7 +1,22 @@
 import { useTranslation } from 'react-i18next';
+import { useData } from '../../../context/DataContext';
 
 export default function CopyPrintColor() {
+  const { prices, isLoading, error } = useData();
   const { t } = useTranslation();
+
+  if (!prices) {
+    return <div>Loading...</div>;
+  }
+
+  if (isLoading) {
+    return <div>Loading...</div>;
+  }
+
+  if (error) {
+    return <div>Error: {error.message}</div>;
+  }
+
   return (
     <div className="flex flex-col justify-start">
       <div className="">
@@ -43,10 +58,10 @@ export default function CopyPrintColor() {
                 <p>1 - 100</p>
               </td>
               <td className="border border-gray-300 px-4 py-2">
-                <p>€ 0,20</p>
+                <p>€ {prices.copyPrint.A4.budget.color['1-100'].toFixed(2)}</p>
               </td>
               <td className="flex justify-between items-center px-4 py-2">
-                <p>€ 0,85</p>
+                <p>€ {prices.copyPrint.A4.hq.color['1-100'].toFixed(2)}</p>
               </td>
             </tr>
             <tr className="border odd:bg-white even:bg-gray-50">
@@ -54,10 +69,12 @@ export default function CopyPrintColor() {
                 <p>101 - 250</p>
               </td>
               <td className="border border-gray-300 px-4 py-2">
-                <p>€ 0,15</p>
+                <p>
+                  € {prices.copyPrint.A4.budget.color['101-250'].toFixed(2)}
+                </p>
               </td>
               <td className="flex justify-between items-center px-4 py-2">
-                <p>€ 0,65</p>
+                <p>€ {prices.copyPrint.A4.hq.color['101-250'].toFixed(2)}</p>
               </td>
             </tr>
             <tr className="border odd:bg-white even:bg-gray-50">
@@ -65,10 +82,12 @@ export default function CopyPrintColor() {
                 <p>251 - 500</p>
               </td>
               <td className="border border-gray-300 px-4 py-2">
-                <p>€ 0,12</p>
+                <p>
+                  € {prices.copyPrint.A4.budget.color['251-500'].toFixed(2)}
+                </p>
               </td>
               <td className="flex justify-between items-center px-4 py-2">
-                <p>€ 0,55</p>
+                <p>€ {prices.copyPrint.A4.hq.color['251-500'].toFixed(2)}</p>
               </td>
             </tr>
             <tr className="border odd:bg-white even:bg-gray-50">
@@ -76,10 +95,12 @@ export default function CopyPrintColor() {
                 <p>501 - 1000</p>
               </td>
               <td className="border px-4 py-2">
-                <p>€ 0,10</p>
+                <p>
+                  € {prices.copyPrint.A4.budget.color['501-1000'].toFixed(2)}
+                </p>
               </td>
               <td className="flex justify-between items-center border px-4 py-2">
-                <p>€ 0,45</p>
+                <p>€ {prices.copyPrint.A4.hq.color['501-1000'].toFixed(2)}</p>
               </td>
             </tr>
           </tbody>
