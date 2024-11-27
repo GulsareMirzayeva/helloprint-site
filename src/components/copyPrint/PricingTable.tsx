@@ -24,22 +24,23 @@ export default function CopyPrintBlackWhite({
   return (
     <div className="flex flex-col justify-start">
       <div>
-        <div className="flex flex-col">
-          {variant === 'blackWhite' && (
+        <div className="flex items-baseline gap-2">
+          {variant === 'blackWhite' ? (
             <>
               <TextBlock
                 value="copyPrintPage.tableHeadBlackWhite"
-                variant="title"
+                variant="largeTitle"
               />
               <p className="text-sm">
                 <TextBlock value="paperTypes.80gr" variant="body" />
               </p>
             </>
-          )}
-
-          {variant === 'color' && (
+          ) : (
             <>
-              <TextBlock value="copyPrintPage.tableHeadColor" variant="title" />
+              <TextBlock
+                value="copyPrintPage.tableHeadColor"
+                variant="largeTitle"
+              />
               <p className="text-sm">
                 <TextBlock value="paperTypes.90gr" variant="body" />
               </p>
@@ -51,22 +52,9 @@ export default function CopyPrintBlackWhite({
           <thead>
             <tr>
               <th className="border bg-[#FB0036] text-white border-white px-4 text-left">
-                {/* {variant === 'blackWhite' && (
-                  <>
-                    {t('copyPrintPage.tableHeadBlackWhite')}
-                    <p className="text-sm">
-                      (80 grams {t('commonWords.paper')})
-                    </p>
-                  </>
-                )}
-                {variant === 'color' && (
-                  <>
-                    {t('copyPrintPage.tableHeadColor')}
-                    <p className="text-sm">
-                      (90 grams {t('commonWords.paper')})
-                    </p>
-                  </>
-                )} */}
+                <div className="text-white">
+                  <p className="text-white">Prints</p>
+                </div>
               </th>
               <th className="border bg-[#FB0036] border-white px-4 py-1 text-base">
                 <div className="text-white">
@@ -83,7 +71,7 @@ export default function CopyPrintBlackWhite({
             {/* The first row of the table renders the title for each column */}
             <tr className="border odd:bg-white even:bg-gray-50">
               <td className="border border-gray-300 px-4 py-2">
-                <p>Aantal prints</p>
+                <p>Aantal</p>
               </td>
               <td className="border border-gray-300 px-4 py-2">
                 <p>Prijs per print</p>

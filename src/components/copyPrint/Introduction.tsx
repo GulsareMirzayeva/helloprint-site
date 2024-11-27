@@ -15,9 +15,9 @@ export default function IntroductionCopyPrint() {
       */}
       <div className=" w-[680px] pt-4">
         <div>
-          <TextBlock value="copyPrintPage.title" variant="title" />
+          <TextBlock value="copyPrintPage.title" variant="largeTitle" />
           <TextBlock value="copyPrintPage.introduction" variant="body" />
-          <TextBlock value="copyPrintPage.titleLaminate" variant="subTitle" />
+          <TextBlock value="copyPrintPage.titleLaminate" variant="title" />
           <TextBlock value="copyPrintPage.introductionBinding" variant="body" />
         </div>
       </div>
