@@ -1,18 +1,24 @@
 import { useTranslation } from 'react-i18next';
-import { useData } from '../../../context/DataContext';
-import { SplitPriceRange } from '../../../utils/priceCategories';
-import { SplitPriceRangeType } from '../../../lib/types/basicRangeTypes';
+import { useData } from '../../context/DataContext';
+import { SplitPriceRange } from '../../utils/priceCategories';
+import { SplitPriceRangeType } from '../../lib/types/basicRangeTypes';
 
-export default function CopyPrintBlackWhite() {
+type CopyPrintBlackWhiteTypes = {
+  variant: 'blackWhite' | 'color';
+};
+
+export default function CopyPrintBlackWhite({
+  variant,
+}: CopyPrintBlackWhiteTypes) {
+  // Implement i18next translation
+  const { t } = useTranslation();
+
   const { prices } = useData();
 
-  // Let user know when data is loading
+  // Let user know if data is loading
   if (!prices) {
     return <div>Loading...</div>;
   }
-
-  // Implement i18next translation
-  const { t } = useTranslation();
 
   return (
     <div className="flex flex-col justify-start">
@@ -20,17 +26,31 @@ export default function CopyPrintBlackWhite() {
         <table className="table-auto">
           <thead>
             <tr>
-              <th className="border border-gray-300 px-4 py-1 text-left text-2xl">
-                <p>{t('copyPrintPage.tableHeadBlackWhite')}</p>
-                <p className="text-sm">(80 grams {t('commonWords.paper')})</p>
+              <th className="border border-gray-300 px-4 text-left">
+                {variant === 'blackWhite' && (
+                  <>
+                    {t('copyPrintPage.tableHeadBlackWhite')}
+                    <p className="text-sm">
+                      (80 grams {t('commonWords.paper')})
+                    </p>
+                  </>
+                )}
+                {variant === 'color' && (
+                  <>
+                    {t('copyPrintPage.tableHeadColor')}
+                    <p className="text-sm">
+                      (90 grams {t('commonWords.paper')})
+                    </p>
+                  </>
+                )}
               </th>
               <th className="border bg-[#FB0036] border-white px-4 py-1 text-base">
-                <p className="text-white ml-1">{t('copyPrintPage.budget')}</p>
+                <div className="text-white">
+                  <p className="text-white">{t('copyPrintPage.budget')}</p>
+                </div>
               </th>
               <th className="border bg-[#FB0036] border-white px-4 py-1 text-base">
-                <p className="text-white ml-1">
-                  {t('copyPrintPage.highQuality')}
-                </p>
+                <p className="text-white">{t('copyPrintPage.highQuality')}</p>
               </th>
             </tr>
           </thead>
@@ -63,12 +83,19 @@ export default function CopyPrintBlackWhite() {
                   <td className="border border-gray-300 px-4 py-2">
                     <p>
                       €{' '}
-                      {prices.copyPrint.A4.budget.blackWhite[range].toFixed(2)}
+                      {variant === 'blackWhite' &&
+                        prices.copyPrint.A4.budget.blackWhite[range].toFixed(2)}
+                      {variant === 'color' &&
+                        prices.copyPrint.A4.budget.color[range].toFixed(2)}
                     </p>
                   </td>
                   <td className="flex justify-between items-center px-4 py-2">
                     <p>
-                      € {prices.copyPrint.A4.hq.blackWhite[range].toFixed(2)}
+                      €{' '}
+                      {variant === 'blackWhite' &&
+                        prices.copyPrint.A4.hq.blackWhite[range].toFixed(2)}
+                      {variant === 'color' &&
+                        prices.copyPrint.A4.hq.color[range].toFixed(2)}
                     </p>
                   </td>
                 </tr>

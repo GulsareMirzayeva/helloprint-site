@@ -10,8 +10,8 @@ export function TextBlock({ children, value, variant }: TextBlockType) {
   const { t } = useTranslation();
 
   const classNames = {
-    title: 'text-2xl pb-6 font-bold',
-    subTitle: 'text-lg py-4 font-semibold',
+    title: 'text-2xl pb-2 font-bold',
+    subTitle: 'text-lg py-2 font-semibold',
     body: 'text-base',
   };
 
