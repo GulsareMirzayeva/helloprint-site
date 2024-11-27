@@ -2,6 +2,7 @@ import { useTranslation } from 'react-i18next';
 import { useData } from '../../context/DataContext';
 import { SplitPriceRange } from '../../utils/priceCategories';
 import { SplitPriceRangeType } from '../../lib/types/basicRangeTypes';
+import { TextBlock } from '../textContentTemplates/TextBlock';
 
 type CopyPrintBlackWhiteTypes = {
   variant: 'blackWhite' | 'color';
@@ -22,12 +23,35 @@ export default function CopyPrintBlackWhite({
 
   return (
     <div className="flex flex-col justify-start">
-      <div className="">
+      <div>
+        <div className="flex flex-col">
+          {variant === 'blackWhite' && (
+            <>
+              <TextBlock
+                value="copyPrintPage.tableHeadBlackWhite"
+                variant="title"
+              />
+              <p className="text-sm">
+                <TextBlock value="paperTypes.80gr" variant="body" />
+              </p>
+            </>
+          )}
+
+          {variant === 'color' && (
+            <>
+              <TextBlock value="copyPrintPage.tableHeadColor" variant="title" />
+              <p className="text-sm">
+                <TextBlock value="paperTypes.90gr" variant="body" />
+              </p>
+            </>
+          )}
+        </div>
+
         <table className="table-auto">
           <thead>
             <tr>
-              <th className="border border-gray-300 px-4 text-left">
-                {variant === 'blackWhite' && (
+              <th className="border bg-[#FB0036] text-white border-white px-4 text-left">
+                {/* {variant === 'blackWhite' && (
                   <>
                     {t('copyPrintPage.tableHeadBlackWhite')}
                     <p className="text-sm">
@@ -42,7 +66,7 @@ export default function CopyPrintBlackWhite({
                       (90 grams {t('commonWords.paper')})
                     </p>
                   </>
-                )}
+                )} */}
               </th>
               <th className="border bg-[#FB0036] border-white px-4 py-1 text-base">
                 <div className="text-white">
