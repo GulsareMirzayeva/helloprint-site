@@ -1,24 +1,19 @@
 import { useTranslation } from 'react-i18next';
 import { useData } from '../../../context/DataContext';
+import { SplitPriceRange } from '../../../utils/priceCategories';
+import { SplitPriceRangeType } from '../../../lib/types/basicRangeTypes';
 
 export default function CopyPrintBlackWhite() {
-  const { prices, isLoading, error } = useData();
+  const { prices } = useData();
 
+  // Let user know when data is loading
   if (!prices) {
     return <div>Loading...</div>;
   }
 
-  if (isLoading) {
-    return <div>Loading...</div>;
-  }
-
-  if (error) {
-    return <div>Error: {error.message}</div>;
-  }
-
-  console.log('prices: ', prices);
-
+  // Implement i18next translation
   const { t } = useTranslation();
+
   return (
     <div className="flex flex-col justify-start">
       <div className="">
@@ -37,10 +32,11 @@ export default function CopyPrintBlackWhite() {
                   {t('copyPrintPage.highQuality')}
                 </p>
               </th>
-              {/* <th className="border bg-[#FB0036] border-black px-4 py-1 text-2xl"></th> */}
             </tr>
           </thead>
+
           <tbody>
+            {/* The first row of the table renders the title for each column */}
             <tr className="border odd:bg-white even:bg-gray-50">
               <td className="border border-gray-300 px-4 py-2">
                 <p>Aantal prints</p>
@@ -52,67 +48,33 @@ export default function CopyPrintBlackWhite() {
                 <p>Prijs per print</p>
               </td>
             </tr>
-            <tr className="border odd:bg-white even:bg-gray-50">
-              <td className="border border-gray-300 px-4 py-2">
-                <p>1 - 100</p>
-              </td>
-              <td className="border border-gray-300 px-4 py-2">
-                <p>
-                  € {prices.copyPrint.A4.budget.blackWhite['1-100'].toFixed(2)}
-                </p>
-              </td>
-              <td className="flex justify-between items-center px-4 py-2">
-                <p>€ {prices.copyPrint.A4.hq.blackWhite['1-100'].toFixed(2)}</p>
-              </td>
-            </tr>
-            <tr className="border odd:bg-white even:bg-gray-50">
-              <td className="border border-gray-300 px-4 py-2">
-                <p>101 - 250</p>
-              </td>
-              <td className="border border-gray-300 px-4 py-2">
-                <p>
-                  €{' '}
-                  {prices.copyPrint.A4.budget.blackWhite['101-250'].toFixed(2)}
-                </p>
-              </td>
-              <td className="flex justify-between items-center px-4 py-2">
-                <p>
-                  € {prices.copyPrint.A4.hq.blackWhite['101-250'].toFixed(2)}
-                </p>
-              </td>
-            </tr>
-            <tr className="border odd:bg-white even:bg-gray-50">
-              <td className="border border-gray-300 px-4 py-2">
-                <p>251 - 500</p>
-              </td>
-              <td className="border border-gray-300 px-4 py-2">
-                <p>
-                  €{' '}
-                  {prices.copyPrint.A4.budget.blackWhite['251-500'].toFixed(2)}
-                </p>
-              </td>
-              <td className="flex justify-between items-center px-4 py-2">
-                <p>
-                  € {prices.copyPrint.A4.hq.blackWhite['251-500'].toFixed(2)}
-                </p>
-              </td>
-            </tr>
-            <tr className="border odd:bg-white even:bg-gray-50">
-              <td className="border border-gray-300 px-4 py-2">
-                <p>501 - 1000</p>
-              </td>
-              <td className="border border-gray-300 px-4 py-2">
-                <p>
-                  €{' '}
-                  {prices.copyPrint.A4.budget.blackWhite['501-1000'].toFixed(2)}
-                </p>
-              </td>
-              <td className="flex justify-between items-center px-4 py-2">
-                <p>
-                  € {prices.copyPrint.A4.hq.blackWhite['501-1000'].toFixed(2)}
-                </p>
-              </td>
-            </tr>
+
+            {/* 
+              Iterate through the list of categories used in the CopyPrint tables.
+              Create a tablerow for each price range to render the categories with the corresponding prices
+            */}
+
+            {SplitPriceRange.map((range: keyof SplitPriceRangeType, index) => {
+              return (
+                <tr key={index} className="border odd:bg-white even:bg-gray-50">
+                  <td className="border border-gray-300 px-4 py-2">
+                    <p>{range}</p>
+                  </td>
+                  <td className="border border-gray-300 px-4 py-2">
+                    <p>
+                      €{' '}
+                      {prices.copyPrint.A4.budget.blackWhite[range].toFixed(2)}
+                    </p>
+                  </td>
+                  <td className="flex justify-between items-center px-4 py-2">
+                    <p>
+                      € {prices.copyPrint.A4.hq.blackWhite[range].toFixed(2)}
+                    </p>
+                  </td>
+                </tr>
+              );
+            })}
+            {/* End of iteration */}
           </tbody>
         </table>
       </div>

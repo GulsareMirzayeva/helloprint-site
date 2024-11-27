@@ -1,11 +1,14 @@
 import { useTranslation } from 'react-i18next';
-import TitleBlock from '../../TitleBlock';
+import { TextBlock } from '../../textContentTemplates/TextBlock';
 
 export default function TextilePricing() {
   const { t } = useTranslation();
   return (
     <div className="flex flex-col justify-start w-[1000px] pt-4">
-      <TitleBlock value={t('customClothingPage.pricingTextile.title')} />
+      <TextBlock
+        value="customClothingPage.pricingTextile.title"
+        variant="title"
+      />
       <div className="flex">
         <table className="table-auto">
           <thead>

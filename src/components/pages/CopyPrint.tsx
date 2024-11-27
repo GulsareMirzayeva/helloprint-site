@@ -7,7 +7,7 @@ export default function CopyPrint() {
   return (
     <section className="flex flex-col w-full justify-between items-center gap-10 pb-8 overflow-scroll">
       <IntroductionCopyPrint />
-      <div className="flex gap-10">
+      <div className="flex justify-center gap-10 py-8 w-full bg-gray-100 ">
         <CopyPrintBlackWhite />
         <CopyPrintColor />
       </div>
