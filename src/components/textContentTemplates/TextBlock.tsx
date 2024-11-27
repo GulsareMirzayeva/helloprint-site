@@ -1,4 +1,4 @@
-import { useTranslation } from 'react-i18next';
+import { Trans, useTranslation } from 'react-i18next';
 
 type TextBlockType = {
   children?: React.ReactNode;
@@ -17,7 +17,9 @@ export function TextBlock({ children, value, variant }: TextBlockType) {
 
   return (
     <div>
-      <p className={classNames[variant]}>{value ? t(value) : children}</p>
+      <p className={classNames[variant]}>
+        {value ? <Trans>{t(value)}</Trans> : children}
+      </p>
     </div>
   );
 }
