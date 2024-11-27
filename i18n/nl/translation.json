@@ -140,6 +140,24 @@
     "highQuality": "Hoge kwaliteit"
   },
   "commonWords": {
-    "paper": "papier"
+    "paper": "papier",
+    "polypropylene": "polypropyleen",
+    "singleSided": "Enkelzijdig",
+    "doubleSided": "Dubbelzijdig",
+    "textile": "Textiel",
+    "colored": "Gekleurd"
+  },
+  "paperTypes": {
+    "80gr": "80 grams papier",
+    "90gr": "90 grams papier",
+    "135gr": "135 grams papier",
+    "150gr": "150 grams papier",
+    "160grMat": "160 grams mat papier",
+    "160grSatin": "160 grams satijn papier",
+    "170gr": "170 grams papier",
+    "190grGloss": "190 grams glanzend papier",
+    "250gr": "250 grams papier",
+    "260grSatin": "260 grams satijn papier",
+    "260grHandMade": "260 grams geschept papier"
   }
 }

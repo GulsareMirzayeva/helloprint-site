@@ -133,6 +133,24 @@
     "highQuality": "High Quality"
   },
   "commonWords": {
-    "paper": "paper"
+    "paper": "paper",
+    "polypropylene": "polypropylene",
+    "singleSided": "Single sided",
+    "doubleSided": "Double sided",
+    "textile": "Textile",
+    "colored": "Colored"
+  },
+  "paperTypes": {
+    "80gr": "80 grams paper",
+    "90gr": "90 grams paper",
+    "135gr": "135 grams paper",
+    "150gr": "150 grams paper",
+    "160grMat": "160 grams matte paper",
+    "160grSatin": "160 grams satin paper",
+    "170gr": "170 grams paper",
+    "190grGloss": "190 grams gloss paper",
+    "250gr": "250 grams paper",
+    "260grSatin": "260 grams satin paper",
+    "260grHandMade": "260 grams handmade paper"
   }
 }
