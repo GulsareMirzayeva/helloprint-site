@@ -1,43 +1,43 @@
-type SplitPriceRangeType = {
+type SplitPriceRangesType = {
   '1-100': number;
   '101-250': number;
   '251-500': number;
   '501-1000': number;
 };
 
-type MediumSplitPriceRangeType = {
+type MediumSplitPriceRangesType = {
   '1-100': number;
   '101-250': number;
   '251-500': number;
 };
 
-type LowSplitPriceRangeType = {
+type LowSplitPriceRangesType = {
   '1-5': number;
   '6-10': number;
   '10Plus': number;
 };
 
-type LowPriceRangeType = {
+type LowPriceRangesType = {
   '50': number;
   '100': number;
   '250': number;
   '500': number;
 };
 
-type BasePriceRangeType = {
+type BasePriceRangesType = {
   '100': number;
   '250': number;
   '500': number;
   '1000': number;
 };
 
-type ShortBasePriceRangeType = {
+type ShortBasePriceRangesType = {
   '100': number;
   '250': number;
   '500': number;
 };
 
-type BulkPriceRangeType = {
+type BulkPriceRangesType = {
   '500': number;
   '1000': number;
   '2500': number;
@@ -45,14 +45,14 @@ type BulkPriceRangeType = {
   '10000': number;
 };
 
-type ShortBulkPriceRangeType = {
+type ShortBulkPriceRangesType = {
   '500': number;
   '1000': number;
   '2500': number;
   '5000': number;
 };
 
-type ExtendedBulkPriceRangeType = {
+type ExtendedBulkPriceRangesType = {
   '500': number;
   '1000': number;
   '2500': number;
@@ -83,15 +83,15 @@ type FlexAndDtgTypes = {
 };
 
 export type {
-  SplitPriceRangeType,
-  MediumSplitPriceRangeType,
-  LowSplitPriceRangeType,
-  LowPriceRangeType,
-  BasePriceRangeType,
-  ShortBasePriceRangeType,
-  BulkPriceRangeType,
-  ShortBulkPriceRangeType,
-  ExtendedBulkPriceRangeType,
+  SplitPriceRangesType,
+  MediumSplitPriceRangesType,
+  LowSplitPriceRangesType,
+  LowPriceRangesType,
+  BasePriceRangesType,
+  ShortBasePriceRangesType,
+  BulkPriceRangesType,
+  ShortBulkPriceRangesType,
+  ExtendedBulkPriceRangesType,
   PaperSizesType,
   TextileTypes,
   FlexAndDtgTypes,
