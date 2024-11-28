@@ -1,86 +1,25 @@
-type SplitPriceRangesType = {
-  '1-100': number;
-  '101-250': number;
-  '251-500': number;
-  '501-1000': number;
-};
-
-type MediumSplitPriceRangesType = {
-  '1-100': number;
-  '101-250': number;
-  '251-500': number;
-};
-
-type LowSplitPriceRangesType = {
-  '1-5': number;
-  '6-10': number;
-  '10Plus': number;
-};
-
-type LowPriceRangesType = {
-  '50': number;
-  '100': number;
-  '250': number;
-  '500': number;
-};
-
-type BasePriceRangesType = {
-  '100': number;
-  '250': number;
-  '500': number;
-  '1000': number;
-};
-
-type ShortBasePriceRangesType = {
-  '100': number;
-  '250': number;
-  '500': number;
-};
-
-type BulkPriceRangesType = {
-  '500': number;
-  '1000': number;
-  '2500': number;
-  '5000': number;
-  '10000': number;
-};
-
-type ShortBulkPriceRangesType = {
-  '500': number;
-  '1000': number;
-  '2500': number;
-  '5000': number;
-};
-
-type ExtendedBulkPriceRangesType = {
-  '500': number;
-  '1000': number;
-  '2500': number;
-  '5000': number;
-  '10000': number;
-  '20000': number;
-};
-
-type PaperSizesType = {
-  A2: number;
-  B2: number;
-  A1: number;
-  B1: number;
-  A0: number;
-};
-
-type TextileTypes = {
-  tShirt: number;
-  polo: number;
-  sweaters: number;
-  hoody: number;
-};
-
-type FlexAndDtgTypes = {
-  frontChestLogo: number;
-  frontOrBacklarge: number;
-  frontSmallBackLarge: number;
-};
+// Definities van de individuele types voor de ranges
+type SplitPriceRangesType = '1-100' | '101-250' | '251-500' | '501-1000';
+type MediumSplitPriceRangesType = '1-100' | '101-250' | '251-500';
+type LowSplitPriceRangesType = '1-5' | '6-10' | '10Plus';
+type LowPriceRangesType = '50' | '100' | '250' | '500';
+type BasePriceRangesType = '100' | '250' | '500' | '1000';
+type ShortBasePriceRangesType = '100' | '250' | '500';
+type BulkPriceRangesType = '500' | '1000' | '2500' | '5000' | '10000';
+type ShortBulkPriceRangesType = '500' | '1000' | '2500' | '5000';
+type ExtendedBulkPriceRangesType =
+  | '500'
+  | '1000'
+  | '2500'
+  | '5000'
+  | '10000'
+  | '20000';
+type PaperSizesType = 'A2' | 'B2' | 'A1' | 'B1' | 'A0';
+type TextileTypes = 'tShirt' | 'polo' | 'sweaters' | 'hoody';
+type FlexAndDtgTypes =
+  | 'frontChestLogo'
+  | 'frontOrBacklarge'
+  | 'frontSmallBackLarge';
 
 export type {
   SplitPriceRangesType,

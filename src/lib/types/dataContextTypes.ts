@@ -2,7 +2,7 @@
 import {
   TextileTypes,
   FlexAndDtgTypes,
-  SplitPriceRangeType,
+  SplitPriceRangesType,
 } from './basicRangeTypes';
 
 import {
@@ -15,12 +15,12 @@ import {
 type CopyPrintType = {
   A4: {
     budget: {
-      blackWhite: SplitPriceRangeType;
-      color: SplitPriceRangeType;
+      blackWhite: SplitPriceRangesType;
+      color: SplitPriceRangesType;
     };
     hq: {
-      blackWhite: SplitPriceRangeType;
-      color: SplitPriceRangeType;
+      blackWhite: SplitPriceRangesType;
+      color: SplitPriceRangesType;
     };
   };
 };
