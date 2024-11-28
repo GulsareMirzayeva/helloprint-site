@@ -31,9 +31,9 @@ export default function CopyPrintBlackWhite({
                 value="copyPrintPage.tableHeadBlackWhite"
                 variant="largeTitle"
               />
-              <p className="text-sm">
+              <div className="text-sm">
                 <TextBlock value="paperTypes.80gr" variant="body" />
-              </p>
+              </div>
             </>
           ) : (
             <>
@@ -41,9 +41,9 @@ export default function CopyPrintBlackWhite({
                 value="copyPrintPage.tableHeadColor"
                 variant="largeTitle"
               />
-              <p className="text-sm">
+              <div className="text-sm">
                 <TextBlock value="paperTypes.90gr" variant="body" />
-              </p>
+              </div>
             </>
           )}
         </div>

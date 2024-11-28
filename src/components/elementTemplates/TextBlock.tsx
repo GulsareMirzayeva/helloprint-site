@@ -1,14 +1,11 @@
-import { Trans, useTranslation } from 'react-i18next';
+import { Trans } from 'react-i18next';
 
 type TextBlockType = {
-  children?: React.ReactNode;
   value: string;
   variant: 'largeTitle' | 'title' | 'subTitle' | 'body';
 };
 
-export function TextBlock({ children, value, variant }: TextBlockType) {
-  const { t } = useTranslation();
-
+export function TextBlock({ value, variant }: TextBlockType) {
   const classNames = {
     largeTitle: 'text-3xl pb-2 font-bold',
     title: 'text-2xl py-2 font-bold',
@@ -17,10 +14,6 @@ export function TextBlock({ children, value, variant }: TextBlockType) {
   };
 
   return (
-    <div>
-      <p className={classNames[variant]}>
-        {value ? <Trans>{t(value)}</Trans> : children}
-      </p>
-    </div>
+    <div className={classNames[variant]}>{<Trans i18nKey={value}></Trans>}</div>
   );
 }
