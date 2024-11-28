@@ -128,9 +128,7 @@
     "introduction": "Easily and quickly take care of your copies and prints using our services. Our self-service printers allow you to print documents directly from a USB stick or download them from your email.",
     "introductionBinding": "We also offer binding and laminating services to give your documents a neat and professional finish. Perfect for business purposes, school projects, or personal documents!",
     "tableHeadBlackWhite": "Black and White",
-    "tableHeadColor": "Colour",
-    "budget": "Budget",
-    "highQuality": "High Quality"
+    "tableHeadColor": "Colour"
   },
   "commonWords": {
     "paper": "paper",
@@ -138,7 +136,12 @@
     "singleSided": "Single sided",
     "doubleSided": "Double sided",
     "textile": "Textile",
-    "colored": "Colored"
+    "colored": "Colored",
+    "budget": "Budget",
+    "highQuality": "High Quality",
+    "amount": "Amount",
+    "perPrint": "Price per print",
+    "prints": "Prints"
   },
   "paperTypes": {
     "80gr": "80 grams paper",
