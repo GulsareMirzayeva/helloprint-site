@@ -1,5 +1,5 @@
 import { useTranslation } from 'react-i18next';
-import { TextBlock } from '../../textContentTemplates/TextBlock';
+import { TextBlock } from '../../elementTemplates/TextBlock';
 
 export default function TextilePricing() {
   const { t } = useTranslation();

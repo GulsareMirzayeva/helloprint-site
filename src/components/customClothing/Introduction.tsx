@@ -1,6 +1,6 @@
 import { useTranslation } from 'react-i18next';
 import image1 from '../../assets/custom-clothing/custom-clothing-img1.jpg';
-import { TextBlock } from '../textContentTemplates/TextBlock';
+import { TextBlock } from '../elementTemplates/TextBlock';
 
 export default function IntroductionCustomClothing() {
   const { t } = useTranslation();
