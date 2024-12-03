@@ -133,11 +133,11 @@
     "title": "Snel en makkelijk!",
     "titleLaminate": "Inbinden of lamineren",
     "introduction": "Bij ons kunt u eenvoudig en snel uw kopieën en prints verzorgen. Met onze self-service printers kunt u direct documenten printen vanaf een USB-stick of downloaden vanuit uw e-mail.",
-    "introductionBinding": "Daarnaast bieden wij mogelijkheden voor inbinden en lamineren, zodat uw documenten een nette en professionele uitstraling krijgen. Ideaal voor zakelijke doeleinden, studieprojecten of persoonlijke documenten!",
-    "tableHeadBlackWhite": "Zwart/wit",
-    "tableHeadColor": "Kleur"
+    "introductionBinding": "Daarnaast bieden wij mogelijkheden voor inbinden en lamineren, zodat uw documenten een nette en professionele uitstraling krijgen. Ideaal voor zakelijke doeleinden, studieprojecten of persoonlijke documenten!"
   },
   "commonWords": {
+    "color": "Kleur",
+    "blackWhite": "Zwart/wit",
     "paper": "papier",
     "polypropylene": "polypropyleen",
     "singleSided": "Enkelzijdig",
@@ -148,7 +148,8 @@
     "highQuality": "Hoge kwaliteit",
     "amount": "Aantal",
     "perPrint": "Prijs per print",
-    "prints": "Prints"
+    "prints": "Prints",
+    "clothingPiece": "Kledingstuk"
   },
   "paperTypes": {
     "80gr": "80 grams papier",
