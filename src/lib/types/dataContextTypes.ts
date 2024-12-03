@@ -1,49 +1,6 @@
-// lib/types.ts
-import {
-  TextileTypes,
-  FlexAndDtgTypes,
-  SplitPriceRangesType,
-} from './basicRangeTypes';
-
-import {
-  CardsType,
-  FoldersType,
-  PostersType,
-  StickersType,
-} from './customPrintTypes';
-
-type CopyPrintType = {
-  A4: {
-    budget: {
-      blackWhite: SplitPriceRangesType;
-      color: SplitPriceRangesType;
-    };
-    hq: {
-      blackWhite: SplitPriceRangesType;
-      color: SplitPriceRangesType;
-    };
-  };
-};
-
-type CustomPrintType = {
-  folders: FoldersType;
-  flyers: FoldersType;
-  posters: PostersType;
-  stickers: StickersType;
-  cards: CardsType;
-};
-
-type CustomClothingType = {
-  textile: {
-    blackWhite: TextileTypes;
-    color: TextileTypes;
-  };
-  flex: FlexAndDtgTypes;
-  dtg: {
-    white: FlexAndDtgTypes;
-    colored: FlexAndDtgTypes;
-  };
-};
+import { CopyPrintType } from './copyPrintType';
+import { CustomClothingType } from './customClothing';
+import { CustomPrintType } from './customPrintType';
 
 export type Prices = {
   copyPrint: CopyPrintType;

@@ -1,39 +1,46 @@
-import { useTranslation } from 'react-i18next';
-import { useData } from '../../context/DataContext';
+import { PricingRange } from '../../lib/types/basicRangeTypes';
 
-type PricePaths = {
-  [key: string]: string;
-};
-
-type pricingTableTypes = {
+type PricingTableTypes = {
   headerTitles: string[];
   units: string[];
   ranges: string[];
-  variant: string;
-  pricePaths: PricePaths;
+  prices: PricingRange[];
 };
 
-const resolvePath = (obj: any, path: string): any => {
-  return path.split('.').reduce((acc, key) => acc?.[key], obj);
-};
+// Generate a table with dynamic size and content:
 
-export default function pricingTable({
+// headerTitles:
+// The titles of each column at the top of the table
+// (for example: ["Prints", "Budget", "High quality"])
+
+// units:
+// Show the used units in the column below the titles
+// (for example: ["Amount", "Price per print", "Price per print"])
+
+// ranges:
+// Prices are categorized by the amount or the type of a medium (paper/clothing)
+// (for example: ['1-100', '101-250', '251-500', '501-1000'])
+
+// prices:
+// An object that contains the prices for each range
+// (for example: { "1-00": {"budget": x.xx, "hq": x.xx} })
+
+export default function PricingTable({
   headerTitles,
   units,
   ranges,
-  variant,
-  pricePaths,
-}: pricingTableTypes) {
-  const { prices } = useData();
-  const { t } = useTranslation();
-
+  prices,
+}: PricingTableTypes) {
   // Let user know if data is loading
   if (!prices) {
     return <div>Loading...</div>;
   }
 
-  // Dynamische prijsdata ophalen op basis van de pricePaths prop
-  const pricePathsKeys = Object.keys(pricePaths); // Dit haalt alle prijssoorten (bijv. budget, hq, etc.)
+  // Prepare data for easy acces in the table
+  const tableData = ranges.map((range, index) => ({
+    range,
+    prices: prices[index] || [],
+  }));
 
   return (
     <table className="table-auto">
@@ -46,7 +53,7 @@ export default function pricingTable({
                 key={title}
                 className="border bg-[#FB0036] text-white border-white px-4 text-left"
               >
-                <div className="text-white">{t(title)}</div>
+                <div className="text-white">{title}</div>
               </th>
             );
           })}
@@ -59,33 +66,38 @@ export default function pricingTable({
           {units.map((unit, index) => {
             return (
               <td key={index} className="border border-gray-300 px-4 py-2">
-                {t(unit)}
+                {unit}
               </td>
             );
           })}
         </tr>
 
-        {/* For each range, create a row with the range and corresponding prices */}
-        {ranges.map((range, index) => {
-          return (
-            <tr key={index} className="border odd:bg-white even:bg-gray-50">
-              <td className="border border-gray-300 px-4 py-2">{range}</td>
+        {/* Create a row with a range and the corresponding prices */}
+        {tableData.map((row, rowIndex) => {
+          // Get all prices for each range
+          const rowPrices = [...Object.values(row.prices)];
 
-              {/* Render columns for each price*/}
-              {pricePathsKeys.map((path, colIndex) => {
-                const value = resolvePath(
-                  prices,
-                  `${pricePaths[path]}.${variant}.${range}`
-                );
-                return (
-                  <td
-                    key={colIndex}
-                    className="border border-gray-300 px-4 py-2"
-                  >
-                    € {value?.toFixed(2) || 'N/A'}
-                  </td>
-                );
-              })}
+          return (
+            <tr key={rowIndex} className="border odd:bg-white even:bg-gray-50">
+              {/* Create the table cell that contains the range ("1-00" or "textile" for example) */}
+              <td className="border border-gray-300 px-4 py-2">{row.range}</td>
+
+              {/* For each range, iterate through the prices and display them in the corresponding column */}
+              {row.prices !== undefined ? (
+                rowPrices.map((price, priceIndex) => {
+                  return (
+                    <td
+                      key={priceIndex}
+                      className="border border-gray-300 px-4 py-2"
+                    >
+                      € {price.toFixed(2)}
+                    </td>
+                  );
+                })
+              ) : (
+                // If the amount of columns and available data doesn't match, prevent displaying empty cells
+                <td className="border border-gray-300 px-4 py-2">"N/A"</td>
+              )}
             </tr>
           );
         })}
