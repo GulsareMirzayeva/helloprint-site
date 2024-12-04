@@ -19,7 +19,7 @@ export default function ClothingPiecesPricing() {
   };
 
   const headerTitlesTextile: string[] = [
-    t('commonWords.prints'),
+    t('commonWords.textile'),
     t('commonWords.blackWhite'),
     t('commonWords.color'),
   ];

@@ -42,7 +42,7 @@ export default function FlexAndDtgPricing() {
   ];
 
   return (
-    <div className="flex justify-center items-center w-full py-12 gap-12 bg-white">
+    <div className="flex justify-center items-center w-full py-12 gap-24 bg-white">
       <PricingTable
         headerTitles={headerTitlesFlex}
         units={unitsFlex}
