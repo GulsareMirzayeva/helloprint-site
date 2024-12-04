@@ -1,8 +1,8 @@
 import { useData } from '../../context/DataContext';
 import IntroductionCustomClothing from '../customClothing/Introduction';
 import Footer from '../Footer';
-import FlexAndDtgPricing from '../customClothing/FlexAndDtgPricing';
-import ClothingPiecesPricing from '../customClothing/ClothingPiecesPricing';
+import FlexAndDtgPricing from '../customClothing/pricing/FlexAndDtgPricing';
+import ClothingPiecesPricing from '../customClothing/pricing/ClothingPiecesPricing';
 
 export default function CustomClothing() {
   const { prices } = useData();

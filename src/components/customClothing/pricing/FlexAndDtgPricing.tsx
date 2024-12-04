@@ -1,8 +1,8 @@
-import PricingTable from '../elementTemplates/PricingTable';
-import { dtgCategories, flexCategories } from '../../lib/priceCategories';
-import { useData } from '../../context/DataContext';
+import PricingTable from '../../elementTemplates/PricingTable';
+import { dtgCategories, flexCategories } from '../../../lib/priceCategories';
+import { useData } from '../../../context/DataContext';
 import { useTranslation } from 'react-i18next';
-import { translateTextOptions } from '../../utils/helperFunctions';
+import { translateTextOptions } from '../../../utils/helperFunctions';
 
 export default function FlexAndDtgPricing() {
   const { prices } = useData();
