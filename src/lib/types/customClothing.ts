@@ -7,6 +7,10 @@ type TextileTypes = {
   hoody: PricingRange;
 };
 
+type FlexTypes = {
+  allColors: PricingRange;
+};
+
 type DtgTypes = {
   frontChestLogo: PricingRange;
   frontOrBacklarge: PricingRange;
@@ -15,6 +19,6 @@ type DtgTypes = {
 
 export type CustomClothingType = {
   textile: TextileTypes;
-  flex: PricingRange;
+  flex: FlexTypes;
   dtg: DtgTypes;
 };

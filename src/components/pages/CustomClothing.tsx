@@ -1,75 +1,87 @@
-import { TextileTypes, FlexAndDtgTypes } from '../../lib/priceCategories';
+import { useTranslation } from 'react-i18next';
+import { useData } from '../../context/DataContext';
+import {
+  textileCategories,
+  flexCategories,
+  dtgCategories,
+} from '../../lib/priceCategories';
 import IntroductionCustomClothing from '../customClothing/Introduction';
 import PricingTable from '../elementTemplates/PricingTable';
 import Footer from '../Footer';
 
 export default function CustomClothing() {
+  const { prices } = useData();
+  const { t } = useTranslation();
+
+  // Let user know if data is loading
+  if (!prices) {
+    return <div>Loading...</div>;
+  }
+
+  const translateRanges = (ranges: string[]): string[] => {
+    return ranges.map((range) => t(range));
+  };
+
   // The strings are paths to the requested text in the translation files (in 'i18next' folder at the root)
   const headerTitlesTextile: string[] = [
-    'commonWords.prints',
-    'commonWords.blackWhite',
-    'commonWords.color',
+    t('commonWords.prints'),
+    t('commonWords.blackWhite'),
+    t('commonWords.color'),
   ];
 
   const headerTitlesFlex: string[] = [
-    'customClothingPage.pricingFlexVinyl.tableHead',
+    t('customClothingPage.pricingFlexVinyl.tableHead'),
     '',
   ];
 
   const headerTitlesDtg: string[] = [
-    'customClothingPage.pricingDtg.tableHead',
-    'customClothingPage.pricingDtg.tableHeadWhiteTextile',
-    'customClothingPage.pricingDtg.tableHeadcolored',
+    t('customClothingPage.pricingDtg.tableHead'),
+    t('customClothingPage.pricingDtg.tableHeadWhiteTextile'),
+    t('customClothingPage.pricingDtg.tableHeadcolored'),
   ];
 
   const unitsTextile: string[] = [
-    'commonWords.clothingPiece',
-    'commonWords.perPrint',
-    'commonWords.perPrint',
+    t('commonWords.clothingPiece'),
+    t('commonWords.perPrint'),
+    t('commonWords.perPrint'),
   ];
 
-  const unitsFlex: string[] = ['commonWords.prints', 'commonWords.perPrint'];
+  const unitsFlex: string[] = [
+    t('commonWords.prints'),
+    t('commonWords.perPrint'),
+  ];
 
   const unitsDtg: string[] = [
-    'commonWords.prints',
-    'commonWords.perPrint',
-    'commonWords.perPrint',
+    t('commonWords.prints'),
+    t('commonWords.perPrint'),
+    t('commonWords.perPrint'),
   ];
 
-  const pricePathsTextile = {
-    blackWhitePath: 'customClothing.textile.blackWhite',
-    colorPath: 'customClothing.textile.color',
-  };
-
-  const pricePathsFlex = {
-    path: 'customClothing.flex',
-  };
-
-  const pricePathsDtg = {
-    blackWhitePath: 'customClothing.dtg.white',
-    colorPath: 'customClothing.dtg.colored',
-  };
+  // Get all prices for the "custom clothing" page that will be used
+  const pricePathsTextile = [...Object.values(prices.customClothing.textile)];
+  const pricePathsFlex = [...Object.values(prices.customClothing.flex)];
+  const pricePathsDtg = [...Object.values(prices.customClothing.dtg)];
 
   return (
     <section className="flex flex-col w-full justify-start items-center overflow-scroll">
       <IntroductionCustomClothing />
-      <div className="flex flex-col justify-center gap-24 py-10 mt-10 w-full bg-gray-100 ">
+      <div className="flex justify-center gap-24 py-10 mt-10 w-full bg-gray-100">
         <PricingTable
           headerTitles={headerTitlesTextile}
           units={unitsTextile}
-          ranges={TextileTypes}
+          ranges={translateRanges(textileCategories)}
           prices={pricePathsTextile}
         />
         <PricingTable
           headerTitles={headerTitlesFlex}
           units={unitsFlex}
-          ranges={FlexAndDtgTypes}
+          ranges={translateRanges(flexCategories)}
           prices={pricePathsFlex}
         />
         <PricingTable
           headerTitles={headerTitlesDtg}
           units={unitsDtg}
-          ranges={FlexAndDtgTypes}
+          ranges={translateRanges(dtgCategories)}
           prices={pricePathsDtg}
         />
       </div>
