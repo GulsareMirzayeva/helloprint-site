@@ -117,7 +117,7 @@
     "pricingFlexVinyl": {
       "tableHead": "Flex / Vinyl",
       "frontChestLogo": "Voorkant borst logo",
-      "frontBackLarge": "Voor- <i>of</i> achterkant groot",
+      "frontBackLarge": "Voor- of achterkant groot",
       "frontSmallBackLarge": "Voorkant klein en achterkant groot"
     },
     "pricingDtg": {
@@ -125,7 +125,7 @@
       "tableHeadWhiteTextile": "Textiel Wit",
       "tableHeadcolored": "Textiel Kleur",
       "frontChestLogo": "Voorkant borst logo",
-      "frontBackLarge": "Voor- <i>of</i> achterkant groot",
+      "frontBackLarge": "Voor- of achterkant groot",
       "frontSmallBackLarge": "Voorkant klein en achterkant groot"
     }
   },

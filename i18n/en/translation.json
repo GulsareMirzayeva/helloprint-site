@@ -110,7 +110,7 @@
     "pricingFlexVinyl": {
       "tableHead": "Flex / Vinyl",
       "frontChestLogo": "Front chest logo",
-      "frontBackLarge": "Front <i>or</i> back large",
+      "frontBackLarge": "Front or back large",
       "frontSmallBackLarge": "Front small and back large"
     },
     "pricingDtg": {
@@ -118,7 +118,7 @@
       "tableHeadWhiteTextile": "Textile White",
       "tableHeadcolored": "Textile Colour",
       "frontChestLogo": "Front chest logo",
-      "frontBackLarge": "Front <i>or</i> back large",
+      "frontBackLarge": "Front or back large",
       "frontSmallBackLarge": "Front small and back large"
     }
   },
