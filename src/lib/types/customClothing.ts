@@ -1,20 +1,20 @@
-import { PricingRange } from './basicRangeTypes';
+import { PricingOptions } from './basicOptionsTypes';
 
 type TextileTypes = {
-  tShirt: PricingRange;
-  polo: PricingRange;
-  sweaters: PricingRange;
-  hoody: PricingRange;
+  tShirt: PricingOptions;
+  polo: PricingOptions;
+  sweaters: PricingOptions;
+  hoody: PricingOptions;
 };
 
 type FlexTypes = {
-  allColors: PricingRange;
+  allColors: PricingOptions;
 };
 
 type DtgTypes = {
-  frontChestLogo: PricingRange;
-  frontOrBacklarge: PricingRange;
-  frontSmallBackLarge: PricingRange;
+  frontChestLogo: PricingOptions;
+  frontOrBacklarge: PricingOptions;
+  frontSmallBackLarge: PricingOptions;
 };
 
 export type CustomClothingType = {

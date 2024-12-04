@@ -1,4 +1,4 @@
-import { PricingCategory } from './basicRangeTypes';
+import { PricingCategory } from './basicOptionsTypes';
 
 type CopyPrintColorMode = {
   blackWhite: PricingCategory;

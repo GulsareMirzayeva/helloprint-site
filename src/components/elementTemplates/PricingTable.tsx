@@ -1,10 +1,10 @@
-import { PricingRange } from '../../lib/types/basicRangeTypes';
+import { PricingOptions } from '../../lib/types/basicOptionsTypes';
 
 type PricingTableTypes = {
   headerTitles: string[];
   units: string[];
-  ranges: string[];
-  prices: PricingRange[];
+  options: string[];
+  prices: PricingOptions[];
 };
 
 // Generate a table with dynamic size and content:
@@ -17,18 +17,18 @@ type PricingTableTypes = {
 // Show the used units in the column below the titles
 // (for example: ["Amount", "Price per print", "Price per print"])
 
-// ranges:
+// options:
 // Prices are categorized by the amount or the type of a medium (paper/clothing)
 // (for example: ['1-100', '101-250', '251-500', '501-1000'])
 
 // prices:
-// An object that contains the prices for each range
+// An object that contains the prices for each option
 // (for example: { "1-00": {"budget": x.xx, "hq": x.xx} })
 
 export default function PricingTable({
   headerTitles,
   units,
-  ranges,
+  options,
   prices,
 }: PricingTableTypes) {
   // Let user know if data is loading
@@ -37,8 +37,8 @@ export default function PricingTable({
   }
 
   // Prepare data for easy acces in the table
-  const tableData = ranges.map((range, index) => ({
-    range,
+  const tableData = options.map((option, index) => ({
+    option,
     prices: prices[index] || [],
   }));
 
@@ -72,17 +72,17 @@ export default function PricingTable({
           })}
         </tr>
 
-        {/* Create a row with a range and the corresponding prices */}
+        {/* Create a row with a option and the corresponding prices */}
         {tableData.map((row, rowIndex) => {
-          // Get all prices for each range
+          // Get all prices for each option
           const rowPrices = [...Object.values(row.prices)];
 
           return (
             <tr key={rowIndex} className="border odd:bg-white even:bg-gray-50">
-              {/* Create the table cell that contains the range ("1-00" or "textile" for example) */}
-              <td className="border border-gray-300 px-4 py-2">{row.range}</td>
+              {/* Create the table cell that contains the option ("1-00" or "textile" for example) */}
+              <td className="border border-gray-300 px-4 py-2">{row.option}</td>
 
-              {/* For each range, iterate through the prices and display them in the corresponding column */}
+              {/* For each option, iterate through the prices and display them in the corresponding column */}
               {row.prices !== undefined ? (
                 rowPrices.map((price, priceIndex) => {
                   return (

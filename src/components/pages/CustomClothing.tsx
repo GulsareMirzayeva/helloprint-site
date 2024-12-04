@@ -18,8 +18,8 @@ export default function CustomClothing() {
     return <div>Loading...</div>;
   }
 
-  const translateRanges = (ranges: string[]): string[] => {
-    return ranges.map((range) => t(range));
+  const translateTextOptions = (options: string[]): string[] => {
+    return options.map((option) => t(option));
   };
 
   // The strings are paths to the requested text in the translation files (in 'i18next' folder at the root)
@@ -69,19 +69,19 @@ export default function CustomClothing() {
         <PricingTable
           headerTitles={headerTitlesTextile}
           units={unitsTextile}
-          ranges={translateRanges(textileCategories)}
+          options={translateTextOptions(textileCategories)}
           prices={pricePathsTextile}
         />
         <PricingTable
           headerTitles={headerTitlesFlex}
           units={unitsFlex}
-          ranges={translateRanges(flexCategories)}
+          options={translateTextOptions(flexCategories)}
           prices={pricePathsFlex}
         />
         <PricingTable
           headerTitles={headerTitlesDtg}
           units={unitsDtg}
-          ranges={translateRanges(dtgCategories)}
+          options={translateTextOptions(dtgCategories)}
           prices={pricePathsDtg}
         />
       </div>

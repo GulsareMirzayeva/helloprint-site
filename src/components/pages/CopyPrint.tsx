@@ -1,6 +1,6 @@
 import { useTranslation } from 'react-i18next';
 import { useData } from '../../context/DataContext';
-import { splitPriceRanges } from '../../lib/priceCategories';
+import { splitPriceOptions } from '../../lib/priceCategories';
 import { TextBlock } from '../elementTemplates/TextBlock';
 import IntroductionCopyPrint from '../copyPrint/Introduction';
 import PricingTable from '../elementTemplates/PricingTable';
@@ -54,7 +54,7 @@ export default function CopyPrint() {
           <PricingTable
             headerTitles={headerTitles}
             units={units}
-            ranges={splitPriceRanges}
+            options={splitPriceOptions}
             prices={pricesBlackWhite}
           />
         </div>
@@ -70,7 +70,7 @@ export default function CopyPrint() {
           <PricingTable
             headerTitles={headerTitles}
             units={units}
-            ranges={splitPriceRanges}
+            options={splitPriceOptions}
             prices={pricesColor}
           />
         </div>

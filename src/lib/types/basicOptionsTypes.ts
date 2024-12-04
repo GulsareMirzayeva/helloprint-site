@@ -3,7 +3,7 @@
 //   "budget": x.xx,
 //   "hq": x.xx
 // }
-export type PricingRange = {
+export type PricingOptions = {
   [key: string]: number;
 };
 
@@ -12,5 +12,5 @@ export type PricingRange = {
 //   "1-00": {...}
 // }
 export type PricingCategory = {
-  [key: string]: PricingRange;
+  [key: string]: PricingOptions;
 };

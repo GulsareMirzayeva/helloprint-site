@@ -1,4 +1,4 @@
-import { PricingCategory, PricingRange } from './basicRangeTypes';
+import { PricingCategory, PricingOptions } from './basicOptionsTypes';
 
 type CustomPrintPosters = {
   blackWhite: PricingCategory;
@@ -6,8 +6,8 @@ type CustomPrintPosters = {
 };
 
 type FlyersPrintSides = {
-  singleSided: PricingRange;
-  doubleSided: PricingRange;
+  singleSided: PricingOptions;
+  doubleSided: PricingOptions;
 };
 
 type FlyersMaterial = {
@@ -21,8 +21,8 @@ type CustomPrintFyers = {
 };
 
 type FolderFoldings = {
-  halfFold?: PricingRange;
-  triFold: PricingRange;
+  halfFold?: PricingOptions;
+  triFold: PricingOptions;
 };
 
 type FolderColors = {
@@ -50,13 +50,13 @@ type CardCategories = {
 
 type CustomPrintCards = {
   print: CardCategories;
-  customPrint: PricingRange;
+  customPrint: PricingOptions;
 };
 
 export type CustomPrintType = {
   folders: CustomPrintFolders;
   flyers: CustomPrintFyers;
   posters: CustomPrintPosters;
-  stickers: PricingRange;
+  stickers: PricingOptions;
   cards: CustomPrintCards;
 };
