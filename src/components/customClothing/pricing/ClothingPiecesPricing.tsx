@@ -3,7 +3,7 @@ import { textileCategories } from '../../../lib/priceCategories';
 import { useData } from '../../../context/DataContext';
 import { useTranslation } from 'react-i18next';
 import { translateTextOptions } from '../../../utils/helperFunctions';
-import { ImageSlider } from '../ImageSlider';
+import clothing from '../../../assets/custom-clothing/clothing-images.png';
 
 export default function ClothingPiecesPricing() {
   const { prices } = useData();
@@ -32,7 +32,7 @@ export default function ClothingPiecesPricing() {
   ];
 
   return (
-    <div className="flex justify-center items-center w-full mt-14 py-12 gap-12 bg-gray-100">
+    <div className="flex justify-center items-center w-full mt-14 pb-4 pt-12 gap-12 bg-gray-100">
       <div className="flex gap-24">
         <div>
           {/* Table to display "Textile" prices */}
@@ -44,8 +44,8 @@ export default function ClothingPiecesPricing() {
           />
         </div>
         <div>
-          {/* Display images in a slider, next to the pricing table of the "Textile" category */}
-          <ImageSlider />
+          {/* Display images of clothing pieces, next to the pricing table of the "Textile" category */}
+          <img src={clothing} alt="" />
         </div>
       </div>
     </div>
