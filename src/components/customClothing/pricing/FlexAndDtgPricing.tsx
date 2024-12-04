@@ -3,6 +3,7 @@ import { dtgCategories, flexCategories } from '../../../lib/priceCategories';
 import { useData } from '../../../context/DataContext';
 import { useTranslation } from 'react-i18next';
 import { translateTextOptions } from '../../../utils/helperFunctions';
+import { TextBlock } from '../../elementTemplates/TextBlock';
 
 export default function FlexAndDtgPricing() {
   const { prices } = useData();
@@ -44,22 +45,43 @@ export default function FlexAndDtgPricing() {
   ];
 
   return (
-    <div className="flex justify-center items-center w-full py-12 gap-24 bg-white">
-      {/* Table to display "Flex / Vinyl" prices */}
-      <PricingTable
-        headerTitles={headerTitlesFlex}
-        units={unitsFlex}
-        options={translateTextOptions(flexCategories)}
-        prices={pricePathsFlex}
-      />
-
-      {/* Table to display "DTG" prices */}
-      <PricingTable
-        headerTitles={headerTitlesDtg}
-        units={unitsDtg}
-        options={translateTextOptions(dtgCategories)}
-        prices={pricePathsDtg}
-      />
+    <div className="flex justify-center items-center max-w-screen-xl pt-8 pb-14 gap-24 bg-white">
+      <div>
+        <div className="pb-4">
+          <TextBlock
+            value="customClothingPage.pricingFlexVinyl.tableTitle"
+            variant="subTitle"
+          />
+          <TextBlock value="placeHolderText" variant="body" />
+        </div>
+        <div>
+          {/* Table to display "Flex / Vinyl" prices */}
+          <PricingTable
+            headerTitles={headerTitlesFlex}
+            units={unitsFlex}
+            options={translateTextOptions(flexCategories)}
+            prices={pricePathsFlex}
+          />
+        </div>
+      </div>
+      <div>
+        <div className="pb-4">
+          <TextBlock
+            value="customClothingPage.pricingDtg.tableTitle"
+            variant="subTitle"
+          />
+          <TextBlock value="placeHolderText" variant="body" />
+        </div>
+        <div>
+          {/* Table to display "DTG" prices */}
+          <PricingTable
+            headerTitles={headerTitlesDtg}
+            units={unitsDtg}
+            options={translateTextOptions(dtgCategories)}
+            prices={pricePathsDtg}
+          />
+        </div>
+      </div>
     </div>
   );
 }
