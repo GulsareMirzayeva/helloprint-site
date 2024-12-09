@@ -99,7 +99,7 @@
   "customClothingPage": {
     "introduction": {
       "title": "Bedrukken van kleding",
-      "text": "Voor het bedrukken van uw kleding hebben wij diverse technieken.<br />We kunnen printen en snijden op flex materiaal, dit is ideaal voor een logo of tekst in 1 kleur.<br />Daarnaast hebben wij ook een DTG machine, DTG staat voor Direct To Garment, hierbij printen we direct op kleding.",
+      "text": "Voor het bedrukken van uw kleding hebben wij diverse technieken.<br />We kunnen printen en snijden op flex materiaal, dit is ideaal voor een logo of tekst in één kleur.<br />Daarnaast hebben wij ook een DTG machine, DTG staat voor Direct To Garment, hierbij printen we direct op kleding.",
       "subText": "Wanneer u eigen kleding meeneemt, houd hier dan rekening mee:",
       "listItem1": "Kleding dient schoon/gewassen te zijn",
       "listItem2": "Bedrukken op uw eigen kleding is op eigen risico"
@@ -118,7 +118,8 @@
       "tableHead": "Flex / Vinyl",
       "frontChestLogo": "Voorkant borst logo",
       "frontBackLarge": "Voor- of achterkant groot",
-      "frontSmallBackLarge": "Voorkant klein en achterkant groot"
+      "frontSmallBackLarge": "Voorkant klein en achterkant groot",
+      "tableTitle": "Printen op flex materiaal"
     },
     "pricingDtg": {
       "tableHead": "DTG",
@@ -126,7 +127,8 @@
       "tableHeadcolored": "Textiel Kleur",
       "frontChestLogo": "Voorkant borst logo",
       "frontBackLarge": "Voor- of achterkant groot",
-      "frontSmallBackLarge": "Voorkant klein en achterkant groot"
+      "frontSmallBackLarge": "Voorkant klein en achterkant groot",
+      "tableTitle": "Print direct op kleding"
     }
   },
   "copyPrintPage": {
@@ -163,5 +165,15 @@
     "250gr": "250 grams papier",
     "260grSatin": "260 grams satijn papier",
     "260grHandMade": "260 grams geschept papier"
-  }
+  },
+  "contactPage": {
+    "adressTitle": "Bezoek ons",
+    "contactUs": "Neem contact op",
+    "sendMessage": "Of stuur direct een bericht",
+    "messageSubject": "Onderwerp",
+    "messageContent": "Bericht",
+    "messageSubmit": "Verzend",
+    "messageAlert": "Vergeet niet uw contact gegevens te vermelden."
+  },
+  "placeHolderText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
 }

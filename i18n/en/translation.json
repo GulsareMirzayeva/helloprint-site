@@ -111,7 +111,8 @@
       "tableHead": "Flex / Vinyl",
       "frontChestLogo": "Front chest logo",
       "frontBackLarge": "Front or back large",
-      "frontSmallBackLarge": "Front small and back large"
+      "frontSmallBackLarge": "Front small and back large",
+      "tableTitle": "Print on flex material"
     },
     "pricingDtg": {
       "tableHead": "DTG",
@@ -119,7 +120,8 @@
       "tableHeadcolored": "Textile Colour",
       "frontChestLogo": "Front chest logo",
       "frontBackLarge": "Front or back large",
-      "frontSmallBackLarge": "Front small and back large"
+      "frontSmallBackLarge": "Front small and back large",
+      "tableTitle": "Print directly on clothing"
     }
   },
   "copyPrintPage": {
@@ -156,5 +158,15 @@
     "250gr": "250 grams paper",
     "260grSatin": "260 grams satin paper",
     "260grHandMade": "260 grams handmade paper"
-  }
+  },
+  "contactPage": {
+    "adressTitle": "Visit us",
+    "contactUs": "Contact us",
+    "sendMessage": "Or send a direct message",
+    "messageSubject": "Subject",
+    "messageContent": "Message",
+    "messageSubmit": "Send",
+    "messageAlert": "Don't forget to include your contact details."
+  },
+  "placeHolderText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
 }
