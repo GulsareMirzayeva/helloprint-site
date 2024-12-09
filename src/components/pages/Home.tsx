@@ -6,7 +6,7 @@ import ShopInfo from '../home/ShopInfo';
 
 export default function Home() {
   return (
-    <section className="flex flex-col w-full justify-start items-center pb-8 overflow-scroll">
+    <section className="flex flex-col w-full justify-start items-center overflow-scroll">
       <WelcomeMessage />
       <ShopCategories />
       <ShopInfo />
