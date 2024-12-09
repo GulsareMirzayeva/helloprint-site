@@ -81,7 +81,7 @@ export default function Header() {
 
   return (
     <header>
-      <nav className="flex justify-center gap-16 items-center shadow-md h-16">
+      <nav className="relative z-50 flex justify-center gap-16 items-center shadow-md h-14">
         <Link
           className={`p-1 flex items-center cursor-default border-b-2 ${
             location.pathname === '/'
