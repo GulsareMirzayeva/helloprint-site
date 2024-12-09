@@ -66,7 +66,7 @@ export default function PricingTable({
           {units.map((unit, index) => {
             return (
               <td key={index} className="border border-gray-300 px-4 py-2">
-                {unit}
+                <i>{unit}</i>
               </td>
             );
           })}
@@ -80,7 +80,9 @@ export default function PricingTable({
           return (
             <tr key={rowIndex} className="border odd:bg-white even:bg-gray-50">
               {/* Create the table cell that contains the option ("1-00" or "textile" for example) */}
-              <td className="border border-gray-300 px-4 py-2">{row.option}</td>
+              <td className="border border-gray-300 px-4 py-2">
+                <b>{row.option}</b>
+              </td>
 
               {/* For each option, iterate through the prices and display them in the corresponding column */}
               {row.prices !== undefined ? (

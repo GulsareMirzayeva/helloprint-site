@@ -13,7 +13,7 @@ export default function SendMessage() {
   return (
     <section className="flex justify-center items-center w-full py-8 bg-gray-100">
       <div className="flex">
-        <div className="flex flex-col self-start w-[470px]">
+        <div className="flex flex-col self-start w-[450px]">
           <TextBlock value="contactPage.contactUs" variant="title" />
           <div className="pb-8">
             <p className="text-md">
@@ -42,7 +42,7 @@ export default function SendMessage() {
           />
         </div>
 
-        <div className="flex flex-col">
+        <div className="flex flex-col pb-4 pl-8 border-l-2 border-[#FB0036]">
           <TextBlock value="contactPage.sendMessage" variant="title" />
           <i>
             <TextBlock value="contactPage.messageAlert" variant="body" />

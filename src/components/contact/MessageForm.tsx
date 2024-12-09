@@ -7,15 +7,11 @@ export default function MessageForm() {
   return (
     <form className="flex flex-col pt-10">
       <div className="mb-2">
-        <b>
-          <TextBlock value="contactPage.messageSubject" variant="body" />
-        </b>
+        <TextBlock value="contactPage.messageSubject" variant="body" />
         <input type="text" className="w-[400px] rounded-md mt-1" />
       </div>
       <div className="mb-2">
-        <b>
-          <TextBlock value="contactPage.messageContent" variant="body" />
-        </b>
+        <TextBlock value="contactPage.messageContent" variant="body" />
         <textarea className="rounded-md w-[400px] h-[140px] mt-1" />
       </div>
       <button
