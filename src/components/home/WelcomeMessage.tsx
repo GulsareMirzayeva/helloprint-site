@@ -5,7 +5,7 @@ export default function WelcomeMessage() {
   const { t } = useTranslation();
 
   return (
-    <section className="flex justify-center w-full mt-24">
+    <section className="flex justify-center w-full mt-20">
       <div className="flex justify-center">
         <div className="flex">
           <img
