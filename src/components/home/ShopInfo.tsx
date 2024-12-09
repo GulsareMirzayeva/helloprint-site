@@ -1,5 +1,6 @@
 import PhoneIcon from '@mui/icons-material/Phone';
 import AlternateEmailIcon from '@mui/icons-material/AlternateEmail';
+import EmailIcon from '@mui/icons-material/Email';
 import { Trans, useTranslation } from 'react-i18next';
 
 export default function ShopInfo() {
@@ -34,6 +35,12 @@ export default function ShopInfo() {
             />
           </p>
           <div className="flex pt-8">
+            <p className="text-2xl font-semibold">
+              <EmailIcon className="mr-2" />
+              {t('shopInfo.contact.contactForm')}
+            </p>
+          </div>
+          <div className="flex pt-4">
             <AlternateEmailIcon className="mt-1 mr-2" />
             <p className="text-2xl font-semibold">
               {t('shopInfo.contact.email')}
