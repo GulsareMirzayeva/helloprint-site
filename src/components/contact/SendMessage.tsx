@@ -11,7 +11,7 @@ export default function SendMessage() {
   useTranslation();
 
   return (
-    <section className="flex justify-center items-center w-full py-8 bg-gray-100">
+    <section className="flex justify-center items-center w-full py-8 ">
       <div className="flex">
         <div className="flex flex-col self-start w-[450px]">
           <TextBlock value="contactPage.contactUs" variant="title" />
@@ -38,7 +38,7 @@ export default function SendMessage() {
           </div>
           <img
             src={contactPicture}
-            className="h-[230px] w-[337px] rounded-xl"
+            className="h-[250px] w-[370px] rounded-xl"
           />
         </div>
 
