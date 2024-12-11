@@ -6,7 +6,7 @@ import {
   useState,
 } from 'react';
 import { getPrices } from '../api/getPrices';
-
+import { shopInfo } from '../lib/contactInfo';
 import { DataContextType, Prices } from '../lib/types/dataContextTypes';
 
 const DataContext = createContext<DataContextType | undefined>(undefined);
@@ -31,7 +31,15 @@ export function DataProvider({ children }: { children: ReactNode }) {
 
   return (
     <DataContext.Provider
-      value={{ prices, error, isLoading, setPrices, setError, setIsLoading }}
+      value={{
+        shopInfo,
+        prices,
+        error,
+        isLoading,
+        setPrices,
+        setError,
+        setIsLoading,
+      }}
     >
       {children}
     </DataContext.Provider>

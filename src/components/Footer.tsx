@@ -3,9 +3,11 @@ import AlternateEmailIcon from '@mui/icons-material/AlternateEmail';
 import FacebookIcon from '@mui/icons-material/Facebook';
 
 import { useTranslation } from 'react-i18next';
+import { useData } from '../context/DataContext';
 
 export default function Footer() {
   const { t } = useTranslation();
+  const { shopInfo } = useData();
 
   return (
     <div className="flex justify-center w-full border-t-2 border-[#FB0036] py-2">
@@ -38,11 +40,12 @@ export default function Footer() {
         </div>
         <div>
           <p className="text-sm font-bold pb-2">{t('shopInfo.adress.title')}</p>
-          <p className="text-xs">Copy & Printshop</p>
-          <p className="text-xs">Straatnaam 123</p>
-          <p className="text-xs">1234 AB</p>
+          <p className="text-xs">{shopInfo.name}</p>
+          <p className="text-xs">{shopInfo.ardress}</p>
+          <p className="text-xs">{shopInfo.zipCode}</p>
           <p className="text-xs">
-            Groningen, {t('shopInfo.adress.countryName')}
+            {shopInfo.town},<br />
+            {t('shopInfo.adress.countryName')}
           </p>
           <a className="text-xs" href="">
             {t('shopInfo.adress.visitGoogleMaps')}
@@ -52,11 +55,11 @@ export default function Footer() {
           <p className="text-sm font-bold pb-2">Contact</p>
           <p className="text-xs">
             <PhoneIcon className="mr-1" style={{ fontSize: '14px' }} />
-            050-1234567
+            {shopInfo.telNo}
           </p>
           <a className="text-xs">
             <AlternateEmailIcon className="mr-1" style={{ fontSize: '14px' }} />
-            info@mail.nl
+            {shopInfo.email}
           </a>
           <a className="text-xs cursor-pointer">
             <FacebookIcon
@@ -73,11 +76,11 @@ export default function Footer() {
           <p className="text-xs font-semibold">
             {t('shopInfo.openingHours.midweeks')}
           </p>
-          <p className="text-xs">09:00 - 18:00</p>
+          <p className="text-xs">{shopInfo.openingHoursMondayToFriday}</p>
           <p className="text-xs font-semibold">
             {t('shopInfo.openingHours.saturday')}
           </p>
-          <p className="text-xs">10:00 - 17:00</p>
+          <p className="text-xs">{shopInfo.openingHoursSaturday}</p>
           <p className="text-xs font-semibold">
             {t('shopInfo.openingHours.sunday')}
           </p>

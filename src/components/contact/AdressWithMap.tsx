@@ -1,17 +1,19 @@
 import { useTranslation } from 'react-i18next';
 import { TextBlock } from '../elementTemplates/TextBlock';
 import GoogleMap from './GoogleMap';
+import { useData } from '../../context/DataContext';
 
 export default function AdressWithMap() {
   const { t } = useTranslation();
+  const { shopInfo } = useData();
   return (
     <section className="flex w-full gap-20 py-14 bg-gray-100">
       <div className="flex flex-col w-full h-ful items-end">
         <TextBlock value="contactPage.adressTitle" variant="title" />
-        <p className="text-md">Copy & Printshop</p>
-        <p className="text-md">Straatnaam 123</p>
-        <p className="text-md">1234 AB</p>
-        <p className="text-md">Groningen,</p>
+        <p className="text-md">{shopInfo.name}</p>
+        <p className="text-md">{shopInfo.adress}</p>
+        <p className="text-md">{shopInfo.zipCode}</p>
+        <p className="text-md">{shopInfo.town},</p>
         <p className="text-md">{t('shopInfo.adress.countryName')}</p>
       </div>
       <div>
@@ -22,11 +24,11 @@ export default function AdressWithMap() {
         <p className="text-sm font-semibold">
           {t('shopInfo.openingHours.midweeks')}
         </p>
-        <p className="text-md">09:00 - 18:00</p>
+        <p className="text-md">{shopInfo.openingHoursMondayToFriday}</p>
         <p className="text-sm font-semibold">
           {t('shopInfo.openingHours.saturday')}
         </p>
-        <p className="text-md">10:00 - 17:00</p>
+        <p className="text-md">{shopInfo.openingHoursSaturday}</p>
         <p className="text-sm font-semibold">
           {t('shopInfo.openingHours.sunday')}
         </p>

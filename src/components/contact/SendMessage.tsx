@@ -5,10 +5,13 @@ import { useTranslation } from 'react-i18next';
 import { TextBlock } from '../elementTemplates/TextBlock';
 import contactPicture from '../../assets//contact-picture.jpg';
 import MessageForm from './MessageForm';
+import { useData } from '../../context/DataContext';
 
 export default function SendMessage() {
   // Subscribes the component to i18n language so when the language changes, the content will be translated inmediatly
   useTranslation();
+
+  const { shopInfo } = useData();
 
   return (
     <section className="flex justify-center items-center w-full py-8 ">
@@ -18,14 +21,14 @@ export default function SendMessage() {
           <div className="pb-8">
             <p className="text-md">
               <PhoneIcon className="mr-1" style={{ fontSize: '14px' }} />
-              050-1234567
+              {shopInfo.telNo}
             </p>
             <a className="text-md">
               <AlternateEmailIcon
                 className="mr-1"
                 style={{ fontSize: '14px' }}
               />
-              info@mail.nl
+              {shopInfo.email}
             </a>
             <br />
             <a className="text-md cursor-pointer">

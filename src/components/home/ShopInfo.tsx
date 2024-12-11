@@ -2,9 +2,11 @@ import PhoneIcon from '@mui/icons-material/Phone';
 import AlternateEmailIcon from '@mui/icons-material/AlternateEmail';
 import EmailIcon from '@mui/icons-material/Email';
 import { Trans, useTranslation } from 'react-i18next';
+import { useData } from '../../context/DataContext';
 
 export default function ShopInfo() {
   const { t } = useTranslation();
+  const { shopInfo } = useData();
 
   return (
     <section className="flex justify-center w-full py-10 bg-gradient-radial from-[#fd3964] via-[#FA2150] to-[#FB0036]">
@@ -14,11 +16,11 @@ export default function ShopInfo() {
           <p className="text-2xl font-semibold">
             {t('shopInfo.openingHours.midweeks')}
           </p>
-          <p className="text-xl mb-4">09:00 - 18:00</p>
+          <p className="text-xl mb-4">{shopInfo.openingHoursMondayToFriday}</p>
           <p className="text-2xl font-semibold">
             {t('shopInfo.openingHours.saturday')}
           </p>
-          <p className="text-xl mb-4">10:00 - 17:00</p>
+          <p className="text-xl mb-4">{shopInfo.openingHoursSaturday}</p>
           <p className="text-2xl font-semibold">
             {t('shopInfo.openingHours.sunday')}
           </p>
@@ -42,15 +44,11 @@ export default function ShopInfo() {
           </div>
           <div className="flex pt-4">
             <AlternateEmailIcon className="mt-1 mr-2" />
-            <p className="text-2xl font-semibold">
-              {t('shopInfo.contact.email')}
-            </p>
+            <p className="text-2xl font-semibold">{shopInfo.email}</p>
           </div>
           <div className="flex pt-4 ">
             <PhoneIcon className="mt-1 mr-2" />
-            <p className="text-2xl font-semibold">
-              {t('shopInfo.contact.telNr')}
-            </p>
+            <p className="text-2xl font-semibold">{shopInfo.telNo}</p>
           </div>
         </div>
       </div>
