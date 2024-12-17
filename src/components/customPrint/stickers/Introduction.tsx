@@ -4,7 +4,7 @@ import { TextBlock } from '../../elementTemplates/TextBlock';
 export default function IntroductionCustomPrint() {
   const { t } = useTranslation();
   return (
-    <div className="flex justify-center items-center w-full mt-10 h-full gap-12">
+    <div className="flex justify-center items-center w-full h-96 mt-10 gap-12">
       <div className=" w-[680px] pt-4 h-full">
         <div>
           <TextBlock value="customPrintPage.stickers.title" variant="title" />
@@ -27,15 +27,6 @@ export default function IntroductionCustomPrint() {
             <li>{t('customPrintPage.stickers.listItem3')}</li>
             <li>{t('customPrintPage.stickers.listItem4')}</li>
           </ul>
-          <br />
-          <TextBlock
-            value="customPrintPage.stickers.subtitleLargeFormat"
-            variant="subTitle"
-          />
-          <TextBlock
-            value="customPrintPage.stickers.largeFormatContent"
-            variant="body"
-          />
         </div>
       </div>
     </div>

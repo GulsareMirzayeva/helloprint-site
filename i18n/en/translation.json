@@ -123,12 +123,9 @@
       "tableTitle": "Print directly on clothing"
     }
   },
-  "customPrindtPage": {
-    "title": "Stickers",
-    "introduction": "Our stickers are available in various sizes, shapes, and quantities, fully tailored to your needs. Whether you require round, oval, large, or small stickers, we offer the perfect solution."
-  },
   "customPrintPage": {
     "stickers": {
+      "material": "Sticker",
       "title": "Stickers",
       "introduction": "Our stickers are available in various sizes, shapes, and quantities, fully tailored to your needs. Whether you require round, oval, large, or small stickers, we offer the perfect solution.",
       "subtitleLargeFormat": "Large-format",
@@ -138,7 +135,10 @@
       "listItem1": "White vinyl",
       "listItem2": "High gloss",
       "listItem3": "Self-adhesive",
-      "listItem4": "UV resistant"
+      "listItem4": "UV resistant",
+      "tableHead": "Price overview",
+      "perA4": "A4",
+      "perSquareMeter": "Square metre"
     }
   },
   "copyPrintPage": {
@@ -161,7 +161,9 @@
     "amount": "Amount",
     "perPrint": "Price per print",
     "prints": "Prints",
-    "clothingPiece": "Clothing piece"
+    "clothingPiece": "Clothing piece",
+    "material": "Material",
+    "format": "Format"
   },
   "paperTypes": {
     "80gr": "80 grams paper",

@@ -132,6 +132,7 @@
   },
   "customPrintPage": {
     "stickers": {
+      "material": "Sticker",
       "title": "Stickers",
       "introduction": "Onze stickers zijn verkrijgbaar in diverse formaten, vormen en oplages, geheel afgestemd op uw wensen. Of u nu ronde, ovale, grote of kleine stickers nodig heeft, wij bieden de ideale oplossing.",
       "subtitleLargeFormat": "Groot formaat",
@@ -141,7 +142,10 @@
       "listItem1": "Wit vinyl",
       "listItem2": "Hoogglans",
       "listItem3": "Zelfklevend",
-      "listItem4": "UV bestendig"
+      "listItem4": "UV bestendig",
+      "tableHead": "Prijsoverzicht",
+      "perA4": "A4",
+      "perSquareMeter": "Vierkante meter"
     }
   },
   "copyPrintPage": {
@@ -164,7 +168,9 @@
     "amount": "Aantal",
     "perPrint": "Prijs per print",
     "prints": "Prints",
-    "clothingPiece": "Kledingstuk"
+    "clothingPiece": "Kledingstuk",
+    "material": "Materiaal",
+    "format": "Formaat"
   },
   "paperTypes": {
     "80gr": "80 grams papier",

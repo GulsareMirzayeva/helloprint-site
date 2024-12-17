@@ -502,8 +502,12 @@
         }
       },
       "stickers": {
-        "perA4": 8.95,
-        "perSquareMeter": 69
+        "A4": {
+          "perA4": 8.95
+        },
+        "squareMeter": {
+          "perMeter": 69
+        }
       },
       "cards": {
         "print": {

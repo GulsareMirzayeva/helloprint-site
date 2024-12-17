@@ -36,6 +36,11 @@ const dtgCategories: string[] = [
   'customClothingPage.pricingDtg.frontSmallBackLarge',
 ];
 
+const stickersCategories: string[] = [
+  'customPrintPage.stickers.perA4',
+  'customPrintPage.stickers.perSquareMeter',
+];
+
 export {
   splitPriceOptions,
   mediumSplitPriceOptions,
@@ -50,4 +55,5 @@ export {
   textileCategories,
   flexCategories,
   dtgCategories,
+  stickersCategories,
 };
