@@ -97,7 +97,7 @@
       "listItem2": "Printing on your own clothing is at your own risk"
     },
     "pricingTextile": {
-      "title": "Price overview",
+      "tableTitle": "Create unique clothing",
       "tableHeadType": "Textile piece",
       "tableHeadBlackWhite": "Black / White",
       "tableHeadColor": "Colour",
@@ -121,6 +121,24 @@
       "frontBackLarge": "Front or back large",
       "frontSmallBackLarge": "Front small and back large",
       "tableTitle": "Print directly on clothing"
+    }
+  },
+  "customPrindtPage": {
+    "title": "Stickers",
+    "introduction": "Our stickers are available in various sizes, shapes, and quantities, fully tailored to your needs. Whether you require round, oval, large, or small stickers, we offer the perfect solution."
+  },
+  "customPrintPage": {
+    "stickers": {
+      "title": "Stickers",
+      "introduction": "Our stickers are available in various sizes, shapes, and quantities, fully tailored to your needs. Whether you require round, oval, large, or small stickers, we offer the perfect solution.",
+      "subtitleLargeFormat": "Large-format",
+      "largeFormatContent": "Large-format stickers can easily be ordered individually.",
+      "materialTitle": "Material",
+      "materialContent": "All stickers are produced on high-gloss, self-adhesive white vinyl of premium quality, perfectly suited for a wide range of applications.",
+      "listItem1": "White vinyl",
+      "listItem2": "High gloss",
+      "listItem3": "Self-adhesive",
+      "listItem4": "UV resistant"
     }
   },
   "copyPrintPage": {

@@ -6,7 +6,7 @@ import CustomClothing from './CustomClothing';
 import Flyers from './Flyers';
 import Folders from './Folders';
 import Posters from './Posters';
-import Stickers from './Stickers';
+import Stickers from './customPrint/Stickers';
 import ErrorPage from './ErrorPage';
 
 export {
