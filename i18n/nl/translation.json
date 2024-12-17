@@ -146,6 +146,12 @@
       "tableHead": "Prijsoverzicht",
       "perA4": "A4",
       "perSquareMeter": "Vierkante meter"
+    },
+    "cards": {
+      "title": "Kaarten",
+      "introduction": "De minimale afname bedraagt 100 stuks. De kaartjes worden gedrukt op 350 grams papier en de prijzen zijn gebaseerd op één en hetzelfde bestand. Voor dubbelgevouwen visitekaartjes geldt een verdubbeling van de prijs. De kaartjes worden netjes gesneden en geleverd in een plastic bewaardoosje.",
+      "digitalPrint": "Digitaal geprint",
+      "deliveryTime": "Levertijd 1-2 werkdagen"
     }
   },
   "copyPrintPage": {
@@ -168,6 +174,7 @@
     "amount": "Aantal",
     "perPrint": "Prijs per print",
     "prints": "Prints",
+    "price": "Prijs",
     "clothingPiece": "Kledingstuk",
     "material": "Materiaal",
     "format": "Formaat"
@@ -183,7 +190,8 @@
     "190grGloss": "190 grams glanzend papier",
     "250gr": "250 grams papier",
     "260grSatin": "260 grams satijn papier",
-    "260grHandMade": "260 grams geschept papier"
+    "260grHandMade": "260 grams geschept papier",
+    "350gr": "350 grams papier"
   },
   "contactPage": {
     "adressTitle": "Bezoek ons",

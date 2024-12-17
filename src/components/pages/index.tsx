@@ -1,5 +1,5 @@
 import Home from './Home';
-import BusinessCards from './BusinessCards';
+import Cards from './Cards';
 import Contact from './Contact';
 import CopyPrint from './CopyPrint';
 import CustomClothing from './CustomClothing';
@@ -11,7 +11,7 @@ import ErrorPage from './ErrorPage';
 
 export {
   Home,
-  BusinessCards,
+  Cards,
   Contact,
   CopyPrint,
   CustomClothing,

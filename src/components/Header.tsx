@@ -143,7 +143,7 @@ export default function Header() {
                 </li>
               </Link>
               <Link
-                to="/custom-printing/business-cards"
+                to="/custom-printing/cards"
                 onClick={handleAccordionLinkClick}
               >
                 <li className="p-2 hover:bg-gray-200 cursor-default">

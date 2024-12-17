@@ -14,15 +14,8 @@ export default function CopyPrintPricing() {
   }
 
   // Get all prices for the "copy & print" page that will be used
-  const pricesBlackWhite = [
-    ...Object.values(prices.copyPrint.A4.blackWhite),
-    ...Object.values(prices.copyPrint.A4.blackWhite),
-  ];
-
-  const pricesColor = [
-    ...Object.values(prices.copyPrint.A4.color),
-    ...Object.values(prices.copyPrint.A4.color),
-  ];
+  const pricesBlackWhite = [...Object.values(prices.copyPrint.A4.blackWhite)];
+  const pricesColor = [...Object.values(prices.copyPrint.A4.color)];
 
   // Table headers for the 'Flex' category. An empty cell is added because all the prices are the same
   const headerTitles: string[] = [

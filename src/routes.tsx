@@ -2,7 +2,7 @@ import { createBrowserRouter } from 'react-router-dom';
 import App from './App';
 import {
   Home,
-  BusinessCards,
+  Cards,
   Contact,
   CopyPrint,
   CustomClothing,
@@ -40,8 +40,8 @@ const router = createBrowserRouter([
         element: <Stickers />,
       },
       {
-        path: 'custom-printing/business-cards',
-        element: <BusinessCards />,
+        path: 'custom-printing/cards',
+        element: <Cards />,
       },
       {
         path: 'custom-printing/flyers',
