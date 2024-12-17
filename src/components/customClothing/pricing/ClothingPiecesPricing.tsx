@@ -4,6 +4,7 @@ import { useData } from '../../../context/DataContext';
 import { useTranslation } from 'react-i18next';
 import { translateTextOptions } from '../../../utils/helperFunctions';
 import clothing from '../../../assets/custom-clothing/clothing-images.png';
+import { TextBlock } from '../../elementTemplates/TextBlock';
 
 export default function ClothingPiecesPricing() {
   const { prices } = useData();
@@ -32,9 +33,16 @@ export default function ClothingPiecesPricing() {
   ];
 
   return (
-    <div className="flex justify-center items-center w-full mt-14 pb-4 pt-12 gap-12 bg-gray-100">
+    <div className="flex justify-center items-end w-full mt-14 pb-4 pt-12 gap-12 bg-gray-100">
       <div className="flex gap-24">
         <div>
+          <div className="pb-4 w-[600px]">
+            <TextBlock
+              value="customClothingPage.pricingTextile.tableTitle"
+              variant="subTitle"
+            />
+            <TextBlock value="placeHolderText" variant="body" />
+          </div>
           {/* Table to display "Textile" prices */}
           <PricingTable
             headerTitles={headerTitlesTextile}
@@ -43,7 +51,7 @@ export default function ClothingPiecesPricing() {
             prices={pricePathsTextile}
           />
         </div>
-        <div>
+        <div className="flex self-center">
           {/* Display images of clothing pieces, next to the pricing table of the "Textile" category */}
           <img src={clothing} alt="" />
         </div>

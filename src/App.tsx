@@ -2,7 +2,6 @@ import { Outlet } from 'react-router-dom';
 import Header from './components/Header';
 
 import './utils/i18';
-// import ErrorPage from './components/pages/ErrorPage';
 
 export default function App() {
   return (
@@ -10,7 +9,6 @@ export default function App() {
       <Header />
       <div className="flex flex-grow h-full overflow-scroll">
         <Outlet />
-        {/* <ErrorPage error="Loading content" /> */}
       </div>
     </div>
   );

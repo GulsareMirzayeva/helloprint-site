@@ -17,7 +17,7 @@ const router = createBrowserRouter([
   {
     path: '/',
     element: <App />,
-    errorElement: <ErrorPage error={''} />,
+    errorElement: <ErrorPage error={`This page doesn't exist`} />,
     children: [
       {
         index: true, // Set this page as default "Homepage"
