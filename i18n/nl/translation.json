@@ -151,7 +151,11 @@
       "title": "Kaarten",
       "introduction": "De minimale afname bedraagt 100 stuks. De kaartjes worden gedrukt op 350 grams papier en de prijzen zijn gebaseerd op één en hetzelfde bestand. Voor dubbelgevouwen visitekaartjes geldt een verdubbeling van de prijs. De kaartjes worden netjes gesneden en geleverd in een plastic bewaardoosje.",
       "digitalPrint": "Digitaal geprint",
-      "deliveryTime": "Levertijd 1-2 werkdagen"
+      "printDeliveryTime": "Levertijd 1-2 werkdagen",
+      "PressPrint": "Drukwerk",
+      "pressSingleSided": "Enkelzijdig UV-lak glanzend",
+      "pressDoubleSided": "Dubbelzijdig dispersielak mat",
+      "pressDeliveryTime": "Levertijd 7 werkdagen*"
     }
   },
   "copyPrintPage": {
@@ -177,7 +181,10 @@
     "price": "Prijs",
     "clothingPiece": "Kledingstuk",
     "material": "Materiaal",
-    "format": "Formaat"
+    "format": "Formaat",
+    "gloss": "glanzend",
+    "matte": "mat",
+    "cards": "Kaarten"
   },
   "paperTypes": {
     "80gr": "80 grams papier",
@@ -191,7 +198,8 @@
     "250gr": "250 grams papier",
     "260grSatin": "260 grams satijn papier",
     "260grHandMade": "260 grams geschept papier",
-    "350gr": "350 grams papier"
+    "350gr": "350 grams papier",
+    "400gr": "400 grams papier houtvrij mc (maco) mat"
   },
   "contactPage": {
     "adressTitle": "Bezoek ons",

@@ -541,21 +541,23 @@
           }
         },
         "customPrint": {
-          "500": {
-            "singleSide": 55,
-            "doubleSide": 50
-          },
-          "1000": {
-            "singleSide": 69,
-            "doubleSide": 65
-          },
-          "2500": {
-            "singleSide": 89,
-            "doubleSide": 79
-          },
-          "5000": {
-            "singleSide": 130,
-            "doubleSide": 99
+          "color": {
+            "500": {
+              "singleSide": 55,
+              "doubleSide": 50
+            },
+            "1000": {
+              "singleSide": 69,
+              "doubleSide": 65
+            },
+            "2500": {
+              "singleSide": 89,
+              "doubleSide": 79
+            },
+            "5000": {
+              "singleSide": 130,
+              "doubleSide": 99
+            }
           }
         }
       }

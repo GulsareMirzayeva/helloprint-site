@@ -1,0 +1,64 @@
+import PricingTable from '../../../elementTemplates/PricingTable';
+import { shortBulkPriceOptions } from '../../../../lib/priceCategories';
+import { useData } from '../../../../context/DataContext';
+import { useTranslation } from 'react-i18next';
+import { TextBlock } from '../../../elementTemplates/TextBlock';
+
+export default function CardsPressPricing() {
+  const { prices } = useData();
+  const { t } = useTranslation();
+
+  // Let user know if data is loading
+  if (!prices) {
+    return <div>Loading...</div>;
+  }
+
+  // Get all prices for the "copy & print" page that will be used
+  const pricesPressPrint = [
+    ...Object.values(prices.customPrint.cards.customPrint.color),
+  ];
+
+  // Table headers for the 'Flex' category. An empty cell is added because all the prices are the same
+  const headerTitles: string[] = [
+    t('commonWords.cards'),
+    t('customPrintPage.cards.pressDoubleSided'),
+    t('customPrintPage.cards.pressSingleSided'),
+  ];
+
+  const units: string[] = [
+    t('commonWords.amount'),
+    t('commonWords.price'),
+    t('commonWords.price'),
+  ];
+
+  return (
+    <div className="flex flex-col justify-center items-center gap-4 py-4 pb-10 w-full bg-white">
+      <div className="flex items-baseline">
+        <TextBlock value="customPrintPage.cards.PressPrint" variant="title" />
+        &nbsp;
+        <TextBlock
+          value="customPrintPage.cards.pressDeliveryTime"
+          variant="body"
+        />
+      </div>
+      <div className="flex justify-center w-full">
+        <div>
+          {/* Display a title and the papertype at the top of the table */}
+          <div className="flex items-baseline">
+            <TextBlock value="commonWords.color" variant="subTitle" />
+            &nbsp;
+            <TextBlock value="paperTypes.400gr" variant="body" />
+          </div>
+
+          {/* Render a table for the "Black & White" category */}
+          <PricingTable
+            headerTitles={headerTitles}
+            units={units}
+            options={shortBulkPriceOptions}
+            prices={pricesPressPrint}
+          />
+        </div>
+      </div>
+    </div>
+  );
+}

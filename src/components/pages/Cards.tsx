@@ -1,12 +1,14 @@
 import IntroductionCards from '../customPrint/cards/Introduction';
-import CardsPricing from '../customPrint/cards/pricing/CardsPricing';
+import CardsDigitalPrintPricing from '../customPrint/cards/pricing/CardsDigitalPrintPricing';
+import CardsPressPricing from '../customPrint/cards/pricing/CardsPressPricing';
 import Footer from '../Footer';
 
 export default function Cards() {
   return (
     <section className="flex flex-col w-full justify-start items-center overflow-scroll">
       <IntroductionCards />
-      <CardsPricing />
+      <CardsDigitalPrintPricing />
+      <CardsPressPricing />
       <Footer />
     </section>
   );
