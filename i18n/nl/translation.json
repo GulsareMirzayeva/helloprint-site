@@ -5,7 +5,7 @@
     "customPrinting": "Drukwerk",
     "customClothing": "Kleding & Textiel",
     "contact": "Contact",
-    "cards": "Kaarten"
+    "cards": "Visitekaartjes"
   },
   "home": {
     "title": "Welkom bij Copy <br /> & Printshop 't Hartje",
@@ -148,14 +148,14 @@
       "perSquareMeter": "Vierkante meter"
     },
     "cards": {
-      "title": "Kaarten",
+      "title": "Visitekaartjes",
       "introduction": "De minimale afname bedraagt 100 stuks. De kaartjes worden gedrukt op 350 grams papier en de prijzen zijn gebaseerd op één en hetzelfde bestand. Voor dubbelgevouwen visitekaartjes geldt een verdubbeling van de prijs. De kaartjes worden netjes gesneden en geleverd in een plastic bewaardoosje.",
       "digitalPrint": "Digitaal geprint",
-      "printDeliveryTime": "Levertijd 1-2 werkdagen",
-      "PressPrint": "Drukwerk",
-      "pressSingleSided": "Enkelzijdig UV-lak glanzend",
-      "pressDoubleSided": "Dubbelzijdig dispersielak mat",
-      "pressDeliveryTime": "Levertijd 7 werkdagen*"
+      "digitalPrintDeliveryTime": "Levertijd 1-2 werkdagen",
+      "offsetPrint": "Drukwerk",
+      "offsetPrintSingleSided": "Enkelzijdig - UV-lak glanzend",
+      "offsetPrintDoubleSided": "Dubbelzijdig - Dispersielak mat",
+      "offsetPrintDeliveryTime": "Levertijd 7 werkdagen*"
     }
   },
   "copyPrintPage": {
