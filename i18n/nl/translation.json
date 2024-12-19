@@ -150,11 +150,15 @@
     "cards": {
       "title": "Visitekaartjes",
       "introduction": "De minimale afname bedraagt 100 stuks. De kaartjes worden gedrukt op 350 grams papier en de prijzen zijn gebaseerd op één en hetzelfde bestand. Voor dubbelgevouwen visitekaartjes geldt een verdubbeling van de prijs. De kaartjes worden netjes gesneden en geleverd in een plastic bewaardoosje.",
+
+      "offsetPrintSingleSided": "Enkelzijdig - UV-lak glanzend",
+      "offsetPrintDoubleSided": "Dubbelzijdig - Dispersielak mat"
+    },
+    "flyers": {},
+    "common": {
       "digitalPrint": "DIGITAAL GEPRINT",
       "digitalPrintDeliveryTime": "Levertijd 1-2 werkdagen",
       "offsetPrint": "DRUKWERK",
-      "offsetPrintSingleSided": "Enkelzijdig - UV-lak glanzend",
-      "offsetPrintDoubleSided": "Dubbelzijdig - Dispersielak mat",
       "offsetPrintDeliveryTime": "Levertijd 7 werkdagen*"
     }
   },
@@ -184,7 +188,8 @@
     "format": "Formaat",
     "gloss": "glanzend",
     "matte": "mat",
-    "cards": "Kaarten"
+    "cards": "Kaarten",
+    "flyers": "Flyers"
   },
   "paperTypes": {
     "80gr": "80 grams papier",

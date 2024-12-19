@@ -143,11 +143,14 @@
     "cards": {
       "title": "Business Cards",
       "introduction": "Minimale afname 100 stuks, de kaartjes worden geprint op 350gr.papier. De prijzen zijn op basis van een en het zelfde bestand. Dubbel gevouwen visitekaartjes is prijs keer 2. De kaartjes worden gesneden en u krijgt een plastic bewaardoosje.",
+      "offsetPrintSingleSided": "Single-sided - UV varnish gloss",
+      "offsetPrintDoubleSided": "Double-sided - Dispersion varnish matte"
+    },
+    "flyers": {},
+    "common": {
       "digitalPrint": "DIGITAL PRINTING",
       "digitalPrintDeliveryTime": "Delivery in 1-2 working days",
       "offsetPrint": "OFFSET PRINTING",
-      "offsetPrintSingleSided": "Single-sided - UV varnish gloss",
-      "offsetPrintDoubleSided": "Double-sided - Dispersion varnish matte",
       "offsetPrintDeliveryTime": "Delivery in 7 working days*"
     }
   },
@@ -177,7 +180,8 @@
     "format": "Format",
     "gloss": "gloss",
     "matte": "matte",
-    "cards": "Cards"
+    "cards": "Cards",
+    "flyers": "Flyers"
   },
   "paperTypes": {
     "80gr": "80 grams paper",

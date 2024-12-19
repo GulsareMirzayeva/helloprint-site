@@ -36,14 +36,14 @@ export default function CardsOffsetPrintPricing() {
       <div className="flex items-baseline">
         <div className="flex text-red-600">
           <TextBlock
-            value="customPrintPage.cards.offsetPrint"
+            value="customPrintPage.common.offsetPrint"
             variant="title"
           />
         </div>
         <div className="flex">
           &nbsp; - &nbsp;
           <TextBlock
-            value="customPrintPage.cards.offsetPrintDeliveryTime"
+            value="customPrintPage.common.offsetPrintDeliveryTime"
             variant="body"
           />
         </div>

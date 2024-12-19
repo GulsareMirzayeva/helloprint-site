@@ -38,14 +38,14 @@ export default function CardsDigitalPrintPricing() {
       <div className="flex items-baseline">
         <div className="flex text-red-600">
           <TextBlock
-            value="customPrintPage.cards.digitalPrint"
+            value="customPrintPage.common.digitalPrint"
             variant="title"
           />
         </div>
         <div className="flex">
           &nbsp; - &nbsp;
           <TextBlock
-            value="customPrintPage.cards.digitalPrintDeliveryTime"
+            value="customPrintPage.common.digitalPrintDeliveryTime"
             variant="body"
           />
         </div>
