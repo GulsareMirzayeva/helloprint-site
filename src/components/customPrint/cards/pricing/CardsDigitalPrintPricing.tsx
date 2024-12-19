@@ -34,14 +34,21 @@ export default function CardsDigitalPrintPricing() {
   ];
 
   return (
-    <div className="flex flex-col justify-center items-center w-full gap-4 pt-4 pb-8 bg-gray-100">
+    <div className="flex flex-col justify-center items-center w-full gap-4 py-10 bg-gray-100">
       <div className="flex items-baseline">
-        <TextBlock value="customPrintPage.cards.digitalPrint" variant="title" />
-        &nbsp; - &nbsp;
-        <TextBlock
-          value="customPrintPage.cards.digitalPrintDeliveryTime"
-          variant="body"
-        />
+        <div className="flex text-red-600">
+          <TextBlock
+            value="customPrintPage.cards.digitalPrint"
+            variant="title"
+          />
+        </div>
+        <div className="flex">
+          &nbsp; - &nbsp;
+          <TextBlock
+            value="customPrintPage.cards.digitalPrintDeliveryTime"
+            variant="body"
+          />
+        </div>
       </div>
       <div className="flex justify-center w-full gap-20">
         <div>
