@@ -37,18 +37,18 @@ export default function CardsDigitalPrintPricing() {
     <div className="flex flex-col justify-center items-center w-full gap-4 pt-4 pb-8 bg-gray-100">
       <div className="flex items-baseline">
         <TextBlock value="customPrintPage.cards.digitalPrint" variant="title" />
-        &nbsp;
+        &nbsp; - &nbsp;
         <TextBlock
-          value="customPrintPage.cards.printDeliveryTime"
+          value="customPrintPage.cards.digitalPrintDeliveryTime"
           variant="body"
         />
       </div>
-      <div className="flex justify-center w-full gap-14">
+      <div className="flex justify-center w-full gap-20">
         <div>
           {/* Display a title and the papertype at the top of the table */}
           <div className="flex items-baseline">
             <TextBlock value="commonWords.blackWhite" variant="subTitle" />
-            &nbsp;
+            &nbsp; - &nbsp;
             <TextBlock value="paperTypes.350gr" variant="body" />
           </div>
 
@@ -64,7 +64,7 @@ export default function CardsDigitalPrintPricing() {
           {/* Display a title and the papertype at the top of the table */}
           <div className="flex items-baseline">
             <TextBlock value="commonWords.color" variant="subTitle" />
-            &nbsp;
+            &nbsp; - &nbsp;
             <TextBlock value="paperTypes.350gr" variant="body" />
           </div>
 

@@ -4,7 +4,7 @@ import { useData } from '../../../../context/DataContext';
 import { useTranslation } from 'react-i18next';
 import { TextBlock } from '../../../elementTemplates/TextBlock';
 
-export default function CardsPressPricing() {
+export default function CardsOffsetPrintPricing() {
   const { prices } = useData();
   const { t } = useTranslation();
 
@@ -21,8 +21,8 @@ export default function CardsPressPricing() {
   // Table headers for the 'Flex' category. An empty cell is added because all the prices are the same
   const headerTitles: string[] = [
     t('commonWords.cards'),
-    t('customPrintPage.cards.pressDoubleSided'),
-    t('customPrintPage.cards.pressSingleSided'),
+    t('customPrintPage.cards.offsetPrintSingleSided'),
+    t('customPrintPage.cards.offsetPrintDoubleSided'),
   ];
 
   const units: string[] = [
@@ -34,10 +34,10 @@ export default function CardsPressPricing() {
   return (
     <div className="flex flex-col justify-center items-center gap-4 py-4 pb-10 w-full bg-white">
       <div className="flex items-baseline">
-        <TextBlock value="customPrintPage.cards.PressPrint" variant="title" />
-        &nbsp;
+        <TextBlock value="customPrintPage.cards.offsetPrint" variant="title" />
+        &nbsp; - &nbsp;
         <TextBlock
-          value="customPrintPage.cards.pressDeliveryTime"
+          value="customPrintPage.cards.offsetPrintDeliveryTime"
           variant="body"
         />
       </div>
@@ -46,7 +46,7 @@ export default function CardsPressPricing() {
           {/* Display a title and the papertype at the top of the table */}
           <div className="flex items-baseline">
             <TextBlock value="commonWords.color" variant="subTitle" />
-            &nbsp;
+            &nbsp; - &nbsp;
             <TextBlock value="paperTypes.400gr" variant="body" />
           </div>
 
