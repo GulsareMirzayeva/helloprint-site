@@ -33,15 +33,14 @@ export default function CardsOffsetPrintPricing() {
 
   return (
     <div className="flex flex-col justify-center items-center gap-4 py-10 pb-10 w-full bg-white">
-      <div className="flex items-baseline">
-        <div className="flex text-red-600">
+      <div className="flex flex-col items-center">
+        <div className="flex">
           <TextBlock
             value="customPrintPage.common.offsetPrint"
             variant="title"
           />
         </div>
-        <div className="flex">
-          &nbsp; - &nbsp;
+        <div className="flex text-red-600">
           <TextBlock
             value="customPrintPage.common.offsetPrintDeliveryTime"
             variant="body"

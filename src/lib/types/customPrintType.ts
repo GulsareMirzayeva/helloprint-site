@@ -17,7 +17,7 @@ type FlyersMaterial = {
 
 type CustomPrintFyers = {
   print: FlyersMaterial;
-  customPrint: FlyersMaterial;
+  offsetPrint: FlyersMaterial;
 };
 
 type FolderFoldings = {

@@ -35,15 +35,14 @@ export default function CardsDigitalPrintPricing() {
 
   return (
     <div className="flex flex-col justify-center items-center w-full gap-4 py-10 bg-gray-100">
-      <div className="flex items-baseline">
-        <div className="flex text-red-600">
+      <div className="flex flex-col items-center">
+        <div className="flex flex-col ">
           <TextBlock
             value="customPrintPage.common.digitalPrint"
             variant="title"
           />
         </div>
-        <div className="flex">
-          &nbsp; - &nbsp;
+        <div className="flex text-red-600">
           <TextBlock
             value="customPrintPage.common.digitalPrintDeliveryTime"
             variant="body"
