@@ -150,16 +150,26 @@
     "cards": {
       "title": "Visitekaartjes",
       "introduction": "De minimale afname bedraagt 100 stuks. De kaartjes worden gedrukt op 350 grams papier en de prijzen zijn gebaseerd op één en hetzelfde bestand. Voor dubbelgevouwen visitekaartjes geldt een verdubbeling van de prijs. De kaartjes worden netjes gesneden en geleverd in een plastic bewaardoosje.",
-
       "offsetPrintSingleSided": "Enkelzijdig - UV-lak glanzend",
       "offsetPrintDoubleSided": "Dubbelzijdig - Dispersielak mat"
     },
-    "flyers": {},
+    "flyers": {
+      "title": "Flyers",
+      "introductionFlyers": "Hier vind je een overzicht van de kosten voor het printen van flyers in A5- en A6-formaat, met opties voor enkel- en dubbelzijdig drukken. Kies uit verschillende papiersoorten om de perfecte uitstraling voor jouw flyers te creëren.",
+      "alert": "Klik hieronder op een categorie om de gewenste prijslijst te bekijken."
+    },
+    "folders": {
+      "title": "Folders",
+      "introductionFolders": "Hier vind je een overzicht van de kosten voor het printen van folders in A3- en A4-formaat. Kies uit een 2-slag of 3-slag vouwwijze om jouw boodschap op de juiste manier te presenteren. De tarieven zijn overzichtelijk per papiersoort en oplage weergegeven."
+    },
     "common": {
       "digitalPrint": "DIGITAAL GEPRINT",
-      "digitalPrintDeliveryTime": "Levertijd 1-2 werkdagen",
+      "digitalPrintDeliveryTime": "Levertijd 1-2 werkdagen*",
       "offsetPrint": "DRUKWERK",
-      "offsetPrintDeliveryTime": "Levertijd 7 werkdagen*"
+      "offsetPrintDeliveryTime": "Levertijd 7 werkdagen*",
+      "bifoldOrTrifold": "(2 of 3-slag)",
+      "bifold": "(2-slag)",
+      "trifold": "(3-slag)"
     }
   },
   "copyPrintPage": {
@@ -189,22 +199,35 @@
     "gloss": "glanzend",
     "matte": "mat",
     "cards": "Kaarten",
-    "flyers": "Flyers"
+    "flyers": "Flyers",
+    "folders": "Folders"
   },
   "paperTypes": {
+    "80grWhiteOrColor": "80gr wit of gekleurd papier",
     "80gr": "80 grams papier",
     "90gr": "90 grams papier",
+    "90grShort": "90gr",
     "135gr": "135 grams papier",
+    "135grShort": "135gr",
     "150gr": "150 grams papier",
+    "150grShort": "150gr",
     "160grMat": "160 grams mat papier",
     "160grSatin": "160 grams satijn papier",
     "170gr": "170 grams papier",
+    "170grShort": "170gr",
     "190grGloss": "190 grams glanzend papier",
     "250gr": "250 grams papier",
+    "250grShort": "250gr",
     "260grSatin": "260 grams satijn papier",
     "260grHandMade": "260 grams geschept papier",
     "350gr": "350 grams papier",
     "400gr": "400 grams papier houtvrij mc (maco) mat"
+  },
+  "paperFormats": {
+    "A3": "A3",
+    "A4": "A4",
+    "A5": "A5",
+    "A6": "A6"
   },
   "contactPage": {
     "adressTitle": "Bezoek ons",

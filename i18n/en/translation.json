@@ -146,12 +146,23 @@
       "offsetPrintSingleSided": "Single-sided - UV varnish gloss",
       "offsetPrintDoubleSided": "Double-sided - Dispersion varnish matte"
     },
-    "flyers": {},
+    "flyers": {
+      "title": "Flyers",
+      "introductionFlyers": "Here you will find an overview of the costs for printing flyers in A5 and A6 formats, with options for single- and double-sided printing. Choose from a variety of paper types to create the perfect look for your flyers.",
+      "alert": " Click on the a category below to view the pricing list."
+    },
+    "folders": {
+      "title": "Folders",
+      "introductionFolders": "Here you will find an overview of the costs for printing brochures in A3 and A4 formats. Choose between a bi-fold or tri-fold option to present your message effectively. The rates are clearly displayed by paper type and quantity."
+    },
     "common": {
       "digitalPrint": "DIGITAL PRINTING",
-      "digitalPrintDeliveryTime": "Delivery in 1-2 working days",
+      "digitalPrintDeliveryTime": "Delivery in 1-2 working days*",
       "offsetPrint": "OFFSET PRINTING",
-      "offsetPrintDeliveryTime": "Delivery in 7 working days*"
+      "offsetPrintDeliveryTime": "Delivery in 7 working days*",
+      "bifoldOrTrifold": "(bi-fold or tri-fold)",
+      "bifold": "(bifold)",
+      "trifold": "(trifold)"
     }
   },
   "copyPrintPage": {
@@ -181,22 +192,35 @@
     "gloss": "gloss",
     "matte": "matte",
     "cards": "Cards",
-    "flyers": "Flyers"
+    "flyers": "Flyers",
+    "folders": "Folders"
   },
   "paperTypes": {
+    "80grWhiteOrColor": "80gr white or colored paper",
     "80gr": "80 grams paper",
     "90gr": "90 grams paper",
+    "90grShort": "90gr",
     "135gr": "135 grams paper",
+    "135grShort": "135gr",
     "150gr": "150 grams paper",
+    "150grShort": "150gr",
     "160grMat": "160 grams matte paper",
     "160grSatin": "160 grams satin paper",
     "170gr": "170 grams paper",
+    "170grShort": "170gr",
     "190grGloss": "190 grams gloss paper",
     "250gr": "250 grams paper",
+    "250grShort": "250gr",
     "260grSatin": "260 grams satin paper",
     "260grHandMade": "260 grams handmade paper",
     "350gr": "350 grams paper",
     "400gr": "400 grams paper woodfree mc (maco) matte"
+  },
+  "paperFormats": {
+    "A3": "A3",
+    "A4": "A4",
+    "A5": "A5",
+    "A6": "A6"
   },
   "contactPage": {
     "adressTitle": "Visit us",
