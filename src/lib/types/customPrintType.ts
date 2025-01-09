@@ -21,7 +21,7 @@ type CustomPrintFyers = {
 };
 
 type FolderFoldings = {
-  halfFold?: PricingOptions;
+  halfFold: PricingOptions;
   triFold: PricingOptions;
 };
 
