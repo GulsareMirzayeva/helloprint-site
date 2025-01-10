@@ -9,7 +9,7 @@ export default function ShopInfo() {
   const { shopInfo } = useData();
 
   return (
-    <section className="flex justify-center w-full py-10 bg-gradient-radial from-[#fd3964] via-[#FA2150] to-[#FB0036]">
+    <section className="flex justify-center w-full py-20 bg-gradient-radial from-[#fd3964] via-[#FA2150] to-[#FB0036]">
       <div className="flex flex-col justify-start items-center min-w-[600px] h-80">
         <div className="flex flex-col items-center text-white">
           <p className="text-5xl mb-8">{t('shopInfo.openingHours.title')}</p>
