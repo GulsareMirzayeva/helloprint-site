@@ -133,7 +133,7 @@ export default function Header() {
 
           {/* Accordion content */}
           {isAccordionOpen && (
-            <ul className="absolute top-[calc(100%+13px)] min-w-[105%] bg-white shadow-md rounded-sm">
+            <ul className="absolute top-[calc(100%+9px)] min-w-[105%] bg-white shadow-md rounded-sm">
               <Link
                 to="/custom-printing/stickers"
                 onClick={handleAccordionLinkClick}
