@@ -33,10 +33,10 @@ export default function ClothingPiecesPricing() {
   ];
 
   return (
-    <div className="flex justify-center items-end w-full py-20 gap-12 bg-gray-100">
-      <div className="flex gap-24">
+    <div className="flex justify-center w-full py-20 bg-gray-100">
+      <div className="flex">
         <div>
-          <div className="pb-4 w-[600px]">
+          <div className="pb-4 pr-10">
             <TextBlock
               value="customClothingPage.pricingTextile.tableTitle"
               variant="subTitle"
@@ -51,7 +51,7 @@ export default function ClothingPiecesPricing() {
             prices={pricePathsTextile}
           />
         </div>
-        <div className="flex self-center">
+        <div className="flex self-end w-[680px]">
           {/* Display images of clothing pieces, next to the pricing table of the "Textile" category */}
           <img src={clothing} alt="" />
         </div>

@@ -41,7 +41,7 @@ export default function FlyersDigitalPrintA5Pricing() {
   ];
 
   return (
-    <div className="flex flex-col justify-center items-center w-full py-20 bg-white">
+    <div className="flex flex-col justify-center items-center w-full pb-20 bg-gray-100">
       <div className="flex flex-col items-center justify-center w-full">
         <div className="flex gap-20">
           <div>

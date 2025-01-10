@@ -238,5 +238,5 @@
     "messageSubmit": "Verzend",
     "messageAlert": "Vergeet niet uw contact gegevens te vermelden."
   },
-  "placeHolderText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+  "placeHolderText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit,<br/>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
 }
