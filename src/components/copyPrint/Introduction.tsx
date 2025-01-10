@@ -3,7 +3,7 @@ import { TextBlock } from '../elementTemplates/TextBlock';
 
 export default function IntroductionCopyPrint() {
   return (
-    <div className="flex justify-center items-center w-full mt-14 h-64 gap-12">
+    <div className="flex justify-center items-center w-full my-20 h-64 gap-12">
       {/* Image on top-left-side of the page */}
       <div className="w-60">
         <img src={image1} alt="" />

@@ -33,7 +33,7 @@ export default function ClothingPiecesPricing() {
   ];
 
   return (
-    <div className="flex justify-center items-end w-full mt-14 pb-4 pt-12 gap-12 bg-gray-100">
+    <div className="flex justify-center items-end w-full py-20 gap-12 bg-gray-100">
       <div className="flex gap-24">
         <div>
           <div className="pb-4 w-[600px]">

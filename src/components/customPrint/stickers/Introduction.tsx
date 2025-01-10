@@ -4,7 +4,7 @@ import { TextBlock } from '../../elementTemplates/TextBlock';
 export default function IntroductionCustomPrint() {
   const { t } = useTranslation();
   return (
-    <div className="flex justify-center items-center w-full h-96 mt-10 gap-12">
+    <div className="flex justify-center items-center w-full py-20 gap-12">
       <div className=" w-[680px] pt-4 h-full">
         <div>
           <TextBlock value="customPrintPage.stickers.title" variant="title" />

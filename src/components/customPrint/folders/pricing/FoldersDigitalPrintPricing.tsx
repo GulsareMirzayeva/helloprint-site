@@ -53,7 +53,7 @@ export default function FoldersDigitalPrintPricing() {
   ];
 
   return (
-    <div className="flex flex-col justify-center items-center w-full gap-4 bg-gray-100">
+    <div className="flex flex-col justify-center items-center w-full py-20 gap-4 bg-gray-100">
       <div className="flex flex-col items-center">
         <div className="flex">
           <TextBlock value={digitalPrintTitle} variant="title" />

@@ -30,40 +30,38 @@ export default function CopyPrintPricing() {
   ];
 
   return (
-    <div className="flex justify-center items-center w-full pt-8 pb-14 gap-24 bg-white">
-      <div className="flex justify-center gap-24 py-10 mt-10 w-full bg-gray-100 ">
-        <div>
-          {/* Display a title and the papertype at the top of the table */}
-          <div className="flex items-baseline">
-            <TextBlock value="commonWords.blackWhite" variant="title" />
-            &nbsp;
-            <TextBlock value="paperTypes.80gr" variant="body" />
-          </div>
-
-          {/* Render a table for the "Black & White" category */}
-          <PricingTable
-            headerTitles={headerTitles}
-            units={units}
-            options={splitPriceOptions}
-            prices={pricesBlackWhite}
-          />
+    <div className="flex justify-center gap-24 py-20 w-full bg-gray-100 ">
+      <div>
+        {/* Display a title and the papertype at the top of the table */}
+        <div className="flex items-baseline">
+          <TextBlock value="commonWords.blackWhite" variant="title" />
+          &nbsp;
+          <TextBlock value="paperTypes.80gr" variant="body" />
         </div>
-        <div>
-          {/* Display a title and the papertype at the top of the table */}
-          <div className="flex items-baseline">
-            <TextBlock value="commonWords.color" variant="title" />
-            &nbsp;
-            <TextBlock value="paperTypes.90gr" variant="body" />
-          </div>
 
-          {/* Render a table for the "Color" category */}
-          <PricingTable
-            headerTitles={headerTitles}
-            units={units}
-            options={splitPriceOptions}
-            prices={pricesColor}
-          />
+        {/* Render a table for the "Black & White" category */}
+        <PricingTable
+          headerTitles={headerTitles}
+          units={units}
+          options={splitPriceOptions}
+          prices={pricesBlackWhite}
+        />
+      </div>
+      <div>
+        {/* Display a title and the papertype at the top of the table */}
+        <div className="flex items-baseline">
+          <TextBlock value="commonWords.color" variant="title" />
+          &nbsp;
+          <TextBlock value="paperTypes.90gr" variant="body" />
         </div>
+
+        {/* Render a table for the "Color" category */}
+        <PricingTable
+          headerTitles={headerTitles}
+          units={units}
+          options={splitPriceOptions}
+          prices={pricesColor}
+        />
       </div>
     </div>
   );

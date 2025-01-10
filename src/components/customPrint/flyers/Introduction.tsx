@@ -3,7 +3,7 @@ import { TextBlock } from '../../elementTemplates/TextBlock';
 
 export default function IntroductionFlyers() {
   return (
-    <div className="flex justify-center items-center w-full my-14 gap-12">
+    <div className="flex justify-center items-center w-full py-20 gap-12">
       <div className="w-60">
         <img src={image1} alt="" />
       </div>

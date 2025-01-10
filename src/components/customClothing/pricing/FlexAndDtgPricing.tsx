@@ -45,7 +45,7 @@ export default function FlexAndDtgPricing() {
   ];
 
   return (
-    <div className="flex justify-center items-center max-w-screen-xl pt-8 pb-14 gap-24 bg-white">
+    <div className="flex justify-center items-center max-w-screen-xl py-20 gap-24 bg-white">
       <div>
         <div className="pb-4">
           <TextBlock

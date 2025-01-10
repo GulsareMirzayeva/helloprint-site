@@ -22,8 +22,8 @@ export default function StickersPricing() {
     : [];
 
   return (
-    <div className="flex flex-col items-center w-full mt-14 py-8 gap-8 bg-gray-100">
-      <div className="flex flex-col self-center w-96">
+    <div className="flex flex-col items-center w-full py-20 gap-8 bg-gray-100">
+      <div className="flex flex-col self-center">
         <TextBlock
           value="customPrintPage.stickers.subtitleLargeFormat"
           variant="subTitle"
