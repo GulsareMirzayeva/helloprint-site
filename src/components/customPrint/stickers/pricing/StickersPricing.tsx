@@ -23,30 +23,32 @@ export default function StickersPricing() {
 
   return (
     <div className="flex flex-col items-center w-full py-20 gap-8 bg-gray-100">
-      <div className="flex flex-col self-center">
-        <TextBlock
-          value="customPrintPage.stickers.subtitleLargeFormat"
-          variant="subTitle"
-        />
-        <TextBlock
-          value="customPrintPage.stickers.largeFormatContent"
-          variant="body"
-        />
-      </div>
-      {!pricePathStickers ? (
-        <div>Loading...</div>
-      ) : (
-        <div className="flex gap-24">
-          <div>
-            <PricingTable
-              headerTitles={headerTitleStickers}
-              units={unitStickers}
-              options={translateTextOptions(stickersCategories)}
-              prices={pricePathStickers}
-            />
-          </div>
+      <div>
+        <div className="flex flex-col pb-4">
+          <TextBlock
+            value="customPrintPage.stickers.subtitleLargeFormat"
+            variant="subTitle"
+          />
+          <TextBlock
+            value="customPrintPage.stickers.largeFormatContent"
+            variant="body"
+          />
         </div>
-      )}
+        {!pricePathStickers ? (
+          <div>Loading...</div>
+        ) : (
+          <div className="flex self-center gap-24">
+            <div>
+              <PricingTable
+                headerTitles={headerTitleStickers}
+                units={unitStickers}
+                options={translateTextOptions(stickersCategories)}
+                prices={pricePathStickers}
+              />
+            </div>
+          </div>
+        )}
+      </div>
     </div>
   );
 }
