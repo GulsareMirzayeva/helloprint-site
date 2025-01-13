@@ -14,8 +14,17 @@ const extendedBulkPriceOptions: string[] = [
   '10000',
   '20000',
 ];
+const amountSelection: string[] = ['1-5', '6-10', '10+'];
 
 const paperSizes: string[] = ['A2', 'B2', 'A1', 'B1', 'A0'];
+
+const paperSizesExtended: string[] = [
+  'A2 - 42 x 59,4 cm',
+  'B2 - 50 x 70 cm',
+  'A1 - 59,4 x 84,1 cm',
+  'B1 - 70 x 100 cm',
+  'A0 - 84,1 x 118,9 cm',
+];
 
 const textileCategories: string[] = [
   'customClothingPage.pricingTextile.shirt',
@@ -51,7 +60,9 @@ export {
   bulkPriceOptions,
   shortBulkPriceOptions,
   extendedBulkPriceOptions,
+  amountSelection,
   paperSizes,
+  paperSizesExtended,
   textileCategories,
   flexCategories,
   dtgCategories,

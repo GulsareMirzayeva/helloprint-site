@@ -51,7 +51,7 @@ export default function ClothingPiecesPricing() {
             prices={pricePathsTextile}
           />
         </div>
-        <div className="flex self-end w-[680px]">
+        <div className="flex self-end">
           {/* Display images of clothing pieces, next to the pricing table of the "Textile" category */}
           <img src={clothing} alt="" />
         </div>

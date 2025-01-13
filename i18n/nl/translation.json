@@ -162,6 +162,10 @@
       "title": "Folders",
       "introductionFolders": "Hier vind je een overzicht van de kosten voor het printen van folders in A3- en A4-formaat. Kies uit een 2-slag of 3-slag vouwwijze om jouw boodschap op de juiste manier te presenteren. De tarieven zijn overzichtelijk per papiersoort en oplage weergegeven."
     },
+    "posters": {
+      "title": "Posters",
+      "introductionPosters": "Ontdek hier de mogelijkheden voor het printen van posters. Kies uit een breed scala aan formaten en papiersoorten om jouw poster perfect af te stemmen op jouw behoeften. Of je nu op zoek bent naar een simpele zwart-wit print of een levendige kleurenafdruk, wij hebben de juiste oplossing voor jou. Bekijk de onderstaande opties en vind de ideale combinatie voor jouw project."
+    },
     "common": {
       "digitalPrint": "DIGITAAL GEPRINT",
       "digitalPrintDeliveryTime": "Levertijd 1-2 werkdagen*",
@@ -191,6 +195,7 @@
     "highQuality": "Hoge kwaliteit",
     "amount": "Aantal",
     "perPrint": "Prijs per print",
+    "perPiece": "Prijs per stuk",
     "prints": "Prints",
     "price": "Prijs",
     "clothingPiece": "Kledingstuk",
@@ -200,7 +205,8 @@
     "matte": "mat",
     "cards": "Kaarten",
     "flyers": "Flyers",
-    "folders": "Folders"
+    "folders": "Folders",
+    "posters": "Posters"
   },
   "paperTypes": {
     "80grWhiteOrColor": "80gr wit of gekleurd papier",
@@ -224,10 +230,20 @@
     "400gr": "400 grams papier houtvrij mc (maco) mat"
   },
   "paperFormats": {
+    "A0": "A0",
+    "A1": "A1",
+    "A2": "A2",
     "A3": "A3",
     "A4": "A4",
     "A5": "A5",
-    "A6": "A6"
+    "A6": "A6",
+    "B1": "B1",
+    "B2": "B2"
+  },
+  "postersAmount": {
+    "1-5": "1-5 stuks",
+    "6-10": "6-10 stuks",
+    "10Plus": "10+ stuks"
   },
   "contactPage": {
     "adressTitle": "Bezoek ons",

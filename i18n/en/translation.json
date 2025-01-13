@@ -155,6 +155,10 @@
       "title": "Folders",
       "introductionFolders": "Here you will find an overview of the costs for printing brochures in A3 and A4 formats. Choose between a bi-fold or tri-fold option to present your message effectively. The rates are clearly displayed by paper type and quantity."
     },
+    "posters": {
+      "title": "Posters",
+      "introductionPosters": "Explore the options for printing posters here. Choose from a wide range of sizes and paper types to perfectly tailor your poster to your needs. Whether you're looking for a simple black-and-white print or a vibrant color print, we have the right solution for you. Browse the options below and find the ideal combination for your project."
+    },
     "common": {
       "digitalPrint": "DIGITAL PRINTING",
       "digitalPrintDeliveryTime": "Delivery in 1-2 working days*",
@@ -184,16 +188,18 @@
     "highQuality": "High Quality",
     "amount": "Amount",
     "perPrint": "Price per print",
+    "perPiece": "Price per print",
     "prints": "Prints",
     "price": "Price",
     "clothingPiece": "Clothing piece",
     "material": "Material",
-    "format": "Format",
+    "format": "Size",
     "gloss": "gloss",
     "matte": "matte",
     "cards": "Cards",
     "flyers": "Flyers",
-    "folders": "Folders"
+    "folders": "Folders",
+    "posters": "Posters"
   },
   "paperTypes": {
     "80grWhiteOrColor": "80gr white or colored paper",
@@ -217,10 +223,20 @@
     "400gr": "400 grams paper woodfree mc (maco) matte"
   },
   "paperFormats": {
+    "A0": "A0",
+    "A1": "A1",
+    "A2": "A2",
     "A3": "A3",
     "A4": "A4",
     "A5": "A5",
-    "A6": "A6"
+    "A6": "A6",
+    "B1": "B1",
+    "B2": "B2"
+  },
+  "postersAmount": {
+    "1-5": "1-5 prints",
+    "6-10": "6-10 prints",
+    "10Plus": "10+ prints"
   },
   "contactPage": {
     "adressTitle": "Visit us",
@@ -231,5 +247,5 @@
     "messageSubmit": "Send",
     "messageAlert": "Don't forget to include your contact details."
   },
-  "placeHolderText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+  "placeHolderText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit,<br/>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
 }
