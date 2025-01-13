@@ -61,9 +61,9 @@ export default function FoldersOffsetPrintPricing() {
           <div>
             {/* Display a title and the papertype at the top of the table */}
             <div className="flex items-baseline">
-              <TextBlock value="paperFormats.A4" variant="largeTitle" />
+              <TextBlock value="paperFormats.A4" variant="title" />
               &nbsp; <span className="text-2xl">-</span> &nbsp;
-              <TextBlock value="commonWords.color" variant="title" />
+              <TextBlock value="commonWords.color" variant="subTitle" />
               &nbsp;
               <TextBlock
                 value="customPrintPage.common.trifold"
@@ -82,9 +82,9 @@ export default function FoldersOffsetPrintPricing() {
           <div>
             {/* Display a title and the papertype at the top of the table */}
             <div className="flex items-baseline">
-              <TextBlock value="paperFormats.A4" variant="largeTitle" />
+              <TextBlock value="paperFormats.A4" variant="title" />
               &nbsp; <span className="text-2xl">-</span> &nbsp;
-              <TextBlock value="commonWords.color" variant="title" />
+              <TextBlock value="commonWords.color" variant="subTitle" />
               &nbsp;
               <TextBlock
                 value="customPrintPage.common.bifold"
@@ -101,12 +101,12 @@ export default function FoldersOffsetPrintPricing() {
             />
           </div>
         </div>
-        <div>
+        <div className="pt-20">
           {/* Display a title and the papertype at the top of the table */}
           <div className="flex items-baseline">
-            <TextBlock value="paperFormats.A3" variant="largeTitle" />
+            <TextBlock value="paperFormats.A3" variant="title" />
             &nbsp; <span className="text-2xl">-</span> &nbsp;
-            <TextBlock value="commonWords.color" variant="title" />
+            <TextBlock value="commonWords.color" variant="subTitle" />
             &nbsp;
             <TextBlock
               value="customPrintPage.common.trifold"

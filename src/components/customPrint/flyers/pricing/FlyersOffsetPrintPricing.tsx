@@ -59,9 +59,9 @@ export default function FlyersOffsetPrintPricing() {
           <div>
             {/* Display a title and the papertype at the top of the table */}
             <div className="flex items-baseline">
-              <TextBlock value="paperFormats.A5" variant="largeTitle" />
+              <TextBlock value="paperFormats.A5" variant="title" />
               &nbsp; <span className="text-2xl">-</span> &nbsp;
-              <TextBlock value="commonWords.doubleSided" variant="title" />
+              <TextBlock value="commonWords.doubleSided" variant="subTitle" />
             </div>
             <PricingTable
               headerTitles={headerTitles}
@@ -73,9 +73,9 @@ export default function FlyersOffsetPrintPricing() {
           <div>
             {/* Display a title and the papertype at the top of the table */}
             <div className="flex items-baseline">
-              <TextBlock value="paperFormats.A6" variant="largeTitle" />
+              <TextBlock value="paperFormats.A6" variant="title" />
               &nbsp; <span className="text-2xl">-</span> &nbsp;
-              <TextBlock value="commonWords.doubleSided" variant="title" />
+              <TextBlock value="commonWords.doubleSided" variant="subTitle" />
             </div>
             <PricingTable
               headerTitles={headerTitles}

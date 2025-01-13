@@ -51,9 +51,9 @@ export default function CardsOffsetPrintPricing() {
         <div>
           {/* Display a title and the papertype at the top of the table */}
           <div className="flex items-baseline">
-            <TextBlock value="commonWords.color" variant="subTitle" />
+            <TextBlock value="commonWords.color" variant="title" />
             &nbsp; - &nbsp;
-            <TextBlock value="paperTypes.400gr" variant="body" />
+            <TextBlock value="paperTypes.400gr" variant="subTitle" />
           </div>
 
           {/* Render a table for the "Black & White" category */}

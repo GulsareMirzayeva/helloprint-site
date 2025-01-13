@@ -45,7 +45,7 @@ export default function PricingTable({
           {headerTitles.map((title) => (
             <th
               key={title}
-              className="border bg-[#FB0036] text-white border-white px-4 text-left"
+              className="border bg-[#FB0036] text-white border-white py-2 px-4 text-left"
             >
               <div className="text-white">{title}</div>
             </th>

@@ -35,8 +35,8 @@ export default function CopyPrintPricing() {
         {/* Display a title and the papertype at the top of the table */}
         <div className="flex items-baseline">
           <TextBlock value="commonWords.blackWhite" variant="title" />
-          &nbsp;
-          <TextBlock value="paperTypes.80gr" variant="body" />
+          &nbsp; <span className="text-2xl">-</span> &nbsp;
+          <TextBlock value="paperTypes.80gr" variant="subTitle" />
         </div>
 
         {/* Render a table for the "Black & White" category */}
@@ -51,8 +51,8 @@ export default function CopyPrintPricing() {
         {/* Display a title and the papertype at the top of the table */}
         <div className="flex items-baseline">
           <TextBlock value="commonWords.color" variant="title" />
-          &nbsp;
-          <TextBlock value="paperTypes.90gr" variant="body" />
+          &nbsp; <span className="text-2xl">-</span> &nbsp;
+          <TextBlock value="paperTypes.90gr" variant="subTitle" />
         </div>
 
         {/* Render a table for the "Color" category */}

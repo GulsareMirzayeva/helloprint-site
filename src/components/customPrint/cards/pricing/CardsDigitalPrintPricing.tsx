@@ -53,9 +53,9 @@ export default function CardsDigitalPrintPricing() {
         <div>
           {/* Display a title and the papertype at the top of the table */}
           <div className="flex items-baseline">
-            <TextBlock value="commonWords.blackWhite" variant="subTitle" />
+            <TextBlock value="commonWords.blackWhite" variant="title" />
             &nbsp; - &nbsp;
-            <TextBlock value="paperTypes.350gr" variant="body" />
+            <TextBlock value="paperTypes.350gr" variant="subTitle" />
           </div>
 
           {/* Render a table for the "Black & White" category */}
@@ -69,9 +69,9 @@ export default function CardsDigitalPrintPricing() {
         <div>
           {/* Display a title and the papertype at the top of the table */}
           <div className="flex items-baseline">
-            <TextBlock value="commonWords.color" variant="subTitle" />
+            <TextBlock value="commonWords.color" variant="title" />
             &nbsp; - &nbsp;
-            <TextBlock value="paperTypes.350gr" variant="body" />
+            <TextBlock value="paperTypes.350gr" variant="subTitle" />
           </div>
 
           {/* Render a table for the "Color" category */}

@@ -57,9 +57,9 @@ export default function FlyersDigitalPrintA6Pricing() {
           <div>
             {/* Display a title and the papertype at the top of the table */}
             <div className="flex items-baseline">
-              <TextBlock value="paperFormats.A6" variant="largeTitle" />
+              <TextBlock value="paperFormats.A6" variant="title" />
               &nbsp; <span className="text-2xl">-</span> &nbsp;
-              <TextBlock value="commonWords.singleSided" variant="title" />
+              <TextBlock value="commonWords.singleSided" variant="subTitle" />
             </div>
 
             {/* Render a table for the "Black & White" category */}
@@ -73,9 +73,9 @@ export default function FlyersDigitalPrintA6Pricing() {
           <div>
             {/* Display a title and the papertype at the top of the table */}
             <div className="flex items-baseline">
-              <TextBlock value="paperFormats.A6" variant="largeTitle" />
+              <TextBlock value="paperFormats.A6" variant="title" />
               &nbsp; <span className="text-2xl">-</span> &nbsp;
-              <TextBlock value="commonWords.doubleSided" variant="title" />
+              <TextBlock value="commonWords.doubleSided" variant="subTitle" />
             </div>
 
             {/* Render a table for the "Color" category */}
