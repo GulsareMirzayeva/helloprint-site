@@ -166,7 +166,9 @@
       "offsetPrintDeliveryTime": "Delivery in 7 working days*",
       "bifoldOrTrifold": "(bi-fold or tri-fold)",
       "bifold": "(bifold)",
-      "trifold": "(trifold)"
+      "trifold": "(trifold)",
+      "hqFullColor": "Hoge kwaliteit in kleur",
+      "budgetColor": "Budget in kleur"
     }
   },
   "copyPrintPage": {

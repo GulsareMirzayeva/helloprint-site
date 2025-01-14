@@ -173,7 +173,9 @@
       "offsetPrintDeliveryTime": "Levertijd 7 werkdagen*",
       "bifoldOrTrifold": "(2 of 3-slag)",
       "bifold": "(2-slag)",
-      "trifold": "(3-slag)"
+      "trifold": "(3-slag)",
+      "hqFullColor": "Hoge kwaliteit in kleur",
+      "budgetColor": "Budget in kleur"
     }
   },
   "copyPrintPage": {
