@@ -543,111 +543,111 @@
             }
           }
         }
-      }
-    },
-    "stickers": {
-      "A4": {
-        "perA4": 8.95
       },
-      "squareMeter": {
-        "perMeter": 69
-      }
-    },
-    "cards": {
-      "print": {
-        "blackWhite": {
-          "100": {
-            "singleSide": 9.5,
-            "doubleSide": 13
+      "stickers": {
+        "A4": {
+          "perA4": 8.95
+        },
+        "squareMeter": {
+          "perMeter": 69
+        }
+      },
+      "cards": {
+        "print": {
+          "blackWhite": {
+            "100": {
+              "singleSide": 9.5,
+              "doubleSide": 13
+            },
+            "250": {
+              "singleSide": 13.5,
+              "doubleSide": 20
+            },
+            "500": {
+              "singleSide": 23.5,
+              "doubleSide": 38
+            }
           },
-          "250": {
-            "singleSide": 13.5,
-            "doubleSide": 20
-          },
-          "500": {
-            "singleSide": 23.5,
-            "doubleSide": 38
+          "color": {
+            "100": {
+              "singleSide": 14,
+              "doubleSide": 22
+            },
+            "250": {
+              "singleSide": 23.5,
+              "doubleSide": 38
+            },
+            "500": {
+              "singleSide": 43.5,
+              "doubleSide": 69.5
+            }
           }
         },
-        "color": {
-          "100": {
-            "singleSide": 14,
-            "doubleSide": 22
-          },
-          "250": {
-            "singleSide": 23.5,
-            "doubleSide": 38
-          },
-          "500": {
-            "singleSide": 43.5,
-            "doubleSide": 69.5
-          }
-        }
-      },
-      "customPrint": {
-        "color": {
-          "500": {
-            "singleSide": 55,
-            "doubleSide": 50
-          },
-          "1000": {
-            "singleSide": 69,
-            "doubleSide": 65
-          },
-          "2500": {
-            "singleSide": 89,
-            "doubleSide": 79
-          },
-          "5000": {
-            "singleSide": 130,
-            "doubleSide": 99
+        "customPrint": {
+          "color": {
+            "500": {
+              "singleSide": 55,
+              "doubleSide": 50
+            },
+            "1000": {
+              "singleSide": 69,
+              "doubleSide": 65
+            },
+            "2500": {
+              "singleSide": 89,
+              "doubleSide": 79
+            },
+            "5000": {
+              "singleSide": 130,
+              "doubleSide": 99
+            }
           }
         }
       }
-    }
-  },
-  "customClothing": {
-    "textile": {
-      "tShirt": {
-        "blackWhite": 5.95,
-        "color": 6.95
-      },
-      "polo": {
-        "blackWhite": 14.95,
-        "color": 16.95
-      },
-      "sweaters": {
-        "blackWhite": 29.95,
-        "color": 32.95
-      },
-      "hoody": {
-        "blackWhite": 37.95,
-        "color": 39.95
-      }
     },
-    "flex": {
-      "frontChestLogo": {
-        "allColors": 9.95
+    "customClothing": {
+      "textile": {
+        "tShirt": {
+          "blackWhite": 5.95,
+          "color": 6.95
+        },
+        "polo": {
+          "blackWhite": 14.95,
+          "color": 16.95
+        },
+        "sweaters": {
+          "blackWhite": 29.95,
+          "color": 32.95
+        },
+        "hoody": {
+          "blackWhite": 37.95,
+          "color": 39.95
+        }
       },
-      "frontOrBacklarge": {
-        "allColors": 12.95
+      "flex": {
+        "frontChestLogo": {
+          "allColors": 9.95
+        },
+        "frontOrBacklarge": {
+          "allColors": 12.95
+        },
+        "frontSmallBackLarge": {
+          "allColors": 19.95
+        }
       },
-      "frontSmallBackLarge": {
-        "allColors": 19.95
-      }
-    },
-    "dtg": {
-      "frontChestLogo": {
-        "white": 8.95,
-        "color": 9.95
-      },
-      "frontOrBacklarge": {
-        "white": 11.95,
-        "color": 12.95
-      },
-      "frontSmallBackLarge": {
-        "white": 18.95,
-        "color": 19.95
+      "dtg": {
+        "frontChestLogo": {
+          "white": 8.95,
+          "color": 9.95
+        },
+        "frontOrBacklarge": {
+          "white": 11.95,
+          "color": 12.95
+        },
+        "frontSmallBackLarge": {
+          "white": 18.95,
+          "color": 19.95
+        }
       }
     }
   }
