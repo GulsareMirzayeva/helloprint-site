@@ -34,15 +34,20 @@ export default function Posters80grPricing() {
   ];
 
   const headerTitlesBlackWhite: string[] = [
-    t('commonWords.format'),
+    t('commonWords.posters'),
     t('commonWords.perPiece'),
   ];
 
   const unitsColor: string[] = [
     t('commonWords.format'),
-    t('commonWords.perPiece'),
-    t('commonWords.perPiece'),
-    t('commonWords.perPiece'),
+    t('commonWords.pricePerPiece'),
+    t('commonWords.pricePerPiece'),
+    t('commonWords.pricePerPiece'),
+  ];
+
+  const unitsBlackWhite: string[] = [
+    t('commonWords.format'),
+    t('commonWords.price'),
   ];
 
   return (
@@ -73,7 +78,7 @@ export default function Posters80grPricing() {
             </div>
             <PricingTable
               headerTitles={headerTitlesBlackWhite}
-              units={[]}
+              units={unitsBlackWhite}
               options={paperSizesExtended}
               prices={prices80grBlackWhite}
             />
