@@ -28,8 +28,8 @@ export default function ClothingPiecesPricing() {
   // Units used in the pricing table for "Textile" category
   const unitsTextile: string[] = [
     t('commonWords.clothingPiece'),
-    t('commonWords.perPrint'),
-    t('commonWords.perPrint'),
+    t('commonWords.pricePerPrint'),
+    t('commonWords.pricePerPrint'),
   ];
 
   return (

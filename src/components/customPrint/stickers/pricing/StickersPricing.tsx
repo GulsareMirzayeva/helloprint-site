@@ -12,7 +12,7 @@ export default function StickersPricing() {
   // Defineer de header titels en units boven de return
   const headerTitleStickers: string[] = [
     t('commonWords.format'),
-    t('commonWords.perPrint'),
+    t('commonWords.pricePerPrint'),
   ];
 
   const unitStickers: string[] = [];

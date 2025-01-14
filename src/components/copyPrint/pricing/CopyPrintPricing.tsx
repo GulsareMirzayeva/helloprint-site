@@ -25,8 +25,8 @@ export default function CopyPrintPricing() {
   ];
   const units: string[] = [
     t('commonWords.amount'),
-    t('commonWords.perPrint'),
-    t('commonWords.perPrint'),
+    t('commonWords.pricePerPrint'),
+    t('commonWords.pricePerPrint'),
   ];
 
   return (

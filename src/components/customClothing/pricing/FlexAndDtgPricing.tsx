@@ -34,14 +34,14 @@ export default function FlexAndDtgPricing() {
   // Units used in the table for "Flex / Vinyl" category
   const unitsFlex: string[] = [
     t('commonWords.prints'),
-    t('commonWords.perPrint'),
+    t('commonWords.pricePerPrint'),
   ];
 
   // Units used in the table for "DTG" category
   const unitsDtg: string[] = [
     t('commonWords.prints'),
-    t('commonWords.perPrint'),
-    t('commonWords.perPrint'),
+    t('commonWords.pricePerPrint'),
+    t('commonWords.pricePerPrint'),
   ];
 
   return (
