@@ -14,9 +14,16 @@ export default function SendMessage() {
   const { shopInfo } = useData();
 
   return (
-    <section className="flex justify-center items-center w-full py-8 ">
+    <section className="flex justify-center items-center w-full py-12 ">
       <div className="flex">
-        <div className="flex flex-col self-start w-[450px]">
+        <div className="flex flex-col pr-12 mr-12 border-r-2 border-[#FB0036]">
+          <TextBlock value="contactPage.sendMessage" variant="title" />
+          <i>
+            <TextBlock value="contactPage.messageAlert" variant="body" />
+          </i>
+          <MessageForm />
+        </div>
+        <div className="flex flex-col self-start">
           <TextBlock value="contactPage.contactUs" variant="title" />
           <div className="pb-8">
             <p className="text-md">
@@ -31,7 +38,11 @@ export default function SendMessage() {
               {shopInfo.email}
             </a>
             <br />
-            <a className="text-md cursor-pointer">
+            <a
+              className="text-md cursor-pointer"
+              href={shopInfo.facebookUrl}
+              target="_blank"
+            >
               <FacebookIcon
                 className="mr-1 text-[#0165E1]"
                 style={{ fontSize: '18px' }}
@@ -43,14 +54,6 @@ export default function SendMessage() {
             src={contactPicture}
             className="h-[250px] w-[370px] rounded-xl"
           />
-        </div>
-
-        <div className="flex flex-col pb-4 pl-8 border-l-2 border-[#FB0036]">
-          <TextBlock value="contactPage.sendMessage" variant="title" />
-          <i>
-            <TextBlock value="contactPage.messageAlert" variant="body" />
-          </i>
-          <MessageForm />
         </div>
       </div>
     </section>

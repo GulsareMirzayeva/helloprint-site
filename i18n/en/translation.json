@@ -167,8 +167,8 @@
       "bifoldOrTrifold": "(bi-fold or tri-fold)",
       "bifold": "(bifold)",
       "trifold": "(trifold)",
-      "hqFullColor": "Hoge kwaliteit in kleur",
-      "budgetColor": "Budget in kleur"
+      "hqFullColor": "High Quality Full Color",
+      "budgetColor": "Budget Full Color"
     }
   },
   "copyPrintPage": {
@@ -244,7 +244,7 @@
   "contactPage": {
     "adressTitle": "Visit us",
     "contactUs": "Contact us",
-    "sendMessage": "Or send a direct message",
+    "sendMessage": "Send a direct message",
     "messageSubject": "Subject",
     "messageContent": "Message",
     "messageSubmit": "Send",

@@ -6,6 +6,7 @@ export const shopInfo = {
   country: 'Nederland',
   telNo: '050-1234567',
   email: 'info@mail.nl',
+  facebookUrl: 'https://www.facebook.com/copyshopthartje/',
   openingHoursMondayToFriday: '09:00 - 18:00',
   openingHoursSaturday: '10:00 - 17:00',
 };

@@ -5,7 +5,7 @@ export default function MessageForm() {
   // Subscribes the component to i18n language so when the language changes, the content will be translated inmediatly
   const { t } = useTranslation();
   return (
-    <form className="flex flex-col pt-10">
+    <form className="flex flex-col pt-8">
       <div className="mb-2">
         <TextBlock value="contactPage.messageSubject" variant="body" />
         <input

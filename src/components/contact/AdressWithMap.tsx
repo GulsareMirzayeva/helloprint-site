@@ -10,7 +10,7 @@ export default function AdressWithMap() {
     <section className="flex w-full gap-20 py-14 bg-gray-100">
       <div className="flex flex-col w-full h-ful items-end">
         <TextBlock value="contactPage.adressTitle" variant="title" />
-        <p className="text-md">{shopInfo.name}</p>
+        <p className="text-md pt-2">{shopInfo.name}</p>
         <p className="text-md">{shopInfo.adress}</p>
         <p className="text-md">{shopInfo.zipCode}</p>
         <p className="text-md">{shopInfo.town},</p>
@@ -21,14 +21,14 @@ export default function AdressWithMap() {
       </div>
       <div className="flex flex-col justify-start items-start w-full h-full">
         <TextBlock value="shopInfo.openingHours.title" variant="title" />
-        <p className="text-sm font-semibold">
+        <p className="text-sm font-semibold pt-2">
           {t('shopInfo.openingHours.midweeks')}
         </p>
-        <p className="text-md">{shopInfo.openingHoursMondayToFriday}</p>
+        <p className="text-md pb-2">{shopInfo.openingHoursMondayToFriday}</p>
         <p className="text-sm font-semibold">
           {t('shopInfo.openingHours.saturday')}
         </p>
-        <p className="text-md">{shopInfo.openingHoursSaturday}</p>
+        <p className="text-md pb-2">{shopInfo.openingHoursSaturday}</p>
         <p className="text-sm font-semibold">
           {t('shopInfo.openingHours.sunday')}
         </p>
