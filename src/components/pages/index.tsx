@@ -1,11 +1,11 @@
 import Home from './Home';
-import Cards from './Cards';
+import Cards from './customPrint/Cards';
 import Contact from './Contact';
 import CopyPrint from './CopyPrint';
 import CustomClothing from './CustomClothing';
-import Flyers from './Flyers';
-import Folders from './Folders';
-import Posters from './Posters';
+import Flyers from './customPrint/Flyers';
+import Folders from './customPrint/Folders';
+import Posters from './customPrint/Posters';
 import Stickers from './customPrint/Stickers';
 import ErrorPage from './ErrorPage';
 

@@ -1,9 +1,9 @@
 import { useTranslation, Trans } from 'react-i18next';
 
-import leaflet from '../../assets/icons8-half-fold-leaflet-100.png';
-import paper from '../../assets/icons8-paper-96.png';
-import tshirt from '../../assets/icons8-tshirt-100.png';
-import supplies from '../../assets/office_supplies-100.png';
+import leaflet from '../../assets/icons/icons8-half-fold-leaflet-100.png';
+import paper from '../../assets/icons/icons8-paper-96.png';
+import tshirt from '../../assets/icons/icons8-tshirt-100.png';
+import supplies from '../../assets/icons/office_supplies-100.png';
 
 export default function ShopCategories() {
   const { t } = useTranslation();
