@@ -67,7 +67,7 @@
     }
   },
   "shopInfo": {
-    "agreements": {
+    "termsOfSale": {
       "title": "Voorwaarden",
       "acknowledgment": "Erkenning",
       "proposals": "Offertes",
@@ -257,5 +257,36 @@
     "messageSubmit": "Verzend",
     "messageAlert": "Vergeet niet uw contact gegevens te vermelden."
   },
-  "placeHolderText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit,<br/>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+  "placeHolderText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit,<br/>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+  "termsOfSale": {
+    "title": "Verkoopvoorwaarden",
+    "term-1": {
+      "title": "1. Erkenning van onze voorwaarden",
+      "termContent": "De volgende voorwaarden zijn van toepassing op elke offerte, verkoop of uitgevoerd werk door 't Hartje.<br />De koper/besteller wordt geacht de algemene voorwaarden zoals hierna bedongen te kennen en te aanvaarden."
+    },
+    "term-2": {
+      "title": "2. Offertes",
+      "termContent": "Onze prijzen en aanbiedingen zijn vrijblijvend en zonder verbintenis.<br />Alle geoffreerde prijzen zijn inclusief BTW, tenzij anders vermeld.<br />Onze offertes zijn slechts geldig voor een maximum termijn van 14 dagen na datum van de offerte."
+    },
+    "term-3": {
+      "title": "3. Bestelling",
+      "termContent": "a) eenmaal de bestelling is geplaatst, is annulering enkel mogelijk mits wederzijds akkoord.<br />b) Indien de bestelling eenzijdig verbroken wordt door de klant, dient de klant alsnog het totale bedrag te voldoen."
+    },
+    "term-4": {
+      "title": "4. Betaling",
+      "termContent": "Orders geplaatst bij ons in de winkel kunnen bij afhalen betaald worden, u kunt bij ons pinnen of contant betalen.<br />Orders die door ons geplaatst worden bij onze huisdrukker dienen vooraf volledig te worden betaald.<br />Indien het orderbedrag niet betaald is binnen de door ons gestelde betalingstermijn (14 dagen) en na een herinnering<br />van onze kant betaling nog uitblijft, behouden wij het recht om een incassobureau in te schakelen.<br />De bijkomende incassokosten zijn voor rekening van de klant."
+    },
+    "term-5": {
+      "title": "5. Prijzen",
+      "termContent": "'t Hartje behoudt het recht om prijzen te wijzigen, i.v.m. fluctuerende prijsstijgingen van papier en drukkosten."
+    },
+    "term-6": {
+      "title": "6. Leveringen",
+      "termContent": "Wij doen onze uiterste best om ons aan de afgesproken levertijd te houden.<br />Echter kunnen hier geen rechten aan ontleend worden.<br />Bij orders geplaatst bij onze huisdrukker zijn de levertijden altijd onder voorbehoud."
+    },
+    "term-7": {
+      "title": "7. Klachten",
+      "termContent": "Heeft u een klacht over het geleverde artikel? Dan dient u dit binnen 2 werkdagen te melden."
+    }
+  }
 }

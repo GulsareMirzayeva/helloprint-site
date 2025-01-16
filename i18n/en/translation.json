@@ -60,7 +60,7 @@
     }
   },
   "shopInfo": {
-    "agreements": {
+    "termsOfSale": {
       "title": "Terms & Conditions",
       "acknowledgment": "Acknowledgment",
       "proposals": "Proposals",
@@ -250,5 +250,36 @@
     "messageSubmit": "Send",
     "messageAlert": "Don't forget to include your contact details."
   },
-  "placeHolderText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit,<br/>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+  "placeHolderText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit,<br/>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+  "termsOfSale": {
+    "title": "Terms of Sale",
+    "term-1": {
+      "title": "1. Acknowledgment of Our Terms",
+      "termContent": "The following terms apply to every quotation, sale, or work performed by 't Hartje.<br />The buyer/orderer is deemed to know and accept the general terms and conditions as stipulated below."
+    },
+    "term-2": {
+      "title": "2. Quotations",
+      "termContent": "Our prices and offers are non-binding and without obligation.<br />All quoted prices include VAT unless otherwise stated.<br />Our quotations are valid for a maximum period of 14 days from the date of the quotation."
+    },
+    "term-3": {
+      "title": "3. Orders",
+      "termContent": "a) Once an order has been placed, cancellation is only possible with mutual consent.<br />b) If the order is unilaterally terminated by the customer, the customer must still pay the total amount due."
+    },
+    "term-4": {
+      "title": "4. Payment",
+      "termContent": "Orders placed in our store can be paid for upon pickup. Payments can be made by card or in cash.<br />Orders placed by us with our in-house printer must be paid for in full in advance.<br />If the order amount is not paid within the payment term set by us (14 days) and payment remains outstanding<br />after a reminder from us,we reserve the right to engage a collection agency.<br />Any additional collection costs will be borne by the customer."
+    },
+    "term-5": {
+      "title": "5. Prices",
+      "termContent": "'t Hartje reserves the right to adjust prices due to fluctuating increases in paper and printing costs."
+    },
+    "term-6": {
+      "title": "6. Deliveries",
+      "termContent": "We do our utmost to meet the agreed delivery time.<br />However, no rights can be derived from this.<br />For orders placed with our in-house printer, delivery times are always subject to change."
+    },
+    "term-7": {
+      "title": "7. Complaints",
+      "termContent": "Do you have a complaint about the delivered item? Then you must report it within 2 working days."
+    }
+  }
 }

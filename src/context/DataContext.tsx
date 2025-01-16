@@ -8,6 +8,7 @@ import {
 import { getPrices } from '../api/getPrices';
 import { shopInfo } from '../lib/contactInfo';
 import { DataContextType, Prices } from '../lib/types/dataContextTypes';
+import { FooterTermsOfSaleLinks } from '../lib/types/footerTermsofSaleLinkTypes';
 
 const DataContext = createContext<DataContextType | undefined>(undefined);
 
@@ -15,6 +16,7 @@ export function DataProvider({ children }: { children: ReactNode }) {
   const [prices, setPrices] = useState<Prices | null>(null);
   const [error, setError] = useState<Error | null>(null);
   const [isLoading, setIsLoading] = useState<boolean>(true);
+  const [activeTerm, setActiveTerm] = useState<FooterTermsOfSaleLinks>('none');
 
   // Haal gegevens op
   useEffect(() => {
@@ -36,9 +38,11 @@ export function DataProvider({ children }: { children: ReactNode }) {
         prices,
         error,
         isLoading,
+        activeTerm,
         setPrices,
         setError,
         setIsLoading,
+        setActiveTerm,
       }}
     >
       {children}

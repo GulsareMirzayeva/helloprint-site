@@ -1,91 +1,16 @@
-import PhoneIcon from '@mui/icons-material/Phone';
-import AlternateEmailIcon from '@mui/icons-material/AlternateEmail';
-import FacebookIcon from '@mui/icons-material/Facebook';
-
-import { useTranslation } from 'react-i18next';
-import { useData } from '../context/DataContext';
+import ContactSection from './footer/ContactSection';
+import OpeningHoursSection from './footer/OpeningHoursSection';
+import TermsOfSaleSection from './footer/TermsOfSaleSection';
+import AdressSection from './footer/AdressSection';
 
 export default function Footer() {
-  const { t } = useTranslation();
-  const { shopInfo } = useData();
-
   return (
     <div className="flex justify-center w-full border-t-2 border-[#FB0036] py-4">
       <div className="flex justify-evenly w-full max-w-[1900px]">
-        <div className="flex flex-col">
-          <p className="text-sm font-bold pb-2">
-            {t('shopInfo.agreements.title')}
-          </p>
-          <a className="text-xs" href="">
-            {t('shopInfo.agreements.acknowledgment')}
-          </a>
-          <a className="text-xs" href="">
-            {t('shopInfo.agreements.proposals')}
-          </a>
-          <a className="text-xs" href="">
-            {t('shopInfo.agreements.orders')}
-          </a>
-          <a className="text-xs" href="">
-            {t('shopInfo.agreements.payment')}
-          </a>
-          <a className="text-xs" href="">
-            {t('shopInfo.agreements.prices')}
-          </a>
-          <a className="text-xs" href="">
-            {t('shopInfo.agreements.deliveries')}
-          </a>
-          <a className="text-xs" href="">
-            {t('shopInfo.agreements.complaints')}
-          </a>
-        </div>
-        <div>
-          <p className="text-sm font-bold pb-2">{t('shopInfo.adress.title')}</p>
-          <p className="text-xs">{shopInfo.name}</p>
-          <p className="text-xs">{shopInfo.ardress}</p>
-          <p className="text-xs">{shopInfo.zipCode}</p>
-          <p className="text-xs">
-            {shopInfo.town},<br />
-            {t('shopInfo.adress.countryName')}
-          </p>
-          <a className="text-xs" href="">
-            {t('shopInfo.adress.visitGoogleMaps')}
-          </a>
-        </div>
-        <div className="flex flex-col">
-          <p className="text-sm font-bold pb-2">Contact</p>
-          <p className="text-xs">
-            <PhoneIcon className="mr-1" style={{ fontSize: '14px' }} />
-            {shopInfo.telNo}
-          </p>
-          <a className="text-xs">
-            <AlternateEmailIcon className="mr-1" style={{ fontSize: '14px' }} />
-            {shopInfo.email}
-          </a>
-          <a className="text-xs cursor-pointer">
-            <FacebookIcon
-              className="mr-1 text-[#0165E1]"
-              style={{ fontSize: '14px' }}
-            />
-            Facebook
-          </a>
-        </div>
-        <div>
-          <p className="text-sm font-bold pb-2">
-            {t('shopInfo.openingHours.title')}
-          </p>
-          <p className="text-xs font-semibold">
-            {t('shopInfo.openingHours.midweeks')}
-          </p>
-          <p className="text-xs">{shopInfo.openingHoursMondayToFriday}</p>
-          <p className="text-xs font-semibold">
-            {t('shopInfo.openingHours.saturday')}
-          </p>
-          <p className="text-xs">{shopInfo.openingHoursSaturday}</p>
-          <p className="text-xs font-semibold">
-            {t('shopInfo.openingHours.sunday')}
-          </p>
-          <p className="text-xs">{t('shopInfo.openingHours.closed')}</p>
-        </div>
+        <TermsOfSaleSection />
+        <AdressSection />
+        <ContactSection />
+        <OpeningHoursSection />
       </div>
     </div>
   );

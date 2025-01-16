@@ -3,7 +3,6 @@ export const shopInfo = {
   adress: 'Straatnaam 123',
   zipCode: '1234 AZ',
   town: 'Groningen',
-  country: 'Nederland',
   telNo: '050-1234567',
   email: 'info@mail.nl',
   facebookUrl: 'https://www.facebook.com/copyshopthartje/',

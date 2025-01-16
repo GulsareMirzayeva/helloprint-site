@@ -1,6 +1,7 @@
 import { CopyPrintType } from './copyPrintType';
 import { CustomClothingType } from './customClothing';
 import { CustomPrintType } from './customPrintType';
+import { FooterTermsOfSaleLinks } from './footerTermsofSaleLinkTypes';
 
 export type Prices = {
   copyPrint: CopyPrintType;
@@ -17,7 +18,9 @@ export type DataContextType = {
   prices: Prices | null;
   error: Error | null;
   isLoading: boolean;
+  activeTerm: FooterTermsOfSaleLinks;
   setPrices: React.Dispatch<React.SetStateAction<Prices | null>>;
   setError: React.Dispatch<React.SetStateAction<Error | null>>;
   setIsLoading: React.Dispatch<React.SetStateAction<boolean>>;
+  setActiveTerm: React.Dispatch<React.SetStateAction<FooterTermsOfSaleLinks>>;
 };

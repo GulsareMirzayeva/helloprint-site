@@ -12,6 +12,7 @@ import {
   Stickers,
   ErrorPage,
 } from './components/pages/index';
+import TermsOfSalePage from './components/pages/TermsOfSalePage';
 
 const router = createBrowserRouter([
   {
@@ -54,6 +55,10 @@ const router = createBrowserRouter([
       {
         path: 'custom-printing/posters',
         element: <Posters />,
+      },
+      {
+        path: 'terms-of-sale',
+        element: <TermsOfSalePage />,
       },
     ],
   },
