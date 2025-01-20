@@ -2,20 +2,24 @@ import { useTranslation } from 'react-i18next';
 import image1 from '../../../assets/custom-clothing/custom-clothing-img1.jpg';
 import { TextBlock } from '../../elementTemplates/TextBlock';
 
+/*
+    Text content at the top of the page, the value in the TextBlock components refers to the content location
+    in the translation files (i18next folder at the root).
+*/
+
 export default function IntroductionCards() {
+  // Necessary to direct translate the content when laguage has changed
   useTranslation();
+
   return (
-    <div className="flex justify-center items-center w-full py-20 gap-12">
-      {/* Image on top-left-side of the page */}
-      <div className="w-60">
+    <div className="flex py-20 gap-12">
+      {/* Image next to the text content */}
+      <div className="max-w-60">
         <img src={image1} alt="" />
       </div>
 
-      {/*
-        Text content on top of the page, the value in the TextBlock components refer to the contents location
-        in the translation files (in the i18next folder at the root).
-      */}
-      <div className=" w-[680px] pt-4">
+      {/* Introduction content */}
+      <div className="max-w-2xl">
         <div>
           <TextBlock value="customPrintPage.cards.title" variant="largeTitle" />
           <TextBlock

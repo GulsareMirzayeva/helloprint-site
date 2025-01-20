@@ -1,11 +1,17 @@
 import { useTranslation } from 'react-i18next';
 import { TextBlock } from '../../elementTemplates/TextBlock';
 
+/*
+    Text content at the top of the page, the value in the TextBlock components refers to the content location
+    in the translation files (i18next folder at the root).
+*/
+
 export default function IntroductionCustomPrint() {
   const { t } = useTranslation();
   return (
-    <div className="flex justify-center items-center w-full py-20 gap-12">
-      <div className=" w-[680px] pt-4 h-full">
+    <div className="flex py-20 gap-12">
+      {/* Introduction content */}
+      <div className="max-w-3xl">
         <div>
           <TextBlock value="customPrintPage.stickers.title" variant="title" />
           <TextBlock

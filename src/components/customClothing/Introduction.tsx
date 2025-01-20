@@ -6,10 +6,11 @@ export default function IntroductionCustomClothing() {
   const { t } = useTranslation();
   return (
     <div className="flex justify-center items-center w-full py-20 gap-12">
+      <div className="flex-1"></div>
       <div className="w-60">
         <img src={image1} alt="" />
       </div>
-      <div className=" w-[680px] pt-4">
+      <div className="max-w-2xl">
         <div>
           <TextBlock
             value="customClothingPage.introduction.title"
@@ -31,6 +32,7 @@ export default function IntroductionCustomClothing() {
           </ul>
         </div>
       </div>
+      <div className="flex-1"></div>
     </div>
   );
 }
