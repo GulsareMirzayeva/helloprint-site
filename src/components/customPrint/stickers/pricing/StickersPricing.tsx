@@ -22,7 +22,7 @@ export default function StickersPricing() {
     : [];
 
   return (
-    <div className="flex flex-col items-center w-full py-20 gap-8 bg-gray-100">
+    <section className="flex flex-col items-center w-full py-20 gap-8 bg-gray-100">
       <div>
         <div className="flex flex-col pb-4">
           <TextBlock
@@ -49,6 +49,6 @@ export default function StickersPricing() {
           </div>
         )}
       </div>
-    </div>
+    </section>
   );
 }

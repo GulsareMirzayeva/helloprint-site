@@ -34,7 +34,7 @@ export default function PostersA3BudgetAndHqPricing() {
   const units: string[] = [t('commonWords.format'), t('commonWords.price')];
 
   return (
-    <div className="flex flex-col justify-center items-center w-full py-20 gap-4 bg-gray-100">
+    <section className="flex flex-col justify-center items-center w-full py-20 gap-4 bg-gray-100">
       <div className="flex flex-col items-center"></div>
       <div className="flex flex-col items-center justify-center w-full">
         <div className="flex gap-20">
@@ -74,6 +74,6 @@ export default function PostersA3BudgetAndHqPricing() {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }

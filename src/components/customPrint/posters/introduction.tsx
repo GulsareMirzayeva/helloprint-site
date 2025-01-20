@@ -8,7 +8,7 @@ import { TextBlock } from '../../elementTemplates/TextBlock';
 
 export default function IntroductionPosters() {
   return (
-    <div className="flex py-20 gap-12">
+    <section className="flex py-20 gap-12">
       {/* Introduction content */}
       <div className="max-w-3xl">
         <TextBlock value="customPrintPage.posters.title" variant="title" />
@@ -17,6 +17,6 @@ export default function IntroductionPosters() {
           variant="body"
         />
       </div>
-    </div>
+    </section>
   );
 }

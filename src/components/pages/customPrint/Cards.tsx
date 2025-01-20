@@ -5,11 +5,11 @@ import Footer from '../../Footer';
 
 export default function Cards() {
   return (
-    <section className="flex flex-col w-full justify-start items-center overflow-scroll">
+    <div className="flex flex-col w-full justify-start items-center overflow-scroll">
       <IntroductionCards />
       <CardsDigitalPrintPricing />
       <CardsOffsetPrintPricing />
       <Footer />
-    </section>
+    </div>
   );
 }

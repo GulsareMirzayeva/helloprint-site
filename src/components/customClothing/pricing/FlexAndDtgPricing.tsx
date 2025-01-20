@@ -45,7 +45,7 @@ export default function FlexAndDtgPricing() {
   ];
 
   return (
-    <div className="flex justify-center w-full py-20 bg-white">
+    <section className="flex justify-center w-full py-20 bg-white">
       <div className="flex flex-col">
         <div className="pb-4 pr-20">
           <TextBlock
@@ -82,6 +82,6 @@ export default function FlexAndDtgPricing() {
           />
         </div>
       </div>
-    </div>
+    </section>
   );
 }

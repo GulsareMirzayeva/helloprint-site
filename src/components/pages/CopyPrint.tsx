@@ -4,10 +4,10 @@ import CopyPrintPricing from '../copyPrint/pricing/CopyPrintPricing';
 
 export default function CopyPrint() {
   return (
-    <section className="flex flex-col w-full justify-start items-center overflow-scroll">
+    <div className="flex flex-col w-full justify-start items-center overflow-scroll">
       <IntroductionCopyPrint />
       <CopyPrintPricing />
       <Footer />
-    </section>
+    </div>
   );
 }

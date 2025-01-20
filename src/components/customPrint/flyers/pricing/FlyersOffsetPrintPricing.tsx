@@ -42,7 +42,7 @@ export default function FlyersOffsetPrintPricing() {
   ];
 
   return (
-    <div className="flex flex-col justify-center items-center w-full py-20 gap-4 bg-white">
+    <section className="flex flex-col justify-center items-center w-full py-20 gap-4 bg-white">
       <div className="flex flex-col items-center">
         <div className="flex">
           <TextBlock value={offsetPrintTitle} variant="title" />
@@ -86,6 +86,6 @@ export default function FlyersOffsetPrintPricing() {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }

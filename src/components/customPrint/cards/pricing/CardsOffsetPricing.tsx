@@ -32,7 +32,7 @@ export default function CardsOffsetPrintPricing() {
   ];
 
   return (
-    <div className="flex flex-col justify-center items-center gap-4 py-20 w-full bg-white">
+    <section className="flex flex-col justify-center items-center gap-4 py-20 w-full bg-white">
       <div className="flex flex-col items-center">
         <div className="flex">
           <TextBlock
@@ -65,6 +65,6 @@ export default function CardsOffsetPrintPricing() {
           />
         </div>
       </div>
-    </div>
+    </section>
   );
 }

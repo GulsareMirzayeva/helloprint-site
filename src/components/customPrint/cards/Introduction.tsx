@@ -12,7 +12,7 @@ export default function IntroductionCards() {
   useTranslation();
 
   return (
-    <div className="flex py-20 gap-12">
+    <section className="flex py-20 gap-12">
       {/* Image next to the text content */}
       <div className="max-w-60">
         <img src={image1} alt="" />
@@ -28,6 +28,6 @@ export default function IntroductionCards() {
           />
         </div>
       </div>
-    </div>
+    </section>
   );
 }

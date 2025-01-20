@@ -8,7 +8,7 @@ import { TextBlock } from '../../elementTemplates/TextBlock';
 
 export default function IntroductionFlyers() {
   return (
-    <div className="flex py-20 gap-12">
+    <section className="flex py-20 gap-12">
       {/* Image next to the text content */}
       <div className="max-w-60">
         <img src={image1} alt="" />
@@ -24,6 +24,6 @@ export default function IntroductionFlyers() {
           />
         </div>
       </div>
-    </div>
+    </section>
   );
 }

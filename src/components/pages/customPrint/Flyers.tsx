@@ -9,12 +9,12 @@ export default function Flyers() {
   useTranslation();
 
   return (
-    <section className="flex flex-col w-full justify-start items-center overflow-scroll">
+    <div className="flex flex-col w-full justify-start items-center overflow-scroll">
       <IntroductionFlyers />
       <FlyersDigitalPrintA6Pricing />
       <FlyersDigitalPrintA5Pricing />
       <FlyersOffsetPrintA5Pricing />
       <Footer />
-    </section>
+    </div>
   );
 }

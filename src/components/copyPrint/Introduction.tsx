@@ -8,7 +8,7 @@ import { TextBlock } from '../elementTemplates/TextBlock';
 
 export default function IntroductionCopyPrint() {
   return (
-    <div className="flex my-20 gap-12">
+    <section className="flex my-20 gap-12">
       {/* Image next to the text content */}
       <div className="w-60">
         <img src={image1} alt="" />
@@ -24,6 +24,6 @@ export default function IntroductionCopyPrint() {
           <TextBlock value="copyPrintPage.introductionBinding" variant="body" />
         </div>
       </div>
-    </div>
+    </section>
   );
 }

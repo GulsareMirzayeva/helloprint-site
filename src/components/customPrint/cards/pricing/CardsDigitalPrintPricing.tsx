@@ -34,7 +34,7 @@ export default function CardsDigitalPrintPricing() {
   ];
 
   return (
-    <div className="flex flex-col justify-center items-center w-full gap-4 py-20 bg-gray-100">
+    <section className="flex flex-col justify-center items-center w-full gap-4 py-20 bg-gray-100">
       <div className="flex flex-col items-center">
         <div className="flex flex-col ">
           <TextBlock
@@ -83,6 +83,6 @@ export default function CardsDigitalPrintPricing() {
           />
         </div>
       </div>
-    </div>
+    </section>
   );
 }

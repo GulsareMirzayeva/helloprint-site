@@ -9,7 +9,7 @@ import { TextBlock } from '../../elementTemplates/TextBlock';
 export default function IntroductionCustomPrint() {
   const { t } = useTranslation();
   return (
-    <div className="flex py-20 gap-12">
+    <section className="flex py-20 gap-12">
       {/* Introduction content */}
       <div className="max-w-3xl">
         <div>
@@ -35,6 +35,6 @@ export default function IntroductionCustomPrint() {
           </ul>
         </div>
       </div>
-    </div>
+    </section>
   );
 }

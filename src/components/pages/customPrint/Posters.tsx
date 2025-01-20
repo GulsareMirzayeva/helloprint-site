@@ -8,7 +8,7 @@ import Footer from '../../Footer';
 
 export default function Posters() {
   return (
-    <section className="flex flex-col w-full justify-start items-center overflow-scroll">
+    <div className="flex flex-col w-full justify-start items-center overflow-scroll">
       <IntroductionPosters />
       <Posters80grPricing />
       <Posters160grPricing />
@@ -16,6 +16,6 @@ export default function Posters() {
       <PostersSpecialPapersPricing />
       <PostersA3BudgetAndHqPricing />
       <Footer />
-    </section>
+    </div>
   );
 }

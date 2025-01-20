@@ -33,7 +33,7 @@ export default function ClothingPiecesPricing() {
   ];
 
   return (
-    <div className="flex justify-center w-full py-20 bg-gray-100">
+    <section className="flex justify-center w-full py-20 bg-gray-100">
       <div className="flex">
         <div>
           <div className="pb-4 pr-10">
@@ -56,6 +56,6 @@ export default function ClothingPiecesPricing() {
           <img src={clothing} alt="" />
         </div>
       </div>
-    </div>
+    </section>
   );
 }

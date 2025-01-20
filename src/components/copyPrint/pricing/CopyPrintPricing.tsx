@@ -30,7 +30,7 @@ export default function CopyPrintPricing() {
   ];
 
   return (
-    <div className="flex justify-center gap-24 py-20 w-full bg-gray-100 ">
+    <section className="flex justify-center gap-24 py-20 w-full bg-gray-100 ">
       <div>
         {/* Display a title and the papertype at the top of the table */}
         <div className="flex items-baseline">
@@ -63,6 +63,6 @@ export default function CopyPrintPricing() {
           prices={pricesColor}
         />
       </div>
-    </div>
+    </section>
   );
 }

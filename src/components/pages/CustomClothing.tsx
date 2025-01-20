@@ -13,11 +13,11 @@ export default function CustomClothing() {
   }
 
   return (
-    <section className="flex flex-col w-full justify-start items-center overflow-scroll">
+    <div className="flex flex-col w-full justify-start items-center overflow-scroll">
       <IntroductionCustomClothing />
       <ClothingPiecesPricing />
       <FlexAndDtgPricing />
       <Footer />
-    </section>
+    </div>
   );
 }

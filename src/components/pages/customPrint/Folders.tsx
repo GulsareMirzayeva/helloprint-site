@@ -5,11 +5,11 @@ import Footer from '../../Footer';
 
 export default function Folders() {
   return (
-    <section className="flex flex-col w-full justify-start items-center overflow-scroll">
+    <div className="flex flex-col w-full justify-start items-center overflow-scroll">
       <Introduction />
       <FoldersDigitalPrintPricing />
       <FoldersOffsetPrintPricing />
       <Footer />
-    </section>
+    </div>
   );
 }

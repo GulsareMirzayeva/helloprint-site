@@ -5,7 +5,7 @@ import { TextBlock } from '../elementTemplates/TextBlock';
 export default function IntroductionCustomClothing() {
   const { t } = useTranslation();
   return (
-    <div className="flex justify-center items-center w-full py-20 gap-12">
+    <section className="flex justify-center items-center w-full py-20 gap-12">
       <div className="flex-1"></div>
       <div className="w-60">
         <img src={image1} alt="" />
@@ -33,6 +33,6 @@ export default function IntroductionCustomClothing() {
         </div>
       </div>
       <div className="flex-1"></div>
-    </div>
+    </section>
   );
 }

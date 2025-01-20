@@ -38,7 +38,7 @@ export default function Posters160grPricing() {
   ];
 
   return (
-    <div className="flex flex-col justify-center items-center w-full py-20 gap-4 bg-white">
+    <section className="flex flex-col justify-center items-center w-full py-20 gap-4 bg-white">
       <div className="flex flex-col items-center"></div>
       <div className="flex flex-col items-center justify-center w-full">
         <div className="flex gap-20">
@@ -72,6 +72,6 @@ export default function Posters160grPricing() {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }

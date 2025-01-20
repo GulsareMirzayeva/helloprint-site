@@ -44,7 +44,7 @@ export default function FoldersOffsetPrintPricing() {
   ];
 
   return (
-    <div className="flex flex-col justify-center items-center w-full py-20 gap-4 bg-white">
+    <section className="flex flex-col justify-center items-center w-full py-20 gap-4 bg-white">
       <div className="flex flex-col items-center">
         <div className="flex">
           <TextBlock value={digitalPrintTitle} variant="title" />
@@ -123,6 +123,6 @@ export default function FoldersOffsetPrintPricing() {
           />
         </div>
       </div>
-    </div>
+    </section>
   );
 }

@@ -8,7 +8,7 @@ export default function TermsOfSaleContent() {
   const { activeTerm } = useData();
 
   return (
-    <div className="flex justify-center w-full">
+    <section className="flex justify-center w-full">
       <div className="flex flex-col justify-center my-20">
         <div className="flex p-4">
           <TextBlock value="termsOfSale.title" variant="title" />
@@ -29,6 +29,6 @@ export default function TermsOfSaleContent() {
           </div>
         ))}
       </div>
-    </div>
+    </section>
   );
 }
