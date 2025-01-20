@@ -6,6 +6,9 @@ export default {
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
       },
+      scale: {
+        102: '1.02', // 102% scaling
+      },
     },
   },
   plugins: [],

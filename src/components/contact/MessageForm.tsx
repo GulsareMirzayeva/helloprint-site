@@ -19,9 +19,13 @@ export default function MessageForm() {
       </div>
       <button
         type="submit"
-        className="w-full mt-1 h-10 rounded-md bg-[#FB0036] text-white"
+        className="relative w-full mt-1 h-10 rounded-md bg-[#FB0036] text-white font-bold transition-transform subpixel-antialiased duration-200 ease-in hover:scale-105"
+        style={{
+          backfaceVisibility: 'hidden',
+          willChange: 'transform',
+        }}
       >
-        <b>{t('contactPage.messageSubmit')}</b>
+        {t('contactPage.messageSubmit')}
       </button>
     </form>
   );
