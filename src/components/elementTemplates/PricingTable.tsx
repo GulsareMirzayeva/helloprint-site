@@ -1,4 +1,6 @@
+import { useTranslation } from 'react-i18next';
 import { PricingOptions } from '../../lib/types/basicOptionsTypes';
+import { FC } from 'react';
 
 type PricingTableTypes = {
   headerTitles: string[];
@@ -7,12 +9,25 @@ type PricingTableTypes = {
   prices: PricingOptions[] | number[];
 };
 
+// Function that displays prices with a dot or comma as decimal, depending on the selected language
+const PriceDisplay: FC<{ price: number }> = ({ price }: { price: number }) => {
+  const { i18n } = useTranslation();
+  const formattedPrice = new Intl.NumberFormat(i18n.language, {
+    style: 'currency',
+    currency: 'EUR',
+  }).format(price);
+
+  return <span>{formattedPrice}</span>;
+};
+
+// Dynamicly render a pricing table
 export default function PricingTable({
   headerTitles,
   units,
   options,
   prices,
 }: PricingTableTypes) {
+  const { t } = useTranslation();
   // Prepare data for easy access in the table
   const tableData = options.map((option, index) => ({
     option,
@@ -21,9 +36,7 @@ export default function PricingTable({
 
   return (
     <table className="table-auto" role="table">
-      <caption className="sr-only">
-        Table showing pricing options with their corresponding units and prices.
-      </caption>
+      <caption className="sr-only">{t('commonSentences.tableCaption')}</caption>
       <thead>
         <tr>
           {/* Create a header cell for each given header title */}
@@ -68,7 +81,7 @@ export default function PricingTable({
                   key={priceIndex}
                   className="border border-gray-300 px-4 py-2"
                 >
-                  € {price.toFixed(2)}
+                  {PriceDisplay((price = { price }))}
                 </td>
               ))}
             </tr>

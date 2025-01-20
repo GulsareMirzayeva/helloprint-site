@@ -288,5 +288,8 @@
       "title": "7. Klachten",
       "termContent": "Heeft u een klacht over het geleverde artikel? Dan dient u dit binnen 2 werkdagen te melden."
     }
+  },
+  "commonSentences": {
+    "tableCaption": "Tabel met opties en de bijbehorende prijzen."
   }
 }

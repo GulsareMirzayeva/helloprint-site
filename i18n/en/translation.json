@@ -281,5 +281,8 @@
       "title": "7. Complaints",
       "termContent": "Do you have a complaint about the delivered item? Then you must report it within 2 working days."
     }
+  },
+  "commonSentences": {
+    "tableCaption": "Table showing pricing options with their corresponding prices."
   }
 }
