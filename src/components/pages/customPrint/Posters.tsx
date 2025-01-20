@@ -1,3 +1,4 @@
+import { useTranslation } from 'react-i18next';
 import IntroductionPosters from '../../customPrint/posters/introduction';
 import Posters160grPricing from '../../customPrint/posters/pricing/Posters160grPricing';
 import Posters190grAnd260grPricing from '../../customPrint/posters/pricing/Posters190grAnd260grPricing';
@@ -7,6 +8,8 @@ import PostersSpecialPapersPricing from '../../customPrint/posters/pricing/Poste
 import Footer from '../../Footer';
 
 export default function Posters() {
+  useTranslation();
+
   return (
     <div className="flex flex-col w-full justify-start items-center overflow-scroll">
       <IntroductionPosters />

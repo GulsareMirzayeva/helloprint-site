@@ -1,4 +1,3 @@
-import { useTranslation } from 'react-i18next';
 import image1 from '../../../assets/custom-clothing/custom-clothing-img1.jpg';
 import { TextBlock } from '../../elementTemplates/TextBlock';
 
@@ -8,9 +7,6 @@ import { TextBlock } from '../../elementTemplates/TextBlock';
 */
 
 export default function IntroductionCards() {
-  // Necessary to direct translate the content when laguage has changed
-  useTranslation();
-
   return (
     <section className="flex py-20 gap-12">
       {/* Image next to the text content */}
