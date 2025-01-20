@@ -3,6 +3,7 @@ import AlternateEmailIcon from '@mui/icons-material/AlternateEmail';
 import EmailIcon from '@mui/icons-material/Email';
 import { Trans, useTranslation } from 'react-i18next';
 import { useData } from '../../context/DataContext';
+import { Link } from 'react-router-dom';
 
 export default function ShopInfo() {
   const { t } = useTranslation();
@@ -36,12 +37,12 @@ export default function ShopInfo() {
               components={{ br: <br /> }}
             />
           </p>
-          <div className="flex pt-8">
+          <Link to="/contact" className="flex pt-8 cursor-pointer">
             <p className="text-2xl font-semibold">
               <EmailIcon className="mr-2" />
               {t('shopInfo.contact.contactForm')}
             </p>
-          </div>
+          </Link>
           <div className="flex pt-4">
             <AlternateEmailIcon className="mt-1 mr-2" />
             <p className="text-2xl font-semibold">{shopInfo.email}</p>
