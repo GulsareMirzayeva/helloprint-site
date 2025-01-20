@@ -1,9 +1,9 @@
 import { useTranslation } from 'react-i18next';
-import { TextBlock } from '../elementTemplates/TextBlock';
+import { TextBlock } from '../../elementTemplates/TextBlock';
 import GoogleMap from './GoogleMap';
-import { useData } from '../../context/DataContext';
+import { useData } from '../../../context/DataContext';
 
-export default function AdressWithMap() {
+export default function LocationAdressWithHours() {
   const { t } = useTranslation();
   const { shopInfo } = useData();
   return (
