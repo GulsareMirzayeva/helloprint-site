@@ -184,33 +184,6 @@
     "introduction": "Bij ons kunt u eenvoudig en snel uw kopieën en prints verzorgen. Met onze self-service printers kunt u direct documenten printen vanaf een USB-stick of downloaden vanuit uw e-mail.",
     "introductionBinding": "Daarnaast bieden wij mogelijkheden voor inbinden en lamineren, zodat uw documenten een nette en professionele uitstraling krijgen. Ideaal voor zakelijke doeleinden, studieprojecten of persoonlijke documenten!"
   },
-  "commonWords": {
-    "color": "Kleur",
-    "blackWhite": "Zwart/wit",
-    "paper": "papier",
-    "polypropylene": "polypropyleen",
-    "singleSided": "Enkelzijdig",
-    "doubleSided": "Dubbelzijdig",
-    "textile": "Textiel",
-    "colored": "Gekleurd",
-    "budget": "Budget",
-    "highQuality": "Hoge kwaliteit",
-    "amount": "Aantal",
-    "pricePerPrint": "Prijs per print",
-    "pricePerPiece": "Prijs per st.",
-    "perPiece": "1 stuk",
-    "prints": "Prints",
-    "price": "Prijs",
-    "clothingPiece": "Kledingstuk",
-    "material": "Materiaal",
-    "format": "Formaat",
-    "gloss": "glanzend",
-    "matte": "mat",
-    "cards": "Kaarten",
-    "flyers": "Flyers",
-    "folders": "Folders",
-    "posters": "Posters"
-  },
   "paperTypes": {
     "80grWhiteOrColor": "80gr wit of gekleurd papier",
     "80gr": "80 grams papier",
@@ -257,7 +230,6 @@
     "messageSubmit": "Verzend",
     "messageAlert": "Vergeet niet uw contact gegevens te vermelden."
   },
-  "placeHolderText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit,<br/>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
   "termsOfSale": {
     "title": "Verkoopvoorwaarden",
     "term-1": {
@@ -290,6 +262,34 @@
     }
   },
   "commonSentences": {
-    "tableCaption": "Tabel met opties en de bijbehorende prijzen."
+    "tableCaption": "Tabel met opties en de bijbehorende prijzen.",
+    "placeHolderText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit,<br/>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+  },
+  "commonWords": {
+    "color": "Kleur",
+    "blackWhite": "Zwart/wit",
+    "paper": "papier",
+    "polypropylene": "polypropyleen",
+    "singleSided": "Enkelzijdig",
+    "doubleSided": "Dubbelzijdig",
+    "textile": "Textiel",
+    "colored": "Gekleurd",
+    "budget": "Budget",
+    "highQuality": "Hoge kwaliteit",
+    "amount": "Aantal",
+    "pricePerPrint": "Prijs per print",
+    "pricePerPiece": "Prijs per st.",
+    "perPiece": "1 stuk",
+    "prints": "Prints",
+    "price": "Prijs",
+    "clothingPiece": "Kledingstuk",
+    "material": "Materiaal",
+    "format": "Formaat",
+    "gloss": "glanzend",
+    "matte": "mat",
+    "cards": "Kaarten",
+    "flyers": "Flyers",
+    "folders": "Folders",
+    "posters": "Posters"
   }
 }

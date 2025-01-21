@@ -53,7 +53,7 @@ export default function FlexAndDtgPricing() {
             value="customClothingPage.pricingFlexVinyl.tableTitle"
             variant="subTitle"
           />
-          <TextBlock value="placeHolderText" variant="body" />
+          <TextBlock value="commonSentences.placeHolderText" variant="body" />
         </div>
         <div>
           {/* Table to display "Flex / Vinyl" prices */}
@@ -71,7 +71,7 @@ export default function FlexAndDtgPricing() {
             value="customClothingPage.pricingDtg.tableTitle"
             variant="subTitle"
           />
-          <TextBlock value="placeHolderText" variant="body" />
+          <TextBlock value="commonSentences.placeHolderText" variant="body" />
         </div>
         <div>
           {/* Table to display "DTG" prices */}
