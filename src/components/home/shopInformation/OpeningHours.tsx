@@ -7,7 +7,7 @@ export default function OpeningHours() {
   const { shopInfo } = useData();
 
   return (
-    <div className="flex flex-col items-center text-white">
+    <div className="flex flex-col items-center gap-6 text-white">
       {/* Component Title */}
       <TextBlock
         value={contactInfoTextContent.openingHoursTitle}
@@ -15,19 +15,25 @@ export default function OpeningHours() {
       />
 
       {/* Monday - Friday */}
-      <TextBlock value={contactInfoTextContent.midweeks} variant="xl2Title" />
-      <TextBlock
-        value={shopInfo.openingHoursMondayToFriday}
-        variant="xlTitle"
-      />
+      <div className="flex flex-col items-center">
+        <TextBlock value={contactInfoTextContent.midweeks} variant="xl2Title" />
+        <TextBlock
+          value={shopInfo.openingHoursMondayToFriday}
+          variant="xlTitle"
+        />
+      </div>
 
       {/* Saturday */}
-      <TextBlock value={contactInfoTextContent.saturday} variant="xl2Title" />
-      <TextBlock value={shopInfo.openingHoursSaturday} variant="xlTitle" />
+      <div className="flex flex-col items-center">
+        <TextBlock value={contactInfoTextContent.saturday} variant="xl2Title" />
+        <TextBlock value={shopInfo.openingHoursSaturday} variant="xlTitle" />
+      </div>
 
       {/* Sunday */}
-      <TextBlock value={contactInfoTextContent.sunday} variant="xl2Title" />
-      <TextBlock value={contactInfoTextContent.closed} variant="xlTitle" />
+      <div className="flex flex-col items-center">
+        <TextBlock value={contactInfoTextContent.sunday} variant="xl2Title" />
+        <TextBlock value={contactInfoTextContent.closed} variant="xlTitle" />
+      </div>
     </div>
   );
 }

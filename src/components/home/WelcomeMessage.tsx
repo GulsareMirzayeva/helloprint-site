@@ -19,7 +19,7 @@ export default function WelcomeMessage() {
       </div>
 
       {/* Introduction content */}
-      <div className="flex flex-col">
+      <div className="flex flex-col gap-6">
         <TextBlock value="home.title" variant="xl5Title" />
         <TextBlock value="home.subtitle" variant="xl2Title" />
         <TextBlock value="home.introduction" variant="body" />

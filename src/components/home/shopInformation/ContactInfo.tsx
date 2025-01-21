@@ -13,30 +13,32 @@ export default function ContactInfo() {
   const { shopInfo } = useData();
 
   return (
-    <div className="flex flex-col items-center text-white ">
+    <div className="flex flex-col items-center gap-4 text-white ">
       <TextBlock value="shopInfo.contact.title" variant="xl5Title" />
       <div className="flex text-center">
         <TextBlock value="shopInfo.contact.subtitle" variant="subTitle" />
       </div>
 
-      {/* Link to cantact form */}
-      <Link to="/contact" className="flex pt-8 cursor-pointer">
-        <span className="text-2xl font-semibold">
-          <EmailIcon className="mr-2" />
-          {t('shopInfo.contact.contactForm')}
-        </span>
-      </Link>
+      <div>
+        {/* Link to cantact form */}
+        <Link to="/contact" className="flex pt-8 cursor-pointer">
+          <span className="text-2xl font-semibold">
+            <EmailIcon className="mr-2" />
+            {t('shopInfo.contact.contactForm')}
+          </span>
+        </Link>
 
-      {/* E-mail adres */}
-      <div className="flex pt-4">
-        <AlternateEmailIcon className="mt-1 mr-2" />
-        <TextBlock value={shopInfo.email} variant="xl2Title" />
-      </div>
+        {/* E-mail adres */}
+        <div className="flex pt-4">
+          <AlternateEmailIcon className="mt-1 mr-2" />
+          <TextBlock value={shopInfo.email} variant="xl2Title" />
+        </div>
 
-      {/* Phone number */}
-      <div className="flex pt-4 ">
-        <PhoneIcon className="mt-1 mr-2" />
-        <TextBlock value={shopInfo.telNo} variant="xl2Title" />
+        {/* Phone number */}
+        <div className="flex pt-4 ">
+          <PhoneIcon className="mt-1 mr-2" />
+          <TextBlock value={shopInfo.telNo} variant="xl2Title" />
+        </div>
       </div>
     </div>
   );
