@@ -1,3 +1,4 @@
+import image1 from '../../../assets/custom-clothing/custom-clothing-img1.jpg';
 import { useTranslation } from 'react-i18next';
 import { TextBlock } from '../../elementTemplates/TextBlock';
 
@@ -19,6 +20,11 @@ export default function IntroductionCustomPrint() {
 
   return (
     <section className="flex py-20 gap-12">
+      {/* Image next to the text content */}
+      <div className="max-w-60">
+        <img src={image1} alt="" />
+      </div>
+
       {/* Introduction content */}
       <div className="max-w-3xl">
         <div>

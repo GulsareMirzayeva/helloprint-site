@@ -1,3 +1,4 @@
+import image1 from '../../../assets/custom-clothing/custom-clothing-img1.jpg';
 import { TextBlock } from '../../elementTemplates/TextBlock';
 
 /*
@@ -8,9 +9,14 @@ import { TextBlock } from '../../elementTemplates/TextBlock';
 export default function IntroductionFlyers() {
   return (
     <section className="flex py-20 gap-12">
+      {/* Image next to the text content */}
+      <div className="max-w-60">
+        <img src={image1} alt="" />
+      </div>
+
+      {/* Introduction content */}
       <div className="max-w-3xl">
         <div>
-          {/* Introduction content */}
           <TextBlock value="customPrintPage.flyers.title" variant="title" />
           <TextBlock
             value="customPrintPage.flyers.introductionFlyers"
