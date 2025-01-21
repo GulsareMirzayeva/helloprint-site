@@ -3,8 +3,8 @@ import { Trans } from 'react-i18next';
 type TextBlockType = {
   value: string;
   variant:
-    | 'xl2Title'
     | 'xl5Title'
+    | 'xl2Title'
     | 'xlTitle'
     | 'largeTitle'
     | 'title'
@@ -15,8 +15,8 @@ type TextBlockType = {
 
 export function TextBlock({ value, variant }: TextBlockType) {
   const classNames = {
-    xl2Title: 'text-2xl font-bold',
     xl5Title: 'text-5xl font-bold',
+    xl2Title: 'text-2xl font-bold',
     xlTitle: 'text-xl font-bold',
     largeTitle: 'text-3xl font-bold',
     title: 'text-2xl font-bold',
