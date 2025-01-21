@@ -1,4 +1,5 @@
 import image1 from '../../../assets/custom-clothing/custom-clothing-img1.jpg';
+import { cardsContentPaths } from '../../../lib/translationPaths';
 import { TextBlock } from '../../elementTemplates/TextBlock';
 
 /*
@@ -17,9 +18,12 @@ export default function IntroductionCards() {
       {/* Introduction content */}
       <div className="max-w-2xl">
         <div>
-          <TextBlock value="customPrintPage.cards.title" variant="largeTitle" />
           <TextBlock
-            value="customPrintPage.cards.introduction"
+            value={cardsContentPaths.cardsTitle}
+            variant="largeTitle"
+          />
+          <TextBlock
+            value={cardsContentPaths.cardsIntroduction}
             variant="body"
           />
         </div>

@@ -3,6 +3,7 @@ import { useData } from '../../context/DataContext';
 import { Link } from 'react-router-dom';
 import { FooterTermsOfSaleLinks } from '../../lib/types/footerTermsofSaleLinkTypes';
 import { terms } from '../../lib/termsOfSaleItems';
+import { shopInfoPaths } from '../../lib/translationPaths';
 
 export default function TermsOfSaleSection() {
   const { setActiveTerm } = useData();
@@ -15,7 +16,7 @@ export default function TermsOfSaleSection() {
   return (
     <div className="flex flex-col">
       <p className="text-sm font-bold pb-2">
-        {t('shopInfo.termsOfSale.title')}
+        {t(shopInfoPaths.termsOfSaleTitle)}
       </p>
 
       {/* Create a link for each term in the termsOfSale list */}

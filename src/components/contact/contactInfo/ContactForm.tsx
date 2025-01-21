@@ -1,6 +1,7 @@
 import { useTranslation } from 'react-i18next';
 import { TextBlock } from '../../elementTemplates/TextBlock';
 import { useEffect, useRef, useState } from 'react';
+import { contactFormTextContentPaths } from '../../../lib/translationPaths';
 
 export default function ContactForm() {
   // Subscribes the component to i18n language so when the language changes, the content will be translated inmediatly
@@ -30,15 +31,24 @@ export default function ContactForm() {
 
   return (
     <div className="flex flex-col pr-12 mr-12 border-r-2 border-[#FB0036]">
-      <TextBlock value="contactPage.sendMessage" variant="title" />
+      <TextBlock
+        value={contactFormTextContentPaths.sendMessage}
+        variant="title"
+      />
       <i>
-        <TextBlock value="contactPage.messageAlert" variant="body" />
+        <TextBlock
+          value={contactFormTextContentPaths.messageAlert}
+          variant="body"
+        />
       </i>
       <form className="flex flex-col pt-12">
         {/* Subject input field */}
         <div className="mb-4">
           <label htmlFor="subject">
-            <TextBlock value="contactPage.messageSubject" variant="body" />
+            <TextBlock
+              value={contactFormTextContentPaths.messageSubject}
+              variant="body"
+            />
           </label>
 
           <input
@@ -55,7 +65,10 @@ export default function ContactForm() {
         {/* message input field */}
         <div className="mb-2">
           <label htmlFor="message">
-            <TextBlock value="contactPage.messageContent" variant="body" />
+            <TextBlock
+              value={contactFormTextContentPaths.messageContent}
+              variant="body"
+            />
           </label>
           <textarea
             id="message"
@@ -75,7 +88,7 @@ export default function ContactForm() {
             willChange: 'transform',
           }}
         >
-          {t('contactPage.messageSubmit')}
+          {t(contactFormTextContentPaths.messageSubmit)}
         </button>
       </form>
     </div>

@@ -5,6 +5,7 @@ import { useTranslation } from 'react-i18next';
 import { translateTextOptions } from '../../../utils/helperFunctions';
 import { TextBlock } from '../../elementTemplates/TextBlock';
 import { BeatLoader } from 'react-spinners';
+import { customClotingContentPaths } from '../../../lib/translationPaths';
 
 export default function FlexAndDtgPricing() {
   const { prices } = useData();
@@ -50,11 +51,11 @@ export default function FlexAndDtgPricing() {
       <div className="flex flex-col">
         <div className="pb-4 pr-20">
           <TextBlock
-            value="customClothingPage.pricingFlexVinyl.tableTitle"
+            value={customClotingContentPaths.FlexVinylTableTitle}
             variant="subTitle"
           />
           <TextBlock
-            value="customClothingPage.pricingFlexVinyl.tableIntroduction"
+            value={customClotingContentPaths.FlexVinylTableIntroduction}
             variant="body"
           />
         </div>
@@ -71,11 +72,11 @@ export default function FlexAndDtgPricing() {
       <div className="flex flex-col">
         <div className="pb-4">
           <TextBlock
-            value="customClothingPage.pricingDtg.tableTitle"
+            value={customClotingContentPaths.DtgTableTitle}
             variant="subTitle"
           />
           <TextBlock
-            value="customClothingPage.pricingDtg.tableIntroduction"
+            value={customClotingContentPaths.DtgTableIntroduction}
             variant="body"
           />
         </div>

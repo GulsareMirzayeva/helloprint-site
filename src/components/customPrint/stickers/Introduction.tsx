@@ -1,6 +1,7 @@
 import image1 from '../../../assets/custom-clothing/custom-clothing-img1.jpg';
 import { useTranslation } from 'react-i18next';
 import { TextBlock } from '../../elementTemplates/TextBlock';
+import { stickersContentPaths } from '../../../lib/translationPaths';
 
 /*
     Text content at the top of the page, the value in the TextBlock components refers to the content location
@@ -11,7 +12,7 @@ export default function IntroductionCustomPrint() {
   const { t } = useTranslation();
 
   // List of paths to translatable text content
-  const listItems = {
+  const listItemPaths = {
     listItem1: 'customPrintPage.stickers.listItem1',
     listItem2: 'customPrintPage.stickers.listItem2',
     listItem3: 'customPrintPage.stickers.listItem3',
@@ -28,25 +29,22 @@ export default function IntroductionCustomPrint() {
       {/* Introduction content */}
       <div className="max-w-3xl">
         <div>
-          <TextBlock value="customPrintPage.stickers.title" variant="title" />
-          <TextBlock
-            value="customPrintPage.stickers.introduction"
-            variant="body"
-          />
+          <TextBlock value={stickersContentPaths.title} variant="title" />
+          <TextBlock value={stickersContentPaths.introduction} variant="body" />
           <br />
           <TextBlock
-            value="customPrintPage.stickers.materialTitle"
+            value={stickersContentPaths.materialTitle}
             variant="subTitle"
           />
           <TextBlock
-            value="customPrintPage.stickers.materialContent"
+            value={stickersContentPaths.materialContent}
             variant="body"
           />
           <ul className="list-disc pl-4 pt-4">
-            <li>{t(listItems.listItem1)}</li>
-            <li>{t(listItems.listItem2)}</li>
-            <li>{t(listItems.listItem3)}</li>
-            <li>{t(listItems.listItem4)}</li>
+            <li>{t(listItemPaths.listItem1)}</li>
+            <li>{t(listItemPaths.listItem2)}</li>
+            <li>{t(listItemPaths.listItem3)}</li>
+            <li>{t(listItemPaths.listItem4)}</li>
           </ul>
         </div>
       </div>

@@ -6,7 +6,6 @@ import {
   useState,
 } from 'react';
 import { getPrices } from '../api/getPrices';
-import { shopInfo } from '../lib/contactInfo';
 import { DataContextType, Prices } from '../lib/types/dataContextTypes';
 import { FooterTermsOfSaleLinks } from '../lib/types/footerTermsofSaleLinkTypes';
 
@@ -34,7 +33,6 @@ export function DataProvider({ children }: { children: ReactNode }) {
   return (
     <DataContext.Provider
       value={{
-        shopInfo,
         prices,
         error,
         isLoading,

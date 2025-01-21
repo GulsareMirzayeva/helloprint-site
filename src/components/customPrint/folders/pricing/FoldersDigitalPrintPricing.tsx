@@ -7,6 +7,7 @@ import { useData } from '../../../../context/DataContext';
 import { useTranslation } from 'react-i18next';
 import { TextBlock } from '../../../elementTemplates/TextBlock';
 import { BeatLoader } from 'react-spinners';
+import { foldersContentPaths } from '../../../../lib/translationPaths';
 
 export default function FoldersDigitalPrintPricing() {
   const { prices } = useData();
@@ -61,7 +62,7 @@ export default function FoldersDigitalPrintPricing() {
         </div>
         <div className="flex text-[#FB0036]">
           <TextBlock
-            value="customPrintPage.common.digitalPrintDeliveryTime"
+            value={foldersContentPaths.digitalPrintDeliveryTime}
             variant="body"
           />
         </div>
@@ -71,12 +72,15 @@ export default function FoldersDigitalPrintPricing() {
           <div>
             {/* Display a title and the papertype at the top of the table */}
             <div className="flex items-baseline">
-              <TextBlock value="paperFormats.A4" variant="title" />
+              <TextBlock value={foldersContentPaths.formatA4} variant="title" />
               &nbsp; <span className="text-2xl">-</span> &nbsp;
-              <TextBlock value="commonWords.blackWhite" variant="subTitle" />
+              <TextBlock
+                value={foldersContentPaths.blackWhite}
+                variant="subTitle"
+              />
               &nbsp;
               <TextBlock
-                value="customPrintPage.common.bifoldOrTrifold"
+                value={foldersContentPaths.bifoldOrTrifold}
                 variant="subTitle"
               />
             </div>
@@ -92,12 +96,12 @@ export default function FoldersDigitalPrintPricing() {
           <div>
             {/* Display a title and the papertype at the top of the table */}
             <div className="flex items-baseline">
-              <TextBlock value="paperFormats.A4" variant="title" />
+              <TextBlock value={foldersContentPaths.formatA4} variant="title" />
               &nbsp; <span className="text-2xl">-</span> &nbsp;
-              <TextBlock value="commonWords.color" variant="subTitle" />
+              <TextBlock value={foldersContentPaths.color} variant="subTitle" />
               &nbsp;
               <TextBlock
-                value="customPrintPage.common.bifoldOrTrifold"
+                value={foldersContentPaths.bifoldOrTrifold}
                 variant="subTitle"
               />
             </div>

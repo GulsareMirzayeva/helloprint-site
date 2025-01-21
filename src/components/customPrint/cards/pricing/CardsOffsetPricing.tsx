@@ -4,6 +4,7 @@ import { useData } from '../../../../context/DataContext';
 import { useTranslation } from 'react-i18next';
 import { TextBlock } from '../../../elementTemplates/TextBlock';
 import { BeatLoader } from 'react-spinners';
+import { cardsContentPaths } from '../../../../lib/translationPaths';
 
 export default function CardsOffsetPrintPricing() {
   const { prices } = useData();
@@ -36,14 +37,11 @@ export default function CardsOffsetPrintPricing() {
     <section className="flex flex-col justify-center items-center gap-4 py-20 w-full bg-white">
       <div className="flex flex-col items-center">
         <div className="flex">
-          <TextBlock
-            value="customPrintPage.common.offsetPrint"
-            variant="title"
-          />
+          <TextBlock value={cardsContentPaths.offsetPrint} variant="title" />
         </div>
         <div className="flex text-red-600">
           <TextBlock
-            value="customPrintPage.common.offsetPrintDeliveryTime"
+            value={cardsContentPaths.offsetPrintDeliveryTime}
             variant="body"
           />
         </div>
@@ -52,9 +50,9 @@ export default function CardsOffsetPrintPricing() {
         <div>
           {/* Display a title and the papertype at the top of the table */}
           <div className="flex items-baseline">
-            <TextBlock value="commonWords.color" variant="title" />
+            <TextBlock value={cardsContentPaths.color} variant="title" />
             &nbsp; - &nbsp;
-            <TextBlock value="paperTypes.400gr" variant="subTitle" />
+            <TextBlock value={cardsContentPaths.type400gr} variant="subTitle" />
           </div>
 
           {/* Render a table for the "Black & White" category */}

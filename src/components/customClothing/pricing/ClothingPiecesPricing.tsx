@@ -6,6 +6,7 @@ import { translateTextOptions } from '../../../utils/helperFunctions';
 import clothing from '../../../assets/custom-clothing/clothing-images.png';
 import { TextBlock } from '../../elementTemplates/TextBlock';
 import { BeatLoader } from 'react-spinners';
+import { customClotingContentPaths } from '../../../lib/translationPaths';
 
 export default function ClothingPiecesPricing() {
   const { prices } = useData();
@@ -39,11 +40,11 @@ export default function ClothingPiecesPricing() {
         <div>
           <div className="pb-4 pr-10">
             <TextBlock
-              value="customClothingPage.pricingTextile.tableTitle"
+              value={customClotingContentPaths.tableTitle}
               variant="subTitle"
             />
             <TextBlock
-              value="customClothingPage.pricingTextile.tableIntroduction"
+              value={customClotingContentPaths.tableIntroduction}
               variant="body"
             />
           </div>

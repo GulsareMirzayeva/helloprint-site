@@ -1,12 +1,13 @@
 import { useTranslation } from 'react-i18next';
 import { TextBlock } from '../../elementTemplates/TextBlock';
 import GoogleMap from './GoogleMap';
-import { useData } from '../../../context/DataContext';
-import { contactInfoTextContent } from '../../../lib/contactInfo';
+import {
+  contactInfoTextContent,
+  shopInfoPaths,
+} from '../../../lib/translationPaths';
 
 export default function LocationAdressWithHours() {
   const { t } = useTranslation();
-  const { shopInfo } = useData();
 
   return (
     <section className="flex w-full gap-20 py-14 bg-gray-100">
@@ -15,25 +16,30 @@ export default function LocationAdressWithHours() {
           value={contactInfoTextContent.contactPageTitle}
           variant="title"
         />
-        <p className="text-md pt-2">{shopInfo.name}</p>
-        <p className="text-md">{shopInfo.adress}</p>
-        <p className="text-md">{shopInfo.zipCode}</p>
-        <p className="text-md">{shopInfo.town},</p>
+        <p className="text-md pt-2">{shopInfoPaths.name}</p>
+        <p className="text-md">{shopInfoPaths.adress}</p>
+        <p className="text-md">{shopInfoPaths.zipCode}</p>
+        <p className="text-md">{shopInfoPaths.town},</p>
         <p className="text-md">{t(contactInfoTextContent.countryName)}</p>
       </div>
       <div>
         <GoogleMap />
       </div>
       <div className="flex flex-col justify-start items-start w-full h-full">
-        <TextBlock value="shopInfo.openingHours.title" variant="title" />
+        <TextBlock
+          value={contactInfoTextContent.openingHoursTitle}
+          variant="title"
+        />
         <p className="text-md font-semibold pt-2">
           {t(contactInfoTextContent.midweeks)}
         </p>
-        <p className="text-md pb-2">{shopInfo.openingHoursMondayToFriday}</p>
+        <p className="text-md pb-2">
+          {shopInfoPaths.openingHoursMondayToFriday}
+        </p>
         <p className="text-md font-semibold">
           {t(contactInfoTextContent.saturday)}
         </p>
-        <p className="text-md pb-2">{shopInfo.openingHoursSaturday}</p>
+        <p className="text-md pb-2">{shopInfoPaths.openingHoursSaturday}</p>
         <p className="text-md font-semibold">
           {t(contactInfoTextContent.sunday)}
         </p>

@@ -1,4 +1,5 @@
 import image1 from '../../../assets/custom-clothing/custom-clothing-img1.jpg';
+import { foldersContentPaths } from '../../../lib/translationPaths';
 import { TextBlock } from '../../elementTemplates/TextBlock';
 
 /*
@@ -17,9 +18,9 @@ export default function IntroductionFlyers() {
       {/* Introduction content */}
       <div className="max-w-2xl">
         <div>
-          <TextBlock value="customPrintPage.folders.title" variant="title" />
+          <TextBlock value={foldersContentPaths.title} variant="title" />
           <TextBlock
-            value="customPrintPage.folders.introductionFolders"
+            value={foldersContentPaths.introductionFolders}
             variant="body"
           />
         </div>

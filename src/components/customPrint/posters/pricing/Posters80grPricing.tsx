@@ -7,6 +7,7 @@ import { useData } from '../../../../context/DataContext';
 import { useTranslation } from 'react-i18next';
 import { TextBlock } from '../../../elementTemplates/TextBlock';
 import { BeatLoader } from 'react-spinners';
+import { postersContentPaths } from '../../../../lib/translationPaths';
 
 export default function Posters80grPricing() {
   const { prices } = useData();
@@ -59,9 +60,12 @@ export default function Posters80grPricing() {
           <div>
             {/* Display a title and the papertype at the top of the table */}
             <div className="flex items-baseline">
-              <TextBlock value="commonWords.color" variant="title" />
+              <TextBlock value={postersContentPaths.color} variant="title" />
               &nbsp; <span className="text-2xl">-</span> &nbsp;
-              <TextBlock value="paperTypes.80gr" variant="subTitle" />
+              <TextBlock
+                value={postersContentPaths.type80gr}
+                variant="subTitle"
+              />
             </div>
             <PricingTable
               headerTitles={headerTitlesColor}
@@ -73,9 +77,15 @@ export default function Posters80grPricing() {
           <div>
             {/* Display a title and the papertype at the top of the table */}
             <div className="flex items-baseline">
-              <TextBlock value="commonWords.blackWhite" variant="title" />
+              <TextBlock
+                value={postersContentPaths.blackWhite}
+                variant="title"
+              />
               &nbsp; <span className="text-2xl">-</span> &nbsp;
-              <TextBlock value="paperTypes.80gr" variant="subTitle" />
+              <TextBlock
+                value={postersContentPaths.type80gr}
+                variant="subTitle"
+              />
             </div>
             <PricingTable
               headerTitles={headerTitlesBlackWhite}

@@ -1,4 +1,5 @@
 import image1 from '../../../assets/custom-clothing/custom-clothing-img1.jpg';
+import { flyersContentPaths } from '../../../lib/translationPaths';
 import { TextBlock } from '../../elementTemplates/TextBlock';
 
 /*
@@ -17,11 +18,8 @@ export default function IntroductionFlyers() {
       {/* Introduction content */}
       <div className="max-w-3xl">
         <div>
-          <TextBlock value="customPrintPage.flyers.title" variant="title" />
-          <TextBlock
-            value="customPrintPage.flyers.introductionFlyers"
-            variant="body"
-          />
+          <TextBlock value={flyersContentPaths.title} variant="title" />
+          <TextBlock value={flyersContentPaths.introduction} variant="body" />
         </div>
       </div>
     </section>

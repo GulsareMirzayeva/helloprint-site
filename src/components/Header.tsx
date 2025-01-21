@@ -5,7 +5,7 @@ import { Link, useLocation } from 'react-router-dom';
 import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 import LanguageIcon from '@mui/icons-material/Language';
-import { menuButtonNames } from '../lib/contactInfo';
+import { menuButtonNames } from '../lib/translationPaths';
 
 export default function Header() {
   // Used for translation with the i18next package, set default language to Dutch(nl)

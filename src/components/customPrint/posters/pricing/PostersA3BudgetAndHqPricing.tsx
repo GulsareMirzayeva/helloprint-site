@@ -7,6 +7,7 @@ import { useData } from '../../../../context/DataContext';
 import { useTranslation } from 'react-i18next';
 import { TextBlock } from '../../../elementTemplates/TextBlock';
 import { BeatLoader } from 'react-spinners';
+import { postersContentPaths } from '../../../../lib/translationPaths';
 
 export default function PostersA3BudgetAndHqPricing() {
   const { prices } = useData();
@@ -42,10 +43,10 @@ export default function PostersA3BudgetAndHqPricing() {
           <div>
             {/* Display a title and the papertype at the top of the table */}
             <div className="flex items-baseline">
-              <TextBlock value="paperFormats.A3" variant="title" />
+              <TextBlock value={postersContentPaths.typeA3} variant="title" />
               &nbsp; <span className="text-2xl">-</span> &nbsp;
               <TextBlock
-                value="customPrintPage.common.hqFullColor"
+                value={postersContentPaths.hqFullColor}
                 variant="subTitle"
               />
             </div>
@@ -59,10 +60,10 @@ export default function PostersA3BudgetAndHqPricing() {
           <div>
             {/* Display a title and the papertype at the top of the table */}
             <div className="flex items-baseline">
-              <TextBlock value="paperFormats.A3" variant="title" />
+              <TextBlock value={postersContentPaths.typeA3} variant="title" />
               &nbsp; <span className="text-2xl">-</span> &nbsp;
               <TextBlock
-                value="customPrintPage.common.budgetColor"
+                value={postersContentPaths.budgetColor}
                 variant="subTitle"
               />
             </div>

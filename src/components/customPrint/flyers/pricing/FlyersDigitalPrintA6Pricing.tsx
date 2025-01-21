@@ -4,6 +4,7 @@ import { useData } from '../../../../context/DataContext';
 import { useTranslation } from 'react-i18next';
 import { TextBlock } from '../../../elementTemplates/TextBlock';
 import { BeatLoader } from 'react-spinners';
+import { flyersContentPaths } from '../../../../lib/translationPaths';
 
 export default function FlyersDigitalPrintA6Pricing() {
   const { prices } = useData();
@@ -48,7 +49,7 @@ export default function FlyersDigitalPrintA6Pricing() {
         </div>
         <div className="flex text-[#FB0036]">
           <TextBlock
-            value="customPrintPage.common.digitalPrintDeliveryTime"
+            value={flyersContentPaths.digitalPrintDeliveryTime}
             variant="body"
           />
         </div>
@@ -58,9 +59,12 @@ export default function FlyersDigitalPrintA6Pricing() {
           <div>
             {/* Display a title and the papertype at the top of the table */}
             <div className="flex items-baseline">
-              <TextBlock value="paperFormats.A6" variant="title" />
+              <TextBlock value={flyersContentPaths.formatA6} variant="title" />
               &nbsp; <span className="text-2xl">-</span> &nbsp;
-              <TextBlock value="commonWords.singleSided" variant="subTitle" />
+              <TextBlock
+                value={flyersContentPaths.singleSided}
+                variant="subTitle"
+              />
             </div>
 
             {/* Render a table for the "Black & White" category */}
@@ -74,9 +78,12 @@ export default function FlyersDigitalPrintA6Pricing() {
           <div>
             {/* Display a title and the papertype at the top of the table */}
             <div className="flex items-baseline">
-              <TextBlock value="paperFormats.A6" variant="title" />
+              <TextBlock value={flyersContentPaths.formatA6} variant="title" />
               &nbsp; <span className="text-2xl">-</span> &nbsp;
-              <TextBlock value="commonWords.doubleSided" variant="subTitle" />
+              <TextBlock
+                value={flyersContentPaths.doubleSided}
+                variant="subTitle"
+              />
             </div>
 
             {/* Render a table for the "Color" category */}

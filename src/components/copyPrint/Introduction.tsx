@@ -1,4 +1,5 @@
 import image1 from '../../assets/custom-clothing/custom-clothing-img1.jpg';
+import { copyPrintContentPaths } from '../../lib/translationPaths';
 import { TextBlock } from '../elementTemplates/TextBlock';
 
 /*
@@ -17,11 +18,20 @@ export default function IntroductionCopyPrint() {
       {/* Introduction content */}
       <div className="max-w-2xl">
         <div>
-          <TextBlock value="copyPrintPage.title" variant="largeTitle" />
-          <TextBlock value="copyPrintPage.introduction" variant="body" />
+          <TextBlock value={copyPrintContentPaths.title} variant="largeTitle" />
+          <TextBlock
+            value={copyPrintContentPaths.introduction}
+            variant="body"
+          />
           <br />
-          <TextBlock value="copyPrintPage.titleLaminate" variant="title" />
-          <TextBlock value="copyPrintPage.introductionBinding" variant="body" />
+          <TextBlock
+            value={copyPrintContentPaths.titleLaminate}
+            variant="title"
+          />
+          <TextBlock
+            value={copyPrintContentPaths.introductionBinding}
+            variant="body"
+          />
         </div>
       </div>
     </section>

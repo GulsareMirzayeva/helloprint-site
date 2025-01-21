@@ -4,6 +4,8 @@ import { useData } from '../../../../context/DataContext';
 import { useTranslation } from 'react-i18next';
 import { translateTextOptions } from '../../../../utils/helperFunctions';
 import { TextBlock } from '../../../elementTemplates/TextBlock';
+import { BeatLoader } from 'react-spinners';
+import { stickersContentPaths } from '../../../../lib/translationPaths';
 
 export default function StickersPricing() {
   const { prices } = useData(); // Hook altijd bovenaan
@@ -26,16 +28,16 @@ export default function StickersPricing() {
       <div>
         <div className="flex flex-col pb-4">
           <TextBlock
-            value="customPrintPage.stickers.subtitleLargeFormat"
+            value={stickersContentPaths.subtitleLargeFormat}
             variant="subTitle"
           />
           <TextBlock
-            value="customPrintPage.stickers.largeFormatContent"
+            value={stickersContentPaths.largeFormatContent}
             variant="body"
           />
         </div>
         {!pricePathStickers ? (
-          <div>Loading...</div>
+          <BeatLoader />
         ) : (
           <div className="flex self-center gap-24">
             <div>

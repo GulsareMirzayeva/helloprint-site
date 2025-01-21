@@ -9,12 +9,7 @@ export type Prices = {
   customClothing: CustomClothingType;
 };
 
-type ShopInfo = {
-  [key: string]: string;
-};
-
 export type DataContextType = {
-  shopInfo: ShopInfo;
   prices: Prices | null;
   error: Error | null;
   isLoading: boolean;

@@ -4,6 +4,7 @@ import { useData } from '../../../../context/DataContext';
 import { useTranslation } from 'react-i18next';
 import { TextBlock } from '../../../elementTemplates/TextBlock';
 import { BeatLoader } from 'react-spinners';
+import { foldersContentPaths } from '../../../../lib/translationPaths';
 
 export default function FoldersOffsetPrintPricing() {
   const { prices } = useData();
@@ -52,7 +53,7 @@ export default function FoldersOffsetPrintPricing() {
         </div>
         <div className="flex text-[#FB0036]">
           <TextBlock
-            value="customPrintPage.common.offsetPrintDeliveryTime"
+            value={foldersContentPaths.offsetPrintDeliveryTime}
             variant="body"
           />
         </div>
@@ -62,12 +63,12 @@ export default function FoldersOffsetPrintPricing() {
           <div>
             {/* Display a title and the papertype at the top of the table */}
             <div className="flex items-baseline">
-              <TextBlock value="paperFormats.A4" variant="title" />
+              <TextBlock value={foldersContentPaths.formatA4} variant="title" />
               &nbsp; <span className="text-2xl">-</span> &nbsp;
-              <TextBlock value="commonWords.color" variant="subTitle" />
+              <TextBlock value={foldersContentPaths.color} variant="subTitle" />
               &nbsp;
               <TextBlock
-                value="customPrintPage.common.trifold"
+                value={foldersContentPaths.trifold}
                 variant="subTitle"
               />
             </div>
@@ -83,12 +84,12 @@ export default function FoldersOffsetPrintPricing() {
           <div>
             {/* Display a title and the papertype at the top of the table */}
             <div className="flex items-baseline">
-              <TextBlock value="paperFormats.A4" variant="title" />
+              <TextBlock value={foldersContentPaths.formatA4} variant="title" />
               &nbsp; <span className="text-2xl">-</span> &nbsp;
-              <TextBlock value="commonWords.color" variant="subTitle" />
+              <TextBlock value={foldersContentPaths.color} variant="subTitle" />
               &nbsp;
               <TextBlock
-                value="customPrintPage.common.bifold"
+                value={foldersContentPaths.bifold}
                 variant="subTitle"
               />
             </div>
@@ -105,14 +106,11 @@ export default function FoldersOffsetPrintPricing() {
         <div className="pt-20">
           {/* Display a title and the papertype at the top of the table */}
           <div className="flex items-baseline">
-            <TextBlock value="paperFormats.A3" variant="title" />
+            <TextBlock value={foldersContentPaths.formatA3} variant="title" />
             &nbsp; <span className="text-2xl">-</span> &nbsp;
-            <TextBlock value="commonWords.color" variant="subTitle" />
+            <TextBlock value={foldersContentPaths.color} variant="subTitle" />
             &nbsp;
-            <TextBlock
-              value="customPrintPage.common.trifold"
-              variant="subTitle"
-            />
+            <TextBlock value={foldersContentPaths.trifold} variant="subTitle" />
           </div>
 
           {/* Render a table for the "Color" category */}

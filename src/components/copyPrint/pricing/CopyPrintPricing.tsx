@@ -4,6 +4,7 @@ import { useData } from '../../../context/DataContext';
 import { useTranslation } from 'react-i18next';
 import { TextBlock } from '../../elementTemplates/TextBlock';
 import { BeatLoader } from 'react-spinners';
+import { copyPrintContentPaths } from '../../../lib/translationPaths';
 
 export default function CopyPrintPricing() {
   const { prices } = useData();
@@ -35,9 +36,12 @@ export default function CopyPrintPricing() {
       <div>
         {/* Display a title and the papertype at the top of the table */}
         <div className="flex items-baseline">
-          <TextBlock value="commonWords.blackWhite" variant="title" />
+          <TextBlock value={copyPrintContentPaths.blackWhite} variant="title" />
           &nbsp; <span className="text-2xl">-</span> &nbsp;
-          <TextBlock value="paperTypes.80gr" variant="subTitle" />
+          <TextBlock
+            value={copyPrintContentPaths.type80gr}
+            variant="subTitle"
+          />
         </div>
 
         {/* Render a table for the "Black & White" category */}
@@ -51,9 +55,12 @@ export default function CopyPrintPricing() {
       <div>
         {/* Display a title and the papertype at the top of the table */}
         <div className="flex items-baseline">
-          <TextBlock value="commonWords.color" variant="title" />
+          <TextBlock value={copyPrintContentPaths.color} variant="title" />
           &nbsp; <span className="text-2xl">-</span> &nbsp;
-          <TextBlock value="paperTypes.90gr" variant="subTitle" />
+          <TextBlock
+            value={copyPrintContentPaths.type90gr}
+            variant="subTitle"
+          />
         </div>
 
         {/* Render a table for the "Color" category */}

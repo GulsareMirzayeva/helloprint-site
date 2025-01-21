@@ -1,4 +1,5 @@
 import logo from '../../assets/logo-2020.png';
+import { homeContentPaths } from '../../lib/translationPaths';
 import { TextBlock } from '../elementTemplates/TextBlock';
 
 /*
@@ -20,9 +21,9 @@ export default function WelcomeMessage() {
 
       {/* Introduction content */}
       <div className="flex flex-col gap-6">
-        <TextBlock value="home.title" variant="xl5Title" />
-        <TextBlock value="home.subtitle" variant="xl2Title" />
-        <TextBlock value="home.introduction" variant="body" />
+        <TextBlock value={homeContentPaths.title} variant="xl5Title" />
+        <TextBlock value={homeContentPaths.subTitle} variant="xl2Title" />
+        <TextBlock value={homeContentPaths.introduction} variant="body" />
       </div>
     </section>
   );

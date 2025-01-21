@@ -1,4 +1,5 @@
 import image1 from '../../../assets/custom-clothing/custom-clothing-img1.jpg';
+import { postersContentPaths } from '../../../lib/translationPaths';
 import { TextBlock } from '../../elementTemplates/TextBlock';
 
 /*
@@ -16,11 +17,8 @@ export default function IntroductionPosters() {
 
       {/* Introduction content */}
       <div className="max-w-3xl">
-        <TextBlock value="customPrintPage.posters.title" variant="title" />
-        <TextBlock
-          value="customPrintPage.posters.introductionPosters"
-          variant="body"
-        />
+        <TextBlock value={postersContentPaths.title} variant="title" />
+        <TextBlock value={postersContentPaths.introduction} variant="body" />
       </div>
     </section>
   );

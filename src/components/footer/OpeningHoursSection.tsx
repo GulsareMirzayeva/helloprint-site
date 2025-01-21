@@ -1,10 +1,11 @@
 import { useTranslation } from 'react-i18next';
-import { useData } from '../../context/DataContext';
-import { contactInfoTextContent } from '../../lib/contactInfo';
+import {
+  contactInfoTextContent,
+  shopInfoPaths,
+} from '../../lib/translationPaths';
 
 export default function OpeningHoursSection() {
   const { t } = useTranslation();
-  const { shopInfo } = useData();
 
   return (
     <div>
@@ -14,11 +15,11 @@ export default function OpeningHoursSection() {
       <p className="text-xs font-semibold">
         {t(contactInfoTextContent.midweeks)}
       </p>
-      <p className="text-xs">{shopInfo.openingHoursMondayToFriday}</p>
+      <p className="text-xs">{shopInfoPaths.openingHoursMondayToFriday}</p>
       <p className="text-xs font-semibold">
         {t(contactInfoTextContent.saturday)}
       </p>
-      <p className="text-xs">{shopInfo.openingHoursSaturday}</p>
+      <p className="text-xs">{shopInfoPaths.openingHoursSaturday}</p>
       <p className="text-xs font-semibold">
         {t(contactInfoTextContent.sunday)}
       </p>

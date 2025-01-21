@@ -4,6 +4,7 @@ import { useData } from '../../../../context/DataContext';
 import { useTranslation } from 'react-i18next';
 import { TextBlock } from '../../../elementTemplates/TextBlock';
 import { BeatLoader } from 'react-spinners';
+import { cardsContentPaths } from '../../../../lib/translationPaths';
 
 export default function CardsDigitalPrintPricing() {
   const { prices } = useData();
@@ -38,14 +39,11 @@ export default function CardsDigitalPrintPricing() {
     <section className="flex flex-col justify-center items-center w-full gap-4 py-20 bg-gray-100">
       <div className="flex flex-col items-center">
         <div className="flex flex-col ">
-          <TextBlock
-            value="customPrintPage.common.digitalPrint"
-            variant="title"
-          />
+          <TextBlock value={cardsContentPaths.digitalPrint} variant="title" />
         </div>
         <div className="flex text-red-600">
           <TextBlock
-            value="customPrintPage.common.digitalPrintDeliveryTime"
+            value={cardsContentPaths.digitalPrintDeliveryTime}
             variant="body"
           />
         </div>
@@ -54,9 +52,9 @@ export default function CardsDigitalPrintPricing() {
         <div>
           {/* Display a title and the papertype at the top of the table */}
           <div className="flex items-baseline">
-            <TextBlock value="commonWords.blackWhite" variant="title" />
+            <TextBlock value={cardsContentPaths.blackWhite} variant="title" />
             &nbsp; - &nbsp;
-            <TextBlock value="paperTypes.350gr" variant="subTitle" />
+            <TextBlock value={cardsContentPaths.type350gr} variant="subTitle" />
           </div>
 
           {/* Render a table for the "Black & White" category */}
@@ -70,9 +68,9 @@ export default function CardsDigitalPrintPricing() {
         <div>
           {/* Display a title and the papertype at the top of the table */}
           <div className="flex items-baseline">
-            <TextBlock value="commonWords.color" variant="title" />
+            <TextBlock value={cardsContentPaths.color} variant="title" />
             &nbsp; - &nbsp;
-            <TextBlock value="paperTypes.350gr" variant="subTitle" />
+            <TextBlock value={cardsContentPaths.type350gr} variant="subTitle" />
           </div>
 
           {/* Render a table for the "Color" category */}
