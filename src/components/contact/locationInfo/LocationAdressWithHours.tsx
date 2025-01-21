@@ -26,15 +26,15 @@ export default function LocationAdressWithHours() {
       </div>
       <div className="flex flex-col justify-start items-start w-full h-full">
         <TextBlock value="shopInfo.openingHours.title" variant="title" />
-        <p className="text-sm font-semibold pt-2">
+        <p className="text-md font-semibold pt-2">
           {t(contactInfoTextContent.midweeks)}
         </p>
         <p className="text-md pb-2">{shopInfo.openingHoursMondayToFriday}</p>
-        <p className="text-sm font-semibold">
+        <p className="text-md font-semibold">
           {t(contactInfoTextContent.saturday)}
         </p>
         <p className="text-md pb-2">{shopInfo.openingHoursSaturday}</p>
-        <p className="text-sm font-semibold">
+        <p className="text-md font-semibold">
           {t(contactInfoTextContent.sunday)}
         </p>
         <p className="text-md">{t(contactInfoTextContent.closed)}</p>

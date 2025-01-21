@@ -34,9 +34,9 @@ export default function ContactForm() {
       <i>
         <TextBlock value="contactPage.messageAlert" variant="body" />
       </i>
-      <form className="flex flex-col pt-8">
+      <form className="flex flex-col pt-12">
         {/* Subject input field */}
-        <div className="mb-2">
+        <div className="mb-4">
           <label htmlFor="subject">
             <TextBlock value="contactPage.messageSubject" variant="body" />
           </label>
@@ -69,7 +69,7 @@ export default function ContactForm() {
         {/* Send button */}
         <button
           type="submit"
-          className="relative w-full mt-1 h-10 rounded-md bg-[#FB0036] text-white font-bold transition-transform subpixel-antialiased duration-200 ease-in hover:scale-105"
+          className="relative w-full mt-1 h-10 rounded-md bg-[#FB0036] text-white font-bold transition-transform subpixel-antialiased duration-100 ease-in hover:scale-105"
           style={{
             backfaceVisibility: 'hidden',
             willChange: 'transform',

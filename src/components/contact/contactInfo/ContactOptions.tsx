@@ -1,7 +1,7 @@
 import PhoneIcon from '@mui/icons-material/Phone';
 import AlternateEmailIcon from '@mui/icons-material/AlternateEmail';
 import FacebookIcon from '@mui/icons-material/Facebook';
-import contactPicture from '../../../assets/contact-picture.jpg';
+import contactPicture from '../../../assets/PHOTO-2022-01-26-18-36-39-scaled-370px-263px.jpg';
 import { useData } from '../../../context/DataContext';
 import { TextBlock } from '../../elementTemplates/TextBlock';
 
@@ -12,7 +12,7 @@ export default function ContactOptions() {
   return (
     <div className="flex flex-col self-start">
       <TextBlock value="contactPage.contactDetails" variant="title" />
-      <div className="pb-8">
+      <div className="pb-8 pt-2">
         <span className="text-md">
           <PhoneIcon className="mr-1" style={{ fontSize: '14px' }} />
           {shopInfo.telNo}
@@ -35,7 +35,7 @@ export default function ContactOptions() {
           Facebook
         </a>
       </div>
-      <img src={contactPicture} className="h-[250px] w-[370px] rounded-xl" />
+      <img src={contactPicture} className="rounded-xl" />
     </div>
   );
 }
