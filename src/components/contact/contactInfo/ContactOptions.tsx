@@ -35,7 +35,7 @@ export default function ContactOptions() {
             className="mr-1 text-[#0165E1]"
             style={{ fontSize: '18px' }}
           />
-          {contactInfoTextContent.facebook}
+          Facebook
         </a>
       </div>
       <img src={contactPicture} className="rounded-xl" />

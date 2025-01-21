@@ -31,7 +31,6 @@ export const contactInfoTextContent = {
   closed: 'shopInfo.openingHours.closed',
   countryName: 'shopInfo.adress.countryName',
   visitGoogleMaps: 'shopInfo.adress.visitGoogleMaps',
-  facebook: 'commonWords.facebook',
 };
 
 // Paths to button names for the header in translation files
