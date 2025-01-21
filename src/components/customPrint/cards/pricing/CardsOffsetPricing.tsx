@@ -16,7 +16,7 @@ export default function CardsOffsetPrintPricing() {
 
   // Get all prices for the "copy & print" page that will be used
   const pricesPressPrint = [
-    ...Object.values(prices.customPrint.cards.customPrint.color),
+    ...Object.values(prices.customPrint.cards.offsetPrint.color),
   ];
 
   // Table headers for the 'Flex' category. An empty cell is added because all the prices are the same

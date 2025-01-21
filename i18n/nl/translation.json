@@ -104,6 +104,7 @@
       "listItem2": "Bedrukken op uw eigen kleding is op eigen risico"
     },
     "pricingTextile": {
+      "tableIntroduction": "Geef je eigen draai aan diverse soorten bovenkleding met<br />onze printmogelijkheden.<br />Hieronder vind je de prijzen voor het personaliseren van kleding.",
       "tableHeadType": "Textiel los",
       "tableHeadBlackWhite": "Zwart / Wit",
       "tableHeadColor": "Kleur",
@@ -114,6 +115,7 @@
       "tableTitle": "Creëer unieke kleding"
     },
     "pricingFlexVinyl": {
+      "tableIntroduction": "Flex-materiaal is perfect voor strakke, éénkleurige ontwerpen<br />zoals logo’s en teksten.<br />Hieronder vind je onze tarieven voor printen en snijden.",
       "tableHead": "Flex / Vinyl",
       "frontChestLogo": "Voorkant borst logo",
       "frontBackLarge": "Voor- of achterkant groot",
@@ -121,6 +123,7 @@
       "tableTitle": "Printen op flex materiaal"
     },
     "pricingDtg": {
+      "tableIntroduction": "Met onze DTG-printer kunnen we direct op kleding printen, perfect voor<br />gedetailleerde en kleurrijke ontwerpen.<br />Hieronder vind je de tarieven voor kledingbedrukking.",
       "tableHead": "DTG",
       "tableHeadWhiteTextile": "Textiel Wit",
       "tableHeadcolored": "Textiel Kleur",
@@ -223,7 +226,7 @@
   },
   "contactPage": {
     "adressTitle": "Bezoek ons",
-    "contactUs": "Neem contact op",
+    "contactDetails": "Contactgegevens",
     "sendMessage": "Stuur een bericht",
     "messageSubject": "Onderwerp",
     "messageContent": "Bericht",
@@ -262,8 +265,7 @@
     }
   },
   "commonSentences": {
-    "tableCaption": "Tabel met opties en de bijbehorende prijzen.",
-    "placeHolderText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit,<br/>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    "tableCaption": "Tabel met opties en de bijbehorende prijzen."
   },
   "commonWords": {
     "color": "Kleur",

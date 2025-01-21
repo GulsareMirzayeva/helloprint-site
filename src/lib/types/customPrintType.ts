@@ -40,7 +40,7 @@ type Material = {
 
 type CustomPrintFolders = {
   print: Material;
-  customPrint: FolderPaperSizes;
+  offsetPrint: FolderPaperSizes;
 };
 
 type CardCategories = {
@@ -50,7 +50,7 @@ type CardCategories = {
 
 type CustomPrintCards = {
   print: CardCategories;
-  customPrint: PricingOptions;
+  offsetPrint: PricingOptions;
 };
 
 export type CustomPrintType = {

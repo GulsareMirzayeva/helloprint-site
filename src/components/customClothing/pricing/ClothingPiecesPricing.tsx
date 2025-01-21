@@ -42,7 +42,10 @@ export default function ClothingPiecesPricing() {
               value="customClothingPage.pricingTextile.tableTitle"
               variant="subTitle"
             />
-            <TextBlock value="commonSentences.placeHolderText" variant="body" />
+            <TextBlock
+              value="customClothingPage.pricingTextile.tableIntroduction"
+              variant="body"
+            />
           </div>
           {/* Table to display "Textile" prices */}
           <PricingTable

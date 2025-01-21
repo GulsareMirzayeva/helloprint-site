@@ -97,6 +97,7 @@
       "listItem2": "Printing on your own clothing is at your own risk"
     },
     "pricingTextile": {
+      "tableIntroduction": "Put your own spin on various types of tops with our printing options.<br />Below are the prices for customizing garments.",
       "tableTitle": "Create unique clothing",
       "tableHeadType": "Textile piece",
       "tableHeadBlackWhite": "Black / White",
@@ -107,6 +108,7 @@
       "hoody": "Hoody"
     },
     "pricingFlexVinyl": {
+      "tableIntroduction": "Flex material works great for clean, single-color designs<br />like logos and text. Below are our rates for printing and cutting.",
       "tableHead": "Flex / Vinyl",
       "frontChestLogo": "Front chest logo",
       "frontBackLarge": "Front or back large",
@@ -114,6 +116,7 @@
       "tableTitle": "Print on flex material"
     },
     "pricingDtg": {
+      "tableIntroduction": "Our DTG printer allows us to print directly onto clothing, ideal for detailed<br />and vibrant designs. Below are the rates for garment printing.",
       "tableHead": "DTG",
       "tableHeadWhiteTextile": "Textile White",
       "tableHeadcolored": "Textile Colour",
@@ -216,7 +219,7 @@
   },
   "contactPage": {
     "adressTitle": "Visit us",
-    "contactUs": "Contact us",
+    "contactDetails": "Contact details",
     "sendMessage": "Send a direct message",
     "messageSubject": "Subject",
     "messageContent": "Message",
@@ -255,8 +258,7 @@
     }
   },
   "commonSentences": {
-    "tableCaption": "Table showing pricing options with their corresponding prices.",
-    "placeHolderText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit,<br/>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    "tableCaption": "Table showing pricing options with their corresponding prices."
   },
   "commonWords": {
     "color": "Colour",

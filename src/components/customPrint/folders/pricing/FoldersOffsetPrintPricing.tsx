@@ -18,15 +18,15 @@ export default function FoldersOffsetPrintPricing() {
 
   // Get all prices for the "copy & print" page that will be used
   const pricesColorHalfFoldA4 = [
-    ...Object.values(prices.customPrint.folders.customPrint.A4.color.halfFold),
+    ...Object.values(prices.customPrint.folders.offsetPrint.A4.color.halfFold),
   ];
 
   const pricesColorTrifoldA4 = [
-    ...Object.values(prices.customPrint.folders.customPrint.A4.color.triFold),
+    ...Object.values(prices.customPrint.folders.offsetPrint.A4.color.triFold),
   ];
 
   const pricesColorTrifoldA3 = [
-    ...Object.values(prices.customPrint.folders.customPrint.A3.color.triFold),
+    ...Object.values(prices.customPrint.folders.offsetPrint.A3.color.triFold),
   ];
 
   // Table headers for the 'Flex' category. An empty cell is added because all the prices are the same

@@ -11,7 +11,7 @@ export default function ContactOptions() {
 
   return (
     <div className="flex flex-col self-start">
-      <TextBlock value="contactPage.contactUs" variant="title" />
+      <TextBlock value="contactPage.contactDetails" variant="title" />
       <div className="pb-8">
         <span className="text-md">
           <PhoneIcon className="mr-1" style={{ fontSize: '14px' }} />

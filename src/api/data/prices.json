@@ -82,7 +82,7 @@
             }
           }
         },
-        "customPrint": {
+        "offsetPrint": {
           "A4": {
             "color": {
               "halfFold": {
@@ -583,7 +583,7 @@
             }
           }
         },
-        "customPrint": {
+        "offsetPrint": {
           "color": {
             "500": {
               "singleSide": 55,
