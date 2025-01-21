@@ -5,12 +5,12 @@ import { Link, useLocation } from 'react-router-dom';
 import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 import LanguageIcon from '@mui/icons-material/Language';
+import { menuButtonNames } from '../lib/contactInfo';
 
 export default function Header() {
   // Used for translation with the i18next package, set default language to Dutch(nl)
   const { t, i18n } = useTranslation();
   const [language, setLanguage] = useState(i18n.language || 'nl');
-  //
 
   // Keep track of the active/current page, so the corresponding button can be highlighted
   const location = useLocation();
@@ -90,7 +90,7 @@ export default function Header() {
           }`}
           to="/"
         >
-          {t('menu.home')}
+          {t(menuButtonNames.home)}
         </Link>
         <Link
           className={`p-1 flex items-center cursor-default border-b-2 ${
@@ -100,7 +100,7 @@ export default function Header() {
           }`}
           to="copy-print"
         >
-          {t('menu.copyPrint')}
+          {t(menuButtonNames.copyPrint)}
         </Link>
 
         {/* Accordion start */}
@@ -122,7 +122,7 @@ export default function Header() {
               aria-label="Toggle custom printing submenu"
               className="flex cursor-default h-full items-center"
             >
-              {t('menu.customPrinting')}
+              {t(menuButtonNames.customPrinting)}
             </button>
             {isAccordionOpen ? (
               <KeyboardArrowUpIcon className="mt-1 ml-2" />
@@ -147,7 +147,7 @@ export default function Header() {
                 onClick={handleAccordionLinkClick}
               >
                 <li className="p-2 hover:bg-gray-200 cursor-default">
-                  {t('menu.cards')}
+                  {t(menuButtonNames.cards)}
                 </li>
               </Link>
               <Link
@@ -185,7 +185,7 @@ export default function Header() {
           }`}
           to="custom-clothing"
         >
-          {t('menu.customClothing')}
+          {t(menuButtonNames.customClothing)}
         </Link>
         <Link
           className={`p-1 flex items-center cursor-default border-b-2 ${
@@ -195,7 +195,7 @@ export default function Header() {
           }`}
           to="contact"
         >
-          {t('menu.contact')}
+          {t(menuButtonNames.contact)}
         </Link>
         <div>
           <span>

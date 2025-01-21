@@ -1,5 +1,6 @@
 import { useTranslation } from 'react-i18next';
 import { useData } from '../../context/DataContext';
+import { contactInfoTextContent } from '../../lib/contactInfo';
 
 export default function AdressSection() {
   const { shopInfo } = useData();
@@ -14,13 +15,13 @@ export default function AdressSection() {
         <p className="text-xs">{shopInfo.zipCode}</p>
         <p className="text-xs">
           {shopInfo.town},<br />
-          {t('shopInfo.adress.countryName')}
+          {t(contactInfoTextContent.countryName)}
         </p>
       </div>
       <div>
         <b>
           <a className="text-xs" href="">
-            {t('shopInfo.adress.visitGoogleMaps')}
+            {t(contactInfoTextContent.visitGoogleMaps)}
           </a>
         </b>
       </div>

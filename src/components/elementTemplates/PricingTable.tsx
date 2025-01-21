@@ -71,7 +71,7 @@ export default function PricingTable({
           const rowPrices = [...Object.values(row.prices)];
 
           return (
-            <tr key={rowIndex} className="border odd:bg-white even:bg-gray-50">
+            <tr key={rowIndex} className="border even:bg-white odd:bg-gray-50">
               <th className="border border-gray-300 px-4 py-2" scope="row">
                 <b>{row.option}</b>
               </th>

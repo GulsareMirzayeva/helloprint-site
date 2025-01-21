@@ -2,19 +2,24 @@ import { useTranslation } from 'react-i18next';
 import { TextBlock } from '../../elementTemplates/TextBlock';
 import GoogleMap from './GoogleMap';
 import { useData } from '../../../context/DataContext';
+import { contactInfoTextContent } from '../../../lib/contactInfo';
 
 export default function LocationAdressWithHours() {
   const { t } = useTranslation();
   const { shopInfo } = useData();
+
   return (
     <section className="flex w-full gap-20 py-14 bg-gray-100">
       <div className="flex flex-col w-full h-ful items-end">
-        <TextBlock value="contactPage.adressTitle" variant="title" />
+        <TextBlock
+          value={contactInfoTextContent.contactPageTitle}
+          variant="title"
+        />
         <p className="text-md pt-2">{shopInfo.name}</p>
         <p className="text-md">{shopInfo.adress}</p>
         <p className="text-md">{shopInfo.zipCode}</p>
         <p className="text-md">{shopInfo.town},</p>
-        <p className="text-md">{t('shopInfo.adress.countryName')}</p>
+        <p className="text-md">{t(contactInfoTextContent.countryName)}</p>
       </div>
       <div>
         <GoogleMap />
@@ -22,17 +27,17 @@ export default function LocationAdressWithHours() {
       <div className="flex flex-col justify-start items-start w-full h-full">
         <TextBlock value="shopInfo.openingHours.title" variant="title" />
         <p className="text-sm font-semibold pt-2">
-          {t('shopInfo.openingHours.midweeks')}
+          {t(contactInfoTextContent.midweeks)}
         </p>
         <p className="text-md pb-2">{shopInfo.openingHoursMondayToFriday}</p>
         <p className="text-sm font-semibold">
-          {t('shopInfo.openingHours.saturday')}
+          {t(contactInfoTextContent.saturday)}
         </p>
         <p className="text-md pb-2">{shopInfo.openingHoursSaturday}</p>
         <p className="text-sm font-semibold">
-          {t('shopInfo.openingHours.sunday')}
+          {t(contactInfoTextContent.sunday)}
         </p>
-        <p className="text-md">{t('shopInfo.openingHours.closed')}</p>
+        <p className="text-md">{t(contactInfoTextContent.closed)}</p>
       </div>
     </section>
   );
