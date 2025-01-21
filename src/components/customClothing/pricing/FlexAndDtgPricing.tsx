@@ -4,6 +4,7 @@ import { useData } from '../../../context/DataContext';
 import { useTranslation } from 'react-i18next';
 import { translateTextOptions } from '../../../utils/helperFunctions';
 import { TextBlock } from '../../elementTemplates/TextBlock';
+import { BeatLoader } from 'react-spinners';
 
 export default function FlexAndDtgPricing() {
   const { prices } = useData();
@@ -11,7 +12,7 @@ export default function FlexAndDtgPricing() {
 
   // Let user know if data is loading
   if (!prices) {
-    return <div>Loading...</div>;
+    return <BeatLoader color="#FB0036" />;
   }
 
   // Get all the paths that point to the correct content in the translation files

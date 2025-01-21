@@ -5,6 +5,7 @@ import { useTranslation } from 'react-i18next';
 import { translateTextOptions } from '../../../utils/helperFunctions';
 import clothing from '../../../assets/custom-clothing/clothing-images.png';
 import { TextBlock } from '../../elementTemplates/TextBlock';
+import { BeatLoader } from 'react-spinners';
 
 export default function ClothingPiecesPricing() {
   const { prices } = useData();
@@ -12,7 +13,7 @@ export default function ClothingPiecesPricing() {
 
   // Let user know if data is loading
   if (!prices) {
-    return <div>Loading...</div>;
+    return <BeatLoader color="#FB0036" />;
   }
 
   // Get the paths that point to the correct prices in the prices data file

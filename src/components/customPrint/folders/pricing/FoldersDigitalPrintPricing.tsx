@@ -6,6 +6,7 @@ import {
 import { useData } from '../../../../context/DataContext';
 import { useTranslation } from 'react-i18next';
 import { TextBlock } from '../../../elementTemplates/TextBlock';
+import { BeatLoader } from 'react-spinners';
 
 export default function FoldersDigitalPrintPricing() {
   const { prices } = useData();
@@ -15,7 +16,7 @@ export default function FoldersDigitalPrintPricing() {
 
   // Let user know if data is loading
   if (!prices) {
-    return <div>Loading...</div>;
+    return <BeatLoader color="#FB0036" />;
   }
 
   // Get all prices for the "copy & print" page that will be used
