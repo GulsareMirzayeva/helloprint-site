@@ -14,18 +14,23 @@ export const shopInfoPaths = {
   facebookUrl: 'https://www.facebook.com/copyshopthartje/',
   openingHoursMondayToFriday: '09:00 - 18:00',
   openingHoursSaturday: '10:00 - 17:00',
+  hour: 'shopInfo.openingHours.hour',
   termsOfSaleTitle: 'shopInfo.termsOfSale.title',
+  telePhone: 'shopInfo.openingHours.telePhone',
+  contact: 'shopInfo.contact.contact',
 };
 
 // Paths to contact information content in translation files
 export const contactInfoTextContent = {
   title: 'shopInfo.contact.title',
   subtitle: 'shopInfo.contact.subtitle',
+  contactIntroduction: 'contactPage.contactIntroduction',
   contactForm: 'shopInfo.contact.contactForm',
   contactDetails: 'contactPage.contactDetails',
   contactPageTitle: 'contactPage.adressTitle',
   openingHoursTitle: 'shopInfo.openingHours.title',
   midweeks: 'shopInfo.openingHours.midweeks',
+  midweeksShort: 'shopInfo.openingHours.midweeksShort',
   saturday: 'shopInfo.openingHours.saturday',
   sunday: 'shopInfo.openingHours.sunday',
   closed: 'shopInfo.openingHours.closed',
@@ -136,6 +141,9 @@ export const copyPrintContentPaths = {
 
 export const contactFormTextContentPaths = {
   sendMessage: 'contactPage.sendMessage',
+  formUserName: 'contactPage.formUserName',
+  formUserTelNumber: 'contactPage.formUserTelNumber',
+  formUserEmailAdress: 'contactPage.formUserEmailAdress',
   messageAlert: 'contactPage.messageAlert',
   messageContent: 'contactPage.messageContent',
   messageSubject: 'contactPage.messageSubject',

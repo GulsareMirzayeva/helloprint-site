@@ -1,49 +1,30 @@
-import { useTranslation } from 'react-i18next';
-import { TextBlock } from '../../elementTemplates/TextBlock';
+// import { useTranslation } from 'react-i18next';
 import GoogleMap from './GoogleMap';
-import {
-  contactInfoTextContent,
-  shopInfoPaths,
-} from '../../../lib/translationPaths';
+
+import AdressSection from './AdressSection';
+import ContactSection from './ContactSection';
+import OpeningHoursSection from './OpeningHoursSection';
 
 export default function LocationAdressWithHours() {
-  const { t } = useTranslation();
+  // const { t } = useTranslation();
 
   return (
-    <section className="flex w-full gap-20 py-14 bg-gray-100">
-      <div className="flex flex-col w-full h-ful items-end">
-        <TextBlock
-          value={contactInfoTextContent.contactPageTitle}
-          variant="title"
-        />
-        <p className="text-md pt-2">{shopInfoPaths.name}</p>
-        <p className="text-md">{shopInfoPaths.adress}</p>
-        <p className="text-md">{shopInfoPaths.zipCode}</p>
-        <p className="text-md">{shopInfoPaths.town},</p>
-        <p className="text-md">{t(contactInfoTextContent.countryName)}</p>
-      </div>
-      <div>
-        <GoogleMap />
-      </div>
-      <div className="flex flex-col justify-start items-start w-full h-full">
-        <TextBlock
-          value={contactInfoTextContent.openingHoursTitle}
-          variant="title"
-        />
-        <p className="text-md font-semibold pt-2">
-          {t(contactInfoTextContent.midweeks)}
-        </p>
-        <p className="text-md pb-2">
-          {shopInfoPaths.openingHoursMondayToFriday}
-        </p>
-        <p className="text-md font-semibold">
-          {t(contactInfoTextContent.saturday)}
-        </p>
-        <p className="text-md pb-2">{shopInfoPaths.openingHoursSaturday}</p>
-        <p className="text-md font-semibold">
-          {t(contactInfoTextContent.sunday)}
-        </p>
-        <p className="text-md">{t(contactInfoTextContent.closed)}</p>
+    <section className="flex flex-col items-center py-14 w-full bg-gray-100">
+      <div className="flex flex-col items-center">
+        <div className="flex gap-40">
+          <div className="flex">
+            <AdressSection />
+          </div>
+          <div className="flex">
+            <ContactSection />
+          </div>
+          <div className="flex">
+            <OpeningHoursSection />
+          </div>
+        </div>
+        <div className="flex-1 flex mt-10">
+          <GoogleMap />
+        </div>
       </div>
     </section>
   );

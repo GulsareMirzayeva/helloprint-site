@@ -33,15 +33,14 @@ export default function PostersSpecialPapersPricing() {
   const units: string[] = [t('commonWords.format'), t('commonWords.price')];
 
   return (
-    <section className="flex flex-col justify-center items-center w-full py-20 gap-4 bg-white">
+    <section className="flex flex-col justify-center items-center w-full py-10 gap-4 bg-white">
       <div className="flex flex-col items-center"></div>
       <div className="flex flex-col items-center justify-center w-full">
         <div className="flex gap-20">
           <div>
             {/* Display a title and the papertype at the top of the table */}
-            <div className="flex items-baseline">
+            <div className="flex flex-col pb-4 items-baseline">
               <TextBlock value={postersContentPaths.color} variant="title" />
-              &nbsp; <span className="text-2xl">-</span> &nbsp;
               <TextBlock
                 value={postersContentPaths.polypropylene}
                 variant="subTitle"
@@ -56,9 +55,8 @@ export default function PostersSpecialPapersPricing() {
           </div>
           <div>
             {/* Display a title and the papertype at the top of the table */}
-            <div className="flex items-baseline">
+            <div className="flex flex-col pb-4 items-baseline">
               <TextBlock value={postersContentPaths.color} variant="title" />
-              &nbsp; <span className="text-2xl">-</span> &nbsp;
               <TextBlock
                 value={postersContentPaths.type260grHandMade}
                 variant="subTitle"

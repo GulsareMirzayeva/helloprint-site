@@ -10,6 +10,7 @@ type TextBlockType = {
     | 'title'
     | 'subTitle'
     | 'body'
+    | 'bodySmall'
     | 'bold';
 };
 
@@ -22,6 +23,7 @@ export function TextBlock({ value, variant }: TextBlockType) {
     title: 'text-2xl font-bold',
     subTitle: 'text-lg font-semibold',
     body: 'text-base',
+    bodySmall: 'text-md',
     bold: 'font-bold',
   };
 

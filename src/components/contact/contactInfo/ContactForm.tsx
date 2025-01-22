@@ -8,8 +8,11 @@ export default function ContactForm() {
   const { t } = useTranslation();
 
   // Controlled components - Control the values of the input fields
-  const [subjectValue, setSubjectValue] = useState<string>();
-  const [messageValue, setMessageValue] = useState<string>();
+  const [formSubject, setFormSubject] = useState<string>();
+  const [formMessage, setFormMessage] = useState<string>();
+  const [formUserName, setFormUserName] = useState<string>();
+  const [formTelNumber, setFormTelNumber] = useState<string>();
+  const [formEmailAdress, setFormEmailAdress] = useState<string>();
 
   // Set focus on the 'Subject' input field when the component is loaded
   const subjectInputRef = useRef<HTMLInputElement | null>(null);
@@ -24,29 +27,44 @@ export default function ContactForm() {
       | React.ChangeEvent<HTMLInputElement>
       | React.ChangeEvent<HTMLTextAreaElement>
   ) => {
-    e.target.id === 'subject'
-      ? setSubjectValue(e.target.value)
-      : setMessageValue(e.target.value);
+    switch (e.target.id) {
+      case e.target.value:
+        'name';
+        setFormUserName(e.target.value);
+        break;
+      case e.target.value:
+        'telNo';
+        setFormTelNumber(e.target.value);
+        break;
+      case e.target.value:
+        'email';
+        setFormEmailAdress(e.target.value);
+        break;
+      case e.target.value:
+        'subject';
+        setFormSubject(e.target.value);
+        break;
+      case e.target.value:
+        'message';
+        setFormMessage(e.target.value);
+        break;
+      default:
+        break;
+    }
   };
-
   return (
-    <div className="flex flex-col pr-12 mr-12 border-r-2 border-[#FB0036]">
+    <div className="flex flex-col pl-20">
       <TextBlock
         value={contactFormTextContentPaths.sendMessage}
         variant="title"
       />
-      <i>
-        <TextBlock
-          value={contactFormTextContentPaths.messageAlert}
-          variant="body"
-        />
-      </i>
-      <form className="flex flex-col pt-12">
-        {/* Subject input field */}
-        <div className="mb-4">
-          <label htmlFor="subject">
+
+      <form className="flex flex-col pt-4">
+        {/* Name input field */}
+        <div className="mb-2">
+          <label className="sr-only" htmlFor="name">
             <TextBlock
-              value={contactFormTextContentPaths.messageSubject}
+              value={contactFormTextContentPaths.formUserName}
               variant="body"
             />
           </label>
@@ -54,17 +72,78 @@ export default function ContactForm() {
           <input
             ref={subjectInputRef}
             type="text"
+            id="name"
+            name="name"
+            className="w-[400px] rounded-sm mt-1 p-1 pl-2 border"
+            value={formUserName}
+            onChange={handleOnChange}
+            placeholder={t(contactFormTextContentPaths.formUserName)}
+          />
+        </div>
+
+        {/* Telephone number input field */}
+        <div className="mb-2">
+          <label className="sr-only" htmlFor="telNo">
+            <TextBlock
+              value={contactFormTextContentPaths.formUserTelNumber}
+              variant="body"
+            />
+          </label>
+
+          <input
+            type="text"
+            id="telNo"
+            name="telNo"
+            className="w-[400px] rounded-sm mt-1 p-1 pl-2 border"
+            value={formTelNumber}
+            onChange={handleOnChange}
+            placeholder={t(contactFormTextContentPaths.formUserTelNumber)}
+          />
+        </div>
+
+        {/* E-nail adress input field */}
+        <div className="mb-2">
+          <label className="sr-only" htmlFor="email">
+            <TextBlock
+              value={contactFormTextContentPaths.formUserEmailAdress}
+              variant="body"
+            />
+          </label>
+
+          <input
+            type="text"
+            id="email"
+            name="email"
+            className="w-[400px] rounded-sm mt-1 p-1 pl-2 border"
+            value={formEmailAdress}
+            onChange={handleOnChange}
+            placeholder={t(contactFormTextContentPaths.formUserEmailAdress)}
+          />
+        </div>
+
+        {/* Subject input field */}
+        <div className="mb-2">
+          <label className="sr-only" htmlFor="subject">
+            <TextBlock
+              value={contactFormTextContentPaths.messageSubject}
+              variant="body"
+            />
+          </label>
+
+          <input
+            type="text"
             id="subject"
             name="subject"
-            className="w-[400px] rounded-md mt-1 p-1 pl-2 border"
-            value={subjectValue}
+            className="w-[400px] rounded-sm mt-1 p-1 pl-2 border"
+            value={formSubject}
             onChange={handleOnChange}
+            placeholder={t(contactFormTextContentPaths.messageSubject)}
           />
         </div>
 
         {/* message input field */}
         <div className="mb-2">
-          <label htmlFor="message">
+          <label className="sr-only" htmlFor="message">
             <TextBlock
               value={contactFormTextContentPaths.messageContent}
               variant="body"
@@ -73,16 +152,17 @@ export default function ContactForm() {
           <textarea
             id="message"
             name="message"
-            className="rounded-md w-[400px] h-[140px] mt-1 p-1 pl-2 border"
-            value={messageValue}
+            className="rounded-sm w-[400px] h-[140px] mt-1 p-1 pl-2 border"
+            value={formMessage}
             onChange={handleOnChange}
+            placeholder={t(contactFormTextContentPaths.messageContent)}
           />
         </div>
 
         {/* Send button */}
         <button
           type="submit"
-          className="relative w-full mt-1 h-10 rounded-md bg-[#FB0036] text-white font-bold transition-transform subpixel-antialiased duration-100 ease-in hover:scale-105"
+          className="relative w-32 mt-1 h-10 rounded-sm bg-[#FB0036] text-white transition-bg duration-100 ease-in hover:bg-[#FF3366]"
           style={{
             backfaceVisibility: 'hidden',
             willChange: 'transform',
