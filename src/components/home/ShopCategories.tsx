@@ -4,6 +4,8 @@ import leaflet from '../../assets/icons/icons8-half-fold-leaflet-100.png';
 import paper from '../../assets/icons/icons8-paper-96.png';
 import tshirt from '../../assets/icons/icons8-tshirt-100.png';
 import supplies from '../../assets/icons/office_supplies-100.png';
+import { homeContentPaths } from '../../lib/translationPaths';
+import { Link } from 'react-router-dom';
 
 export default function ShopCategories() {
   const { t } = useTranslation();
@@ -14,7 +16,7 @@ export default function ShopCategories() {
   });
 
   return (
-    <section className="flex justify-center py-20 mb-20 gap-12">
+    <section className="flex justify-center py-14 mb-20 gap-12">
       {Object.entries(categoryCardsContent).map(([key, value]) => (
         <div
           key={key}
@@ -41,6 +43,18 @@ export default function ShopCategories() {
                 </li>
               ))}
             </ul>
+          </div>
+          <div className="flex justify-start p-3">
+            <Link
+              to={value.link}
+              className="relative w-32 pt-2 h-10 text-center rounded-sm bg-[#FB0036] text-white transition-bg duration-100 ease-in hover:bg-[#FF3366]"
+              style={{
+                backfaceVisibility: 'hidden',
+                willChange: 'transform',
+              }}
+            >
+              {t(homeContentPaths.readMore)}
+            </Link>
           </div>
         </div>
       ))}

@@ -2,6 +2,7 @@ export const homeContentPaths = {
   title: 'home.title',
   subTitle: 'home.subTitle',
   introduction: 'home.introduction',
+  readMore: 'home.readMore',
 };
 
 export const shopInfoPaths = {
