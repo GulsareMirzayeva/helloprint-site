@@ -3,9 +3,14 @@
     "home": "Home",
     "copyPrint": "Copy & Print",
     "customPrinting": "Custom print",
+    "stickers": "Stickers",
+    "cards": "Business Cards",
+    "flyers": "Flyers",
+    "folders": "Folders",
+    "posters": "Posters",
     "customClothing": "Custom Clothing",
     "contact": "Contact",
-    "cards": "Business Cards"
+    "articles": "Office supplies"
   },
   "home": {
     "title": "Welcome to Copy <br /> & Printshop 't Hartje",

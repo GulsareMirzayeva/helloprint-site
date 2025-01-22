@@ -44,9 +44,14 @@ export const menuButtonNames = {
   home: 'menu.home',
   copyPrint: 'menu.copyPrint',
   customPrinting: 'menu.customPrinting',
+  stickers: 'menu.stickers',
+  cards: 'menu.cards',
+  flyers: 'menu.flyers',
+  folders: 'menu.folders',
+  posters: 'menu.posters',
   customClothing: 'menu.customClothing',
   contact: 'menu.contact',
-  cards: 'menu.cards',
+  articles: 'menu.articles',
 };
 
 // Paths to text content in translation files

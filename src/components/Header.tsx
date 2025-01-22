@@ -1,11 +1,12 @@
 import { useTranslation } from 'react-i18next';
 import { useEffect, useRef, useState } from 'react';
-import { Link, useLocation } from 'react-router-dom';
-
+import { useLocation } from 'react-router-dom';
 import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 import LanguageIcon from '@mui/icons-material/Language';
 import { menuButtonNames } from '../lib/translationPaths';
+import { ExpandableLinkType } from '../lib/types/headerNavigationTypes';
+import { NavigationLink, SubNavigationLink } from '../utils/GenerateElements';
 
 export default function Header() {
   // Used for translation with the i18next package, set default language to Dutch(nl)
@@ -79,124 +80,100 @@ export default function Header() {
     setAccordionOpen(false);
   };
 
+  const NagivationExpandableLink: React.FC<ExpandableLinkType> = ({
+    children,
+  }) => {
+    return (
+      <div
+        ref={accordionRef}
+        className="relative"
+        onMouseEnter={handleMouseEnter}
+        onMouseLeave={handleMouseLeave}
+      >
+        <div
+          className={`p-1 flex items-center cursor-default border-b-2 ${
+            location.pathname.startsWith('/custom-printing')
+              ? 'border-b-[#FB0036]'
+              : 'border-b-white'
+          }`}
+          onClick={handleOpen}
+        >
+          <button
+            aria-label="Toggle custom printing submenu"
+            className="flex cursor-default h-full items-center"
+          >
+            {t(menuButtonNames.customPrinting)}
+          </button>
+          {isAccordionOpen ? (
+            <KeyboardArrowUpIcon className="mt-1 ml-2" />
+          ) : (
+            <KeyboardArrowDownIcon className="mt-1 ml-2" />
+          )}
+        </div>
+        {children}
+      </div>
+    );
+  };
+
   return (
     <header>
       <nav className="relative z-50 flex justify-center gap-16 items-center shadow-md h-14">
-        <Link
-          className={`p-1 flex items-center cursor-default border-b-2 ${
-            location.pathname === '/'
-              ? 'border-b-[#FB0036] hover:border-b-gray-[#FB0036]'
-              : 'border-b-white hover:border-b-gray-200'
-          }`}
-          to="/"
-        >
-          {t(menuButtonNames.home)}
-        </Link>
-        <Link
-          className={`p-1 flex items-center cursor-default border-b-2 ${
-            location.pathname === '/copy-print'
-              ? 'border-b-[#FB0036] hover:border-b-[#FB0036]'
-              : 'border-b-white hover:border-b-gray-200'
-          }`}
-          to="copy-print"
-        >
-          {t(menuButtonNames.copyPrint)}
-        </Link>
+        <NavigationLink path={'/'} value={t(menuButtonNames.home)} />
+        <NavigationLink
+          path={'/copy-print'}
+          value={t(menuButtonNames.copyPrint)}
+        />
 
         {/* Accordion start */}
-        <div
-          ref={accordionRef}
-          className="relative"
-          onMouseEnter={handleMouseEnter}
-          onMouseLeave={handleMouseLeave}
-        >
-          <div
-            className={`p-1 flex items-center cursor-default border-b-2 ${
-              location.pathname.startsWith('/custom-printing')
-                ? 'border-b-[#FB0036]'
-                : 'border-b-white'
-            }`}
-            onClick={handleOpen}
-          >
-            <button
-              aria-label="Toggle custom printing submenu"
-              className="flex cursor-default h-full items-center"
-            >
-              {t(menuButtonNames.customPrinting)}
-            </button>
-            {isAccordionOpen ? (
-              <KeyboardArrowUpIcon className="mt-1 ml-2" />
-            ) : (
-              <KeyboardArrowDownIcon className="mt-1 ml-2" />
-            )}
-          </div>
-
+        <NagivationExpandableLink>
           {/* Accordion content */}
           {isAccordionOpen && (
             <ul className="absolute top-[calc(100%+9px)] min-w-[105%] bg-white shadow-md rounded-sm">
-              <Link
-                to="/custom-printing/stickers"
-                onClick={handleAccordionLinkClick}
-              >
-                <li className="p-2 hover:bg-gray-200 cursor-default">
-                  Stickers
-                </li>
-              </Link>
-              <Link
-                to="/custom-printing/cards"
-                onClick={handleAccordionLinkClick}
-              >
-                <li className="p-2 hover:bg-gray-200 cursor-default">
-                  {t(menuButtonNames.cards)}
-                </li>
-              </Link>
-              <Link
-                to="/custom-printing/flyers"
-                onClick={handleAccordionLinkClick}
-              >
-                <li className="p-2 hover:bg-gray-200 cursor-default">Flyers</li>
-              </Link>
-              <Link
-                to="/custom-printing/folders"
-                onClick={handleAccordionLinkClick}
-              >
-                <li className="p-2 hover:bg-gray-200 cursor-default">
-                  Folders
-                </li>
-              </Link>
-              <Link
-                to="/custom-printing/posters"
-                onClick={handleAccordionLinkClick}
-              >
-                <li className="p-2 hover:bg-gray-200 cursor-default">
-                  Posters
-                </li>
-              </Link>
+              <SubNavigationLink
+                path={'/custom-printing/stickers'}
+                value={t(menuButtonNames.stickers)}
+                callBack={handleAccordionLinkClick}
+              />
+
+              <SubNavigationLink
+                path={'/custom-printing/cards'}
+                value={t(menuButtonNames.cards)}
+                callBack={handleAccordionLinkClick}
+              />
+
+              <SubNavigationLink
+                path={'/custom-printing/flyers'}
+                value={t(menuButtonNames.flyers)}
+                callBack={handleAccordionLinkClick}
+              />
+
+              <SubNavigationLink
+                path={'/custom-printing/folders'}
+                value={t(menuButtonNames.folders)}
+                callBack={handleAccordionLinkClick}
+              />
+
+              <SubNavigationLink
+                path={'/custom-printing/posters'}
+                value={t(menuButtonNames.posters)}
+                callBack={handleAccordionLinkClick}
+              />
             </ul>
           )}
-        </div>
-        {/* Accordion end */}
 
-        <Link
-          className={`p-1 flex items-center cursor-default border-b-2 ${
-            location.pathname === '/custom-clothing'
-              ? 'border-b-[#FB0036] hover:border-b-[#FB0036]'
-              : 'border-b-white hover:border-b-gray-200'
-          }`}
-          to="custom-clothing"
-        >
-          {t(menuButtonNames.customClothing)}
-        </Link>
-        <Link
-          className={`p-1 flex items-center cursor-default border-b-2 ${
-            location.pathname === '/contact'
-              ? 'border-b-[#FB0036] hover:border-b-[#FB0036]'
-              : 'border-b-white hover:border-b-gray-200'
-          }`}
-          to="contact"
-        >
-          {t(menuButtonNames.contact)}
-        </Link>
+          {/* Accordion end */}
+        </NagivationExpandableLink>
+
+        <NavigationLink
+          path={'/custom-clothing'}
+          value={t(menuButtonNames.customClothing)}
+        />
+        <NavigationLink
+          path={'/custom-clothing'}
+          value={t(menuButtonNames.articles)}
+        />
+        <NavigationLink path={'/contact'} value={t(menuButtonNames.contact)} />
+
         <div>
           <span>
             <LanguageIcon fontSize={'small'} />
