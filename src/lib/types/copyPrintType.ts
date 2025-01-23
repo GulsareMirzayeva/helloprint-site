@@ -14,4 +14,5 @@ export type CardContentType = {
   textContentPath: string;
   pageLink: string;
   bgColor: string;
+  placeImageLeft: boolean;
 };
