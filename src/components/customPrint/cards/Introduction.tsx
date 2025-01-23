@@ -18,14 +18,8 @@ export default function IntroductionCards() {
       {/* Introduction content */}
       <div className="max-w-2xl">
         <div>
-          <TextBlock
-            value={cardsContentPaths.cardsTitle}
-            variant="largeTitle"
-          />
-          <TextBlock
-            value={cardsContentPaths.cardsIntroduction}
-            variant="body"
-          />
+          <TextBlock value={cardsContentPaths.title} variant="largeTitle" />
+          <TextBlock value={cardsContentPaths.introduction} variant="body" />
         </div>
       </div>
     </section>

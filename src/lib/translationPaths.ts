@@ -72,8 +72,8 @@ export const customClotingContentPaths = {
 };
 
 export const cardsContentPaths = {
-  cardsTitle: 'customPrintPage.cards.title',
-  cardsIntroduction: 'customPrintPage.cards.introduction',
+  title: 'customPrintPage.cards.title',
+  introduction: 'customPrintPage.cards.introduction',
   digitalPrint: 'customPrintPage.common.digitalPrint',
   digitalPrintDeliveryTime: 'customPrintPage.common.digitalPrintDeliveryTime',
   blackWhite: 'commonWords.blackWhite',
@@ -97,7 +97,7 @@ export const flyersContentPaths = {
 
 export const foldersContentPaths = {
   title: 'customPrintPage.folders.title',
-  introductionFolders: 'customPrintPage.folders.introductionFolders',
+  introduction: 'customPrintPage.folders.introductionFolders',
   offsetPrintDeliveryTime: 'customPrintPage.common.offsetPrintDeliveryTime',
   formatA4: 'paperFormats.A4',
   formatA3: 'paperFormats.A3',

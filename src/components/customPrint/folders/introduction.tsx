@@ -19,10 +19,7 @@ export default function IntroductionFlyers() {
       <div className="max-w-2xl">
         <div>
           <TextBlock value={foldersContentPaths.title} variant="title" />
-          <TextBlock
-            value={foldersContentPaths.introductionFolders}
-            variant="body"
-          />
+          <TextBlock value={foldersContentPaths.introduction} variant="body" />
         </div>
       </div>
     </section>
