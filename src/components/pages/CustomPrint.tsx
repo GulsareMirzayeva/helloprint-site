@@ -1,4 +1,5 @@
 import { useTranslation } from 'react-i18next';
+import Divider from '@mui/material/Divider';
 import Footer from '../Footer';
 import OverviewCategoryCard from '../customPrint/overview/OverviewCategoryCard';
 import {
@@ -8,6 +9,7 @@ import {
   postersContent,
   stickersContent,
 } from '../../lib/customPrintOverviewCardsContent';
+import MessageOptions from '../contact/MessageOptions';
 
 export default function CustomClothing() {
   useTranslation();
@@ -19,6 +21,8 @@ export default function CustomClothing() {
       <OverviewCategoryCard cardContent={flyersContent} />
       <OverviewCategoryCard cardContent={foldersContent} />
       <OverviewCategoryCard cardContent={postersContent} />
+      <Divider flexItem variant="middle" />
+      <MessageOptions />
       <Footer />
     </div>
   );

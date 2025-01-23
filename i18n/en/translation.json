@@ -235,7 +235,7 @@
   "contactPage": {
     "adressTitle": "Visit us",
     "contactDetails": "Custom quote",
-    "contactIntroduction": "You still may have questions. For instance, about specific products or prices. Feel free to contact us for a non-binding quote. We are happy to assist you and provide a tailored proposal.",
+    "contactIntroduction": "You still may have questions. For instance, about specific products or prices.< br />Feel free to contact us for a non-binding quote.<br />We are happy to assist you and provide a tailored proposal.",
     "sendMessage": "Send a direct message",
     "formUserName": "Name",
     "formUserTelNumber": "Telephone Number",

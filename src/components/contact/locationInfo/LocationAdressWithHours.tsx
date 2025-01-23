@@ -11,7 +11,7 @@ export default function LocationAdressWithHours() {
   return (
     <section className="flex flex-col items-center py-14 w-full bg-gray-100">
       <div className="flex flex-col items-center">
-        <div className="flex gap-40">
+        <div className="flex gap-52">
           <div className="flex">
             <AdressSection />
           </div>

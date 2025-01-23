@@ -1,6 +1,6 @@
 import { useTranslation } from 'react-i18next';
 import { TextBlock } from '../../elementTemplates/TextBlock';
-import { useEffect, useRef, useState } from 'react';
+import { useState } from 'react';
 import { contactFormTextContentPaths } from '../../../lib/translationPaths';
 
 export default function ContactForm() {
@@ -14,13 +14,6 @@ export default function ContactForm() {
   const [formTelNumber, setFormTelNumber] = useState<string>();
   const [formEmailAdress, setFormEmailAdress] = useState<string>();
 
-  // Set focus on the 'Subject' input field when the component is loaded
-  const subjectInputRef = useRef<HTMLInputElement | null>(null);
-
-  useEffect(() => {
-    subjectInputRef.current?.focus();
-  }, []);
-
   // Update the input values while text is being typed
   const handleOnChange = (
     e:
@@ -28,30 +21,26 @@ export default function ContactForm() {
       | React.ChangeEvent<HTMLTextAreaElement>
   ) => {
     switch (e.target.id) {
-      case e.target.value:
-        'name';
+      case 'name':
         setFormUserName(e.target.value);
         break;
-      case e.target.value:
-        'telNo';
+      case 'telNo':
         setFormTelNumber(e.target.value);
         break;
-      case e.target.value:
-        'email';
+      case 'email':
         setFormEmailAdress(e.target.value);
         break;
-      case e.target.value:
-        'subject';
+      case 'subject':
         setFormSubject(e.target.value);
         break;
-      case e.target.value:
-        'message';
+      case 'message':
         setFormMessage(e.target.value);
         break;
       default:
         break;
     }
   };
+
   return (
     <div className="flex flex-col pl-20">
       <TextBlock
@@ -70,7 +59,6 @@ export default function ContactForm() {
           </label>
 
           <input
-            ref={subjectInputRef}
             type="text"
             id="name"
             name="name"
