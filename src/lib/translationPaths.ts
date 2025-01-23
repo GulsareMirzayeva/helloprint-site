@@ -71,6 +71,13 @@ export const customClotingContentPaths = {
   tableIntroduction: 'customClothingPage.pricingTextile.tableIntroduction',
 };
 
+export const customPrintingContentPaths = {
+  title: 'customPrintPage.overviewTitle',
+  introduction: 'customPrintPage.overviewIntroduction',
+  contactTitle: 'customPrintPage.contactTitle',
+  contactIntroduction: 'customPrintPage.contactIntroduction',
+};
+
 export const cardsContentPaths = {
   title: 'customPrintPage.cards.title',
   introduction: 'customPrintPage.cards.introduction',

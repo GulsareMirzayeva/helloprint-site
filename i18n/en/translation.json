@@ -142,6 +142,9 @@
     }
   },
   "customPrintPage": {
+    "overviewTitle": "An Overview of Our Printing Services",
+    "overviewIntroduction": "Explore our wide range of custom printing options. From business cards and flyers to textile prints and large-format printing, we have solutions for every need. Click on a category to learn more and get inspired by the possibilities.",
+    "contactTitle": "Would you like to receive a quote for a product? We would be happy to provide you with a tailored quote. Requesting a quote is free and easy.",
     "stickers": {
       "material": "Sticker",
       "title": "Stickers",
@@ -235,7 +238,7 @@
   "contactPage": {
     "adressTitle": "Visit us",
     "contactDetails": "Custom quote",
-    "contactIntroduction": "You still may have questions. For instance, about specific products or prices.< br />Feel free to contact us for a non-binding quote.<br />We are happy to assist you and provide a tailored proposal.",
+    "contactIntroduction": "Do you have questions about our products or services, or would you like to know more about the associated costs? Please fill out our form, and we will ensure you receive a quote quickly and without any obligation.",
     "sendMessage": "Send a direct message",
     "formUserName": "Name",
     "formUserTelNumber": "Telephone Number",

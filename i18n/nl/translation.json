@@ -149,6 +149,9 @@
     }
   },
   "customPrintPage": {
+    "overviewTitle": "Een overzicht van ons aanbod in drukwerk",
+    "overviewIntroduction": "Ontdek ons uitgebreide aanbod aan drukwerk mogelijkheden. Van visitekaartjes en flyers tot textielprints en grootformaat drukwerk, wij bieden oplossingen voor elke behoefte. Klik op een categorie voor meer informatie en laat je inspireren door de mogelijkheden",
+    "contactTitle": "Wilt u een prijsopgave voor een product ontvangen? Wij voorzien u graag van een offerte op maat. Het aanvragen van een offerte is kosteloos en eenvoudig.",
     "stickers": {
       "material": "Sticker",
       "title": "Stickers",
@@ -242,7 +245,7 @@
   "contactPage": {
     "adressTitle": "Bezoek ons",
     "contactDetails": "Offerte op maat",
-    "contactIntroduction": "Mogelijk heeft u nog vragen. Bijvoorbeeld over specifieke producten of prijzen.<br />Neem gerust contact met ons op voor een vrijblijvende offerte.<br />Wij denken graag met u mee en zorgen voor een passend voorstel.",
+    "contactIntroduction": "Heeft u vragen over onze producten of diensten, of wilt u meer weten over de bijbehorende kosten? Vul dan ons formulier in, en wij zorgen ervoor dat u snel en geheel vrijblijvend een offerte ontvangt.",
     "sendMessage": "Stuur een bericht",
     "formUserName": "Naam",
     "formUserTelNumber": "Telefoonnummer",

@@ -5,6 +5,7 @@ type TextBlockType = {
   variant:
     | 'xl5Title'
     | 'xl2Title'
+    | 'xl2TitleRegular'
     | 'xlTitle'
     | 'largeTitle'
     | 'title'
@@ -18,6 +19,7 @@ export function TextBlock({ value, variant }: TextBlockType) {
   const classNames = {
     xl5Title: 'text-5xl font-bold',
     xl2Title: 'text-2xl font-bold',
+    xl2TitleRegular: 'text-2xl',
     xlTitle: 'text-xl font-bold',
     largeTitle: 'text-3xl font-bold',
     title: 'text-2xl font-bold',
