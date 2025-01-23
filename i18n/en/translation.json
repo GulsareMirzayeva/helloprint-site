@@ -2,6 +2,7 @@
   "menu": {
     "home": "Home",
     "copyPrint": "Copy & Print",
+    "overview": "Overview",
     "customPrinting": "Custom print",
     "stickers": "Stickers",
     "cards": "Business Cards",
@@ -30,7 +31,8 @@
         "High Quality",
         "Binding",
         "Laminating"
-      ]
+      ],
+      "link": "/copy-print"
     },
     "customPrinting": {
       "title": "Custom Print",
@@ -43,7 +45,8 @@
         "Folders",
         "Posters",
         "Magazines"
-      ]
+      ],
+      "link": "/custom-printing"
     },
     "customClothing": {
       "title": "Custom Clothing",
@@ -56,13 +59,15 @@
         "Polo",
         "Sweater",
         "Hoody"
-      ]
+      ],
+      "link": "/custom-clothing"
     },
     "officeSupplies": {
       "title": "Office Supplies",
       "icon": 3,
       "introduction": "Everything you need to set up and optimize your workspace for efficiency.",
-      "content": ["Paper", "Cardridges", "Maps", "Pencils", "Markers", "etc."]
+      "content": ["Paper", "Cardridges", "Maps", "Pencils", "Markers", "etc."],
+      "link": "/office-supplies"
     }
   },
   "shopInfo": {

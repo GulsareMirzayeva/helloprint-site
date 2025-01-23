@@ -2,6 +2,7 @@
   "menu": {
     "home": "Start",
     "copyPrint": "Kopieren & Printen",
+    "overview": "Overzicht",
     "customPrinting": "Drukwerk",
     "stickers": "Stickers",
     "cards": "Visitekaartjes",
@@ -45,7 +46,7 @@
         "Posters",
         "Magazines"
       ],
-      "link": "/copy-print"
+      "link": "/custom-printing"
     },
     "customClothing": {
       "title": "Kleding & Textiel",
@@ -73,7 +74,7 @@
         "Markers",
         "etc."
       ],
-      "link": "/custom-clothing"
+      "link": "/office-supplies"
     }
   },
   "shopInfo": {

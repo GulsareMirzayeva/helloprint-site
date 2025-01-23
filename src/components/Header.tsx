@@ -130,6 +130,11 @@ export default function Header() {
           {isAccordionOpen && (
             <ul className="absolute top-[calc(100%+9px)] min-w-[105%] bg-white shadow-md rounded-sm">
               <SubNavigationLink
+                path={'/custom-printing'}
+                value={t(menuButtonNames.overview)}
+                callBack={handleAccordionLinkClick}
+              />
+              <SubNavigationLink
                 path={'/custom-printing/stickers'}
                 value={t(menuButtonNames.stickers)}
                 callBack={handleAccordionLinkClick}
@@ -169,8 +174,8 @@ export default function Header() {
           value={t(menuButtonNames.customClothing)}
         />
         <NavigationLink
-          path={'/custom-clothing'}
-          value={t(menuButtonNames.articles)}
+          path={'/office-supplies'}
+          value={t(menuButtonNames.officeSupplies)}
         />
         <NavigationLink path={'/contact'} value={t(menuButtonNames.contact)} />
 

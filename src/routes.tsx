@@ -13,6 +13,8 @@ import {
   ErrorPage,
 } from './components/pages/index';
 import TermsOfSalePage from './components/pages/TermsOfSalePage';
+import CustomPrint from './components/pages/CustomPrint';
+import OfficeSupplies from './components/pages/OfficeSupplies';
 
 const router = createBrowserRouter([
   {
@@ -33,8 +35,8 @@ const router = createBrowserRouter([
         element: <CustomClothing />,
       },
       {
-        path: 'contact',
-        element: <Contact />,
+        path: 'custom-printing',
+        element: <CustomPrint />,
       },
       {
         path: 'custom-printing/stickers',
@@ -55,6 +57,14 @@ const router = createBrowserRouter([
       {
         path: 'custom-printing/posters',
         element: <Posters />,
+      },
+      {
+        path: 'office-supplies',
+        element: <OfficeSupplies />,
+      },
+      {
+        path: 'contact',
+        element: <Contact />,
       },
       {
         path: 'terms-of-sale',
