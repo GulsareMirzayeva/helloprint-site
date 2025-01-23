@@ -1,5 +1,5 @@
 import { useTranslation } from 'react-i18next';
-import { shopInfoPaths } from '../../../lib/translationPaths';
+import { shopInfoPaths } from '../../../../lib/translationPaths';
 
 export default function AdressSection() {
   const { t } = useTranslation();

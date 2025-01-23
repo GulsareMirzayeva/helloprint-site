@@ -3,7 +3,7 @@ import { TextBlock } from '../../elementTemplates/TextBlock';
 import { useState } from 'react';
 import { contactFormTextContentPaths } from '../../../lib/translationPaths';
 
-export default function ContactForm() {
+export default function MessageForm() {
   // Subscribes the component to i18n language so when the language changes, the content will be translated inmediatly
   const { t } = useTranslation();
 

@@ -1,7 +1,7 @@
 import PhoneIcon from '@mui/icons-material/Phone';
 import AlternateEmailIcon from '@mui/icons-material/AlternateEmail';
 import FacebookIcon from '@mui/icons-material/Facebook';
-import { shopInfoPaths } from '../../../lib/translationPaths';
+import { shopInfoPaths } from '../../../../lib/translationPaths';
 import { t } from 'i18next';
 
 export default function ContactSection() {

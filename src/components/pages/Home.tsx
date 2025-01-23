@@ -3,7 +3,7 @@ import ShopCategories from '../home/ShopCategories';
 import Footer from '../Footer';
 import ShopInfo from '../home/ShopInfo';
 import { useTranslation } from 'react-i18next';
-import MessageOptions from '../contact/MessageOptions';
+import MessageOptions from '../contact/SendMessage';
 // import SkylineStrip from '../SkylineStrip';
 
 export default function Home() {

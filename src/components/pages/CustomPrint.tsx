@@ -9,7 +9,7 @@ import {
   postersContent,
   stickersContent,
 } from '../../lib/customPrintOverviewCardsContent';
-import MessageOptions from '../contact/MessageOptions';
+import MessageOptions from '../contact/SendMessage';
 import { TextBlock } from '../elementTemplates/TextBlock';
 import { customPrintingContentPaths } from '../../lib/translationPaths';
 
@@ -35,7 +35,7 @@ export default function CustomClothing() {
       <OverviewCategoryCard cardContent={foldersContent} />
       <OverviewCategoryCard cardContent={postersContent} />
       <Divider flexItem variant="middle" />
-      <div className="pt-10 max-w-[1020px]">
+      <div className="pt-10 pb-4 max-w-[1020px]">
         <TextBlock
           value={customPrintingContentPaths.contactTitle}
           variant={'xl2TitleRegular'}

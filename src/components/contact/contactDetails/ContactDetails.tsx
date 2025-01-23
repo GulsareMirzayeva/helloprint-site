@@ -1,11 +1,11 @@
 // import { useTranslation } from 'react-i18next';
 import GoogleMap from './GoogleMap';
 
-import AdressSection from './AdressSection';
-import ContactSection from './ContactSection';
-import OpeningHoursSection from './OpeningHoursSection';
+import AdressSection from './details/AdressSection';
+import ContactSection from './details/ContactSection';
+import OpeningHoursSection from './details/OpeningHoursSection';
 
-export default function LocationAdressWithHours() {
+export default function ContactDetails() {
   // const { t } = useTranslation();
 
   return (

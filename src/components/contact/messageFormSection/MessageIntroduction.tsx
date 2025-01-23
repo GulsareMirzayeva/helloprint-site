@@ -2,9 +2,9 @@ import contactPicture from '../../../assets/PHOTO-2022-01-26-18-36-39-scaled-370
 import { TextBlock } from '../../elementTemplates/TextBlock';
 import { contactInfoTextContent } from '../../../lib/translationPaths';
 
-export default function ContactOptions() {
+export default function MessageIntroduction() {
   return (
-    <div className="flex flex-col gap-8 self-start max-w-[540px]">
+    <div className="flex flex-col gap-4 self-start max-w-[540px]">
       <TextBlock
         value={contactInfoTextContent.contactDetails}
         variant="title"

@@ -23,6 +23,7 @@ export const shopInfoPaths = {
 
 // Paths to contact information content in translation files
 export const contactInfoTextContent = {
+  pageTitle: 'contactPage.pageTitle',
   title: 'shopInfo.contact.title',
   subtitle: 'shopInfo.contact.subtitle',
   contactIntroduction: 'contactPage.contactIntroduction',

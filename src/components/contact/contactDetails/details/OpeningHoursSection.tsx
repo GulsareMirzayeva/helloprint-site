@@ -2,7 +2,7 @@ import { useTranslation } from 'react-i18next';
 import {
   contactInfoTextContent,
   shopInfoPaths,
-} from '../../../lib/translationPaths';
+} from '../../../../lib/translationPaths';
 
 export default function OpeningHoursSection() {
   const { t } = useTranslation();
