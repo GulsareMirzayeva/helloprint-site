@@ -2,7 +2,10 @@ import { useTranslation } from 'react-i18next';
 import ContactDetails from '../contact/contactDetails/ContactDetails';
 import SendMessage from '../contact/SendMessage';
 import Footer from '../Footer';
-import { contactInfoTextContent } from '../../lib/translationPaths';
+import {
+  contactInfoTextContent,
+  customPrintingContentPaths,
+} from '../../lib/translationPaths';
 import { TextBlock } from '../elementTemplates/TextBlock';
 
 export default function Contact() {
@@ -10,18 +13,19 @@ export default function Contact() {
 
   return (
     <div className="flex flex-col justify-start items-center w-full">
-      <div className="py-10 max-w-[1000px]">
+      <div className="flex flex-col gap-2 py-10 max-w-[1000px]">
         <TextBlock
           value={contactInfoTextContent.pageTitle}
           variant={'largeTitle'}
         />
-        <br />
         <TextBlock
-          value={contactInfoTextContent.contactIntroduction}
-          variant={'xl2TitleRegular'}
+          value={customPrintingContentPaths.contactTitle}
+          variant={'xlTitleRegular'}
         />
       </div>
-      <SendMessage />
+      <div className="w-[1000px]">
+        <SendMessage />
+      </div>
       <ContactDetails />
       <Footer />
     </div>

@@ -9,7 +9,7 @@ import {
   postersContent,
   stickersContent,
 } from '../../lib/customPrintOverviewCardsContent';
-import MessageOptions from '../contact/SendMessage';
+import SendMessage from '../contact/SendMessage';
 import { TextBlock } from '../elementTemplates/TextBlock';
 import { customPrintingContentPaths } from '../../lib/translationPaths';
 
@@ -18,15 +18,14 @@ export default function CustomClothing() {
 
   return (
     <div className="flex flex-col items-center w-full overflow-scroll">
-      <div className="py-10 max-w-[1000px]">
+      <div className="flex flex-col gap-4 py-10 max-w-[1000px]">
         <TextBlock
           value={customPrintingContentPaths.title}
           variant={'largeTitle'}
         />
-        <br />
         <TextBlock
           value={customPrintingContentPaths.introduction}
-          variant={'xl2TitleRegular'}
+          variant={'xlTitleRegular'}
         />
       </div>
       <OverviewCategoryCard cardContent={stickersContent} />
@@ -35,13 +34,15 @@ export default function CustomClothing() {
       <OverviewCategoryCard cardContent={foldersContent} />
       <OverviewCategoryCard cardContent={postersContent} />
       <Divider flexItem variant="middle" />
-      <div className="pt-10 pb-4 max-w-[1020px]">
+      <div className="pt-10 pb-2 max-w-[1000px]">
         <TextBlock
           value={customPrintingContentPaths.contactTitle}
-          variant={'xl2TitleRegular'}
+          variant={'xlTitleRegular'}
         />
       </div>
-      <MessageOptions />
+      <div className="max-w-[1000px]">
+        <SendMessage />
+      </div>
       <Footer />
     </div>
   );

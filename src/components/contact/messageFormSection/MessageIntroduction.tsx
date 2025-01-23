@@ -4,7 +4,7 @@ import { contactInfoTextContent } from '../../../lib/translationPaths';
 
 export default function MessageIntroduction() {
   return (
-    <div className="flex flex-col gap-4 self-start max-w-[540px]">
+    <div className="flex flex-col gap-2 self-start max-w-[500px]">
       <TextBlock
         value={contactInfoTextContent.contactDetails}
         variant="title"
@@ -13,7 +13,7 @@ export default function MessageIntroduction() {
         value={contactInfoTextContent.contactIntroduction}
         variant="bodySmall"
       />
-      <div className="flex justify-start w-full">
+      <div className="flex justify-start mt-2 w-full">
         <img src={contactPicture} className="rounded-sm" />
       </div>
     </div>

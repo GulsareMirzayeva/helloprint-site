@@ -10,7 +10,7 @@ export default function Home() {
   useTranslation();
 
   return (
-    <div className="flex flex-col w-full justify-start items-center overflow-scroll">
+    <div className="flex flex-col w-full justify-start items-center gap-4 overflow-scroll">
       <WelcomeMessage />
       <ShopCategories />
       <ShopInfo />
