@@ -17,8 +17,11 @@ export default function IntroductionPosters() {
 
       {/* Introduction content */}
       <div className="max-w-3xl">
-        <TextBlock value={postersContentPaths.title} variant="title" />
-        <TextBlock value={postersContentPaths.introduction} variant="body" />
+        <TextBlock value={postersContentPaths.title} variant="xl4Title" />
+        <TextBlock
+          value={postersContentPaths.introduction}
+          variant="xlTitleRegular"
+        />
       </div>
     </section>
   );

@@ -120,10 +120,20 @@ export const foldersContentPaths = {
 export const postersContentPaths = {
   title: 'customPrintPage.posters.title',
   introduction: 'customPrintPage.posters.introductionPosters',
+  introduction80GrTable: 'customPrintPage.posters.introduction80GrTable',
+  introduction160To260GrTable:
+    'customPrintPage.posters.introduction160To260GrTable',
+  introductionPolyAndHandMadeTable:
+    'customPrintPage.posters.introductionPolyAndHandMadeTable',
+  introductionA3Table: 'customPrintPage.posters.introductionA3Table',
+  to: 'commonWords.to',
+  colorOrBlackWhite: 'commonWords.colorOrBlackWhite',
   color: 'commonWords.color',
+  SpecialMaterials: 'commonWords.SpecialMaterials',
   polypropylene: 'commonWords.polypropylene',
   type260grHandMade: 'paperTypes.260grHandMade',
-  typeA3: 'paperFormats.A3',
+  typeA3Format: 'customPrintPage.posters.A3Format',
+  formatNoCap: 'commonWords.formatNoCap',
   hqFullColor: 'customPrintPage.common.hqFullColor',
   budgetColor: 'customPrintPage.common.budgetColor',
   type190grGloss: 'paperTypes.190grGloss',
@@ -131,6 +141,9 @@ export const postersContentPaths = {
   type160grMat: 'paperTypes.160grMat',
   type160grSatin: 'paperTypes.160grSatin',
   type80gr: 'paperTypes.80gr',
+  type160gr: 'paperTypes.160gr',
+  type260gr: 'paperTypes.260gr',
+  range160grTo260gr: 'paperTypes.range160grTo260gr',
   blackWhite: 'commonWords.blackWhite',
 };
 

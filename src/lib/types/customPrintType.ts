@@ -60,3 +60,9 @@ export type CustomPrintType = {
   stickers: PricingOptions;
   cards: CustomPrintCards;
 };
+
+export type PageTitleType = {
+  mainTitle: string;
+  subTitle: string;
+  introduction: string;
+};

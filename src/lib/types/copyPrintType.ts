@@ -9,7 +9,7 @@ export type CopyPrintType = {
   A4: CopyPrintColorMode;
 };
 
-export type CardContentType = {
+export type CategoryCardType = {
   titlePath: string;
   textContentPath: string;
   pageLink: string;

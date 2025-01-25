@@ -178,7 +178,12 @@
     },
     "posters": {
       "title": "Posters",
-      "introductionPosters": "Explore the options for printing posters here. Choose from a wide range of sizes and paper types to perfectly tailor your poster to your needs. Whether you're looking for a simple black-and-white print or a vibrant color print, we have the right solution for you. Browse the options below and find the ideal combination for your project."
+      "introductionPosters": "Explore the options for printing posters here. Choose from a wide range of sizes and paper types to perfectly tailor your poster to your needs. Whether you're looking for a simple black-and-white print or a vibrant color print, we have the right solution for you. Browse the options below and find the ideal combination for your project.",
+      "introduction80GrTable": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore<br />magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea<br />commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat<br />nulla pariatur.",
+      "introduction160To260GrTable": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore<br />magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea<br />commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat<br />nulla pariatur.",
+      "introductionPolyAndHandMadeTable": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore<br />magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea<br />commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat<br />nulla pariatur.",
+      "introductionA3Table": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore<br />magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea<br />commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat<br />nulla pariatur.",
+      "A3Format": "A3 formaat"
     },
     "common": {
       "digitalPrint": "DIGITAL PRINTING",
@@ -188,8 +193,8 @@
       "bifoldOrTrifold": "(bi-fold or tri-fold)",
       "bifold": "(bifold)",
       "trifold": "(trifold)",
-      "hqFullColor": "High Quality Full Color",
-      "budgetColor": "Budget Full Color"
+      "hqFullColor": "High Quality",
+      "budgetColor": "Budget Quality"
     }
   },
   "copyPrintPage": {
@@ -207,17 +212,20 @@
     "135grShort": "135gr",
     "150gr": "150 grams paper",
     "150grShort": "150gr",
+    "160gr": "160 grams",
     "160grMat": "160 grams matte paper",
     "160grSatin": "160 grams satin paper",
     "170gr": "170 grams paper",
     "170grShort": "170gr",
     "190grGloss": "190 grams gloss paper",
     "250gr": "250 grams paper",
+    "260gr": "260 grams",
     "250grShort": "250gr",
     "260grSatin": "260 grams satin paper",
     "260grHandMade": "260 grams handmade paper",
     "350gr": "350 grams paper",
-    "400gr": "400 grams paper woodfree mc (maco) matte"
+    "400gr": "400 grams paper woodfree mc (maco) matte",
+    "range160grTo260gr": "160 grams to 260 grams paper"
   },
   "paperFormats": {
     "A0": "A0",
@@ -284,9 +292,12 @@
     "tableCaption": "Table showing pricing options with their corresponding prices."
   },
   "commonWords": {
+    "to": "to",
     "color": "Colour",
     "blackWhite": "Black and White",
+    "colorOrBlackWhite": "Color or Black and White",
     "paper": "paper",
+    "SpecialMaterials": "Special Materials",
     "polypropylene": "polypropylene",
     "singleSided": "Single sided",
     "doubleSided": "Double sided",
@@ -303,6 +314,7 @@
     "clothingPiece": "Clothing piece",
     "material": "Material",
     "format": "Size",
+    "formatNoCap": "size",
     "gloss": "gloss",
     "matte": "matte",
     "cards": "Cards",

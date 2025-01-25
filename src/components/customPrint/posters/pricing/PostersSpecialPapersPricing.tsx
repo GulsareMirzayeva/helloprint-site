@@ -5,6 +5,7 @@ import { useTranslation } from 'react-i18next';
 import { TextBlock } from '../../../elementTemplates/TextBlock';
 import { BeatLoader } from 'react-spinners';
 import { postersContentPaths } from '../../../../lib/translationPaths';
+import { TitleWithIntroduction } from '../../../elementTemplates/TitleWithIntroduction';
 
 export default function PostersSpecialPapersPricing() {
   const { prices } = useData();
@@ -33,17 +34,23 @@ export default function PostersSpecialPapersPricing() {
   const units: string[] = [t('commonWords.format'), t('commonWords.price')];
 
   return (
-    <section className="flex flex-col justify-center items-center w-full py-10 gap-4 bg-white">
-      <div className="flex flex-col items-center"></div>
-      <div className="flex flex-col items-center justify-center w-full">
-        <div className="flex gap-20">
+    <section className="flex flex-col items-center w-full py-10">
+      <div className="flex flex-col items-start">
+        <TitleWithIntroduction
+          props={{
+            mainTitle: postersContentPaths.color,
+            subTitle: postersContentPaths.SpecialMaterials,
+            introduction: postersContentPaths.introductionPolyAndHandMadeTable,
+          }}
+        />
+        <div className="flex gap-20 pt-10">
           <div>
             {/* Display a title and the papertype at the top of the table */}
-            <div className="flex flex-col pb-4 items-baseline">
-              <TextBlock value={postersContentPaths.color} variant="title" />
+            <div className="flex flex-col">
+              <TextBlock value={postersContentPaths.color} variant="subTitle" />
               <TextBlock
                 value={postersContentPaths.polypropylene}
-                variant="subTitle"
+                variant="body"
               />
             </div>
             <PricingTable
@@ -55,11 +62,11 @@ export default function PostersSpecialPapersPricing() {
           </div>
           <div>
             {/* Display a title and the papertype at the top of the table */}
-            <div className="flex flex-col pb-4 items-baseline">
-              <TextBlock value={postersContentPaths.color} variant="title" />
+            <div className="flex flex-col">
+              <TextBlock value={postersContentPaths.color} variant="subTitle" />
               <TextBlock
                 value={postersContentPaths.type260grHandMade}
-                variant="subTitle"
+                variant="body"
               />
             </div>
             <PricingTable

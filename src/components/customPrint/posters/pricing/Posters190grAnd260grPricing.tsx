@@ -40,20 +40,16 @@ export default function Posters190grAnd260grPricing() {
   ];
 
   return (
-    <section className="flex flex-col justify-center items-center w-full py-10 gap-4 bg-gray-100">
-      <div className="flex flex-col items-center"></div>
-      <div className="flex flex-col items-center justify-center w-full">
-        <div className="flex gap-20">
+    <section className="flex flex-col items-center w-full pb-12 bg-gray-100">
+      <div className="flex flex-col items-start">
+        <div className="flex gap-20 pt-10">
           <div>
             {/* Display a title and the papertype at the top of the table */}
-            <div className="flex flex-col pb-4 items-baseline">
-              <TextBlock
-                value={postersContentPaths.color}
-                variant="largeTitle"
-              />
+            <div className="flex flex-col pb-2 items-baseline">
+              <TextBlock value={postersContentPaths.color} variant="subTitle" />
               <TextBlock
                 value={postersContentPaths.type190grGloss}
-                variant="subTitle"
+                variant="body"
               />
             </div>
             <PricingTable
@@ -65,14 +61,11 @@ export default function Posters190grAnd260grPricing() {
           </div>
           <div>
             {/* Display a title and the papertype at the top of the table */}
-            <div className="flex flex-col pb-4 items-baseline">
-              <TextBlock
-                value={postersContentPaths.color}
-                variant="largeTitle"
-              />
+            <div className="flex flex-col pb-2 items-baseline">
+              <TextBlock value={postersContentPaths.color} variant="subTitle" />
               <TextBlock
                 value={postersContentPaths.type260grSatin}
-                variant="subTitle"
+                variant="body"
               />
             </div>
             <PricingTable

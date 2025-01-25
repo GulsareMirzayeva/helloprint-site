@@ -3,7 +3,7 @@ import { TextBlock } from '../../elementTemplates/TextBlock';
 import { homeContentPaths } from '../../../lib/translationPaths';
 import { Link } from 'react-router-dom';
 import { t } from 'i18next';
-import { CardContentType } from '../../../lib/types/copyPrintType';
+import { CategoryCardType } from '../../../lib/types/copyPrintType';
 
 /*
     Text content at the top of the page, the value in the TextBlock components refers to the content location
@@ -13,7 +13,7 @@ import { CardContentType } from '../../../lib/types/copyPrintType';
 export default function OverviewCategoryCard({
   cardContent,
 }: {
-  cardContent: CardContentType;
+  cardContent: CategoryCardType;
 }) {
   return (
     <section
