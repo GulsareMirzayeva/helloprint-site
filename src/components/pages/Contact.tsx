@@ -11,21 +11,25 @@ export default function Contact() {
   useTranslation();
 
   return (
-    <div className="flex flex-col justify-start items-center w-full">
-      <div className="flex flex-col gap-2 py-10 max-w-[1000px]">
-        <TextBlock
-          value={contactInfoTextContent.pageTitle}
-          variant={'largeTitle'}
-        />
-        <TextBlock
-          value={customPrintingContentPaths.contactTitle}
-          variant={'xlTitleRegular'}
-        />
+    <div className="grid grid-cols-[1fr,minmax(0,1000px),1fr] w-full">
+      <div></div> {/* Left empty colomn */}
+      <div className="flex flex-col justify-start items-center w-full">
+        <div className="flex flex-col gap-2 py-10 max-w-[1000px]">
+          <TextBlock
+            value={contactInfoTextContent.pageTitle}
+            variant={'largeTitle'}
+          />
+          <TextBlock
+            value={customPrintingContentPaths.contactTitle}
+            variant={'xlTitleRegular'}
+          />
+        </div>
+        <div className="w-[1000px]">
+          <SendMessage />
+        </div>
+        <ContactDetails />
       </div>
-      <div className="w-[1000px]">
-        <SendMessage />
-      </div>
-      <ContactDetails />
+      <div></div> {/* Right empty colomn */}
     </div>
   );
 }

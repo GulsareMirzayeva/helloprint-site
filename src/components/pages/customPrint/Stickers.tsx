@@ -6,9 +6,13 @@ export default function customPrintStickers() {
   useTranslation();
 
   return (
-    <div className="flex flex-col justify-start items-center w-full">
-      <IntroductionCustomPrint />
-      <StickersPricing />
+    <div className="grid grid-cols-[1fr,minmax(0,1000px),1fr] w-full">
+      <div></div> {/* Left empty colomn */}
+      <div className="flex flex-col items-start justify-start w-full px-4">
+        <IntroductionCustomPrint />
+        <StickersPricing />
+      </div>
+      <div></div> {/* Right empty colomn */}
     </div>
   );
 }

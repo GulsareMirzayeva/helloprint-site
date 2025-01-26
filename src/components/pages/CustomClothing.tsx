@@ -7,10 +7,14 @@ export default function CustomClothing() {
   useTranslation();
 
   return (
-    <div className="flex flex-col w-full justify-start items-center overflow-scroll">
-      <IntroductionCustomClothing />
-      <ClothingPiecesPricing />
-      <FlexAndDtgPricing />
+    <div className="grid grid-cols-[1fr,minmax(0,1000px),1fr] w-full">
+      <div></div> {/* Left empty colomn */}
+      <div className="flex flex-col items-start justify-start w-full px-4">
+        <IntroductionCustomClothing />
+        <ClothingPiecesPricing />
+        <FlexAndDtgPricing />
+      </div>
+      <div></div> {/* Right empty colomn */}
     </div>
   );
 }

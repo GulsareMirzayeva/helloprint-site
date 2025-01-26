@@ -7,10 +7,14 @@ export default function Cards() {
   useTranslation();
 
   return (
-    <div className="flex flex-col w-full justify-start items-center overflow-scroll">
-      <IntroductionCards />
-      <CardsDigitalPrintPricing />
-      <CardsOffsetPrintPricing />
+    <div className="grid grid-cols-[1fr,minmax(0,1000px),1fr] w-full">
+      <div></div> {/* Left empty colomn */}
+      <div className="flex flex-col items-center justify-start w-full px-4">
+        <IntroductionCards />
+        <CardsDigitalPrintPricing />
+        <CardsOffsetPrintPricing />
+      </div>
+      <div></div> {/* Right empty colomn */}
     </div>
   );
 }
