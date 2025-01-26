@@ -112,7 +112,7 @@
       "listItem2": "Printing on your own clothing is at your own risk"
     },
     "pricingTextile": {
-      "tableIntroduction": "Put your own spin on various types of tops with our printing options.<br />Below are the prices for customizing garments.",
+      "tableIntroduction": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore<br />magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea<br />commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat<br />nulla pariatur.",
       "tableTitle": "Create unique clothing",
       "tableHeadType": "Textile piece",
       "tableHeadBlackWhite": "Black / White",
@@ -216,7 +216,8 @@
     "title": "Easy and quickly",
     "titleLaminate": "Binding or laminating",
     "introduction": "Easily and quickly take care of your copies and prints using our services. Our self-service printers allow you to print documents directly from a USB stick or download them from your email.",
-    "introductionBinding": "We also offer binding and laminating services to give your documents a neat and professional finish. Perfect for business purposes, school projects, or personal documents!"
+    "introductionBinding": "We also offer binding and laminating services to give your documents a neat and professional finish. Perfect for business purposes, school projects, or personal documents!",
+    "introductionCopyPrintTable": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore<br />magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea<br />commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat<br />nulla pariatur."
   },
   "paperTypes": {
     "80grWhiteOrColor": "80gr white or colored paper",
@@ -224,6 +225,7 @@
     "80grShort": "80gr",
     "90gr": "90 grams paper",
     "90grShort": "90gr",
+    "80grOr90gr": "80 grams or 90 grams paper",
     "135gr": "135 grams paper",
     "135grShort": "135gr",
     "150gr": "150 grams paper",
@@ -314,7 +316,7 @@
     "blackWhite": "Black and White",
     "colorOrBlackWhite": "Color or Black and White",
     "paper": "paper",
-    "vinyl": "vinyl",
+    "vinyl": "Vinyl",
     "SpecialMaterials": "Special Materials",
     "polypropylene": "polypropylene",
     "singleSided": "Single sided",

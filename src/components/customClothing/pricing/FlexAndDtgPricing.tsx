@@ -47,47 +47,48 @@ export default function FlexAndDtgPricing() {
   ];
 
   return (
-    <section className="flex justify-center w-full py-20 bg-white">
-      <div className="flex flex-col">
-        <div className="pb-4 pr-20">
-          <TextBlock
-            value={customClotingContentPaths.FlexVinylTableTitle}
-            variant="subTitle"
-          />
-          <TextBlock
-            value={customClotingContentPaths.FlexVinylTableIntroduction}
-            variant="body"
-          />
-        </div>
-        <div>
-          {/* Table to display "Flex / Vinyl" prices */}
-          <PricingTable
-            headerTitles={headerTitlesFlex}
-            units={unitsFlex}
-            options={translateTextOptions(flexCategories)}
-            prices={pricePathsFlex}
-          />
-        </div>
-      </div>
-      <div className="flex flex-col">
-        <div className="pb-4">
-          <TextBlock
-            value={customClotingContentPaths.DtgTableTitle}
-            variant="subTitle"
-          />
-          <TextBlock
-            value={customClotingContentPaths.DtgTableIntroduction}
-            variant="body"
-          />
-        </div>
-        <div>
-          {/* Table to display "DTG" prices */}
-          <PricingTable
-            headerTitles={headerTitlesDtg}
-            units={unitsDtg}
-            options={translateTextOptions(dtgCategories)}
-            prices={pricePathsDtg}
-          />
+    <section className="flex flex-col items-start w-full gap-4">
+      <div className="flex flex-col items-start">
+        <div className="flex gap-20 pt-10">
+          <div>
+            {/* Display a title and the papertype */}
+            <div className="flex flex-col">
+              <TextBlock
+                value={customClotingContentPaths.FlexVinylTableTitle}
+                variant="subTitle"
+              />
+              <TextBlock
+                value={customClotingContentPaths.FlexVinylTableIntroduction}
+                variant="body"
+              />
+            </div>
+            {/* Display a pricing */}
+            <PricingTable
+              headerTitles={headerTitlesFlex}
+              units={unitsFlex}
+              options={translateTextOptions(flexCategories)}
+              prices={pricePathsFlex}
+            />
+          </div>
+          <div>
+            {/* Display a title and the papertype at the top of the table */}
+            <div className="flex flex-col">
+              <TextBlock
+                value={customClotingContentPaths.DtgTableTitle}
+                variant="subTitle"
+              />
+              <TextBlock
+                value={customClotingContentPaths.DtgTableIntroduction}
+                variant="body"
+              />
+            </div>
+            <PricingTable
+              headerTitles={headerTitlesDtg}
+              units={unitsDtg}
+              options={translateTextOptions(dtgCategories)}
+              prices={pricePathsDtg}
+            />
+          </div>
         </div>
       </div>
     </section>

@@ -44,7 +44,7 @@ export default function Posters160grPricing() {
   ];
 
   return (
-    <section className="flex flex-col items-center w-full pt-10 bg-gray-100">
+    <section className="flex flex-col items-start w-full bg-gray-100">
       <div className="flex flex-col items-start">
         <TitleWithIntroduction
           props={{
@@ -53,7 +53,7 @@ export default function Posters160grPricing() {
             introduction: postersContentPaths.introduction160To260GrTable,
           }}
         />
-        <div className="flex gap-20 pt-10">
+        <div className="flex gap-20">
           <div>
             {/* Display a title and the papertype */}
             <div className="flex flex-col">

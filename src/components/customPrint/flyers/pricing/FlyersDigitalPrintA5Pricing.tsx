@@ -43,7 +43,7 @@ export default function FlyersDigitalPrintA5Pricing() {
   ];
 
   return (
-    <section className="flex flex-col items-start w-full py-12">
+    <section className="flex flex-col items-start w-full">
       <div className="flex gap-20 items-start">
         <div className="flex flex-col">
           <div className="flex flex-col">

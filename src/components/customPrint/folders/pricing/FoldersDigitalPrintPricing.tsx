@@ -56,7 +56,7 @@ export default function FoldersDigitalPrintPricing() {
   ];
 
   return (
-    <section className="flex flex-col items-center w-full py-12 gap-4">
+    <section className="flex flex-col items-start w-full gap-4">
       <div className="flex flex-col items-start">
         <TitleWithIntroduction
           props={{
@@ -65,7 +65,7 @@ export default function FoldersDigitalPrintPricing() {
             introduction: foldersContentPaths.introductionFoldersTable,
           }}
         />
-        <div className="flex gap-20 pt-10">
+        <div className="flex gap-20">
           <div>
             {/* Display a title and the papertype */}
             <div className="flex flex-col items-baseline">

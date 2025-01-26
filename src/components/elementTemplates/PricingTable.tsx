@@ -43,7 +43,7 @@ export default function PricingTable({
           {headerTitles.map((title) => (
             <th
               key={title}
-              className="border bg-[#FB0036] text-white border-white py-2 px-4 text-left"
+              className="border bg-[#FB0036] text-white border-white py-2 px-3 text-left"
               scope="col"
             >
               <div className="text-white">{title}</div>
@@ -58,7 +58,7 @@ export default function PricingTable({
           {units.map((unit, index) => (
             <th
               key={index}
-              className="border border-gray-300 px-4 py-2"
+              className="border border-gray-300 px-3 py-2 text-left"
               scope="row"
             >
               <i>{unit}</i>
@@ -72,14 +72,17 @@ export default function PricingTable({
 
           return (
             <tr key={rowIndex} className="border even:bg-white odd:bg-gray-50">
-              <th className="border border-gray-300 px-4 py-2" scope="row">
+              <th
+                className="border border-gray-300 px-3 py-1 text-left"
+                scope="row"
+              >
                 <b>{row.option}</b>
               </th>
 
               {rowPrices.map((price, priceIndex) => (
                 <td
                   key={priceIndex}
-                  className="border border-gray-300 px-4 py-2"
+                  className="border border-gray-300 px-3 py-1 text-left"
                 >
                   {PriceDisplay((price = { price }))}
                 </td>

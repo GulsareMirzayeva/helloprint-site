@@ -4,8 +4,8 @@ import { useData } from '../../../context/DataContext';
 import { useTranslation } from 'react-i18next';
 import { translateTextOptions } from '../../../utils/helperFunctions';
 import clothing from '../../../assets/custom-clothing/clothing-images.png';
-import { TextBlock } from '../../elementTemplates/TextBlock';
 import { BeatLoader } from 'react-spinners';
+import { TitleWithIntroduction } from '../../elementTemplates/TitleWithIntroduction';
 import { customClotingContentPaths } from '../../../lib/translationPaths';
 
 export default function ClothingPiecesPricing() {
@@ -35,30 +35,28 @@ export default function ClothingPiecesPricing() {
   ];
 
   return (
-    <section className="flex justify-center w-full py-20 bg-gray-100">
-      <div className="flex">
-        <div>
-          <div className="pb-4 pr-10">
-            <TextBlock
-              value={customClotingContentPaths.tableTitle}
-              variant="subTitle"
-            />
-            <TextBlock
-              value={customClotingContentPaths.tableIntroduction}
-              variant="body"
+    <section className="flex flex-col items-start w-full">
+      <div className="flex flex-col items-start">
+        <TitleWithIntroduction
+          props={{
+            mainTitle: customClotingContentPaths.tableTitle,
+            subTitle: customClotingContentPaths.textile,
+            introduction: customClotingContentPaths.tableIntroduction,
+          }}
+        />
+        <div className="flex gap-20">
+          <div>
+            {/* Display a pricing */}
+            <PricingTable
+              headerTitles={headerTitlesTextile}
+              units={unitsTextile}
+              options={translateTextOptions(textileCategories)}
+              prices={pricePathsTextile}
             />
           </div>
-          {/* Table to display "Textile" prices */}
-          <PricingTable
-            headerTitles={headerTitlesTextile}
-            units={unitsTextile}
-            options={translateTextOptions(textileCategories)}
-            prices={pricePathsTextile}
-          />
-        </div>
-        <div className="flex self-end">
-          {/* Display images of clothing pieces, next to the pricing table of the "Textile" category */}
-          <img src={clothing} alt="" />
+          <div>
+            <img src={clothing} alt="" />
+          </div>
         </div>
       </div>
     </section>

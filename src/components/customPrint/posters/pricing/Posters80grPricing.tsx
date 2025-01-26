@@ -53,7 +53,7 @@ export default function Posters80grPricing() {
   ];
 
   return (
-    <section className="flex flex-col items-center w-full py-12 gap-4">
+    <section className="flex flex-col items-start w-fullgap-4">
       <div className="flex flex-col items-start">
         <TitleWithIntroduction
           props={{
@@ -62,7 +62,7 @@ export default function Posters80grPricing() {
             introduction: postersContentPaths.introduction80GrTable,
           }}
         />
-        <div className="flex gap-20 pt-10">
+        <div className="flex gap-20">
           <div>
             {/* Display a title and the papertype */}
             <div className="flex flex-col items-baseline">

@@ -119,7 +119,7 @@
       "listItem2": "Bedrukken op uw eigen kleding is op eigen risico"
     },
     "pricingTextile": {
-      "tableIntroduction": "Geef je eigen draai aan diverse soorten bovenkleding met<br />onze printmogelijkheden.<br />Hieronder vind je de prijzen voor het personaliseren van kleding.",
+      "tableIntroduction": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore<br />magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea<br />commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat<br />nulla pariatur.",
       "tableHeadType": "Textiel los",
       "tableHeadBlackWhite": "Zwart / Wit",
       "tableHeadColor": "Kleur",
@@ -130,7 +130,7 @@
       "tableTitle": "Creëer unieke kleding"
     },
     "pricingFlexVinyl": {
-      "tableIntroduction": "Flex-materiaal is perfect voor strakke, éénkleurige ontwerpen<br />zoals logo’s en teksten.<br />Hieronder vind je onze tarieven voor printen en snijden.",
+      "tableIntroduction": "Flex-materiaal is perfect voor strakke, éénkleurige ontwerpen zoals logo’s en teksten. Hieronder vind je onze tarieven voor printen en snijden.",
       "tableHead": "Flex / Vinyl",
       "frontChestLogo": "Voorkant borst logo",
       "frontBackLarge": "Voor- of achterkant groot",
@@ -138,7 +138,7 @@
       "tableTitle": "Printen op flex materiaal"
     },
     "pricingDtg": {
-      "tableIntroduction": "Met onze DTG-printer kunnen we direct op kleding printen, perfect voor<br />gedetailleerde en kleurrijke ontwerpen.<br />Hieronder vind je de tarieven voor kledingbedrukking.",
+      "tableIntroduction": "Met onze DTG-printer kunnen we direct op kleding printen, perfect voor gedetailleerde en kleurrijke ontwerpen. Hieronder vind je de tarieven voor kledingbedrukking.",
       "tableHead": "DTG",
       "tableHeadWhiteTextile": "Textiel Wit",
       "tableHeadcolored": "Textiel Kleur",
@@ -223,7 +223,8 @@
     "title": "Snel en makkelijk!",
     "titleLaminate": "Inbinden of lamineren",
     "introduction": "Bij ons kunt u eenvoudig en snel uw kopieën en prints verzorgen. Met onze self-service printers kunt u direct documenten printen vanaf een USB-stick of downloaden vanuit uw e-mail.",
-    "introductionBinding": "Daarnaast bieden wij mogelijkheden voor inbinden en lamineren, zodat uw documenten een nette en professionele uitstraling krijgen. Ideaal voor zakelijke doeleinden, studieprojecten of persoonlijke documenten!"
+    "introductionBinding": "Daarnaast bieden wij mogelijkheden voor inbinden en lamineren, zodat uw documenten een nette en professionele uitstraling krijgen. Ideaal voor zakelijke doeleinden, studieprojecten of persoonlijke documenten!",
+    "introductionCopyPrintTable": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
   },
   "paperTypes": {
     "80grWhiteOrColor": "80gr wit of gekleurd papier",
@@ -231,6 +232,7 @@
     "80grShort": "80gr",
     "90gr": "90 grams papier",
     "90grShort": "90gr",
+    "80grOr90gr": "80 grams of 90 grams papier",
     "135gr": "135 grams papier",
     "135grShort": "135gr",
     "150gr": "150 grams papier",
@@ -321,7 +323,7 @@
     "blackWhite": "Zwart/wit",
     "colorOrBlackWhite": "Kleur of zwart/wit",
     "paper": "papier",
-    "vinyl": "vinyl",
+    "vinyl": "Vinyl",
     "SpecialMaterials": "Speciale materialen",
     "polypropylene": "polypropyleen",
     "singleSided": "Enkelzijdig",

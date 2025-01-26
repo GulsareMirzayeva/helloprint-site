@@ -11,8 +11,6 @@ export default function FlyersDigitalPrintA6Pricing() {
   const { prices } = useData();
   const { t } = useTranslation();
 
-  const digitalPrintTitle = t('customPrintPage.common.digitalPrint');
-
   // Let user know if data is loading
   if (!prices) {
     return <BeatLoader color="#FB0036" />;
@@ -42,8 +40,10 @@ export default function FlyersDigitalPrintA6Pricing() {
     t('commonWords.price'),
   ];
 
+  const digitalPrintTitle = t('customPrintPage.common.digitalPrint');
+
   return (
-    <section className="flex flex-col items-center w-full py-10 gap-4">
+    <section className="flex flex-col items-start w-full gap-4">
       <div className="flex flex-col items-start">
         <TitleWithIntroduction
           props={{
@@ -52,7 +52,7 @@ export default function FlyersDigitalPrintA6Pricing() {
             introduction: flyersContentPaths.introductionFlyersTable,
           }}
         />
-        <div className="flex gap-20 pt-10">
+        <div className="flex gap-20">
           <div>
             {/* Display a title and the papertype at the top of the table */}
             <div className="flex flex-col">

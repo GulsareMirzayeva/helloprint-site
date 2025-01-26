@@ -11,7 +11,7 @@ export default function Contact() {
   useTranslation();
 
   return (
-    <div className="grid grid-cols-[1fr,minmax(0,1000px),1fr] w-full">
+    <div className="grid grid-cols-[1fr,minmax(0,1200px),1fr] w-full">
       <div></div> {/* Left empty colomn */}
       <div className="flex flex-col justify-start items-center w-full">
         <div className="flex flex-col gap-2 py-10 max-w-[1000px]">

@@ -16,11 +16,11 @@ export default function CustomClothing() {
   useTranslation();
 
   return (
-    <div className="grid grid-cols-[1fr,minmax(0,1000px),1fr] w-full">
+    <div className="grid grid-cols-[1fr,minmax(0,1200px),1fr] w-full">
       <div></div> {/* Left empty colomn */}
-      <div className="flex flex-col items-start justify-start w-full px-4">
+      <div className="flex flex-col items-start justify-start w-full py-20">
         <div className="flex flex-col items-center w-full overflow-scroll">
-          <div className="flex flex-col gap-4 py-10 max-w-[1000px]">
+          <div className="flex flex-col gap-4">
             <TextBlock
               value={customPrintingContentPaths.title}
               variant={'largeTitle'}
@@ -36,13 +36,13 @@ export default function CustomClothing() {
           <OverviewCategoryCard cardContent={foldersContent} />
           <OverviewCategoryCard cardContent={postersContent} />
           <Divider flexItem variant="middle" />
-          <div className="pt-10 pb-2 max-w-[1000px]">
+          <div className="pt-10 pb-2">
             <TextBlock
               value={customPrintingContentPaths.contactTitle}
               variant={'xlTitleRegular'}
             />
           </div>
-          <div className="max-w-[1000px]">
+          <div className="w-full">
             <SendMessage />
           </div>
         </div>

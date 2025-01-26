@@ -70,6 +70,7 @@ export const customClotingContentPaths = {
   DtgTableIntroduction: 'customClothingPage.pricingDtg.tableIntroduction',
   tableTitle: 'customClothingPage.pricingTextile.tableTitle',
   tableIntroduction: 'customClothingPage.pricingTextile.tableIntroduction',
+  textile: 'commonWords.textile',
 };
 
 export const customPrintingContentPaths = {
@@ -177,11 +178,14 @@ export const copyPrintContentPaths = {
   title: 'copyPrintPage.title',
   introduction: 'copyPrintPage.introduction',
   introductionBinding: 'copyPrintPage.introductionBinding',
+  introductionCopyPrintTable: 'copyPrintPage.introductionCopyPrintTable',
   titleLaminate: 'copyPrintPage.titleLaminate',
   color: 'commonWords.color',
   blackWhite: 'commonWords.blackWhite',
+  colorOrBlackWhite: 'commonWords.colorOrBlackWhite',
   type90gr: 'paperTypes.90gr',
   type80gr: 'paperTypes.80gr',
+  type80grOr90gr: 'paperTypes.80grOr90gr',
 };
 
 export const contactFormTextContentPaths = {

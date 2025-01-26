@@ -23,7 +23,7 @@ export function TextBlock({ value, variant }: TextBlockType) {
     xl2Title: 'text-2xl font-bold',
     xlTitleRegular: 'text-xl',
     xlTitle: 'text-xl font-bold',
-    largeTitle: 'text-3xl font-bold',
+    largeTitle: 'text-3xl font-medium',
     title: 'text-2xl font-bold',
     subTitle: 'text-lg font-semibold',
     body: 'text-base',

@@ -36,7 +36,7 @@ export default function FoldersOffsetPrintPricingA3() {
   ];
 
   return (
-    <section className="flex flex-col items-start w-full gap-4">
+    <section className="flex flex-col items-start w-full gap-4 bg-gray-100">
       <div className="flex flex-col items-start">
         <div>
           {/* Display a title and the papertype at the top of the table */}

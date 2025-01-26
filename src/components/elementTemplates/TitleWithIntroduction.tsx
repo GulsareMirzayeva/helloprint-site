@@ -4,7 +4,7 @@ import { TextBlock } from './TextBlock';
 export function TitleWithIntroduction({ props }: { props: PageTitleType }) {
   return (
     <div>
-      <div className="flex pb-2">
+      <div className="flex">
         <TextBlock value={props.mainTitle} variant="largeTitle" />
         &nbsp;
         <span className="text-3xl"> - </span>

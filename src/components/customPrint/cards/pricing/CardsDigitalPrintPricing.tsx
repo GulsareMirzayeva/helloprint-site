@@ -37,7 +37,7 @@ export default function CardsDigitalPrintPricing() {
   ];
 
   return (
-    <section className="flex flex-col items-center w-full py-12 gap-4">
+    <section className="flex flex-col items-start w-full gap-4">
       <div className="flex flex-col items-start">
         <TitleWithIntroduction
           props={{
@@ -46,7 +46,7 @@ export default function CardsDigitalPrintPricing() {
             introduction: cardsContentPaths.introductionCardsTable,
           }}
         />
-        <div className="flex gap-20 pt-10">
+        <div className="flex gap-20">
           <div>
             {/* Display a title and the papertype at the top of the table */}
             <div className="flex flex-col">
