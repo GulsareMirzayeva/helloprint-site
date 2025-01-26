@@ -5,7 +5,6 @@ import Posters190grAnd260grPricing from '../../customPrint/posters/pricing/Poste
 import Posters80grPricing from '../../customPrint/posters/pricing/Posters80grPricing';
 import PostersA3BudgetAndHqPricing from '../../customPrint/posters/pricing/PostersA3BudgetAndHqPricing';
 import PostersSpecialPapersPricing from '../../customPrint/posters/pricing/PostersSpecialPapersPricing';
-import Footer from '../../Footer';
 
 export default function Posters() {
   useTranslation();
@@ -18,7 +17,6 @@ export default function Posters() {
       <Posters190grAnd260grPricing />
       <PostersSpecialPapersPricing />
       <PostersA3BudgetAndHqPricing />
-      <Footer />
     </div>
   );
 }

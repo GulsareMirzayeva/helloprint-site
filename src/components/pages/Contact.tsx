@@ -1,7 +1,6 @@
 import { useTranslation } from 'react-i18next';
 import ContactDetails from '../contact/contactDetails/ContactDetails';
 import SendMessage from '../contact/SendMessage';
-import Footer from '../Footer';
 import {
   contactInfoTextContent,
   customPrintingContentPaths,
@@ -27,7 +26,6 @@ export default function Contact() {
         <SendMessage />
       </div>
       <ContactDetails />
-      <Footer />
     </div>
   );
 }

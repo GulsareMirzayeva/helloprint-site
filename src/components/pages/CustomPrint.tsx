@@ -1,6 +1,5 @@
 import { useTranslation } from 'react-i18next';
 import Divider from '@mui/material/Divider';
-import Footer from '../Footer';
 import OverviewCategoryCard from '../customPrint/overview/OverviewCategoryCard';
 import {
   cardsContent,
@@ -43,7 +42,6 @@ export default function CustomClothing() {
       <div className="max-w-[1000px]">
         <SendMessage />
       </div>
-      <Footer />
     </div>
   );
 }

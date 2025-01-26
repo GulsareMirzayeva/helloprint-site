@@ -1,6 +1,5 @@
 import WelcomeMessage from '../home/WelcomeMessage';
 import ShopCategories from '../home/ShopCategories';
-import Footer from '../Footer';
 import ShopInfo from '../home/ShopInfo';
 import { useTranslation } from 'react-i18next';
 import MessageOptions from '../contact/SendMessage';
@@ -17,7 +16,6 @@ export default function Home() {
       <MessageOptions />
 
       {/* <SkylineStrip /> */}
-      <Footer />
     </div>
   );
 }
