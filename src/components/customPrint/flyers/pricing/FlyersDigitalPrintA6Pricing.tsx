@@ -5,6 +5,7 @@ import { useTranslation } from 'react-i18next';
 import { TextBlock } from '../../../elementTemplates/TextBlock';
 import { BeatLoader } from 'react-spinners';
 import { flyersContentPaths } from '../../../../lib/translationPaths';
+import { TitleWithIntroduction } from '../../../elementTemplates/TitleWithIntroduction';
 
 export default function FlyersDigitalPrintA6Pricing() {
   const { prices } = useData();
@@ -42,28 +43,26 @@ export default function FlyersDigitalPrintA6Pricing() {
   ];
 
   return (
-    <section className="flex flex-col justify-center items-center w-full py-20 gap-4 bg-gray-100">
-      <div className="flex flex-col items-center">
-        <div className="flex">
-          <TextBlock value={digitalPrintTitle} variant="title" />
-        </div>
-        <div className="flex text-[#FB0036]">
-          <TextBlock
-            value={flyersContentPaths.digitalPrintDeliveryTime}
-            variant="body"
-          />
-        </div>
-      </div>
-      <div className="flex flex-col items-center justify-center w-full">
-        <div className="flex gap-20">
+    <section className="flex flex-col items-center w-full py-10 gap-4">
+      <div className="flex flex-col items-start">
+        <TitleWithIntroduction
+          props={{
+            mainTitle: digitalPrintTitle,
+            subTitle: flyersContentPaths.A6AndA5Format,
+            introduction: flyersContentPaths.introductionFlyersTable,
+          }}
+        />
+        <div className="flex gap-20 pt-10">
           <div>
             {/* Display a title and the papertype at the top of the table */}
-            <div className="flex items-baseline">
-              <TextBlock value={flyersContentPaths.formatA6} variant="title" />
-              &nbsp; <span className="text-2xl">-</span> &nbsp;
+            <div className="flex flex-col">
+              <TextBlock
+                value={flyersContentPaths.formatA6}
+                variant="subTitle"
+              />
               <TextBlock
                 value={flyersContentPaths.singleSided}
-                variant="subTitle"
+                variant="body"
               />
             </div>
 
@@ -77,12 +76,14 @@ export default function FlyersDigitalPrintA6Pricing() {
           </div>
           <div>
             {/* Display a title and the papertype at the top of the table */}
-            <div className="flex items-baseline">
-              <TextBlock value={flyersContentPaths.formatA6} variant="title" />
-              &nbsp; <span className="text-2xl">-</span> &nbsp;
+            <div className="flex flex-col">
+              <TextBlock
+                value={flyersContentPaths.formatA6}
+                variant="subTitle"
+              />
               <TextBlock
                 value={flyersContentPaths.doubleSided}
-                variant="subTitle"
+                variant="body"
               />
             </div>
 

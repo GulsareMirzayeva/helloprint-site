@@ -43,47 +43,41 @@ export default function FlyersDigitalPrintA5Pricing() {
   ];
 
   return (
-    <section className="flex flex-col justify-center items-center w-full pb-20 bg-gray-100">
-      <div className="flex flex-col items-center justify-center w-full">
-        <div className="flex gap-20">
-          <div>
+    <section className="flex flex-col items-center w-full py-12">
+      <div className="flex gap-20 items-start">
+        <div className="flex flex-col">
+          <div className="flex flex-col">
             {/* Display a title and the papertype at the top of the table */}
-            <div className="flex items-baseline">
-              <TextBlock value={flyersContentPaths.formatA5} variant="title" />
-              &nbsp; <span className="text-2xl">-</span> &nbsp;
+            <div>
+              <TextBlock
+                value={flyersContentPaths.formatA5}
+                variant="subTitle"
+              />
               <TextBlock
                 value={flyersContentPaths.singleSided}
-                variant="subTitle"
+                variant="body"
               />
             </div>
-
-            {/* Render a table for the "Black & White" category */}
-            <PricingTable
-              headerTitles={headerTitles}
-              units={units}
-              options={basePriceOptions}
-              prices={pricesSingleSidedA5}
-            />
           </div>
-          <div>
-            {/* Display a title and the papertype at the top of the table */}
-            <div className="flex items-baseline">
-              <TextBlock value={flyersContentPaths.formatA5} variant="title" />
-              &nbsp; <span className="text-2xl">-</span> &nbsp;
-              <TextBlock
-                value={flyersContentPaths.doubleSided}
-                variant="subTitle"
-              />
-            </div>
-
-            {/* Render a table for the "Color" category */}
-            <PricingTable
-              headerTitles={headerTitles}
-              units={units}
-              options={shortBasePriceOptions}
-              prices={pricesDoubleSidedA5}
-            />
+          <PricingTable
+            headerTitles={headerTitles}
+            units={units}
+            options={basePriceOptions}
+            prices={pricesSingleSidedA5}
+          />
+        </div>
+        <div>
+          {/* Display a title and the papertype at the top of the table */}
+          <div className="flex flex-col">
+            <TextBlock value={flyersContentPaths.formatA5} variant="subTitle" />
+            <TextBlock value={flyersContentPaths.doubleSided} variant="body" />
           </div>
+          <PricingTable
+            headerTitles={headerTitles}
+            units={units}
+            options={shortBasePriceOptions}
+            prices={pricesDoubleSidedA5}
+          />
         </div>
       </div>
     </section>

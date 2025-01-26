@@ -5,6 +5,7 @@ import { useTranslation } from 'react-i18next';
 import { TextBlock } from '../../../elementTemplates/TextBlock';
 import { BeatLoader } from 'react-spinners';
 import { cardsContentPaths } from '../../../../lib/translationPaths';
+import { TitleWithIntroduction } from '../../../elementTemplates/TitleWithIntroduction';
 
 export default function CardsOffsetPrintPricing() {
   const { prices } = useData();
@@ -34,34 +35,31 @@ export default function CardsOffsetPrintPricing() {
   ];
 
   return (
-    <section className="flex flex-col justify-center items-center gap-4 py-20 w-full bg-white">
-      <div className="flex flex-col items-center">
-        <div className="flex">
-          <TextBlock value={cardsContentPaths.offsetPrint} variant="title" />
-        </div>
-        <div className="flex text-red-600">
-          <TextBlock
-            value={cardsContentPaths.offsetPrintDeliveryTime}
-            variant="body"
-          />
-        </div>
-      </div>
-      <div className="flex justify-center w-full">
-        <div>
-          {/* Display a title and the papertype at the top of the table */}
-          <div className="flex items-baseline">
-            <TextBlock value={cardsContentPaths.color} variant="title" />
-            &nbsp; - &nbsp;
-            <TextBlock value={cardsContentPaths.type400gr} variant="subTitle" />
-          </div>
+    <section className="flex flex-col items-center w-full py-12 gap-4">
+      <div className="flex flex-col items-start">
+        <TitleWithIntroduction
+          props={{
+            mainTitle: cardsContentPaths.offsetPrint,
+            subTitle: cardsContentPaths.type400gr,
+            introduction: cardsContentPaths.introductionCardsTable,
+          }}
+        />
+        <div className="flex gap-20 pt-10">
+          <div>
+            {/* Display a title and the papertype at the top of the table */}
+            <div className="flex flex-col">
+              <TextBlock value={cardsContentPaths.color} variant="subTitle" />
+              <TextBlock value={cardsContentPaths.type400grMc} variant="body" />
+            </div>
 
-          {/* Render a table for the "Black & White" category */}
-          <PricingTable
-            headerTitles={headerTitles}
-            units={units}
-            options={shortBulkPriceOptions}
-            prices={pricesPressPrint}
-          />
+            {/* Render a table for the "Black & White" category */}
+            <PricingTable
+              headerTitles={headerTitles}
+              units={units}
+              options={shortBulkPriceOptions}
+              prices={pricesPressPrint}
+            />
+          </div>
         </div>
       </div>
     </section>

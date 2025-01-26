@@ -82,24 +82,29 @@ export const customPrintingContentPaths = {
 export const cardsContentPaths = {
   title: 'customPrintPage.cards.title',
   introduction: 'customPrintPage.cards.introduction',
+  introductionCardsTable: 'customPrintPage.cards.introductionCardsTable',
   digitalPrint: 'customPrintPage.common.digitalPrint',
   digitalPrintDeliveryTime: 'customPrintPage.common.digitalPrintDeliveryTime',
   blackWhite: 'commonWords.blackWhite',
   color: 'commonWords.color',
-  type350gr: 'cpaperTypes.350gr',
+  type350gr: 'paperTypes.350gr',
   offsetPrint: 'customPrintPage.common.offsetPrint',
   offsetPrintDeliveryTime: 'customPrintPage.common.offsetPrintDeliveryTime',
   type400gr: 'paperTypes.400gr',
+  type400grMc: 'paperTypes.400grMc',
 };
 
 export const flyersContentPaths = {
   title: 'customPrintPage.flyers.title',
   introduction: 'customPrintPage.flyers.introductionFlyers',
-  formatA5: 'paperFormats.A5',
+  introductionFlyersTable: 'customPrintPage.flyers.introductionFlyersTable',
   singleSided: 'commonWords.singleSided',
   doubleSided: 'commonWords.doubleSided',
   offsetPrintDeliveryTime: 'customPrintPage.common.offsetPrintDeliveryTime',
+  formatA5: 'paperFormats.A5',
+  formatA5Complete: 'customPrintPage.flyers.A5FormatComplete',
   formatA6: 'paperFormats.A6',
+  A6AndA5Format: 'customPrintPage.flyers.A6AndA5Format',
   digitalPrintDeliveryTime: 'customPrintPage.common.digitalPrintDeliveryTime',
 };
 
@@ -132,7 +137,7 @@ export const postersContentPaths = {
   SpecialMaterials: 'commonWords.SpecialMaterials',
   polypropylene: 'commonWords.polypropylene',
   type260grHandMade: 'paperTypes.260grHandMade',
-  typeA3Format: 'customPrintPage.posters.A3Format',
+  typeA3Format: 'customPrintPage.common.A3Format',
   formatNoCap: 'commonWords.formatNoCap',
   hqFullColor: 'customPrintPage.common.hqFullColor',
   budgetColor: 'customPrintPage.common.budgetColor',
@@ -150,10 +155,13 @@ export const postersContentPaths = {
 export const stickersContentPaths = {
   title: 'customPrintPage.stickers.title',
   subtitleLargeFormat: 'customPrintPage.stickers.subtitleLargeFormat',
+  introductionLargeFormatTable:
+    'customPrintPage.stickers.introductionLargeFormatTable',
   introduction: 'customPrintPage.stickers.introduction',
   materialTitle: 'customPrintPage.stickers.materialTitle',
   materialContent: 'customPrintPage.stickers.materialContent',
   largeFormatContent: 'customPrintPage.stickers.largeFormatContent',
+  vinyl: 'commonWords.vinyl',
 };
 
 export const copyPrintContentPaths = {

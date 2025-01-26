@@ -156,6 +156,7 @@
       "material": "Sticker",
       "title": "Stickers",
       "introduction": "Onze stickers zijn verkrijgbaar in diverse formaten, vormen en oplages, geheel afgestemd op uw wensen. Of u nu ronde, ovale, grote of kleine stickers nodig heeft, wij bieden de ideale oplossing.",
+      "introductionLargeFormatTable": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore<br />magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea<br />commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat<br />nulla pariatur.",
       "subtitleLargeFormat": "Groot formaat",
       "largeFormatContent": "Groot formaat stickers kunnen eenvoudig per stuk worden besteld.",
       "materialTitle": "Materiaal",
@@ -171,13 +172,17 @@
     "cards": {
       "title": "Visitekaartjes",
       "introduction": "De minimale afname bedraagt 100 stuks. De kaartjes worden gedrukt op 350 grams papier en de prijzen zijn gebaseerd op één en hetzelfde bestand. Voor dubbelgevouwen visitekaartjes geldt een verdubbeling van de prijs. De kaartjes worden netjes gesneden en geleverd in een plastic bewaardoosje.",
+      "introductionCardsTable": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore<br />magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea<br />commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat<br />nulla pariatur.",
       "offsetPrintSingleSided": "Enkelzijdig - UV-lak glanzend",
       "offsetPrintDoubleSided": "Dubbelzijdig - Dispersielak mat"
     },
     "flyers": {
       "title": "Flyers",
       "introductionFlyers": "Hier vind je een overzicht van de kosten voor het printen van flyers in A5- en A6-formaat, met opties voor enkel- en dubbelzijdig drukken. Kies uit verschillende papiersoorten om de perfecte uitstraling voor jouw flyers te creëren.",
-      "alert": "Klik hieronder op een categorie om de gewenste prijslijst te bekijken."
+      "introductionFlyersTable": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore<br />magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea<br />commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat<br />nulla pariatur.",
+      "alert": "Klik hieronder op een categorie om de gewenste prijslijst te bekijken.",
+      "A6AndA5Format": "A6 en A5 formaat",
+      "A5FormatComplete": "A5 formaat"
     },
     "folders": {
       "title": "Folders",
@@ -189,8 +194,7 @@
       "introduction80GrTable": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore<br />magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea<br />commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat<br />nulla pariatur.",
       "introduction160To260GrTable": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore<br />magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea<br />commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat<br />nulla pariatur.",
       "introductionPolyAndHandMadeTable": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore<br />magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea<br />commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat<br />nulla pariatur.",
-      "introductionA3Table": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore<br />magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea<br />commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat<br />nulla pariatur.",
-      "A3Format": "A3 formaat"
+      "introductionA3Table": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore<br />magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea<br />commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat<br />nulla pariatur."
     },
     "common": {
       "digitalPrint": "DIGITAAL GEPRINT",
@@ -201,7 +205,9 @@
       "bifold": "(2-slag)",
       "trifold": "(3-slag)",
       "hqFullColor": "Hoge kwaliteit",
-      "budgetColor": "Budget kwaliteit"
+      "budgetColor": "Budget kwaliteit",
+      "A3Format": "A3 formaat",
+      "A6Format": "A6 formaat"
     }
   },
   "copyPrintPage": {
@@ -231,7 +237,8 @@
     "260grSatin": "260 grams satijn papier",
     "260grHandMade": "260 grams geschept papier",
     "350gr": "350 grams papier",
-    "400gr": "400 grams papier houtvrij mc (maco) mat",
+    "400gr": "400 grams papier",
+    "400grMc": "400 grams papier houtvrij mc (maco) mat",
     "range160grTo260gr": "160 grams tot 260 grams papier"
   },
   "paperFormats": {
@@ -304,6 +311,7 @@
     "blackWhite": "Zwart/wit",
     "colorOrBlackWhite": "Kleur of zwart/wit",
     "paper": "papier",
+    "vinyl": "vinyl",
     "SpecialMaterials": "Speciale materialen",
     "polypropylene": "polypropyleen",
     "singleSided": "Enkelzijdig",

@@ -149,6 +149,7 @@
       "material": "Sticker",
       "title": "Stickers",
       "introduction": "Our stickers are available in various sizes, shapes, and quantities, fully tailored to your needs. Whether you require round, oval, large, or small stickers, we offer the perfect solution.",
+      "introductionLargeFormatTable": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore<br />magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea<br />commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat<br />nulla pariatur.",
       "subtitleLargeFormat": "Large-format",
       "largeFormatContent": "Large-format stickers can easily be ordered individually.",
       "materialTitle": "Material",
@@ -164,13 +165,17 @@
     "cards": {
       "title": "Business Cards",
       "introduction": "Minimale afname 100 stuks, de kaartjes worden geprint op 350gr.papier. De prijzen zijn op basis van een en het zelfde bestand. Dubbel gevouwen visitekaartjes is prijs keer 2. De kaartjes worden gesneden en u krijgt een plastic bewaardoosje.",
+      "introductionCardsTable": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore<br />magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea<br />commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat<br />nulla pariatur.",
       "offsetPrintSingleSided": "Single-sided - UV varnish gloss",
       "offsetPrintDoubleSided": "Double-sided - Dispersion varnish matte"
     },
     "flyers": {
       "title": "Flyers",
       "introductionFlyers": "Here you will find an overview of the costs for printing flyers in A5 and A6 formats, with options for single- and double-sided printing. Choose from a variety of paper types to create the perfect look for your flyers.",
-      "alert": " Click on the a category below to view the pricing list."
+      "introductionFlyersTable": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore<br />magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea<br />commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat<br />nulla pariatur.",
+      "alert": " Click on the a category below to view the pricing list.",
+      "A6AndA5Format": "A6 and A5 size",
+      "A5FormatComplete": "A5 size"
     },
     "folders": {
       "title": "Folders",
@@ -182,8 +187,7 @@
       "introduction80GrTable": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore<br />magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea<br />commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat<br />nulla pariatur.",
       "introduction160To260GrTable": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore<br />magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea<br />commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat<br />nulla pariatur.",
       "introductionPolyAndHandMadeTable": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore<br />magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea<br />commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat<br />nulla pariatur.",
-      "introductionA3Table": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore<br />magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea<br />commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat<br />nulla pariatur.",
-      "A3Format": "A3 formaat"
+      "introductionA3Table": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore<br />magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea<br />commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat<br />nulla pariatur."
     },
     "common": {
       "digitalPrint": "DIGITAL PRINTING",
@@ -194,7 +198,9 @@
       "bifold": "(bifold)",
       "trifold": "(trifold)",
       "hqFullColor": "High Quality",
-      "budgetColor": "Budget Quality"
+      "budgetColor": "Budget Quality",
+      "A3Format": "A3 size",
+      "A6Format": "A6 size"
     }
   },
   "copyPrintPage": {
@@ -224,7 +230,8 @@
     "260grSatin": "260 grams satin paper",
     "260grHandMade": "260 grams handmade paper",
     "350gr": "350 grams paper",
-    "400gr": "400 grams paper woodfree mc (maco) matte",
+    "400gr": "400 grams paper",
+    "400grMc": "400 grams paper woodfree mc (maco) matte",
     "range160grTo260gr": "160 grams to 260 grams paper"
   },
   "paperFormats": {
@@ -297,6 +304,7 @@
     "blackWhite": "Black and White",
     "colorOrBlackWhite": "Color or Black and White",
     "paper": "paper",
+    "vinyl": "vinyl",
     "SpecialMaterials": "Special Materials",
     "polypropylene": "polypropylene",
     "singleSided": "Single sided",

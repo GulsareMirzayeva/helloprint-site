@@ -1,13 +1,14 @@
 import PricingTable from '../../../elementTemplates/PricingTable';
 import {
+  basePriceOptions,
   bulkPriceOptions,
-  extendedBulkPriceOptions,
 } from '../../../../lib/priceCategories';
 import { useData } from '../../../../context/DataContext';
 import { useTranslation } from 'react-i18next';
 import { TextBlock } from '../../../elementTemplates/TextBlock';
 import { BeatLoader } from 'react-spinners';
 import { flyersContentPaths } from '../../../../lib/translationPaths';
+import { TitleWithIntroduction } from '../../../elementTemplates/TitleWithIntroduction';
 
 export default function FlyersOffsetPrintPricing() {
   const { prices } = useData();
@@ -44,47 +45,51 @@ export default function FlyersOffsetPrintPricing() {
   ];
 
   return (
-    <section className="flex flex-col justify-center items-center w-full py-20 gap-4 bg-white">
-      <div className="flex flex-col items-center">
-        <div className="flex">
-          <TextBlock value={offsetPrintTitle} variant="title" />
-        </div>
-        <div className="flex text-[#FB0036]">
-          <TextBlock
-            value={flyersContentPaths.offsetPrintDeliveryTime}
-            variant="body"
-          />
-        </div>
-      </div>
-      <div className="flex flex-col items-center justify-center w-full">
-        <div className="flex gap-20">
+    <section className="flex flex-col items-center w-full py-12 gap-4 bg-gray-100">
+      <div className="flex flex-col items-start">
+        <TitleWithIntroduction
+          props={{
+            mainTitle: offsetPrintTitle,
+            subTitle: flyersContentPaths.formatA5Complete,
+            introduction: flyersContentPaths.introductionFlyersTable,
+          }}
+        />
+        <div className="flex gap-20 pt-10">
           <div>
             {/* Display a title and the papertype at the top of the table */}
-            <div className="flex items-baseline">
-              <TextBlock value={flyersContentPaths.formatA5} variant="title" />
-              &nbsp; <span className="text-2xl">-</span> &nbsp;
+            <div className="flex flex-col">
               <TextBlock
-                value={flyersContentPaths.doubleSided}
+                value={flyersContentPaths.formatA5}
                 variant="subTitle"
               />
+              <TextBlock
+                value={flyersContentPaths.singleSided}
+                variant="body"
+              />
             </div>
+
+            {/* Render a table for the "Black & White" category */}
             <PricingTable
               headerTitles={headerTitles}
               units={units}
-              options={extendedBulkPriceOptions}
+              options={basePriceOptions}
               prices={pricesDoubleSidedA6}
             />
           </div>
           <div>
             {/* Display a title and the papertype at the top of the table */}
-            <div className="flex items-baseline">
-              <TextBlock value={flyersContentPaths.formatA5} variant="title" />
-              &nbsp; <span className="text-2xl">-</span> &nbsp;
+            <div className="flex flex-col">
               <TextBlock
-                value={flyersContentPaths.doubleSided}
+                value={flyersContentPaths.formatA5}
                 variant="subTitle"
               />
+              <TextBlock
+                value={flyersContentPaths.doubleSided}
+                variant="body"
+              />
             </div>
+
+            {/* Render a table for the "Color" category */}
             <PricingTable
               headerTitles={headerTitles}
               units={units}

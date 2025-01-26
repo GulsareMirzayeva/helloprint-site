@@ -4,8 +4,8 @@ import { useData } from '../../../../context/DataContext';
 import { useTranslation } from 'react-i18next';
 import { translateTextOptions } from '../../../../utils/helperFunctions';
 import { TextBlock } from '../../../elementTemplates/TextBlock';
-import { BeatLoader } from 'react-spinners';
 import { stickersContentPaths } from '../../../../lib/translationPaths';
+import { TitleWithIntroduction } from '../../../elementTemplates/TitleWithIntroduction';
 
 export default function StickersPricing() {
   const { prices } = useData(); // Hook altijd bovenaan
@@ -24,32 +24,33 @@ export default function StickersPricing() {
     : [];
 
   return (
-    <section className="flex flex-col items-center w-full py-20 gap-8 bg-gray-100">
-      <div>
-        <div className="flex flex-col pb-4">
-          <TextBlock
-            value={stickersContentPaths.subtitleLargeFormat}
-            variant="subTitle"
-          />
-          <TextBlock
-            value={stickersContentPaths.largeFormatContent}
-            variant="body"
-          />
-        </div>
-        {!pricePathStickers ? (
-          <BeatLoader />
-        ) : (
-          <div className="flex self-center gap-24">
-            <div>
-              <PricingTable
-                headerTitles={headerTitleStickers}
-                units={unitStickers}
-                options={translateTextOptions(stickersCategories)}
-                prices={pricePathStickers}
+    <section className="flex flex-col items-center w-full py-10">
+      <div className="flex flex-col items-start">
+        <TitleWithIntroduction
+          props={{
+            mainTitle: stickersContentPaths.subtitleLargeFormat,
+            subTitle: stickersContentPaths.subtitleLargeFormat,
+            introduction: stickersContentPaths.introductionLargeFormatTable,
+          }}
+        />
+        <div className="flex gap-20 pt-10">
+          <div>
+            {/* Display a title and the papertype at the top of the table */}
+            <div className="flex flex-col">
+              <TextBlock
+                value={stickersContentPaths.subtitleLargeFormat}
+                variant="subTitle"
               />
+              <TextBlock value={stickersContentPaths.vinyl} variant="body" />
             </div>
+            <PricingTable
+              headerTitles={headerTitleStickers}
+              units={unitStickers}
+              options={translateTextOptions(stickersCategories)}
+              prices={pricePathStickers}
+            />
           </div>
-        )}
+        </div>
       </div>
     </section>
   );
