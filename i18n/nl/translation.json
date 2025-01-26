@@ -186,7 +186,16 @@
     },
     "folders": {
       "title": "Folders",
-      "introductionFolders": "Hier vind je een overzicht van de kosten voor het printen van folders in A3- en A4-formaat. Kies uit een 2-slag of 3-slag vouwwijze om jouw boodschap op de juiste manier te presenteren. De tarieven zijn overzichtelijk per papiersoort en oplage weergegeven."
+      "introductionFolders": "Hier vind je een overzicht van de kosten voor het printen van folders in A3- en A4-formaat. Kies uit een 2-slag of 3-slag vouwwijze om jouw boodschap op de juiste manier te presenteren. De tarieven zijn overzichtelijk per papiersoort en oplage weergegeven.",
+      "introductionFoldersTable": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore<br />magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea<br />commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat<br />nulla pariatur.",
+      "A4FormatComplete": "A4 formaat",
+      "A4AndA3Format": "A4 en A3 formaat",
+      "bifoldOrTrifold": "A4 formaat | 2 of 3-slag",
+      "trifoldA4": "A4 formaat | 3-slag",
+      "bifoldA4": "A4 formaat | 2-slag",
+      "trifoldA3": "A3 formaat | 3-slag",
+      "whiteOrColoredPaper": "Wit of gekleurd papier",
+      "whiteOrColoredPaperA4": "| Wit of gekleurd papier"
     },
     "posters": {
       "title": "Posters",
@@ -219,6 +228,7 @@
   "paperTypes": {
     "80grWhiteOrColor": "80gr wit of gekleurd papier",
     "80gr": "80 grams papier",
+    "80grShort": "80gr",
     "90gr": "90 grams papier",
     "90grShort": "90gr",
     "135gr": "135 grams papier",

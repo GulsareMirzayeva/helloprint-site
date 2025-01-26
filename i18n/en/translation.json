@@ -179,7 +179,16 @@
     },
     "folders": {
       "title": "Folders",
-      "introductionFolders": "Here you will find an overview of the costs for printing brochures in A3 and A4 formats. Choose between a bi-fold or tri-fold option to present your message effectively. The rates are clearly displayed by paper type and quantity."
+      "introductionFolders": "Here you will find an overview of the costs for printing brochures in A3 and A4 formats. Choose between a bi-fold or tri-fold option to present your message effectively. The rates are clearly displayed by paper type and quantity.",
+      "introductionFoldersTable": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore<br />magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea<br />commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat<br />nulla pariatur.",
+      "A4FormatComplete": "A4 size",
+      "A4AndA3Format": "A4 and A3 size",
+      "bifoldOrTrifold": "A4 size | bi-fold or tri-fold",
+      "trifoldA4": "A4 size | Trifold",
+      "bifoldA4": "A4 size | Bifold",
+      "trifoldA3": "A3 size | Trifold",
+      "whiteOrColoredPaper": "White or colored paper",
+      "whiteOrColoredPaperA4": "| White or colored paper"
     },
     "posters": {
       "title": "Posters",
@@ -212,6 +221,7 @@
   "paperTypes": {
     "80grWhiteOrColor": "80gr white or colored paper",
     "80gr": "80 grams paper",
+    "80grShort": "80gr",
     "90gr": "90 grams paper",
     "90grShort": "90gr",
     "135gr": "135 grams paper",

@@ -111,15 +111,24 @@ export const flyersContentPaths = {
 export const foldersContentPaths = {
   title: 'customPrintPage.folders.title',
   introduction: 'customPrintPage.folders.introductionFolders',
+  introductionFoldersTable: 'customPrintPage.folders.introductionFoldersTable',
   offsetPrintDeliveryTime: 'customPrintPage.common.offsetPrintDeliveryTime',
+  A4FormatComplete: 'customPrintPage.folders.A4FormatComplete',
+  type80grShort: 'customPrintPage.folders.80grShort',
   formatA4: 'paperFormats.A4',
   formatA3: 'paperFormats.A3',
+  A4AndA3Format: 'customPrintPage.folders.A4AndA3Format',
+  bifoldOrTrifoldA4: 'customPrintPage.folders.bifoldOrTrifold',
+  trifoldA4: 'customPrintPage.folders.trifoldA4',
+  bifoldA4: 'customPrintPage.folders.bifoldA4',
+  trifoldA3: 'customPrintPage.folders.trifoldA3',
   color: 'commonWords.color',
   trifold: 'customPrintPage.common.trifold',
   bifold: 'customPrintPage.common.bifold',
   digitalPrintDeliveryTime: 'customPrintPage.common.digitalPrintDeliveryTime',
   blackWhite: 'commonWords.blackWhite',
-  bifoldOrTrifold: 'customPrintPage.common.bifoldOrTrifold',
+  whiteOrColoredPaper: 'customPrintPage.folders.whiteOrColoredPaper',
+  whiteOrColoredPaperA4: 'customPrintPage.folders.whiteOrColoredPaperA4',
 };
 
 export const postersContentPaths = {
