@@ -43,7 +43,7 @@ export default function FlyersDigitalPrintA5Pricing() {
   ];
 
   return (
-    <section className="flex flex-col items-start p-8 w-full bg-gray-100">
+    <section className="flex flex-col p-8 w-full bg-gray-100">
       <div className="flex gap-16">
         <div className="flex flex-col">
           {/* Display a title and the papertype at the top of the table */}

@@ -10,8 +10,20 @@ export default function Home() {
 
   return (
     <div className="flex flex-col w-full justify-start items-center gap-4 overflow-scroll">
-      <WelcomeMessage />
-      <ShopCategories />
+      <section className="grid grid-cols-[1fr,minmax(0,1200px),1fr] w-full py-2">
+        <div></div> {/* Left empty colomn */}
+        <div className="flex items-start justify-between w-full py-1">
+          <WelcomeMessage />
+        </div>
+        <div></div> {/* Right empty colomn */}
+      </section>
+      <section className="grid grid-cols-[1fr,minmax(0,1200px),1fr] w-full py-2">
+        <div></div> {/* Left empty colomn */}
+        <div className="flex items-start justify-between w-full py-1">
+          <ShopCategories />
+        </div>
+        <div></div> {/* Right empty colomn */}
+      </section>
       <ShopInfo />
       <section className="grid grid-cols-[1fr,minmax(0,1200px),1fr] w-full py-2">
         <div></div> {/* Left empty colomn */}

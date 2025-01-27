@@ -1,5 +1,4 @@
 import { useTranslation } from 'react-i18next';
-import Divider from '@mui/material/Divider';
 import OverviewCategoryCard from '../customPrint/overview/OverviewCategoryCard';
 import {
   cardsContent,
@@ -18,8 +17,8 @@ export default function CustomClothing() {
   return (
     <div className="grid grid-cols-[1fr,minmax(0,1200px),1fr] w-full">
       <div></div> {/* Left empty colomn */}
-      <div className="flex flex-col items-start justify-start w-full py-20">
-        <div className="flex flex-col pb-8">
+      <div className="flex flex-col items-start justify-start w-full pt-20">
+        <div className="flex flex-col pb-16">
           <TextBlock
             value={customPrintingContentPaths.title}
             variant={'pageTitle'}
@@ -34,7 +33,6 @@ export default function CustomClothing() {
         <OverviewCategoryCard cardContent={flyersContent} />
         <OverviewCategoryCard cardContent={foldersContent} />
         <OverviewCategoryCard cardContent={postersContent} />
-        <Divider flexItem variant="middle" />
         <div className="pt-8 pb-2">
           <TextBlock
             value={customPrintingContentPaths.contactTitle}

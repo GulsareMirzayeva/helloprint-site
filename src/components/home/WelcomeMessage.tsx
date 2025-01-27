@@ -9,7 +9,7 @@ import { TextBlock } from '../elementTemplates/TextBlock';
 
 export default function WelcomeMessage() {
   return (
-    <section className="flex pt-20 gap-20">
+    <section className="flex pt-16 gap-20">
       {/* Image next to the text content */}
       <div>
         <img

@@ -41,7 +41,7 @@ export default function CopyPrintPricing() {
           introduction: copyPrintContentPaths.introductionCopyPrintTable,
         }}
       />
-      <div className="flex gap-16 py-8">
+      <div className="flex gap-16 pt-8">
         <div>
           {/* Display a title and the papertype */}
           <div className="flex flex-col">

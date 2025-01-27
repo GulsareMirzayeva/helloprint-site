@@ -33,7 +33,7 @@ export default function StickersPricing() {
             introduction: stickersContentPaths.introductionLargeFormatTable,
           }}
         />
-        <div className="py-8">
+        <div className="pt-8">
           {/* Display a title and the papertype at the top of the table */}
           <div className="flex flex-col">
             <TextBlock

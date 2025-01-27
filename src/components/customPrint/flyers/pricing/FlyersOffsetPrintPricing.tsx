@@ -45,7 +45,7 @@ export default function FlyersOffsetPrintPricing() {
   ];
 
   return (
-    <section className="flex flex-col p-8 w-full">
+    <section className="flex flex-col pt-12 p-8 w-full">
       <TitleWithIntroduction
         props={{
           mainTitle: offsetPrintTitle,

@@ -3,7 +3,7 @@ import MessageIntroduction from './messageFormSection/MessageIntroduction';
 
 export default function SendMessage() {
   return (
-    <section className="flex py-12">
+    <section className="flex pt-4 pb-12">
       <MessageIntroduction />
       <MessageForm />
     </section>

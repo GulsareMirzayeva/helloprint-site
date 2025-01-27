@@ -48,7 +48,7 @@ export default function FlexAndDtgPricing() {
 
   return (
     <section className="flex flex-col p-8 w-full bg-gray-100">
-      <div className="flex gap-16 pb-8">
+      <div className="flex gap-16">
         <div>
           {/* Display a title and the papertype */}
           <div className="flex flex-col">

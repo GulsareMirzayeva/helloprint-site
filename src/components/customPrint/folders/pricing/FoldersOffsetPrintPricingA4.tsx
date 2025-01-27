@@ -43,7 +43,7 @@ export default function FoldersOffsetPrintPricingA4() {
   ];
 
   return (
-    <section className="flex flex-col p-8 pb-2 w-full">
+    <section className="flex flex-col pt-12 p-8 pb-2 w-full">
       <TitleWithIntroduction
         props={{
           mainTitle: offsetPrintTitle,

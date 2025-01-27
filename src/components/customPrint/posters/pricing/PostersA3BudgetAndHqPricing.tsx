@@ -37,7 +37,7 @@ export default function PostersA3BudgetAndHqPricing() {
   const units: string[] = [t('commonWords.format'), t('commonWords.price')];
 
   return (
-    <section className="flex flex-col items-start p-8 w-full">
+    <section className="flex flex-col pt-12 p-8 w-full">
       <div className="flex flex-col items-start">
         <TitleWithIntroduction
           props={{

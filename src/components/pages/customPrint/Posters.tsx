@@ -16,16 +16,16 @@ export default function Posters() {
   return (
     <div className="grid grid-cols-[1fr,minmax(0,1200px),1fr] w-full">
       <div></div> {/* Left empty colomn */}
-      <div className="flex flex-col items-start justify-start w-full py-20">
+      <div className="flex flex-col items-start justify-start w-full pt-20">
         <IntroductionPosters />
         <Posters80grPricing />
         <Posters160grPricing />
         <Posters190grAnd260grPricing />
         <PostersSpecialPapersPricing />
         <PostersA3BudgetAndHqPricing />
-        <div className="py-8 pb-2">
+        <div className="py-4 pb-2">
           <Divider flexItem variant="middle" />
-          <div className="pt-8 pb-2">
+          <div className="pt-16 pb-2">
             <TextBlock
               value={customPrintingContentPaths.contactTitle}
               variant={'subTitle'}

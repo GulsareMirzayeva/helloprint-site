@@ -35,7 +35,7 @@ export default function CardsOffsetPrintPricing() {
   ];
 
   return (
-    <section className="flex flex-col p-8 w-full">
+    <section className="flex flex-col pt-12 p-8 w-full">
       <TitleWithIntroduction
         props={{
           mainTitle: cardsContentPaths.offsetPrint,
