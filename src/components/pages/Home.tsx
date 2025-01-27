@@ -13,7 +13,13 @@ export default function Home() {
       <WelcomeMessage />
       <ShopCategories />
       <ShopInfo />
-      <MessageOptions />
+      <section className="grid grid-cols-[1fr,minmax(0,1200px),1fr] w-full py-2">
+        <div></div> {/* Left empty colomn */}
+        <div className="flex items-start justify-between w-full py-1">
+          <MessageOptions />
+        </div>
+        <div></div> {/* Right empty colomn */}
+      </section>
 
       {/* <SkylineStrip /> */}
     </div>

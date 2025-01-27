@@ -18,7 +18,7 @@ export const cardsContent = {
   titlePath: cardsContentPaths.title,
   textContentPath: cardsContentPaths.introduction,
   pageLink: '/custom-printing/cards',
-  bgColor: 'bg-gray-200',
+  bgColor: 'bg-gray-100',
   placeImageLeft: false,
 };
 
@@ -34,7 +34,7 @@ export const foldersContent = {
   titlePath: foldersContentPaths.title,
   textContentPath: foldersContentPaths.introduction,
   pageLink: '/custom-printing/folders',
-  bgColor: 'bg-gray-200',
+  bgColor: 'bg-gray-100',
   placeImageLeft: false,
 };
 

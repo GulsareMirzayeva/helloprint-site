@@ -34,7 +34,7 @@ export default function PostersSpecialPapersPricing() {
   const units: string[] = [t('commonWords.format'), t('commonWords.price')];
 
   return (
-    <section className="flex flex-col items-start w-full">
+    <section className="flex flex-col items-start p-8 w-full bg-gray-100">
       <div className="flex flex-col items-start">
         <TitleWithIntroduction
           props={{
@@ -43,11 +43,14 @@ export default function PostersSpecialPapersPricing() {
             introduction: postersContentPaths.introductionPolyAndHandMadeTable,
           }}
         />
-        <div className="flex gap-20">
+        <div className="flex gap-16 pt-8">
           <div>
             {/* Display a title and the papertype at the top of the table */}
             <div className="flex flex-col">
-              <TextBlock value={postersContentPaths.color} variant="subTitle" />
+              <TextBlock
+                value={postersContentPaths.color}
+                variant="sectionTitle"
+              />
               <TextBlock
                 value={postersContentPaths.polypropylene}
                 variant="body"
@@ -63,7 +66,10 @@ export default function PostersSpecialPapersPricing() {
           <div>
             {/* Display a title and the papertype at the top of the table */}
             <div className="flex flex-col">
-              <TextBlock value={postersContentPaths.color} variant="subTitle" />
+              <TextBlock
+                value={postersContentPaths.color}
+                variant="sectionTitle"
+              />
               <TextBlock
                 value={postersContentPaths.type260grHandMade}
                 variant="body"

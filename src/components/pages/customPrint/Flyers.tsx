@@ -3,6 +3,10 @@ import FlyersDigitalPrintA5Pricing from '../../customPrint/flyers/pricing/Flyers
 import FlyersDigitalPrintA6Pricing from '../../customPrint/flyers/pricing/FlyersDigitalPrintA6Pricing';
 import IntroductionFlyers from '../../customPrint/flyers/Introduction';
 import FlyersOffsetPrintA5Pricing from '../../customPrint/flyers/pricing/FlyersOffsetPrintPricing';
+import { customPrintingContentPaths } from '../../../lib/translationPaths';
+import SendMessage from '../../contact/SendMessage';
+import { TextBlock } from '../../elementTemplates/TextBlock';
+import { Divider } from '@mui/material';
 
 export default function Flyers() {
   useTranslation();
@@ -10,11 +14,23 @@ export default function Flyers() {
   return (
     <div className="grid grid-cols-[1fr,minmax(0,1200px),1fr] w-full">
       <div></div> {/* Left empty colomn */}
-      <div className="flex flex-col items-start justify-start w-full px-4">
+      <div className="flex flex-col items-start justify-start w-full py-20">
         <IntroductionFlyers />
         <FlyersDigitalPrintA6Pricing />
         <FlyersDigitalPrintA5Pricing />
         <FlyersOffsetPrintA5Pricing />
+        <div className="py-8 pb-2">
+          <Divider flexItem variant="middle" />
+          <div className="pt-8 pb-2">
+            <TextBlock
+              value={customPrintingContentPaths.contactTitle}
+              variant={'subTitle'}
+            />
+          </div>
+          <div className="w-full">
+            <SendMessage />
+          </div>
+        </div>
       </div>
       <div></div> {/* Right empty colomn */}
     </div>

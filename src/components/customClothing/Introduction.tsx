@@ -7,25 +7,26 @@ export default function IntroductionCustomClothing() {
   const { t } = useTranslation();
 
   return (
-    <section className="flex justify-center items-center w-full py-20 gap-12">
-      <div className="flex-1"></div>
+    <section className="flex gap-12 pb-16">
       <div className="w-60">
         <img src={image1} alt="" />
       </div>
-      <div className="max-w-2xl">
+      <div>
         <div>
-          <TextBlock value={customClotingContentPaths.title} variant="title" />
+          <TextBlock
+            value={customClotingContentPaths.title}
+            variant="pageTitle"
+          />
           <TextBlock value={customClotingContentPaths.text} variant="body" />
           <br />
           <TextBlock value={customClotingContentPaths.subText} variant="body" />
 
-          <ul className="list-disc pl-3 pt-4">
+          <ul className="list-disc pl-3 pt-1">
             <li>{t(customClotingContentPaths.listItem1)}</li>
             <li>{t(customClotingContentPaths.listItem2)}</li>
           </ul>
         </div>
       </div>
-      <div className="flex-1"></div>
     </section>
   );
 }

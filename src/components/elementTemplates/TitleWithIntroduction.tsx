@@ -5,13 +5,13 @@ export function TitleWithIntroduction({ props }: { props: PageTitleType }) {
   return (
     <div>
       <div className="flex">
-        <TextBlock value={props.mainTitle} variant="largeTitle" />
+        <TextBlock value={props.mainTitle} variant="subTitleMedium" />
         &nbsp;
-        <span className="text-3xl"> - </span>
+        <span className="text-2xl"> - </span>
         &nbsp;
-        <TextBlock value={props.subTitle} variant="largeTitle" />
+        <TextBlock value={props.subTitle} variant="tableSubTitle" />
       </div>
-      <TextBlock value={props.introduction} variant="xlTitleRegular" />
+      <TextBlock value={props.introduction} variant="body" />
     </div>
   );
 }

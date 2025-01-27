@@ -35,31 +35,29 @@ export default function CardsOffsetPrintPricing() {
   ];
 
   return (
-    <section className="flex flex-col items-start w-full gap-4 bg-gray-100">
-      <div className="flex flex-col items-start">
-        <TitleWithIntroduction
-          props={{
-            mainTitle: cardsContentPaths.offsetPrint,
-            subTitle: cardsContentPaths.type400gr,
-            introduction: cardsContentPaths.introductionCardsTable,
-          }}
-        />
-        <div className="flex gap-20">
-          <div>
-            {/* Display a title and the papertype at the top of the table */}
-            <div className="flex flex-col">
-              <TextBlock value={cardsContentPaths.color} variant="subTitle" />
-              <TextBlock value={cardsContentPaths.type400grMc} variant="body" />
-            </div>
-
-            {/* Render a table for the "Black & White" category */}
-            <PricingTable
-              headerTitles={headerTitles}
-              units={units}
-              options={shortBulkPriceOptions}
-              prices={pricesPressPrint}
-            />
+    <section className="flex flex-col p-8 w-full">
+      <TitleWithIntroduction
+        props={{
+          mainTitle: cardsContentPaths.offsetPrint,
+          subTitle: cardsContentPaths.type400gr,
+          introduction: cardsContentPaths.introductionCardsTable,
+        }}
+      />
+      <div className="flex gap-16 pt-8">
+        <div>
+          {/* Display a title and the papertype at the top of the table */}
+          <div className="flex flex-col">
+            <TextBlock value={cardsContentPaths.color} variant="sectionTitle" />
+            <TextBlock value={cardsContentPaths.type400grMc} variant="body" />
           </div>
+
+          {/* Render a table for the "Black & White" category */}
+          <PricingTable
+            headerTitles={headerTitles}
+            units={units}
+            options={shortBulkPriceOptions}
+            prices={pricesPressPrint}
+          />
         </div>
       </div>
     </section>

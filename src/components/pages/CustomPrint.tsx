@@ -19,32 +19,30 @@ export default function CustomClothing() {
     <div className="grid grid-cols-[1fr,minmax(0,1200px),1fr] w-full">
       <div></div> {/* Left empty colomn */}
       <div className="flex flex-col items-start justify-start w-full py-20">
-        <div className="flex flex-col items-center w-full overflow-scroll">
-          <div className="flex flex-col gap-4">
-            <TextBlock
-              value={customPrintingContentPaths.title}
-              variant={'largeTitle'}
-            />
-            <TextBlock
-              value={customPrintingContentPaths.introduction}
-              variant={'xlTitleRegular'}
-            />
-          </div>
-          <OverviewCategoryCard cardContent={stickersContent} />
-          <OverviewCategoryCard cardContent={cardsContent} />
-          <OverviewCategoryCard cardContent={flyersContent} />
-          <OverviewCategoryCard cardContent={foldersContent} />
-          <OverviewCategoryCard cardContent={postersContent} />
-          <Divider flexItem variant="middle" />
-          <div className="pt-10 pb-2">
-            <TextBlock
-              value={customPrintingContentPaths.contactTitle}
-              variant={'xlTitleRegular'}
-            />
-          </div>
-          <div className="w-full">
-            <SendMessage />
-          </div>
+        <div className="flex flex-col pb-8">
+          <TextBlock
+            value={customPrintingContentPaths.title}
+            variant={'pageTitle'}
+          />
+          <TextBlock
+            value={customPrintingContentPaths.introduction}
+            variant={'body'}
+          />
+        </div>
+        <OverviewCategoryCard cardContent={stickersContent} />
+        <OverviewCategoryCard cardContent={cardsContent} />
+        <OverviewCategoryCard cardContent={flyersContent} />
+        <OverviewCategoryCard cardContent={foldersContent} />
+        <OverviewCategoryCard cardContent={postersContent} />
+        <Divider flexItem variant="middle" />
+        <div className="pt-8 pb-2">
+          <TextBlock
+            value={customPrintingContentPaths.contactTitle}
+            variant={'subTitle'}
+          />
+        </div>
+        <div className="w-full">
+          <SendMessage />
         </div>
       </div>
       <div></div> {/* Right empty colomn */}

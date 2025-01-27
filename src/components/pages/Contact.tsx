@@ -13,20 +13,21 @@ export default function Contact() {
   return (
     <div className="grid grid-cols-[1fr,minmax(0,1200px),1fr] w-full">
       <div></div> {/* Left empty colomn */}
-      <div className="flex flex-col justify-start items-center w-full">
-        <div className="flex flex-col gap-2 py-10 max-w-[1000px]">
+      <div className="flex flex-col justify-start items-start w-full p-8">
+        <div className="flex flex-col">
           <TextBlock
             value={contactInfoTextContent.pageTitle}
-            variant={'largeTitle'}
+            variant={'pageTitle'}
           />
           <TextBlock
             value={customPrintingContentPaths.contactTitle}
-            variant={'xlTitleRegular'}
+            variant={'sectionIntroduction'}
           />
         </div>
-        <div className="w-[1000px]">
+        <div>
           <SendMessage />
         </div>
+        {/* <Divider flexItem variant="middle" /> */}
         <ContactDetails />
       </div>
       <div></div> {/* Right empty colomn */}

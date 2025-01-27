@@ -53,46 +53,47 @@ export default function Posters80grPricing() {
   ];
 
   return (
-    <section className="flex flex-col items-start w-fullgap-4">
-      <div className="flex flex-col items-start">
-        <TitleWithIntroduction
-          props={{
-            mainTitle: postersContentPaths.colorOrBlackWhite,
-            subTitle: postersContentPaths.type80gr,
-            introduction: postersContentPaths.introduction80GrTable,
-          }}
-        />
-        <div className="flex gap-20">
-          <div>
-            {/* Display a title and the papertype */}
-            <div className="flex flex-col items-baseline">
-              <TextBlock value={postersContentPaths.color} variant="subTitle" />
-              <TextBlock value={postersContentPaths.type80gr} variant="body" />
-            </div>
-            {/* Display a pricing */}
-            <PricingTable
-              headerTitles={headerTitlesColor}
-              units={unitsColor}
-              options={paperSizes}
-              prices={prices80grColor}
+    <section className="flex flex-col p-8 w-full bg-gray-100">
+      <TitleWithIntroduction
+        props={{
+          mainTitle: postersContentPaths.colorOrBlackWhite,
+          subTitle: postersContentPaths.type80gr,
+          introduction: postersContentPaths.introduction80GrTable,
+        }}
+      />
+      <div className="flex gap-16">
+        <div className="pt-8">
+          {/* Display a title and the papertype */}
+          <div className="flex flex-col items-baseline">
+            <TextBlock
+              value={postersContentPaths.color}
+              variant="sectionTitle"
             />
+            <TextBlock value={postersContentPaths.type80gr} variant="body" />
           </div>
-          <div>
-            {/* Display a title and the papertype at the top of the table */}
-            <div className="flex flex-col">
-              <TextBlock
-                value={postersContentPaths.blackWhite}
-                variant="subTitle"
-              />
-              <TextBlock value={postersContentPaths.type80gr} variant="body" />
-            </div>
-            <PricingTable
-              headerTitles={headerTitlesBlackWhite}
-              units={unitsBlackWhite}
-              options={paperSizesExtended}
-              prices={prices80grBlackWhite}
+          {/* Display a pricing */}
+          <PricingTable
+            headerTitles={headerTitlesColor}
+            units={unitsColor}
+            options={paperSizes}
+            prices={prices80grColor}
+          />
+        </div>
+        <div className="pt-8">
+          {/* Display a title and the papertype at the top of the table */}
+          <div className="flex flex-col">
+            <TextBlock
+              value={postersContentPaths.blackWhite}
+              variant="sectionTitle"
             />
+            <TextBlock value={postersContentPaths.type80gr} variant="body" />
           </div>
+          <PricingTable
+            headerTitles={headerTitlesBlackWhite}
+            units={unitsBlackWhite}
+            options={paperSizesExtended}
+            prices={prices80grBlackWhite}
+          />
         </div>
       </div>
     </section>

@@ -37,7 +37,7 @@ export default function PostersA3BudgetAndHqPricing() {
   const units: string[] = [t('commonWords.format'), t('commonWords.price')];
 
   return (
-    <section className="flex flex-col items-start w-full bg-gray-100">
+    <section className="flex flex-col items-start p-8 w-full">
       <div className="flex flex-col items-start">
         <TitleWithIntroduction
           props={{
@@ -46,21 +46,21 @@ export default function PostersA3BudgetAndHqPricing() {
             introduction: postersContentPaths.introductionA3Table,
           }}
         />
-        <div className="flex gap-20">
+        <div className="flex gap-16 pt-8">
           <div>
             {/* Display a title and the papertype at the top of the table */}
             <div className="flex flex-col">
               <div className="flex">
                 <TextBlock
                   value={postersContentPaths.color}
-                  variant="subTitle"
+                  variant="sectionTitle"
                 />
                 &nbsp;
-                <span className="text-xl"> - </span>
+                <span> - </span>
                 &nbsp;
                 <TextBlock
                   value={postersContentPaths.typeA3Format}
-                  variant="subTitle"
+                  variant="sectionTitle"
                 />
               </div>
               <TextBlock
@@ -81,14 +81,14 @@ export default function PostersA3BudgetAndHqPricing() {
               <div className="flex">
                 <TextBlock
                   value={postersContentPaths.color}
-                  variant="subTitle"
+                  variant="sectionTitle"
                 />
                 &nbsp;
-                <span className="text-xl"> - </span>
+                <span> - </span>
                 &nbsp;
                 <TextBlock
                   value={postersContentPaths.typeA3Format}
-                  variant="subTitle"
+                  variant="sectionTitle"
                 />
               </div>
 

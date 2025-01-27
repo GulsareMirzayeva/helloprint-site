@@ -9,20 +9,20 @@ export default function ContactDetails() {
   // const { t } = useTranslation();
 
   return (
-    <section className="flex flex-col items-center py-14 w-full bg-gray-100">
-      <div className="flex flex-col items-center">
-        <div className="flex gap-52">
-          <div className="flex">
+    <section className="flex flex-col items-start w-full">
+      <div className="flex flex-col p-8 bg-gray-100">
+        <div className="flex justify-between ">
+          <div>
             <AdressSection />
           </div>
-          <div className="flex">
+          <div>
             <ContactSection />
           </div>
-          <div className="flex">
+          <div>
             <OpeningHoursSection />
           </div>
         </div>
-        <div className="flex-1 flex mt-10">
+        <div className="mt-10">
           <GoogleMap />
         </div>
       </div>

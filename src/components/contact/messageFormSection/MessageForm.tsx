@@ -42,13 +42,13 @@ export default function MessageForm() {
   };
 
   return (
-    <div className="flex flex-col ml-20 max-w-[500px]">
+    <div className="flex flex-col">
       <TextBlock
         value={contactFormTextContentPaths.sendMessage}
-        variant="title"
+        variant="subTitle"
       />
 
-      <form className="flex flex-col mt-2">
+      <form className="flex flex-col">
         {/* Name input field */}
         <div className="mb-2">
           <label className="sr-only" htmlFor="name">

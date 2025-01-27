@@ -5,6 +5,10 @@ import Posters190grAnd260grPricing from '../../customPrint/posters/pricing/Poste
 import Posters80grPricing from '../../customPrint/posters/pricing/Posters80grPricing';
 import PostersA3BudgetAndHqPricing from '../../customPrint/posters/pricing/PostersA3BudgetAndHqPricing';
 import PostersSpecialPapersPricing from '../../customPrint/posters/pricing/PostersSpecialPapersPricing';
+import { customPrintingContentPaths } from '../../../lib/translationPaths';
+import SendMessage from '../../contact/SendMessage';
+import { TextBlock } from '../../elementTemplates/TextBlock';
+import { Divider } from '@mui/material';
 
 export default function Posters() {
   useTranslation();
@@ -12,13 +16,25 @@ export default function Posters() {
   return (
     <div className="grid grid-cols-[1fr,minmax(0,1200px),1fr] w-full">
       <div></div> {/* Left empty colomn */}
-      <div className="flex flex-col items-start justify-start w-full px-4">
+      <div className="flex flex-col items-start justify-start w-full py-20">
         <IntroductionPosters />
         <Posters80grPricing />
         <Posters160grPricing />
         <Posters190grAnd260grPricing />
         <PostersSpecialPapersPricing />
         <PostersA3BudgetAndHqPricing />
+        <div className="py-8 pb-2">
+          <Divider flexItem variant="middle" />
+          <div className="pt-8 pb-2">
+            <TextBlock
+              value={customPrintingContentPaths.contactTitle}
+              variant={'subTitle'}
+            />
+          </div>
+          <div className="w-full">
+            <SendMessage />
+          </div>
+        </div>
       </div>
       <div></div> {/* Right empty colomn */}
     </div>

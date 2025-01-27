@@ -7,6 +7,7 @@ import LanguageIcon from '@mui/icons-material/Language';
 import { menuButtonNames } from '../lib/translationPaths';
 import { ExpandableLinkType } from '../lib/types/headerNavigationTypes';
 import { NavigationLink, SubNavigationLink } from '../utils/GenerateElements';
+import { Divider } from '@mui/material';
 
 export default function Header() {
   // Used for translation with the i18next package, set default language to Dutch(nl)
@@ -134,6 +135,7 @@ export default function Header() {
                 value={t(menuButtonNames.overview)}
                 callBack={handleAccordionLinkClick}
               />
+              <Divider variant="fullWidth" />
               <SubNavigationLink
                 path={'/custom-printing/stickers'}
                 value={t(menuButtonNames.stickers)}

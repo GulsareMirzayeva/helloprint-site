@@ -36,24 +36,22 @@ export default function FoldersOffsetPrintPricingA3() {
   ];
 
   return (
-    <section className="flex flex-col items-start w-full gap-4 bg-gray-100">
-      <div className="flex flex-col items-start">
-        <div>
-          {/* Display a title and the papertype at the top of the table */}
-          <div className="flex flex-col">
-            <TextBlock
-              value={foldersContentPaths.trifoldA3}
-              variant="subTitle"
-            />
-            <TextBlock value={foldersContentPaths.color} variant="body" />
-          </div>
-          <PricingTable
-            headerTitles={headerTitlesA4}
-            units={unitsFolders}
-            options={bulkPriceOptions}
-            prices={pricesColorTrifoldA3}
+    <section className="flex flex-col p-8 w-full">
+      <div>
+        {/* Display a title and the papertype at the top of the table */}
+        <div className="flex flex-col">
+          <TextBlock
+            value={foldersContentPaths.trifoldA3}
+            variant="sectionTitle"
           />
+          <TextBlock value={foldersContentPaths.color} variant="body" />
         </div>
+        <PricingTable
+          headerTitles={headerTitlesA4}
+          units={unitsFolders}
+          options={bulkPriceOptions}
+          prices={pricesColorTrifoldA3}
+        />
       </div>
     </section>
   );

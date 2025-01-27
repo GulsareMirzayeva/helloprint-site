@@ -44,20 +44,23 @@ export default function Posters160grPricing() {
   ];
 
   return (
-    <section className="flex flex-col items-start w-full bg-gray-100">
-      <div className="flex flex-col items-start">
-        <TitleWithIntroduction
-          props={{
-            mainTitle: postersContentPaths.color,
-            subTitle: postersContentPaths.range160grTo260gr,
-            introduction: postersContentPaths.introduction160To260GrTable,
-          }}
-        />
-        <div className="flex gap-20">
+    <section className="flex flex-col p-8 pb-2 w-full">
+      <TitleWithIntroduction
+        props={{
+          mainTitle: postersContentPaths.color,
+          subTitle: postersContentPaths.range160grTo260gr,
+          introduction: postersContentPaths.introduction160To260GrTable,
+        }}
+      />
+      <div>
+        <div className="flex gap-16 pt-8">
           <div>
             {/* Display a title and the papertype */}
             <div className="flex flex-col">
-              <TextBlock value={postersContentPaths.color} variant="subTitle" />
+              <TextBlock
+                value={postersContentPaths.color}
+                variant="sectionTitle"
+              />
               <TextBlock
                 value={postersContentPaths.type160grMat}
                 variant="body"
@@ -74,7 +77,10 @@ export default function Posters160grPricing() {
           <div>
             {/* Display a title and the papertype at the top of the table */}
             <div className="flex flex-col">
-              <TextBlock value={postersContentPaths.color} variant="subTitle" />
+              <TextBlock
+                value={postersContentPaths.color}
+                variant="sectionTitle"
+              />
               <TextBlock
                 value={postersContentPaths.type160grSatin}
                 variant="body"

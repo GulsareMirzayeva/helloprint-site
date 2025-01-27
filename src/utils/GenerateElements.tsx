@@ -23,7 +23,7 @@ export const NavigationLink = (linkProps: NavigationType) => {
 export const SubNavigationLink = (linkProps: SubNavigationType) => {
   return (
     <Link to={linkProps.path} onClick={linkProps.callBack}>
-      <li className="p-2 hover:bg-gray-200 cursor-default">
+      <li className="p-2 hover:bg-gray-100 cursor-default">
         {t(linkProps.value)}
       </li>
     </Link>

@@ -33,55 +33,47 @@ export default function CopyPrintPricing() {
   ];
 
   return (
-    <section className="flex flex-col items-start w-full gap-4">
-      <div className="flex flex-col items-start">
-        <TitleWithIntroduction
-          props={{
-            mainTitle: copyPrintContentPaths.colorOrBlackWhite,
-            subTitle: copyPrintContentPaths.type80grOr90gr,
-            introduction: copyPrintContentPaths.introductionCopyPrintTable,
-          }}
-        />
-        <div className="flex gap-20 pt-10">
-          <div>
-            {/* Display a title and the papertype */}
-            <div className="flex flex-col items-baseline">
-              <TextBlock
-                value={copyPrintContentPaths.blackWhite}
-                variant="subTitle"
-              />
-              <TextBlock
-                value={copyPrintContentPaths.type80gr}
-                variant="body"
-              />
-            </div>
-            {/* Display a pricing */}
-            <PricingTable
-              headerTitles={headerTitles}
-              units={units}
-              options={splitPriceOptions}
-              prices={pricesBlackWhite}
+    <section className="flex flex-col p-8 w-full bg-gray-100">
+      <TitleWithIntroduction
+        props={{
+          mainTitle: copyPrintContentPaths.colorOrBlackWhite,
+          subTitle: copyPrintContentPaths.type80grOr90gr,
+          introduction: copyPrintContentPaths.introductionCopyPrintTable,
+        }}
+      />
+      <div className="flex gap-16 py-8">
+        <div>
+          {/* Display a title and the papertype */}
+          <div className="flex flex-col">
+            <TextBlock
+              value={copyPrintContentPaths.blackWhite}
+              variant="sectionTitle"
             />
+            <TextBlock value={copyPrintContentPaths.type80gr} variant="body" />
           </div>
-          <div>
-            {/* Display a title and the papertype at the top of the table */}
-            <div className="flex flex-col">
-              <TextBlock
-                value={copyPrintContentPaths.color}
-                variant="subTitle"
-              />
-              <TextBlock
-                value={copyPrintContentPaths.type90gr}
-                variant="body"
-              />
-            </div>
-            <PricingTable
-              headerTitles={headerTitles}
-              units={units}
-              options={splitPriceOptions}
-              prices={pricesColor}
+          {/* Display a pricing */}
+          <PricingTable
+            headerTitles={headerTitles}
+            units={units}
+            options={splitPriceOptions}
+            prices={pricesBlackWhite}
+          />
+        </div>
+        <div>
+          {/* Display a title and the papertype at the top of the table */}
+          <div className="flex flex-col">
+            <TextBlock
+              value={copyPrintContentPaths.color}
+              variant="sectionTitle"
             />
+            <TextBlock value={copyPrintContentPaths.type90gr} variant="body" />
           </div>
+          <PricingTable
+            headerTitles={headerTitles}
+            units={units}
+            options={splitPriceOptions}
+            prices={pricesColor}
+          />
         </div>
       </div>
     </section>

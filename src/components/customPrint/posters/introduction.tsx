@@ -9,19 +9,16 @@ import { TextBlock } from '../../elementTemplates/TextBlock';
 
 export default function IntroductionPosters() {
   return (
-    <section className="flex py-20 gap-12">
+    <section className="flex gap-12 pb-16">
       {/* Image next to the text content */}
       <div className="max-w-60">
         <img src={image1} alt="" />
       </div>
 
       {/* Introduction content */}
-      <div className="max-w-3xl">
-        <TextBlock value={postersContentPaths.title} variant="xl4Title" />
-        <TextBlock
-          value={postersContentPaths.introduction}
-          variant="xlTitleRegular"
-        />
+      <div>
+        <TextBlock value={postersContentPaths.title} variant="pageTitle" />
+        <TextBlock value={postersContentPaths.introduction} variant="body" />
       </div>
     </section>
   );

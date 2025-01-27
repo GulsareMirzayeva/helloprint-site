@@ -35,28 +35,26 @@ export default function ClothingPiecesPricing() {
   ];
 
   return (
-    <section className="flex flex-col items-start w-full">
-      <div className="flex flex-col items-start">
-        <TitleWithIntroduction
-          props={{
-            mainTitle: customClotingContentPaths.tableTitle,
-            subTitle: customClotingContentPaths.textile,
-            introduction: customClotingContentPaths.tableIntroduction,
-          }}
-        />
-        <div className="flex gap-20">
-          <div>
-            {/* Display a pricing */}
-            <PricingTable
-              headerTitles={headerTitlesTextile}
-              units={unitsTextile}
-              options={translateTextOptions(textileCategories)}
-              prices={pricePathsTextile}
-            />
-          </div>
-          <div>
-            <img src={clothing} alt="" />
-          </div>
+    <section className="flex flex-col p-8 pb-4 w-full bg-gray-100">
+      <TitleWithIntroduction
+        props={{
+          mainTitle: customClotingContentPaths.tableTitle,
+          subTitle: customClotingContentPaths.subTitle,
+          introduction: customClotingContentPaths.tableIntroduction,
+        }}
+      />
+      <div className="flex justify-between gap-20 pt-8">
+        <div>
+          {/* Display a pricing */}
+          <PricingTable
+            headerTitles={headerTitlesTextile}
+            units={unitsTextile}
+            options={translateTextOptions(textileCategories)}
+            prices={pricePathsTextile}
+          />
+        </div>
+        <div className="pr-10">
+          <img src={clothing} alt="" />
         </div>
       </div>
     </section>

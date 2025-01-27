@@ -9,11 +9,11 @@ import { TextBlock } from '../elementTemplates/TextBlock';
 
 export default function WelcomeMessage() {
   return (
-    <section className="flex my-20 gap-24">
+    <section className="flex pt-20 gap-20">
       {/* Image next to the text content */}
       <div>
         <img
-          className="max-h-[200px] max-w-[280px]"
+          className="max-w-[320px]"
           src={logo}
           alt="Logo Copy& Printshop 't Hartje"
         />

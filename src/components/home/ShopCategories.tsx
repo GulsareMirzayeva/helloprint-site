@@ -16,7 +16,7 @@ export default function ShopCategories() {
   });
 
   return (
-    <section className="flex justify-center py-14 mb-20 gap-12">
+    <section className="flex justify-center py-28 gap-12">
       {Object.entries(categoryCardsContent).map(([key, value]) => (
         <div
           key={key}

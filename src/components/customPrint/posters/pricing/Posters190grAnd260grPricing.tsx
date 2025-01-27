@@ -40,13 +40,16 @@ export default function Posters190grAnd260grPricing() {
   ];
 
   return (
-    <section className="flex flex-col items-start w-full bg-gray-100">
+    <section className="flex flex-col items-start p-8 w-full">
       <div className="flex flex-col items-start">
-        <div className="flex gap-20">
+        <div className="flex gap-16">
           <div>
             {/* Display a title and the papertype at the top of the table */}
             <div className="flex flex-col items-baseline">
-              <TextBlock value={postersContentPaths.color} variant="subTitle" />
+              <TextBlock
+                value={postersContentPaths.color}
+                variant="sectionTitle"
+              />
               <TextBlock
                 value={postersContentPaths.type190grGloss}
                 variant="body"
@@ -62,7 +65,10 @@ export default function Posters190grAnd260grPricing() {
           <div>
             {/* Display a title and the papertype at the top of the table */}
             <div className="flex flex-col items-baseline">
-              <TextBlock value={postersContentPaths.color} variant="subTitle" />
+              <TextBlock
+                value={postersContentPaths.color}
+                variant="sectionTitle"
+              />
               <TextBlock
                 value={postersContentPaths.type260grSatin}
                 variant="body"

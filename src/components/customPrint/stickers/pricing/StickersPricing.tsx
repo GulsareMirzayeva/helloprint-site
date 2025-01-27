@@ -24,8 +24,8 @@ export default function StickersPricing() {
     : [];
 
   return (
-    <section className="flex flex-col items-start w-full">
-      <div className="flex flex-col items-start">
+    <section>
+      <div className="flex flex-col p-8 bg-gray-100">
         <TitleWithIntroduction
           props={{
             mainTitle: stickersContentPaths.subtitleLargeFormat,
@@ -33,23 +33,21 @@ export default function StickersPricing() {
             introduction: stickersContentPaths.introductionLargeFormatTable,
           }}
         />
-        <div className="flex gap-20">
-          <div>
-            {/* Display a title and the papertype at the top of the table */}
-            <div className="flex flex-col">
-              <TextBlock
-                value={stickersContentPaths.subtitleLargeFormat}
-                variant="subTitle"
-              />
-              <TextBlock value={stickersContentPaths.vinyl} variant="body" />
-            </div>
-            <PricingTable
-              headerTitles={headerTitleStickers}
-              units={unitStickers}
-              options={translateTextOptions(stickersCategories)}
-              prices={pricePathStickers}
+        <div className="py-8">
+          {/* Display a title and the papertype at the top of the table */}
+          <div className="flex flex-col">
+            <TextBlock
+              value={stickersContentPaths.subtitleLargeFormat}
+              variant="sectionTitle"
             />
+            <TextBlock value={stickersContentPaths.vinyl} variant="body" />
           </div>
+          <PricingTable
+            headerTitles={headerTitleStickers}
+            units={unitStickers}
+            options={translateTextOptions(stickersCategories)}
+            prices={pricePathStickers}
+          />
         </div>
       </div>
     </section>

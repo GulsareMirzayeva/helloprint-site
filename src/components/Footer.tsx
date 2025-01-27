@@ -5,13 +5,15 @@ import AdressSection from './footer/AdressSection';
 
 export default function Footer() {
   return (
-    <footer className="flex justify-center w-full h-40 border-t-2 border-[#FB0036] py-2">
-      <div className="flex justify-evenly w-full max-w-[1900px]">
+    <footer className="grid grid-cols-[1fr,minmax(0,1200px),1fr] w-full border-t-2 border-[#FB0036] py-2">
+      <div></div> {/* Left empty colomn */}
+      <div className="flex items-start justify-between w-full py-1">
         <TermsOfSaleSection />
         <AdressSection />
         <ContactSection />
         <OpeningHoursSection />
       </div>
+      <div></div> {/* Right empty colomn */}
     </footer>
   );
 }

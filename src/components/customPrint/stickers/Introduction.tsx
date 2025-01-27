@@ -20,26 +20,32 @@ export default function IntroductionCustomPrint() {
   };
 
   return (
-    <section className="flex py-20 gap-12">
+    <section className="flex gap-12 pb-8">
       {/* Image next to the text content */}
       <div className="max-w-60">
         <img src={image1} alt="" />
       </div>
 
       {/* Introduction content */}
-      <div className="max-w-3xl">
+      <div>
         <div>
-          <TextBlock value={stickersContentPaths.title} variant="title" />
-          <TextBlock value={stickersContentPaths.introduction} variant="body" />
-          <br />
-          <TextBlock
-            value={stickersContentPaths.materialTitle}
-            variant="subTitle"
-          />
-          <TextBlock
-            value={stickersContentPaths.materialContent}
-            variant="body"
-          />
+          <div className="pb-8">
+            <TextBlock value={stickersContentPaths.title} variant="pageTitle" />
+            <TextBlock
+              value={stickersContentPaths.introduction}
+              variant="body"
+            />
+          </div>
+          <div>
+            <TextBlock
+              value={stickersContentPaths.materialTitle}
+              variant="subTitle"
+            />
+            <TextBlock
+              value={stickersContentPaths.materialContent}
+              variant="body"
+            />
+          </div>
           <ul className="list-disc pl-4 pt-4">
             <li>{t(listItemPaths.listItem1)}</li>
             <li>{t(listItemPaths.listItem2)}</li>

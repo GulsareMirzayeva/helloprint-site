@@ -16,7 +16,7 @@ export default function OverviewCategoryCard({
   cardContent: CategoryCardType;
 }) {
   return (
-    <section className={`${cardContent.bgColor} flex items-start my-8 w-full`}>
+    <section className={`${cardContent.bgColor} flex items-start p-8 w-full`}>
       {/* Place image left to the content */}
       {cardContent.placeImageLeft && (
         <div className="p-8 max-w-[45%]">
@@ -25,9 +25,9 @@ export default function OverviewCategoryCard({
       )}
 
       {/* Introduction cardContent */}
-      <div className="px-4 py-8 max-w-[55%]">
-        <div className="flex flex-col justify-start gap-4">
-          <TextBlock value={cardContent.titlePath} variant="title" />
+      <div className="max-w-[55%]">
+        <div className="flex flex-col justify-start">
+          <TextBlock value={cardContent.titlePath} variant="subTitle" />
           <TextBlock value={cardContent.textContentPath} variant="body" />
         </div>
         <div className="flex justify-start pt-4">

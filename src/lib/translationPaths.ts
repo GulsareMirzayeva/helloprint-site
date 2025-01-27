@@ -59,6 +59,7 @@ export const menuButtonNames = {
 // Paths to text content in translation files
 export const customClotingContentPaths = {
   title: 'customClothingPage.introduction.title',
+  subTitle: 'customClothingPage.pricingTextile.subTitle',
   text: 'customClothingPage.introduction.text',
   subText: 'customClothingPage.introduction.subText',
   listItem1: 'customClothingPage.introduction.listItem1',

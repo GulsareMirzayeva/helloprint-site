@@ -9,18 +9,16 @@ import { TextBlock } from '../../elementTemplates/TextBlock';
 
 export default function IntroductionCards() {
   return (
-    <section className="flex py-20 gap-12">
+    <section className="flex pb-16 gap-12">
       {/* Image next to the text content */}
       <div className="max-w-60">
         <img src={image1} alt="" />
       </div>
 
       {/* Introduction content */}
-      <div className="max-w-2xl">
-        <div>
-          <TextBlock value={cardsContentPaths.title} variant="largeTitle" />
-          <TextBlock value={cardsContentPaths.introduction} variant="body" />
-        </div>
+      <div>
+        <TextBlock value={cardsContentPaths.title} variant="pageTitle" />
+        <TextBlock value={cardsContentPaths.introduction} variant="body" />
       </div>
     </section>
   );

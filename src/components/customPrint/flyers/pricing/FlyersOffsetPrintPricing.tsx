@@ -45,58 +45,50 @@ export default function FlyersOffsetPrintPricing() {
   ];
 
   return (
-    <section className="flex flex-col items-start w-full gap-4 bg-gray-100">
-      <div className="flex flex-col items-start">
-        <TitleWithIntroduction
-          props={{
-            mainTitle: offsetPrintTitle,
-            subTitle: flyersContentPaths.formatA5Complete,
-            introduction: flyersContentPaths.introductionFlyersTable,
-          }}
-        />
-        <div className="flex gap-20">
-          <div>
-            {/* Display a title and the papertype at the top of the table */}
-            <div className="flex flex-col">
-              <TextBlock
-                value={flyersContentPaths.formatA5}
-                variant="subTitle"
-              />
-              <TextBlock
-                value={flyersContentPaths.singleSided}
-                variant="body"
-              />
-            </div>
-
-            {/* Render a table for the "Black & White" category */}
-            <PricingTable
-              headerTitles={headerTitles}
-              units={units}
-              options={basePriceOptions}
-              prices={pricesDoubleSidedA6}
+    <section className="flex flex-col p-8 w-full">
+      <TitleWithIntroduction
+        props={{
+          mainTitle: offsetPrintTitle,
+          subTitle: flyersContentPaths.formatA5Complete,
+          introduction: flyersContentPaths.introductionFlyersTable,
+        }}
+      />
+      <div className="flex gap-16 pt-8">
+        <div>
+          {/* Display a title and the papertype at the top of the table */}
+          <div className="flex flex-col">
+            <TextBlock
+              value={flyersContentPaths.formatA5}
+              variant="sectionTitle"
             />
+            <TextBlock value={flyersContentPaths.singleSided} variant="body" />
           </div>
-          <div>
-            {/* Display a title and the papertype at the top of the table */}
-            <div className="flex flex-col">
-              <TextBlock
-                value={flyersContentPaths.formatA5}
-                variant="subTitle"
-              />
-              <TextBlock
-                value={flyersContentPaths.doubleSided}
-                variant="body"
-              />
-            </div>
 
-            {/* Render a table for the "Color" category */}
-            <PricingTable
-              headerTitles={headerTitles}
-              units={units}
-              options={bulkPriceOptions}
-              prices={pricesDoubleSidedA5}
+          {/* Render a table for the "Black & White" category */}
+          <PricingTable
+            headerTitles={headerTitles}
+            units={units}
+            options={basePriceOptions}
+            prices={pricesDoubleSidedA6}
+          />
+        </div>
+        <div>
+          {/* Display a title and the papertype at the top of the table */}
+          <div className="flex flex-col">
+            <TextBlock
+              value={flyersContentPaths.formatA5}
+              variant="sectionTitle"
             />
+            <TextBlock value={flyersContentPaths.doubleSided} variant="body" />
           </div>
+
+          {/* Render a table for the "Color" category */}
+          <PricingTable
+            headerTitles={headerTitles}
+            units={units}
+            options={bulkPriceOptions}
+            prices={pricesDoubleSidedA5}
+          />
         </div>
       </div>
     </section>

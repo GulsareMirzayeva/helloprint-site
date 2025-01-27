@@ -9,18 +9,16 @@ import { TextBlock } from '../../elementTemplates/TextBlock';
 
 export default function IntroductionFlyers() {
   return (
-    <section className="flex py-20 gap-12">
+    <section className="flex pb-16 gap-12">
       {/* Image next to the text content */}
       <div className="max-w-60">
         <img src={image1} alt="" />
       </div>
 
       {/* Introduction content */}
-      <div className="max-w-3xl">
-        <div>
-          <TextBlock value={flyersContentPaths.title} variant="title" />
-          <TextBlock value={flyersContentPaths.introduction} variant="body" />
-        </div>
+      <div>
+        <TextBlock value={flyersContentPaths.title} variant="pageTitle" />
+        <TextBlock value={flyersContentPaths.introduction} variant="body" />
       </div>
     </section>
   );

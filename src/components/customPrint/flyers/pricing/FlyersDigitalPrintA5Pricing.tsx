@@ -43,21 +43,16 @@ export default function FlyersDigitalPrintA5Pricing() {
   ];
 
   return (
-    <section className="flex flex-col items-start w-full">
-      <div className="flex gap-20 items-start">
+    <section className="flex flex-col items-start p-8 w-full bg-gray-100">
+      <div className="flex gap-16">
         <div className="flex flex-col">
-          <div className="flex flex-col">
-            {/* Display a title and the papertype at the top of the table */}
-            <div>
-              <TextBlock
-                value={flyersContentPaths.formatA5}
-                variant="subTitle"
-              />
-              <TextBlock
-                value={flyersContentPaths.singleSided}
-                variant="body"
-              />
-            </div>
+          {/* Display a title and the papertype at the top of the table */}
+          <div>
+            <TextBlock
+              value={flyersContentPaths.formatA5}
+              variant="sectionTitle"
+            />
+            <TextBlock value={flyersContentPaths.singleSided} variant="body" />
           </div>
           <PricingTable
             headerTitles={headerTitles}
@@ -69,7 +64,10 @@ export default function FlyersDigitalPrintA5Pricing() {
         <div>
           {/* Display a title and the papertype at the top of the table */}
           <div className="flex flex-col">
-            <TextBlock value={flyersContentPaths.formatA5} variant="subTitle" />
+            <TextBlock
+              value={flyersContentPaths.formatA5}
+              variant="sectionTitle"
+            />
             <TextBlock value={flyersContentPaths.doubleSided} variant="body" />
           </div>
           <PricingTable

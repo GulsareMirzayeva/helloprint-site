@@ -56,56 +56,54 @@ export default function FoldersDigitalPrintPricing() {
   ];
 
   return (
-    <section className="flex flex-col items-start w-full gap-4">
-      <div className="flex flex-col items-start">
-        <TitleWithIntroduction
-          props={{
-            mainTitle: digitalPrintTitle,
-            subTitle: foldersContentPaths.A4FormatComplete,
-            introduction: foldersContentPaths.introductionFoldersTable,
-          }}
-        />
-        <div className="flex gap-20">
-          <div>
-            {/* Display a title and the papertype */}
-            <div className="flex flex-col items-baseline">
-              <TextBlock
-                value={foldersContentPaths.bifoldOrTrifoldA4}
-                variant="subTitle"
-              />
-              <div className="flex">
-                <TextBlock value={foldersContentPaths.color} variant="body" />
-                &nbsp;
-                <TextBlock
-                  value={foldersContentPaths.whiteOrColoredPaperA4}
-                  variant="body"
-                />
-              </div>
-            </div>
-            {/* Display a pricing */}
-            <PricingTable
-              headerTitles={headerTitlesBlackWhite}
-              units={unitsBlackWhite}
-              options={basePriceOptions}
-              prices={pricesBlackWhiteA4}
+    <section className="flex flex-col p-8 w-full bg-gray-100">
+      <TitleWithIntroduction
+        props={{
+          mainTitle: digitalPrintTitle,
+          subTitle: foldersContentPaths.A4FormatComplete,
+          introduction: foldersContentPaths.introductionFoldersTable,
+        }}
+      />
+      <div className="flex gap-16 pt-8">
+        <div>
+          {/* Display a title and the papertype at the top of the table */}
+          <div className="flex flex-col">
+            <TextBlock
+              value={foldersContentPaths.bifoldOrTrifoldA4}
+              variant="sectionTitle"
             />
+            <TextBlock value={foldersContentPaths.color} variant="body" />
           </div>
-          <div>
-            {/* Display a title and the papertype at the top of the table */}
-            <div className="flex flex-col">
-              <TextBlock
-                value={foldersContentPaths.bifoldOrTrifoldA4}
-                variant="subTitle"
-              />
+          <PricingTable
+            headerTitles={headerTitlesColor}
+            units={unitsColor}
+            options={lowPriceOptions}
+            prices={pricesColorA4}
+          />
+        </div>
+        <div>
+          {/* Display a title and the papertype */}
+          <div className="flex flex-col items-baseline">
+            <TextBlock
+              value={foldersContentPaths.bifoldOrTrifoldA4}
+              variant="sectionTitle"
+            />
+            <div className="flex">
               <TextBlock value={foldersContentPaths.color} variant="body" />
+              &nbsp;
+              <TextBlock
+                value={foldersContentPaths.whiteOrColoredPaperA4}
+                variant="body"
+              />
             </div>
-            <PricingTable
-              headerTitles={headerTitlesColor}
-              units={unitsColor}
-              options={lowPriceOptions}
-              prices={pricesColorA4}
-            />
           </div>
+          {/* Display a pricing */}
+          <PricingTable
+            headerTitles={headerTitlesBlackWhite}
+            units={unitsBlackWhite}
+            options={basePriceOptions}
+            prices={pricesBlackWhiteA4}
+          />
         </div>
       </div>
     </section>

@@ -9,7 +9,7 @@ import { TextBlock } from '../../elementTemplates/TextBlock';
 
 export default function IntroductionFlyers() {
   return (
-    <section className="flex py-20 gap-12">
+    <section className="flex gap-12 pb-16">
       {/* Image next to the text content */}
       <div className="max-w-60">
         <img src={image1} alt="" />
@@ -18,7 +18,7 @@ export default function IntroductionFlyers() {
       {/* Introduction content */}
       <div className="max-w-2xl">
         <div>
-          <TextBlock value={foldersContentPaths.title} variant="title" />
+          <TextBlock value={foldersContentPaths.title} variant="pageTitle" />
           <TextBlock value={foldersContentPaths.introduction} variant="body" />
         </div>
       </div>
