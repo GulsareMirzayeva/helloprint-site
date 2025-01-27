@@ -11,12 +11,12 @@ export default function IntroductionFlyers() {
   return (
     <section className="flex pb-16 gap-12">
       {/* Image next to the text content */}
-      <div className="max-w-60">
+      <div className="flex-1 basis-1/3">
         <img src={image1} alt="" />
       </div>
 
       {/* Introduction content */}
-      <div>
+      <div className="flex-1 basis-2/3">
         <TextBlock value={flyersContentPaths.title} variant="pageTitle" />
         <TextBlock value={flyersContentPaths.introduction} variant="body" />
       </div>

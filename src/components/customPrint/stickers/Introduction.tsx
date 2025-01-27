@@ -22,37 +22,32 @@ export default function IntroductionCustomPrint() {
   return (
     <section className="flex gap-12 pb-8">
       {/* Image next to the text content */}
-      <div className="max-w-60">
+      <div className="flex-1 basis-1/3">
         <img src={image1} alt="" />
       </div>
 
       {/* Introduction content */}
-      <div>
-        <div>
-          <div className="pb-8">
-            <TextBlock value={stickersContentPaths.title} variant="pageTitle" />
-            <TextBlock
-              value={stickersContentPaths.introduction}
-              variant="body"
-            />
-          </div>
-          <div>
-            <TextBlock
-              value={stickersContentPaths.materialTitle}
-              variant="subTitle"
-            />
-            <TextBlock
-              value={stickersContentPaths.materialContent}
-              variant="body"
-            />
-          </div>
-          <ul className="list-disc pl-4 pt-4">
-            <li>{t(listItemPaths.listItem1)}</li>
-            <li>{t(listItemPaths.listItem2)}</li>
-            <li>{t(listItemPaths.listItem3)}</li>
-            <li>{t(listItemPaths.listItem4)}</li>
-          </ul>
+      <div className="flex-1 basis-2/3">
+        <div className="pb-8">
+          <TextBlock value={stickersContentPaths.title} variant="pageTitle" />
+          <TextBlock value={stickersContentPaths.introduction} variant="body" />
         </div>
+        <div>
+          <TextBlock
+            value={stickersContentPaths.materialTitle}
+            variant="subTitle"
+          />
+          <TextBlock
+            value={stickersContentPaths.materialContent}
+            variant="body"
+          />
+        </div>
+        <ul className="list-disc pl-4 pt-4">
+          <li>{t(listItemPaths.listItem1)}</li>
+          <li>{t(listItemPaths.listItem2)}</li>
+          <li>{t(listItemPaths.listItem3)}</li>
+          <li>{t(listItemPaths.listItem4)}</li>
+        </ul>
       </div>
     </section>
   );
