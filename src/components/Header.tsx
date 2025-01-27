@@ -117,8 +117,8 @@ export default function Header() {
   };
 
   return (
-    <header>
-      <nav className="relative z-50 flex justify-center gap-16 items-center shadow-md h-14">
+    <header className="sticky top-0 pt-1 z-10 bg-white shadow-md h-12">
+      <nav className="flex justify-center gap-16 items-center">
         <NavigationLink path={'/'} value={t(menuButtonNames.home)} />
         <NavigationLink
           path={'/copy-print'}
@@ -129,7 +129,7 @@ export default function Header() {
         <NagivationExpandableLink>
           {/* Accordion content */}
           {isAccordionOpen && (
-            <ul className="absolute top-[calc(100%+9px)] min-w-[105%] bg-white shadow-md rounded-sm">
+            <ul className="absolute top-[calc(100%+6px)] min-w-[105%] bg-white shadow-md rounded-sm">
               <SubNavigationLink
                 path={'/custom-printing'}
                 value={t(menuButtonNames.overview)}
