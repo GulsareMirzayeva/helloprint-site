@@ -226,8 +226,11 @@
     "introduction": "Bij ons kunt u eenvoudig en snel uw kopieën en prints verzorgen. Met onze self-service printers kunt u direct documenten printen vanaf een USB-stick of downloaden vanuit uw e-mail.",
     "introductionBinding": "Daarnaast bieden wij mogelijkheden voor inbinden en lamineren, zodat uw documenten een nette en professionele uitstraling krijgen. Ideaal voor zakelijke doeleinden, studieprojecten of persoonlijke documenten!",
     "introductionCopyPrintTable": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-    "printerBudget": "Budget | Printer 1 t/m 3",
-    "printerHq": "Hoge kwaliteit | Printer 4"
+    "printerBudget": "A4 Budget | Printer 1 t/m 3",
+    "printerHq": "A4 Hoge kwaliteit | Printer 4",
+    "notificationFirst": "- Budget prijzen zijn gebaseerd op self-service, aangeleverde opdrachten (per email) worden uitsluitend geprint op High Quality printers.",
+    "notificationSecond": "- A3 formaat is 2x de printprijs.",
+    "notificationThird": "- Dubbelzijdige prints tellen als 2 prints."
   },
   "paperTypes": {
     "80grWhiteOrColor": "80gr wit of gekleurd papier",

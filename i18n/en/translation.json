@@ -219,8 +219,11 @@
     "introduction": "Easily and quickly take care of your copies and prints using our services. Our self-service printers allow you to print documents directly from a USB stick or download them from your email.",
     "introductionBinding": "We also offer binding and laminating services to give your documents a neat and professional finish. Perfect for business purposes, school projects, or personal documents!",
     "introductionCopyPrintTable": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore<br />magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea<br />commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat<br />nulla pariatur.",
-    "printerBudget": "Budget | Printer 1 to 3",
-    "printerHq": "High Quality | Printer 4"
+    "printerBudget": "A4 Budget | Printer 1 to 3",
+    "printerHq": "A4 High Quality | Printer 4",
+    "notificationFirst": "- Budget prices are based on self-service; submitted orders (via email) are printed exclusively on High Quality printers.",
+    "notificationSecond": "- A3 sized paper is 2x the printing price.",
+    "notificationThird": "- Double sided prints count as 2 prints."
   },
   "paperTypes": {
     "80grWhiteOrColor": "80gr white or colored paper",

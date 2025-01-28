@@ -6,6 +6,7 @@ import { TextBlock } from '../../elementTemplates/TextBlock';
 import { BeatLoader } from 'react-spinners';
 import { copyPrintContentPaths } from '../../../lib/translationPaths';
 import { TitleWithIntroduction } from '../../elementTemplates/TitleWithIntroduction';
+import { Notification } from '../../elementTemplates/Notification';
 
 export default function CopyPrintPricing() {
   const { prices } = useData();
@@ -75,6 +76,22 @@ export default function CopyPrintPricing() {
             prices={pricesHq}
           />
         </div>
+      </div>
+      <div className="pt-8">
+        <Notification>
+          <TextBlock
+            value={copyPrintContentPaths.notificationFirst}
+            variant="bodySmall"
+          />
+          <TextBlock
+            value={copyPrintContentPaths.notificationSecond}
+            variant="bodySmall"
+          />
+          <TextBlock
+            value={copyPrintContentPaths.notificationThird}
+            variant="bodySmall"
+          />
+        </Notification>
       </div>
     </section>
   );

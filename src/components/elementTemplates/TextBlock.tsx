@@ -37,7 +37,7 @@ export function TextBlock({ value, variant }: TextBlockType) {
     largeTitle: 'text-3xl font-medium',
     title: 'text-2xl font-bold',
     body: 'text-base',
-    bodySmall: 'text-md',
+    bodySmall: 'text-sm font-medium',
     bold: 'font-bold',
   };
 

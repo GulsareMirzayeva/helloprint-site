@@ -191,6 +191,9 @@ export const copyPrintContentPaths = {
   type90gr: 'paperTypes.90gr',
   type80gr: 'paperTypes.80gr',
   type80grOr90gr: 'paperTypes.80grOr90gr',
+  notificationFirst: 'copyPrintPage.notificationFirst',
+  notificationSecond: 'copyPrintPage.notificationSecond',
+  notificationThird: 'copyPrintPage.notificationThird',
 };
 
 export const contactFormTextContentPaths = {
