@@ -17,14 +17,14 @@ export default function CopyPrintPricing() {
   }
 
   // Get all prices for the "copy & print" page that will be used
-  const pricesBlackWhite = [...Object.values(prices.copyPrint.A4.blackWhite)];
-  const pricesColor = [...Object.values(prices.copyPrint.A4.color)];
+  const pricesBudget = [...Object.values(prices.copyPrint.A4.budget)];
+  const pricesHq = [...Object.values(prices.copyPrint.A4.hq)];
 
   // Table headers for the 'Flex' category. An empty cell is added because all the prices are the same
   const headerTitles: string[] = [
     t('commonWords.prints'),
-    t('commonWords.budget'),
-    t('commonWords.highQuality'),
+    t(copyPrintContentPaths.blackWhite),
+    t(copyPrintContentPaths.color),
   ];
   const units: string[] = [
     t('commonWords.amount'),
@@ -46,7 +46,7 @@ export default function CopyPrintPricing() {
           {/* Display a title and the papertype */}
           <div className="flex flex-col">
             <TextBlock
-              value={copyPrintContentPaths.blackWhite}
+              value={copyPrintContentPaths.printerBudget}
               variant="sectionTitle"
             />
             <TextBlock value={copyPrintContentPaths.type80gr} variant="body" />
@@ -56,14 +56,14 @@ export default function CopyPrintPricing() {
             headerTitles={headerTitles}
             units={units}
             options={splitPriceOptions}
-            prices={pricesBlackWhite}
+            prices={pricesBudget}
           />
         </div>
         <div>
           {/* Display a title and the papertype at the top of the table */}
           <div className="flex flex-col">
             <TextBlock
-              value={copyPrintContentPaths.color}
+              value={copyPrintContentPaths.printerHq}
               variant="sectionTitle"
             />
             <TextBlock value={copyPrintContentPaths.type90gr} variant="body" />
@@ -72,7 +72,7 @@ export default function CopyPrintPricing() {
             headerTitles={headerTitles}
             units={units}
             options={splitPriceOptions}
-            prices={pricesColor}
+            prices={pricesHq}
           />
         </div>
       </div>

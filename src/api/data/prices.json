@@ -2,40 +2,40 @@
   "prices": {
     "copyPrint": {
       "A4": {
-        "blackWhite": {
+        "budget": {
           "1-00": {
-            "budget": 0.15,
-            "hq": 0.2
+            "blackWhite": 0.15,
+            "color": 0.35
           },
           "101-250": {
-            "budget": 0.1,
-            "hq": 0.15
+            "blackWhite": 0.1,
+            "color": 0.3
           },
           "251-500": {
-            "budget": 0.07,
-            "hq": 0.12
+            "blackWhite": 0.07,
+            "color": 0.25
           },
           "501-1000": {
-            "budget": 0.06,
-            "hq": 0.1
+            "blackWhite": 0.06,
+            "color": 0.02
           }
         },
-        "color": {
+        "hq": {
           "1-00": {
-            "budget": 0.35,
-            "hq": 0.85
+            "blackWhite": 0.2,
+            "color": 0.85
           },
           "101-250": {
-            "budget": 0.3,
-            "hq": 0.65
+            "blackWhite": 0.15,
+            "color": 0.65
           },
           "251-500": {
-            "budget": 0.25,
-            "hq": 0.55
+            "blackWhite": 0.12,
+            "color": 0.55
           },
           "501-1000": {
-            "budget": 0.02,
-            "hq": 0.45
+            "blackWhite": 0.1,
+            "color": 0.45
           }
         }
       }
