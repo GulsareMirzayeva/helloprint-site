@@ -58,7 +58,7 @@ export default function PricingTable({
           {units.map((unit, index) => (
             <th
               key={index}
-              className="border border-gray-300 px-3 py-2 text-left"
+              className="border border-gray-400 px-3 py-2 text-left"
               scope="row"
             >
               <i>{unit}</i>
@@ -73,7 +73,7 @@ export default function PricingTable({
           return (
             <tr key={rowIndex} className="border even:bg-white odd:bg-gray-50">
               <th
-                className="border border-gray-300 px-3 py-1 text-left"
+                className="border border-gray-400 px-3 py-1 text-left"
                 scope="row"
               >
                 <b>{row.option}</b>
@@ -82,7 +82,7 @@ export default function PricingTable({
               {rowPrices.map((price, priceIndex) => (
                 <td
                   key={priceIndex}
-                  className="border border-gray-300 px-3 py-1 text-left"
+                  className="border border-gray-400 px-3 py-1 text-left"
                 >
                   {PriceDisplay((price = { price }))}
                 </td>

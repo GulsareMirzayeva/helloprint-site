@@ -1,5 +1,17 @@
 const splitPriceOptionsShort: string[] = ['1-100', '101-250', '251-500'];
 const splitPriceOptionsShortLow: string[] = ['1-10', '11-100', '101-250'];
+const splitPriceOptionsExtendedLow: string[] = [
+  '1-10',
+  '11-100',
+  '101-250',
+  '251-500',
+];
+const splitPriceOptionsExtendedHigh: string[] = [
+  '1-10',
+  '11-100',
+  '101-1000',
+  '1000+',
+];
 const splitPriceOptions: string[] = ['1-100', '101-250', '251-500', '501-1000'];
 const mediumSplitPriceOptions: string[] = ['1-100', '101-250', '251-500'];
 const lowSplitPriceOptions: string[] = ['1-5', '6-10', '10Plus'];
@@ -49,6 +61,8 @@ const stickersCategories: string[] = [
 export {
   splitPriceOptionsShort,
   splitPriceOptionsShortLow,
+  splitPriceOptionsExtendedLow,
+  splitPriceOptionsExtendedHigh,
   splitPriceOptions,
   mediumSplitPriceOptions,
   lowSplitPriceOptions,

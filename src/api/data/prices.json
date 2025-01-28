@@ -2,22 +2,32 @@
   "prices": {
     "copyPrint": {
       "A4": {
-        "budget": {
+        "blackWhite": {
           "1-00": {
-            "blackWhite": 0.15,
-            "color": 0.35
+            "budget": 0.15
           },
           "101-250": {
-            "blackWhite": 0.1,
-            "color": 0.3
+            "budget": 0.1
           },
           "251-500": {
-            "blackWhite": 0.07,
-            "color": 0.25
+            "budget": 0.07
           },
           "501-1000": {
-            "blackWhite": 0.06,
-            "color": 0.02
+            "budget": 0.06
+          }
+        },
+        "color": {
+          "1-00": {
+            "budget": 0.35
+          },
+          "101-250": {
+            "budget": 0.3
+          },
+          "251-500": {
+            "budget": 0.25
+          },
+          "501-1000": {
+            "budget": 0.02
           }
         },
         "hq": {

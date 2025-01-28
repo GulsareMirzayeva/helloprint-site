@@ -221,7 +221,10 @@
     "introductionCopyPrintTable": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore<br />magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea<br />commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat<br />nulla pariatur.",
     "printerBudget": "A4 Budget | Printer 1 to 3",
     "printerHq": "A4 High Quality | Printer 4",
-    "notificationFirst": "- Budget prices are based on self-service; submitted orders (via email) are printed exclusively on High Quality printers.",
+    "colorOrBlackWhite": "A4 Color or Black and White | Printer 4",
+    "color": "A4 Black and white*",
+    "blackWhite": "A4 Color*",
+    "notificationFirst": "* Budget prices are based on self-service; submitted orders (via email) are printed exclusively on High Quality printers.",
     "notificationSecond": "- A3 sized paper is 2x the printing price.",
     "notificationThird": "- Double sided prints count as 2 prints."
   },

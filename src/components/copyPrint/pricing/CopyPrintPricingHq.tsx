@@ -1,5 +1,5 @@
 import PricingTable from '../../elementTemplates/PricingTable';
-import { splitPriceOptions } from '../../../lib/priceCategories';
+import { splitPriceOptionsExtendedLow } from '../../../lib/priceCategories';
 import { useData } from '../../../context/DataContext';
 import { useTranslation } from 'react-i18next';
 import { TextBlock } from '../../elementTemplates/TextBlock';
@@ -7,8 +7,9 @@ import { BeatLoader } from 'react-spinners';
 import { copyPrintContentPaths } from '../../../lib/translationPaths';
 import { TitleWithIntroduction } from '../../elementTemplates/TitleWithIntroduction';
 import { Notification } from '../../elementTemplates/Notification';
+import { Divider } from '@mui/material';
 
-export default function CopyPrintPricing() {
+export default function CopyPrintPricingHq() {
   const { prices } = useData();
   const { t } = useTranslation();
 
@@ -18,61 +19,44 @@ export default function CopyPrintPricing() {
   }
 
   // Get all prices for the "copy & print" page that will be used
-  const pricesBudget = [...Object.values(prices.copyPrint.A4.budget)];
   const pricesHq = [...Object.values(prices.copyPrint.A4.hq)];
 
   // Table headers for the 'Flex' category. An empty cell is added because all the prices are the same
-  const headerTitles: string[] = [
+  const headerTitlesHq: string[] = [
     t('commonWords.prints'),
     t(copyPrintContentPaths.blackWhite),
     t(copyPrintContentPaths.color),
   ];
-  const units: string[] = [
+
+  const unitsHq: string[] = [
     t('commonWords.amount'),
     t('commonWords.pricePerPrint'),
     t('commonWords.pricePerPrint'),
   ];
 
   return (
-    <section className="flex flex-col p-8 w-full bg-gray-100">
+    <section className="flex flex-col p-8 w-full">
       <TitleWithIntroduction
         props={{
-          mainTitle: copyPrintContentPaths.colorOrBlackWhite,
-          subTitle: copyPrintContentPaths.type80grOr90gr,
+          mainTitle: copyPrintContentPaths.highQuality,
+          subTitle: copyPrintContentPaths.colorOrBlackWhiteStandard,
           introduction: copyPrintContentPaths.introductionCopyPrintTable,
         }}
       />
       <div className="flex gap-16 pt-8">
         <div>
-          {/* Display a title and the papertype */}
-          <div className="flex flex-col">
-            <TextBlock
-              value={copyPrintContentPaths.printerBudget}
-              variant="sectionTitle"
-            />
-            <TextBlock value={copyPrintContentPaths.type80gr} variant="body" />
-          </div>
-          {/* Display a pricing */}
-          <PricingTable
-            headerTitles={headerTitles}
-            units={units}
-            options={splitPriceOptions}
-            prices={pricesBudget}
-          />
-        </div>
-        <div>
           {/* Display a title and the papertype at the top of the table */}
           <div className="flex flex-col">
             <TextBlock
-              value={copyPrintContentPaths.printerHq}
+              value={copyPrintContentPaths.colorOrBlackWhite}
               variant="sectionTitle"
             />
             <TextBlock value={copyPrintContentPaths.type90gr} variant="body" />
           </div>
           <PricingTable
-            headerTitles={headerTitles}
-            units={units}
-            options={splitPriceOptions}
+            headerTitles={headerTitlesHq}
+            units={unitsHq}
+            options={splitPriceOptionsExtendedLow}
             prices={pricesHq}
           />
         </div>
@@ -92,6 +76,9 @@ export default function CopyPrintPricing() {
             variant="bodySmall"
           />
         </Notification>
+      </div>
+      <div className="pt-12">
+        <Divider flexItem variant="middle" />
       </div>
     </section>
   );

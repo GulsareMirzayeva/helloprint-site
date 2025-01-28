@@ -1,7 +1,8 @@
 import { PricingCategory } from './basicOptionsTypes';
 
 type CopyPrintColorMode = {
-  budget: PricingCategory;
+  blackWhite: PricingCategory;
+  color: PricingCategory;
   hq: PricingCategory;
 };
 

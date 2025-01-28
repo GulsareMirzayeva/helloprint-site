@@ -9,7 +9,7 @@ export function Notification({ children }: { children: React.ReactNode }) {
       </div>
 
       {/* Content Box */}
-      <div className="relative z-10 flex w-full bg-gray-200 border border-gray-400 text-black px-3 py-2 rounded-sm shadow-sm">
+      <div className="relative z-10 flex w-full border border-black text-black px-3 py-2 rounded-sm shadow-sm">
         <span className="flex flex-col gap-2">{children}</span>
       </div>
     </div>
