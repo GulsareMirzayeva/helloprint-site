@@ -117,7 +117,7 @@ export default function Header() {
   };
 
   return (
-    <header className="sticky top-0 pt-1 z-10 bg-white shadow-md h-12">
+    <header className="sticky top-0 pt-1 z-20 bg-white shadow-md h-12">
       <nav className="flex justify-center gap-16 items-center">
         <NavigationLink path={'/'} value={t(menuButtonNames.home)} />
         <NavigationLink

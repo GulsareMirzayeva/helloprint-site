@@ -3,7 +3,7 @@ import ShopCategories from '../home/ShopCategories';
 import ShopInfo from '../home/ShopInfo';
 import { useTranslation } from 'react-i18next';
 import MessageOptions from '../contact/SendMessage';
-// import SkylineStrip from '../SkylineStrip';
+import SkylineStrip from '../SkylineStrip';
 
 export default function Home() {
   useTranslation();
@@ -25,15 +25,14 @@ export default function Home() {
         <div></div> {/* Right empty colomn */}
       </section>
       <ShopInfo />
-      <section className="grid grid-cols-[1fr,minmax(0,1200px),1fr] w-full py-2">
+      <section className="grid grid-cols-[1fr,minmax(0,1200px),1fr] w-full pt-2">
         <div></div> {/* Left empty colomn */}
-        <div className="flex items-start justify-between w-full py-1">
+        <div className="flex items-start justify-between w-full pt-1">
           <MessageOptions />
         </div>
         <div></div> {/* Right empty colomn */}
       </section>
-
-      {/* <SkylineStrip /> */}
+      <SkylineStrip />
     </div>
   );
 }
