@@ -9,6 +9,7 @@ import { TextBlock } from '../../../elementTemplates/TextBlock';
 import { BeatLoader } from 'react-spinners';
 import { flyersContentPaths } from '../../../../lib/translationPaths';
 import { TitleWithIntroduction } from '../../../elementTemplates/TitleWithIntroduction';
+import { Notification } from '../../../elementTemplates/Notification';
 
 export default function FlyersOffsetPrintPricing() {
   const { prices } = useData();
@@ -51,6 +52,7 @@ export default function FlyersOffsetPrintPricing() {
           mainTitle: offsetPrintTitle,
           subTitle: flyersContentPaths.formatA5Complete,
           introduction: flyersContentPaths.introductionFlyersTable,
+          notification: flyersContentPaths.offsetPrintDeliveryTime,
         }}
       />
       <div className="flex gap-16 pt-8">
@@ -90,6 +92,14 @@ export default function FlyersOffsetPrintPricing() {
             prices={pricesDoubleSidedA5}
           />
         </div>
+      </div>
+      <div className="pt-8">
+        <Notification>
+          <TextBlock
+            value={flyersContentPaths.deliveryDisclaimer}
+            variant="bodySmall"
+          />
+        </Notification>
       </div>
     </section>
   );

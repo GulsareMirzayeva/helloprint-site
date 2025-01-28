@@ -6,6 +6,7 @@ import { translateTextOptions } from '../../../utils/helperFunctions';
 import { TextBlock } from '../../elementTemplates/TextBlock';
 import { BeatLoader } from 'react-spinners';
 import { customClotingContentPaths } from '../../../lib/translationPaths';
+import { Notification } from '../../elementTemplates/Notification';
 
 export default function FlexAndDtgPricing() {
   const { prices } = useData();
@@ -89,7 +90,18 @@ export default function FlexAndDtgPricing() {
           />
         </div>
       </div>
-      <div className="flex flex-col items-start"></div>
+      <div className="pt-8">
+        <Notification>
+          <TextBlock
+            value={customClotingContentPaths.notificationFirst}
+            variant="bodySmall"
+          />
+          <TextBlock
+            value={customClotingContentPaths.notificationSecond}
+            variant="bodySmall"
+          />
+        </Notification>
+      </div>
     </section>
   );
 }

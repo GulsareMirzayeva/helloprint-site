@@ -72,6 +72,8 @@ export const customClotingContentPaths = {
   tableTitle: 'customClothingPage.pricingTextile.tableTitle',
   tableIntroduction: 'customClothingPage.pricingTextile.tableIntroduction',
   textile: 'commonWords.textile',
+  notificationFirst: 'customClothingPage.introduction.notificationFirst',
+  notificationSecond: 'customClothingPage.introduction.notificationSecond',
 };
 
 export const customPrintingContentPaths = {
@@ -86,14 +88,15 @@ export const cardsContentPaths = {
   introduction: 'customPrintPage.cards.introduction',
   introductionCardsTable: 'customPrintPage.cards.introductionCardsTable',
   digitalPrint: 'customPrintPage.common.digitalPrint',
-  digitalPrintDeliveryTime: 'customPrintPage.common.digitalPrintDeliveryTime',
   blackWhite: 'commonWords.blackWhite',
   color: 'commonWords.color',
   type350gr: 'paperTypes.350gr',
   offsetPrint: 'customPrintPage.common.offsetPrint',
-  offsetPrintDeliveryTime: 'customPrintPage.common.offsetPrintDeliveryTime',
   type400gr: 'paperTypes.400gr',
   type400grMc: 'paperTypes.400grMc',
+  digitalPrintDeliveryTime: 'customPrintPage.common.digitalPrintDeliveryTime',
+  offsetPrintDeliveryTime: 'customPrintPage.common.offsetPrintDeliveryTime',
+  deliveryDisclaimer: 'customPrintPage.common.deliveryDisclaimer',
 };
 
 export const flyersContentPaths = {
@@ -102,19 +105,22 @@ export const flyersContentPaths = {
   introductionFlyersTable: 'customPrintPage.flyers.introductionFlyersTable',
   singleSided: 'commonWords.singleSided',
   doubleSided: 'commonWords.doubleSided',
-  offsetPrintDeliveryTime: 'customPrintPage.common.offsetPrintDeliveryTime',
   formatA5: 'paperFormats.A5',
   formatA5Complete: 'customPrintPage.flyers.A5FormatComplete',
   formatA6: 'paperFormats.A6',
   A6AndA5Format: 'customPrintPage.flyers.A6AndA5Format',
   digitalPrintDeliveryTime: 'customPrintPage.common.digitalPrintDeliveryTime',
+  offsetPrintDeliveryTime: 'customPrintPage.common.offsetPrintDeliveryTime',
+  deliveryDisclaimer: 'customPrintPage.common.deliveryDisclaimer',
 };
 
 export const foldersContentPaths = {
   title: 'customPrintPage.folders.title',
   introduction: 'customPrintPage.folders.introductionFolders',
   introductionFoldersTable: 'customPrintPage.folders.introductionFoldersTable',
+  digitalPrintDeliveryTime: 'customPrintPage.common.digitalPrintDeliveryTime',
   offsetPrintDeliveryTime: 'customPrintPage.common.offsetPrintDeliveryTime',
+  deliveryDisclaimer: 'customPrintPage.common.deliveryDisclaimer',
   A4FormatComplete: 'customPrintPage.folders.A4FormatComplete',
   type80grShort: 'customPrintPage.folders.80grShort',
   formatA4: 'paperFormats.A4',
@@ -127,7 +133,6 @@ export const foldersContentPaths = {
   color: 'commonWords.color',
   trifold: 'customPrintPage.common.trifold',
   bifold: 'customPrintPage.common.bifold',
-  digitalPrintDeliveryTime: 'customPrintPage.common.digitalPrintDeliveryTime',
   blackWhite: 'commonWords.blackWhite',
   whiteOrColoredPaper: 'customPrintPage.folders.whiteOrColoredPaper',
   whiteOrColoredPaperA4: 'customPrintPage.folders.whiteOrColoredPaperA4',
@@ -154,13 +159,16 @@ export const postersContentPaths = {
   budgetColor: 'customPrintPage.common.budgetColor',
   type190grGloss: 'paperTypes.190grGloss',
   type260grSatin: 'paperTypes.260grSatin',
+  type150grLong: 'paperTypes.150grLong',
   type160grMat: 'paperTypes.160grMat',
   type160grSatin: 'paperTypes.160grSatin',
   type80gr: 'paperTypes.80gr',
+  type80grLong: 'paperTypes.80grLong',
   type160gr: 'paperTypes.160gr',
   type260gr: 'paperTypes.260gr',
   range160grTo260gr: 'paperTypes.range160grTo260gr',
   blackWhite: 'commonWords.blackWhite',
+  notificationFirst: 'customPrintPage.posters.notificationFirst',
 };
 
 export const stickersContentPaths = {

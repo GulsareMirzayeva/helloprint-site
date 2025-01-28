@@ -9,6 +9,7 @@ import { TextBlock } from '../../../elementTemplates/TextBlock';
 import { BeatLoader } from 'react-spinners';
 import { postersContentPaths } from '../../../../lib/translationPaths';
 import { TitleWithIntroduction } from '../../../elementTemplates/TitleWithIntroduction';
+import { Notification } from '../../../elementTemplates/Notification';
 
 export default function PostersA3BudgetAndHqPricing() {
   const { prices } = useData();
@@ -34,7 +35,7 @@ export default function PostersA3BudgetAndHqPricing() {
     t('commonWords.perPiece'),
   ];
 
-  const units: string[] = [t('commonWords.format'), t('commonWords.price')];
+  const units: string[] = [t('commonWords.prints'), t('commonWords.price')];
 
   return (
     <section className="flex flex-col pt-12 p-8 w-full">
@@ -52,19 +53,12 @@ export default function PostersA3BudgetAndHqPricing() {
             <div className="flex flex-col">
               <div className="flex">
                 <TextBlock
-                  value={postersContentPaths.color}
-                  variant="sectionTitle"
-                />
-                &nbsp;
-                <span> - </span>
-                &nbsp;
-                <TextBlock
-                  value={postersContentPaths.typeA3Format}
+                  value={postersContentPaths.hqFullColor}
                   variant="sectionTitle"
                 />
               </div>
               <TextBlock
-                value={postersContentPaths.hqFullColor}
+                value={postersContentPaths.type150grLong}
                 variant="body"
               />
             </div>
@@ -80,20 +74,12 @@ export default function PostersA3BudgetAndHqPricing() {
             <div className="flex flex-col">
               <div className="flex">
                 <TextBlock
-                  value={postersContentPaths.color}
-                  variant="sectionTitle"
-                />
-                &nbsp;
-                <span> - </span>
-                &nbsp;
-                <TextBlock
-                  value={postersContentPaths.typeA3Format}
+                  value={postersContentPaths.budgetColor}
                   variant="sectionTitle"
                 />
               </div>
-
               <TextBlock
-                value={postersContentPaths.budgetColor}
+                value={postersContentPaths.type80grLong}
                 variant="body"
               />
             </div>
@@ -105,6 +91,14 @@ export default function PostersA3BudgetAndHqPricing() {
             />
           </div>
         </div>
+      </div>
+      <div className="pt-8">
+        <Notification>
+          <TextBlock
+            value={postersContentPaths.notificationFirst}
+            variant="bodySmall"
+          />
+        </Notification>
       </div>
     </section>
   );

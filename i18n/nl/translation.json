@@ -116,7 +116,9 @@
       "text": "Voor het bedrukken van uw kleding hebben wij diverse technieken.<br />We kunnen printen en snijden op flex materiaal, dit is ideaal voor een logo of tekst in één kleur.<br />Daarnaast hebben wij ook een DTG machine, DTG staat voor Direct To Garment, hierbij printen we direct op kleding.",
       "subText": "Wanneer u eigen kleding meeneemt, houd hier dan rekening mee:",
       "listItem1": "Kleding dient schoon/gewassen te zijn",
-      "listItem2": "Bedrukken op uw eigen kleding is op eigen risico"
+      "listItem2": "Bedrukken op uw eigen kleding is op eigen risico",
+      "notificationFirst": "- Wilt u een kleur die wij niet op voorraad hebben? Dan komt er € 7,95 orderkosten bij.",
+      "notificationSecond": "- Voor grote maten, 3XL-5XL geldt een toeslag van € 2,00 per stuk."
     },
     "pricingTextile": {
       "tableIntroduction": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore<br />magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea<br />commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat<br />nulla pariatur.",
@@ -204,18 +206,20 @@
       "introduction80GrTable": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
       "introduction160To260GrTable": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
       "introductionPolyAndHandMadeTable": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-      "introductionA3Table": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+      "introductionA3Table": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+      "notificationFirst": "*Prijzen zijn gebaseerd op self-service."
     },
     "common": {
       "digitalPrint": "DIGITAAL GEPRINT",
       "digitalPrintDeliveryTime": "Levertijd 1-2 werkdagen*",
       "offsetPrint": "DRUKWERK",
       "offsetPrintDeliveryTime": "Levertijd 7 werkdagen*",
+      "deliveryDisclaimer": "*Levertijden altijd onder voorbehoud. Hier kunnen geen rechten aan verleend worden. Wij zijn niet verantwoordelijk voor eventuele vertraging door onze huisdrukker.",
       "bifoldOrTrifold": "(2 of 3-slag)",
       "bifold": "(2-slag)",
       "trifold": "(3-slag)",
-      "hqFullColor": "Hoge kwaliteit",
-      "budgetColor": "Budget kwaliteit",
+      "hqFullColor": "A3 Hoge kwaliteit | Full color",
+      "budgetColor": "A3 Budget kwaliteit* | Full color",
       "A3Format": "A3 formaat",
       "A6Format": "A6 formaat"
     }
@@ -238,6 +242,7 @@
     "80grWhiteOrColor": "80gr wit of gekleurd papier",
     "80gr": "80 grams papier",
     "80grShort": "80gr",
+    "80grLong": "Budget met witrand op 80 grams papier",
     "90gr": "90 grams papier",
     "90grShort": "90gr",
     "80grOr90gr": "80 grams of 90 grams papier",
@@ -245,6 +250,7 @@
     "135grShort": "135gr",
     "150gr": "150 grams papier",
     "150grShort": "150gr",
+    "150grLong": "Aflopend geprint op 150 grams papier",
     "160gr": "160 grams",
     "160grMat": "160 grams mat papier",
     "160grSatin": "160 grams satijn papier",
@@ -343,7 +349,7 @@
     "amount": "Aantal",
     "pricePerPrint": "Prijs per print",
     "pricePerPiece": "Prijs per st.",
-    "perPiece": "1 stuk",
+    "perPiece": "Per stuk",
     "prints": "Prints",
     "price": "Prijs",
     "clothingPiece": "Kledingstuk",

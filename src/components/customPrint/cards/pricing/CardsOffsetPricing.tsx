@@ -6,6 +6,7 @@ import { TextBlock } from '../../../elementTemplates/TextBlock';
 import { BeatLoader } from 'react-spinners';
 import { cardsContentPaths } from '../../../../lib/translationPaths';
 import { TitleWithIntroduction } from '../../../elementTemplates/TitleWithIntroduction';
+import { Notification } from '../../../elementTemplates/Notification';
 
 export default function CardsOffsetPrintPricing() {
   const { prices } = useData();
@@ -41,6 +42,7 @@ export default function CardsOffsetPrintPricing() {
           mainTitle: cardsContentPaths.offsetPrint,
           subTitle: cardsContentPaths.type400gr,
           introduction: cardsContentPaths.introductionCardsTable,
+          notification: cardsContentPaths.offsetPrintDeliveryTime,
         }}
       />
       <div className="flex gap-16 pt-8">
@@ -59,6 +61,14 @@ export default function CardsOffsetPrintPricing() {
             prices={pricesPressPrint}
           />
         </div>
+      </div>
+      <div className="pt-8">
+        <Notification>
+          <TextBlock
+            value={cardsContentPaths.deliveryDisclaimer}
+            variant="bodySmall"
+          />
+        </Notification>
       </div>
     </section>
   );

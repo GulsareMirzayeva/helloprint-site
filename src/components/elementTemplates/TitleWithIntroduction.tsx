@@ -11,6 +11,11 @@ export function TitleWithIntroduction({ props }: { props: PageTitleType }) {
         &nbsp;
         <TextBlock value={props.subTitle} variant="tableSubTitle" />
       </div>
+      {props.notification && (
+        <div className="pb-6 text-[#FB0036] font-medium">
+          <TextBlock value={props.notification} variant="body" />
+        </div>
+      )}
       <TextBlock value={props.introduction} variant="body" />
     </div>
   );

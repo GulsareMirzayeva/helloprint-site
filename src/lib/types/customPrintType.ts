@@ -65,4 +65,5 @@ export type PageTitleType = {
   mainTitle: string;
   subTitle: string;
   introduction: string;
+  notification?: string;
 };

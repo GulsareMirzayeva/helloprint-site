@@ -5,6 +5,7 @@ import { useTranslation } from 'react-i18next';
 import { TextBlock } from '../../../elementTemplates/TextBlock';
 import { BeatLoader } from 'react-spinners';
 import { foldersContentPaths } from '../../../../lib/translationPaths';
+import { Notification } from '../../../elementTemplates/Notification';
 
 export default function FoldersOffsetPrintPricingA3() {
   const { prices } = useData();
@@ -52,6 +53,14 @@ export default function FoldersOffsetPrintPricingA3() {
           options={bulkPriceOptions}
           prices={pricesColorTrifoldA3}
         />
+      </div>
+      <div className="pt-8">
+        <Notification>
+          <TextBlock
+            value={foldersContentPaths.deliveryDisclaimer}
+            variant="bodySmall"
+          />
+        </Notification>
       </div>
     </section>
   );

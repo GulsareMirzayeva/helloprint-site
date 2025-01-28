@@ -49,6 +49,7 @@ export default function FlyersDigitalPrintA6Pricing() {
           mainTitle: digitalPrintTitle,
           subTitle: flyersContentPaths.A6AndA5Format,
           introduction: flyersContentPaths.introductionFlyersTable,
+          notification: flyersContentPaths.digitalPrintDeliveryTime,
         }}
       />
       <div className="flex gap-16 pt-8">

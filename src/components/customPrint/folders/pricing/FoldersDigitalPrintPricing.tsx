@@ -62,6 +62,7 @@ export default function FoldersDigitalPrintPricing() {
           mainTitle: digitalPrintTitle,
           subTitle: foldersContentPaths.A4FormatComplete,
           introduction: foldersContentPaths.introductionFoldersTable,
+          notification: foldersContentPaths.digitalPrintDeliveryTime,
         }}
       />
       <div className="flex gap-16 pt-8">

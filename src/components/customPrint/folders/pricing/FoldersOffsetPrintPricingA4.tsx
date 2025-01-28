@@ -49,6 +49,7 @@ export default function FoldersOffsetPrintPricingA4() {
           mainTitle: offsetPrintTitle,
           subTitle: foldersContentPaths.A4AndA3Format,
           introduction: foldersContentPaths.introductionFoldersTable,
+          notification: foldersContentPaths.offsetPrintDeliveryTime,
         }}
       />
       <div className="flex gap-16 pt-8">

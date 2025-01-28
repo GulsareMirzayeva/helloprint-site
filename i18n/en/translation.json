@@ -109,7 +109,9 @@
       "text": "We offer various techniques for printing your clothing.<br />We can print and cut on flex material, which is ideal for a logo or text in a single color.<br />Additionally, we have a DTG machine, which stands for Direct To Garment. This allows us to print directly onto clothing.",
       "subText": "If you bring your own clothing, please keep the following in mind:",
       "listItem1": "Clothing must be clean/washed",
-      "listItem2": "Printing on your own clothing is at your own risk"
+      "listItem2": "Printing on your own clothing is at your own risk",
+      "notificationFirst": "- Would you like a color that we do not have in stock? Then an additional €7.95 order fee will be applied.",
+      "notificationSecond": "- For larger sizes, 3XL-5XL, a surcharge of €2.00 per piece applies."
     },
     "pricingTextile": {
       "tableIntroduction": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore<br />magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea<br />commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat<br />nulla pariatur.",
@@ -197,18 +199,20 @@
       "introduction80GrTable": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
       "introduction160To260GrTable": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
       "introductionPolyAndHandMadeTable": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-      "introductionA3Table": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+      "introductionA3Table": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+      "notificationFirst": "*Prices are based on self-service."
     },
     "common": {
       "digitalPrint": "DIGITAL PRINTING",
       "digitalPrintDeliveryTime": "Delivery in 1-2 working days*",
       "offsetPrint": "OFFSET PRINTING",
       "offsetPrintDeliveryTime": "Delivery in 7 working days*",
+      "deliveryDisclaimer": "*Delivery times are always subject to change. No rights can be derived from them. We are not responsible for any delays caused by our in-house printer.",
       "bifoldOrTrifold": "(bi-fold or tri-fold)",
       "bifold": "(bifold)",
       "trifold": "(trifold)",
-      "hqFullColor": "High Quality",
-      "budgetColor": "Budget Quality",
+      "hqFullColor": "A3 High Quality | Full color",
+      "budgetColor": "A3 Budget Quality* | Full color",
       "A3Format": "A3 size",
       "A6Format": "A6 size"
     }
@@ -232,6 +236,7 @@
     "80grWhiteOrColor": "80gr white or colored paper",
     "80gr": "80 grams paper",
     "80grShort": "80gr",
+    "80grLong": "Budget with white border on 80 grams paper",
     "90gr": "90 grams paper",
     "90grShort": "90gr",
     "80grOr90gr": "80 grams or 90 grams paper",
@@ -239,6 +244,7 @@
     "135grShort": "135gr",
     "150gr": "150 grams paper",
     "150grShort": "150gr",
+    "150grLong": "Edge-to-edge printed on 150 grams paper",
     "160gr": "160 grams",
     "160grMat": "160 grams matte paper",
     "160grSatin": "160 grams satin paper",
@@ -246,8 +252,8 @@
     "170grShort": "170gr",
     "190grGloss": "190 grams gloss paper",
     "250gr": "250 grams paper",
-    "260gr": "260 grams",
     "250grShort": "250gr",
+    "260gr": "260 grams",
     "260grSatin": "260 grams satin paper",
     "260grHandMade": "260 grams handmade paper",
     "350gr": "350 grams paper",
