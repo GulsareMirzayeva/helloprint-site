@@ -115,9 +115,6 @@
     },
     "pricingTextile": {
       "tableIntroduction": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore<br />magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea<br />commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat<br />nulla pariatur.",
-      "tableHeadType": "Textile piece",
-      "tableHeadBlackWhite": "Black / White",
-      "tableHeadColor": "Colour",
       "shirt": "T-shirt",
       "polo": "Polo",
       "sweater": "Sweater",
@@ -153,16 +150,12 @@
       "title": "Stickers",
       "introduction": "Our stickers are available in various sizes, shapes, and quantities, fully tailored to your needs. Whether you require round, oval, large, or small stickers, we offer the perfect solution.",
       "introductionLargeFormatTable": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-      "subtitleLargeFormat": "Large-format",
-      "largeFormatContent": "Large-format stickers can easily be ordered individually.",
       "materialTitle": "Material",
       "materialContent": "All stickers are produced on high-gloss, self-adhesive white vinyl of premium quality, perfectly suited for a wide range of applications.",
       "listItem1": "White vinyl",
       "listItem2": "High gloss",
       "listItem3": "Self-adhesive",
       "listItem4": "UV resistant",
-      "tableHead": "Price overview",
-      "perA4": "A4",
       "perSquareMeter": "Square metre"
     },
     "cards": {
@@ -175,23 +168,12 @@
     "flyers": {
       "title": "Flyers",
       "introductionFlyers": "Here you will find an overview of the costs for printing flyers in A5 and A6 formats, with options for single- and double-sided printing. Choose from a variety of paper types to create the perfect look for your flyers.",
-      "introductionFlyersTable": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-      "alert": " Click on the a category below to view the pricing list.",
-      "A6AndA5Format": "A6 and A5 size",
-      "A5FormatComplete": "A5 size"
+      "introductionFlyersTable": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
     },
     "folders": {
       "title": "Folders",
       "introductionFolders": "Here you will find an overview of the costs for printing brochures in A3 and A4 formats. Choose between a bi-fold or tri-fold option to present your message effectively. The rates are clearly displayed by paper type and quantity.",
-      "introductionFoldersTable": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore<br />magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea<br />commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat<br />nulla pariatur.",
-      "A4FormatComplete": "A4 size",
-      "A4AndA3Format": "A4 and A3 size",
-      "bifoldOrTrifold": "A4 size | bi-fold or tri-fold",
-      "trifoldA4": "A4 size | Trifold",
-      "bifoldA4": "A4 size | Bifold",
-      "trifoldA3": "A3 size | Trifold",
-      "whiteOrColoredPaper": "White or colored paper",
-      "whiteOrColoredPaperA4": "| White or colored paper"
+      "introductionFoldersTable": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore<br />magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea<br />commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat<br />nulla pariatur."
     },
     "posters": {
       "title": "Posters",
@@ -200,22 +182,19 @@
       "introduction160To260GrTable": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
       "introductionPolyAndHandMadeTable": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
       "introductionA3Table": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-      "notificationFirst": "Prices are based on self-service."
+      "notificationFirst": "Prices are based on self-service.",
+      "postersAmount": {
+        "1-5": "1-5 prints",
+        "6-10": "6-10 prints",
+        "10Plus": "10+ prints"
+      }
     },
     "common": {
       "digitalPrint": "DIGITAL PRINTING",
       "digitalPrintDeliveryTime": "Delivery in 1-2 working days*",
       "offsetPrint": "OFFSET PRINTING",
       "offsetPrintDeliveryTime": "Delivery in 7 working days*",
-      "deliveryDisclaimer": "Delivery times are always subject to change. No rights can be derived from them. We are not responsible for any delays caused by our in-house printer.",
-      "bifoldOrTrifold": "(bi-fold or tri-fold)",
-      "bifold": "(bifold)",
-      "trifold": "(trifold)",
-      "fullColor": "| Full color",
-      "hqFullColor": "A3 High Quality | Full color",
-      "budgetColor": "A3 Budget Quality* | Full color",
-      "A3Format": "A3 size",
-      "A6Format": "A6 size"
+      "deliveryDisclaimer": "Delivery times are always subject to change. No rights can be derived from them. We are not responsible for any delays caused by our in-house printer."
     }
   },
   "copyPrintPage": {
@@ -224,24 +203,18 @@
     "introduction": "Easily and quickly take care of your copies and prints using our services. Our self-service printers allow you to print documents directly from a USB stick or download them from your email.",
     "introductionBinding": "We also offer binding and laminating services to give your documents a neat and professional finish. Perfect for business purposes, school projects, or personal documents!",
     "introductionCopyPrintTable": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore<br />magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea<br />commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat<br />nulla pariatur.",
-    "color": "A4 Color",
-    "blackWhite": "A4 Black and white",
     "printerOneToThree": "| Printer 1 to 3",
     "printerFour": "| Printer 4",
-    "printerHq": "A4 High Quality | Printer 4",
-    "colorOrBlackWhite": "A4 Color or Black and White | Printer 4",
     "notificationFirst": "Budget prices are based on self-service; submitted orders (via email) are printed exclusively on High Quality printers.",
     "notificationSecond": "- A3 sized paper is 2x the printing price.",
     "notificationThird": "- Double sided prints count as 2 prints."
   },
-  "paperTypes": {
-    "80grWhiteOrColor": "80gr white or colored paper",
+  "PaperWeights": {
     "80gr": "80 grams paper",
     "80grShort": "80gr",
     "80grLong": "With white border on 80 grams paper",
     "90gr": "90 grams paper",
     "90grShort": "90gr",
-    "80grOr90gr": "80 grams or 90 grams paper",
     "135gr": "135 grams paper",
     "135grShort": "135gr",
     "150gr": "150 grams paper",
@@ -264,24 +237,29 @@
     "range160grTo260gr": "160 grams to 260 grams paper"
   },
   "paperFormats": {
-    "A0": "A0",
-    "A1": "A1",
-    "A2": "A2",
-    "A3": "A3",
+    "A3Budget": "A3 Budget Quality",
+    "A3Format": "A3 size",
+    "A3Hq": "A3 High Quality",
+    "A3Trifold": "A3 size | Trifold",
+    "A4AndA3Format": "A4 and A3 size",
     "A4": "A4",
+    "A4Bifold": "A4 size | Bifold",
+    "A4BifoldOrTrifold": "A4 size | bi-fold or tri-fold",
+    "A4BlackWhite": "A4 Black and White",
+    "A4Color": "A4 Color",
+    "A4ColorOrBlackWhite": "A4 Color or Black and White",
+    "A4Trifold": "A4 size | Trifold",
+    "A4WhiteOrColoredPaper": "| White or colored paper",
     "A5": "A5",
+    "A5FormatComplete": "A5 size",
     "A6": "A6",
-    "B1": "B1",
-    "B2": "B2"
-  },
-  "postersAmount": {
-    "1-5": "1-5 prints",
-    "6-10": "6-10 prints",
-    "10Plus": "10+ prints"
+    "A6AndA5Format": "A6 and A5 size",
+    "largeFormat": "Large-format",
+    "A4FormatComplete": "A4 size",
+    "fullColor": "| Full color"
   },
   "contactPage": {
     "pageTitle": "Get in contact",
-    "adressTitle": "Visit us",
     "contactDetails": "Custom quote",
     "contactIntroduction": "Do you have questions about our products or services, or would you like to know more about the associated costs? Please fill out our form, and we will ensure you receive a quote quickly and without any obligation.",
     "sendMessage": "Send a direct message",
@@ -290,8 +268,7 @@
     "formUserEmailAdress": "E-mail address",
     "messageSubject": "Subject",
     "messageContent": "Message",
-    "messageSubmit": "Send",
-    "messageAlert": "Don't forget to include your contact details."
+    "messageSubmit": "Send"
   },
   "termsOfSale": {
     "title": "Terms of Sale",
@@ -328,33 +305,25 @@
     "tableCaption": "Table showing pricing options with their corresponding prices."
   },
   "commonWords": {
-    "to": "to",
     "color": "Colour",
     "blackWhite": "Black and White",
     "colorOrBlackWhite": "Color or Black and White",
-    "paper": "paper",
     "vinyl": "Vinyl",
     "SpecialMaterials": "Special Materials",
     "polypropylene": "polypropylene",
     "singleSided": "Single sided",
     "doubleSided": "Double sided",
     "textile": "Textile",
-    "colored": "Colored",
     "budget": "Budget",
     "highQuality": "High Quality",
     "amount": "Amount",
     "pricePerPrint": "Price per print",
     "pricePerPiece": "Price per print",
     "perPiece": "Per piece",
-    "perPrint": "Per print",
     "prints": "Prints",
     "price": "Price",
     "clothingPiece": "Clothing piece",
-    "material": "Material",
     "format": "Size",
-    "formatNoCap": "size",
-    "gloss": "gloss",
-    "matte": "matte",
     "cards": "Cards",
     "flyers": "Flyers",
     "folders": "Folders",

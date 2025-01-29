@@ -47,10 +47,17 @@ export default function CopyPrintPricingHq() {
         <div>
           {/* Display a title and the papertype at the top of the table */}
           <div className="flex flex-col">
-            <TextBlock
-              value={copyPrintContentPaths.colorOrBlackWhite}
-              variant="sectionTitle"
-            />
+            <div className="flex justify-start ">
+              <TextBlock
+                value={copyPrintContentPaths.colorOrBlackWhite}
+                variant="sectionTitle"
+              />
+              &nbsp;
+              <TextBlock
+                value={copyPrintContentPaths.printerFour}
+                variant="sectionTitle"
+              />
+            </div>
             <TextBlock value={copyPrintContentPaths.type90gr} variant="body" />
           </div>
           <PricingTable

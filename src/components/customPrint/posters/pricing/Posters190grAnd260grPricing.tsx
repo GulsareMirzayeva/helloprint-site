@@ -27,9 +27,9 @@ export default function Posters190grAnd260grPricing() {
   // Table headers
   const headerTitles: string[] = [
     t('commonWords.posters'),
-    t('postersAmount.1-5'),
-    t('postersAmount.6-10'),
-    t('postersAmount.10Plus'),
+    t('customPrintPage.posters.postersAmount.1-5'),
+    t('customPrintPage.posters.postersAmount.6-10'),
+    t('customPrintPage.posters.postersAmount.10Plus'),
   ];
 
   const units: string[] = [

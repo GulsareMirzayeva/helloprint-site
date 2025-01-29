@@ -30,9 +30,9 @@ export default function FoldersOffsetPrintPricingA4() {
   // Table headers for the 'Flex' category. An empty cell is added because all the prices are the same
   const headerTitlesA4: string[] = [
     t('commonWords.folders'),
-    t('paperTypes.135grShort'),
-    t('paperTypes.170grShort'),
-    t('paperTypes.250grShort'),
+    t('PaperWeights.135grShort'),
+    t('PaperWeights.170grShort'),
+    t('PaperWeights.250grShort'),
   ];
 
   const unitsFolders: string[] = [
@@ -57,7 +57,7 @@ export default function FoldersOffsetPrintPricingA4() {
           {/* Display a title and the papertype */}
           <div className="flex flex-col items-baseline">
             <TextBlock
-              value={foldersContentPaths.trifoldA4}
+              value={foldersContentPaths.A4Trifold}
               variant="sectionTitle"
             />
             <TextBlock value={foldersContentPaths.color} variant="body" />
@@ -74,7 +74,7 @@ export default function FoldersOffsetPrintPricingA4() {
           {/* Display a title and the papertype at the top of the table */}
           <div className="flex flex-col">
             <TextBlock
-              value={foldersContentPaths.bifoldA4}
+              value={foldersContentPaths.A4Bifold}
               variant="sectionTitle"
             />
             <TextBlock value={foldersContentPaths.color} variant="body" />

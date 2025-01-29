@@ -28,9 +28,9 @@ export default function FlyersDigitalPrintA6Pricing() {
   // Table headers for the 'Flex' category. An empty cell is added because all the prices are the same
   const headerTitles: string[] = [
     t('commonWords.flyers'),
-    t('paperTypes.90grShort'),
-    t('paperTypes.150grShort'),
-    t('paperTypes.250grShort'),
+    t('PaperWeights.90grShort'),
+    t('PaperWeights.150grShort'),
+    t('PaperWeights.250grShort'),
   ];
 
   const units: string[] = [

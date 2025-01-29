@@ -30,9 +30,9 @@ export default function Posters80grPricing() {
   // Table headers
   const headerTitlesColor: string[] = [
     t('commonWords.posters'),
-    t('postersAmount.1-5'),
-    t('postersAmount.6-10'),
-    t('postersAmount.10Plus'),
+    t('customPrintPage.posters.postersAmount.1-5'),
+    t('customPrintPage.posters.postersAmount.6-10'),
+    t('customPrintPage.posters.postersAmount.10Plus'),
   ];
 
   const headerTitlesBlackWhite: string[] = [

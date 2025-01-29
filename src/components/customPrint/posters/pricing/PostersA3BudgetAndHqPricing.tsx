@@ -53,7 +53,7 @@ export default function PostersA3BudgetAndHqPricing() {
             <div className="flex flex-col">
               <div className="flex">
                 <TextBlock
-                  value={postersContentPaths.hqFullColor}
+                  value={postersContentPaths.A3Hq}
                   variant="sectionTitle"
                 />
                 &nbsp;
@@ -82,7 +82,7 @@ export default function PostersA3BudgetAndHqPricing() {
             <div className="flex flex-col">
               <div className="flex">
                 <TextBlock
-                  value={postersContentPaths.budgetColor}
+                  value={postersContentPaths.A3Budget}
                   variant="sectionTitle"
                 />
                 &nbsp;

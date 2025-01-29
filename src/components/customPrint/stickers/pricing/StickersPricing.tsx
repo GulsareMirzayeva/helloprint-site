@@ -28,7 +28,7 @@ export default function StickersPricing() {
       <div className="flex flex-col p-8 bg-gray-100 rounded-xl">
         <TitleWithIntroduction
           props={{
-            mainTitle: stickersContentPaths.subtitleLargeFormat,
+            mainTitle: stickersContentPaths.largeFormat,
             subTitle: stickersContentPaths.vinyl,
             introduction: stickersContentPaths.introductionLargeFormatTable,
           }}
@@ -37,7 +37,7 @@ export default function StickersPricing() {
           {/* Display a title and the papertype at the top of the table */}
           <div className="flex flex-col">
             <TextBlock
-              value={stickersContentPaths.subtitleLargeFormat}
+              value={stickersContentPaths.largeFormat}
               variant="sectionTitle"
             />
             <TextBlock value={stickersContentPaths.vinyl} variant="body" />

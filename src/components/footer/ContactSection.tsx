@@ -16,7 +16,7 @@ export default function ContactSection() {
         <AlternateEmailIcon className="mr-1" style={{ fontSize: '14px' }} />
         {shopInfoPaths.email}
       </a>
-      <a className="text-xs cursor-pointer">
+      <a className="text-xs cursor-pointer" href={shopInfoPaths.facebookUrl}>
         <FacebookIcon
           className="mr-1 text-[#0165E1]"
           style={{ fontSize: '14px' }}

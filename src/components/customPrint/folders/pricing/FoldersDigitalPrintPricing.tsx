@@ -33,14 +33,14 @@ export default function FoldersDigitalPrintPricing() {
   // Table headers for the 'Flex' category. An empty cell is added because all the prices are the same
   const headerTitlesColor: string[] = [
     t('commonWords.folders'),
-    t('paperTypes.150grShort'),
-    t('paperTypes.170grShort'),
-    t('paperTypes.250grShort'),
+    t('PaperWeights.150grShort'),
+    t('PaperWeights.170grShort'),
+    t('PaperWeights.250grShort'),
   ];
 
   const headerTitlesBlackWhite: string[] = [
     t('commonWords.folders'),
-    t('paperTypes.80grShort'),
+    t('PaperWeights.80grShort'),
   ];
 
   const unitsColor: string[] = [
@@ -70,7 +70,7 @@ export default function FoldersDigitalPrintPricing() {
           {/* Display a title and the papertype at the top of the table */}
           <div className="flex flex-col">
             <TextBlock
-              value={foldersContentPaths.bifoldOrTrifoldA4}
+              value={foldersContentPaths.A4BifoldOrTrifold}
               variant="sectionTitle"
             />
             <TextBlock value={foldersContentPaths.color} variant="body" />
@@ -86,14 +86,14 @@ export default function FoldersDigitalPrintPricing() {
           {/* Display a title and the papertype */}
           <div className="flex flex-col items-baseline">
             <TextBlock
-              value={foldersContentPaths.bifoldOrTrifoldA4}
+              value={foldersContentPaths.A4BifoldOrTrifold}
               variant="sectionTitle"
             />
             <div className="flex">
               <TextBlock value={foldersContentPaths.color} variant="body" />
               &nbsp;
               <TextBlock
-                value={foldersContentPaths.whiteOrColoredPaperA4}
+                value={foldersContentPaths.A4WhiteOrColoredPaper}
                 variant="body"
               />
             </div>

@@ -54,7 +54,7 @@ const dtgCategories: string[] = [
 ];
 
 const stickersCategories: string[] = [
-  'customPrintPage.stickers.perA4',
+  'paperFormats.A4',
   'customPrintPage.stickers.perSquareMeter',
 ];
 

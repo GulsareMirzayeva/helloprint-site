@@ -122,9 +122,6 @@
     },
     "pricingTextile": {
       "tableIntroduction": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore<br />magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea<br />commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat<br />nulla pariatur.",
-      "tableHeadType": "Textiel los",
-      "tableHeadBlackWhite": "Zwart / Wit",
-      "tableHeadColor": "Kleur",
       "shirt": "Shirt",
       "polo": "Polo",
       "sweater": "Trui",
@@ -160,16 +157,12 @@
       "title": "Stickers",
       "introduction": "Onze stickers zijn verkrijgbaar in diverse formaten, vormen en oplages, geheel afgestemd op uw wensen. Of u nu ronde, ovale, grote of kleine stickers nodig heeft, wij bieden de ideale oplossing.",
       "introductionLargeFormatTable": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-      "subtitleLargeFormat": "Groot formaat",
-      "largeFormatContent": "Groot formaat stickers kunnen eenvoudig per stuk worden besteld.",
       "materialTitle": "Materiaal",
       "materialContent": "Alle stickers worden geproduceerd op vinyl van hoogwaardige kwaliteit, perfect geschikt voor uiteenlopende toepassingen.",
       "listItem1": "Wit vinyl",
       "listItem2": "Hoogglans",
       "listItem3": "Zelfklevend",
       "listItem4": "UV bestendig",
-      "tableHead": "Prijsoverzicht",
-      "perA4": "A4",
       "perSquareMeter": "Vierkante meter"
     },
     "cards": {
@@ -182,23 +175,12 @@
     "flyers": {
       "title": "Flyers",
       "introductionFlyers": "Hier vind je een overzicht van de kosten voor het printen van flyers in A5- en A6-formaat, met opties voor enkel- en dubbelzijdig drukken. Kies uit verschillende papiersoorten om de perfecte uitstraling voor jouw flyers te creëren.",
-      "introductionFlyersTable": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-      "alert": "Klik hieronder op een categorie om de gewenste prijslijst te bekijken.",
-      "A6AndA5Format": "A6 en A5 formaat",
-      "A5FormatComplete": "A5 formaat"
+      "introductionFlyersTable": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
     },
     "folders": {
       "title": "Folders",
       "introductionFolders": "Hier vind je een overzicht van de kosten voor het printen van folders in A3- en A4-formaat. Kies uit een 2-slag of 3-slag vouwwijze om jouw boodschap op de juiste manier te presenteren. De tarieven zijn overzichtelijk per papiersoort en oplage weergegeven.",
-      "introductionFoldersTable": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore<br />magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea<br />commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat<br />nulla pariatur.",
-      "A4FormatComplete": "A4 formaat",
-      "A4AndA3Format": "A4 en A3 formaat",
-      "bifoldOrTrifold": "A4 formaat | 2 of 3-slag",
-      "trifoldA4": "A4 formaat | 3-slag",
-      "bifoldA4": "A4 formaat | 2-slag",
-      "trifoldA3": "A3 formaat | 3-slag",
-      "whiteOrColoredPaper": "Wit of gekleurd papier",
-      "whiteOrColoredPaperA4": "| Wit of gekleurd papier"
+      "introductionFoldersTable": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore<br />magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea<br />commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat<br />nulla pariatur."
     },
     "posters": {
       "title": "Posters",
@@ -207,22 +189,19 @@
       "introduction160To260GrTable": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
       "introductionPolyAndHandMadeTable": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
       "introductionA3Table": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-      "notificationFirst": "Prijzen zijn gebaseerd op self-service."
+      "notificationFirst": "Prijzen zijn gebaseerd op self-service.",
+      "postersAmount": {
+        "1-5": "1-5 stuks",
+        "6-10": "6-10 stuks",
+        "10Plus": "10+ stuks"
+      }
     },
     "common": {
       "digitalPrint": "DIGITAAL GEPRINT",
       "digitalPrintDeliveryTime": "Levertijd 1-2 werkdagen*",
       "offsetPrint": "DRUKWERK",
       "offsetPrintDeliveryTime": "Levertijd 7 werkdagen*",
-      "deliveryDisclaimer": "Levertijden altijd onder voorbehoud. Hier kunnen geen rechten aan verleend worden. Wij zijn niet verantwoordelijk voor eventuele vertraging door onze huisdrukker.",
-      "bifoldOrTrifold": "(2 of 3-slag)",
-      "bifold": "(2-slag)",
-      "trifold": "(3-slag)",
-      "fullColor": "| Full color",
-      "hqFullColor": "A3 Hoge kwaliteit",
-      "budgetColor": "A3 Budget kwaliteit",
-      "A3Format": "A3 formaat",
-      "A6Format": "A6 formaat"
+      "deliveryDisclaimer": "Levertijden altijd onder voorbehoud. Hier kunnen geen rechten aan verleend worden. Wij zijn niet verantwoordelijk voor eventuele vertraging door onze huisdrukker."
     }
   },
   "copyPrintPage": {
@@ -231,24 +210,18 @@
     "introduction": "Bij ons kunt u eenvoudig en snel uw kopieën en prints verzorgen. Met onze self-service printers kunt u direct documenten printen vanaf een USB-stick of downloaden vanuit uw e-mail.",
     "introductionBinding": "Daarnaast bieden wij mogelijkheden voor inbinden en lamineren, zodat uw documenten een nette en professionele uitstraling krijgen. Ideaal voor zakelijke doeleinden, studieprojecten of persoonlijke documenten!",
     "introductionCopyPrintTable": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-    "color": "A4 Kleur",
-    "blackWhite": "A4 Zwart/wit",
     "printerOneToThree": "| Printer 1 t/m 3",
     "printerFour": "| Printer 4",
-    "printerHq": "A4 Hoge kwaliteit | Printer 4",
-    "colorOrBlackWhite": "A4 Kleur of zwart/wit | Printer 4",
     "notificationFirst": "Budget prijzen zijn gebaseerd op self-service, aangeleverde opdrachten (per email) worden uitsluitend geprint op papier van hoge kwaliteit.",
     "notificationSecond": "- A3 formaat is 2x de printprijs.",
     "notificationThird": "- Dubbelzijdige prints tellen als 2 prints."
   },
-  "paperTypes": {
-    "80grWhiteOrColor": "80gr wit of gekleurd papier",
+  "PaperWeights": {
     "80gr": "80 grams papier",
     "80grShort": "80gr",
     "80grLong": "Met witrand op 80 grams papier",
     "90gr": "90 grams papier",
     "90grShort": "90gr",
-    "80grOr90gr": "80 grams of 90 grams papier",
     "135gr": "135 grams papier",
     "135grShort": "135gr",
     "150gr": "150 grams papier",
@@ -271,24 +244,29 @@
     "range160grTo260gr": "160 grams tot 260 grams papier"
   },
   "paperFormats": {
-    "A0": "A0",
-    "A1": "A1",
-    "A2": "A2",
-    "A3": "A3",
+    "A3Budget": "A3 Budget kwaliteit",
+    "A3Format": "A3 formaat",
+    "A3Hq": "A3 Hoge kwaliteit",
+    "A3Trifold": "A3 formaat | 3-slag",
+    "A4AndA3Format": "A4 en A3 formaat",
     "A4": "A4",
+    "A4Bifold": "A4 formaat | 2-slag",
+    "A4BifoldOrTrifold": "A4 formaat | 2 of 3-slag",
+    "A4BlackWhite": "A4 Zwart/wit",
+    "A4Color": "A4 Kleur",
+    "A4ColorOrBlackWhite": "A4 Kleur of zwart/wit",
+    "A4FormatComplete": "A4 formaat",
+    "A4Trifold": "A4 formaat | 3-slag",
+    "A4WhiteOrColoredPaper": "| Wit of gekleurd papier",
     "A5": "A5",
+    "A5FormatComplete": "A5 formaat",
     "A6": "A6",
-    "B1": "B1",
-    "B2": "B2"
-  },
-  "postersAmount": {
-    "1-5": "1-5 stuks",
-    "6-10": "6-10 stuks",
-    "10Plus": "10+ stuks"
+    "A6AndA5Format": "A6 en A5 formaat",
+    "largeFormat": "Groot formaat",
+    "fullColor": "| Full color"
   },
   "contactPage": {
     "pageTitle": "Neem contact op",
-    "adressTitle": "Bezoek ons",
     "contactDetails": "Offerte op maat",
     "contactIntroduction": "Heeft u vragen over onze producten of diensten, of wilt u meer weten over de bijbehorende kosten? Vul dan ons formulier in, en wij zorgen ervoor dat u snel en geheel vrijblijvend een offerte ontvangt.",
     "sendMessage": "Stuur een bericht",
@@ -297,8 +275,7 @@
     "formUserEmailAdress": "E-mailadres",
     "messageSubject": "Onderwerp",
     "messageContent": "Bericht",
-    "messageSubmit": "Versturen",
-    "messageAlert": "Vergeet niet uw contact gegevens te vermelden."
+    "messageSubmit": "Versturen"
   },
   "termsOfSale": {
     "title": "Verkoopvoorwaarden",
@@ -335,33 +312,25 @@
     "tableCaption": "Tabel met opties en de bijbehorende prijzen."
   },
   "commonWords": {
-    "to": "tot",
     "color": "Kleur",
     "blackWhite": "Zwart/wit",
     "colorOrBlackWhite": "Kleur of zwart/wit",
-    "paper": "papier",
     "vinyl": "Vinyl",
     "SpecialMaterials": "Speciale materialen",
     "polypropylene": "polypropyleen",
     "singleSided": "Enkelzijdig",
     "doubleSided": "Dubbelzijdig",
     "textile": "Textiel",
-    "colored": "Gekleurd",
     "budget": "Budget",
     "highQuality": "Hoge kwaliteit",
     "amount": "Aantal",
     "pricePerPrint": "Prijs per print",
     "pricePerPiece": "Prijs per st.",
     "perPiece": "Per stuk",
-    "perPrint": "Per print",
     "prints": "Prints",
     "price": "Prijs",
     "clothingPiece": "Kledingstuk",
-    "material": "Materiaal",
     "format": "Formaat",
-    "formatNoCap": "formaat",
-    "gloss": "glanzend",
-    "matte": "mat",
     "cards": "Kaarten",
     "flyers": "Flyers",
     "folders": "Folders",

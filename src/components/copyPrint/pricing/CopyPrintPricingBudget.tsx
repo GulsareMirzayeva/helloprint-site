@@ -57,7 +57,7 @@ export default function CopyPrintPricingBudget() {
           <div className="flex flex-col">
             <div className="flex">
               <TextBlock
-                value={copyPrintContentPaths.colorWithAsterisk}
+                value={copyPrintContentPaths.A4Color}
                 variant="sectionTitle"
               />
               &nbsp;
@@ -84,7 +84,7 @@ export default function CopyPrintPricingBudget() {
           <div className="flex flex-col">
             <div className="flex">
               <TextBlock
-                value={copyPrintContentPaths.blackWhiteWithAsterisk}
+                value={copyPrintContentPaths.A4blackWhite}
                 variant="sectionTitle"
               />
               &nbsp;
