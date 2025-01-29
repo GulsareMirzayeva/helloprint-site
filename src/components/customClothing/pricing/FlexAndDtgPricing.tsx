@@ -8,6 +8,12 @@ import { BeatLoader } from 'react-spinners';
 import { customClotingContentPaths } from '../../../lib/translationPaths';
 import { Notification } from '../../elementTemplates/Notification';
 
+/*
+    Custom clothing - Flex and DTG section
+
+    Show information and pricing tables for Flex and DTG category
+*/
+
 export default function FlexAndDtgPricing() {
   const { prices } = useData();
   const { t } = useTranslation();
@@ -17,27 +23,25 @@ export default function FlexAndDtgPricing() {
     return <BeatLoader color="#FB0036" />;
   }
 
-  // Get all the paths that point to the correct content in the translation files
+  // Get all prices
   const pricePathsFlex = [...Object.values(prices.customClothing.flex)];
   const pricePathsDtg = [...Object.values(prices.customClothing.dtg)];
 
-  // Table headers for the 'Flex' category. An empty cell is added because all the prices are the same
+  // Get the header titles
   const headerTitlesFlex: string[] = [
     t('customClothingPage.pricingFlexVinyl.tableHead'),
     t('commonWords.pricePerPrint'),
   ];
 
-  // Table headers for the 'DTG' category
   const headerTitlesDtg: string[] = [
     t('customClothingPage.pricingDtg.tableHead'),
     t('customClothingPage.pricingDtg.tableHeadWhiteTextile'),
     t('customClothingPage.pricingDtg.tableHeadcolored'),
   ];
 
-  // Units used in the table for "Flex / Vinyl" category
+  // Get the units
   const unitsFlex: string[] = [];
 
-  // Units used in the table for "DTG" category
   const unitsDtg: string[] = [
     t('commonWords.prints'),
     t('commonWords.pricePerPrint'),
@@ -48,7 +52,7 @@ export default function FlexAndDtgPricing() {
     <section className="flex flex-col p-8 w-full rounded-b-xl bg-gray-100">
       <div className="flex gap-16">
         <div>
-          {/* Display a title and the papertype */}
+          {/* Display table name and the papertype */}
           <div className="flex flex-col">
             <TextBlock
               value={customClotingContentPaths.FlexVinylTableTitle}
@@ -59,7 +63,7 @@ export default function FlexAndDtgPricing() {
               variant="body"
             />
           </div>
-          {/* Display a pricing */}
+          {/* Display pricing table */}
           <PricingTable
             headerTitles={headerTitlesFlex}
             units={unitsFlex}
@@ -68,7 +72,7 @@ export default function FlexAndDtgPricing() {
           />
         </div>
         <div>
-          {/* Display a title and the papertype at the top of the table */}
+          {/* Display table name and the papertype */}
           <div className="flex flex-col">
             <TextBlock
               value={customClotingContentPaths.DtgTableTitle}
@@ -79,6 +83,7 @@ export default function FlexAndDtgPricing() {
               variant="body"
             />
           </div>
+          {/* Display pricing table */}
           <PricingTable
             headerTitles={headerTitlesDtg}
             units={unitsDtg}
@@ -87,6 +92,8 @@ export default function FlexAndDtgPricing() {
           />
         </div>
       </div>
+
+      {/* Display notification message */}
       <div className="pt-8">
         <Notification>
           <TextBlock

@@ -10,7 +10,13 @@ import { BeatLoader } from 'react-spinners';
 import { copyPrintContentPaths } from '../../../lib/translationPaths';
 import { TitleWithIntroduction } from '../../elementTemplates/TitleWithIntroduction';
 
-export default function CopyPrintPricingBudget() {
+/*
+    Copy & Print - Budget section
+
+    Show information and pricing tables for Budget category
+*/
+
+export default function CopyPrintBudgetPricing() {
   const { prices } = useData();
   const { t } = useTranslation();
 
@@ -19,14 +25,13 @@ export default function CopyPrintPricingBudget() {
     return <BeatLoader color="#FB0036" />;
   }
 
-  // Get all prices for the "copy & print" page that will be used
+  // Get all prices
   const pricesBudgetColor = [...Object.values(prices.copyPrint.A4.color)];
   const pricesBudgetBlackWhite = [
     ...Object.values(prices.copyPrint.A4.blackWhite),
   ];
 
-  // Table headers for the 'Flex' category. An empty cell is added because all the prices are the same
-
+  // Get the header titles
   const headerTitlesColor: string[] = [
     t('commonWords.prints'),
     t(copyPrintContentPaths.color),
@@ -37,6 +42,7 @@ export default function CopyPrintPricingBudget() {
     t(copyPrintContentPaths.blackWhite),
   ];
 
+  // Get the units
   const unitsBudget: string[] = [
     t('commonWords.amount'),
     t('commonWords.pricePerPrint'),
@@ -44,6 +50,7 @@ export default function CopyPrintPricingBudget() {
 
   return (
     <section className="flex flex-col p-8 w-full rounded-xl bg-gray-100">
+      {/* Title, subtitle and introduction text */}
       <TitleWithIntroduction
         props={{
           mainTitle: copyPrintContentPaths.budget,
@@ -53,7 +60,7 @@ export default function CopyPrintPricingBudget() {
       />
       <div className="flex gap-16 pt-8">
         <div>
-          {/* Display a title and the papertype */}
+          {/* Display table name and the papertype */}
           <div className="flex flex-col">
             <div className="flex">
               <TextBlock
@@ -71,7 +78,8 @@ export default function CopyPrintPricingBudget() {
             </div>
             <TextBlock value={copyPrintContentPaths.type80gr} variant="body" />
           </div>
-          {/* Display a pricing */}
+
+          {/* Display pricing table*/}
           <PricingTable
             headerTitles={headerTitlesColor}
             units={unitsBudget}
@@ -80,7 +88,7 @@ export default function CopyPrintPricingBudget() {
           />
         </div>
         <div>
-          {/* Display a title and the papertype */}
+          {/* Display table name and the papertype */}
           <div className="flex flex-col">
             <div className="flex">
               <TextBlock
@@ -98,7 +106,8 @@ export default function CopyPrintPricingBudget() {
             </div>
             <TextBlock value={copyPrintContentPaths.type80gr} variant="body" />
           </div>
-          {/* Display a pricing */}
+
+          {/* Display pricing table */}
           <PricingTable
             headerTitles={headerTitlesBlackWhite}
             units={unitsBudget}
@@ -107,7 +116,6 @@ export default function CopyPrintPricingBudget() {
           />
         </div>
       </div>
-      <div className="pt-8"></div>
     </section>
   );
 }

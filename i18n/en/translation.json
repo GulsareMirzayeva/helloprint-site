@@ -46,7 +46,7 @@
         "Posters",
         "Magazines"
       ],
-      "link": "/custom-printing"
+      "link": "/custom-print"
     },
     "customClothing": {
       "title": "Custom Clothing",
@@ -268,7 +268,8 @@
     "formUserEmailAdress": "E-mail address",
     "messageSubject": "Subject",
     "messageContent": "Message",
-    "messageSubmit": "Send"
+    "messageSubmit": "Send",
+    "closed": "closed"
   },
   "termsOfSale": {
     "title": "Terms of Sale",

@@ -3,8 +3,8 @@ import SendMessage from '../contact/SendMessage';
 import IntroductionCopyPrint from '../copyPrint/Introduction';
 import { useTranslation } from 'react-i18next';
 import { TextBlock } from '../elementTemplates/TextBlock';
-import CopyPrintPricingBudget from '../copyPrint/pricing/CopyPrintBudgetPricing';
-import CopyPrintPricingHq from '../copyPrint/pricing/CopyPrintHqPricing';
+import CopyPrintBudgetPricing from '../copyPrint/pricing/CopyPrintBudgetPricing';
+import CopyPrintHqPricing from '../copyPrint/pricing/CopyPrintHqPricing';
 
 export default function CopyPrint() {
   useTranslation();
@@ -13,8 +13,8 @@ export default function CopyPrint() {
       <div></div> {/* Left empty colomn */}
       <div className="flex flex-col items-start justify-start w-full pt-12">
         <IntroductionCopyPrint />
-        <CopyPrintPricingBudget />
-        <CopyPrintPricingHq />
+        <CopyPrintBudgetPricing />
+        <CopyPrintHqPricing />
         <div className="pt-8 pb-2">
           <TextBlock
             value={customPrintingContentPaths.contactTitle}

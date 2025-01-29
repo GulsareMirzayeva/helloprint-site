@@ -11,7 +11,7 @@ import SendMessage from '../contact/SendMessage';
 import { TextBlock } from '../elementTemplates/TextBlock';
 import { customPrintingContentPaths } from '../../lib/translationPaths';
 
-export default function CustomClothing() {
+export default function CustomPrint() {
   useTranslation();
 
   return (

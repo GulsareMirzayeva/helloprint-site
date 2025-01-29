@@ -2,6 +2,7 @@ import contactPicture from '../../../assets/PHOTO-2022-01-26-18-36-39-scaled-370
 import { TextBlock } from '../../elementTemplates/TextBlock';
 import { contactInfoTextContent } from '../../../lib/translationPaths';
 
+// Introduction text with a picture on the Contact page
 export default function MessageIntroduction() {
   return (
     <div className="flex flex-col self-start w-full mr-20">

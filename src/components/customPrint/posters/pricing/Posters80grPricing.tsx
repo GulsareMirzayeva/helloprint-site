@@ -71,7 +71,7 @@ export default function Posters80grPricing() {
             />
             <TextBlock value={postersContentPaths.type80gr} variant="body" />
           </div>
-          {/* Display a pricing */}
+          {/* Display pricing table */}
           <PricingTable
             headerTitles={headerTitlesColor}
             units={unitsColor}
@@ -80,7 +80,7 @@ export default function Posters80grPricing() {
           />
         </div>
         <div className="pt-8">
-          {/* Display a title and the papertype at the top of the table */}
+          {/* Title, subtitle and introduction text */}
           <div className="flex flex-col">
             <TextBlock
               value={postersContentPaths.blackWhite}

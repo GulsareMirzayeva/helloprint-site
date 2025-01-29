@@ -4,11 +4,11 @@ import { TextBlock } from '../../elementTemplates/TextBlock';
 import { stickersContentPaths } from '../../../lib/translationPaths';
 
 /*
-    Text content at the top of the page, the value in the TextBlock components refers to the content location
-    in the translation files (i18next folder at the root).
+    Content at the top of the 'Stickers' page
+    Values in the TextBlock components refer to translations that are declared in stickersContentPaths
 */
 
-export default function IntroductionCustomPrint() {
+export default function IntroductionStickers() {
   const { t } = useTranslation();
 
   // List of paths to translatable text content

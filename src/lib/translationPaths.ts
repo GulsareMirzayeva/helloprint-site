@@ -15,6 +15,7 @@ export const shopInfoPaths = {
   facebookUrl: 'https://www.facebook.com/copyshopthartje/',
   openingHoursMondayToFriday: '09:00 - 18:00',
   openingHoursSaturday: '10:00 - 17:00',
+  openingHoursSunday: 'contactPage.closed',
   hour: 'shopInfo.openingHours.hour',
   termsOfSaleTitle: 'shopInfo.termsOfSale.title',
   telePhone: 'shopInfo.openingHours.telePhone',

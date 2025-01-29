@@ -10,6 +10,12 @@ import { BeatLoader } from 'react-spinners';
 import { foldersContentPaths } from '../../../../lib/translationPaths';
 import { TitleWithIntroduction } from '../../../elementTemplates/TitleWithIntroduction';
 
+/*
+    Folders - Digital print section
+
+    Show information and pricing tables for Digital print category
+*/
+
 export default function FoldersDigitalPrintPricing() {
   const { prices } = useData();
   const { t } = useTranslation();
@@ -21,7 +27,7 @@ export default function FoldersDigitalPrintPricing() {
     return <BeatLoader color="#FB0036" />;
   }
 
-  // Get all prices for the "copy & print" page that will be used
+  // Get all prices
   const pricesBlackWhiteA4 = [
     ...Object.values(prices.customPrint.folders.print.A4.blackWhite),
   ];
@@ -30,7 +36,7 @@ export default function FoldersDigitalPrintPricing() {
     ...Object.values(prices.customPrint.folders.print.A4.color),
   ];
 
-  // Table headers for the 'Flex' category. An empty cell is added because all the prices are the same
+  // Get the header titles
   const headerTitlesColor: string[] = [
     t('commonWords.folders'),
     t('PaperWeights.150grShort'),
@@ -43,6 +49,7 @@ export default function FoldersDigitalPrintPricing() {
     t('PaperWeights.80grShort'),
   ];
 
+  // Get the units
   const unitsColor: string[] = [
     t('commonWords.amount'),
     t('commonWords.price'),
@@ -57,6 +64,7 @@ export default function FoldersDigitalPrintPricing() {
 
   return (
     <section className="flex flex-col p-8 w-full rounded-xl bg-gray-100">
+      {/* Title, subtitle and introduction text */}
       <TitleWithIntroduction
         props={{
           mainTitle: digitalPrintTitle,
@@ -67,7 +75,7 @@ export default function FoldersDigitalPrintPricing() {
       />
       <div className="flex gap-16 pt-8">
         <div>
-          {/* Display a title and the papertype at the top of the table */}
+          {/* Display table name and the papertype */}
           <div className="flex flex-col">
             <TextBlock
               value={foldersContentPaths.A4BifoldOrTrifold}
@@ -75,6 +83,7 @@ export default function FoldersDigitalPrintPricing() {
             />
             <TextBlock value={foldersContentPaths.color} variant="body" />
           </div>
+          {/* Display pricing table */}
           <PricingTable
             headerTitles={headerTitlesColor}
             units={unitsColor}
@@ -83,7 +92,7 @@ export default function FoldersDigitalPrintPricing() {
           />
         </div>
         <div>
-          {/* Display a title and the papertype */}
+          {/* Display table name and the papertype */}
           <div className="flex flex-col items-baseline">
             <TextBlock
               value={foldersContentPaths.A4BifoldOrTrifold}
@@ -98,7 +107,7 @@ export default function FoldersDigitalPrintPricing() {
               />
             </div>
           </div>
-          {/* Display a pricing */}
+          {/* Display pricing table */}
           <PricingTable
             headerTitles={headerTitlesBlackWhite}
             units={unitsBlackWhite}

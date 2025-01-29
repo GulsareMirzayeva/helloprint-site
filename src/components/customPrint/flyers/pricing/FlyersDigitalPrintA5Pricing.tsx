@@ -9,6 +9,12 @@ import { TextBlock } from '../../../elementTemplates/TextBlock';
 import { BeatLoader } from 'react-spinners';
 import { flyersContentPaths } from '../../../../lib/translationPaths';
 
+/*
+    Flyers - Digital print A5 section
+
+    Show information and pricing tables for Digital print A5 category
+*/
+
 export default function FlyersDigitalPrintA5Pricing() {
   const { prices } = useData();
   const { t } = useTranslation();
@@ -18,7 +24,7 @@ export default function FlyersDigitalPrintA5Pricing() {
     return <BeatLoader color="#FB0036" />;
   }
 
-  // Get all prices for the "copy & print" page that will be used
+  // Get all prices
   const pricesSingleSidedA5 = [
     ...Object.values(prices.customPrint.flyers.print.A5.singleSided),
   ];
@@ -27,7 +33,7 @@ export default function FlyersDigitalPrintA5Pricing() {
     ...Object.values(prices.customPrint.flyers.print.A5.doubleSided),
   ];
 
-  // Table headers for the 'Flex' category. An empty cell is added because all the prices are the same
+  // Get the header titles
   const headerTitles: string[] = [
     t('commonWords.flyers'),
     t('PaperWeights.90grShort'),
@@ -46,7 +52,7 @@ export default function FlyersDigitalPrintA5Pricing() {
     <section className="flex flex-col p-8 w-full rounded-b-xl bg-gray-100">
       <div className="flex gap-16">
         <div className="flex flex-col">
-          {/* Display a title and the papertype at the top of the table */}
+          {/* Title, subtitle and introduction text */}
           <div>
             <TextBlock
               value={flyersContentPaths.formatA5}
@@ -54,6 +60,8 @@ export default function FlyersDigitalPrintA5Pricing() {
             />
             <TextBlock value={flyersContentPaths.singleSided} variant="body" />
           </div>
+
+          {/* Display pricing table*/}
           <PricingTable
             headerTitles={headerTitles}
             units={units}
@@ -62,7 +70,7 @@ export default function FlyersDigitalPrintA5Pricing() {
           />
         </div>
         <div>
-          {/* Display a title and the papertype at the top of the table */}
+          {/* Title, subtitle and introduction text */}
           <div className="flex flex-col">
             <TextBlock
               value={flyersContentPaths.formatA5}
@@ -70,6 +78,8 @@ export default function FlyersDigitalPrintA5Pricing() {
             />
             <TextBlock value={flyersContentPaths.doubleSided} variant="body" />
           </div>
+
+          {/* Display pricing table*/}
           <PricingTable
             headerTitles={headerTitles}
             units={units}

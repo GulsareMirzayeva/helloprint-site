@@ -5,9 +5,8 @@ import AdressSection from './contactDetails/details/AdressSection';
 import ContactSection from './contactDetails/details/ContactSection';
 import OpeningHoursSection from './contactDetails/details/OpeningHoursSection';
 
+// Contact details on the Contact page
 export default function ContactDetails() {
-  // const { t } = useTranslation();
-
   return (
     <section className="flex flex-col items-start w-full">
       <div className="flex flex-col p-8 rounded-xl bg-gray-100">

@@ -9,7 +9,13 @@ import { TitleWithIntroduction } from '../../elementTemplates/TitleWithIntroduct
 import { Notification } from '../../elementTemplates/Notification';
 import { Divider } from '@mui/material';
 
-export default function CopyPrintPricingHq() {
+/*
+    Copy & Print - High Quality section
+
+    Show information and pricing tables for High Quality category
+*/
+
+export default function CopyPrintHqPricing() {
   const { prices } = useData();
   const { t } = useTranslation();
 
@@ -18,16 +24,17 @@ export default function CopyPrintPricingHq() {
     return <BeatLoader color="#FB0036" />;
   }
 
-  // Get all prices for the "copy & print" page that will be used
+  // Get all prices
   const pricesHq = [...Object.values(prices.copyPrint.A4.hq)];
 
-  // Table headers for the 'Flex' category. An empty cell is added because all the prices are the same
+  // Get the header titles
   const headerTitlesHq: string[] = [
     t('commonWords.prints'),
     t(copyPrintContentPaths.blackWhite),
     t(copyPrintContentPaths.color),
   ];
 
+  // Get the units
   const unitsHq: string[] = [
     t('commonWords.amount'),
     t('commonWords.pricePerPrint'),
@@ -36,6 +43,7 @@ export default function CopyPrintPricingHq() {
 
   return (
     <section className="flex flex-col p-8 w-full rounded-xl">
+      {/* Title, subtitle and introduction text */}
       <TitleWithIntroduction
         props={{
           mainTitle: copyPrintContentPaths.highQuality,
@@ -45,7 +53,7 @@ export default function CopyPrintPricingHq() {
       />
       <div className="flex gap-16 pt-8">
         <div>
-          {/* Display a title and the papertype at the top of the table */}
+          {/* Display table name and the papertype */}
           <div className="flex flex-col">
             <div className="flex justify-start ">
               <TextBlock
@@ -60,6 +68,8 @@ export default function CopyPrintPricingHq() {
             </div>
             <TextBlock value={copyPrintContentPaths.type90gr} variant="body" />
           </div>
+
+          {/* Display pricing table*/}
           <PricingTable
             headerTitles={headerTitlesHq}
             units={unitsHq}
@@ -68,6 +78,9 @@ export default function CopyPrintPricingHq() {
           />
         </div>
       </div>
+
+      {/* Display notification message(s) */}
+
       <div className="pt-8">
         <Notification>
           <div className="flex items-end">

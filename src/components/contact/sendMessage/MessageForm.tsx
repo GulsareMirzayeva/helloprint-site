@@ -4,7 +4,7 @@ import { useState } from 'react';
 import { contactFormTextContentPaths } from '../../../lib/translationPaths';
 
 export default function MessageForm() {
-  // Subscribes the component to i18n language so when the language changes, the content will be translated inmediatly
+  // Subscribes the component to i18n language, the content will be translated on load
   const { t } = useTranslation();
 
   // Controlled components - Control the values of the input fields

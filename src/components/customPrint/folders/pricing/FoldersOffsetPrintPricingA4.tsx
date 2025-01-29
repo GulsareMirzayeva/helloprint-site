@@ -7,6 +7,12 @@ import { BeatLoader } from 'react-spinners';
 import { foldersContentPaths } from '../../../../lib/translationPaths';
 import { TitleWithIntroduction } from '../../../elementTemplates/TitleWithIntroduction';
 
+/*
+    Folders - Offset print A4 section
+
+    Show information and pricing tables for Offset print A4 category
+*/
+
 export default function FoldersOffsetPrintPricingA4() {
   const { prices } = useData();
   const { t } = useTranslation();
@@ -18,7 +24,7 @@ export default function FoldersOffsetPrintPricingA4() {
     return <BeatLoader color="#FB0036" />;
   }
 
-  // Get all prices for the "copy & print" page that will be used
+  // Get all prices
   const pricesColorHalfFoldA4 = [
     ...Object.values(prices.customPrint.folders.offsetPrint.A4.color.halfFold),
   ];
@@ -27,7 +33,7 @@ export default function FoldersOffsetPrintPricingA4() {
     ...Object.values(prices.customPrint.folders.offsetPrint.A4.color.triFold),
   ];
 
-  // Table headers for the 'Flex' category. An empty cell is added because all the prices are the same
+  // Get the header titles
   const headerTitlesA4: string[] = [
     t('commonWords.folders'),
     t('PaperWeights.135grShort'),
@@ -35,6 +41,7 @@ export default function FoldersOffsetPrintPricingA4() {
     t('PaperWeights.250grShort'),
   ];
 
+  // Get the units
   const unitsFolders: string[] = [
     t('commonWords.amount'),
     t('commonWords.price'),
@@ -44,6 +51,7 @@ export default function FoldersOffsetPrintPricingA4() {
 
   return (
     <section className="flex flex-col pt-12 p-8 pb-2 w-full rounded-t-xl">
+      {/* Title, subtitle and introduction text */}
       <TitleWithIntroduction
         props={{
           mainTitle: offsetPrintTitle,
@@ -62,7 +70,7 @@ export default function FoldersOffsetPrintPricingA4() {
             />
             <TextBlock value={foldersContentPaths.color} variant="body" />
           </div>
-          {/* Display a pricing */}
+          {/* Display pricing table */}
           <PricingTable
             headerTitles={headerTitlesA4}
             units={unitsFolders}
@@ -71,7 +79,7 @@ export default function FoldersOffsetPrintPricingA4() {
           />
         </div>
         <div>
-          {/* Display a title and the papertype at the top of the table */}
+          {/* Display a title and the papertype */}
           <div className="flex flex-col">
             <TextBlock
               value={foldersContentPaths.A4Bifold}

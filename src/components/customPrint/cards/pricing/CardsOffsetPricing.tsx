@@ -8,7 +8,13 @@ import { cardsContentPaths } from '../../../../lib/translationPaths';
 import { TitleWithIntroduction } from '../../../elementTemplates/TitleWithIntroduction';
 import { Notification } from '../../../elementTemplates/Notification';
 
-export default function CardsOffsetPrintPricing() {
+/*
+    Cards - Offset print section
+
+    Show information and pricing tables for Offset print category
+*/
+
+export default function CardsOffsetPricing() {
   const { prices } = useData();
   const { t } = useTranslation();
 
@@ -17,18 +23,19 @@ export default function CardsOffsetPrintPricing() {
     return <BeatLoader color="#FB0036" />;
   }
 
-  // Get all prices for the "copy & print" page that will be used
+  // Get all prices
   const pricesPressPrint = [
     ...Object.values(prices.customPrint.cards.offsetPrint.color),
   ];
 
-  // Table headers for the 'Flex' category. An empty cell is added because all the prices are the same
+  // Get the header titles
   const headerTitles: string[] = [
     t('commonWords.cards'),
     t('customPrintPage.cards.offsetPrintSingleSided'),
     t('customPrintPage.cards.offsetPrintDoubleSided'),
   ];
 
+  // Get the units
   const units: string[] = [
     t('commonWords.amount'),
     t('commonWords.price'),
@@ -37,6 +44,7 @@ export default function CardsOffsetPrintPricing() {
 
   return (
     <section className="flex flex-col pt-12 p-8 w-full rounded-xl">
+      {/* Title, subtitle and introduction text */}
       <TitleWithIntroduction
         props={{
           mainTitle: cardsContentPaths.offsetPrint,
@@ -47,13 +55,13 @@ export default function CardsOffsetPrintPricing() {
       />
       <div className="flex gap-16 pt-8">
         <div>
-          {/* Display a title and the papertype at the top of the table */}
+          {/* Display table name and the papertype */}
           <div className="flex flex-col">
             <TextBlock value={cardsContentPaths.color} variant="sectionTitle" />
             <TextBlock value={cardsContentPaths.type400grMc} variant="body" />
           </div>
 
-          {/* Render a table for the "Black & White" category */}
+          {/* Display pricing table */}
           <PricingTable
             headerTitles={headerTitles}
             units={units}
@@ -63,6 +71,7 @@ export default function CardsOffsetPrintPricing() {
         </div>
       </div>
       <div className="pt-8">
+        {/* Display notification message */}
         <Notification>
           <div className="flex items-end">
             <div className="text-[#FB0036] font-semibold">

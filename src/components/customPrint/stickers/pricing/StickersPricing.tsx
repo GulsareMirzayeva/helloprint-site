@@ -34,7 +34,7 @@ export default function StickersPricing() {
           }}
         />
         <div className="pt-8">
-          {/* Display a title and the papertype at the top of the table */}
+          {/* Title, subtitle and introduction text */}
           <div className="flex flex-col">
             <TextBlock
               value={stickersContentPaths.largeFormat}

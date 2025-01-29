@@ -93,7 +93,7 @@ export default function Header() {
       >
         <div
           className={`p-1 flex items-center cursor-default border-b-2 ${
-            location.pathname.startsWith('/custom-printing')
+            location.pathname.startsWith('/custom-print')
               ? 'border-b-[#FB0036]'
               : 'border-b-white'
           }`}
@@ -131,37 +131,37 @@ export default function Header() {
           {isAccordionOpen && (
             <ul className="absolute top-[calc(100%+6px)] min-w-[105%] bg-white shadow-md rounded-sm">
               <SubNavigationLink
-                path={'/custom-printing'}
+                path={'/custom-print'}
                 value={t(menuButtonNames.overview)}
                 callBack={handleAccordionLinkClick}
               />
               <Divider variant="fullWidth" />
               <SubNavigationLink
-                path={'/custom-printing/stickers'}
+                path={'/custom-print/stickers'}
                 value={t(menuButtonNames.stickers)}
                 callBack={handleAccordionLinkClick}
               />
 
               <SubNavigationLink
-                path={'/custom-printing/cards'}
+                path={'/custom-print/cards'}
                 value={t(menuButtonNames.cards)}
                 callBack={handleAccordionLinkClick}
               />
 
               <SubNavigationLink
-                path={'/custom-printing/flyers'}
+                path={'/custom-print/flyers'}
                 value={t(menuButtonNames.flyers)}
                 callBack={handleAccordionLinkClick}
               />
 
               <SubNavigationLink
-                path={'/custom-printing/folders'}
+                path={'/custom-print/folders'}
                 value={t(menuButtonNames.folders)}
                 callBack={handleAccordionLinkClick}
               />
 
               <SubNavigationLink
-                path={'/custom-printing/posters'}
+                path={'/custom-print/posters'}
                 value={t(menuButtonNames.posters)}
                 callBack={handleAccordionLinkClick}
               />

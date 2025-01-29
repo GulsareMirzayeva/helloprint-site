@@ -1,20 +1,20 @@
-import { createBrowserRouter } from 'react-router-dom';
 import App from './App';
+import { createBrowserRouter } from 'react-router-dom';
 import {
   Home,
   Cards,
   Contact,
   CopyPrint,
+  CustomPrint,
   CustomClothing,
   Flyers,
   Folders,
   Posters,
   Stickers,
+  OfficeSupplies,
+  TermsOfSalePage,
   ErrorPage,
 } from './components/pages/index';
-import TermsOfSalePage from './components/pages/TermsOfSalePage';
-import CustomPrint from './components/pages/CustomPrint';
-import OfficeSupplies from './components/pages/OfficeSupplies';
 
 const router = createBrowserRouter([
   {
@@ -35,27 +35,27 @@ const router = createBrowserRouter([
         element: <CustomClothing />,
       },
       {
-        path: 'custom-printing',
+        path: 'custom-print',
         element: <CustomPrint />,
       },
       {
-        path: 'custom-printing/stickers',
+        path: 'custom-print/stickers',
         element: <Stickers />,
       },
       {
-        path: 'custom-printing/cards',
+        path: 'custom-print/cards',
         element: <Cards />,
       },
       {
-        path: 'custom-printing/flyers',
+        path: 'custom-print/flyers',
         element: <Flyers />,
       },
       {
-        path: 'custom-printing/folders',
+        path: 'custom-print/folders',
         element: <Folders />,
       },
       {
-        path: 'custom-printing/posters',
+        path: 'custom-print/posters',
         element: <Posters />,
       },
       {

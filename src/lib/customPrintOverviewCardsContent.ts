@@ -15,7 +15,7 @@ import {
 export const stickersContent = {
   titlePath: stickersContentPaths.title,
   textContentPath: stickersContentPaths.introduction,
-  pageLink: '/custom-printing/stickers',
+  pageLink: '/custom-print/stickers',
   bgColor: 'bg-gray-100',
   image: imageStickers,
   placeImageLeft: true,
@@ -24,7 +24,7 @@ export const stickersContent = {
 export const cardsContent = {
   titlePath: cardsContentPaths.title,
   textContentPath: cardsContentPaths.introduction,
-  pageLink: '/custom-printing/cards',
+  pageLink: '/custom-print/cards',
   bgColor: 'bg-white',
   image: imageCards,
   placeImageLeft: false,
@@ -33,7 +33,7 @@ export const cardsContent = {
 export const flyersContent = {
   titlePath: flyersContentPaths.title,
   textContentPath: flyersContentPaths.introduction,
-  pageLink: '/custom-printing/flyers',
+  pageLink: '/custom-print/flyers',
   bgColor: 'bg-gray-100',
   image: imageFlyers,
   placeImageLeft: true,
@@ -42,7 +42,7 @@ export const flyersContent = {
 export const foldersContent = {
   titlePath: foldersContentPaths.title,
   textContentPath: foldersContentPaths.introduction,
-  pageLink: '/custom-printing/folders',
+  pageLink: '/custom-print/folders',
   bgColor: 'bg-white',
   image: imageFolders,
   placeImageLeft: false,
@@ -51,7 +51,7 @@ export const foldersContent = {
 export const postersContent = {
   titlePath: postersContentPaths.title,
   textContentPath: postersContentPaths.introduction,
-  pageLink: '/custom-printing/posters',
+  pageLink: '/custom-print/posters',
   bgColor: 'bg-gray-100',
   image: imagePosters,
   placeImageLeft: true,

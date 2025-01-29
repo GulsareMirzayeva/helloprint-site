@@ -1,7 +1,7 @@
 import { useTranslation } from 'react-i18next';
 import IntroductionCards from '../../customPrint/cards/Introduction';
 import CardsDigitalPrintPricing from '../../customPrint/cards/pricing/CardsDigitalPrintPricing';
-import CardsOffsetPrintPricing from '../../customPrint/cards/pricing/CardsOffsetPricing';
+import CardsOffsetPricing from '../../customPrint/cards/pricing/CardsOffsetPricing';
 import { customPrintingContentPaths } from '../../../lib/translationPaths';
 import SendMessage from '../../contact/SendMessage';
 import { TextBlock } from '../../elementTemplates/TextBlock';
@@ -16,7 +16,7 @@ export default function Cards() {
       <div className="flex flex-col items-start justify-start w-full pt-12">
         <IntroductionCards />
         <CardsDigitalPrintPricing />
-        <CardsOffsetPrintPricing />
+        <CardsOffsetPricing />
         <div className="py-4 pb-2">
           <Divider flexItem variant="middle" />
           <div className="pt-16 pb-2">

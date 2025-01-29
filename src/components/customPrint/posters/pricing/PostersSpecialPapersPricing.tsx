@@ -45,7 +45,7 @@ export default function PostersSpecialPapersPricing() {
         />
         <div className="flex gap-16 pt-8">
           <div>
-            {/* Display a title and the papertype at the top of the table */}
+            {/* Title, subtitle and introduction text */}
             <div className="flex flex-col">
               <TextBlock
                 value={postersContentPaths.color}
@@ -64,7 +64,7 @@ export default function PostersSpecialPapersPricing() {
             />
           </div>
           <div>
-            {/* Display a title and the papertype at the top of the table */}
+            {/* Title, subtitle and introduction text */}
             <div className="flex flex-col">
               <TextBlock
                 value={postersContentPaths.color}

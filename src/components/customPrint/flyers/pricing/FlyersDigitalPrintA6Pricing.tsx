@@ -7,6 +7,12 @@ import { BeatLoader } from 'react-spinners';
 import { flyersContentPaths } from '../../../../lib/translationPaths';
 import { TitleWithIntroduction } from '../../../elementTemplates/TitleWithIntroduction';
 
+/*
+    Flyers - Digital print A6 section
+
+    Show information and pricing tables for Digital print A6 category
+*/
+
 export default function FlyersDigitalPrintA6Pricing() {
   const { prices } = useData();
   const { t } = useTranslation();
@@ -16,7 +22,7 @@ export default function FlyersDigitalPrintA6Pricing() {
     return <BeatLoader color="#FB0036" />;
   }
 
-  // Get all prices for the "copy & print" page that will be used
+  // Get all prices
   const pricesSingleSidedA5 = [
     ...Object.values(prices.customPrint.flyers.print.A6.singleSided),
   ];
@@ -25,7 +31,7 @@ export default function FlyersDigitalPrintA6Pricing() {
     ...Object.values(prices.customPrint.flyers.print.A6.doubleSided),
   ];
 
-  // Table headers for the 'Flex' category. An empty cell is added because all the prices are the same
+  // Get the header titles
   const headerTitles: string[] = [
     t('commonWords.flyers'),
     t('PaperWeights.90grShort'),
@@ -44,6 +50,7 @@ export default function FlyersDigitalPrintA6Pricing() {
 
   return (
     <section className="flex flex-col p-8 pb-2 w-full rounded-t-xl bg-gray-100">
+      {/* Title, subtitle and introduction text */}
       <TitleWithIntroduction
         props={{
           mainTitle: digitalPrintTitle,
@@ -54,7 +61,7 @@ export default function FlyersDigitalPrintA6Pricing() {
       />
       <div className="flex gap-16 pt-8">
         <div>
-          {/* Display a title and the papertype at the top of the table */}
+          {/* Title, subtitle and introduction text */}
           <div className="flex flex-col">
             <TextBlock
               value={flyersContentPaths.formatA6}
@@ -63,7 +70,7 @@ export default function FlyersDigitalPrintA6Pricing() {
             <TextBlock value={flyersContentPaths.singleSided} variant="body" />
           </div>
 
-          {/* Render a table for the "Black & White" category */}
+          {/* Display pricing table*/}
           <PricingTable
             headerTitles={headerTitles}
             units={units}
@@ -72,7 +79,7 @@ export default function FlyersDigitalPrintA6Pricing() {
           />
         </div>
         <div>
-          {/* Display a title and the papertype at the top of the table */}
+          {/* Title, subtitle and introduction text */}
           <div className="flex flex-col">
             <TextBlock
               value={flyersContentPaths.formatA6}
@@ -81,7 +88,7 @@ export default function FlyersDigitalPrintA6Pricing() {
             <TextBlock value={flyersContentPaths.doubleSided} variant="body" />
           </div>
 
-          {/* Render a table for the "Color" category */}
+          {/* Display pricing table*/}
           <PricingTable
             headerTitles={headerTitles}
             units={units}

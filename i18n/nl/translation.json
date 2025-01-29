@@ -46,7 +46,7 @@
         "Posters",
         "Magazines"
       ],
-      "link": "/custom-printing"
+      "link": "/custom-print"
     },
     "customClothing": {
       "title": "Kleding & Textiel",
@@ -275,7 +275,8 @@
     "formUserEmailAdress": "E-mailadres",
     "messageSubject": "Onderwerp",
     "messageContent": "Bericht",
-    "messageSubmit": "Versturen"
+    "messageSubmit": "Versturen",
+    "closed": "gesloten"
   },
   "termsOfSale": {
     "title": "Verkoopvoorwaarden",

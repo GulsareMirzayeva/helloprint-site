@@ -3,8 +3,8 @@ import { flyersContentPaths } from '../../../lib/translationPaths';
 import { TextBlock } from '../../elementTemplates/TextBlock';
 
 /*
-    Text content at the top of the page, the value in the TextBlock components refers to the content location
-    in the translation files (i18next folder at the root).
+    Content at the top of the 'Flyers' page
+    Values in the TextBlock components refer to translations that are declared in flyersContentPaths
 */
 
 export default function IntroductionFlyers() {

@@ -44,7 +44,7 @@ export default function Posters190grAnd260grPricing() {
       <div className="flex flex-col items-start">
         <div className="flex gap-16">
           <div>
-            {/* Display a title and the papertype at the top of the table */}
+            {/* Title, subtitle and introduction text */}
             <div className="flex flex-col items-baseline">
               <TextBlock
                 value={postersContentPaths.color}
@@ -63,7 +63,7 @@ export default function Posters190grAnd260grPricing() {
             />
           </div>
           <div>
-            {/* Display a title and the papertype at the top of the table */}
+            {/* Title, subtitle and introduction text */}
             <div className="flex flex-col items-baseline">
               <TextBlock
                 value={postersContentPaths.color}

@@ -66,7 +66,7 @@ export default function Posters160grPricing() {
                 variant="body"
               />
             </div>
-            {/* Display a pricing */}
+            {/* Display pricing table */}
             <PricingTable
               headerTitles={headerTitles}
               units={units}
@@ -75,7 +75,7 @@ export default function Posters160grPricing() {
             />
           </div>
           <div>
-            {/* Display a title and the papertype at the top of the table */}
+            {/* Title, subtitle and introduction text */}
             <div className="flex flex-col">
               <TextBlock
                 value={postersContentPaths.color}

@@ -7,6 +7,12 @@ import { BeatLoader } from 'react-spinners';
 import { cardsContentPaths } from '../../../../lib/translationPaths';
 import { TitleWithIntroduction } from '../../../elementTemplates/TitleWithIntroduction';
 
+/*
+    Cards - Digital print section
+
+    Show information and pricing tables for Digital print category
+*/
+
 export default function CardsDigitalPrintPricing() {
   const { prices } = useData();
   const { t } = useTranslation();
@@ -16,20 +22,20 @@ export default function CardsDigitalPrintPricing() {
     return <BeatLoader color="#FB0036" />;
   }
 
-  // Get all prices for the "copy & print" page that will be used
+  // Get all prices
+  const pricesColor = [...Object.values(prices.customPrint.cards.print.color)];
   const pricesBlackWhite = [
     ...Object.values(prices.customPrint.cards.print.blackWhite),
   ];
 
-  const pricesColor = [...Object.values(prices.customPrint.cards.print.color)];
-
-  // Table headers for the 'Flex' category. An empty cell is added because all the prices are the same
+  // Get the header titles
   const headerTitles: string[] = [
     t('commonWords.cards'),
     t('commonWords.singleSided'),
     t('commonWords.doubleSided'),
   ];
 
+  // Get the units
   const units: string[] = [
     t('commonWords.amount'),
     t('commonWords.price'),
@@ -38,6 +44,7 @@ export default function CardsDigitalPrintPricing() {
 
   return (
     <section className="flex flex-col p-8 w-full rounded-xl bg-gray-100">
+      {/* Title, subtitle and introduction text */}
       <TitleWithIntroduction
         props={{
           mainTitle: cardsContentPaths.digitalPrint,
@@ -48,7 +55,7 @@ export default function CardsDigitalPrintPricing() {
       />
       <div className="flex gap-16 pt-8">
         <div>
-          {/* Display a title and the papertype at the top of the table */}
+          {/* Display table name and the papertype */}
           <div className="flex flex-col">
             <TextBlock
               value={cardsContentPaths.blackWhite}
@@ -57,7 +64,7 @@ export default function CardsDigitalPrintPricing() {
             <TextBlock value={cardsContentPaths.type350gr} variant="body" />
           </div>
 
-          {/* Render a table for the "Black & White" category */}
+          {/* Display pricing table */}
           <PricingTable
             headerTitles={headerTitles}
             units={units}
@@ -66,13 +73,13 @@ export default function CardsDigitalPrintPricing() {
           />
         </div>
         <div>
-          {/* Display a title and the papertype at the top of the table */}
+          {/* Display table name and the papertype */}
           <div className="flex flex-col">
             <TextBlock value={cardsContentPaths.color} variant="sectionTitle" />
             <TextBlock value={cardsContentPaths.type350gr} variant="body" />
           </div>
 
-          {/* Render a table for the "Color" category */}
+          {/* Display pricing table */}
           <PricingTable
             headerTitles={headerTitles}
             units={units}

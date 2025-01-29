@@ -1,18 +1,18 @@
 import { useTranslation } from 'react-i18next';
-import IntroductionCustomPrint from '../../customPrint/stickers/Introduction';
+import IntroductionStickers from '../../customPrint/stickers/Introduction';
 import StickersPricing from '../../customPrint/stickers/pricing/StickersPricing';
 import { customPrintingContentPaths } from '../../../lib/translationPaths';
 import SendMessage from '../../contact/SendMessage';
 import { TextBlock } from '../../elementTemplates/TextBlock';
 
-export default function customPrintStickers() {
+export default function Stickers() {
   useTranslation();
 
   return (
     <div className="grid grid-cols-[1fr,minmax(0,1200px),1fr] w-full">
       <div></div> {/* Left empty colomn */}
       <div className="flex flex-col items-start justify-start w-full pt-12">
-        <IntroductionCustomPrint />
+        <IntroductionStickers />
         <StickersPricing />
         <div className="pt-16 pb-2">
           <TextBlock

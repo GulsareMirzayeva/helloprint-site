@@ -1,6 +1,7 @@
 import { useTranslation } from 'react-i18next';
 import { shopInfoPaths } from '../../../../lib/translationPaths';
 
+// Adres section on the Contact page
 export default function AdressSection() {
   const { t } = useTranslation();
 

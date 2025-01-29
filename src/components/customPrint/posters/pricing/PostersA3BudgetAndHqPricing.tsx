@@ -49,7 +49,7 @@ export default function PostersA3BudgetAndHqPricing() {
         />
         <div className="flex gap-16 pt-8">
           <div>
-            {/* Display a title and the papertype at the top of the table */}
+            {/* Title, subtitle and introduction text */}
             <div className="flex flex-col">
               <div className="flex">
                 <TextBlock
@@ -78,7 +78,7 @@ export default function PostersA3BudgetAndHqPricing() {
             />
           </div>
           <div>
-            {/* Display a title and the papertype at the top of the table */}
+            {/* Title, subtitle and introduction text */}
             <div className="flex flex-col">
               <div className="flex">
                 <TextBlock

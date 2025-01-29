@@ -8,6 +8,12 @@ import { BeatLoader } from 'react-spinners';
 import { TitleWithIntroduction } from '../../elementTemplates/TitleWithIntroduction';
 import { customClotingContentPaths } from '../../../lib/translationPaths';
 
+/*
+    Custom clothing - Clothing pieces section
+
+    Show information and pricing tables for Clothing pieces category
+*/
+
 export default function ClothingPiecesPricing() {
   const { prices } = useData();
   const { t } = useTranslation();
@@ -17,17 +23,17 @@ export default function ClothingPiecesPricing() {
     return <BeatLoader color="#FB0036" />;
   }
 
-  // Get the paths that point to the correct prices in the prices data file
+  // Get all prices
   const pricePathsTextile = [...Object.values(prices.customClothing.textile)];
 
-  // Table headers for the 'Textile' category
+  // Get the header titles
   const headerTitlesTextile: string[] = [
     t('commonWords.textile'),
     t('commonWords.blackWhite'),
     t('commonWords.color'),
   ];
 
-  // Units used in the pricing table for "Textile" category
+  // Get the units
   const unitsTextile: string[] = [
     t('commonWords.clothingPiece'),
     t('commonWords.pricePerPrint'),
@@ -36,6 +42,7 @@ export default function ClothingPiecesPricing() {
 
   return (
     <section className="flex flex-col p-8 pb-4 w-full rounded-t-xl bg-gray-100">
+      {/* Title, subtitle and introduction text */}
       <TitleWithIntroduction
         props={{
           mainTitle: customClotingContentPaths.tableTitle,
@@ -45,7 +52,7 @@ export default function ClothingPiecesPricing() {
       />
       <div className="flex justify-between gap-20 pt-8">
         <div>
-          {/* Display a pricing */}
+          {/* Display pricing table */}
           <PricingTable
             headerTitles={headerTitlesTextile}
             units={unitsTextile}

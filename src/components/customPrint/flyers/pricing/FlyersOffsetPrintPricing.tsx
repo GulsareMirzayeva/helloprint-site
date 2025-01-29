@@ -11,6 +11,12 @@ import { flyersContentPaths } from '../../../../lib/translationPaths';
 import { TitleWithIntroduction } from '../../../elementTemplates/TitleWithIntroduction';
 import { Notification } from '../../../elementTemplates/Notification';
 
+/*
+    Flyers - Offset print section section
+
+    Show information and pricing tables for Offset print category
+*/
+
 export default function FlyersOffsetPrintPricing() {
   const { prices } = useData();
   const { t } = useTranslation();
@@ -30,7 +36,7 @@ export default function FlyersOffsetPrintPricing() {
     ...Object.values(prices.customPrint.flyers.offsetPrint.A6.doubleSided),
   ];
 
-  // Table headers for the 'Flex' category. An empty cell is added because all the prices are the same
+  // Get the header titles
   const headerTitles: string[] = [
     t('commonWords.flyers'),
     t('PaperWeights.135grShort'),
@@ -38,6 +44,7 @@ export default function FlyersOffsetPrintPricing() {
     t('PaperWeights.250grShort'),
   ];
 
+  // Get the units
   const units: string[] = [
     t('commonWords.amount'),
     t('commonWords.price'),
@@ -47,6 +54,7 @@ export default function FlyersOffsetPrintPricing() {
 
   return (
     <section className="flex flex-col pt-12 p-8 w-full rounded-xl">
+      {/* Title, subtitle and introduction text */}
       <TitleWithIntroduction
         props={{
           mainTitle: offsetPrintTitle,
@@ -57,7 +65,7 @@ export default function FlyersOffsetPrintPricing() {
       />
       <div className="flex gap-16 pt-8">
         <div>
-          {/* Display a title and the papertype at the top of the table */}
+          {/* Display a title and the papertype */}
           <div className="flex flex-col">
             <TextBlock
               value={flyersContentPaths.formatA5}
@@ -66,7 +74,7 @@ export default function FlyersOffsetPrintPricing() {
             <TextBlock value={flyersContentPaths.singleSided} variant="body" />
           </div>
 
-          {/* Render a table for the "Black & White" category */}
+          {/* Display pricing table*/}
           <PricingTable
             headerTitles={headerTitles}
             units={units}
@@ -75,7 +83,7 @@ export default function FlyersOffsetPrintPricing() {
           />
         </div>
         <div>
-          {/* Display a title and the papertype at the top of the table */}
+          {/* Display a title and the papertype */}
           <div className="flex flex-col">
             <TextBlock
               value={flyersContentPaths.formatA5}
@@ -84,7 +92,7 @@ export default function FlyersOffsetPrintPricing() {
             <TextBlock value={flyersContentPaths.doubleSided} variant="body" />
           </div>
 
-          {/* Render a table for the "Color" category */}
+          {/* Display pricing table*/}
           <PricingTable
             headerTitles={headerTitles}
             units={units}
@@ -93,6 +101,8 @@ export default function FlyersOffsetPrintPricing() {
           />
         </div>
       </div>
+
+      {/* Display notification message */}
       <div className="pt-8">
         <Notification>
           <div className="flex items-end">
