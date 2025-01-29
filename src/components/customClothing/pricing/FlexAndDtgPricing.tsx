@@ -24,7 +24,7 @@ export default function FlexAndDtgPricing() {
   // Table headers for the 'Flex' category. An empty cell is added because all the prices are the same
   const headerTitlesFlex: string[] = [
     t('customClothingPage.pricingFlexVinyl.tableHead'),
-    '',
+    t('commonWords.pricePerPrint'),
   ];
 
   // Table headers for the 'DTG' category
@@ -35,10 +35,7 @@ export default function FlexAndDtgPricing() {
   ];
 
   // Units used in the table for "Flex / Vinyl" category
-  const unitsFlex: string[] = [
-    t('commonWords.prints'),
-    t('commonWords.pricePerPrint'),
-  ];
+  const unitsFlex: string[] = [];
 
   // Units used in the table for "DTG" category
   const unitsDtg: string[] = [
