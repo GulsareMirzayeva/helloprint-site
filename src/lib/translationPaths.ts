@@ -157,6 +157,7 @@ export const postersContentPaths = {
   formatNoCap: 'commonWords.formatNoCap',
   hqFullColor: 'customPrintPage.common.hqFullColor',
   budgetColor: 'customPrintPage.common.budgetColor',
+  fullColor: 'customPrintPage.common.fullColor',
   type190grGloss: 'paperTypes.190grGloss',
   type260grSatin: 'paperTypes.260grSatin',
   type150grLong: 'paperTypes.150grLong',
@@ -205,6 +206,8 @@ export const copyPrintContentPaths = {
   notificationFirst: 'copyPrintPage.notificationFirst',
   notificationSecond: 'copyPrintPage.notificationSecond',
   notificationThird: 'copyPrintPage.notificationThird',
+  printerOneToThree: 'copyPrintPage.printerOneToThree',
+  printerFour: 'copyPrintPage.printerFour',
 };
 
 export const contactFormTextContentPaths = {

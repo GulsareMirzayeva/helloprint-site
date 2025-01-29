@@ -207,19 +207,20 @@
       "introduction160To260GrTable": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
       "introductionPolyAndHandMadeTable": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
       "introductionA3Table": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-      "notificationFirst": "*Prijzen zijn gebaseerd op self-service."
+      "notificationFirst": "Prijzen zijn gebaseerd op self-service."
     },
     "common": {
       "digitalPrint": "DIGITAAL GEPRINT",
       "digitalPrintDeliveryTime": "Levertijd 1-2 werkdagen*",
       "offsetPrint": "DRUKWERK",
       "offsetPrintDeliveryTime": "Levertijd 7 werkdagen*",
-      "deliveryDisclaimer": "*Levertijden altijd onder voorbehoud. Hier kunnen geen rechten aan verleend worden. Wij zijn niet verantwoordelijk voor eventuele vertraging door onze huisdrukker.",
+      "deliveryDisclaimer": "Levertijden altijd onder voorbehoud. Hier kunnen geen rechten aan verleend worden. Wij zijn niet verantwoordelijk voor eventuele vertraging door onze huisdrukker.",
       "bifoldOrTrifold": "(2 of 3-slag)",
       "bifold": "(2-slag)",
       "trifold": "(3-slag)",
-      "hqFullColor": "A3 Hoge kwaliteit | Full color",
-      "budgetColor": "A3 Budget kwaliteit* | Full color",
+      "fullColor": "| Full color",
+      "hqFullColor": "A3 Hoge kwaliteit",
+      "budgetColor": "A3 Budget kwaliteit",
       "A3Format": "A3 formaat",
       "A6Format": "A6 formaat"
     }
@@ -230,11 +231,13 @@
     "introduction": "Bij ons kunt u eenvoudig en snel uw kopieën en prints verzorgen. Met onze self-service printers kunt u direct documenten printen vanaf een USB-stick of downloaden vanuit uw e-mail.",
     "introductionBinding": "Daarnaast bieden wij mogelijkheden voor inbinden en lamineren, zodat uw documenten een nette en professionele uitstraling krijgen. Ideaal voor zakelijke doeleinden, studieprojecten of persoonlijke documenten!",
     "introductionCopyPrintTable": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-    "color": "A4 Kleur* | Printer 1 t/m 3",
-    "blackWhite": "A4 Zwart/wit* | Printer 1 t/m 3",
+    "color": "A4 Kleur",
+    "blackWhite": "A4 Zwart/wit",
+    "printerOneToThree": "| Printer 1 t/m 3",
+    "printerFour": "| Printer 4",
     "printerHq": "A4 Hoge kwaliteit | Printer 4",
     "colorOrBlackWhite": "A4 Kleur of zwart/wit | Printer 4",
-    "notificationFirst": "* Budget prijzen zijn gebaseerd op self-service, aangeleverde opdrachten (per email) worden uitsluitend geprint op papier van hoge kwaliteit.",
+    "notificationFirst": "Budget prijzen zijn gebaseerd op self-service, aangeleverde opdrachten (per email) worden uitsluitend geprint op papier van hoge kwaliteit.",
     "notificationSecond": "- A3 formaat is 2x de printprijs.",
     "notificationThird": "- Dubbelzijdige prints tellen als 2 prints."
   },

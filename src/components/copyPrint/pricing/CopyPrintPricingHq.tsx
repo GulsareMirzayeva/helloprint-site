@@ -63,10 +63,15 @@ export default function CopyPrintPricingHq() {
       </div>
       <div className="pt-8">
         <Notification>
-          <TextBlock
-            value={copyPrintContentPaths.notificationFirst}
-            variant="bodySmall"
-          />
+          <div className="flex items-end">
+            <div className="text-[#FB0036] font-semibold">
+              <span>*&nbsp;</span>
+            </div>
+            <TextBlock
+              value={copyPrintContentPaths.notificationFirst}
+              variant="bodySmall"
+            />
+          </div>
           <TextBlock
             value={copyPrintContentPaths.notificationSecond}
             variant="bodySmall"

@@ -56,6 +56,14 @@ export default function PostersA3BudgetAndHqPricing() {
                   value={postersContentPaths.hqFullColor}
                   variant="sectionTitle"
                 />
+                <div className="text-[#FB0036] font-semibold">
+                  <span>*</span>
+                </div>
+                &nbsp;
+                <TextBlock
+                  value={postersContentPaths.fullColor}
+                  variant="sectionTitle"
+                />
               </div>
               <TextBlock
                 value={postersContentPaths.type150grLong}
@@ -77,6 +85,14 @@ export default function PostersA3BudgetAndHqPricing() {
                   value={postersContentPaths.budgetColor}
                   variant="sectionTitle"
                 />
+                <div className="text-[#FB0036] font-semibold">
+                  <span>*</span>
+                </div>
+                &nbsp;
+                <TextBlock
+                  value={postersContentPaths.fullColor}
+                  variant="sectionTitle"
+                />
               </div>
               <TextBlock
                 value={postersContentPaths.type80grLong}
@@ -94,10 +110,15 @@ export default function PostersA3BudgetAndHqPricing() {
       </div>
       <div className="pt-8">
         <Notification>
-          <TextBlock
-            value={postersContentPaths.notificationFirst}
-            variant="bodySmall"
-          />
+          <div className="flex items-end">
+            <div className="text-[#FB0036] font-semibold">
+              <span>*&nbsp;</span>
+            </div>
+            <TextBlock
+              value={postersContentPaths.notificationFirst}
+              variant="bodySmall"
+            />
+          </div>
         </Notification>
       </div>
     </section>

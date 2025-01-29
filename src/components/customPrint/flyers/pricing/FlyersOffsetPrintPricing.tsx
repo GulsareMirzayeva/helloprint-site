@@ -95,10 +95,15 @@ export default function FlyersOffsetPrintPricing() {
       </div>
       <div className="pt-8">
         <Notification>
-          <TextBlock
-            value={flyersContentPaths.deliveryDisclaimer}
-            variant="bodySmall"
-          />
+          <div className="flex items-end">
+            <div className="text-[#FB0036] font-semibold">
+              <span>*&nbsp;</span>
+            </div>
+            <TextBlock
+              value={flyersContentPaths.deliveryDisclaimer}
+              variant="bodySmall"
+            />
+          </div>
         </Notification>
       </div>
     </section>

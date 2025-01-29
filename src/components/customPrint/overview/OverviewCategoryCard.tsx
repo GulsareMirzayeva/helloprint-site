@@ -1,4 +1,3 @@
-import image1 from '../../../assets/custom-clothing/custom-clothing-img1.jpg';
 import { TextBlock } from '../../elementTemplates/TextBlock';
 import { homeContentPaths } from '../../../lib/translationPaths';
 import { Link } from 'react-router-dom';
@@ -19,13 +18,13 @@ export default function OverviewCategoryCard({
     <section className={`${cardContent.bgColor} flex items-start p-8 w-full`}>
       {/* Place image left to the content */}
       {cardContent.placeImageLeft && (
-        <div className="p-8 max-w-[45%]">
-          <img src={image1} alt="" />
+        <div className="flex p-8 max-w-[40%]">
+          <img src={cardContent.image} alt="" />
         </div>
       )}
 
       {/* Introduction cardContent */}
-      <div className="max-w-[55%]">
+      <div className="max-w-[60%]">
         <div className="flex flex-col justify-start">
           <TextBlock value={cardContent.titlePath} variant="subTitle" />
           <TextBlock value={cardContent.textContentPath} variant="body" />
@@ -47,7 +46,7 @@ export default function OverviewCategoryCard({
       {/* Place image right to the content */}
       {!cardContent.placeImageLeft && (
         <div className="p-8 max-w-[45%]">
-          <img src={image1} alt="" />
+          <img src={cardContent.image} alt="" />
         </div>
       )}
     </section>

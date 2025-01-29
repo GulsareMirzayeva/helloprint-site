@@ -55,10 +55,20 @@ export default function CopyPrintPricingBudget() {
         <div>
           {/* Display a title and the papertype */}
           <div className="flex flex-col">
-            <TextBlock
-              value={copyPrintContentPaths.colorWithAsterisk}
-              variant="sectionTitle"
-            />
+            <div className="flex">
+              <TextBlock
+                value={copyPrintContentPaths.colorWithAsterisk}
+                variant="sectionTitle"
+              />
+              <div className="text-[#FB0036] font-semibold">
+                <span>*</span>
+              </div>
+              &nbsp;
+              <TextBlock
+                value={copyPrintContentPaths.printerOneToThree}
+                variant="sectionTitle"
+              />
+            </div>
             <TextBlock value={copyPrintContentPaths.type80gr} variant="body" />
           </div>
           {/* Display a pricing */}
@@ -72,10 +82,20 @@ export default function CopyPrintPricingBudget() {
         <div>
           {/* Display a title and the papertype */}
           <div className="flex flex-col">
-            <TextBlock
-              value={copyPrintContentPaths.blackWhiteWithAsterisk}
-              variant="sectionTitle"
-            />
+            <div className="flex">
+              <TextBlock
+                value={copyPrintContentPaths.blackWhiteWithAsterisk}
+                variant="sectionTitle"
+              />
+              <div className="text-[#FB0036] font-semibold">
+                <span>*</span>
+              </div>
+              &nbsp;
+              <TextBlock
+                value={copyPrintContentPaths.printerOneToThree}
+                variant="sectionTitle"
+              />
+            </div>
             <TextBlock value={copyPrintContentPaths.type80gr} variant="body" />
           </div>
           {/* Display a pricing */}

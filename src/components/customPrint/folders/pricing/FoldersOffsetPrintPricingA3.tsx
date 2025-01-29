@@ -56,10 +56,15 @@ export default function FoldersOffsetPrintPricingA3() {
       </div>
       <div className="pt-8">
         <Notification>
-          <TextBlock
-            value={foldersContentPaths.deliveryDisclaimer}
-            variant="bodySmall"
-          />
+          <div className="flex items-end">
+            <div className="text-[#FB0036] font-semibold">
+              <span>*&nbsp;</span>
+            </div>
+            <TextBlock
+              value={foldersContentPaths.deliveryDisclaimer}
+              variant="bodySmall"
+            />
+          </div>
         </Notification>
       </div>
     </section>

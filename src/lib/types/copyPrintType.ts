@@ -15,5 +15,6 @@ export type CategoryCardType = {
   textContentPath: string;
   pageLink: string;
   bgColor: string;
+  image: string;
   placeImageLeft: boolean;
 };

@@ -64,10 +64,15 @@ export default function CardsOffsetPrintPricing() {
       </div>
       <div className="pt-8">
         <Notification>
-          <TextBlock
-            value={cardsContentPaths.deliveryDisclaimer}
-            variant="bodySmall"
-          />
+          <div className="flex items-end">
+            <div className="text-[#FB0036] font-semibold">
+              <span>*&nbsp;</span>
+            </div>
+            <TextBlock
+              value={cardsContentPaths.deliveryDisclaimer}
+              variant="bodySmall"
+            />
+          </div>
         </Notification>
       </div>
     </section>
