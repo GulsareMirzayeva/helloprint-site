@@ -56,7 +56,7 @@ export default function FoldersDigitalPrintPricing() {
   ];
 
   return (
-    <section className="flex flex-col p-8 w-full bg-gray-100">
+    <section className="flex flex-col p-8 w-full rounded-xl bg-gray-100">
       <TitleWithIntroduction
         props={{
           mainTitle: digitalPrintTitle,

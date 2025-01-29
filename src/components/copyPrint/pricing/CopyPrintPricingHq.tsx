@@ -35,7 +35,7 @@ export default function CopyPrintPricingHq() {
   ];
 
   return (
-    <section className="flex flex-col p-8 w-full">
+    <section className="flex flex-col p-8 w-full rounded-xl">
       <TitleWithIntroduction
         props={{
           mainTitle: copyPrintContentPaths.highQuality,

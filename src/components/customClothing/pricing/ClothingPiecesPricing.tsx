@@ -35,7 +35,7 @@ export default function ClothingPiecesPricing() {
   ];
 
   return (
-    <section className="flex flex-col p-8 pb-4 w-full bg-gray-100">
+    <section className="flex flex-col p-8 pb-4 w-full rounded-t-xl bg-gray-100">
       <TitleWithIntroduction
         props={{
           mainTitle: customClotingContentPaths.tableTitle,

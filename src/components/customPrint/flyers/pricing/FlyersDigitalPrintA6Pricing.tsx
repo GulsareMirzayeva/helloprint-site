@@ -43,7 +43,7 @@ export default function FlyersDigitalPrintA6Pricing() {
   const digitalPrintTitle = t('customPrintPage.common.digitalPrint');
 
   return (
-    <section className="flex flex-col p-8 pb-2 w-full bg-gray-100">
+    <section className="flex flex-col p-8 pb-2 w-full rounded-t-xl bg-gray-100">
       <TitleWithIntroduction
         props={{
           mainTitle: digitalPrintTitle,

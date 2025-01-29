@@ -40,7 +40,7 @@ export default function Posters190grAnd260grPricing() {
   ];
 
   return (
-    <section className="flex flex-col items-start p-8 w-full">
+    <section className="flex flex-col items-start p-8 w-full rounded-b-xl">
       <div className="flex flex-col items-start">
         <div className="flex gap-16">
           <div>

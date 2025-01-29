@@ -44,7 +44,7 @@ export default function Posters160grPricing() {
   ];
 
   return (
-    <section className="flex flex-col pt-12 pb-2 p-8 w-full">
+    <section className="flex flex-col pt-12 pb-2 p-8 w-full rounded-t-xl">
       <TitleWithIntroduction
         props={{
           mainTitle: postersContentPaths.color,

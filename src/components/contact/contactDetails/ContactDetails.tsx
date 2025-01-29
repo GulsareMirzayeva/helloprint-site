@@ -10,8 +10,8 @@ export default function ContactDetails() {
 
   return (
     <section className="flex flex-col items-start w-full">
-      <div className="flex flex-col p-8 bg-gray-100">
-        <div className="flex justify-between ">
+      <div className="flex flex-col p-8 rounded-xl bg-gray-100">
+        <div className="flex justify-evenly ">
           <div>
             <AdressSection />
           </div>

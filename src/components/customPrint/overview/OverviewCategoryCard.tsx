@@ -15,7 +15,9 @@ export default function OverviewCategoryCard({
   cardContent: CategoryCardType;
 }) {
   return (
-    <section className={`${cardContent.bgColor} flex items-start p-8 w-full`}>
+    <section
+      className={`${cardContent.bgColor} flex items-start p-8 w-full rounded-xl`}
+    >
       {/* Place image left to the content */}
       {cardContent.placeImageLeft && (
         <div className="flex p-8 max-w-[40%]">

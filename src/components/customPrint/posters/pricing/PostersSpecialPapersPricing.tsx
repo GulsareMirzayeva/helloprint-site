@@ -34,7 +34,7 @@ export default function PostersSpecialPapersPricing() {
   const units: string[] = [t('commonWords.format'), t('commonWords.price')];
 
   return (
-    <section className="flex flex-col items-start p-8 w-full bg-gray-100">
+    <section className="flex flex-col items-start p-8 w-full rounded-xl bg-gray-100">
       <div className="flex flex-col items-start">
         <TitleWithIntroduction
           props={{
