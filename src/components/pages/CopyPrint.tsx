@@ -3,8 +3,8 @@ import SendMessage from '../contact/SendMessage';
 import IntroductionCopyPrint from '../copyPrint/Introduction';
 import { useTranslation } from 'react-i18next';
 import { TextBlock } from '../elementTemplates/TextBlock';
-import CopyPrintPricingBudget from '../copyPrint/pricing/CopyPrintPricingBudget';
-import CopyPrintPricingHq from '../copyPrint/pricing/CopyPrintPricingHq';
+import CopyPrintPricingBudget from '../copyPrint/pricing/CopyPrintBudgetPricing';
+import CopyPrintPricingHq from '../copyPrint/pricing/CopyPrintHqPricing';
 
 export default function CopyPrint() {
   useTranslation();

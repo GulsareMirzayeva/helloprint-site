@@ -1,9 +1,9 @@
 // import { useTranslation } from 'react-i18next';
-import GoogleMap from './GoogleMap';
+import GoogleMap from './contactDetails/GoogleMap';
 
-import AdressSection from './details/AdressSection';
-import ContactSection from './details/ContactSection';
-import OpeningHoursSection from './details/OpeningHoursSection';
+import AdressSection from './contactDetails/details/AdressSection';
+import ContactSection from './contactDetails/details/ContactSection';
+import OpeningHoursSection from './contactDetails/details/OpeningHoursSection';
 
 export default function ContactDetails() {
   // const { t } = useTranslation();

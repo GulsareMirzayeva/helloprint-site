@@ -1,5 +1,5 @@
 import { useTranslation } from 'react-i18next';
-import ContactDetails from '../contact/contactDetails/ContactDetails';
+import ContactDetails from '../contact/ContactDetails';
 import SendMessage from '../contact/SendMessage';
 import {
   contactInfoTextContent,

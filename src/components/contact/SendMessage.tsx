@@ -1,5 +1,5 @@
-import MessageForm from './messageFormSection/MessageForm';
-import MessageIntroduction from './messageFormSection/MessageIntroduction';
+import MessageForm from './sendMessage/MessageForm';
+import MessageIntroduction from './sendMessage/MessageIntroduction';
 
 export default function SendMessage() {
   return (

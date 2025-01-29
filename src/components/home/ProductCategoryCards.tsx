@@ -7,7 +7,7 @@ import supplies from '../../assets/icons/office_supplies-100.png';
 import { homeContentPaths } from '../../lib/translationPaths';
 import { Link } from 'react-router-dom';
 
-export default function ShopCategories() {
+export default function ProductCategoryCards() {
   const { t } = useTranslation();
   const icons = [paper, leaflet, tshirt, supplies];
 
