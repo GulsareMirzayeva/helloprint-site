@@ -56,14 +56,14 @@ export default function PostersA3BudgetAndHqPricing() {
                   value={postersContentPaths.hqFullColor}
                   variant="sectionTitle"
                 />
-                <div className="text-[#FB0036] font-semibold">
-                  <span>*</span>
-                </div>
                 &nbsp;
                 <TextBlock
                   value={postersContentPaths.fullColor}
                   variant="sectionTitle"
                 />
+                <div className="text-[#FB0036] font-semibold">
+                  <span>*</span>
+                </div>
               </div>
               <TextBlock
                 value={postersContentPaths.type150grLong}
@@ -85,14 +85,14 @@ export default function PostersA3BudgetAndHqPricing() {
                   value={postersContentPaths.budgetColor}
                   variant="sectionTitle"
                 />
-                <div className="text-[#FB0036] font-semibold">
-                  <span>*</span>
-                </div>
                 &nbsp;
                 <TextBlock
                   value={postersContentPaths.fullColor}
                   variant="sectionTitle"
                 />
+                <div className="text-[#FB0036] font-semibold">
+                  <span>*</span>
+                </div>
               </div>
               <TextBlock
                 value={postersContentPaths.type80grLong}

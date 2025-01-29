@@ -60,14 +60,14 @@ export default function CopyPrintPricingBudget() {
                 value={copyPrintContentPaths.colorWithAsterisk}
                 variant="sectionTitle"
               />
-              <div className="text-[#FB0036] font-semibold">
-                <span>*</span>
-              </div>
               &nbsp;
               <TextBlock
                 value={copyPrintContentPaths.printerOneToThree}
                 variant="sectionTitle"
               />
+              <div className="text-[#FB0036] font-semibold">
+                <span>*</span>
+              </div>
             </div>
             <TextBlock value={copyPrintContentPaths.type80gr} variant="body" />
           </div>
@@ -87,14 +87,14 @@ export default function CopyPrintPricingBudget() {
                 value={copyPrintContentPaths.blackWhiteWithAsterisk}
                 variant="sectionTitle"
               />
-              <div className="text-[#FB0036] font-semibold">
-                <span>*</span>
-              </div>
               &nbsp;
               <TextBlock
                 value={copyPrintContentPaths.printerOneToThree}
                 variant="sectionTitle"
               />
+              <div className="text-[#FB0036] font-semibold">
+                <span>*</span>
+              </div>
             </div>
             <TextBlock value={copyPrintContentPaths.type80gr} variant="body" />
           </div>
