@@ -1,3 +1,9 @@
+import imageStickers from '../assets/magnifying-glass-7747796_640.jpg';
+import imageCards from '../assets/magnifying-glass-7747796_640.jpg';
+import imageFlyers from '../assets/magnifying-glass-7747796_640.jpg';
+import imageFolders from '../assets/magnifying-glass-7747796_640.jpg';
+import imagePosters from '../assets/magnifying-glass-7747796_640.jpg';
+
 import {
   stickersContentPaths,
   cardsContentPaths,
@@ -11,6 +17,7 @@ export const stickersContent = {
   textContentPath: stickersContentPaths.introduction,
   pageLink: '/custom-printing/stickers',
   bgColor: 'bg-gray-100',
+  image: imageStickers,
   placeImageLeft: true,
 };
 
@@ -19,6 +26,7 @@ export const cardsContent = {
   textContentPath: cardsContentPaths.introduction,
   pageLink: '/custom-printing/cards',
   bgColor: 'bg-white',
+  image: imageCards,
   placeImageLeft: false,
 };
 
@@ -27,6 +35,7 @@ export const flyersContent = {
   textContentPath: flyersContentPaths.introduction,
   pageLink: '/custom-printing/flyers',
   bgColor: 'bg-gray-100',
+  image: imageFlyers,
   placeImageLeft: true,
 };
 
@@ -35,6 +44,7 @@ export const foldersContent = {
   textContentPath: foldersContentPaths.introduction,
   pageLink: '/custom-printing/folders',
   bgColor: 'bg-white',
+  image: imageFolders,
   placeImageLeft: false,
 };
 
@@ -43,5 +53,6 @@ export const postersContent = {
   textContentPath: postersContentPaths.introduction,
   pageLink: '/custom-printing/posters',
   bgColor: 'bg-gray-100',
+  image: imagePosters,
   placeImageLeft: true,
 };

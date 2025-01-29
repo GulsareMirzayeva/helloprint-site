@@ -1,4 +1,4 @@
-import image1 from '../../../assets/custom-clothing/custom-clothing-img1.jpg';
+import image1 from '../../../assets/magnifying-glass-7747796_640.jpg';
 import { useTranslation } from 'react-i18next';
 import { TextBlock } from '../../elementTemplates/TextBlock';
 import { stickersContentPaths } from '../../../lib/translationPaths';
@@ -22,7 +22,7 @@ export default function IntroductionCustomPrint() {
   return (
     <section className="flex gap-12 pb-8">
       {/* Image next to the text content */}
-      <div className="flex-1 basis-1/3">
+      <div className="flex flex-1 items-center basis-1/3 h-full">
         <img src={image1} alt="" />
       </div>
 

@@ -11,7 +11,7 @@ export default function customPrintStickers() {
   return (
     <div className="grid grid-cols-[1fr,minmax(0,1200px),1fr] w-full">
       <div></div> {/* Left empty colomn */}
-      <div className="flex flex-col items-start justify-start w-full pt-20">
+      <div className="flex flex-col items-start justify-start w-full pt-12">
         <IntroductionCustomPrint />
         <StickersPricing />
         <div className="pt-16 pb-2">

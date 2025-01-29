@@ -1,4 +1,4 @@
-import image1 from '../../assets/custom-clothing/custom-clothing-img1.jpg';
+import image1 from '../../assets/paperStack.jpg';
 import { copyPrintContentPaths } from '../../lib/translationPaths';
 import { TextBlock } from '../elementTemplates/TextBlock';
 

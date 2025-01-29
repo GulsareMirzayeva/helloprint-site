@@ -1,4 +1,4 @@
-import image1 from '../../../assets/custom-clothing/custom-clothing-img1.jpg';
+import image1 from '../../../assets/magnifying-glass-7747796_640.jpg';
 import { foldersContentPaths } from '../../../lib/translationPaths';
 import { TextBlock } from '../../elementTemplates/TextBlock';
 
@@ -9,7 +9,7 @@ import { TextBlock } from '../../elementTemplates/TextBlock';
 
 export default function IntroductionFlyers() {
   return (
-    <section className="flex gap-12 pb-16">
+    <section className="flex gap-12 pb-8">
       {/* Image next to the text content */}
       <div className="flex-1 basis-1/3">
         <img src={image1} alt="" />
