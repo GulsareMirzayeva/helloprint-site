@@ -9,29 +9,35 @@ export default function Home() {
   useTranslation();
 
   return (
-    <div className="flex flex-col w-full justify-start items-center gap-4 overflow-scroll">
-      <section className="grid grid-cols-[1fr,minmax(0,1200px),1fr] w-full py-2">
+    <div className="flex flex-col w-full gap-4 overflow-scroll">
+      <section className="grid grid-cols-[1fr,minmax(0,1200px),1fr]">
         <div></div> {/* Left empty colomn */}
-        <div className="flex items-start justify-between w-full py-1">
+        <div className="flex">
           <WelcomeMessage />
         </div>
         <div></div> {/* Right empty colomn */}
       </section>
-      <section className="grid grid-cols-[1fr,minmax(0,1200px),1fr] w-full py-2">
+
+      <section className="grid grid-cols-[1fr,minmax(0,1200px),1fr]">
         <div></div> {/* Left empty colomn */}
-        <div className="flex items-start justify-between w-full py-1">
+        <div className="flex">
           <ProductCategoryCards />
         </div>
         <div></div> {/* Right empty colomn */}
       </section>
+
+      {/* Contact section takes up the whole width of the screen so it must not be hindered by a grid */}
       <ContactSection />
-      <section className="grid grid-cols-[1fr,minmax(0,1200px),1fr] w-full pt-2">
+
+      <section className="grid grid-cols-[1fr,minmax(0,1200px),1fr]">
         <div></div> {/* Left empty colomn */}
-        <div className="flex items-start justify-between w-full pt-1">
+        <div className="flex">
           <SendMessage />
         </div>
         <div></div> {/* Right empty colomn */}
       </section>
+
+      {/* Skyline illustration takes up the whole width of the screen so it must not be hindered by a grid */}
       <SkylineStrip />
     </div>
   );
