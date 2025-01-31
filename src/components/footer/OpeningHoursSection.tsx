@@ -8,7 +8,7 @@ export default function OpeningHoursSection() {
   const { t } = useTranslation();
 
   return (
-    <div>
+    <div className="min-w-[140px]">
       <p className="text-sm font-bold pb-2">
         {t(contactInfoTextContent.openingHoursTitle)}
       </p>

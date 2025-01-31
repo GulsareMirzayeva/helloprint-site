@@ -44,7 +44,7 @@ export default function Posters160grPricing() {
   ];
 
   return (
-    <section className="flex flex-col pt-12 pb-2 p-8 w-full rounded-t-xl">
+    <section className="flex flex-col pt-12 pb-2 p-2 sm:p-8 w-full rounded-t-xl">
       <TitleWithIntroduction
         props={{
           mainTitle: postersContentPaths.color,
@@ -52,47 +52,45 @@ export default function Posters160grPricing() {
           introduction: postersContentPaths.introduction160To260GrTable,
         }}
       />
-      <div>
-        <div className="flex gap-16 pt-8">
-          <div>
-            {/* Display a title and the papertype */}
-            <div className="flex flex-col">
-              <TextBlock
-                value={postersContentPaths.color}
-                variant="sectionTitle"
-              />
-              <TextBlock
-                value={postersContentPaths.type160grMat}
-                variant="body"
-              />
-            </div>
-            {/* Display pricing table */}
-            <PricingTable
-              headerTitles={headerTitles}
-              units={units}
-              options={paperSizes}
-              prices={prices160grMat}
+      <div className="flex flex-col md:flex-row sm:gap-4 md:gap-16 lg:gap-16">
+        <div className="pt-8">
+          {/* Display a title and the papertype */}
+          <div className="flex flex-col">
+            <TextBlock
+              value={postersContentPaths.color}
+              variant="sectionTitle"
+            />
+            <TextBlock
+              value={postersContentPaths.type160grMat}
+              variant="body"
             />
           </div>
-          <div>
-            {/* Title, subtitle and introduction text */}
-            <div className="flex flex-col">
-              <TextBlock
-                value={postersContentPaths.color}
-                variant="sectionTitle"
-              />
-              <TextBlock
-                value={postersContentPaths.type160grSatin}
-                variant="body"
-              />
-            </div>
-            <PricingTable
-              headerTitles={headerTitles}
-              units={units}
-              options={paperSizesExtended}
-              prices={prices160grSatin}
+          {/* Display pricing table */}
+          <PricingTable
+            headerTitles={headerTitles}
+            units={units}
+            options={paperSizes}
+            prices={prices160grMat}
+          />
+        </div>
+        <div className="pt-8">
+          {/* Title, subtitle and introduction text */}
+          <div className="flex flex-col">
+            <TextBlock
+              value={postersContentPaths.color}
+              variant="sectionTitle"
+            />
+            <TextBlock
+              value={postersContentPaths.type160grSatin}
+              variant="body"
             />
           </div>
+          <PricingTable
+            headerTitles={headerTitles}
+            units={units}
+            options={paperSizesExtended}
+            prices={prices160grSatin}
+          />
         </div>
       </div>
     </section>

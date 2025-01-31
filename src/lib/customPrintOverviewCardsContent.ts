@@ -18,7 +18,6 @@ export const stickersContent = {
   pageLink: '/custom-print/stickers',
   bgColor: 'bg-gray-100',
   image: imageStickers,
-  placeImageLeft: true,
 };
 
 export const cardsContent = {
@@ -27,7 +26,6 @@ export const cardsContent = {
   pageLink: '/custom-print/cards',
   bgColor: 'bg-white',
   image: imageCards,
-  placeImageLeft: false,
 };
 
 export const flyersContent = {
@@ -36,7 +34,6 @@ export const flyersContent = {
   pageLink: '/custom-print/flyers',
   bgColor: 'bg-gray-100',
   image: imageFlyers,
-  placeImageLeft: true,
 };
 
 export const foldersContent = {
@@ -45,7 +42,6 @@ export const foldersContent = {
   pageLink: '/custom-print/folders',
   bgColor: 'bg-white',
   image: imageFolders,
-  placeImageLeft: false,
 };
 
 export const postersContent = {
@@ -54,5 +50,4 @@ export const postersContent = {
   pageLink: '/custom-print/posters',
   bgColor: 'bg-gray-100',
   image: imagePosters,
-  placeImageLeft: true,
 };

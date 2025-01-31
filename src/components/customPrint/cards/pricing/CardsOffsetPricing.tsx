@@ -43,7 +43,7 @@ export default function CardsOffsetPricing() {
   ];
 
   return (
-    <section className="flex flex-col pt-12 p-8 w-full rounded-xl">
+    <section className="flex flex-col pt-12 p-2 sm:p-8 w-full rounded-xl">
       {/* Title, subtitle and introduction text */}
       <TitleWithIntroduction
         props={{
@@ -70,7 +70,7 @@ export default function CardsOffsetPricing() {
           />
         </div>
       </div>
-      <div className="pt-8">
+      <div className="pt-8 z-0 p-4">
         {/* Display notification message */}
         <Notification>
           <div className="flex items-end">

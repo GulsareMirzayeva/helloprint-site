@@ -9,7 +9,7 @@ export default function OpeningHoursSection() {
   const { t } = useTranslation();
 
   return (
-    <div className="flex flex-col max-w-[230px]">
+    <div className="flex flex-col p-2">
       {/* Title */}
       <div>
         <p className="text-sm font-bold pb-2">

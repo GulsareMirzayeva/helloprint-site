@@ -53,7 +53,7 @@ export default function Posters80grPricing() {
   ];
 
   return (
-    <section className="flex flex-col p-8 w-full rounded-xl bg-gray-100">
+    <section className="flex flex-col p-2 sm:p-8 w-full rounded-xl bg-gray-100">
       <TitleWithIntroduction
         props={{
           mainTitle: postersContentPaths.colorOrBlackWhite,
@@ -61,7 +61,7 @@ export default function Posters80grPricing() {
           introduction: postersContentPaths.introduction80GrTable,
         }}
       />
-      <div className="flex gap-16">
+      <div className="flex flex-col md:flex-row sm:gap-4 md:gap-16 lg:gap-16">
         <div className="pt-8">
           {/* Display a title and the papertype */}
           <div className="flex flex-col items-baseline">

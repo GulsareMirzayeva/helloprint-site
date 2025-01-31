@@ -49,8 +49,8 @@ export default function FlexAndDtgPricing() {
   ];
 
   return (
-    <section className="flex flex-col p-8 w-full rounded-b-xl bg-gray-100">
-      <div className="flex gap-16">
+    <section className="flex flex-col p-2 sm:p-8 w-full rounded-b-xl bg-gray-100">
+      <div className="flex flex-col sm:flex-row gap-16">
         <div>
           {/* Display table name and the papertype */}
           <div className="flex flex-col">
@@ -94,7 +94,7 @@ export default function FlexAndDtgPricing() {
       </div>
 
       {/* Display notification message */}
-      <div className="pt-8">
+      <div className="pt-8 z-0 p-4">
         <Notification>
           <TextBlock
             value={customClotingContentPaths.notificationFirst}

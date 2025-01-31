@@ -6,12 +6,20 @@ import {
 
 export default function OpeningHours() {
   return (
-    <div className="flex flex-col items-center gap-6 text-white">
+    <div className="flex flex-col items-center px-2 gap-6 text-white">
       {/* Component Title */}
-      <TextBlock
-        value={contactInfoTextContent.openingHoursTitle}
-        variant="xl5Title"
-      />
+      <div className="hidden md:block">
+        <TextBlock
+          value={contactInfoTextContent.openingHoursTitle}
+          variant="xl5Title"
+        />
+      </div>
+      <div className="block md:hidden">
+        <TextBlock
+          value={contactInfoTextContent.openingHoursTitle}
+          variant="xl4Title"
+        />
+      </div>
 
       {/* Monday - Friday */}
       <div className="flex flex-col items-center">

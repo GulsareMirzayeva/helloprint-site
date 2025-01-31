@@ -44,7 +44,7 @@ export default function FoldersOffsetPrintPricingA3() {
   ];
 
   return (
-    <section className="flex flex-col p-8 w-full rounded-b-xl">
+    <section className="flex flex-col p-2 sm:p-8 w-full rounded-b-xl">
       <div>
         {/* Display table name and the papertype */}
         <div className="flex flex-col">
@@ -64,7 +64,7 @@ export default function FoldersOffsetPrintPricingA3() {
       </div>
 
       {/* Display notification message table */}
-      <div className="pt-8">
+      <div className="pt-8 z-0 p-4">
         <Notification>
           <div className="flex items-end">
             <div className="text-[#FB0036] font-semibold">

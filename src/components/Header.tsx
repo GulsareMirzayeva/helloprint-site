@@ -1,3 +1,4 @@
+import MenuIcon from '@mui/icons-material/Menu';
 import { useTranslation } from 'react-i18next';
 import { useEffect, useRef, useState } from 'react';
 import { useLocation } from 'react-router-dom';
@@ -13,6 +14,9 @@ export default function Header() {
   // Used for translation with the i18next package, set default language to Dutch(nl)
   const { t, i18n } = useTranslation();
   const [language, setLanguage] = useState(i18n.language || 'nl');
+
+  // Keep track if mobile menu is opened or not
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   // Keep track of the active/current page, so the corresponding button can be highlighted
   const location = useLocation();
@@ -116,86 +120,96 @@ export default function Header() {
     );
   };
 
+  const toggleMobileMenu = () => {
+    setIsMobileMenuOpen((prev) => !prev);
+  };
+
   return (
-    <header className="sticky top-0 pt-1 z-20 bg-white shadow-md h-12">
-      <nav className="flex justify-center gap-16 items-center">
-        <NavigationLink path={'/'} value={t(menuButtonNames.home)} />
-        <NavigationLink
-          path={'/copy-print'}
-          value={t(menuButtonNames.copyPrint)}
-        />
-
-        {/* Accordion start */}
-        <NagivationExpandableLink>
-          {/* Accordion content */}
-          {isAccordionOpen && (
-            <ul className="absolute top-[calc(100%+6px)] min-w-[105%] bg-white shadow-md rounded-sm">
-              <SubNavigationLink
-                path={'/custom-print'}
-                value={t(menuButtonNames.overview)}
-                callBack={handleAccordionLinkClick}
-              />
-              <Divider variant="fullWidth" />
-              <SubNavigationLink
-                path={'/custom-print/stickers'}
-                value={t(menuButtonNames.stickers)}
-                callBack={handleAccordionLinkClick}
-              />
-
-              <SubNavigationLink
-                path={'/custom-print/cards'}
-                value={t(menuButtonNames.cards)}
-                callBack={handleAccordionLinkClick}
-              />
-
-              <SubNavigationLink
-                path={'/custom-print/flyers'}
-                value={t(menuButtonNames.flyers)}
-                callBack={handleAccordionLinkClick}
-              />
-
-              <SubNavigationLink
-                path={'/custom-print/folders'}
-                value={t(menuButtonNames.folders)}
-                callBack={handleAccordionLinkClick}
-              />
-
-              <SubNavigationLink
-                path={'/custom-print/posters'}
-                value={t(menuButtonNames.posters)}
-                callBack={handleAccordionLinkClick}
-              />
-            </ul>
-          )}
-
-          {/* Accordion end */}
-        </NagivationExpandableLink>
-
-        <NavigationLink
-          path={'/custom-clothing'}
-          value={t(menuButtonNames.customClothing)}
-        />
-        <NavigationLink
-          path={'/office-supplies'}
-          value={t(menuButtonNames.officeSupplies)}
-        />
-        <NavigationLink path={'/contact'} value={t(menuButtonNames.contact)} />
-
+    <header className="sticky top-0 z-20 bg-white shadow-md">
+      <nav className="flex flex-col lg:flex-row lg:justify-center lg:h-16 px-4">
+        {/* Logo + Hamburger menu */}
         <div>
-          <span>
+          {/* Hamburger button - only visible at small screens */}
+          <button className="lg:hidden pt-2" onClick={toggleMobileMenu}>
+            <MenuIcon fontSize="large" />
+          </button>
+        </div>
+
+        {/* Navigatie-items */}
+        <div
+          className={`${
+            isMobileMenuOpen ? 'flex' : 'hidden'
+          } flex-col lg:flex lg:flex-row lg:items-center md: items-start lg:gap-16`}
+        >
+          <NavigationLink path={'/'} value={t(menuButtonNames.home)} />
+
+          <NavigationLink
+            path={'/copy-print'}
+            value={t(menuButtonNames.copyPrint)}
+          />
+          <NagivationExpandableLink>
+            {isAccordionOpen && (
+              <ul className="absolute top-[calc(100%+6px)] min-w-[105%] bg-white shadow-md rounded-sm">
+                <SubNavigationLink
+                  path={'/custom-print'}
+                  value={t(menuButtonNames.overview)}
+                  callBack={handleAccordionLinkClick}
+                />
+                <Divider variant="fullWidth" />
+                <SubNavigationLink
+                  path={'/custom-print/stickers'}
+                  value={t(menuButtonNames.stickers)}
+                  callBack={handleAccordionLinkClick}
+                />
+                <SubNavigationLink
+                  path={'/custom-print/cards'}
+                  value={t(menuButtonNames.cards)}
+                  callBack={handleAccordionLinkClick}
+                />
+                <SubNavigationLink
+                  path={'/custom-print/flyers'}
+                  value={t(menuButtonNames.flyers)}
+                  callBack={handleAccordionLinkClick}
+                />
+                <SubNavigationLink
+                  path={'/custom-print/folders'}
+                  value={t(menuButtonNames.folders)}
+                  callBack={handleAccordionLinkClick}
+                />
+                <SubNavigationLink
+                  path={'/custom-print/posters'}
+                  value={t(menuButtonNames.posters)}
+                  callBack={handleAccordionLinkClick}
+                />
+              </ul>
+            )}
+          </NagivationExpandableLink>
+          <NavigationLink
+            path={'/custom-clothing'}
+            value={t(menuButtonNames.customClothing)}
+          />
+          <NavigationLink
+            path={'/office-supplies'}
+            value={t(menuButtonNames.officeSupplies)}
+          />
+          <NavigationLink
+            path={'/contact'}
+            value={t(menuButtonNames.contact)}
+          />
+
+          {/* Taalkeuze */}
+          <div className="flex items-center pb-2 pt-2 sm:pb-2 md:pb-2 md:pt-2 lg:pt-0 lg:pb-0 pl-1">
             <LanguageIcon fontSize={'small'} />
-          </span>
-          <select
-            className="text-xs ml-2 p-1 bg-white border-2 rounded-lg cursor-pointer"
-            name="language"
-            value={language}
-            onChange={(e) => {
-              changeLanguage(e.target.value);
-            }}
-          >
-            <option value="nl">&#127475;&#127473; &nbsp;NL</option>
-            <option value="en">&#127468;&#127463; &nbsp;EN</option>
-          </select>
+            <select
+              className="text-xs ml-2 p-1 bg-white border-2 rounded-lg cursor-pointer"
+              name="language"
+              value={language}
+              onChange={(e) => changeLanguage(e.target.value)}
+            >
+              <option value="nl">🇳🇱 NL</option>
+              <option value="en">🇬🇧 EN</option>
+            </select>
+          </div>
         </div>
       </nav>
     </header>

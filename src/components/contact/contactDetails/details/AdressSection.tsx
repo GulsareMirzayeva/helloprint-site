@@ -8,7 +8,7 @@ export default function AdressSection() {
   const adressTitle = 'shopInfo.adress.title';
 
   return (
-    <div className="flex flex-col justify-between">
+    <div className="flex flex-col justify-between p-2">
       <div className="flex flex-col">
         <p className="text-sm font-bold pb-2">{t(adressTitle)}</p>
         <p className="text-sm">{shopInfoPaths.name}</p>

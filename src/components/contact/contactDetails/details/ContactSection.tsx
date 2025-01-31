@@ -9,7 +9,7 @@ export default function ContactSection() {
   const faceBookText = 'Facebook';
 
   return (
-    <div className="flex flex-col">
+    <div className="flex flex-col p-2">
       <p className="font-bold text-sm pb-2">{t(shopInfoPaths.contact)}</p>
       <p className="text-sm">
         {/* Phone icon */}

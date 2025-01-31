@@ -49,7 +49,7 @@ export default function FlyersDigitalPrintA6Pricing() {
   const digitalPrintTitle = t('customPrintPage.common.digitalPrint');
 
   return (
-    <section className="flex flex-col p-8 pb-2 w-full rounded-t-xl bg-gray-100">
+    <section className="flex flex-col p-2 sm:p-8 pb-2 w-full rounded-t-xl bg-gray-100">
       {/* Title, subtitle and introduction text */}
       <TitleWithIntroduction
         props={{
@@ -59,7 +59,7 @@ export default function FlyersDigitalPrintA6Pricing() {
           notification: flyersContentPaths.digitalPrintDeliveryTime,
         }}
       />
-      <div className="flex gap-16 pt-8">
+      <div className="flex flex-col md:flex-row gap-16 pt-8">
         <div>
           {/* Title, subtitle and introduction text */}
           <div className="flex flex-col">

@@ -62,7 +62,7 @@ export default function MessageForm() {
             type="text"
             id="name"
             name="name"
-            className="w-[500px] rounded-sm mt-1 p-1 pl-2 border"
+            className="w-full min-w-[300px] sm:min-w-[400px] md:min-w-[500px] max-w-full rounded-sm mt-1 p-1 pl-2 border"
             value={formUserName}
             onChange={handleOnChange}
             placeholder={t(contactFormTextContentPaths.formUserName)}
@@ -82,7 +82,7 @@ export default function MessageForm() {
             type="text"
             id="telNo"
             name="telNo"
-            className="w-[500px] rounded-sm mt-1 p-1 pl-2 border"
+            className="w-full min-w-[300px] sm:min-w-[400px] md:min-w-[500px] max-w-full rounded-sm mt-1 p-1 pl-2 border"
             value={formTelNumber}
             onChange={handleOnChange}
             placeholder={t(contactFormTextContentPaths.formUserTelNumber)}
@@ -102,7 +102,7 @@ export default function MessageForm() {
             type="text"
             id="email"
             name="email"
-            className="w-[500px] rounded-sm mt-1 p-1 pl-2 border"
+            className="w-full min-w-[300px] sm:min-w-[400px] md:min-w-[500px] max-w-full rounded-sm mt-1 p-1 pl-2 border"
             value={formEmailAdress}
             onChange={handleOnChange}
             placeholder={t(contactFormTextContentPaths.formUserEmailAdress)}
@@ -122,7 +122,7 @@ export default function MessageForm() {
             type="text"
             id="subject"
             name="subject"
-            className="w-[500px] rounded-sm mt-1 p-1 pl-2 border"
+            className="w-full min-w-[300px] sm:min-w-[400px] md:min-w-[500px] max-w-full rounded-sm mt-1 p-1 pl-2 border"
             value={formSubject}
             onChange={handleOnChange}
             placeholder={t(contactFormTextContentPaths.messageSubject)}
@@ -140,7 +140,7 @@ export default function MessageForm() {
           <textarea
             id="message"
             name="message"
-            className="rounded-sm w-[500px] h-[140px] mt-1 p-1 pl-2 border"
+            className="rounded-sm w-full min-w-[300px] sm:min-w-[400px] md:min-w-[500px] max-w-full h-[140px] mt-1 p-1 pl-2 border"
             value={formMessage}
             onChange={handleOnChange}
             placeholder={t(contactFormTextContentPaths.messageContent)}

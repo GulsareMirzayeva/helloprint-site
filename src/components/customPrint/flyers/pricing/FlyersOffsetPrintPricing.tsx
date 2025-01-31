@@ -53,7 +53,7 @@ export default function FlyersOffsetPrintPricing() {
   ];
 
   return (
-    <section className="flex flex-col pt-12 p-8 w-full rounded-xl">
+    <section className="flex flex-col pt-12 p-2 sm:p-8 w-full rounded-xl">
       {/* Title, subtitle and introduction text */}
       <TitleWithIntroduction
         props={{
@@ -63,7 +63,7 @@ export default function FlyersOffsetPrintPricing() {
           notification: flyersContentPaths.offsetPrintDeliveryTime,
         }}
       />
-      <div className="flex gap-16 pt-8">
+      <div className="flex flex-col md:flex-row gap-16 pt-8">
         <div>
           {/* Display a title and the papertype */}
           <div className="flex flex-col">
@@ -103,7 +103,7 @@ export default function FlyersOffsetPrintPricing() {
       </div>
 
       {/* Display notification message */}
-      <div className="pt-8">
+      <div className="pt-8 z-0 p-4">
         <Notification>
           <div className="flex items-end">
             <div className="text-[#FB0036] font-semibold">

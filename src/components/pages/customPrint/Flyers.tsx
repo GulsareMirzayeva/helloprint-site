@@ -14,22 +14,20 @@ export default function Flyers() {
   return (
     <div className="grid grid-cols-[1fr,minmax(0,1200px),1fr] w-full">
       <div></div> {/* Left empty colomn */}
-      <div className="flex flex-col items-start justify-start w-full pt-12">
+      <div className="flex flex-col items-start justify-start w-full px-2 pt-12">
         <IntroductionFlyers />
         <FlyersDigitalPrintA6Pricing />
         <FlyersDigitalPrintA5Pricing />
         <FlyersOffsetPrintA5Pricing />
-        <div className="py-4 pb-2">
-          <Divider flexItem variant="middle" />
-          <div className="pt-16 pb-2">
-            <TextBlock
-              value={customPrintingContentPaths.contactTitle}
-              variant={'subTitle'}
-            />
-          </div>
-          <div className="w-full">
-            <SendMessage />
-          </div>
+        <Divider flexItem variant="fullWidth" />
+        <div className="pt-16 pb-2">
+          <TextBlock
+            value={customPrintingContentPaths.contactTitle}
+            variant={'subTitle'}
+          />
+        </div>
+        <div className="w-full">
+          <SendMessage />
         </div>
       </div>
       <div></div> {/* Right empty colomn */}

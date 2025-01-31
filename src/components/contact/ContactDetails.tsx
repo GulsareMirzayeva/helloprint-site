@@ -8,9 +8,9 @@ import OpeningHoursSection from './contactDetails/details/OpeningHoursSection';
 // Contact details on the Contact page
 export default function ContactDetails() {
   return (
-    <section className="flex flex-col items-start w-full">
-      <div className="flex flex-col p-8 rounded-xl bg-gray-100">
-        <div className="flex justify-evenly ">
+    <section className="flex flex-col w-full">
+      <div className="flex flex-col p-2 sm:p-8 rounded-xl bg-gray-100 ">
+        <div className="flex flex-wrap md:justify-evenly sm:justify-start">
           <div>
             <AdressSection />
           </div>

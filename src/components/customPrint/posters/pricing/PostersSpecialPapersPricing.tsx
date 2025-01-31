@@ -34,8 +34,8 @@ export default function PostersSpecialPapersPricing() {
   const units: string[] = [t('commonWords.format'), t('commonWords.price')];
 
   return (
-    <section className="flex flex-col items-start p-8 w-full rounded-xl bg-gray-100">
-      <div className="flex flex-col items-start">
+    <section className="flex flex-col p-2 sm:p-8 w-full rounded-xl bg-gray-100">
+      <div className="flex flex-col">
         <TitleWithIntroduction
           props={{
             mainTitle: postersContentPaths.color,
@@ -43,7 +43,7 @@ export default function PostersSpecialPapersPricing() {
             introduction: postersContentPaths.introductionPolyAndHandMadeTable,
           }}
         />
-        <div className="flex gap-16 pt-8">
+        <div className="flex flex-col md:flex-row gap-16 pt-8">
           <div>
             {/* Title, subtitle and introduction text */}
             <div className="flex flex-col">

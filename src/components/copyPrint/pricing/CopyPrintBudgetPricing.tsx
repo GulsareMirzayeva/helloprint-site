@@ -49,7 +49,7 @@ export default function CopyPrintBudgetPricing() {
   ];
 
   return (
-    <section className="flex flex-col p-8 w-full rounded-xl bg-gray-100">
+    <section className="flex flex-col p-2 sm:p-8 w-full rounded-xl bg-gray-100">
       {/* Title, subtitle and introduction text */}
       <TitleWithIntroduction
         props={{
@@ -58,7 +58,7 @@ export default function CopyPrintBudgetPricing() {
           introduction: copyPrintContentPaths.introductionCopyPrintTable,
         }}
       />
-      <div className="flex gap-16 pt-8">
+      <div className="flex flex-col sm:flex-row gap-16 pt-8">
         <div>
           {/* Display table name and the papertype */}
           <div className="flex flex-col">

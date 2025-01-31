@@ -40,12 +40,12 @@ export default function Posters190grAnd260grPricing() {
   ];
 
   return (
-    <section className="flex flex-col items-start p-8 w-full rounded-b-xl">
+    <section className="flex flex-col p-2 sm:p-8 w-full rounded-b-xl">
       <div className="flex flex-col items-start">
-        <div className="flex gap-16">
+        <div className="flex flex-col md:flex-row gap-16">
           <div>
             {/* Title, subtitle and introduction text */}
-            <div className="flex flex-col items-baseline">
+            <div className="flex flex-col">
               <TextBlock
                 value={postersContentPaths.color}
                 variant="sectionTitle"
@@ -64,7 +64,7 @@ export default function Posters190grAnd260grPricing() {
           </div>
           <div>
             {/* Title, subtitle and introduction text */}
-            <div className="flex flex-col items-baseline">
+            <div className="flex flex-col">
               <TextBlock
                 value={postersContentPaths.color}
                 variant="sectionTitle"

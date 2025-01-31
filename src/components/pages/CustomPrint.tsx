@@ -18,7 +18,7 @@ export default function CustomPrint() {
     <div className="grid grid-cols-[1fr,minmax(0,1200px),1fr] w-full">
       <div></div> {/* Left empty colomn */}
       <div className="flex flex-col items-start justify-start w-full pt-12">
-        <div className="flex flex-col pb-16">
+        <div className="flex flex-col pb-16 px-2">
           <TextBlock
             value={customPrintingContentPaths.title}
             variant={'pageTitle'}
@@ -33,13 +33,13 @@ export default function CustomPrint() {
         <OverviewCategoryCard cardContent={flyersContent} />
         <OverviewCategoryCard cardContent={foldersContent} />
         <OverviewCategoryCard cardContent={postersContent} />
-        <div className="pt-8 pb-2">
+        <div className="pt-8 px-2">
           <TextBlock
             value={customPrintingContentPaths.contactTitle}
             variant={'subTitle'}
           />
         </div>
-        <div className="w-full">
+        <div className="w-full px-2">
           <SendMessage />
         </div>
       </div>

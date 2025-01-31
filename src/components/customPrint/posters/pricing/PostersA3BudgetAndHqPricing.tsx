@@ -38,77 +38,75 @@ export default function PostersA3BudgetAndHqPricing() {
   const units: string[] = [t('commonWords.prints'), t('commonWords.price')];
 
   return (
-    <section className="flex flex-col pt-12 p-8 w-full rounded-xl">
-      <div className="flex flex-col items-start">
-        <TitleWithIntroduction
-          props={{
-            mainTitle: postersContentPaths.color,
-            subTitle: postersContentPaths.typeA3Format,
-            introduction: postersContentPaths.introductionA3Table,
-          }}
-        />
-        <div className="flex gap-16 pt-8">
-          <div>
-            {/* Title, subtitle and introduction text */}
-            <div className="flex flex-col">
-              <div className="flex">
-                <TextBlock
-                  value={postersContentPaths.A3Hq}
-                  variant="sectionTitle"
-                />
-                &nbsp;
-                <TextBlock
-                  value={postersContentPaths.fullColor}
-                  variant="sectionTitle"
-                />
-                <div className="text-[#FB0036] font-semibold">
-                  <span>*</span>
-                </div>
-              </div>
+    <section className="flex flex-col p-2 sm:p-8 w-full rounded-xl bg-gray-100">
+      <TitleWithIntroduction
+        props={{
+          mainTitle: postersContentPaths.color,
+          subTitle: postersContentPaths.typeA3Format,
+          introduction: postersContentPaths.introductionA3Table,
+        }}
+      />
+      <div className="flex flex-col md:flex-row gap-4 sm:gap-4">
+        <div className="pt-8">
+          {/* Title, subtitle and introduction text */}
+          <div className="flex flex-col">
+            <div className="flex">
               <TextBlock
-                value={postersContentPaths.type150grLong}
-                variant="body"
+                value={postersContentPaths.A3Hq}
+                variant="sectionTitle"
               />
+              &nbsp;
+              <TextBlock
+                value={postersContentPaths.fullColor}
+                variant="sectionTitle"
+              />
+              <div className="text-[#FB0036] font-semibold">
+                <span>*</span>
+              </div>
             </div>
-            <PricingTable
-              headerTitles={headerTitles}
-              units={units}
-              options={splitPriceOptionsShortLow}
-              prices={pricesA3Hq}
+            <TextBlock
+              value={postersContentPaths.type150grLong}
+              variant="body"
             />
           </div>
-          <div>
-            {/* Title, subtitle and introduction text */}
-            <div className="flex flex-col">
-              <div className="flex">
-                <TextBlock
-                  value={postersContentPaths.A3Budget}
-                  variant="sectionTitle"
-                />
-                &nbsp;
-                <TextBlock
-                  value={postersContentPaths.fullColor}
-                  variant="sectionTitle"
-                />
-                <div className="text-[#FB0036] font-semibold">
-                  <span>*</span>
-                </div>
-              </div>
+          <PricingTable
+            headerTitles={headerTitles}
+            units={units}
+            options={splitPriceOptionsShortLow}
+            prices={pricesA3Hq}
+          />
+        </div>
+        <div className="pt-8">
+          {/* Title, subtitle and introduction text */}
+          <div className="flex flex-col">
+            <div className="flex">
               <TextBlock
-                value={postersContentPaths.type80grLong}
-                variant="body"
+                value={postersContentPaths.A3Budget}
+                variant="sectionTitle"
               />
+              &nbsp;
+              <TextBlock
+                value={postersContentPaths.fullColor}
+                variant="sectionTitle"
+              />
+              <div className="text-[#FB0036] font-semibold">
+                <span>*</span>
+              </div>
             </div>
-            <PricingTable
-              headerTitles={headerTitles}
-              units={units}
-              options={splitPriceOptionsShort}
-              prices={pricesA3Budget}
+            <TextBlock
+              value={postersContentPaths.type80grLong}
+              variant="body"
             />
           </div>
+          <PricingTable
+            headerTitles={headerTitles}
+            units={units}
+            options={splitPriceOptionsShort}
+            prices={pricesA3Budget}
+          />
         </div>
       </div>
-      <div className="pt-8">
+      <div className="pt-8 z-0 p-4">
         <Notification>
           <div className="flex items-end">
             <div className="text-[#FB0036] font-semibold">

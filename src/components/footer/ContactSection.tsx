@@ -6,7 +6,7 @@ import { t } from 'i18next';
 
 export default function ContactSection() {
   return (
-    <div className="flex flex-col">
+    <div className="flex flex-col min-w-[140px]">
       <p className="text-sm font-bold pb-2">{t(shopInfoPaths.contact)}</p>
       <p className="text-xs">
         <PhoneIcon className="mr-1" style={{ fontSize: '14px' }} />

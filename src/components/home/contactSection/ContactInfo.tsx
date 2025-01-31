@@ -13,17 +13,23 @@ export default function ContactInfo() {
   const { t } = useTranslation();
 
   return (
-    <div className="flex flex-col items-center gap-4 text-white ">
-      <TextBlock value={contactInfoTextContent.title} variant="xl5Title" />
+    <div className="flex flex-col items-center px-2 gap-4 text-white ">
+      <div className="hidden md:block">
+        <TextBlock value={contactInfoTextContent.title} variant="xl5Title" />
+      </div>
+      <div className="block md:hidden">
+        <TextBlock value={contactInfoTextContent.title} variant="xl4Title" />
+      </div>
+
       <div className="flex text-center">
-        <TextBlock value={contactInfoTextContent.subtitle} variant="subTitle" />
+        <TextBlock value={contactInfoTextContent.subtitle} variant="xlTitle" />
       </div>
 
       <div>
         {/* Link to cantact form */}
         <div className="flex pt-2">
           <Link to="/contact" className="flex pt-8 cursor-pointer">
-            <span className="text-2xl font-semibold">
+            <span className="text-xl font-semibold">
               <EmailIcon className="mr-2 mb-1" />
               {t(contactInfoTextContent.contactForm)}
             </span>
@@ -33,13 +39,13 @@ export default function ContactInfo() {
         {/* E-mail adres */}
         <div className="flex pt-2">
           <AlternateEmailIcon className="mt-1 mr-2" />
-          <TextBlock value={shopInfoPaths.email} variant="xl2Title" />
+          <TextBlock value={shopInfoPaths.email} variant="xlTitle" />
         </div>
 
         {/* Phone number */}
         <div className="flex pt-2">
           <PhoneIcon className="mt-1 mr-2" />
-          <TextBlock value={shopInfoPaths.telNo} variant="xl2Title" />
+          <TextBlock value={shopInfoPaths.telNo} variant="xlTitle" />
         </div>
       </div>
     </div>

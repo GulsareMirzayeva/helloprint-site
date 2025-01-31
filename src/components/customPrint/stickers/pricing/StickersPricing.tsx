@@ -25,7 +25,7 @@ export default function StickersPricing() {
 
   return (
     <section>
-      <div className="flex flex-col p-8 bg-gray-100 rounded-xl">
+      <div className="flex flex-col p-2 sm:p-8 bg-gray-100 rounded-xl">
         <TitleWithIntroduction
           props={{
             mainTitle: stickersContentPaths.largeFormat,

@@ -7,7 +7,6 @@ import { BeatLoader } from 'react-spinners';
 import { copyPrintContentPaths } from '../../../lib/translationPaths';
 import { TitleWithIntroduction } from '../../elementTemplates/TitleWithIntroduction';
 import { Notification } from '../../elementTemplates/Notification';
-import { Divider } from '@mui/material';
 
 /*
     Copy & Print - High Quality section
@@ -42,7 +41,7 @@ export default function CopyPrintHqPricing() {
   ];
 
   return (
-    <section className="flex flex-col p-8 w-full rounded-xl">
+    <section className="flex flex-col p-2 sm:p-8 w-full rounded-xl">
       {/* Title, subtitle and introduction text */}
       <TitleWithIntroduction
         props={{
@@ -81,7 +80,7 @@ export default function CopyPrintHqPricing() {
 
       {/* Display notification message(s) */}
 
-      <div className="pt-8">
+      <div className="pt-8 z-0 p-4">
         <Notification>
           <div className="flex items-end">
             <div className="text-[#FB0036] font-semibold">
@@ -101,9 +100,6 @@ export default function CopyPrintHqPricing() {
             variant="bodySmall"
           />
         </Notification>
-      </div>
-      <div className="pt-12">
-        <Divider flexItem variant="middle" />
       </div>
     </section>
   );

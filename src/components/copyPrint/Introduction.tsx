@@ -9,13 +9,17 @@ import { TextBlock } from '../elementTemplates/TextBlock';
 
 export default function IntroductionCopyPrint() {
   return (
-    <section className="flex gap-12 pb-16">
+    <section className="flex flex-col md:flex-row items-center lg:items-start gap-8 p-2 sm:p-4 pb-16">
       {/* Image next to the text content */}
-      <div className="flex-1 basis-1/3">
-        <img src={image1} alt="" />
+      <div>
+        <img
+          src={image1}
+          alt="Category image"
+          className="max-w-[300px] sm:max-w-[360px]"
+        />
       </div>
       {/* Introduction content */}
-      <div className="flex-1 basis-2/3">
+      <div className="flex-1">
         <TextBlock value={copyPrintContentPaths.title} variant="pageTitle" />
         <TextBlock value={copyPrintContentPaths.introduction} variant="body" />
         <br />

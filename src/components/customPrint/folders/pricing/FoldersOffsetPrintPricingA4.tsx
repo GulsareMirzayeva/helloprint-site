@@ -50,7 +50,7 @@ export default function FoldersOffsetPrintPricingA4() {
   ];
 
   return (
-    <section className="flex flex-col pt-12 p-8 pb-2 w-full rounded-t-xl">
+    <section className="flex flex-col pt-12 p-2 sm:p-8 pb-2 w-full rounded-t-xl">
       {/* Title, subtitle and introduction text */}
       <TitleWithIntroduction
         props={{
@@ -60,7 +60,7 @@ export default function FoldersOffsetPrintPricingA4() {
           notification: foldersContentPaths.offsetPrintDeliveryTime,
         }}
       />
-      <div className="flex gap-16 pt-8">
+      <div className="flex flex-col md:flex-row gap-16 pt-8">
         <div>
           {/* Display a title and the papertype */}
           <div className="flex flex-col items-baseline">

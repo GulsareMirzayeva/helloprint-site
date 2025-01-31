@@ -3,7 +3,7 @@ import { textileCategories } from '../../../lib/priceCategories';
 import { useData } from '../../../context/DataContext';
 import { useTranslation } from 'react-i18next';
 import { translateTextOptions } from '../../../utils/helperFunctions';
-import clothing from '../../../assets/custom-clothing/clothing-images.png';
+import image1 from '../../../assets/custom-clothing/clothing-images.png';
 import { BeatLoader } from 'react-spinners';
 import { TitleWithIntroduction } from '../../elementTemplates/TitleWithIntroduction';
 import { customClotingContentPaths } from '../../../lib/translationPaths';
@@ -41,7 +41,7 @@ export default function ClothingPiecesPricing() {
   ];
 
   return (
-    <section className="flex flex-col p-8 pb-4 w-full rounded-t-xl bg-gray-100">
+    <section className="flex flex-col items-center lg:items-start w-full gap-8 p-2 sm:p-8 pb-16 rounded-t-xl bg-gray-100">
       {/* Title, subtitle and introduction text */}
       <TitleWithIntroduction
         props={{
@@ -50,7 +50,7 @@ export default function ClothingPiecesPricing() {
           introduction: customClotingContentPaths.tableIntroduction,
         }}
       />
-      <div className="flex justify-between gap-20 pt-8">
+      <div className="flex flex-col md:flex-row justify-between gap-20 pt-8">
         <div>
           {/* Display pricing table */}
           <PricingTable
@@ -60,8 +60,8 @@ export default function ClothingPiecesPricing() {
             prices={pricePathsTextile}
           />
         </div>
-        <div className="pr-10">
-          <img src={clothing} alt="" />
+        <div>
+          <img src={image1} alt="Category image" className="sm:min-w-[380px]" />
         </div>
       </div>
     </section>

@@ -49,11 +49,11 @@ export default function FlyersDigitalPrintA5Pricing() {
   ];
 
   return (
-    <section className="flex flex-col p-8 w-full rounded-b-xl bg-gray-100">
-      <div className="flex gap-16">
-        <div className="flex flex-col">
+    <section className="flex flex-col p-2 sm:p-8 w-full rounded-b-xl bg-gray-100">
+      <div className="flex flex-col md:flex-row gap-16">
+        <div>
           {/* Title, subtitle and introduction text */}
-          <div>
+          <div className="flex flex-col">
             <TextBlock
               value={flyersContentPaths.formatA5}
               variant="sectionTitle"

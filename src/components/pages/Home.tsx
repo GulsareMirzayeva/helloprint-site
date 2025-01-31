@@ -12,7 +12,7 @@ export default function Home() {
     <div className="flex flex-col w-full gap-4 overflow-scroll">
       <section className="grid grid-cols-[1fr,minmax(0,1200px),1fr]">
         <div></div> {/* Left empty colomn */}
-        <div className="flex">
+        <div>
           <WelcomeMessage />
         </div>
         <div></div> {/* Right empty colomn */}
@@ -20,7 +20,7 @@ export default function Home() {
 
       <section className="grid grid-cols-[1fr,minmax(0,1200px),1fr]">
         <div></div> {/* Left empty colomn */}
-        <div className="flex">
+        <div>
           <ProductCategoryCards />
         </div>
         <div></div> {/* Right empty colomn */}
@@ -31,7 +31,7 @@ export default function Home() {
 
       <section className="grid grid-cols-[1fr,minmax(0,1200px),1fr]">
         <div></div> {/* Left empty colomn */}
-        <div className="flex">
+        <div className="px-2">
           <SendMessage />
         </div>
         <div></div> {/* Right empty colomn */}
