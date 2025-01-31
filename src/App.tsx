@@ -9,7 +9,7 @@ export default function App() {
   return (
     <div className="flex flex-col relative min-h-screen font-sans text-[#202020]">
       <Header />
-      <div className="flex flex-grow h-full overflow-scroll">
+      <div className="flex flex-grow h-full overflow-hidden">
         <ScrollToTop />
         <Outlet />
       </div>

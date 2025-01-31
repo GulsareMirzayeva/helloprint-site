@@ -9,7 +9,7 @@ export default function Home() {
   useTranslation();
 
   return (
-    <div className="flex flex-col w-full gap-4 overflow-scroll">
+    <div className="flex flex-col w-full gap-4">
       <section className="grid grid-cols-[1fr,minmax(0,1200px),1fr]">
         <div></div> {/* Left empty colomn */}
         <div>
