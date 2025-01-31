@@ -15,7 +15,7 @@
   },
   "home": {
     "title": "Welcome to Copy <br /> & Printshop 't Hartje",
-    "subtitle": "A trusted name in Groningen for over 45 years.",
+    "subTitle": "A trusted name in Groningen for over 45 years.",
     "introduction": "We are your go-to destination for everything related to copying, printing, and press services. <br /> We also offer a wide range of <b>office supplies</b> and <b>cartridges</b>.",
     "readMore": "Read more..."
   },
@@ -25,7 +25,7 @@
       "icon": 0,
       "introduction": "Fast printing or copying, from letters to reports. Make use of our self-service.",
       "content": [
-        "Colour",
+        "Color",
         "Black/White",
         "Budget option",
         "High Quality",
@@ -97,7 +97,7 @@
       "telePhone": "On business days, we are available by phone from"
     },
     "contact": {
-      "contact": "Contact details",
+      "contactDetails": "Contact details",
       "title": "Got a question?",
       "subtitle": "Can't find the right product or price? <br/> Or would you like to know more about submitting assignments? <br/>You can always request a free, no-obligation quote via:",
       "contactForm": "Send message"
@@ -134,7 +134,7 @@
       "tableIntroduction": "Our DTG printer allows us to print directly onto clothing, ideal for detailed<br />and vibrant designs. Below are the rates for garment printing.",
       "tableHead": "DTG",
       "tableHeadWhiteTextile": "Textile White",
-      "tableHeadcolored": "Textile Colour",
+      "tableHeadcolored": "Textile Color",
       "frontChestLogo": "Front chest logo",
       "frontBackLarge": "Front or back large",
       "frontSmallBackLarge": "Front small and back large",
@@ -160,7 +160,7 @@
     },
     "cards": {
       "title": "Business Cards",
-      "introduction": "Minimale afname 100 stuks, de kaartjes worden geprint op 350gr.papier. De prijzen zijn op basis van een en het zelfde bestand. Dubbel gevouwen visitekaartjes is prijs keer 2. De kaartjes worden gesneden en u krijgt een plastic bewaardoosje.",
+      "introduction": "Engels!! Minimale afname 100 stuks, de kaartjes worden geprint op 350gr.papier. De prijzen zijn op basis van een en het zelfde bestand. Dubbel gevouwen visitekaartjes is prijs keer 2. De kaartjes worden gesneden en u krijgt een plastic bewaardoosje.",
       "introductionCardsTable": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
       "offsetPrintSingleSided": "Single-sided - UV varnish gloss",
       "offsetPrintDoubleSided": "Double-sided - Dispersion varnish matte"
@@ -306,7 +306,7 @@
     "tableCaption": "Table showing pricing options with their corresponding prices."
   },
   "commonWords": {
-    "color": "Colour",
+    "color": "Color",
     "blackWhite": "Black and White",
     "colorOrBlackWhite": "Color or Black and White",
     "vinyl": "Vinyl",

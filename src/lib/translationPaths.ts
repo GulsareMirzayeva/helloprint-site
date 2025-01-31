@@ -19,7 +19,7 @@ export const shopInfoPaths = {
   hour: 'shopInfo.openingHours.hour',
   termsOfSaleTitle: 'shopInfo.termsOfSale.title',
   telePhone: 'shopInfo.openingHours.telePhone',
-  contact: 'shopInfo.contact.contact',
+  contact: 'shopInfo.contact.contactDetails',
 };
 
 // Paths to contact information content in translation files

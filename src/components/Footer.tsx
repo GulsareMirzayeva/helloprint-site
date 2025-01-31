@@ -2,8 +2,11 @@ import ContactSection from './footer/ContactSection';
 import OpeningHoursSection from './footer/OpeningHoursSection';
 import TermsOfSaleSection from './footer/TermsOfSaleSection';
 import AdressSection from './footer/AdressSection';
+import { useTranslation } from 'react-i18next';
 
 export default function Footer() {
+  useTranslation();
+
   return (
     <footer className="grid grid-cols-[1fr,minmax(0,1200px),1fr] w-full px-4 border-t-2 border-[#FB0036] py-2">
       <div></div> {/* Left empty column */}
