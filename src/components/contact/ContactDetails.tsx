@@ -21,7 +21,7 @@ export default function ContactDetails() {
             <OpeningHoursSection />
           </div>
         </div>
-        <div className="mt-10">
+        <div className="pt-10">
           <GoogleMap />
         </div>
       </div>
