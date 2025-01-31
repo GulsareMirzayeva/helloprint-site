@@ -21,7 +21,7 @@ export default function Contact() {
           />
           <TextBlock
             value={customPrintingContentPaths.contactTitle}
-            variant={'sectionIntroduction'}
+            variant={'body'}
           />
         </div>
         <div>

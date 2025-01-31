@@ -199,4 +199,17 @@ export const contactFormTextContentPaths = {
   messageContent: 'contactPage.messageContent',
   messageSubject: 'contactPage.messageSubject',
   messageSubmit: 'contactPage.messageSubmit',
+  telephoneNo: 'commonWords.telephoneNo',
+  email: 'commonWords.email',
+  confirmMessage: 'shopInfo.contact.confirmMessage',
+};
+
+export const contactFormErrorPaths = {
+  telNoOnlyNumbers: 'shopInfo.contact.errors.telNoOnlyNumbers',
+  telNoMinNumbers: 'shopInfo.contact.errors.telNoMinNumbers',
+  telNoMaxNumbers: 'shopInfo.contact.errors.telNoMaxNumbers',
+  emailValidAddress: 'shopInfo.contact.errors.emailValidAddress',
+  messageMinChars: 'shopInfo.contact.errors.messageMinChars',
+  messageRequired: 'shopInfo.contact.errors.messageRequired',
+  requiredEmailOrTelNo: 'shopInfo.contact.errors.requiredEmailOrTelNo',
 };

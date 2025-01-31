@@ -100,7 +100,17 @@
       "contactDetails": "Contact details",
       "title": "Got a question?",
       "subtitle": "Can't find the right product or price? <br/> Or would you like to know more about submitting assignments? <br/>You can always request a free, no-obligation quote via:",
-      "contactForm": "Send message"
+      "contactForm": "Send message",
+      "confirmMessage": "Message sent!<br />We will contact you as soon as possible.",
+      "errors": {
+        "telNoOnlyNumbers": "Phone number must contain only digits.",
+        "telNoMinNumbers": "Phone number must be at least 10 digits long.",
+        "telNoMaxNumbers": "Phone number can be at most 15 digits long.",
+        "emailValidAddress": "Please enter a valid email address.",
+        "messageMinChars": "Message must be at least 10 characters long.",
+        "messageRequired": "Message is required.",
+        "requiredEmailOrTelNo": "Please provide either an email address or a phone number."
+      }
     }
   },
   "customClothingPage": {
@@ -329,6 +339,8 @@
     "flyers": "Flyers",
     "folders": "Folders",
     "posters": "Posters",
-    "facebook": "Facebook"
+    "facebook": "Facebook",
+    "telephoneNo": "Phone number",
+    "email": "Email address"
   }
 }
