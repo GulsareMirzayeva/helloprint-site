@@ -108,7 +108,7 @@
       "title": "Een Vraag?",
       "subtitle": "Kunt u het juiste product of een prijs niet vinden? <br/> Of wilt u meer weten over het aanleveren van opdrachten? <br/> Het is altijd mogelijk een vrijblijvende offerte aan te vragen via:",
       "contactForm": "Stuur bericht",
-      "confirmMessage": "<b>Bericht verzonden!</b><br />Wij zullen zo spoedig contact me u opnemen.",
+      "confirmMessage": "<b>Bericht verzonden!</b><br />Wij zullen zo spoedig contact met u opnemen.",
       "errors": {
         "telNoOnlyNumbers": "Telefoonnummer moet alleen cijfers bevatten.",
         "telNoMinNumbers": "Telefoonnummer moet minimaal 10 cijfers bevatten.",
