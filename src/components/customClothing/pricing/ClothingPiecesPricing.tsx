@@ -25,9 +25,7 @@ export default function ClothingPiecesPricing() {
   }, [prices, t]);
 
   if (isLoading) {
-    <div className="flex w-full justify-center py-8">
-      <BeatLoader color="#FB0036" />
-    </div>;
+    return <BeatLoader color="#FB0036" />;
   }
 
   if (error) {
