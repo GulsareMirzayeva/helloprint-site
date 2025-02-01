@@ -1,5 +1,4 @@
-import { postersContent } from '../../../lib/customPrintOverviewCardsContent';
-import { postersContentPaths } from '../../../lib/translationPaths';
+import { postersContent } from '../../../lib/categoriesContent';
 import { TextBlock } from '../../elementTemplates/TextBlock';
 
 /*
@@ -21,8 +20,8 @@ export default function IntroductionPosters() {
 
       {/* Introduction content */}
       <div className="flex-1 basis-2/3">
-        <TextBlock value={postersContentPaths.title} variant="pageTitle" />
-        <TextBlock value={postersContentPaths.introduction} variant="body" />
+        <TextBlock value={postersContent.titlePath} variant="pageTitle" />
+        <TextBlock value={postersContent.textContentPath} variant="body" />
       </div>
     </section>
   );

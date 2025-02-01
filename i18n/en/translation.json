@@ -119,7 +119,7 @@
   "customClothingPage": {
     "introduction": {
       "title": "Clothing Printing",
-      "text": "We offer various techniques for printing your clothing.<br />We can print and cut on flex material, which is ideal for a logo or text in a single color.<br />Additionally, we have a DTG machine, which stands for Direct To Garment. This allows us to print directly onto clothing.",
+      "introduction": "We offer various techniques for printing your clothing.<br />We can print and cut on flex material, which is ideal for a logo or text in a single color.<br />Additionally, we have a DTG machine, which stands for Direct To Garment. This allows us to print directly onto clothing.",
       "subText": "If you bring your own clothing, please keep the following in mind:",
       "listItem1": "Clothing must be clean/washed",
       "listItem2": "Printing on your own clothing is at your own risk",

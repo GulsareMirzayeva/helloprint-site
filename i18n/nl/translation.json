@@ -126,7 +126,7 @@
   "customClothingPage": {
     "introduction": {
       "title": "Bedrukken van kleding",
-      "text": "Voor het bedrukken van uw kleding hebben wij diverse technieken.<br />We kunnen printen en snijden op flex materiaal, dit is ideaal voor een logo of tekst in één kleur.<br />Daarnaast hebben wij ook een DTG machine, DTG staat voor Direct To Garment, hierbij printen we direct op kleding.",
+      "introduction": "Voor het bedrukken van uw kleding hebben wij diverse technieken.<br />We kunnen printen en snijden op flex materiaal, dit is ideaal voor een logo of tekst in één kleur.<br />Daarnaast hebben wij ook een DTG machine, DTG staat voor Direct To Garment, hierbij printen we direct op kleding.",
       "subText": "Wanneer u eigen kleding meeneemt, houd hier dan rekening mee:",
       "listItem1": "Kleding dient schoon/gewassen te zijn",
       "listItem2": "Bedrukken op uw eigen kleding is op eigen risico",

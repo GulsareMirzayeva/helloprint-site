@@ -1,7 +1,6 @@
 import { useTranslation } from 'react-i18next';
-import image7 from '../../assets/introduction-images/image7.jpg';
 import { TextBlock } from '../elementTemplates/TextBlock';
-import { customClotingContentPaths } from '../../lib/translationPaths';
+import { customClothingContent } from '../../lib/categoriesContent';
 
 /*
     Content at the top of the 'Custom clothing' page
@@ -16,7 +15,7 @@ export default function IntroductionCustomClothing() {
       {/* Image next to the text content */}
       <div>
         <img
-          src={image7}
+          src={customClothingContent.image}
           alt="Category image"
           className="max-w-[300px] sm:max-w-[360px]"
         />
@@ -24,16 +23,13 @@ export default function IntroductionCustomClothing() {
 
       {/* Introduction content */}
       <div className="flex-1">
-        <TextBlock
-          value={customClotingContentPaths.title}
-          variant="pageTitle"
-        />
-        <TextBlock value={customClotingContentPaths.text} variant="body" />
+        <TextBlock value={customClothingContent.title} variant="pageTitle" />
+        <TextBlock value={customClothingContent.introduction} variant="body" />
         <br />
-        <TextBlock value={customClotingContentPaths.subText} variant="body" />
+        <TextBlock value={customClothingContent.subText} variant="body" />
         <ul className="list-disc pl-3 pt-1">
-          <li>{t(customClotingContentPaths.listItem1)}</li>
-          <li>{t(customClotingContentPaths.listItem2)}</li>
+          <li>{t(customClothingContent.listItem1)}</li>
+          <li>{t(customClothingContent.listItem2)}</li>
         </ul>
       </div>
     </section>

@@ -1,5 +1,4 @@
-import { cardsContent } from '../../../lib/customPrintOverviewCardsContent';
-import { cardsContentPaths } from '../../../lib/translationPaths';
+import { cardsContent } from '../../../lib/categoriesContent';
 import { TextBlock } from '../../elementTemplates/TextBlock';
 
 /*
@@ -21,8 +20,8 @@ export default function IntroductionCards() {
 
       {/* Introduction content */}
       <div className="flex-1 basis-2/3">
-        <TextBlock value={cardsContentPaths.title} variant="pageTitle" />
-        <TextBlock value={cardsContentPaths.introduction} variant="body" />
+        <TextBlock value={cardsContent.titlePath} variant="pageTitle" />
+        <TextBlock value={cardsContent.textContentPath} variant="body" />
       </div>
     </section>
   );

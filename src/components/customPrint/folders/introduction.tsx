@@ -1,5 +1,4 @@
-import { foldersContent } from '../../../lib/customPrintOverviewCardsContent';
-import { foldersContentPaths } from '../../../lib/translationPaths';
+import { foldersContent } from '../../../lib/categoriesContent';
 import { TextBlock } from '../../elementTemplates/TextBlock';
 
 /*
@@ -21,8 +20,8 @@ export default function IntroductionFlyers() {
 
       {/* Introduction content */}
       <div className="flex-1 basis-2/3">
-        <TextBlock value={foldersContentPaths.title} variant="pageTitle" />
-        <TextBlock value={foldersContentPaths.introduction} variant="body" />
+        <TextBlock value={foldersContent.titlePath} variant="pageTitle" />
+        <TextBlock value={foldersContent.textContentPath} variant="body" />
       </div>
     </section>
   );

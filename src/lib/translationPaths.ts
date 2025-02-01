@@ -60,7 +60,7 @@ export const menuButtonNames = {
 export const customClotingContentPaths = {
   title: 'customClothingPage.introduction.title',
   subTitle: 'customClothingPage.pricingTextile.subTitle',
-  text: 'customClothingPage.introduction.text',
+  introduction: 'customClothingPage.introduction.introduction',
   subText: 'customClothingPage.introduction.subText',
   listItem1: 'customClothingPage.introduction.listItem1',
   listItem2: 'customClothingPage.introduction.listItem2',

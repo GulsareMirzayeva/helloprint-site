@@ -6,7 +6,7 @@ import {
   foldersContent,
   postersContent,
   stickersContent,
-} from '../../lib/customPrintOverviewCardsContent';
+} from '../../lib/categoriesContent';
 import SendMessage from '../contact/SendMessage';
 import { TextBlock } from '../elementTemplates/TextBlock';
 import {
