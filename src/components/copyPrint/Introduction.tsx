@@ -1,4 +1,4 @@
-import { copyPrintContent } from '../../lib/categoriesContent';
+import { copyPrintContentPaths } from '../../lib/translationPaths';
 import { TextBlock } from '../elementTemplates/TextBlock';
 
 /*
@@ -12,19 +12,22 @@ export default function IntroductionCopyPrint() {
       {/* Image next to the text content */}
       <div>
         <img
-          src={copyPrintContent.image}
+          src={copyPrintContentPaths.image}
           alt="Category image"
           className="max-w-[300px] sm:max-w-[360px]"
         />
       </div>
       {/* Introduction content */}
       <div className="flex-1">
-        <TextBlock value={copyPrintContent.title} variant="pageTitle" />
-        <TextBlock value={copyPrintContent.introduction} variant="body" />
+        <TextBlock value={copyPrintContentPaths.title} variant="pageTitle" />
+        <TextBlock value={copyPrintContentPaths.introduction} variant="body" />
         <br />
-        <TextBlock value={copyPrintContent.titleLaminate} variant="subTitle" />
         <TextBlock
-          value={copyPrintContent.introductionBinding}
+          value={copyPrintContentPaths.titleLaminate}
+          variant="subTitle"
+        />
+        <TextBlock
+          value={copyPrintContentPaths.introductionBinding}
           variant="body"
         />
       </div>

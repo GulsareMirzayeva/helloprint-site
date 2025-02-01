@@ -1,4 +1,4 @@
-import { cardsContent } from '../../../lib/categoriesContent';
+import { cardsContentPaths } from '../../../lib/translationPaths';
 import { TextBlock } from '../../elementTemplates/TextBlock';
 
 /*
@@ -12,7 +12,7 @@ export default function IntroductionCards() {
       {/* Image next to the text content */}
       <div>
         <img
-          src={cardsContent.image}
+          src={cardsContentPaths.image}
           alt="Category image"
           className="max-w-[300px] sm:max-w-[360px]"
         />
@@ -20,8 +20,8 @@ export default function IntroductionCards() {
 
       {/* Introduction content */}
       <div className="flex-1 basis-2/3">
-        <TextBlock value={cardsContent.titlePath} variant="pageTitle" />
-        <TextBlock value={cardsContent.textContentPath} variant="body" />
+        <TextBlock value={cardsContentPaths.title} variant="pageTitle" />
+        <TextBlock value={cardsContentPaths.introduction} variant="body" />
       </div>
     </section>
   );

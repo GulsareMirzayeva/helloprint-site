@@ -1,4 +1,4 @@
-import { postersContent } from '../../../lib/categoriesContent';
+import { postersContentPaths } from '../../../lib/translationPaths';
 import { TextBlock } from '../../elementTemplates/TextBlock';
 
 /*
@@ -12,7 +12,7 @@ export default function IntroductionPosters() {
       {/* Image next to the text content */}
       <div>
         <img
-          src={postersContent.image}
+          src={postersContentPaths.image}
           alt="Category image"
           className="max-w-[300px] sm:max-w-[360px]"
         />
@@ -20,8 +20,8 @@ export default function IntroductionPosters() {
 
       {/* Introduction content */}
       <div className="flex-1 basis-2/3">
-        <TextBlock value={postersContent.titlePath} variant="pageTitle" />
-        <TextBlock value={postersContent.textContentPath} variant="body" />
+        <TextBlock value={postersContentPaths.title} variant="pageTitle" />
+        <TextBlock value={postersContentPaths.introduction} variant="body" />
       </div>
     </section>
   );

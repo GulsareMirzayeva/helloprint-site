@@ -1,4 +1,4 @@
-import { flyersContent } from '../../../lib/categoriesContent';
+import { flyersContentPaths } from '../../../lib/translationPaths';
 import { TextBlock } from '../../elementTemplates/TextBlock';
 
 /*
@@ -12,7 +12,7 @@ export default function IntroductionFlyers() {
       {/* Image next to the text content */}
       <div>
         <img
-          src={flyersContent.image}
+          src={flyersContentPaths.image}
           alt="Category image"
           className="max-w-[300px] sm:max-w-[360px]"
         />
@@ -20,8 +20,8 @@ export default function IntroductionFlyers() {
 
       {/* Introduction content */}
       <div className="flex-1 basis-2/3">
-        <TextBlock value={flyersContent.titlePath} variant="pageTitle" />
-        <TextBlock value={flyersContent.textContentPath} variant="body" />
+        <TextBlock value={flyersContentPaths.title} variant="pageTitle" />
+        <TextBlock value={flyersContentPaths.introduction} variant="body" />
       </div>
     </section>
   );

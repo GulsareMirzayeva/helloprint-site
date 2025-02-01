@@ -1,6 +1,6 @@
 import { useTranslation } from 'react-i18next';
 import { TextBlock } from '../../elementTemplates/TextBlock';
-import { stickersContent } from '../../../lib/categoriesContent';
+import { stickersContentPaths } from '../../../lib/translationPaths';
 
 /*
     Content at the top of the 'Stickers' page
@@ -15,7 +15,7 @@ export default function IntroductionStickers() {
       {/* Image next to the text content */}
       <div>
         <img
-          src={stickersContent.image}
+          src={stickersContentPaths.image}
           alt="Category image"
           className="max-w-[300px] sm:max-w-[360px]"
         />
@@ -24,18 +24,24 @@ export default function IntroductionStickers() {
       {/* Introduction content */}
       <div className="flex-1">
         <div className="pb-6">
-          <TextBlock value={stickersContent.titlePath} variant="pageTitle" />
-          <TextBlock value={stickersContent.textContentPath} variant="body" />
+          <TextBlock value={stickersContentPaths.title} variant="pageTitle" />
+          <TextBlock value={stickersContentPaths.introduction} variant="body" />
         </div>
         <div>
-          <TextBlock value={stickersContent.materialTitle} variant="subTitle" />
-          <TextBlock value={stickersContent.materialContent} variant="body" />
+          <TextBlock
+            value={stickersContentPaths.materialTitle}
+            variant="subTitle"
+          />
+          <TextBlock
+            value={stickersContentPaths.materialContent}
+            variant="body"
+          />
         </div>
         <ul className="list-disc pl-4 pt-4">
-          <li>{t(stickersContent.listItem1)}</li>
-          <li>{t(stickersContent.listItem2)}</li>
-          <li>{t(stickersContent.listItem3)}</li>
-          <li>{t(stickersContent.listItem4)}</li>
+          <li>{t(stickersContentPaths.listItem1)}</li>
+          <li>{t(stickersContentPaths.listItem2)}</li>
+          <li>{t(stickersContentPaths.listItem3)}</li>
+          <li>{t(stickersContentPaths.listItem4)}</li>
         </ul>
       </div>
     </section>

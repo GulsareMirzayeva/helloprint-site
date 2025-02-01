@@ -1,3 +1,11 @@
+import image7 from '../assets/introduction-images/image7.jpg';
+import image6 from '../assets/introduction-images/image6.jpg';
+import image5 from '../assets/introduction-images/image5.jpg';
+import image4 from '../assets/introduction-images/image4.jpg';
+import image3 from '../assets/introduction-images/image3.jpg';
+import image2 from '../assets/introduction-images/image2.jpg';
+import image1 from '../assets/introduction-images/image1.jpg';
+
 export const homeContentPaths = {
   title: 'home.title',
   subTitle: 'home.subTitle',
@@ -58,6 +66,7 @@ export const menuButtonNames = {
 
 // Paths to text content in translation files
 export const customClotingContentPaths = {
+  image: image7,
   title: 'customClothingPage.introduction.title',
   subTitle: 'customClothingPage.pricingTextile.subTitle',
   introduction: 'customClothingPage.introduction.introduction',
@@ -82,6 +91,7 @@ export const customPrintingContentPaths = {
 };
 
 export const cardsContentPaths = {
+  image: image6,
   title: 'customPrintPage.cards.title',
   introduction: 'customPrintPage.cards.introduction',
   introductionDigitalPrintTable:
@@ -100,6 +110,7 @@ export const cardsContentPaths = {
 };
 
 export const flyersContentPaths = {
+  image: image1,
   title: 'customPrintPage.flyers.title',
   introduction: 'customPrintPage.flyers.introductionFlyers',
   introductionDigitalPrintTable:
@@ -117,6 +128,7 @@ export const flyersContentPaths = {
 };
 
 export const foldersContentPaths = {
+  image: image3,
   title: 'customPrintPage.folders.title',
   introduction: 'customPrintPage.folders.introductionFolders',
   introductionDigitalPrintTable:
@@ -137,6 +149,7 @@ export const foldersContentPaths = {
 };
 
 export const postersContentPaths = {
+  image: image4,
   title: 'customPrintPage.posters.title',
   introduction: 'customPrintPage.posters.introductionPosters',
   introduction80GrTable: 'customPrintPage.posters.introduction80GrTable',
@@ -167,17 +180,23 @@ export const postersContentPaths = {
 };
 
 export const stickersContentPaths = {
+  image: image2,
   title: 'customPrintPage.stickers.title',
   introductionLargeFormatTable:
     'customPrintPage.stickers.introductionLargeFormatTable',
   introduction: 'customPrintPage.stickers.introduction',
   materialTitle: 'customPrintPage.stickers.materialTitle',
   materialContent: 'customPrintPage.stickers.materialContent',
+  listItem1: 'customPrintPage.stickers.listItem1',
+  listItem2: 'customPrintPage.stickers.listItem2',
+  listItem3: 'customPrintPage.stickers.listItem3',
+  listItem4: 'customPrintPage.stickers.listItem4',
   vinyl: 'commonWords.vinyl',
   largeFormat: 'paperFormats.largeFormat',
 };
 
 export const copyPrintContentPaths = {
+  image: image5,
   title: 'copyPrintPage.title',
   introduction: 'copyPrintPage.introduction',
   introductionBinding: 'copyPrintPage.introductionBinding',
