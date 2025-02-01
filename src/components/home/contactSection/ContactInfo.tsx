@@ -22,7 +22,10 @@ export default function ContactInfo() {
       </div>
 
       <div className="flex text-center">
-        <TextBlock value={contactInfoTextContent.subtitle} variant="xlTitle" />
+        <TextBlock
+          value={contactInfoTextContent.homePagesubtitle}
+          variant="xlTitle"
+        />
       </div>
 
       <div>

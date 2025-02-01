@@ -1,4 +1,4 @@
-import { customPrintingContentPaths } from '../../lib/translationPaths';
+import { shopInfoPaths } from '../../lib/translationPaths';
 import SendMessage from '../contact/SendMessage';
 import IntroductionCopyPrint from '../copyPrint/Introduction';
 import { useTranslation } from 'react-i18next';
@@ -18,10 +18,7 @@ export default function CopyPrint() {
         <CopyPrintHqPricing />
         <Divider flexItem variant="fullWidth" />
         <div className="pt-16 pb-2">
-          <TextBlock
-            value={customPrintingContentPaths.contactTitle}
-            variant={'subTitle'}
-          />
+          <TextBlock value={shopInfoPaths.contactTitle} variant={'subTitle'} />
         </div>
         <div className="w-full">
           <SendMessage />

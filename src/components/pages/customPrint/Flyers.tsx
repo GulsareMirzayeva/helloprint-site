@@ -3,7 +3,7 @@ import FlyersDigitalPrintA5Pricing from '../../customPrint/flyers/pricing/Flyers
 import FlyersDigitalPrintA6Pricing from '../../customPrint/flyers/pricing/FlyersDigitalPrintA6Pricing';
 import IntroductionFlyers from '../../customPrint/flyers/Introduction';
 import FlyersOffsetPrintA5Pricing from '../../customPrint/flyers/pricing/FlyersOffsetPrintPricing';
-import { customPrintingContentPaths } from '../../../lib/translationPaths';
+import { shopInfoPaths } from '../../../lib/translationPaths';
 import SendMessage from '../../contact/SendMessage';
 import { TextBlock } from '../../elementTemplates/TextBlock';
 import { Divider } from '@mui/material';
@@ -21,10 +21,7 @@ export default function Flyers() {
         <FlyersOffsetPrintA5Pricing />
         <Divider flexItem variant="fullWidth" />
         <div className="pt-16 pb-2">
-          <TextBlock
-            value={customPrintingContentPaths.contactTitle}
-            variant={'subTitle'}
-          />
+          <TextBlock value={shopInfoPaths.contactTitle} variant={'subTitle'} />
         </div>
         <div className="w-full">
           <SendMessage />

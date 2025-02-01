@@ -2,7 +2,7 @@ import IntroductionCustomClothing from '../customClothing/Introduction';
 import FlexAndDtgPricing from '../customClothing/pricing/FlexAndDtgPricing';
 import ClothingPiecesPricing from '../customClothing/pricing/ClothingPiecesPricing';
 import { useTranslation } from 'react-i18next';
-import { customPrintingContentPaths } from '../../lib/translationPaths';
+import { shopInfoPaths } from '../../lib/translationPaths';
 import SendMessage from '../contact/SendMessage';
 import { TextBlock } from '../elementTemplates/TextBlock';
 
@@ -17,10 +17,7 @@ export default function CustomClothing() {
         <ClothingPiecesPricing />
         <FlexAndDtgPricing />
         <div className="pt-16 pb-2">
-          <TextBlock
-            value={customPrintingContentPaths.contactTitle}
-            variant={'subTitle'}
-          />
+          <TextBlock value={shopInfoPaths.contactTitle} variant={'subTitle'} />
         </div>
         <div className="w-full">
           <SendMessage />

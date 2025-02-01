@@ -5,7 +5,7 @@ import Posters190grAnd260grPricing from '../../customPrint/posters/pricing/Poste
 import Posters80grPricing from '../../customPrint/posters/pricing/Posters80grPricing';
 import PostersA3BudgetAndHqPricing from '../../customPrint/posters/pricing/PostersA3BudgetAndHqPricing';
 import PostersSpecialPapersPricing from '../../customPrint/posters/pricing/PostersSpecialPapersPricing';
-import { customPrintingContentPaths } from '../../../lib/translationPaths';
+import { shopInfoPaths } from '../../../lib/translationPaths';
 import SendMessage from '../../contact/SendMessage';
 import { TextBlock } from '../../elementTemplates/TextBlock';
 
@@ -23,10 +23,7 @@ export default function Posters() {
         <PostersSpecialPapersPricing />
         <PostersA3BudgetAndHqPricing />
         <div className="pt-16 pb-2">
-          <TextBlock
-            value={customPrintingContentPaths.contactTitle}
-            variant={'subTitle'}
-          />
+          <TextBlock value={shopInfoPaths.contactTitle} variant={'subTitle'} />
         </div>
         <div className="w-full">
           <SendMessage />

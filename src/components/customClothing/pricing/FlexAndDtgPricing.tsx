@@ -116,7 +116,7 @@ export default function FlexAndDtgPricing() {
       </div>
 
       {/* Display notification message */}
-      <div className="pt-8 z-0 p-4">
+      <div className="pt-8 z-0 px-4">
         <Notification>
           <TextBlock
             value={customClotingContentPaths.notificationFirst}

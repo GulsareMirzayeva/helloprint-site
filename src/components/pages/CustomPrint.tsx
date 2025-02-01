@@ -9,7 +9,10 @@ import {
 } from '../../lib/customPrintOverviewCardsContent';
 import SendMessage from '../contact/SendMessage';
 import { TextBlock } from '../elementTemplates/TextBlock';
-import { customPrintingContentPaths } from '../../lib/translationPaths';
+import {
+  customPrintingContentPaths,
+  shopInfoPaths,
+} from '../../lib/translationPaths';
 
 export default function CustomPrint() {
   useTranslation();
@@ -33,11 +36,8 @@ export default function CustomPrint() {
         <OverviewCategoryCard cardContent={flyersContent} />
         <OverviewCategoryCard cardContent={foldersContent} />
         <OverviewCategoryCard cardContent={postersContent} />
-        <div className="pt-8 px-2">
-          <TextBlock
-            value={customPrintingContentPaths.contactTitle}
-            variant={'subTitle'}
-          />
+        <div className="pt-16 px-2">
+          <TextBlock value={shopInfoPaths.contactTitle} variant={'subTitle'} />
         </div>
         <div className="w-full px-2">
           <SendMessage />

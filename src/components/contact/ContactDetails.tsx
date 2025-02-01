@@ -9,7 +9,7 @@ import OpeningHoursSection from './contactDetails/details/OpeningHoursSection';
 export default function ContactDetails() {
   return (
     <section className="flex flex-col w-full">
-      <div className="flex flex-col p-2 sm:p-8 rounded-xl bg-gray-100 ">
+      <div className="flex flex-col p-2 mb-10 sm:p-8 rounded-xl bg-gray-100 ">
         <div className="flex flex-wrap md:justify-evenly sm:justify-start">
           <div>
             <AdressSection />
@@ -21,7 +21,7 @@ export default function ContactDetails() {
             <OpeningHoursSection />
           </div>
         </div>
-        <div className="pt-10">
+        <div className="pt-8">
           <GoogleMap />
         </div>
       </div>

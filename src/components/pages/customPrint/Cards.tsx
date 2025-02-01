@@ -2,7 +2,7 @@ import { useTranslation } from 'react-i18next';
 import IntroductionCards from '../../customPrint/cards/Introduction';
 import CardsDigitalPrintPricing from '../../customPrint/cards/pricing/CardsDigitalPrintPricing';
 import CardsOffsetPricing from '../../customPrint/cards/pricing/CardsOffsetPricing';
-import { customPrintingContentPaths } from '../../../lib/translationPaths';
+import { shopInfoPaths } from '../../../lib/translationPaths';
 import SendMessage from '../../contact/SendMessage';
 import { TextBlock } from '../../elementTemplates/TextBlock';
 import { Divider } from '@mui/material';
@@ -19,10 +19,7 @@ export default function Cards() {
         <CardsOffsetPricing />
         <Divider flexItem variant="fullWidth" />
         <div className="pt-16 pb-2">
-          <TextBlock
-            value={customPrintingContentPaths.contactTitle}
-            variant={'subTitle'}
-          />
+          <TextBlock value={shopInfoPaths.contactTitle} variant={'subTitle'} />
         </div>
         <div className="w-full">
           <SendMessage />

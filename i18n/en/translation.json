@@ -99,8 +99,11 @@
     "contact": {
       "contactDetails": "Contact details",
       "title": "Got a question?",
-      "subtitle": "Can't find the right product or price? <br/> Or would you like to know more about submitting assignments? <br/>You can always request a free, no-obligation quote via:",
+      "subtitle": "Would you like to receive a quote for a product? We would be happy to provide you with a tailored quote. Requesting a quote is free and easy.",
+      "homePageSubtitle": "Would you like to receive a quote for a product?<br />We would be happy to provide you with a tailored quote.<br />Requesting a quote is free and easy.",
+      "contactTitle": "Can't find the right product or price? Or would you like to know more about submitting assignments? You can always request a free, no-obligation quote via:",
       "contactForm": "Send message",
+      "messageTitle": "Custom quote",
       "confirmMessage": "Message sent!<br />We will contact you as soon as possible.",
       "errors": {
         "telNoOnlyNumbers": "Phone number must contain only digits.",
@@ -154,7 +157,6 @@
   "customPrintPage": {
     "overviewTitle": "An Overview of Our Printing Services",
     "overviewIntroduction": "Explore our wide range of custom printing options. From business cards and flyers to textile prints and large-format printing, we have solutions for every need. Click on a category to learn more and get inspired by the possibilities.",
-    "contactTitle": "Would you like to receive a quote for a product? We would be happy to provide you with a tailored quote. Requesting a quote is free and easy.",
     "stickers": {
       "material": "Sticker",
       "title": "Stickers",
@@ -276,7 +278,6 @@
   },
   "contactPage": {
     "pageTitle": "Get in contact",
-    "contactDetails": "Custom quote",
     "contactIntroduction": "Do you have questions about our products or services, or would you like to know more about the associated costs? Please fill out our form, and we will ensure you receive a quote quickly and without any obligation.",
     "sendMessage": "Send a direct message",
     "formUserName": "Name",

@@ -7,7 +7,7 @@ export default function MessageIntroduction() {
   return (
     <div className="flex flex-col self-start mr-20">
       <TextBlock
-        value={contactInfoTextContent.contactDetails}
+        value={contactInfoTextContent.messageTitle}
         variant="subTitle"
       />
       <TextBlock

@@ -3,7 +3,7 @@ import ContactDetails from '../contact/ContactDetails';
 import SendMessage from '../contact/SendMessage';
 import {
   contactInfoTextContent,
-  customPrintingContentPaths,
+  shopInfoPaths,
 } from '../../lib/translationPaths';
 import { TextBlock } from '../elementTemplates/TextBlock';
 
@@ -19,10 +19,7 @@ export default function Contact() {
             value={contactInfoTextContent.pageTitle}
             variant={'pageTitle'}
           />
-          <TextBlock
-            value={customPrintingContentPaths.contactTitle}
-            variant={'body'}
-          />
+          <TextBlock value={shopInfoPaths.contactTitle} variant={'body'} />
         </div>
         <div>
           <SendMessage />

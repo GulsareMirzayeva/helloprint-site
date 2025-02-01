@@ -1,7 +1,7 @@
 import { useTranslation } from 'react-i18next';
 import IntroductionStickers from '../../customPrint/stickers/Introduction';
 import StickersPricing from '../../customPrint/stickers/pricing/StickersPricing';
-import { customPrintingContentPaths } from '../../../lib/translationPaths';
+import { shopInfoPaths } from '../../../lib/translationPaths';
 import SendMessage from '../../contact/SendMessage';
 import { TextBlock } from '../../elementTemplates/TextBlock';
 
@@ -15,10 +15,7 @@ export default function Stickers() {
         <IntroductionStickers />
         <StickersPricing />
         <div className="pt-16 pb-2">
-          <TextBlock
-            value={customPrintingContentPaths.contactTitle}
-            variant={'subTitle'}
-          />
+          <TextBlock value={shopInfoPaths.contactTitle} variant={'subTitle'} />
         </div>
         <div className="w-full">
           <SendMessage />

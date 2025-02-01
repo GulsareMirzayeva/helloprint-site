@@ -3,7 +3,7 @@ import Introduction from '../../customPrint/folders/introduction';
 import FoldersDigitalPrintPricing from '../../customPrint/folders/pricing/FoldersDigitalPrintPricing';
 import FoldersOffsetPrintPricingA4 from '../../customPrint/folders/pricing/FoldersOffsetPrintPricingA4';
 import FoldersOffsetPrintPricingA3 from '../../customPrint/folders/pricing/FoldersOffsetPrintPricingA3';
-import { customPrintingContentPaths } from '../../../lib/translationPaths';
+import { shopInfoPaths } from '../../../lib/translationPaths';
 import SendMessage from '../../contact/SendMessage';
 import { TextBlock } from '../../elementTemplates/TextBlock';
 import { Divider } from '@mui/material';
@@ -21,10 +21,7 @@ export default function Folders() {
         <FoldersOffsetPrintPricingA3 />
         <Divider flexItem variant="fullWidth" />
         <div className="pt-16 pb-2">
-          <TextBlock
-            value={customPrintingContentPaths.contactTitle}
-            variant={'subTitle'}
-          />
+          <TextBlock value={shopInfoPaths.contactTitle} variant={'subTitle'} />
         </div>
         <div className="w-full">
           <SendMessage />

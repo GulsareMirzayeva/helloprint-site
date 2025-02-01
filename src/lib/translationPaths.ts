@@ -19,6 +19,7 @@ export const shopInfoPaths = {
   hour: 'shopInfo.openingHours.hour',
   termsOfSaleTitle: 'shopInfo.termsOfSale.title',
   telePhone: 'shopInfo.openingHours.telePhone',
+  contactTitle: 'shopInfo.contact.contactTitle',
   contact: 'shopInfo.contact.contactDetails',
 };
 
@@ -27,9 +28,10 @@ export const contactInfoTextContent = {
   pageTitle: 'contactPage.pageTitle',
   title: 'shopInfo.contact.title',
   subtitle: 'shopInfo.contact.subtitle',
+  homePagesubtitle: 'shopInfo.contact.homePageSubtitle',
   contactIntroduction: 'contactPage.contactIntroduction',
   contactForm: 'shopInfo.contact.contactForm',
-  contactDetails: 'contactPage.contactDetails',
+  messageTitle: 'shopInfo.contact.messageTitle',
   openingHoursTitle: 'shopInfo.openingHours.title',
   midweeks: 'shopInfo.openingHours.midweeks',
   midweeksShort: 'shopInfo.openingHours.midweeksShort',
