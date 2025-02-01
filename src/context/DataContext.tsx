@@ -24,6 +24,7 @@ export function DataProvider({ children }: { children: ReactNode }) {
         await getPrices(setPrices, setError, setIsLoading);
       } catch (error) {
         setError(error as Error);
+        setIsLoading(false);
       }
     };
 

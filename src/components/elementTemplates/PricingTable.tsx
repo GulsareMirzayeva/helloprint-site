@@ -1,6 +1,7 @@
 import { useTranslation } from 'react-i18next';
 import { PricingOptions } from '../../lib/types/basicOptionsTypes';
 import { FC } from 'react';
+import i18n from '../../utils/i18';
 
 type PricingTableTypes = {
   headerTitles: string[];
@@ -10,9 +11,11 @@ type PricingTableTypes = {
 };
 
 // Function that displays prices with a dot or comma as decimal, depending on the selected language
-const PriceDisplay: FC<{ price: number }> = ({ price }: { price: number }) => {
-  const { i18n } = useTranslation();
-  const formattedPrice = new Intl.NumberFormat(i18n.language, {
+const PriceDisplay: FC<{ price: number; language: string }> = ({
+  price,
+  language,
+}) => {
+  const formattedPrice = new Intl.NumberFormat(language, {
     style: 'currency',
     currency: 'EUR',
   }).format(price);
@@ -84,7 +87,7 @@ export default function PricingTable({
                   key={priceIndex}
                   className="border border-gray-400 px-3 py-1 text-left"
                 >
-                  {PriceDisplay((price = { price }))}
+                  <PriceDisplay price={price} language={i18n.language} />
                 </td>
               ))}
             </tr>

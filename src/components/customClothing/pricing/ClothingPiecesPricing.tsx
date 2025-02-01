@@ -1,11 +1,11 @@
-import PricingTable from '../../elementTemplates/PricingTable';
-import { textileCategories } from '../../../lib/priceCategories';
-import { useData } from '../../../context/DataContext';
 import { useTranslation } from 'react-i18next';
-import { translateTextOptions } from '../../../utils/helperFunctions';
-import image1 from '../../../assets/custom-clothing/clothing-images.png';
+import { useData } from '../../../context/DataContext';
+import { useMemo } from 'react';
 import { BeatLoader } from 'react-spinners';
 import { TitleWithIntroduction } from '../../elementTemplates/TitleWithIntroduction';
+import PricingTable from '../../elementTemplates/PricingTable';
+import { textileCategories } from '../../../lib/priceCategories';
+import image1 from '../../../assets/custom-clothing/clothing-images.png';
 import { customClotingContentPaths } from '../../../lib/translationPaths';
 
 /*
@@ -15,26 +15,45 @@ import { customClotingContentPaths } from '../../../lib/translationPaths';
 */
 
 export default function ClothingPiecesPricing() {
-  const { prices } = useData();
+  const { prices, isLoading, error } = useData();
   const { t } = useTranslation();
 
-  // Let user know if data is loading
-  if (!prices) {
-    return <BeatLoader color="#FB0036" />;
+  // Translated options are available as soon as the prices are loaded
+  const translatedOptions = useMemo(() => {
+    if (!prices) return [];
+    return textileCategories.map((option) => t(option));
+  }, [prices, t]);
+
+  if (isLoading) {
+    <div className="flex w-full justify-center py-8">
+      <BeatLoader color="#FB0036" />
+    </div>;
   }
 
-  // Get all prices
+  if (error) {
+    return <div>Error: {error.message}</div>;
+  }
+
+  if (!prices) {
+    return (
+      <div className="flex w-full justify-center py-8">
+        <BeatLoader color="#FB0036" />
+      </div>
+    );
+  }
+
+  // Haal prijzen op
   const pricePathsTextile = [...Object.values(prices.customClothing.textile)];
 
-  // Get the header titles
-  const headerTitlesTextile: string[] = [
+  // Header titels
+  const headerTitlesTextile = [
     t('commonWords.textile'),
     t('commonWords.blackWhite'),
     t('commonWords.color'),
   ];
 
-  // Get the units
-  const unitsTextile: string[] = [
+  // Eenheden
+  const unitsTextile = [
     t('commonWords.clothingPiece'),
     t('commonWords.pricePerPrint'),
     t('commonWords.pricePerPrint'),
@@ -42,7 +61,7 @@ export default function ClothingPiecesPricing() {
 
   return (
     <section className="flex flex-col items-center lg:items-start w-full gap-8 p-2 sm:p-8 pb-16 rounded-t-xl bg-gray-100">
-      {/* Title, subtitle and introduction text */}
+      {/* Titel, subtitel en inleiding */}
       <TitleWithIntroduction
         props={{
           mainTitle: customClotingContentPaths.tableTitle,
@@ -52,11 +71,11 @@ export default function ClothingPiecesPricing() {
       />
       <div className="flex flex-col md:flex-row justify-between gap-20 pt-8">
         <div>
-          {/* Display pricing table */}
+          {/* Toon de pricing table */}
           <PricingTable
             headerTitles={headerTitlesTextile}
             units={unitsTextile}
-            options={translateTextOptions(textileCategories)}
+            options={translatedOptions}
             prices={pricePathsTextile}
           />
         </div>

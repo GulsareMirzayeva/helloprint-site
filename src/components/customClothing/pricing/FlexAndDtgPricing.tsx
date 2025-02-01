@@ -2,11 +2,11 @@ import PricingTable from '../../elementTemplates/PricingTable';
 import { dtgCategories, flexCategories } from '../../../lib/priceCategories';
 import { useData } from '../../../context/DataContext';
 import { useTranslation } from 'react-i18next';
-import { translateTextOptions } from '../../../utils/helperFunctions';
 import { TextBlock } from '../../elementTemplates/TextBlock';
 import { BeatLoader } from 'react-spinners';
 import { customClotingContentPaths } from '../../../lib/translationPaths';
 import { Notification } from '../../elementTemplates/Notification';
+import { useMemo } from 'react';
 
 /*
     Custom clothing - Flex and DTG section
@@ -15,12 +15,36 @@ import { Notification } from '../../elementTemplates/Notification';
 */
 
 export default function FlexAndDtgPricing() {
-  const { prices } = useData();
+  const { prices, isLoading, error } = useData();
   const { t } = useTranslation();
 
-  // Let user know if data is loading
+  // Translated options are available as soon as the prices are loaded
+  const translatedOptionsFlex = useMemo(() => {
+    if (!prices) return [];
+    return flexCategories.map((option) => t(option));
+  }, [prices, t]);
+
+  const translatedOptionsDtg = useMemo(() => {
+    if (!prices) return [];
+    return dtgCategories.map((option) => t(option));
+  }, [prices, t]);
+
+  if (isLoading) {
+    <div className="flex w-full justify-center py-8">
+      <BeatLoader color="#FB0036" />
+    </div>;
+  }
+
+  if (error) {
+    return <div>Error: {error.message}</div>;
+  }
+
   if (!prices) {
-    return <BeatLoader color="#FB0036" />;
+    return (
+      <div className="flex w-full justify-center py-8">
+        <BeatLoader color="#FB0036" />
+      </div>
+    );
   }
 
   // Get all prices
@@ -67,7 +91,7 @@ export default function FlexAndDtgPricing() {
           <PricingTable
             headerTitles={headerTitlesFlex}
             units={unitsFlex}
-            options={translateTextOptions(flexCategories)}
+            options={translatedOptionsFlex}
             prices={pricePathsFlex}
           />
         </div>
@@ -87,7 +111,7 @@ export default function FlexAndDtgPricing() {
           <PricingTable
             headerTitles={headerTitlesDtg}
             units={unitsDtg}
-            options={translateTextOptions(dtgCategories)}
+            options={translatedOptionsDtg}
             prices={pricePathsDtg}
           />
         </div>

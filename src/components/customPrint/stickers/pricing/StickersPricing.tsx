@@ -2,14 +2,19 @@ import PricingTable from '../../../elementTemplates/PricingTable';
 import { stickersCategories } from '../../../../lib/priceCategories';
 import { useData } from '../../../../context/DataContext';
 import { useTranslation } from 'react-i18next';
-import { translateTextOptions } from '../../../../utils/helperFunctions';
 import { TextBlock } from '../../../elementTemplates/TextBlock';
 import { stickersContentPaths } from '../../../../lib/translationPaths';
 import { TitleWithIntroduction } from '../../../elementTemplates/TitleWithIntroduction';
+import { useMemo } from 'react';
 
 export default function StickersPricing() {
-  const { prices } = useData(); // Hook altijd bovenaan
-  const { t } = useTranslation(); // Hook altijd bovenaan
+  const { prices } = useData();
+
+  const { t } = useTranslation();
+
+  const useTranslatedOptions = (options: string[]) => {
+    return useMemo(() => options.map((option) => t(option)), [options, t]);
+  };
 
   // Defineer de header titels en units boven de return
   const headerTitleStickers: string[] = [
@@ -22,6 +27,8 @@ export default function StickersPricing() {
   const pricePathStickers = prices
     ? [...Object.values(prices.customPrint.stickers)]
     : [];
+
+  const translatedOptions = useTranslatedOptions(stickersCategories);
 
   return (
     <section>
@@ -45,7 +52,7 @@ export default function StickersPricing() {
           <PricingTable
             headerTitles={headerTitleStickers}
             units={unitStickers}
-            options={translateTextOptions(stickersCategories)}
+            options={translatedOptions}
             prices={pricePathStickers}
           />
         </div>
