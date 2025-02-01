@@ -49,7 +49,7 @@ export default function CardsDigitalPrintPricing() {
         props={{
           mainTitle: cardsContentPaths.digitalPrint,
           subTitle: cardsContentPaths.type350gr,
-          introduction: cardsContentPaths.introductionCardsTable,
+          introduction: cardsContentPaths.introductionDigitalPrintTable,
           notification: cardsContentPaths.digitalPrintDeliveryTime,
         }}
       />

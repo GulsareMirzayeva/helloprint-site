@@ -69,7 +69,7 @@ export default function FoldersDigitalPrintPricing() {
         props={{
           mainTitle: digitalPrintTitle,
           subTitle: foldersContentPaths.A4FormatComplete,
-          introduction: foldersContentPaths.introductionFoldersTable,
+          introduction: foldersContentPaths.introductionDigitalPrintTable,
           notification: foldersContentPaths.digitalPrintDeliveryTime,
         }}
       />
@@ -99,7 +99,10 @@ export default function FoldersDigitalPrintPricing() {
               variant="sectionTitle"
             />
             <div className="flex">
-              <TextBlock value={foldersContentPaths.color} variant="body" />
+              <TextBlock
+                value={foldersContentPaths.blackWhite}
+                variant="body"
+              />
               &nbsp;
               <TextBlock
                 value={foldersContentPaths.A4WhiteOrColoredPaper}

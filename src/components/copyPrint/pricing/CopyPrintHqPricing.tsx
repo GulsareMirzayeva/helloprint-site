@@ -47,7 +47,7 @@ export default function CopyPrintHqPricing() {
         props={{
           mainTitle: copyPrintContentPaths.highQuality,
           subTitle: copyPrintContentPaths.colorOrBlackWhiteStandard,
-          introduction: copyPrintContentPaths.introductionCopyPrintTable,
+          introduction: copyPrintContentPaths.introductionHqTable,
         }}
       />
       <div className="flex gap-16 pt-8">

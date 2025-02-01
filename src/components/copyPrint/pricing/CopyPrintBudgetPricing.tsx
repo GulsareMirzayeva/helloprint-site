@@ -55,7 +55,7 @@ export default function CopyPrintBudgetPricing() {
         props={{
           mainTitle: copyPrintContentPaths.budget,
           subTitle: copyPrintContentPaths.colorOrBlackWhiteStandard,
-          introduction: copyPrintContentPaths.introductionCopyPrintTable,
+          introduction: copyPrintContentPaths.introductionBudgetTable,
         }}
       />
       <div className="flex flex-col sm:flex-row gap-16 pt-8">

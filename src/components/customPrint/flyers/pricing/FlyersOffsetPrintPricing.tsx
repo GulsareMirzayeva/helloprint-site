@@ -59,7 +59,7 @@ export default function FlyersOffsetPrintPricing() {
         props={{
           mainTitle: offsetPrintTitle,
           subTitle: flyersContentPaths.formatA5Complete,
-          introduction: flyersContentPaths.introductionFlyersTable,
+          introduction: flyersContentPaths.introductionOffsetTable,
           notification: flyersContentPaths.offsetPrintDeliveryTime,
         }}
       />

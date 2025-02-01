@@ -49,7 +49,7 @@ export default function CardsOffsetPricing() {
         props={{
           mainTitle: cardsContentPaths.offsetPrint,
           subTitle: cardsContentPaths.type400gr,
-          introduction: cardsContentPaths.introductionCardsTable,
+          introduction: cardsContentPaths.introductionOffsetTable,
           notification: cardsContentPaths.offsetPrintDeliveryTime,
         }}
       />

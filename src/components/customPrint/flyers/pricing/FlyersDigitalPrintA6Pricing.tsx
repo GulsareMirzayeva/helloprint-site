@@ -55,7 +55,7 @@ export default function FlyersDigitalPrintA6Pricing() {
         props={{
           mainTitle: digitalPrintTitle,
           subTitle: flyersContentPaths.A6AndA5Format,
-          introduction: flyersContentPaths.introductionFlyersTable,
+          introduction: flyersContentPaths.introductionDigitalPrintTable,
           notification: flyersContentPaths.digitalPrintDeliveryTime,
         }}
       />

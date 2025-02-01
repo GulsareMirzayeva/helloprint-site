@@ -56,7 +56,7 @@ export default function FoldersOffsetPrintPricingA4() {
         props={{
           mainTitle: offsetPrintTitle,
           subTitle: foldersContentPaths.A4AndA3Format,
-          introduction: foldersContentPaths.introductionFoldersTable,
+          introduction: foldersContentPaths.introductionOffsetTable,
           notification: foldersContentPaths.offsetPrintDeliveryTime,
         }}
       />

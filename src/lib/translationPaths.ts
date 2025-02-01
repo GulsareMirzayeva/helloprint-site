@@ -82,7 +82,9 @@ export const customPrintingContentPaths = {
 export const cardsContentPaths = {
   title: 'customPrintPage.cards.title',
   introduction: 'customPrintPage.cards.introduction',
-  introductionCardsTable: 'customPrintPage.cards.introductionCardsTable',
+  introductionDigitalPrintTable:
+    'customPrintPage.cards.introductionDigitalPrintTable',
+  introductionOffsetTable: 'customPrintPage.cards.introductionOffsetTable',
   digitalPrint: 'customPrintPage.common.digitalPrint',
   blackWhite: 'commonWords.blackWhite',
   color: 'commonWords.color',
@@ -98,7 +100,9 @@ export const cardsContentPaths = {
 export const flyersContentPaths = {
   title: 'customPrintPage.flyers.title',
   introduction: 'customPrintPage.flyers.introductionFlyers',
-  introductionFlyersTable: 'customPrintPage.flyers.introductionFlyersTable',
+  introductionDigitalPrintTable:
+    'customPrintPage.flyers.introductionDigitalPrintTable',
+  introductionOffsetTable: 'customPrintPage.flyers.introductionOffsetTable',
   singleSided: 'commonWords.singleSided',
   doubleSided: 'commonWords.doubleSided',
   formatA5: 'paperFormats.A5',
@@ -113,7 +117,9 @@ export const flyersContentPaths = {
 export const foldersContentPaths = {
   title: 'customPrintPage.folders.title',
   introduction: 'customPrintPage.folders.introductionFolders',
-  introductionFoldersTable: 'customPrintPage.folders.introductionFoldersTable',
+  introductionDigitalPrintTable:
+    'customPrintPage.folders.introductionDigitalPrintTable',
+  introductionOffsetTable: 'customPrintPage.folders.introductionOffsetTable',
   digitalPrintDeliveryTime: 'customPrintPage.common.digitalPrintDeliveryTime',
   offsetPrintDeliveryTime: 'customPrintPage.common.offsetPrintDeliveryTime',
   deliveryDisclaimer: 'customPrintPage.common.deliveryDisclaimer',
@@ -124,6 +130,7 @@ export const foldersContentPaths = {
   A4Bifold: 'paperFormats.A4Bifold',
   A3Trifold: 'paperFormats.A3Trifold',
   color: 'commonWords.color',
+  blackWhite: 'commonWords.blackWhite',
   A4WhiteOrColoredPaper: 'paperFormats.A4WhiteOrColoredPaper',
 };
 
@@ -172,7 +179,8 @@ export const copyPrintContentPaths = {
   title: 'copyPrintPage.title',
   introduction: 'copyPrintPage.introduction',
   introductionBinding: 'copyPrintPage.introductionBinding',
-  introductionCopyPrintTable: 'copyPrintPage.introductionCopyPrintTable',
+  introductionBudgetTable: 'copyPrintPage.introductionBudgetTable',
+  introductionHqTable: 'copyPrintPage.introductionHqTable',
   titleLaminate: 'copyPrintPage.titleLaminate',
   color: 'commonWords.color',
   blackWhite: 'commonWords.blackWhite',
