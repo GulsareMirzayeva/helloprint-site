@@ -38,7 +38,7 @@ export default function PostersA3BudgetAndHqPricing() {
   const units: string[] = [t('commonWords.prints'), t('commonWords.price')];
 
   return (
-    <section className="flex flex-col p-2 sm:p-8 w-full rounded-xl bg-gray-100">
+    <section className="flex flex-col p-2 sm:p-8 w-full rounded-b-xl bg-gray-100">
       <TitleWithIntroduction
         props={{
           mainTitle: postersContentPaths.color,

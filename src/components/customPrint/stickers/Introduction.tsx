@@ -32,7 +32,7 @@ export default function IntroductionStickers() {
 
       {/* Introduction content */}
       <div className="flex-1">
-        <div className="pb-8">
+        <div className="pb-6">
           <TextBlock value={stickersContentPaths.title} variant="pageTitle" />
           <TextBlock value={stickersContentPaths.introduction} variant="body" />
         </div>

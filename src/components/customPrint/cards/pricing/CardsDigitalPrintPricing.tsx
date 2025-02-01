@@ -50,7 +50,6 @@ export default function CardsDigitalPrintPricing() {
           mainTitle: cardsContentPaths.digitalPrint,
           subTitle: cardsContentPaths.type350gr,
           introduction: cardsContentPaths.introductionDigitalPrintTable,
-          notification: cardsContentPaths.digitalPrintDeliveryTime,
         }}
       />
       <div className="flex flex-col md:flex-row gap-16 pt-8">

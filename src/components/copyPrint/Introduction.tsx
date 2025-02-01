@@ -23,7 +23,6 @@ export default function IntroductionCopyPrint() {
         <TextBlock value={copyPrintContentPaths.title} variant="pageTitle" />
         <TextBlock value={copyPrintContentPaths.introduction} variant="body" />
         <br />
-        <br />
         <TextBlock
           value={copyPrintContentPaths.titleLaminate}
           variant="subTitle"
