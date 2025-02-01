@@ -1,4 +1,4 @@
-import image1 from '../../../assets/magnifying-glass-7747796_640.jpg';
+import { postersContent } from '../../../lib/customPrintOverviewCardsContent';
 import { postersContentPaths } from '../../../lib/translationPaths';
 import { TextBlock } from '../../elementTemplates/TextBlock';
 
@@ -13,7 +13,7 @@ export default function IntroductionPosters() {
       {/* Image next to the text content */}
       <div>
         <img
-          src={image1}
+          src={postersContent.image}
           alt="Category image"
           className="max-w-[300px] sm:max-w-[360px]"
         />

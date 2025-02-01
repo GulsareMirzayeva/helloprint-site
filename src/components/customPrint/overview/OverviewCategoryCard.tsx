@@ -16,14 +16,14 @@ export default function OverviewCategoryCard({
 }) {
   return (
     <section
-      className={`${cardContent.bgColor} flex flex-col items-start md:flex-row p-2 sm:p-8 w-full rounded-xl`}
+      className={`${cardContent.bgColor} flex flex-col items-start md:flex-row p-4 sm:p-8 w-full rounded-xl`}
     >
       {/* Place image left to the content */}
       <div>
         <img
           src={cardContent.image}
           alt="Category image"
-          className="pr-8 pb-4 lg:pb-0 max-w-[300px] md:max-w-[360px]"
+          className="pr-8 pb-4 lg:pb-0 max-w-[300px] md:max-w-[360px] rounded-md"
         />
       </div>
 

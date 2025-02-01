@@ -1,7 +1,7 @@
-import image1 from '../../../assets/magnifying-glass-7747796_640.jpg';
 import { useTranslation } from 'react-i18next';
 import { TextBlock } from '../../elementTemplates/TextBlock';
 import { stickersContentPaths } from '../../../lib/translationPaths';
+import { stickersContent } from '../../../lib/customPrintOverviewCardsContent';
 
 /*
     Content at the top of the 'Stickers' page
@@ -24,7 +24,7 @@ export default function IntroductionStickers() {
       {/* Image next to the text content */}
       <div>
         <img
-          src={image1}
+          src={stickersContent.image}
           alt="Category image"
           className="max-w-[300px] sm:max-w-[360px]"
         />

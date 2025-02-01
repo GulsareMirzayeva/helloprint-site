@@ -1,5 +1,5 @@
 import { useTranslation } from 'react-i18next';
-import image1 from '../../assets/custom-clothing/custom-clothing-img1.jpg';
+import image7 from '../../assets/introduction-images/image7.jpg';
 import { TextBlock } from '../elementTemplates/TextBlock';
 import { customClotingContentPaths } from '../../lib/translationPaths';
 
@@ -16,7 +16,7 @@ export default function IntroductionCustomClothing() {
       {/* Image next to the text content */}
       <div>
         <img
-          src={image1}
+          src={image7}
           alt="Category image"
           className="max-w-[300px] sm:max-w-[360px]"
         />

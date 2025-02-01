@@ -31,11 +31,13 @@ export default function CustomPrint() {
             variant={'body'}
           />
         </div>
-        <OverviewCategoryCard cardContent={stickersContent} />
-        <OverviewCategoryCard cardContent={cardsContent} />
-        <OverviewCategoryCard cardContent={flyersContent} />
-        <OverviewCategoryCard cardContent={foldersContent} />
-        <OverviewCategoryCard cardContent={postersContent} />
+        <div className="flex flex-col gap-4">
+          <OverviewCategoryCard cardContent={stickersContent} />
+          <OverviewCategoryCard cardContent={cardsContent} />
+          <OverviewCategoryCard cardContent={flyersContent} />
+          <OverviewCategoryCard cardContent={foldersContent} />
+          <OverviewCategoryCard cardContent={postersContent} />
+        </div>
         <div className="pt-16 px-2">
           <TextBlock value={shopInfoPaths.contactTitle} variant={'subTitle'} />
         </div>

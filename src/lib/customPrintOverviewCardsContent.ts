@@ -1,8 +1,8 @@
-import imageStickers from '../assets/magnifying-glass-7747796_640.jpg';
-import imageCards from '../assets/magnifying-glass-7747796_640.jpg';
-import imageFlyers from '../assets/magnifying-glass-7747796_640.jpg';
-import imageFolders from '../assets/magnifying-glass-7747796_640.jpg';
-import imagePosters from '../assets/magnifying-glass-7747796_640.jpg';
+import image6 from '../assets/introduction-images/image6.jpg';
+import image4 from '../assets/introduction-images/image4.jpg';
+import image3 from '../assets/introduction-images/image3.jpg';
+import image2 from '../assets/introduction-images/image2.jpg';
+import image1 from '../assets/introduction-images/image1.jpg';
 
 import {
   stickersContentPaths,
@@ -17,7 +17,7 @@ export const stickersContent = {
   textContentPath: stickersContentPaths.introduction,
   pageLink: '/custom-print/stickers',
   bgColor: 'bg-gray-100',
-  image: imageStickers,
+  image: image2,
 };
 
 export const cardsContent = {
@@ -25,7 +25,7 @@ export const cardsContent = {
   textContentPath: cardsContentPaths.introduction,
   pageLink: '/custom-print/cards',
   bgColor: 'bg-white',
-  image: imageCards,
+  image: image1,
 };
 
 export const flyersContent = {
@@ -33,7 +33,7 @@ export const flyersContent = {
   textContentPath: flyersContentPaths.introduction,
   pageLink: '/custom-print/flyers',
   bgColor: 'bg-gray-100',
-  image: imageFlyers,
+  image: image6,
 };
 
 export const foldersContent = {
@@ -41,7 +41,7 @@ export const foldersContent = {
   textContentPath: foldersContentPaths.introduction,
   pageLink: '/custom-print/folders',
   bgColor: 'bg-white',
-  image: imageFolders,
+  image: image3,
 };
 
 export const postersContent = {
@@ -49,5 +49,5 @@ export const postersContent = {
   textContentPath: postersContentPaths.introduction,
   pageLink: '/custom-print/posters',
   bgColor: 'bg-gray-100',
-  image: imagePosters,
+  image: image4,
 };

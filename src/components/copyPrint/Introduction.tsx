@@ -1,4 +1,4 @@
-import image1 from '../../assets/paperStack.jpg';
+import image5 from '../../assets/introduction-images/image5.jpg';
 import { copyPrintContentPaths } from '../../lib/translationPaths';
 import { TextBlock } from '../elementTemplates/TextBlock';
 
@@ -13,7 +13,7 @@ export default function IntroductionCopyPrint() {
       {/* Image next to the text content */}
       <div>
         <img
-          src={image1}
+          src={image5}
           alt="Category image"
           className="max-w-[300px] sm:max-w-[360px]"
         />
