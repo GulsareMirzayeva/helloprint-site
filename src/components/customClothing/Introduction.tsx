@@ -12,7 +12,7 @@ export default function IntroductionCustomClothing() {
   const { t } = useTranslation();
 
   return (
-    <section className="flex flex-col md:flex-row items-center lg:items-start gap-8 p-2 sm:p-4 pb-16">
+    <section className="flex flex-col md:flex-row items-center lg:items-start gap-8 p-2 sm:p-4 mb-8">
       {/* Image next to the text content */}
       <div>
         <img
