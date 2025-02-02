@@ -3,10 +3,15 @@ import IntroductionFlyers from '../../customPrint/folders/introduction';
 import FoldersDigitalPrintPricing from '../../customPrint/folders/pricing/FoldersDigitalPrintPricing';
 import FoldersOffsetPrintPricingA4 from '../../customPrint/folders/pricing/FoldersOffsetPrintPricingA4';
 import FoldersOffsetPrintPricingA3 from '../../customPrint/folders/pricing/FoldersOffsetPrintPricingA3';
-import { shopInfoPaths } from '../../../lib/translationPaths';
+import {
+  foldersContentPaths,
+  shopInfoPaths,
+} from '../../../lib/translationPaths';
 import SendMessage from '../../contact/SendMessage';
 import { TextBlock } from '../../elementTemplates/TextBlock';
 import { cardBgColors } from '../../../lib/stylePresets';
+import { Notification } from '../../elementTemplates/Notification';
+import { Divider } from '@mui/material';
 
 export default function Folders() {
   useTranslation();
@@ -19,6 +24,21 @@ export default function Folders() {
         <FoldersDigitalPrintPricing bgColor={cardBgColors.secondary} />
         <FoldersOffsetPrintPricingA4 bgColor={cardBgColors.primary} />
         <FoldersOffsetPrintPricingA3 bgColor={cardBgColors.secondary} />
+        {/* Display notification message table */}
+        <div className="z-0 w-full">
+          <Notification>
+            <div className="flex items-end">
+              <div className="text-[#FB0036] font-semibold">
+                <span>*&nbsp;</span>
+              </div>
+              <TextBlock
+                value={foldersContentPaths.deliveryDisclaimer}
+                variant="bodySmall"
+              />
+            </div>
+          </Notification>
+        </div>
+        <Divider flexItem variant="fullWidth" />
         <div className="pt-16 pb-2">
           <TextBlock value={shopInfoPaths.contactTitle} variant={'subTitle'} />
         </div>

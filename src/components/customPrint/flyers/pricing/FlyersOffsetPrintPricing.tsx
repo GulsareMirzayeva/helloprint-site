@@ -9,7 +9,6 @@ import { TextBlock } from '../../../elementTemplates/TextBlock';
 import { BeatLoader } from 'react-spinners';
 import { flyersContentPaths } from '../../../../lib/translationPaths';
 import { TitleWithIntroduction } from '../../../elementTemplates/TitleWithIntroduction';
-import { Notification } from '../../../elementTemplates/Notification';
 
 /*
     Flyers - Offset print section section
@@ -58,7 +57,7 @@ export default function FlyersOffsetPrintPricing({
 
   return (
     <section
-      className={`flex flex-col pt-12 p-2 sm:p-8 w-full rounded-xl ${bgColor}`}
+      className={`flex flex-col p-2 sm:p-8 w-full rounded-xl ${bgColor}`}
     >
       {/* Title, subtitle and introduction text */}
       <TitleWithIntroduction
@@ -106,21 +105,6 @@ export default function FlyersOffsetPrintPricing({
             prices={pricesDoubleSidedA5}
           />
         </div>
-      </div>
-
-      {/* Display notification message */}
-      <div className="pt-8 z-0 p-4">
-        <Notification>
-          <div className="flex items-end">
-            <div className="text-[#FB0036] font-semibold">
-              <span>*&nbsp;</span>
-            </div>
-            <TextBlock
-              value={flyersContentPaths.deliveryDisclaimer}
-              variant="bodySmall"
-            />
-          </div>
-        </Notification>
       </div>
     </section>
   );

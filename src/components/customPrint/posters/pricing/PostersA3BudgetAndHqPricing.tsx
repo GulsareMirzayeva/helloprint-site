@@ -9,7 +9,6 @@ import { TextBlock } from '../../../elementTemplates/TextBlock';
 import { BeatLoader } from 'react-spinners';
 import { postersContentPaths } from '../../../../lib/translationPaths';
 import { TitleWithIntroduction } from '../../../elementTemplates/TitleWithIntroduction';
-import { Notification } from '../../../elementTemplates/Notification';
 
 export default function PostersA3BudgetAndHqPricing({
   bgColor,
@@ -111,19 +110,6 @@ export default function PostersA3BudgetAndHqPricing({
             prices={pricesA3Budget}
           />
         </div>
-      </div>
-      <div className="pt-8 z-0 p-4">
-        <Notification>
-          <div className="flex items-end">
-            <div className="text-[#FB0036] font-semibold">
-              <span>*&nbsp;</span>
-            </div>
-            <TextBlock
-              value={postersContentPaths.notificationFirst}
-              variant="bodySmall"
-            />
-          </div>
-        </Notification>
       </div>
     </section>
   );

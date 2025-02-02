@@ -5,7 +5,6 @@ import { useTranslation } from 'react-i18next';
 import { TextBlock } from '../../../elementTemplates/TextBlock';
 import { BeatLoader } from 'react-spinners';
 import { foldersContentPaths } from '../../../../lib/translationPaths';
-import { Notification } from '../../../elementTemplates/Notification';
 
 /*
     Folders - Offset print A3 section
@@ -67,21 +66,6 @@ export default function FoldersOffsetPrintPricingA3({
           options={bulkPriceOptions}
           prices={pricesColorTrifoldA3}
         />
-      </div>
-
-      {/* Display notification message table */}
-      <div className="pt-8 z-0 p-4">
-        <Notification>
-          <div className="flex items-end">
-            <div className="text-[#FB0036] font-semibold">
-              <span>*&nbsp;</span>
-            </div>
-            <TextBlock
-              value={foldersContentPaths.deliveryDisclaimer}
-              variant="bodySmall"
-            />
-          </div>
-        </Notification>
       </div>
     </section>
   );

@@ -6,7 +6,6 @@ import { TextBlock } from '../../elementTemplates/TextBlock';
 import { BeatLoader } from 'react-spinners';
 import { copyPrintContentPaths } from '../../../lib/translationPaths';
 import { TitleWithIntroduction } from '../../elementTemplates/TitleWithIntroduction';
-import { Notification } from '../../elementTemplates/Notification';
 
 /*
     Copy & Print - High Quality section
@@ -52,7 +51,7 @@ export default function CopyPrintHqPricing({ bgColor }: { bgColor: string }) {
           introduction: copyPrintContentPaths.introductionHqTable,
         }}
       />
-      <div className="flex gap-16 pt-8">
+      <div className="flex flex-col sm:flex-row gap-16 pt-8">
         <div>
           {/* Display table name and the papertype */}
           <div className="flex flex-col">
@@ -78,30 +77,6 @@ export default function CopyPrintHqPricing({ bgColor }: { bgColor: string }) {
             prices={pricesHq}
           />
         </div>
-      </div>
-
-      {/* Display notification message(s) */}
-
-      <div className="pt-8 z-0 p-4">
-        <Notification>
-          <div className="flex items-end">
-            <div className="text-[#FB0036] font-semibold">
-              <span>*&nbsp;</span>
-            </div>
-            <TextBlock
-              value={copyPrintContentPaths.notificationFirst}
-              variant="bodySmall"
-            />
-          </div>
-          <TextBlock
-            value={copyPrintContentPaths.notificationSecond}
-            variant="bodySmall"
-          />
-          <TextBlock
-            value={copyPrintContentPaths.notificationThird}
-            variant="bodySmall"
-          />
-        </Notification>
       </div>
     </section>
   );

@@ -6,7 +6,6 @@ import { TextBlock } from '../../../elementTemplates/TextBlock';
 import { BeatLoader } from 'react-spinners';
 import { cardsContentPaths } from '../../../../lib/translationPaths';
 import { TitleWithIntroduction } from '../../../elementTemplates/TitleWithIntroduction';
-import { Notification } from '../../../elementTemplates/Notification';
 
 /*
     Cards - Offset print section
@@ -44,7 +43,7 @@ export default function CardsOffsetPricing({ bgColor }: { bgColor: string }) {
 
   return (
     <section
-      className={`flex flex-col pt-12 p-2 sm:p-8 w-full rounded-xl ${bgColor}`}
+      className={`flex flex-col p-2 sm:p-8 w-full rounded-xl ${bgColor}`}
     >
       {/* Title, subtitle and introduction text */}
       <TitleWithIntroduction
@@ -55,7 +54,7 @@ export default function CardsOffsetPricing({ bgColor }: { bgColor: string }) {
           notification: cardsContentPaths.offsetPrintDeliveryTime,
         }}
       />
-      <div className="flex gap-16 pt-8">
+      <div className="flex flex-col md:flex-row gap-16 pt-8">
         <div>
           {/* Display table name and the papertype */}
           <div className="flex flex-col">
@@ -71,20 +70,6 @@ export default function CardsOffsetPricing({ bgColor }: { bgColor: string }) {
             prices={pricesPressPrint}
           />
         </div>
-      </div>
-      <div className="pt-8 z-0 p-4">
-        {/* Display notification message */}
-        <Notification>
-          <div className="flex items-end">
-            <div className="text-[#FB0036] font-semibold">
-              <span>*&nbsp;</span>
-            </div>
-            <TextBlock
-              value={cardsContentPaths.deliveryDisclaimer}
-              variant="bodySmall"
-            />
-          </div>
-        </Notification>
       </div>
     </section>
   );

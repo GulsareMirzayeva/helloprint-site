@@ -51,7 +51,7 @@ export default function CustomPrint() {
               key={index}
               cardContent={item}
               bgColor={
-                index % 2 === 0 ? cardBgColors.primary : cardBgColors.secondary
+                index % 2 === 0 ? cardBgColors.secondary : cardBgColors.primary
               }
             />
           ))}

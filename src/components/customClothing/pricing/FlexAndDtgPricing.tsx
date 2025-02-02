@@ -5,7 +5,6 @@ import { useTranslation } from 'react-i18next';
 import { TextBlock } from '../../elementTemplates/TextBlock';
 import { BeatLoader } from 'react-spinners';
 import { customClotingContentPaths } from '../../../lib/translationPaths';
-import { Notification } from '../../elementTemplates/Notification';
 import { useMemo } from 'react';
 
 /*
@@ -115,20 +114,6 @@ export default function FlexAndDtgPricing({ bgColor }: { bgColor: string }) {
             prices={pricePathsDtg}
           />
         </div>
-      </div>
-
-      {/* Display notification message */}
-      <div className="pt-8 z-0 px-4">
-        <Notification>
-          <TextBlock
-            value={customClotingContentPaths.notificationFirst}
-            variant="bodySmall"
-          />
-          <TextBlock
-            value={customClotingContentPaths.notificationSecond}
-            variant="bodySmall"
-          />
-        </Notification>
       </div>
     </section>
   );

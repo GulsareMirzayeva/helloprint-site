@@ -2,11 +2,15 @@ import { useTranslation } from 'react-i18next';
 import IntroductionCards from '../../customPrint/cards/Introduction';
 import CardsDigitalPrintPricing from '../../customPrint/cards/pricing/CardsDigitalPrintPricing';
 import CardsOffsetPricing from '../../customPrint/cards/pricing/CardsOffsetPricing';
-import { shopInfoPaths } from '../../../lib/translationPaths';
+import {
+  cardsContentPaths,
+  shopInfoPaths,
+} from '../../../lib/translationPaths';
 import SendMessage from '../../contact/SendMessage';
 import { TextBlock } from '../../elementTemplates/TextBlock';
 import { Divider } from '@mui/material';
 import { cardBgColors } from '../../../lib/stylePresets';
+import { Notification } from '../../elementTemplates/Notification';
 
 export default function Cards() {
   useTranslation();
@@ -18,6 +22,20 @@ export default function Cards() {
         <IntroductionCards />
         <CardsDigitalPrintPricing bgColor={cardBgColors.secondary} />
         <CardsOffsetPricing bgColor={cardBgColors.primary} />
+        <div className="z-0 w-full">
+          {/* Display notification message */}
+          <Notification>
+            <div className="flex items-end">
+              <div className="text-[#FB0036] font-semibold">
+                <span>*&nbsp;</span>
+              </div>
+              <TextBlock
+                value={cardsContentPaths.deliveryDisclaimer}
+                variant="bodySmall"
+              />
+            </div>
+          </Notification>
+        </div>
         <Divider flexItem variant="fullWidth" />
         <div className="pt-16 pb-2">
           <TextBlock value={shopInfoPaths.contactTitle} variant={'subTitle'} />

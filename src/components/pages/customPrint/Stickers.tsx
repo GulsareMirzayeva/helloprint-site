@@ -5,6 +5,7 @@ import { shopInfoPaths } from '../../../lib/translationPaths';
 import SendMessage from '../../contact/SendMessage';
 import { TextBlock } from '../../elementTemplates/TextBlock';
 import { cardBgColors } from '../../../lib/stylePresets';
+import { Divider } from '@mui/material';
 
 export default function Stickers() {
   useTranslation();
@@ -15,6 +16,8 @@ export default function Stickers() {
       <div className="flex flex-col items-start justify-start gap-4 w-full px-2 pt-12">
         <IntroductionStickers />
         <StickersPricing bgColor={cardBgColors.secondary} />
+        <br />
+        <Divider flexItem variant="fullWidth" />
         <div className="pt-16 pb-2">
           <TextBlock value={shopInfoPaths.contactTitle} variant={'subTitle'} />
         </div>
