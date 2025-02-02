@@ -48,6 +48,7 @@ export default function CustomPrint() {
         <div className="flex flex-col gap-4 pb-8">
           {cardItems.map((item, index) => (
             <OverviewCategoryCard
+              key={index}
               cardContent={item}
               bgColor={
                 index % 2 === 0 ? cardBgColors.primary : cardBgColors.secondary

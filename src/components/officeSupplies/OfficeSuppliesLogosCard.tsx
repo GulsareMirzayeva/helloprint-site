@@ -15,8 +15,8 @@ const logoList = [logo1, logo2, logo6, logo3, logo8, logo9];
 export default function OfficeSuppliesLogosCard() {
   return (
     <section className="flex flex-col flex-wrap items-center gap-16 my-8 md:flex-row p-4 sm:p-8 w-full rounded-xl">
-      {logoList.map((logo) => (
-        <div className="">
+      {logoList.map((logo, index) => (
+        <div className="" key={index}>
           <img src={logo} alt="Company logo" />
         </div>
       ))}
