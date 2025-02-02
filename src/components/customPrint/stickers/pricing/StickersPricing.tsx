@@ -35,7 +35,7 @@ export default function StickersPricing() {
       <div className="flex flex-col p-2 sm:p-8 bg-gray-100 rounded-xl">
         <TitleWithIntroduction
           props={{
-            mainTitle: stickersContentPaths.largeFormat,
+            mainTitle: stickersContentPaths.largeFormatCapital,
             subTitle: stickersContentPaths.vinyl,
             introduction: stickersContentPaths.introductionLargeFormatTable,
           }}

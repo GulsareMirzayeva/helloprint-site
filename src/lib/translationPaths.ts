@@ -159,7 +159,9 @@ export const postersContentPaths = {
     'customPrintPage.posters.introductionPolyAndHandMadeTable',
   introductionA3Table: 'customPrintPage.posters.introductionA3Table',
   colorOrBlackWhite: 'commonWords.colorOrBlackWhite',
+  colorOrBlackWhiteCapital: 'commonWords.colorOrBlackWhiteCapital',
   color: 'commonWords.color',
+  colorCapital: 'commonWords.colorCapital',
   SpecialMaterials: 'commonWords.SpecialMaterials',
   polypropylene: 'commonWords.polypropylene',
   type260grHandMade: 'PaperWeights.260grHandMade',
@@ -193,6 +195,7 @@ export const stickersContentPaths = {
   listItem4: 'customPrintPage.stickers.listItem4',
   vinyl: 'commonWords.vinyl',
   largeFormat: 'paperFormats.largeFormat',
+  largeFormatCapital: 'paperFormats.largeFormatCapital',
 };
 
 export const copyPrintContentPaths = {
@@ -210,8 +213,8 @@ export const copyPrintContentPaths = {
   A4Color: 'paperFormats.A4Color',
   printerFour: 'copyPrintPage.printerFour',
   A4blackWhite: 'paperFormats.A4BlackWhite',
-  budget: 'commonWords.budget',
-  highQuality: 'commonWords.highQuality',
+  budget: 'commonWords.budgetCapital',
+  highQuality: 'commonWords.highQualityCapital',
   type90gr: 'PaperWeights.90gr',
   type80gr: 'PaperWeights.80gr',
   notificationFirst: 'copyPrintPage.notificationFirst',

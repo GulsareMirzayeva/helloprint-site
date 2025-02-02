@@ -132,7 +132,7 @@
       "polo": "Polo",
       "sweater": "Sweater",
       "hoody": "Hoody",
-      "tableTitle": "Create unique clothing",
+      "tableTitle": "CREATE UNIQUE CLOTHING",
       "subTitle": "Miltiple options"
     },
     "pricingFlexVinyl": {
@@ -277,6 +277,7 @@
     "A6": "A6",
     "A6AndA5Format": "A6 and A5 size",
     "largeFormat": "Large-format",
+    "largeFormatCapital": "LARGE-FORMAT",
     "A4FormatComplete": "A4 size",
     "fullColor": "| Full color"
   },
@@ -328,8 +329,10 @@
   },
   "commonWords": {
     "color": "Color",
+    "colorCapital": "COLOR",
     "blackWhite": "Black and White",
     "colorOrBlackWhite": "Color or Black and White",
+    "colorOrBlackWhiteCapital": "COLOR OR BLACK AND WHITE",
     "vinyl": "Vinyl",
     "SpecialMaterials": "Special Materials",
     "polypropylene": "polypropylene",
@@ -337,7 +340,9 @@
     "doubleSided": "Double sided",
     "textile": "Textile",
     "budget": "Budget",
+    "budgetCapital": "BUDGET",
     "highQuality": "High Quality",
+    "highQualityCapital": "HIGH QUALITY",
     "amount": "Amount",
     "pricePerPrint": "Price per print",
     "pricePerPiece": "Price per print",

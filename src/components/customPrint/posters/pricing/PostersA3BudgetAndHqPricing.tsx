@@ -41,7 +41,7 @@ export default function PostersA3BudgetAndHqPricing() {
     <section className="flex flex-col p-2 sm:p-8 w-full rounded-b-xl bg-gray-100">
       <TitleWithIntroduction
         props={{
-          mainTitle: postersContentPaths.color,
+          mainTitle: postersContentPaths.colorCapital,
           subTitle: postersContentPaths.typeA3Format,
           introduction: postersContentPaths.introductionA3Table,
         }}

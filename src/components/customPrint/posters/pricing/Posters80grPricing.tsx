@@ -56,7 +56,7 @@ export default function Posters80grPricing() {
     <section className="flex flex-col p-2 sm:p-8 w-full rounded-xl bg-gray-100">
       <TitleWithIntroduction
         props={{
-          mainTitle: postersContentPaths.colorOrBlackWhite,
+          mainTitle: postersContentPaths.colorOrBlackWhiteCapital,
           subTitle: postersContentPaths.type80gr,
           introduction: postersContentPaths.introduction80GrTable,
         }}

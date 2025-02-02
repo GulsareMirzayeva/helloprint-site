@@ -139,7 +139,7 @@
       "polo": "Polo",
       "sweater": "Trui",
       "hoody": "Capuchontrui",
-      "tableTitle": "Creëer unieke kleding",
+      "tableTitle": "CREËER UNIEKE KLEDING",
       "subTitle": "Meerdere mogelijkheden"
     },
     "pricingFlexVinyl": {
@@ -285,6 +285,7 @@
     "A6": "A6",
     "A6AndA5Format": "A6 en A5 formaat",
     "largeFormat": "Groot formaat",
+    "largeFormatCapital": "GROOT FORMAAT",
     "fullColor": "| Full color"
   },
   "contactPage": {
@@ -335,8 +336,10 @@
   },
   "commonWords": {
     "color": "Kleur",
+    "colorCapital": "KLEUR",
     "blackWhite": "Zwart/wit",
     "colorOrBlackWhite": "Kleur of zwart/wit",
+    "colorOrBlackWhiteCapital": "KLEUR OF ZWART/WIT",
     "vinyl": "Vinyl",
     "SpecialMaterials": "Speciale materialen",
     "polypropylene": "polypropyleen",
@@ -344,7 +347,9 @@
     "doubleSided": "Dubbelzijdig",
     "textile": "Textiel",
     "budget": "Budget",
+    "budgetCapital": "BUDGET",
     "highQuality": "Hoge kwaliteit",
+    "highQualityCapital": "HOGE KWALITEIT",
     "amount": "Aantal",
     "pricePerPrint": "Prijs per print",
     "pricePerPiece": "Prijs per st.",

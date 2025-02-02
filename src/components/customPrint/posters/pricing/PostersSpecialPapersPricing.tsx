@@ -38,7 +38,7 @@ export default function PostersSpecialPapersPricing() {
       <div className="flex flex-col">
         <TitleWithIntroduction
           props={{
-            mainTitle: postersContentPaths.color,
+            mainTitle: postersContentPaths.colorCapital,
             subTitle: postersContentPaths.SpecialMaterials,
             introduction: postersContentPaths.introductionPolyAndHandMadeTable,
           }}
