@@ -20,7 +20,7 @@ export default function CustomPrint() {
   return (
     <div className="grid grid-cols-[1fr,minmax(0,1200px),1fr] w-full">
       <div></div> {/* Left empty colomn */}
-      <div className="flex flex-col items-start justify-start w-full pt-12">
+      <div className="flex flex-col items-start justify-start w-full pt-8">
         <div className="flex flex-col pb-16 px-2">
           <TextBlock
             value={customPrintingContentPaths.title}
