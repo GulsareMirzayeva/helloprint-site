@@ -10,7 +10,7 @@ import { BeatLoader } from 'react-spinners';
 import { postersContentPaths } from '../../../../lib/translationPaths';
 import { TitleWithIntroduction } from '../../../elementTemplates/TitleWithIntroduction';
 
-export default function Posters160grPricing() {
+export default function Posters160grPricing({ bgColor }: { bgColor: string }) {
   const { prices } = useData();
   const { t } = useTranslation();
 
@@ -44,7 +44,9 @@ export default function Posters160grPricing() {
   ];
 
   return (
-    <section className="flex flex-col pt-12 pb-2 p-2 sm:p-8 w-full rounded-t-xl">
+    <section
+      className={`flex flex-col pt-12 pb-2 p-2 sm:p-8 w-full rounded-xl ${bgColor}`}
+    >
       <TitleWithIntroduction
         props={{
           mainTitle: postersContentPaths.colorCapital,

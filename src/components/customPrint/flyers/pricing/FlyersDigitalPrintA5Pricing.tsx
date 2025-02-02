@@ -15,7 +15,11 @@ import { flyersContentPaths } from '../../../../lib/translationPaths';
     Show information and pricing tables for Digital print A5 category
 */
 
-export default function FlyersDigitalPrintA5Pricing() {
+export default function FlyersDigitalPrintA5Pricing({
+  bgColor,
+}: {
+  bgColor: string;
+}) {
   const { prices } = useData();
   const { t } = useTranslation();
 
@@ -49,7 +53,9 @@ export default function FlyersDigitalPrintA5Pricing() {
   ];
 
   return (
-    <section className="flex flex-col p-2 sm:p-8 w-full rounded-b-xl bg-gray-100">
+    <section
+      className={`flex flex-col p-2 sm:p-8 w-full rounded-b-xl ${bgColor}`}
+    >
       <div className="flex flex-col md:flex-row gap-16">
         <div>
           {/* Title, subtitle and introduction text */}

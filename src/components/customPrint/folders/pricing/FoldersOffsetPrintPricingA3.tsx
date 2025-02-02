@@ -13,7 +13,11 @@ import { Notification } from '../../../elementTemplates/Notification';
     Show information and pricing tables for Offset print A3 category
 */
 
-export default function FoldersOffsetPrintPricingA3() {
+export default function FoldersOffsetPrintPricingA3({
+  bgColor,
+}: {
+  bgColor: string;
+}) {
   const { prices } = useData();
   const { t } = useTranslation();
 
@@ -44,7 +48,9 @@ export default function FoldersOffsetPrintPricingA3() {
   ];
 
   return (
-    <section className="flex flex-col p-2 sm:p-8 w-full rounded-b-xl">
+    <section
+      className={`flex flex-col p-2 sm:p-8 w-full rounded-xl ${bgColor}`}
+    >
       <div>
         {/* Display table name and the papertype */}
         <div className="flex flex-col">

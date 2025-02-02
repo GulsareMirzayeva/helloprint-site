@@ -6,7 +6,11 @@ import { TextBlock } from '../../../elementTemplates/TextBlock';
 import { BeatLoader } from 'react-spinners';
 import { postersContentPaths } from '../../../../lib/translationPaths';
 
-export default function Posters190grAnd260grPricing() {
+export default function Posters190grAnd260grPricing({
+  bgColor,
+}: {
+  bgColor: string;
+}) {
   const { prices } = useData();
   const { t } = useTranslation();
 
@@ -40,7 +44,9 @@ export default function Posters190grAnd260grPricing() {
   ];
 
   return (
-    <section className="flex flex-col p-2 sm:p-8 w-full rounded-b-xl">
+    <section
+      className={`flex flex-col p-2 sm:p-8 w-full rounded-xl ${bgColor}`}
+    >
       <div className="flex flex-col items-start">
         <div className="flex flex-col md:flex-row gap-16">
           <div>

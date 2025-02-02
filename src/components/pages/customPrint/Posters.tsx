@@ -8,6 +8,7 @@ import PostersSpecialPapersPricing from '../../customPrint/posters/pricing/Poste
 import { shopInfoPaths } from '../../../lib/translationPaths';
 import SendMessage from '../../contact/SendMessage';
 import { TextBlock } from '../../elementTemplates/TextBlock';
+import { cardBgColors } from '../../../lib/stylePresets';
 
 export default function Posters() {
   useTranslation();
@@ -15,13 +16,13 @@ export default function Posters() {
   return (
     <div className="grid grid-cols-[1fr,minmax(0,1200px),1fr] w-full">
       <div></div> {/* Left empty colomn */}
-      <div className="flex flex-col items-start justify-start w-full px-2 pt-12">
+      <div className="flex flex-col items-start justify-start gap-4 w-full px-2 pt-12">
         <IntroductionPosters />
-        <Posters80grPricing />
-        <Posters160grPricing />
-        <Posters190grAnd260grPricing />
-        <PostersSpecialPapersPricing />
-        <PostersA3BudgetAndHqPricing />
+        <Posters80grPricing bgColor={cardBgColors.secondary} />
+        <Posters160grPricing bgColor={cardBgColors.primary} />
+        <Posters190grAnd260grPricing bgColor={cardBgColors.secondary} />
+        <PostersSpecialPapersPricing bgColor={cardBgColors.primary} />
+        <PostersA3BudgetAndHqPricing bgColor={cardBgColors.secondary} />
         <div className="pt-16 pb-2">
           <TextBlock value={shopInfoPaths.contactTitle} variant={'subTitle'} />
         </div>

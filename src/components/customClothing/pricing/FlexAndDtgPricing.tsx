@@ -14,7 +14,7 @@ import { useMemo } from 'react';
     Show information and pricing tables for Flex and DTG category
 */
 
-export default function FlexAndDtgPricing() {
+export default function FlexAndDtgPricing({ bgColor }: { bgColor: string }) {
   const { prices, isLoading, error } = useData();
   const { t } = useTranslation();
 
@@ -71,7 +71,9 @@ export default function FlexAndDtgPricing() {
   ];
 
   return (
-    <section className="flex flex-col p-2 sm:p-8 w-full rounded-b-xl bg-gray-100">
+    <section
+      className={`flex flex-col p-2 sm:p-8 w-full rounded-xl ${bgColor}`}
+    >
       <div className="flex flex-col sm:flex-row gap-16">
         <div>
           {/* Display table name and the papertype */}

@@ -11,7 +11,11 @@ import { postersContentPaths } from '../../../../lib/translationPaths';
 import { TitleWithIntroduction } from '../../../elementTemplates/TitleWithIntroduction';
 import { Notification } from '../../../elementTemplates/Notification';
 
-export default function PostersA3BudgetAndHqPricing() {
+export default function PostersA3BudgetAndHqPricing({
+  bgColor,
+}: {
+  bgColor: string;
+}) {
   const { prices } = useData();
   const { t } = useTranslation();
 
@@ -38,7 +42,9 @@ export default function PostersA3BudgetAndHqPricing() {
   const units: string[] = [t('commonWords.prints'), t('commonWords.price')];
 
   return (
-    <section className="flex flex-col p-2 sm:p-8 w-full rounded-b-xl bg-gray-100">
+    <section
+      className={`flex flex-col p-2 sm:p-8 w-full rounded-xl ${bgColor}`}
+    >
       <TitleWithIntroduction
         props={{
           mainTitle: postersContentPaths.colorCapital,

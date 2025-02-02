@@ -17,7 +17,11 @@ import { Notification } from '../../../elementTemplates/Notification';
     Show information and pricing tables for Offset print category
 */
 
-export default function FlyersOffsetPrintPricing() {
+export default function FlyersOffsetPrintPricing({
+  bgColor,
+}: {
+  bgColor: string;
+}) {
   const { prices } = useData();
   const { t } = useTranslation();
 
@@ -53,7 +57,9 @@ export default function FlyersOffsetPrintPricing() {
   ];
 
   return (
-    <section className="flex flex-col pt-12 p-2 sm:p-8 w-full rounded-xl">
+    <section
+      className={`flex flex-col pt-12 p-2 sm:p-8 w-full rounded-xl ${bgColor}`}
+    >
       {/* Title, subtitle and introduction text */}
       <TitleWithIntroduction
         props={{

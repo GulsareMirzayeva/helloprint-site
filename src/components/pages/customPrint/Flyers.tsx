@@ -7,6 +7,7 @@ import { shopInfoPaths } from '../../../lib/translationPaths';
 import SendMessage from '../../contact/SendMessage';
 import { TextBlock } from '../../elementTemplates/TextBlock';
 import { Divider } from '@mui/material';
+import { cardBgColors } from '../../../lib/stylePresets';
 
 export default function Flyers() {
   useTranslation();
@@ -14,11 +15,13 @@ export default function Flyers() {
   return (
     <div className="grid grid-cols-[1fr,minmax(0,1200px),1fr] w-full">
       <div></div> {/* Left empty colomn */}
-      <div className="flex flex-col items-start justify-start w-full px-2 pt-12">
+      <div className="flex flex-col items-start justify-start gap-4 w-full px-2 pt-12">
         <IntroductionFlyers />
-        <FlyersDigitalPrintA6Pricing />
-        <FlyersDigitalPrintA5Pricing />
-        <FlyersOffsetPrintA5Pricing />
+        <div className="flex flex-col">
+          <FlyersDigitalPrintA6Pricing bgColor={cardBgColors.secondary} />
+          <FlyersDigitalPrintA5Pricing bgColor={cardBgColors.secondary} />
+        </div>
+        <FlyersOffsetPrintA5Pricing bgColor={cardBgColors.primary} />
         <Divider flexItem variant="fullWidth" />
         <div className="pt-16 pb-2">
           <TextBlock value={shopInfoPaths.contactTitle} variant={'subTitle'} />

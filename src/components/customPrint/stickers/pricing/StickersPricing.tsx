@@ -7,7 +7,7 @@ import { stickersContentPaths } from '../../../../lib/translationPaths';
 import { TitleWithIntroduction } from '../../../elementTemplates/TitleWithIntroduction';
 import { useMemo } from 'react';
 
-export default function StickersPricing() {
+export default function StickersPricing({ bgColor }: { bgColor: string }) {
   const { prices } = useData();
 
   const { t } = useTranslation();
@@ -32,7 +32,9 @@ export default function StickersPricing() {
 
   return (
     <section>
-      <div className="flex flex-col p-2 sm:p-8 bg-gray-100 rounded-xl">
+      <div
+        className={`flex flex-col p-2 sm:p-8 bg-gray-100 rounded-xl ${bgColor}`}
+      >
         <TitleWithIntroduction
           props={{
             mainTitle: stickersContentPaths.largeFormatCapital,

@@ -13,7 +13,11 @@ import { TitleWithIntroduction } from '../../../elementTemplates/TitleWithIntrod
     Show information and pricing tables for Digital print A6 category
 */
 
-export default function FlyersDigitalPrintA6Pricing() {
+export default function FlyersDigitalPrintA6Pricing({
+  bgColor,
+}: {
+  bgColor: string;
+}) {
   const { prices } = useData();
   const { t } = useTranslation();
 
@@ -49,7 +53,9 @@ export default function FlyersDigitalPrintA6Pricing() {
   const digitalPrintTitle = t('customPrintPage.common.digitalPrint');
 
   return (
-    <section className="flex flex-col p-2 sm:p-8 pb-2 w-full rounded-t-xl bg-gray-100">
+    <section
+      className={`flex flex-col p-2 sm:p-8 pb-2 w-full rounded-t-xl ${bgColor}`}
+    >
       {/* Title, subtitle and introduction text */}
       <TitleWithIntroduction
         props={{

@@ -14,7 +14,11 @@ import { customClotingContentPaths } from '../../../lib/translationPaths';
     Show information and pricing tables for Clothing pieces category
 */
 
-export default function ClothingPiecesPricing() {
+export default function ClothingPiecesPricing({
+  bgColor,
+}: {
+  bgColor: string;
+}) {
   const { prices, isLoading, error } = useData();
   const { t } = useTranslation();
 
@@ -58,7 +62,9 @@ export default function ClothingPiecesPricing() {
   ];
 
   return (
-    <section className="flex flex-col items-center lg:items-start w-full gap-8 p-2 sm:p-8 pb-16 rounded-t-xl bg-gray-100">
+    <section
+      className={`flex flex-col items-center lg:items-start w-full gap-8 p-2 sm:p-8 pb-16 rounded-xl ${bgColor}`}
+    >
       {/* Titel, subtitel en inleiding */}
       <TitleWithIntroduction
         props={{

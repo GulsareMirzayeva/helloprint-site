@@ -14,6 +14,7 @@ import {
   stickersContent,
 } from '../../lib/categoriesContent';
 import { cardBgColors } from '../../lib/stylePresets';
+import { Divider } from '@mui/material';
 
 export default function CustomPrint() {
   useTranslation(); // Make the content directly translatable
@@ -44,7 +45,7 @@ export default function CustomPrint() {
         </div>
 
         {/* Create a overview card for each category */}
-        <div className="flex flex-col gap-4">
+        <div className="flex flex-col gap-4 pb-8">
           {cardItems.map((item, index) => (
             <OverviewCategoryCard
               cardContent={item}
@@ -55,6 +56,7 @@ export default function CustomPrint() {
           ))}
         </div>
 
+        <Divider flexItem variant="fullWidth" />
         {/* Display the contact section at the bottom of the page */}
         <div className="pt-16 px-2">
           <TextBlock value={shopInfoPaths.contactTitle} variant={'subTitle'} />

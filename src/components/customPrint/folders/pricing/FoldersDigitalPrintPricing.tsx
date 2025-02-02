@@ -16,7 +16,11 @@ import { TitleWithIntroduction } from '../../../elementTemplates/TitleWithIntrod
     Show information and pricing tables for Digital print category
 */
 
-export default function FoldersDigitalPrintPricing() {
+export default function FoldersDigitalPrintPricing({
+  bgColor,
+}: {
+  bgColor: string;
+}) {
   const { prices } = useData();
   const { t } = useTranslation();
 
@@ -63,7 +67,9 @@ export default function FoldersDigitalPrintPricing() {
   ];
 
   return (
-    <section className="flex flex-col p-2 sm:p-8 w-full rounded-xl bg-gray-100">
+    <section
+      className={`flex flex-col p-2 sm:p-8 w-full rounded-xl ${bgColor}`}
+    >
       {/* Title, subtitle and introduction text */}
       <TitleWithIntroduction
         props={{

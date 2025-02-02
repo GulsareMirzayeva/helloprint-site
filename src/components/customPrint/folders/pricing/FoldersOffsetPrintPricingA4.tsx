@@ -13,7 +13,11 @@ import { TitleWithIntroduction } from '../../../elementTemplates/TitleWithIntrod
     Show information and pricing tables for Offset print A4 category
 */
 
-export default function FoldersOffsetPrintPricingA4() {
+export default function FoldersOffsetPrintPricingA4({
+  bgColor,
+}: {
+  bgColor: string;
+}) {
   const { prices } = useData();
   const { t } = useTranslation();
 
@@ -50,7 +54,9 @@ export default function FoldersOffsetPrintPricingA4() {
   ];
 
   return (
-    <section className="flex flex-col pt-12 p-2 sm:p-8 pb-2 w-full rounded-t-xl">
+    <section
+      className={`flex flex-col pt-12 p-2 sm:p-8 pb-2 w-full rounded-xl ${bgColor}`}
+    >
       {/* Title, subtitle and introduction text */}
       <TitleWithIntroduction
         props={{
