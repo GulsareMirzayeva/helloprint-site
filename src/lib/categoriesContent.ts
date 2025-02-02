@@ -1,20 +1,13 @@
-import image7 from '../assets/introduction-images/image7.jpg';
-import image6 from '../assets/introduction-images/image6.jpg';
-import image5 from '../assets/introduction-images/image5.jpg';
-import image4 from '../assets/introduction-images/image4.jpg';
-import image3 from '../assets/introduction-images/image3.jpg';
-import image2 from '../assets/introduction-images/image2.jpg';
-import image1 from '../assets/introduction-images/image1.jpg';
-
 import {
   stickersContentPaths,
   cardsContentPaths,
   flyersContentPaths,
   foldersContentPaths,
   postersContentPaths,
-  copyPrintContentPaths,
-  customClotingContentPaths,
 } from './translationPaths';
+
+// Card background colors to choose from, displayed on the 'custom print'-overview page
+const bgColors = ['bg-white', 'bg-gray-100'];
 
 export const stickersContent = {
   titlePath: stickersContentPaths.title,
@@ -26,55 +19,38 @@ export const stickersContent = {
   listItem3: 'customPrintPage.stickers.listItem3',
   listItem4: 'customPrintPage.stickers.listItem4',
   pageLink: '/custom-print/stickers',
-  bgColor: 'bg-gray-100',
-  image: image2,
+  bgColor: bgColors[1],
+  image: stickersContentPaths.image,
 };
 
 export const cardsContent = {
   titlePath: cardsContentPaths.title,
   textContentPath: cardsContentPaths.introduction,
   pageLink: '/custom-print/cards',
-  bgColor: 'bg-white',
-  image: image6,
+  bgColor: bgColors[0],
+  image: cardsContentPaths.image,
 };
 
 export const flyersContent = {
   titlePath: flyersContentPaths.title,
   textContentPath: flyersContentPaths.introduction,
   pageLink: '/custom-print/flyers',
-  bgColor: 'bg-gray-100',
-  image: image1,
+  bgColor: bgColors[1],
+  image: flyersContentPaths.image,
 };
 
 export const foldersContent = {
   titlePath: foldersContentPaths.title,
   textContentPath: foldersContentPaths.introduction,
   pageLink: '/custom-print/folders',
-  bgColor: 'bg-white',
-  image: image3,
+  bgColor: bgColors[0],
+  image: foldersContentPaths.image,
 };
 
 export const postersContent = {
   titlePath: postersContentPaths.title,
   textContentPath: postersContentPaths.introduction,
   pageLink: '/custom-print/posters',
-  bgColor: 'bg-gray-100',
-  image: image4,
-};
-
-export const copyPrintContent = {
-  title: copyPrintContentPaths.title,
-  introduction: copyPrintContentPaths.introduction,
-  titleLaminate: copyPrintContentPaths.titleLaminate,
-  introductionBinding: copyPrintContentPaths.introductionBinding,
-  image: image5,
-};
-
-export const customClothingContent = {
-  title: customClotingContentPaths.title,
-  introduction: customClotingContentPaths.introduction,
-  subText: customClotingContentPaths.subText,
-  listItem1: customClotingContentPaths.listItem1,
-  listItem2: customClotingContentPaths.listItem2,
-  image: image7,
+  bgColor: bgColors[1],
+  image: postersContentPaths.image,
 };
