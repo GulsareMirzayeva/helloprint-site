@@ -12,12 +12,6 @@ const bgColors = ['bg-white', 'bg-gray-100'];
 export const stickersContent = {
   titlePath: stickersContentPaths.title,
   textContentPath: stickersContentPaths.introduction,
-  materialTitle: stickersContentPaths.materialTitle,
-  materialContent: stickersContentPaths.materialContent,
-  listItem1: 'customPrintPage.stickers.listItem1',
-  listItem2: 'customPrintPage.stickers.listItem2',
-  listItem3: 'customPrintPage.stickers.listItem3',
-  listItem4: 'customPrintPage.stickers.listItem4',
   pageLink: '/custom-print/stickers',
   bgColor: bgColors[1],
   image: stickersContentPaths.image,
