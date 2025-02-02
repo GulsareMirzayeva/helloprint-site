@@ -11,7 +11,7 @@ export default function IntroductionStickers() {
   const { t } = useTranslation();
 
   return (
-    <section className="flex flex-col md:flex-row items-center lg:items-start gap-8 p-2 sm:p-4 mb-8">
+    <section className="flex flex-col md:flex-row items-center lg:items-start gap-8 mb-16">
       {/* Image next to the text content */}
       <div>
         <img

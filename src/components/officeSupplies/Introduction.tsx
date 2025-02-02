@@ -10,7 +10,7 @@ export default function IntroductionOfficeSupplies() {
   return (
     <section className="grid grid-cols-[1fr,minmax(0,1200px),1fr] w-full">
       <div></div> {/* Left empty colomn */}
-      <div className="flex flex-col justify-start items-start w-full pt-8">
+      <div className="flex flex-col justify-start items-start w-full">
         <div className="flex flex-col pb-8">
           <TextBlock value={officeSuppliesPaths.title} variant={'pageTitle'} />
           <TextBlock

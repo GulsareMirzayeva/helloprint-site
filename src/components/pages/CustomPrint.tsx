@@ -31,7 +31,7 @@ export default function CustomPrint() {
   return (
     <div className="grid grid-cols-[1fr,minmax(0,1200px),1fr] w-full">
       <div></div> {/* Left empty colomn */}
-      <div className="flex flex-col items-start justify-start w-full pt-8">
+      <div className="flex flex-col items-start justify-start w-full pt-12">
         {/* Title and introduction text at the top of the page */}
         <div className="flex flex-col pb-16 px-2">
           <TextBlock
@@ -59,10 +59,10 @@ export default function CustomPrint() {
 
         <Divider flexItem variant="fullWidth" />
         {/* Display the contact section at the bottom of the page */}
-        <div className="pt-16 px-2">
+        <div className="pt-16 pb-2">
           <TextBlock value={shopInfoPaths.contactTitle} variant={'subTitle'} />
         </div>
-        <div className="w-full px-2">
+        <div className="w-full">
           <SendMessage />
         </div>
       </div>
