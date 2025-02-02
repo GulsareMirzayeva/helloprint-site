@@ -2,7 +2,7 @@ import { TextBlock } from '../../elementTemplates/TextBlock';
 import { homeContentPaths } from '../../../lib/translationPaths';
 import { Link } from 'react-router-dom';
 import { t } from 'i18next';
-import { CategoryCardType } from '../../../lib/types/copyPrintType';
+import { CategoryCardType } from '../../../lib/types/customPrintType';
 
 /*
     Text content at the top of the page, the value in the TextBlock components refers to the content location
@@ -11,12 +11,14 @@ import { CategoryCardType } from '../../../lib/types/copyPrintType';
 
 export default function OverviewCategoryCard({
   cardContent,
+  bgColor,
 }: {
   cardContent: CategoryCardType;
+  bgColor: string;
 }) {
   return (
     <section
-      className={`${cardContent.bgColor} flex flex-col items-start md:flex-row p-4 sm:p-8 w-full rounded-xl`}
+      className={`${bgColor} flex flex-col items-start md:flex-row p-4 sm:p-8 w-full rounded-xl`}
     >
       {/* Place image left to the content */}
       <div>

@@ -67,3 +67,10 @@ export type PageTitleType = {
   introduction: string;
   notification?: string;
 };
+
+export type CategoryCardType = {
+  titlePath: string;
+  textContentPath: string;
+  pageLink: string;
+  image: string;
+};

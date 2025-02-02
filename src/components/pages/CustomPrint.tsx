@@ -1,5 +1,11 @@
-import { useTranslation } from 'react-i18next';
 import OverviewCategoryCard from '../customPrint/overview/OverviewCategoryCard';
+import SendMessage from '../contact/SendMessage';
+import { TextBlock } from '../elementTemplates/TextBlock';
+import { useTranslation } from 'react-i18next';
+import {
+  customPrintingContentPaths,
+  shopInfoPaths,
+} from '../../lib/translationPaths';
 import {
   cardsContent,
   flyersContent,
@@ -7,20 +13,25 @@ import {
   postersContent,
   stickersContent,
 } from '../../lib/categoriesContent';
-import SendMessage from '../contact/SendMessage';
-import { TextBlock } from '../elementTemplates/TextBlock';
-import {
-  customPrintingContentPaths,
-  shopInfoPaths,
-} from '../../lib/translationPaths';
+import { cardBgColors } from '../../lib/stylePresets';
 
 export default function CustomPrint() {
-  useTranslation();
+  useTranslation(); // Make the content directly translatable
+
+  // Collect the content of categories that will be displayed in a card on the overview page
+  const cardItems = [
+    stickersContent,
+    cardsContent,
+    flyersContent,
+    foldersContent,
+    postersContent,
+  ];
 
   return (
     <div className="grid grid-cols-[1fr,minmax(0,1200px),1fr] w-full">
       <div></div> {/* Left empty colomn */}
       <div className="flex flex-col items-start justify-start w-full pt-8">
+        {/* Title and introduction text at the top of the page */}
         <div className="flex flex-col pb-16 px-2">
           <TextBlock
             value={customPrintingContentPaths.title}
@@ -31,13 +42,20 @@ export default function CustomPrint() {
             variant={'body'}
           />
         </div>
+
+        {/* Create a overview card for each category */}
         <div className="flex flex-col gap-4">
-          <OverviewCategoryCard cardContent={stickersContent} />
-          <OverviewCategoryCard cardContent={cardsContent} />
-          <OverviewCategoryCard cardContent={flyersContent} />
-          <OverviewCategoryCard cardContent={foldersContent} />
-          <OverviewCategoryCard cardContent={postersContent} />
+          {cardItems.map((item, index) => (
+            <OverviewCategoryCard
+              cardContent={item}
+              bgColor={
+                index % 2 === 0 ? cardBgColors.primary : cardBgColors.secondary
+              }
+            />
+          ))}
         </div>
+
+        {/* Display the contact section at the bottom of the page */}
         <div className="pt-16 px-2">
           <TextBlock value={shopInfoPaths.contactTitle} variant={'subTitle'} />
         </div>
