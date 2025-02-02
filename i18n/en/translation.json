@@ -227,6 +227,10 @@
     "notificationSecond": "- A3 sized paper is 2x the printing price.",
     "notificationThird": "- Double sided prints count as 2 prints."
   },
+  "officeSupplies": {
+    "title": "Office supplies",
+    "introduction": "Efficient work starts with the right office supplies. In our store, you will find a wide range of office essentials, from writing materials and binders to envelopes and labels. Additionally, we offer an large selection of cartridges for various printers, ensuring sharp and clear prints at all times.<br /><br />Our selection includes products from well-known brands, carefully chosen for their quality and reliability."
+  },
   "PaperWeights": {
     "80gr": "80 grams paper",
     "80grShort": "80gr",

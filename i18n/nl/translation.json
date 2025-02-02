@@ -234,6 +234,10 @@
     "notificationSecond": "- A3 formaat is 2x de printprijs.",
     "notificationThird": "- Dubbelzijdige prints tellen als 2 prints."
   },
+  "officeSupplies": {
+    "title": "Kantoor artikelen",
+    "introduction": "Efficiënt werken begint met de juiste kantoorbenodigdheden. In onze winkel vind je een breed assortiment kantoorartikelen, van schrijfwaren en ordners tot enveloppen en etiketten. Daarnaast bieden we een grote selectie cartridges voor diverse printers, zodat je altijd scherp en helder kunt afdrukken.<br /><br />Ons aanbod bestaat uit producten van bekende merken, geselecteerd op kwaliteit en betrouwbaarheid."
+  },
   "PaperWeights": {
     "80gr": "80 grams papier",
     "80grShort": "80gr",

@@ -242,3 +242,8 @@ export const contactFormErrorPaths = {
   messageRequired: 'shopInfo.contact.errors.messageRequired',
   requiredEmailOrTelNo: 'shopInfo.contact.errors.requiredEmailOrTelNo',
 };
+
+export const officeSuppliesPaths = {
+  title: 'officeSupplies.title',
+  introduction: 'officeSupplies.introduction',
+};
