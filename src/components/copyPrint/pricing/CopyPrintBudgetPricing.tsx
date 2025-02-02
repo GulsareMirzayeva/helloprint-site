@@ -16,7 +16,11 @@ import { TitleWithIntroduction } from '../../elementTemplates/TitleWithIntroduct
     Show information and pricing tables for Budget category
 */
 
-export default function CopyPrintBudgetPricing() {
+export default function CopyPrintBudgetPricing({
+  bgColor,
+}: {
+  bgColor: string;
+}) {
   const { prices } = useData();
   const { t } = useTranslation();
 
@@ -49,7 +53,9 @@ export default function CopyPrintBudgetPricing() {
   ];
 
   return (
-    <section className="flex flex-col p-2 sm:p-8 w-full rounded-xl bg-gray-100">
+    <section
+      className={`flex flex-col p-2 sm:p-8 w-full rounded-xl ${bgColor}`}
+    >
       {/* Title, subtitle and introduction text */}
       <TitleWithIntroduction
         props={{

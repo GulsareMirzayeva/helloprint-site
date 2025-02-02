@@ -14,7 +14,7 @@ import { Notification } from '../../elementTemplates/Notification';
     Show information and pricing tables for High Quality category
 */
 
-export default function CopyPrintHqPricing() {
+export default function CopyPrintHqPricing({ bgColor }: { bgColor: string }) {
   const { prices } = useData();
   const { t } = useTranslation();
 
@@ -41,7 +41,9 @@ export default function CopyPrintHqPricing() {
   ];
 
   return (
-    <section className="flex flex-col p-2 sm:p-8 w-full rounded-xl">
+    <section
+      className={`flex flex-col p-2 sm:p-8 w-full rounded-xl ${bgColor}`}
+    >
       {/* Title, subtitle and introduction text */}
       <TitleWithIntroduction
         props={{
