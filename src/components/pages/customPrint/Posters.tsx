@@ -25,9 +25,9 @@ export default function Posters() {
         <IntroductionPosters />
         <Posters80grPricing bgColor={cardBgColors.secondary} />
         <Posters160grPricing bgColor={cardBgColors.primary} />
-        <Posters190grAnd260grPricing bgColor={cardBgColors.secondary} />
-        <PostersSpecialPapersPricing bgColor={cardBgColors.primary} />
-        <PostersA3BudgetAndHqPricing bgColor={cardBgColors.secondary} />
+        <Posters190grAnd260grPricing bgColor={cardBgColors.primary} />
+        <PostersSpecialPapersPricing bgColor={cardBgColors.secondary} />
+        <PostersA3BudgetAndHqPricing bgColor={cardBgColors.primary} />
         <div className="z-0 w-full">
           <Notification>
             <div className="flex items-end">
