@@ -12,7 +12,6 @@ type TextBlockType = {
     | 'xl4Title'
     | 'xl2Title'
     | 'xlTitle'
-    | 'title'
     | 'body'
     | 'bodySmall'
     | 'bold';
@@ -29,7 +28,6 @@ export function TextBlock({ value, variant }: TextBlockType) {
     xl4Title: 'text-4xl font-bold',
     xl2Title: 'text-2xl font-bold',
     xlTitle: 'text-xl font-bold',
-    title: 'text-2xl font-bold',
     body: 'text-base',
     bodySmall: 'text-sm font-medium',
     bold: 'font-bold',

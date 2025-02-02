@@ -11,7 +11,7 @@ export default function TermsOfSaleContent() {
     <section className="flex justify-center p-8 w-full">
       <div className="flex flex-col justify-center my-20">
         <div className="flex p-4">
-          <TextBlock value="termsOfSale.title" variant="title" />
+          <TextBlock value="termsOfSale.title" variant="xl2Title" />
         </div>
 
         {/* Display all terms from the termsOfSaleItems list, highlight the background if the term is active */}
