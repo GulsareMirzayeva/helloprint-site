@@ -9,7 +9,7 @@ import {
 } from '../../../lib/translationPaths';
 import SendMessage from '../../contact/SendMessage';
 import { TextBlock } from '../../elementTemplates/TextBlock';
-import { cardBgColors } from '../../../lib/stylePresets';
+import { colorPresets } from '../../../lib/stylePresets';
 import { Notification } from '../../elementTemplates/Notification';
 import { Divider } from '@mui/material';
 
@@ -21,16 +21,25 @@ export default function Folders() {
       <div></div> {/* Left empty colomn */}
       <div className="flex flex-col items-start justify-start gap-4 w-full px-2 pt-12">
         <IntroductionFlyers />
-        <FoldersDigitalPrintPricing bgColor={cardBgColors.secondary} />
+        <FoldersDigitalPrintPricing
+          bgColor={colorPresets.card.backgroundColorDark}
+        />
         <div className="flex flex-col gap-12 sm:gap-0">
-          <FoldersOffsetPrintPricingA4 bgColor={cardBgColors.primary} />
-          <FoldersOffsetPrintPricingA3 bgColor={cardBgColors.primary} />
+          <FoldersOffsetPrintPricingA4
+            bgColor={colorPresets.card.backgroundColorLight}
+          />
+          <FoldersOffsetPrintPricingA3
+            bgColor={colorPresets.card.backgroundColorLight}
+          />
         </div>
         {/* Display notification message table */}
         <div className="z-0 w-full">
           <Notification>
             <div className="flex items-end">
-              <div className="text-[#FB0036] font-semibold">
+              <div
+                style={{ color: colorPresets.notification.asteriskColor }}
+                className="font-semibold"
+              >
                 <span>*&nbsp;</span>
               </div>
               <TextBlock

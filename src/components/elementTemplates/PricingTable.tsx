@@ -2,6 +2,7 @@ import { useTranslation } from 'react-i18next';
 import { PricingOptions } from '../../lib/types/basicOptionsTypes';
 import { FC } from 'react';
 import i18n from '../../utils/i18';
+import { colorPresets } from '../../lib/stylePresets';
 
 type PricingTableTypes = {
   headerTitles: string[];
@@ -46,10 +47,17 @@ export default function PricingTable({
           {headerTitles.map((title) => (
             <th
               key={title}
-              className="border bg-[#FB0036] text-white border-white py-2 px-3 text-left"
+              style={{
+                backgroundColor: colorPresets.table.headBackgroundColor,
+                color: colorPresets.table.headTextColor,
+                borderColor: colorPresets.table.headBorderColor,
+              }}
+              className={`border py-1 px-3 text-left`}
               scope="col"
             >
-              <div className="text-white">{title}</div>
+              <div style={{ color: colorPresets.table.headTextColor }}>
+                {title}
+              </div>
             </th>
           ))}
         </tr>
@@ -61,7 +69,8 @@ export default function PricingTable({
           {units.map((unit, index) => (
             <th
               key={index}
-              className="border border-gray-400 px-3 py-2 text-left"
+              style={{ borderColor: colorPresets.table.unitsBorderColor }}
+              className="border px-3 py-1 text-left font-medium italic"
               scope="row"
             >
               <i>{unit}</i>
@@ -74,9 +83,18 @@ export default function PricingTable({
           const rowPrices = [...Object.values(row.prices)];
 
           return (
-            <tr key={rowIndex} className="border even:bg-white odd:bg-gray-50">
+            <tr
+              key={rowIndex}
+              className={`
+                border 
+                ${colorPresets.table.highlightRowProperty}
+                ${colorPresets.table.cellBackgroundPropertyEven}
+                ${colorPresets.table.cellBackgroundPropertyOdd}
+              `}
+            >
               <th
-                className="border border-gray-400 px-3 py-1 text-left"
+                style={{ borderColor: colorPresets.table.cellBorderColor }}
+                className={`border px-3 py-1 text-left`}
                 scope="row"
               >
                 <b>{row.option}</b>
@@ -84,8 +102,9 @@ export default function PricingTable({
 
               {rowPrices.map((price, priceIndex) => (
                 <td
+                  style={{ borderColor: colorPresets.table.cellBorderColor }}
                   key={priceIndex}
-                  className="border border-gray-400 px-3 py-1 text-left"
+                  className={`border px-3 py-1 text-left`}
                 >
                   <PriceDisplay price={price} language={i18n.language} />
                 </td>

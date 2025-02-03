@@ -10,7 +10,7 @@ import {
 import SendMessage from '../../contact/SendMessage';
 import { TextBlock } from '../../elementTemplates/TextBlock';
 import { Divider } from '@mui/material';
-import { cardBgColors } from '../../../lib/stylePresets';
+import { colorPresets } from '../../../lib/stylePresets';
 import { Notification } from '../../elementTemplates/Notification';
 
 export default function Flyers() {
@@ -22,15 +22,24 @@ export default function Flyers() {
       <div className="flex flex-col items-start justify-start gap-4 w-full px-2 pt-12">
         <IntroductionFlyers />
         <div className="flex flex-col">
-          <FlyersDigitalPrintA6Pricing bgColor={cardBgColors.secondary} />
-          <FlyersDigitalPrintA5Pricing bgColor={cardBgColors.secondary} />
+          <FlyersDigitalPrintA6Pricing
+            bgColor={colorPresets.card.backgroundColorDark}
+          />
+          <FlyersDigitalPrintA5Pricing
+            bgColor={colorPresets.card.backgroundColorDark}
+          />
         </div>
-        <FlyersOffsetPrintA5Pricing bgColor={cardBgColors.primary} />
+        <FlyersOffsetPrintA5Pricing
+          bgColor={colorPresets.card.backgroundColorLight}
+        />
         {/* Display notification message */}
         <div className="z-0 w-full">
           <Notification>
             <div className="flex items-end">
-              <div className="text-[#FB0036] font-semibold">
+              <div
+                style={{ color: colorPresets.notification.asteriskColor }}
+                className="font-semibold"
+              >
                 <span>*&nbsp;</span>
               </div>
               <TextBlock

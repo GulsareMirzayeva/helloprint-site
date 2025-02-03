@@ -8,7 +8,7 @@ import { useTranslation } from 'react-i18next';
 import { TextBlock } from '../elementTemplates/TextBlock';
 import CopyPrintBudgetPricing from '../copyPrint/pricing/CopyPrintBudgetPricing';
 import CopyPrintHqPricing from '../copyPrint/pricing/CopyPrintHqPricing';
-import { cardBgColors } from '../../lib/stylePresets';
+import { colorPresets } from '../../lib/stylePresets';
 import { Divider } from '@mui/material';
 import { Notification } from '../elementTemplates/Notification';
 
@@ -19,12 +19,17 @@ export default function CopyPrint() {
       <div></div> {/* Left empty colomn */}
       <div className="flex flex-col items-start justify-start gap-4 w-full px-2 pt-12">
         <IntroductionCopyPrint />
-        <CopyPrintBudgetPricing bgColor={cardBgColors.secondary} />
-        <CopyPrintHqPricing bgColor={cardBgColors.primary} />
+        <CopyPrintBudgetPricing
+          bgColor={colorPresets.card.backgroundColorDark}
+        />
+        <CopyPrintHqPricing bgColor={colorPresets.card.backgroundColorLight} />
         <div className="z-0 w-full">
           <Notification>
             <div className="flex items-end">
-              <div className="text-[#FB0036] font-semibold">
+              <div
+                style={{ color: colorPresets.notification.asteriskColor }}
+                className="font-semibold"
+              >
                 <span>*&nbsp;</span>
               </div>
               <TextBlock

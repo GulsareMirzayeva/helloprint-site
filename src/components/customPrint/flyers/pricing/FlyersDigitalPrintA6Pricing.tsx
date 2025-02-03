@@ -54,7 +54,8 @@ export default function FlyersDigitalPrintA6Pricing({
 
   return (
     <section
-      className={`flex flex-col p-2 sm:p-8 pb-2 w-full rounded-t-xl ${bgColor}`}
+      style={{ backgroundColor: bgColor }}
+      className="flex flex-col p-2 sm:p-8 pb-2 w-full rounded-t-xl"
     >
       {/* Title, subtitle and introduction text */}
       <TitleWithIntroduction

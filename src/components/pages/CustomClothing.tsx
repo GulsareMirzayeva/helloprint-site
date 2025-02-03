@@ -8,7 +8,7 @@ import {
 } from '../../lib/translationPaths';
 import SendMessage from '../contact/SendMessage';
 import { TextBlock } from '../elementTemplates/TextBlock';
-import { cardBgColors } from '../../lib/stylePresets';
+import { colorPresets } from '../../lib/stylePresets';
 import { Divider } from '@mui/material';
 import { Notification } from '../elementTemplates/Notification';
 
@@ -20,8 +20,10 @@ export default function CustomClothing() {
       <div></div> {/* Left empty colomn */}
       <div className="flex flex-col items-start justify-start gap-4 w-full px-2 pt-12">
         <IntroductionCustomClothing />
-        <ClothingPiecesPricing bgColor={cardBgColors.secondary} />
-        <FlexAndDtgPricing bgColor={cardBgColors.primary} />
+        <ClothingPiecesPricing
+          bgColor={colorPresets.card.backgroundColorDark}
+        />
+        <FlexAndDtgPricing bgColor={colorPresets.card.backgroundColorLight} />
         {/* Display notification message */}
         <div className="z-0 w-full">
           <Notification>

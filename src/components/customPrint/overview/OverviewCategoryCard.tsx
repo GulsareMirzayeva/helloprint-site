@@ -3,6 +3,7 @@ import { homeContentPaths } from '../../../lib/translationPaths';
 import { Link } from 'react-router-dom';
 import { t } from 'i18next';
 import { CategoryCardType } from '../../../lib/types/customPrintType';
+import { colorPresets } from '../../../lib/stylePresets';
 
 /*
     Text content at the top of the page, the value in the TextBlock components refers to the content location
@@ -18,7 +19,8 @@ export default function OverviewCategoryCard({
 }) {
   return (
     <section
-      className={`${bgColor} flex flex-col items-start md:flex-row p-4  w-full rounded-xl`}
+      style={{ backgroundColor: bgColor }}
+      className="flex flex-col items-start md:flex-row p-4  w-full rounded-x"
     >
       {/* Place image left to the content */}
       <div>
@@ -38,7 +40,11 @@ export default function OverviewCategoryCard({
         <div className="flex justify-start pt-4">
           <Link
             to={cardContent.pageLink}
-            className="relative w-32 pt-2 h-10 text-center rounded-sm bg-[#FB0036] text-white transition-bg duration-100 ease-in hover:bg-[#FF3366]"
+            className={`
+              relative w-32 pt-2 h-10 text-center rounded-sm transition-bg duration-100 ease-in
+              ${colorPresets.button.backgroundProperty}
+              ${colorPresets.button.backgroundHoverProperty}
+              ${colorPresets.button.textProperty}`}
             style={{
               backfaceVisibility: 'hidden',
               willChange: 'transform',

@@ -68,7 +68,8 @@ export default function FoldersDigitalPrintPricing({
 
   return (
     <section
-      className={`flex flex-col p-2 sm:p-8 w-full rounded-xl ${bgColor}`}
+      style={{ backgroundColor: bgColor }}
+      className="flex flex-col p-2 sm:p-8 w-full rounded-xl"
     >
       {/* Title, subtitle and introduction text */}
       <TitleWithIntroduction

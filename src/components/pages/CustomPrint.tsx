@@ -13,7 +13,7 @@ import {
   postersContent,
   stickersContent,
 } from '../../lib/categoriesContent';
-import { cardBgColors } from '../../lib/stylePresets';
+import { colorPresets } from '../../lib/stylePresets';
 import { Divider } from '@mui/material';
 
 export default function CustomPrint() {
@@ -51,7 +51,9 @@ export default function CustomPrint() {
               key={index}
               cardContent={item}
               bgColor={
-                index % 2 === 0 ? cardBgColors.secondary : cardBgColors.primary
+                index % 2 === 0
+                  ? colorPresets.card.backgroundColorLight
+                  : colorPresets.card.backgroundColorDark
               }
             />
           ))}

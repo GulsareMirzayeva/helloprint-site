@@ -6,6 +6,7 @@ import tshirt from '../../assets/icons/icons8-tshirt-100.png';
 import supplies from '../../assets/icons/office_supplies-100.png';
 import { homeContentPaths } from '../../lib/translationPaths';
 import { Link } from 'react-router-dom';
+import { colorPresets } from '../../lib/stylePresets';
 
 export default function ProductCategoryCards() {
   const { t } = useTranslation();
@@ -22,8 +23,18 @@ export default function ProductCategoryCards() {
           key={key}
           className="flex flex-col justify-between border shadow-md w-64"
         >
-          <div className="flex justify-center p-2 bg-[#FB0036] shadow-[0_5px_5px_-5px_rgba(0,0,0,0.5)]">
-            <h2 className="text-xl font-bold text-white ">{value.title}</h2>
+          <div
+            style={{
+              backgroundColor: colorPresets.productCard.headBackgroundColor,
+            }}
+            className="flex justify-center p-2 shadow-[0_5px_5px_-5px_rgba(0,0,0,0.5)]"
+          >
+            <h2
+              style={{ color: colorPresets.productCard.textColor }}
+              className="text-xl font-bold"
+            >
+              {value.title}
+            </h2>
           </div>
           <div className="flex justify-center p-2">
             <img
@@ -47,7 +58,11 @@ export default function ProductCategoryCards() {
           <div className="flex justify-start p-3">
             <Link
               to={value.link}
-              className="relative w-32 pt-2 h-10 text-center rounded-sm bg-[#FB0036] text-white transition-bg duration-100 ease-in hover:bg-[#FF3366]"
+              className={`
+                relative flex items-center justify-center w-32 mt-1 h-10 rounded-sm transition-bg duration-100 ease-in
+                ${colorPresets.button.textProperty}
+                ${colorPresets.button.backgroundProperty}
+                ${colorPresets.button.backgroundHoverProperty}`}
               style={{
                 backfaceVisibility: 'hidden',
                 willChange: 'transform',

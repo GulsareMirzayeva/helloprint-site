@@ -71,7 +71,8 @@ export default function FlexAndDtgPricing({ bgColor }: { bgColor: string }) {
 
   return (
     <section
-      className={`flex flex-col p-2 sm:p-8 w-full rounded-xl ${bgColor}`}
+      style={{ backgroundColor: bgColor }}
+      className="flex flex-col p-2 sm:p-8 w-full rounded-xl"
     >
       <div className="flex flex-col sm:flex-row gap-16">
         <div>

@@ -9,6 +9,7 @@ import { TextBlock } from '../../elementTemplates/TextBlock';
 import { BeatLoader } from 'react-spinners';
 import { copyPrintContentPaths } from '../../../lib/translationPaths';
 import { TitleWithIntroduction } from '../../elementTemplates/TitleWithIntroduction';
+import { colorPresets } from '../../../lib/stylePresets';
 
 /*
     Copy & Print - Budget section
@@ -54,7 +55,10 @@ export default function CopyPrintBudgetPricing({
 
   return (
     <section
-      className={`flex flex-col p-2 sm:p-8 w-full rounded-xl ${bgColor}`}
+      style={{
+        backgroundColor: bgColor,
+      }}
+      className={`flex flex-col p-2 sm:p-8 w-full rounded-xl`}
     >
       {/* Title, subtitle and introduction text */}
       <TitleWithIntroduction
@@ -78,7 +82,10 @@ export default function CopyPrintBudgetPricing({
                 value={copyPrintContentPaths.printerOneToThree}
                 variant="sectionTitle"
               />
-              <div className="text-[#FB0036] font-semibold">
+              <div
+                style={{ color: colorPresets.notification.asteriskColor }}
+                className="font-semibold"
+              >
                 <span>*</span>
               </div>
             </div>
@@ -106,7 +113,10 @@ export default function CopyPrintBudgetPricing({
                 value={copyPrintContentPaths.printerOneToThree}
                 variant="sectionTitle"
               />
-              <div className="text-[#FB0036] font-semibold">
+              <div
+                style={{ color: colorPresets.notification.asteriskColor }}
+                className="font-semibold"
+              >
                 <span>*</span>
               </div>
             </div>

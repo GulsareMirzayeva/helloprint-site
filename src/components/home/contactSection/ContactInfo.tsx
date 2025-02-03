@@ -8,12 +8,16 @@ import {
   contactInfoTextContent,
   shopInfoPaths,
 } from '../../../lib/translationPaths';
+import { colorPresets } from '../../../lib/stylePresets';
 
 export default function ContactInfo() {
   const { t } = useTranslation();
 
   return (
-    <div className="flex flex-col items-center px-2 gap-6 text-white ">
+    <div
+      style={{ color: colorPresets.overall.textColorLight }}
+      className="flex flex-col items-center px-2 gap-6"
+    >
       <div className="hidden md:block">
         <TextBlock value={contactInfoTextContent.title} variant="xl5Title" />
       </div>

@@ -11,7 +11,7 @@ import {
 } from '../../../lib/translationPaths';
 import SendMessage from '../../contact/SendMessage';
 import { TextBlock } from '../../elementTemplates/TextBlock';
-import { cardBgColors } from '../../../lib/stylePresets';
+import { colorPresets } from '../../../lib/stylePresets';
 import { Notification } from '../../elementTemplates/Notification';
 import { Divider } from '@mui/material';
 
@@ -23,17 +23,28 @@ export default function Posters() {
       <div></div> {/* Left empty colomn */}
       <div className="flex flex-col items-start justify-start gap-4 w-full px-2 pt-12">
         <IntroductionPosters />
-        <Posters80grPricing bgColor={cardBgColors.secondary} />
+        <Posters80grPricing bgColor={colorPresets.card.backgroundColorDark} />
         <div className="flex flex-col gap-12 sm:gap-0">
-          <Posters160grPricing bgColor={cardBgColors.primary} />
-          <Posters190grAnd260grPricing bgColor={cardBgColors.primary} />
+          <Posters160grPricing
+            bgColor={colorPresets.card.backgroundColorLight}
+          />
+          <Posters190grAnd260grPricing
+            bgColor={colorPresets.card.backgroundColorLight}
+          />
         </div>
-        <PostersSpecialPapersPricing bgColor={cardBgColors.secondary} />
-        <PostersA3BudgetAndHqPricing bgColor={cardBgColors.primary} />
+        <PostersSpecialPapersPricing
+          bgColor={colorPresets.card.backgroundColorDark}
+        />
+        <PostersA3BudgetAndHqPricing
+          bgColor={colorPresets.card.backgroundColorLight}
+        />
         <div className="z-0 w-full">
           <Notification>
             <div className="flex items-end">
-              <div className="text-[#FB0036] font-semibold">
+              <div
+                style={{ color: colorPresets.notification.asteriskColor }}
+                className="font-semibold"
+              >
                 <span>*&nbsp;</span>
               </div>
               <TextBlock

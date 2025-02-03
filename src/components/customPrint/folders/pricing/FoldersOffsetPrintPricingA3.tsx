@@ -48,7 +48,8 @@ export default function FoldersOffsetPrintPricingA3({
 
   return (
     <section
-      className={`flex flex-col p-2 sm:p-8 w-full rounded-b-xl ${bgColor}`}
+      style={{ backgroundColor: bgColor }}
+      className="flex flex-col p-2 sm:p-8 w-full rounded-b-xl"
     >
       <div>
         {/* Display table name and the papertype */}

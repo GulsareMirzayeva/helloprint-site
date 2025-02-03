@@ -1,5 +1,5 @@
 // import { useTranslation } from 'react-i18next';
-import { cardBgColors } from '../../lib/stylePresets';
+import { colorPresets } from '../../lib/stylePresets';
 import GoogleMap from './contactDetails/GoogleMap';
 
 import AdressSection from './contactDetails/details/AdressSection';
@@ -11,7 +11,10 @@ export default function ContactDetails() {
   return (
     <section className="flex flex-col w-full">
       <div
-        className={`flex flex-col p-2 mb-10 sm:p-8 rounded-xl ${cardBgColors.secondary}`}
+        style={{
+          backgroundColor: colorPresets.card.backgroundColor,
+        }}
+        className="flex flex-col p-2 mb-10 sm:p-8 rounded-xl"
       >
         <div className="flex flex-wrap md:justify-evenly sm:justify-start">
           <div>

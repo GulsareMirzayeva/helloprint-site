@@ -9,6 +9,7 @@ import { menuButtonNames } from '../lib/translationPaths';
 import { ExpandableLinkType } from '../lib/types/headerNavigationTypes';
 import { NavigationLink, SubNavigationLink } from '../utils/GenerateElements';
 import { Divider } from '@mui/material';
+import { colorPresets } from '../lib/stylePresets';
 
 export default function Header() {
   // Used for translation with the i18next package, set default language to Dutch(nl)
@@ -96,11 +97,12 @@ export default function Header() {
         onMouseLeave={handleMouseLeave}
       >
         <div
-          className={`p-1 flex items-center cursor-default border-b-2 ${
-            location.pathname.startsWith('/custom-print')
-              ? 'border-b-[#FB0036]'
-              : 'border-b-white'
-          }`}
+          className={`p-1 flex items-center cursor-default border-b-2 
+            ${
+              location.pathname.startsWith('/custom-print')
+                ? `${colorPresets.navigation.underlineActiveColorProperty}`
+                : `${colorPresets.navigation.underlineInActiveColorProperty} ${colorPresets.navigation.underlineHoverColorProperty}`
+            }`}
           onClick={handleOpen}
         >
           <button
@@ -125,7 +127,10 @@ export default function Header() {
   };
 
   return (
-    <header className="sticky top-0 z-20 bg-white shadow-md">
+    <header
+      style={{ backgroundColor: colorPresets.header.backgroundColor }}
+      className="sticky top-0 z-20 shadow-md"
+    >
       <nav className="flex flex-col lg:flex-row lg:justify-center lg:h-16 px-4">
         {/* Logo + Hamburger menu */}
         <div>
@@ -149,7 +154,12 @@ export default function Header() {
           />
           <NagivationExpandableLink>
             {isAccordionOpen && (
-              <ul className="absolute top-[calc(100%+6px)] min-w-[105%] bg-white shadow-md rounded-sm">
+              <ul
+                style={{
+                  backgroundColor: colorPresets.navigation.backgroundColor,
+                }}
+                className="absolute top-[calc(100%+6px)] min-w-[105%] shadow-md rounded-sm"
+              >
                 <SubNavigationLink
                   path={'/custom-print'}
                   value={t(menuButtonNames.overview)}

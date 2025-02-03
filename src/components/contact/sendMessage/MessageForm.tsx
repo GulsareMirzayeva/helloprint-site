@@ -9,6 +9,7 @@ import { useEffect, useState } from 'react';
 import i18n from '../../../utils/i18';
 import { FormProps } from '../../../lib/types/contactFormTypes';
 import { ConfirmMessage } from './ConfirmMessage';
+import { colorPresets } from '../../../lib/stylePresets';
 
 export default function MessageForm() {
   const { t } = useTranslation();
@@ -105,7 +106,10 @@ export default function MessageForm() {
                 placeholder={t(contactFormTextContentPaths.telephoneNo)}
               />
               {errors.telNo?.message && (
-                <p className="pl-1 text-[#FB0036]">
+                <p
+                  style={{ color: colorPresets.notification.textColor }}
+                  className="pl-1"
+                >
                   {String(errors.telNo.message)}
                 </p>
               )}
@@ -124,7 +128,10 @@ export default function MessageForm() {
                 placeholder={t(contactFormTextContentPaths.email)}
               />
               {errors.email?.message && (
-                <p className="pl-1 text-[#FB0036]">
+                <p
+                  style={{ color: colorPresets.notification.textColor }}
+                  className="pl-1"
+                >
                   {String(errors.email.message)}
                 </p>
               )}
@@ -169,7 +176,12 @@ export default function MessageForm() {
                 placeholder={t(contactFormTextContentPaths.messageContent)}
               />
               {errors.message && (
-                <p className="pl-1 text-[#FB0036]">
+                <p
+                  style={{
+                    color: colorPresets.notification.textColor,
+                  }}
+                  className="pl-1"
+                >
                   {(errors.message as FieldError).message}
                 </p>
               )}
@@ -177,7 +189,12 @@ export default function MessageForm() {
 
             {/* Display error message when no e-mail address OR telephone number is given */}
             {showError && !errors.email && !errors.telNo && (
-              <p className="pl-1 text-[#FB0036]">
+              <p
+                style={{
+                  color: colorPresets.notification.textColor,
+                }}
+                className="pl-1"
+              >
                 {t(contactFormErrorPaths.requiredEmailOrTelNo)}
               </p>
             )}
@@ -185,7 +202,11 @@ export default function MessageForm() {
             {/* Send button */}
             <button
               type="submit"
-              className="relative w-32 mt-1 h-10 rounded-sm bg-[#FB0036] text-white transition-bg duration-100 ease-in hover:bg-[#FF3366]"
+              className={`
+                relative w-32 mt-1 h-10 rounded-sm transition-bg duration-100 ease-in
+                ${colorPresets.button.textProperty}
+                ${colorPresets.button.backgroundProperty}
+                ${colorPresets.button.backgroundHoverProperty}`}
               style={{
                 backfaceVisibility: 'hidden',
                 willChange: 'transform',

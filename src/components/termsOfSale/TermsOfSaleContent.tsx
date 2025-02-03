@@ -2,7 +2,7 @@ import { useTranslation } from 'react-i18next';
 import { TextBlock } from '../elementTemplates/TextBlock';
 import { useData } from '../../context/DataContext';
 import { terms } from '../../lib/termsOfSaleItems';
-import { cardBgColors } from '../../lib/stylePresets';
+import { colorPresets } from '../../lib/stylePresets';
 
 export default function TermsOfSaleContent() {
   useTranslation();
@@ -21,7 +21,9 @@ export default function TermsOfSaleContent() {
           <div
             key={term}
             className={
-              activeTerm == term ? `p-2 ${cardBgColors.secondary}` : 'p-2'
+              activeTerm == term
+                ? `p-2 ${colorPresets.card.backgroundPropertyActive}`
+                : 'p-2'
             }
           >
             <TextBlock value={`termsOfSale.${term}.title`} variant="bold" />

@@ -1,3 +1,4 @@
+import { colorPresets } from '../../lib/stylePresets';
 import { PageTitleType } from '../../lib/types/customPrintType';
 import { TextBlock } from './TextBlock';
 
@@ -16,7 +17,10 @@ export function TitleWithIntroduction({ props }: { props: PageTitleType }) {
         </div>
       </div>
       {props.notification && (
-        <div className="pb-6 text-[#FB0036] font-medium">
+        <div
+          style={{ color: colorPresets.notification.textColor }}
+          className="pb-6 font-medium"
+        >
           <TextBlock value={props.notification} variant="body" />
         </div>
       )}
