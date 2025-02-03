@@ -21,8 +21,8 @@ export function TextBlock({ value, variant }: TextBlockType) {
   const classNames = {
     pageTitle: 'text-4xl pb-4 font-medium',
     subTitle: 'text-2xl pb-2 font-normal',
-    subTitleMedium: 'text-3xl pb-0 md:pb-3 font-bold',
-    tableSubTitle: 'text-3xl pb-1 font-normal',
+    subTitleMedium: 'text-2xl pb-0 md:pb-3 font-bold',
+    tableSubTitle: 'text-2xl pb-1 font-normal',
     sectionTitle: 'text-large font-bold',
     xl5Title: 'text-5xl font-bold',
     xl4Title: 'text-4xl font-bold',

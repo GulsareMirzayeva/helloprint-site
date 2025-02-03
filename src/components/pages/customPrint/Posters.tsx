@@ -24,8 +24,10 @@ export default function Posters() {
       <div className="flex flex-col items-start justify-start gap-4 w-full px-2 pt-12">
         <IntroductionPosters />
         <Posters80grPricing bgColor={cardBgColors.secondary} />
-        <Posters160grPricing bgColor={cardBgColors.primary} />
-        <Posters190grAnd260grPricing bgColor={cardBgColors.primary} />
+        <div className="flex flex-col gap-12 sm:gap-0">
+          <Posters160grPricing bgColor={cardBgColors.primary} />
+          <Posters190grAnd260grPricing bgColor={cardBgColors.primary} />
+        </div>
         <PostersSpecialPapersPricing bgColor={cardBgColors.secondary} />
         <PostersA3BudgetAndHqPricing bgColor={cardBgColors.primary} />
         <div className="z-0 w-full">

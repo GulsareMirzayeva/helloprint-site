@@ -22,8 +22,10 @@ export default function Folders() {
       <div className="flex flex-col items-start justify-start gap-4 w-full px-2 pt-12">
         <IntroductionFlyers />
         <FoldersDigitalPrintPricing bgColor={cardBgColors.secondary} />
-        <FoldersOffsetPrintPricingA4 bgColor={cardBgColors.primary} />
-        <FoldersOffsetPrintPricingA3 bgColor={cardBgColors.secondary} />
+        <div className="flex flex-col gap-12 sm:gap-0">
+          <FoldersOffsetPrintPricingA4 bgColor={cardBgColors.primary} />
+          <FoldersOffsetPrintPricingA3 bgColor={cardBgColors.primary} />
+        </div>
         {/* Display notification message table */}
         <div className="z-0 w-full">
           <Notification>

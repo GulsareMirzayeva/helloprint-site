@@ -55,7 +55,7 @@ export default function FoldersOffsetPrintPricingA4({
 
   return (
     <section
-      className={`flex flex-col p-2 sm:p-8 w-full rounded-xl ${bgColor}`}
+      className={`flex flex-col p-2 sm:p-8 w-full rounded-t-xl ${bgColor}`}
     >
       {/* Title, subtitle and introduction text */}
       <TitleWithIntroduction

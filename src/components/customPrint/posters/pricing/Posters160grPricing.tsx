@@ -45,7 +45,7 @@ export default function Posters160grPricing({ bgColor }: { bgColor: string }) {
 
   return (
     <section
-      className={`flex flex-col p-2 sm:p-8 w-full rounded-xl ${bgColor}`}
+      className={`flex flex-col p-2 sm:p-8 w-full rounded-t-xl ${bgColor}`}
     >
       <TitleWithIntroduction
         props={{
@@ -54,7 +54,7 @@ export default function Posters160grPricing({ bgColor }: { bgColor: string }) {
           introduction: postersContentPaths.introduction160To260GrTable,
         }}
       />
-      <div className="flex flex-col md:flex-row gap-4 md:gap-16">
+      <div className="flex flex-col md:flex-row gap-8 md:gap-16">
         <div className="pt-8">
           {/* Display a title and the papertype */}
           <div className="flex flex-col">
