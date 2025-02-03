@@ -19,21 +19,21 @@ export const colorPresets = {
     inActiveLinkColor: mainColors.lightColor,
   },
   navigation: {
-    backgroundColor: mainColors.lightColor,
-    backgroundHoverProperty: `hover:bg-[${mainColors.secondaryColor}]`,
-    underlineActiveColorProperty: `border-b-[${mainColors.corporateIdentityColor}]`,
-    underlineInActiveColorProperty: `border-b-[${mainColors.lightColor}]`,
-    underlineHoverColorProperty: `hover:border-b-[${mainColors.secondaryColor}]`,
+    backgroundColor: '#ffffff',
+    backgroundHoverProperty: `hover:bg-[#f3f4f6]`,
+    underlineActiveColorProperty: `border-b-[#fb0036]`,
+    underlineInActiveColorProperty: `border-b-[#ffffff]`,
+    underlineHoverColorProperty: `hover:border-b-[#f3f4f6]`,
   },
   home: {
     contactSection: {
       fromProperty: 'from-[#fd3964]',
       viaProperty: 'via-[#fa2150]',
-      toProperty: `to-[${mainColors.corporateIdentityColor}]`,
+      toProperty: `to-[#fb0036]`,
     },
   },
   footer: {
-    borderTopProperty: `border-[${mainColors.corporateIdentityColor}]`,
+    borderTopProperty: `border-[#fb0036]`,
   },
   productCard: {
     headBackgroundColor: mainColors.corporateIdentityColor,
@@ -42,7 +42,7 @@ export const colorPresets = {
   card: {
     backgroundColorDark: mainColors.secondaryColor,
     backgroundColorLight: mainColors.lightColor,
-    backgroundPropertyActive: `bg-[${mainColors.secondaryColor}]`,
+    backgroundPropertyActive: `bg-[#f3f4f6]`,
   },
   table: {
     headBackgroundColor: mainColors.corporateIdentityColor,
@@ -52,18 +52,18 @@ export const colorPresets = {
     cellBackgroundPropertyEven: 'even:bg-[#ffffff]',
     cellBackgroundPropertyOdd: 'odd:bg-[#f9fafb]',
     cellBorderColor: mainColors.secondaryDarkColor,
-    highlightRowProperty: `hover:bg-[${mainColors.corporateIdentityColor}20]`, // 20% opacity
+    highlightRowProperty: `hover:bg-[#fb003620]`, // 20% opacity
   },
   notification: {
     asteriskColor: mainColors.corporateIdentityColor,
     textColor: mainColors.corporateIdentityColor,
-    borderProperty: `border-[${mainColors.secondaryDarkColor}]`,
+    borderProperty: `border-[#c2c2c2]`,
     iconColor: '#1e40af',
   },
   button: {
-    backgroundProperty: `bg-[${mainColors.corporateIdentityColor}]`,
+    backgroundProperty: `bg-[#fb0036]`,
     backgroundHoverProperty: 'hover:bg-[#ff3366]',
-    textProperty: `text-[${mainColors.lightColor}]`,
+    textProperty: `text-[#ffffff]`,
   },
   confirmMessage: {
     textColor: '#166534',
