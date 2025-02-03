@@ -9,9 +9,9 @@ export default function TermsOfSaleContent() {
   const { activeTerm } = useData();
 
   return (
-    <section className="flex justify-center p-8 w-full">
-      <div className="flex flex-col justify-center my-20">
-        <div className="flex p-4">
+    <section className="flex justify-center p-2 w-full">
+      <div className="flex flex-col justify-center py-8">
+        <div className="flex p-2">
           <TextBlock value="termsOfSale.title" variant="xl2Title" />
         </div>
 
@@ -21,7 +21,7 @@ export default function TermsOfSaleContent() {
           <div
             key={term}
             className={
-              activeTerm == term ? `p-4 ${cardBgColors.secondary}` : 'p-4'
+              activeTerm == term ? `p-2 ${cardBgColors.secondary}` : 'p-2'
             }
           >
             <TextBlock value={`termsOfSale.${term}.title`} variant="bold" />
