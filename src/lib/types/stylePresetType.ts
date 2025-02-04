@@ -1,59 +1,60 @@
-export type stylePresetType = {
+export type StylePresetType = {
   overall: {
-    primaryColor: string;
-    backgroundColor: string;
-    textColorDark: string;
+    textColorPrimary: string;
+    textColorSecondary: string;
     textColorLight: string;
+    backgroundColor: string;
+    formTextColor: string;
   };
   header: {
     backgroundColor: string;
-    activeLinkColor: string;
-    inActiveLinkColor: string;
   };
   navigation: {
     backgroundColor: string;
-    backgroundHoverProperty: string;
-    underlineActiveColorProperty: string;
-    underlineInActiveColorProperty: string;
-    underlineHoverColorProperty: string;
+    backgroundHover: string;
+    underlineActiveColor: string;
+    underlineInActiveColor: string;
+    underlineHoverColor: string;
   };
   home: {
-    fromProperty: string;
-    viaProperty: string;
-    toProperty: string;
+    from: string;
+    via: string;
+    to: string;
   };
   footer: {
-    borderTopProperty: string;
+    borderTopColor: string;
+    backgroundColor: string;
   };
   productCard: {
     headBackgroundColor: string;
     textColor: string;
+    borderColor: string;
   };
   card: {
     backgroundColorDark: string;
     backgroundColorLight: string;
-    backgroundPropertyActive: string;
+    backgroundColorActive: string;
   };
   table: {
     headBackgroundColor: string;
     headBorderColor: string;
     unitsBorderColor: string;
     headTextColor: string;
-    cellBackgroundPropertyEven: string;
-    cellBackgroundPropertyOdd: string;
+    cellBackgroundEven: string;
+    cellBackgroundOdd: string;
     cellBorderColor: string;
-    highlightRowProperty: string;
+    highlightRow: string;
   };
   notification: {
-    asteriskColor: string;
     textColor: string;
-    borderProperty: string;
+    asteriskColor: string;
+    borderColor: string;
     iconColor: string;
   };
   button: {
-    backgroundProperty: string;
-    backgroundHoverProperty: string;
-    textProperty: string;
+    backgroundColor: string;
+    backgroundHover: string;
+    textColor: string;
   };
   confirmMessage: {
     textColor: string;

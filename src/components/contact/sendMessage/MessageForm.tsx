@@ -58,9 +58,15 @@ export default function MessageForm() {
             value={contactFormTextContentPaths.sendMessage}
             variant="subTitle"
           />
-          <form onSubmit={handleSubmit(onSubmit)} className="flex flex-col">
+          <form
+            onSubmit={handleSubmit(onSubmit)}
+            className={`
+              flex flex-col
+              ${stylePreset.overall.formTextColor}
+            `}
+          >
             {/* Name input field */}
-            <div className="mb-2">
+            <div>
               <label className="sr-only" htmlFor="name">
                 <TextBlock
                   value={contactFormTextContentPaths.formUserName}
@@ -78,7 +84,7 @@ export default function MessageForm() {
             </div>
 
             {/* Telephone number input field */}
-            <div className="mb-2">
+            <div>
               <label className="sr-only" htmlFor="telNo">
                 <TextBlock
                   value={contactFormTextContentPaths.formUserTelNumber}
@@ -108,8 +114,10 @@ export default function MessageForm() {
               />
               {errors.telNo?.message && (
                 <p
-                  style={{ color: stylePreset.notification.textColor }}
-                  className="pl-1"
+                  className={`
+                    pl-1
+                    ${stylePreset.notification.textColor}
+                    `}
                 >
                   {String(errors.telNo.message)}
                 </p>
@@ -130,8 +138,10 @@ export default function MessageForm() {
               />
               {errors.email?.message && (
                 <p
-                  style={{ color: stylePreset.notification.textColor }}
-                  className="pl-1"
+                  className={`
+                    pl-1
+                    ${stylePreset.notification.textColor}
+                    `}
                 >
                   {String(errors.email.message)}
                 </p>
@@ -139,7 +149,7 @@ export default function MessageForm() {
             </div>
 
             {/* Subject input field */}
-            <div className="mb-2">
+            <div>
               <label className="sr-only" htmlFor="subject">
                 <TextBlock
                   value={contactFormTextContentPaths.messageSubject}
@@ -178,10 +188,10 @@ export default function MessageForm() {
               />
               {errors.message && (
                 <p
-                  style={{
-                    color: stylePreset.notification.textColor,
-                  }}
-                  className="pl-1"
+                  className={`
+                  pl-1
+                  ${stylePreset.notification.textColor}
+                  `}
                 >
                   {(errors.message as FieldError).message}
                 </p>
@@ -191,10 +201,10 @@ export default function MessageForm() {
             {/* Display error message when no e-mail address OR telephone number is given */}
             {showError && !errors.email && !errors.telNo && (
               <p
-                style={{
-                  color: stylePreset.notification.textColor,
-                }}
-                className="pl-1"
+                className={`
+                pl-1
+                ${stylePreset.notification.textColor}
+                `}
               >
                 {t(contactFormErrorPaths.requiredEmailOrTelNo)}
               </p>
@@ -205,9 +215,9 @@ export default function MessageForm() {
               type="submit"
               className={`
                 relative w-32 mt-1 h-10 rounded-sm transition-bg duration-100 ease-in
-                ${stylePreset.button.textProperty}
-                ${stylePreset.button.backgroundProperty}
-                ${stylePreset.button.backgroundHoverProperty}`}
+                ${stylePreset.button.textColor}
+                ${stylePreset.button.backgroundColor}
+                ${stylePreset.button.backgroundHover}`}
               style={{
                 backfaceVisibility: 'hidden',
                 willChange: 'transform',

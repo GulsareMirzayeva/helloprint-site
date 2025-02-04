@@ -13,8 +13,8 @@ export const NavigationLink = (linkProps: NavigationType) => {
     <Link
       className={`p-1 flex items-center cursor-default border-b-2 ${
         location.pathname === linkProps.path
-          ? `${stylePreset.navigation.underlineActiveColorProperty}`
-          : `${stylePreset.navigation.underlineInActiveColorProperty} ${stylePreset.navigation.underlineHoverColorProperty}`
+          ? `${stylePreset.navigation.underlineActiveColor}`
+          : `${stylePreset.navigation.underlineInActiveColor} ${stylePreset.navigation.underlineHoverColor}`
       }`}
       to={linkProps.path}
     >
@@ -29,7 +29,7 @@ export const SubNavigationLink = (linkProps: SubNavigationType) => {
   return (
     <Link to={linkProps.path} onClick={linkProps.callBack}>
       <li
-        className={`${stylePreset.navigation.backgroundHoverProperty} p-2 cursor-default`}
+        className={`${stylePreset.navigation.backgroundHover} p-2 cursor-default`}
       >
         {t(linkProps.value)}
       </li>

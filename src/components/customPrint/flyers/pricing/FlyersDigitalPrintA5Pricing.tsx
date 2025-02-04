@@ -54,8 +54,10 @@ export default function FlyersDigitalPrintA5Pricing({
 
   return (
     <section
-      style={{ backgroundColor: bgColor }}
-      className="flex flex-col pt-16 md:pt-0 p-2 sm:p-8 w-full rounded-b-xl"
+      className={`
+        flex flex-col md:pt-0 p-2 sm:p-8 w-full rounded-b-xl
+        ${bgColor}
+        `}
     >
       <div className="flex flex-col md:flex-row gap-16">
         <div>

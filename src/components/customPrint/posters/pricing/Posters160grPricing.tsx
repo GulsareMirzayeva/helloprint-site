@@ -45,8 +45,10 @@ export default function Posters160grPricing({ bgColor }: { bgColor: string }) {
 
   return (
     <section
-      style={{ backgroundColor: bgColor }}
-      className="flex flex-col p-2 sm:p-8 w-full rounded-t-xl"
+      className={`
+        flex flex-col p-2 sm:p-8 w-full rounded-t-xl
+        ${bgColor}  
+      `}
     >
       <TitleWithIntroduction
         props={{

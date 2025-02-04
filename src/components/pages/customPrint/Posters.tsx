@@ -20,31 +20,36 @@ export default function Posters() {
   const { stylePreset } = useData();
 
   return (
-    <div className="grid grid-cols-[1fr,minmax(0,1200px),1fr] w-full">
+    <div
+      className={`
+      grid grid-cols-[1fr,minmax(0,1200px),1fr] w-full
+      ${stylePreset.overall.backgroundColor}
+    `}
+    >
       <div></div> {/* Left empty colomn */}
       <div className="flex flex-col items-start justify-start gap-4 w-full px-2 pt-12">
         <IntroductionPosters />
-        <Posters80grPricing bgColor={stylePreset.card.backgroundColorDark} />
+        <Posters80grPricing bgColor={stylePreset.card.backgroundColorLight} />
         <div className="flex flex-col gap-12 sm:gap-0">
-          <Posters160grPricing
-            bgColor={stylePreset.card.backgroundColorLight}
-          />
+          <Posters160grPricing bgColor={stylePreset.card.backgroundColorDark} />
           <Posters190grAnd260grPricing
-            bgColor={stylePreset.card.backgroundColorLight}
+            bgColor={stylePreset.card.backgroundColorDark}
           />
         </div>
         <PostersSpecialPapersPricing
-          bgColor={stylePreset.card.backgroundColorDark}
+          bgColor={stylePreset.card.backgroundColorLight}
         />
         <PostersA3BudgetAndHqPricing
-          bgColor={stylePreset.card.backgroundColorLight}
+          bgColor={stylePreset.card.backgroundColorDark}
         />
         <div className="z-0 w-full">
           <Notification>
             <div className="flex items-end">
               <div
-                style={{ color: stylePreset.notification.asteriskColor }}
-                className="font-semibold"
+                className={`
+                  font-semibold
+                  ${stylePreset.notification.asteriskColor}
+                  `}
               >
                 <span>*&nbsp;</span>
               </div>

@@ -21,8 +21,10 @@ export default function OverviewCategoryCard({
 
   return (
     <section
-      style={{ backgroundColor: bgColor }}
-      className="flex flex-col items-start md:flex-row p-4  w-full rounded-x"
+      className={`
+        flex flex-col items-start md:flex-row p-4  w-full rounded-xl
+        ${bgColor}
+      `}
     >
       {/* Place image left to the content */}
       <div>
@@ -44,9 +46,9 @@ export default function OverviewCategoryCard({
             to={cardContent.pageLink}
             className={`
               relative w-32 pt-2 h-10 text-center rounded-sm transition-bg duration-100 ease-in
-              ${stylePreset.button.backgroundProperty}
-              ${stylePreset.button.backgroundHoverProperty}
-              ${stylePreset.button.textProperty}`}
+              ${stylePreset.button.backgroundColor}
+              ${stylePreset.button.backgroundHover}
+              ${stylePreset.button.textColor}`}
             style={{
               backfaceVisibility: 'hidden',
               willChange: 'transform',

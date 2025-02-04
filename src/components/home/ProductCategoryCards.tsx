@@ -22,17 +22,22 @@ export default function ProductCategoryCards() {
       {Object.entries(categoryCardsContent).map(([key, value]) => (
         <div
           key={key}
-          className="flex flex-col justify-between border shadow-md w-64"
+          className={`
+            flex flex-col justify-between border shadow-md w-64
+            ${stylePreset.productCard.borderColor}
+            `}
         >
           <div
-            style={{
-              backgroundColor: stylePreset.productCard.headBackgroundColor,
-            }}
-            className="flex justify-center p-2 shadow-[0_5px_5px_-5px_rgba(0,0,0,0.5)]"
+            className={`
+              flex justify-center p-2 shadow-[0_5px_5px_-5px_rgba(0,0,0,0.5)]
+              ${stylePreset.productCard.headBackgroundColor}
+              `}
           >
             <h2
-              style={{ color: stylePreset.productCard.textColor }}
-              className="text-xl font-bold"
+              className={`
+                text-xl font-bold
+                ${stylePreset.productCard.textColor}
+                `}
             >
               {value.title}
             </h2>
@@ -61,9 +66,9 @@ export default function ProductCategoryCards() {
               to={value.link}
               className={`
                 relative flex items-center justify-center w-32 mt-1 h-10 rounded-sm transition-bg duration-100 ease-in
-                ${stylePreset.button.textProperty}
-                ${stylePreset.button.backgroundProperty}
-                ${stylePreset.button.backgroundHoverProperty}`}
+                ${stylePreset.button.textColor}
+                ${stylePreset.button.backgroundColor}
+                ${stylePreset.button.backgroundHover}`}
               style={{
                 backfaceVisibility: 'hidden',
                 willChange: 'transform',

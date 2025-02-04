@@ -18,19 +18,24 @@ export default function Folders() {
   const { stylePreset } = useData();
 
   return (
-    <div className="grid grid-cols-[1fr,minmax(0,1200px),1fr] w-full">
+    <div
+      className={`
+      grid grid-cols-[1fr,minmax(0,1200px),1fr] w-full
+      ${stylePreset.overall.backgroundColor}
+    `}
+    >
       <div></div> {/* Left empty colomn */}
       <div className="flex flex-col items-start justify-start gap-4 w-full px-2 pt-12">
         <IntroductionFlyers />
         <FoldersDigitalPrintPricing
-          bgColor={stylePreset.card.backgroundColorDark}
+          bgColor={stylePreset.card.backgroundColorLight}
         />
         <div className="flex flex-col gap-12 sm:gap-0">
           <FoldersOffsetPrintPricingA4
-            bgColor={stylePreset.card.backgroundColorLight}
+            bgColor={stylePreset.card.backgroundColorDark}
           />
           <FoldersOffsetPrintPricingA3
-            bgColor={stylePreset.card.backgroundColorLight}
+            bgColor={stylePreset.card.backgroundColorDark}
           />
         </div>
         {/* Display notification message table */}
@@ -38,8 +43,10 @@ export default function Folders() {
           <Notification>
             <div className="flex items-end">
               <div
-                style={{ color: stylePreset.notification.asteriskColor }}
-                className="font-semibold"
+                className={`
+                  font-semibold
+                  ${stylePreset.notification.asteriskColor}
+                  `}
               >
                 <span>*&nbsp;</span>
               </div>

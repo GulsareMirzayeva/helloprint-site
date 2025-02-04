@@ -30,7 +30,12 @@ export default function CustomPrint() {
   ];
 
   return (
-    <div className="grid grid-cols-[1fr,minmax(0,1200px),1fr] w-full">
+    <div
+      className={`
+      ${stylePreset.overall.backgroundColor}
+      grid grid-cols-[1fr,minmax(0,1200px),1fr] w-full
+    `}
+    >
       <div></div> {/* Left empty colomn */}
       <div className="flex flex-col items-start justify-start w-full pt-12">
         {/* Title and introduction text at the top of the page */}
@@ -46,7 +51,7 @@ export default function CustomPrint() {
         </div>
 
         {/* Create a overview card for each category */}
-        <div className="flex flex-col gap-4 pb-8">
+        <div className="flex flex-col gap-8 pb-8">
           {cardItems.map((item, index) => (
             <OverviewCategoryCard
               key={index}

@@ -17,11 +17,18 @@ export default function CustomClothing() {
   const { stylePreset } = useData();
 
   return (
-    <div className="grid grid-cols-[1fr,minmax(0,1200px),1fr] w-full">
+    <div
+      className={`
+      ${stylePreset.overall.backgroundColor}      
+      grid grid-cols-[1fr,minmax(0,1200px),1fr] w-full
+      `}
+    >
       <div></div> {/* Left empty colomn */}
       <div className="flex flex-col items-start justify-start gap-4 w-full px-2 pt-12">
         <IntroductionCustomClothing />
-        <ClothingPiecesPricing bgColor={stylePreset.card.backgroundColorDark} />
+        <ClothingPiecesPricing
+          bgColor={stylePreset.card.backgroundColorLight}
+        />
         <FlexAndDtgPricing bgColor={stylePreset.card.backgroundColorLight} />
         {/* Display notification message */}
         <div className="z-0 w-full">

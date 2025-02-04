@@ -33,8 +33,10 @@ export default function StickersPricing({ bgColor }: { bgColor: string }) {
   return (
     <section>
       <div
-        style={{ backgroundColor: bgColor }}
-        className="flex flex-col p-2 sm:p-8 rounded-xl"
+        className={`
+          flex flex-col p-2 sm:p-8 rounded-xl
+          ${bgColor}  
+        `}
       >
         <TitleWithIntroduction
           props={{

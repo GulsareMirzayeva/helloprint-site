@@ -43,8 +43,10 @@ export default function PostersA3BudgetAndHqPricing({
 
   return (
     <section
-      style={{ backgroundColor: bgColor }}
-      className="flex flex-col p-2 sm:p-8 w-full rounded-xl"
+      className={`
+        flex flex-col p-2 sm:p-8 w-full rounded-xl
+        ${bgColor}  
+      `}
     >
       <TitleWithIntroduction
         props={{
@@ -68,8 +70,10 @@ export default function PostersA3BudgetAndHqPricing({
                 variant="sectionTitle"
               />
               <div
-                style={{ color: stylePreset.notification.asteriskColor }}
-                className="font-semibold"
+                className={`
+                  font-semibold
+                  ${stylePreset.notification.asteriskColor}
+                `}
               >
                 <span>*</span>
               </div>
@@ -100,8 +104,10 @@ export default function PostersA3BudgetAndHqPricing({
                 variant="sectionTitle"
               />
               <div
-                style={{ color: stylePreset.notification.asteriskColor }}
-                className="font-semibold"
+                className={`
+                  font-semibold
+                  ${stylePreset.notification.asteriskColor}
+                `}
               >
                 <span>*</span>
               </div>

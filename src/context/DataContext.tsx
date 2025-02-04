@@ -8,19 +8,42 @@ import {
 import { getPrices } from '../api/getPrices';
 import { DataContextType, Prices } from '../lib/types/dataContextTypes';
 import { FooterTermsOfSaleLinks } from '../lib/types/footerTermsofSaleLinkTypes';
-import { colorPresets } from '../lib/stylePresets';
-import { stylePresetType } from '../lib/types/stylePresetType';
+import { StylePresetType } from '../lib/types/stylePresetType';
+import { darkTheme, lightTheme } from '../lib/stylePresets';
 
 const DataContext = createContext<DataContextType | undefined>(undefined);
 
 export function DataProvider({ children }: { children: ReactNode }) {
-  const [stylePreset, setStylePreset] = useState<stylePresetType>(colorPresets);
   const [prices, setPrices] = useState<Prices | null>(null);
   const [error, setError] = useState<Error | null>(null);
   const [isLoading, setIsLoading] = useState<boolean>(true);
   const [activeTerm, setActiveTerm] = useState<FooterTermsOfSaleLinks>('none');
 
-  // Haal gegevens op
+  // Manage color themes
+  const [darkMode, setDarkMode] = useState(
+    localStorage.getItem('theme') === 'dark'
+  );
+  const [stylePreset, setStylePreset] = useState<StylePresetType>(
+    darkMode ? darkTheme : lightTheme
+  );
+
+  // Set theme class in HTML file
+  useEffect(() => {
+    if (darkMode) {
+      document.documentElement.classList.add('dark');
+      localStorage.setItem('theme', 'dark');
+    } else {
+      document.documentElement.classList.remove('dark');
+      localStorage.setItem('theme', 'light');
+    }
+  }, [darkMode]);
+
+  // Swap style presets when the toggle switch has changed position
+  useEffect(() => {
+    setStylePreset((prev) => (prev === lightTheme ? darkTheme : lightTheme));
+  }, [darkMode]);
+
+  // Get all prices at once
   useEffect(() => {
     const fetchData = async () => {
       try {
@@ -37,6 +60,7 @@ export function DataProvider({ children }: { children: ReactNode }) {
   return (
     <DataContext.Provider
       value={{
+        darkMode,
         stylePreset,
         prices,
         error,
@@ -47,6 +71,7 @@ export function DataProvider({ children }: { children: ReactNode }) {
         setError,
         setIsLoading,
         setActiveTerm,
+        setDarkMode,
       }}
     >
       {children}

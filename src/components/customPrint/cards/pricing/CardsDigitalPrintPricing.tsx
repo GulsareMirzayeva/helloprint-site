@@ -48,8 +48,10 @@ export default function CardsDigitalPrintPricing({
 
   return (
     <section
-      style={{ backgroundColor: bgColor }}
-      className="flex flex-col p-2 sm:p-8 w-full rounded-xl"
+      className={`
+        flex flex-col p-2 sm:p-8 w-full rounded-xl
+        ${bgColor}
+        `}
     >
       {/* Title, subtitle and introduction text */}
       <TitleWithIntroduction

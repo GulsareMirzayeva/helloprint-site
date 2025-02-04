@@ -10,8 +10,10 @@ export default function OpeningHours() {
 
   return (
     <div
-      style={{ color: stylePreset.overall.textColorLight }}
-      className="flex flex-col items-center px-2 gap-6"
+      className={`
+        flex flex-col items-center px-2 gap-6
+        ${stylePreset.overall.textColorLight}
+        `}
     >
       {/* Component Title */}
       <div className="hidden md:block">

@@ -6,12 +6,19 @@ import {
   shopInfoPaths,
 } from '../../lib/translationPaths';
 import { TextBlock } from '../elementTemplates/TextBlock';
+import { useData } from '../../context/DataContext';
 
 export default function Contact() {
   useTranslation();
+  const { stylePreset } = useData();
 
   return (
-    <div className="grid grid-cols-[1fr,minmax(0,1200px),1fr] w-full">
+    <div
+      className={`
+      grid grid-cols-[1fr,minmax(0,1200px),1fr] w-full
+      ${stylePreset.overall.backgroundColor}
+    `}
+    >
       <div></div> {/* Left empty colomn */}
       <div className="flex flex-col justify-start items-start w-full p-2 pt-12">
         <div className="flex flex-col pb-8">

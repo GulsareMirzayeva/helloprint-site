@@ -10,8 +10,10 @@ export default function App() {
 
   return (
     <div
-      style={{ color: stylePreset.overall.textColorDark }}
-      className="flex flex-col relative min-h-screen font-sans"
+      className={`
+        flex flex-col relative min-h-screen font-sans
+        ${stylePreset.overall.textColorPrimary}  
+      `}
     >
       <Header />
       <div className="flex flex-grow h-full overflow-hidden">

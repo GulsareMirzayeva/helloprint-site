@@ -55,10 +55,10 @@ export default function CopyPrintBudgetPricing({
 
   return (
     <section
-      style={{
-        backgroundColor: bgColor,
-      }}
-      className={`flex flex-col p-2 sm:p-8 w-full rounded-xl`}
+      className={`
+        flex flex-col p-2 sm:p-8 w-full rounded-xl
+        ${bgColor}
+      `}
     >
       {/* Title, subtitle and introduction text */}
       <TitleWithIntroduction
@@ -83,8 +83,10 @@ export default function CopyPrintBudgetPricing({
                 variant="sectionTitle"
               />
               <div
-                style={{ color: stylePreset.notification.asteriskColor }}
-                className="font-semibold"
+                className={`
+                  ${stylePreset.notification.asteriskColor}
+                  font-semibold
+                  `}
               >
                 <span>*</span>
               </div>
@@ -114,8 +116,10 @@ export default function CopyPrintBudgetPricing({
                 variant="sectionTitle"
               />
               <div
-                style={{ color: stylePreset.notification.asteriskColor }}
-                className="font-semibold"
+                className={`
+                  font-semibold
+                  ${stylePreset.notification.asteriskColor}
+                `}
               >
                 <span>*</span>
               </div>

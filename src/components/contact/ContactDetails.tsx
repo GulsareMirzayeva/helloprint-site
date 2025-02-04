@@ -12,10 +12,10 @@ export default function ContactDetails() {
   return (
     <section className="flex flex-col w-full">
       <div
-        style={{
-          backgroundColor: stylePreset.card.backgroundColorDark,
-        }}
-        className="flex flex-col p-2 mb-10 sm:p-8 rounded-xl"
+        className={`
+          ${stylePreset.card.backgroundColorLight}
+          flex flex-col p-2 mb-10 sm:p-8 rounded-xl
+          `}
       >
         <div className="flex flex-wrap md:justify-evenly sm:justify-start">
           <div>

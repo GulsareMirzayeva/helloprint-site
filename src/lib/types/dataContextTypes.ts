@@ -2,7 +2,7 @@ import { CopyPrintType } from './copyPrintType';
 import { CustomClothingType } from './customClothing';
 import { CustomPrintType } from './customPrintType';
 import { FooterTermsOfSaleLinks } from './footerTermsofSaleLinkTypes';
-import { stylePresetType } from './stylePresetType';
+import { StylePresetType } from './stylePresetType';
 
 export type Prices = {
   copyPrint: CopyPrintType;
@@ -11,14 +11,16 @@ export type Prices = {
 };
 
 export type DataContextType = {
-  stylePreset: stylePresetType;
+  darkMode: boolean;
+  stylePreset: StylePresetType;
   prices: Prices | null;
   error: Error | null;
   isLoading: boolean;
   activeTerm: FooterTermsOfSaleLinks;
-  setStylePreset: React.Dispatch<React.SetStateAction<stylePresetType>>;
+  setStylePreset: React.Dispatch<React.SetStateAction<StylePresetType>>;
   setPrices: React.Dispatch<React.SetStateAction<Prices | null>>;
   setError: React.Dispatch<React.SetStateAction<Error | null>>;
   setIsLoading: React.Dispatch<React.SetStateAction<boolean>>;
   setActiveTerm: React.Dispatch<React.SetStateAction<FooterTermsOfSaleLinks>>;
+  setDarkMode: React.Dispatch<React.SetStateAction<boolean>>;
 };

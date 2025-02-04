@@ -18,28 +18,35 @@ export default function Flyers() {
   const { stylePreset } = useData();
 
   return (
-    <div className="grid grid-cols-[1fr,minmax(0,1200px),1fr] w-full">
+    <div
+      className={`
+      grid grid-cols-[1fr,minmax(0,1200px),1fr] w-full
+      ${stylePreset.overall.backgroundColor}
+    `}
+    >
       <div></div> {/* Left empty colomn */}
       <div className="flex flex-col items-start justify-start gap-4 w-full px-2 pt-12">
         <IntroductionFlyers />
         <div className="flex flex-col">
           <FlyersDigitalPrintA6Pricing
-            bgColor={stylePreset.card.backgroundColorDark}
+            bgColor={stylePreset.card.backgroundColorLight}
           />
           <FlyersDigitalPrintA5Pricing
-            bgColor={stylePreset.card.backgroundColorDark}
+            bgColor={stylePreset.card.backgroundColorLight}
           />
         </div>
         <FlyersOffsetPrintA5Pricing
-          bgColor={stylePreset.card.backgroundColorLight}
+          bgColor={stylePreset.card.backgroundColorDark}
         />
         {/* Display notification message */}
         <div className="z-0 w-full">
           <Notification>
             <div className="flex items-end">
               <div
-                style={{ color: stylePreset.notification.asteriskColor }}
-                className="font-semibold"
+                className={`
+                  font-semibold
+                  ${stylePreset.notification.asteriskColor}
+                  `}
               >
                 <span>*&nbsp;</span>
               </div>

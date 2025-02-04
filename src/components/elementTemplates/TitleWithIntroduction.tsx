@@ -20,14 +20,18 @@ export function TitleWithIntroduction({ props }: { props: PageTitleType }) {
       </div>
       {props.notification && (
         <div
-          style={{ color: stylePreset.notification.textColor }}
-          className="pb-6 font-medium"
+          className={`
+            pb-6 font-medium
+            ${stylePreset.notification.textColor}
+          `}
         >
           <div className="flex">
             <TextBlock value={props.notification} variant="body" />
             <div
-              style={{ color: stylePreset.notification.asteriskColor }}
-              className="font-semibold"
+              className={`
+                font-semibold
+                ${stylePreset.notification.asteriskColor}
+              `}
             >
               <span>*</span>
             </div>

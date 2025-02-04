@@ -17,21 +17,28 @@ export default function Cards() {
   const { stylePreset } = useData();
 
   return (
-    <div className="grid grid-cols-[1fr,minmax(0,1200px),1fr] w-full">
+    <div
+      className={`
+      grid grid-cols-[1fr,minmax(0,1200px),1fr] w-full
+      ${stylePreset.overall.backgroundColor}
+    `}
+    >
       <div></div> {/* Left empty colomn */}
       <div className="flex flex-col items-start justify-start gap-4 w-full px-2 pt-12">
         <IntroductionCards />
         <CardsDigitalPrintPricing
-          bgColor={stylePreset.card.backgroundColorDark}
+          bgColor={stylePreset.card.backgroundColorLight}
         />
-        <CardsOffsetPricing bgColor={stylePreset.card.backgroundColorLight} />
+        <CardsOffsetPricing bgColor={stylePreset.card.backgroundColorDark} />
         <div className="z-0 w-full">
           {/* Display notification message */}
           <Notification>
             <div className="flex items-end">
               <div
-                style={{ color: stylePreset.notification.asteriskColor }}
-                className="font-semibold"
+                className={`
+                  font-semibold
+                  ${stylePreset.notification.asteriskColor}
+                  `}
               >
                 <span>*&nbsp;</span>
               </div>

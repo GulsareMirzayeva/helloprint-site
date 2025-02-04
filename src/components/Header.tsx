@@ -1,4 +1,6 @@
 import MenuIcon from '@mui/icons-material/Menu';
+import DarkModeOutlinedIcon from '@mui/icons-material/DarkModeOutlined';
+import LightModeIcon from '@mui/icons-material/LightMode';
 import { useTranslation } from 'react-i18next';
 import { useEffect, useRef, useState } from 'react';
 import { useLocation } from 'react-router-dom';
@@ -14,8 +16,7 @@ import { useData } from '../context/DataContext';
 export default function Header() {
   // Used for translation with the i18next package, set default language to Dutch(nl)
   const { t, i18n } = useTranslation();
-  const { stylePreset } = useData();
-
+  const { stylePreset, setDarkMode, darkMode } = useData();
   const [language, setLanguage] = useState(i18n.language || 'nl');
 
   // Keep track if mobile menu is opened or not
@@ -102,8 +103,8 @@ export default function Header() {
           className={`p-1 flex items-center cursor-default border-b-2 
             ${
               location.pathname.startsWith('/custom-print')
-                ? `${stylePreset.navigation.underlineActiveColorProperty}`
-                : `${stylePreset.navigation.underlineInActiveColorProperty} ${stylePreset.navigation.underlineHoverColorProperty}`
+                ? `${stylePreset.navigation.underlineActiveColor}`
+                : `${stylePreset.navigation.underlineInActiveColor} ${stylePreset.navigation.underlineHoverColor}`
             }`}
           onClick={handleOpen}
         >
@@ -130,8 +131,10 @@ export default function Header() {
 
   return (
     <header
-      style={{ backgroundColor: stylePreset.header.backgroundColor }}
-      className="sticky top-0 z-20 shadow-md"
+      className={`
+        sticky top-0 z-20 shadow-md
+        ${stylePreset.header.backgroundColor}
+      `}
     >
       <nav className="flex flex-col lg:flex-row lg:justify-center lg:h-16 px-4">
         {/* Logo + Hamburger menu */}
@@ -157,10 +160,10 @@ export default function Header() {
           <NagivationExpandableLink>
             {isAccordionOpen && (
               <ul
-                style={{
-                  backgroundColor: stylePreset.navigation.backgroundColor,
-                }}
-                className="absolute top-[calc(100%+6px)] min-w-[105%] shadow-md rounded-sm"
+                className={`
+                  absolute top-[calc(100%+6px)] min-w-[105%] shadow-md rounded-sm
+                  ${stylePreset.navigation.backgroundColor}  
+                `}
               >
                 <SubNavigationLink
                   path={'/custom-print'}
@@ -213,7 +216,9 @@ export default function Header() {
           <div className="flex items-center pb-2 pt-2 sm:pb-2 md:pb-2 md:pt-2 lg:pt-0 lg:pb-0 pl-1">
             <LanguageIcon fontSize={'small'} />
             <select
-              className="text-xs ml-2 p-1 bg-white border-2 rounded-lg cursor-pointer"
+              className="
+                text-xs ml-2 p-1 rounded-lg cursor-pointer border-2 border-gray-300 bg-gray-100 text-[#202020]
+                hover:ring-2 hover:ring-blue-500 focus:ring-2"
               name="language"
               value={language}
               onChange={(e) => changeLanguage(e.target.value)}
@@ -221,6 +226,31 @@ export default function Header() {
               <option value="nl">🇳🇱 NL</option>
               <option value="en">🇬🇧 EN</option>
             </select>
+          </div>
+          <div className="flex items-center gap-1 pb-2 pt-2 sm:pb-2 md:pb-2 md:pt-2 lg:pt-0 lg:pb-0 pl-1">
+            <div className="text-yellow-500 pb-1">
+              <LightModeIcon fontSize="small" />
+            </div>
+            <button
+              onClick={() => setDarkMode(!darkMode)}
+              className={`
+                relative w-10 h-5 flex items-center rounded-full p-1 transition border-2 border-gray-300
+                hover:ring-2 hover:ring-blue-500 dark:hover:ring-yellow-300 focus:outline-none focus:ring-2
+                ${
+                  darkMode
+                    ? 'bg-blue-500 dark:bg-yellow-500'
+                    : 'bg-gray-100 dark:bg-gray-600'
+                }
+              `}
+            >
+              <span
+                className={`w-3 h-3 bg-gray-500 dark:bg-gray-700 rounded-full shadow-md transform transition 
+      ${darkMode ? 'translate-x-4' : 'translate-x-0'}`}
+              />
+            </button>
+            <div className="text-gray-500 pb-1">
+              <DarkModeOutlinedIcon fontSize="small" />
+            </div>
           </div>
         </div>
       </nav>

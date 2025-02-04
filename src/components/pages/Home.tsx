@@ -4,12 +4,16 @@ import ContactSection from '../home/ContactSection';
 import { useTranslation } from 'react-i18next';
 import SendMessage from '../contact/SendMessage';
 import SkylineStrip from '../SkylineStrip';
+import { useData } from '../../context/DataContext';
 
 export default function Home() {
   useTranslation();
+  const { stylePreset } = useData();
 
   return (
-    <div className="flex flex-col w-full gap-4">
+    <div
+      className={`flex flex-col w-full gap-4 ${stylePreset.overall.backgroundColor}`}
+    >
       <section className="grid grid-cols-[1fr,minmax(0,1200px),1fr]">
         <div></div> {/* Left empty colomn */}
         <div>
@@ -27,7 +31,9 @@ export default function Home() {
       </section>
 
       {/* Contact section takes up the whole width of the screen so it must not be hindered by a grid */}
-      <ContactSection />
+      <div>
+        <ContactSection />
+      </div>
 
       <section className="grid grid-cols-[1fr,minmax(0,1200px),1fr]">
         <div></div> {/* Left empty colomn */}

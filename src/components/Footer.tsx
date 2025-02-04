@@ -11,7 +11,11 @@ export default function Footer() {
 
   return (
     <footer
-      className={`${stylePreset.footer.borderTopProperty} border-t-2 grid grid-cols-[1fr,minmax(0,1200px),1fr] w-full px-4 py-2`}
+      className={`
+        border-t-2 grid grid-cols-[1fr,minmax(0,1200px),1fr] w-full px-4 py-2
+        ${stylePreset.footer.borderTopColor}
+        ${stylePreset.footer.backgroundColor}
+      `}
     >
       <div></div> {/* Left empty column */}
       <div className="flex flex-wrap sm:flex-nowrap w-full px-4 gap-4 sm:gap-6 md:gap-20 lg:gap-52">

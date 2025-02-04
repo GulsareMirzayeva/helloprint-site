@@ -12,11 +12,16 @@ export default function Stickers() {
   const { stylePreset } = useData();
 
   return (
-    <div className="grid grid-cols-[1fr,minmax(0,1200px),1fr] w-full">
+    <div
+      className={`
+      grid grid-cols-[1fr,minmax(0,1200px),1fr] w-full
+      ${stylePreset.overall.backgroundColor}
+    `}
+    >
       <div></div> {/* Left empty colomn */}
       <div className="flex flex-col items-start justify-start gap-4 w-full px-2 pt-12">
         <IntroductionStickers />
-        <StickersPricing bgColor={stylePreset.card.backgroundColorDark} />
+        <StickersPricing bgColor={stylePreset.card.backgroundColorLight} />
         <br />
         <Divider flexItem variant="fullWidth" />
         <div className="pt-16 pb-2">

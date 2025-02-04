@@ -17,20 +17,27 @@ export default function CopyPrint() {
   const { stylePreset } = useData();
 
   return (
-    <div className="grid grid-cols-[1fr,minmax(0,1200px),1fr] w-full">
+    <div
+      className={`
+      ${stylePreset.overall.backgroundColor}
+      grid grid-cols-[1fr,minmax(0,1200px),1fr] w-full
+    `}
+    >
       <div></div> {/* Left empty colomn */}
       <div className="flex flex-col items-start justify-start gap-4 w-full px-2 pt-12">
         <IntroductionCopyPrint />
         <CopyPrintBudgetPricing
-          bgColor={stylePreset.card.backgroundColorDark}
+          bgColor={stylePreset.card.backgroundColorLight}
         />
-        <CopyPrintHqPricing bgColor={stylePreset.card.backgroundColorLight} />
+        <CopyPrintHqPricing bgColor={stylePreset.card.backgroundColorDark} />
         <div className="z-0 w-full">
           <Notification>
             <div className="flex items-end">
               <div
-                style={{ color: stylePreset.notification.asteriskColor }}
-                className="font-semibold"
+                className={`
+                font-semibold
+                ${stylePreset.notification.asteriskColor}
+              `}
               >
                 <span>*&nbsp;</span>
               </div>
