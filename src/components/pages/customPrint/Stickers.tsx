@@ -4,18 +4,19 @@ import StickersPricing from '../../customPrint/stickers/pricing/StickersPricing'
 import { shopInfoPaths } from '../../../lib/translationPaths';
 import SendMessage from '../../contact/SendMessage';
 import { TextBlock } from '../../elementTemplates/TextBlock';
-import { colorPresets } from '../../../lib/stylePresets';
 import { Divider } from '@mui/material';
+import { useData } from '../../../context/DataContext';
 
 export default function Stickers() {
   useTranslation();
+  const { stylePreset } = useData();
 
   return (
     <div className="grid grid-cols-[1fr,minmax(0,1200px),1fr] w-full">
       <div></div> {/* Left empty colomn */}
       <div className="flex flex-col items-start justify-start gap-4 w-full px-2 pt-12">
         <IntroductionStickers />
-        <StickersPricing bgColor={colorPresets.card.backgroundColorDark} />
+        <StickersPricing bgColor={stylePreset.card.backgroundColorDark} />
         <br />
         <Divider flexItem variant="fullWidth" />
         <div className="pt-16 pb-2">

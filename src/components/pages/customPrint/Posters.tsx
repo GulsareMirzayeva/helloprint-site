@@ -11,38 +11,39 @@ import {
 } from '../../../lib/translationPaths';
 import SendMessage from '../../contact/SendMessage';
 import { TextBlock } from '../../elementTemplates/TextBlock';
-import { colorPresets } from '../../../lib/stylePresets';
 import { Notification } from '../../elementTemplates/Notification';
 import { Divider } from '@mui/material';
+import { useData } from '../../../context/DataContext';
 
 export default function Posters() {
   useTranslation();
+  const { stylePreset } = useData();
 
   return (
     <div className="grid grid-cols-[1fr,minmax(0,1200px),1fr] w-full">
       <div></div> {/* Left empty colomn */}
       <div className="flex flex-col items-start justify-start gap-4 w-full px-2 pt-12">
         <IntroductionPosters />
-        <Posters80grPricing bgColor={colorPresets.card.backgroundColorDark} />
+        <Posters80grPricing bgColor={stylePreset.card.backgroundColorDark} />
         <div className="flex flex-col gap-12 sm:gap-0">
           <Posters160grPricing
-            bgColor={colorPresets.card.backgroundColorLight}
+            bgColor={stylePreset.card.backgroundColorLight}
           />
           <Posters190grAnd260grPricing
-            bgColor={colorPresets.card.backgroundColorLight}
+            bgColor={stylePreset.card.backgroundColorLight}
           />
         </div>
         <PostersSpecialPapersPricing
-          bgColor={colorPresets.card.backgroundColorDark}
+          bgColor={stylePreset.card.backgroundColorDark}
         />
         <PostersA3BudgetAndHqPricing
-          bgColor={colorPresets.card.backgroundColorLight}
+          bgColor={stylePreset.card.backgroundColorLight}
         />
         <div className="z-0 w-full">
           <Notification>
             <div className="flex items-end">
               <div
-                style={{ color: colorPresets.notification.asteriskColor }}
+                style={{ color: stylePreset.notification.asteriskColor }}
                 className="font-semibold"
               >
                 <span>*&nbsp;</span>

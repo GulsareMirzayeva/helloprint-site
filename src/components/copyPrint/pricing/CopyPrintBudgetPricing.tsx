@@ -9,7 +9,6 @@ import { TextBlock } from '../../elementTemplates/TextBlock';
 import { BeatLoader } from 'react-spinners';
 import { copyPrintContentPaths } from '../../../lib/translationPaths';
 import { TitleWithIntroduction } from '../../elementTemplates/TitleWithIntroduction';
-import { colorPresets } from '../../../lib/stylePresets';
 
 /*
     Copy & Print - Budget section
@@ -22,8 +21,9 @@ export default function CopyPrintBudgetPricing({
 }: {
   bgColor: string;
 }) {
-  const { prices } = useData();
   const { t } = useTranslation();
+  const { prices } = useData();
+  const { stylePreset } = useData();
 
   // Let user know if data is loading
   if (!prices) {
@@ -83,7 +83,7 @@ export default function CopyPrintBudgetPricing({
                 variant="sectionTitle"
               />
               <div
-                style={{ color: colorPresets.notification.asteriskColor }}
+                style={{ color: stylePreset.notification.asteriskColor }}
                 className="font-semibold"
               >
                 <span>*</span>
@@ -114,7 +114,7 @@ export default function CopyPrintBudgetPricing({
                 variant="sectionTitle"
               />
               <div
-                style={{ color: colorPresets.notification.asteriskColor }}
+                style={{ color: stylePreset.notification.asteriskColor }}
                 className="font-semibold"
               >
                 <span>*</span>

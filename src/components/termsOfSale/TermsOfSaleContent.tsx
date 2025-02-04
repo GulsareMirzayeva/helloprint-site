@@ -2,11 +2,10 @@ import { useTranslation } from 'react-i18next';
 import { TextBlock } from '../elementTemplates/TextBlock';
 import { useData } from '../../context/DataContext';
 import { terms } from '../../lib/termsOfSaleItems';
-import { colorPresets } from '../../lib/stylePresets';
 
 export default function TermsOfSaleContent() {
   useTranslation();
-  const { activeTerm } = useData();
+  const { activeTerm, stylePreset } = useData();
 
   return (
     <section className="flex justify-center p-2 w-full">
@@ -22,7 +21,7 @@ export default function TermsOfSaleContent() {
             key={term}
             className={
               activeTerm == term
-                ? `p-2 ${colorPresets.card.backgroundPropertyActive}`
+                ? `p-2 ${stylePreset.card.backgroundPropertyActive}`
                 : 'p-2'
             }
           >

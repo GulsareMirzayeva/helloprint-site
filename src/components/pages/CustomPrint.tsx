@@ -13,11 +13,12 @@ import {
   postersContent,
   stickersContent,
 } from '../../lib/categoriesContent';
-import { colorPresets } from '../../lib/stylePresets';
 import { Divider } from '@mui/material';
+import { useData } from '../../context/DataContext';
 
 export default function CustomPrint() {
   useTranslation(); // Make the content directly translatable
+  const { stylePreset } = useData();
 
   // Collect the content of categories that will be displayed in a card on the overview page
   const cardItems = [
@@ -52,8 +53,8 @@ export default function CustomPrint() {
               cardContent={item}
               bgColor={
                 index % 2 === 0
-                  ? colorPresets.card.backgroundColorLight
-                  : colorPresets.card.backgroundColorDark
+                  ? stylePreset.card.backgroundColorLight
+                  : stylePreset.card.backgroundColorDark
               }
             />
           ))}

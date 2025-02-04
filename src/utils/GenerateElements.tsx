@@ -4,15 +4,17 @@ import {
   SubNavigationType,
   NavigationType,
 } from '../lib/types/headerNavigationTypes';
-import { colorPresets } from '../lib/stylePresets';
+import { useData } from '../context/DataContext';
 
 export const NavigationLink = (linkProps: NavigationType) => {
+  const { stylePreset } = useData();
+
   return (
     <Link
       className={`p-1 flex items-center cursor-default border-b-2 ${
         location.pathname === linkProps.path
-          ? `${colorPresets.navigation.underlineActiveColorProperty}`
-          : `${colorPresets.navigation.underlineInActiveColorProperty} ${colorPresets.navigation.underlineHoverColorProperty}`
+          ? `${stylePreset.navigation.underlineActiveColorProperty}`
+          : `${stylePreset.navigation.underlineInActiveColorProperty} ${stylePreset.navigation.underlineHoverColorProperty}`
       }`}
       to={linkProps.path}
     >
@@ -22,10 +24,12 @@ export const NavigationLink = (linkProps: NavigationType) => {
 };
 
 export const SubNavigationLink = (linkProps: SubNavigationType) => {
+  const { stylePreset } = useData();
+
   return (
     <Link to={linkProps.path} onClick={linkProps.callBack}>
       <li
-        className={`${colorPresets.navigation.backgroundHoverProperty} p-2 cursor-default`}
+        className={`${stylePreset.navigation.backgroundHoverProperty} p-2 cursor-default`}
       >
         {t(linkProps.value)}
       </li>

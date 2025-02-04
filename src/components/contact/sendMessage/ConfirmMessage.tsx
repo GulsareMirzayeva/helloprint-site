@@ -1,15 +1,16 @@
-import { colorPresets } from '../../../lib/stylePresets';
+import { useData } from '../../../context/DataContext';
 import { contactFormTextContentPaths } from '../../../lib/translationPaths';
 import { Trans } from 'react-i18next';
 
 export function ConfirmMessage() {
+  const { stylePreset } = useData();
   return (
     <div className="border-green-300 flex justify-start items-center text-center min-w-[300px] md:min-w-[500px] w-full pt-12">
       <div
         style={{
-          backgroundColor: colorPresets.confirmMessage.backgroundColor,
-          color: colorPresets.confirmMessage.textColor,
-          borderColor: colorPresets.confirmMessage.borderColor,
+          backgroundColor: stylePreset.confirmMessage.backgroundColor,
+          color: stylePreset.confirmMessage.textColor,
+          borderColor: stylePreset.confirmMessage.borderColor,
         }}
         className="border rounded-lg p-4 py-4 shadow-md"
       >

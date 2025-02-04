@@ -1,18 +1,19 @@
 // import { useTranslation } from 'react-i18next';
-import { colorPresets } from '../../lib/stylePresets';
+import { useData } from '../../context/DataContext';
 import GoogleMap from './contactDetails/GoogleMap';
-
 import AdressSection from './contactDetails/details/AdressSection';
 import ContactSection from './contactDetails/details/ContactSection';
 import OpeningHoursSection from './contactDetails/details/OpeningHoursSection';
 
 // Contact details on the Contact page
 export default function ContactDetails() {
+  const { stylePreset } = useData();
+
   return (
     <section className="flex flex-col w-full">
       <div
         style={{
-          backgroundColor: colorPresets.card.backgroundColorDark,
+          backgroundColor: stylePreset.card.backgroundColorDark,
         }}
         className="flex flex-col p-2 mb-10 sm:p-8 rounded-xl"
       >

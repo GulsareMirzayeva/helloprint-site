@@ -8,14 +8,15 @@ import {
   contactInfoTextContent,
   shopInfoPaths,
 } from '../../../lib/translationPaths';
-import { colorPresets } from '../../../lib/stylePresets';
+import { useData } from '../../../context/DataContext';
 
 export default function ContactInfo() {
   const { t } = useTranslation();
+  const { stylePreset } = useData();
 
   return (
     <div
-      style={{ color: colorPresets.overall.textColorLight }}
+      style={{ color: stylePreset.overall.textColorLight }}
       className="flex flex-col items-center px-2 gap-6"
     >
       <div className="hidden md:block">

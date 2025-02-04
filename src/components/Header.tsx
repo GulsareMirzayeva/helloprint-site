@@ -9,11 +9,13 @@ import { menuButtonNames } from '../lib/translationPaths';
 import { ExpandableLinkType } from '../lib/types/headerNavigationTypes';
 import { NavigationLink, SubNavigationLink } from '../utils/GenerateElements';
 import { Divider } from '@mui/material';
-import { colorPresets } from '../lib/stylePresets';
+import { useData } from '../context/DataContext';
 
 export default function Header() {
   // Used for translation with the i18next package, set default language to Dutch(nl)
   const { t, i18n } = useTranslation();
+  const { stylePreset } = useData();
+
   const [language, setLanguage] = useState(i18n.language || 'nl');
 
   // Keep track if mobile menu is opened or not
@@ -100,8 +102,8 @@ export default function Header() {
           className={`p-1 flex items-center cursor-default border-b-2 
             ${
               location.pathname.startsWith('/custom-print')
-                ? `${colorPresets.navigation.underlineActiveColorProperty}`
-                : `${colorPresets.navigation.underlineInActiveColorProperty} ${colorPresets.navigation.underlineHoverColorProperty}`
+                ? `${stylePreset.navigation.underlineActiveColorProperty}`
+                : `${stylePreset.navigation.underlineInActiveColorProperty} ${stylePreset.navigation.underlineHoverColorProperty}`
             }`}
           onClick={handleOpen}
         >
@@ -128,7 +130,7 @@ export default function Header() {
 
   return (
     <header
-      style={{ backgroundColor: colorPresets.header.backgroundColor }}
+      style={{ backgroundColor: stylePreset.header.backgroundColor }}
       className="sticky top-0 z-20 shadow-md"
     >
       <nav className="flex flex-col lg:flex-row lg:justify-center lg:h-16 px-4">
@@ -156,7 +158,7 @@ export default function Header() {
             {isAccordionOpen && (
               <ul
                 style={{
-                  backgroundColor: colorPresets.navigation.backgroundColor,
+                  backgroundColor: stylePreset.navigation.backgroundColor,
                 }}
                 className="absolute top-[calc(100%+6px)] min-w-[105%] shadow-md rounded-sm"
               >

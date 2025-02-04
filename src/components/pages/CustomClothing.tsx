@@ -8,22 +8,21 @@ import {
 } from '../../lib/translationPaths';
 import SendMessage from '../contact/SendMessage';
 import { TextBlock } from '../elementTemplates/TextBlock';
-import { colorPresets } from '../../lib/stylePresets';
 import { Divider } from '@mui/material';
 import { Notification } from '../elementTemplates/Notification';
+import { useData } from '../../context/DataContext';
 
 export default function CustomClothing() {
   useTranslation();
+  const { stylePreset } = useData();
 
   return (
     <div className="grid grid-cols-[1fr,minmax(0,1200px),1fr] w-full">
       <div></div> {/* Left empty colomn */}
       <div className="flex flex-col items-start justify-start gap-4 w-full px-2 pt-12">
         <IntroductionCustomClothing />
-        <ClothingPiecesPricing
-          bgColor={colorPresets.card.backgroundColorDark}
-        />
-        <FlexAndDtgPricing bgColor={colorPresets.card.backgroundColorLight} />
+        <ClothingPiecesPricing bgColor={stylePreset.card.backgroundColorDark} />
+        <FlexAndDtgPricing bgColor={stylePreset.card.backgroundColorLight} />
         {/* Display notification message */}
         <div className="z-0 w-full">
           <Notification>

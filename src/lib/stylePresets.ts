@@ -19,18 +19,16 @@ export const colorPresets = {
     inActiveLinkColor: mainColors.lightColor,
   },
   navigation: {
-    backgroundColor: '#ffffff',
+    backgroundColor: mainColors.lightColor,
     backgroundHoverProperty: `hover:bg-[#f3f4f6]`,
     underlineActiveColorProperty: `border-b-[#fb0036]`,
     underlineInActiveColorProperty: `border-b-[#ffffff]`,
     underlineHoverColorProperty: `hover:border-b-[#f3f4f6]`,
   },
   home: {
-    contactSection: {
-      fromProperty: 'from-[#fd3964]',
-      viaProperty: 'via-[#fa2150]',
-      toProperty: `to-[#fb0036]`,
-    },
+    fromProperty: 'from-[#fd3964]',
+    viaProperty: 'via-[#fa2150]',
+    toProperty: `to-[#fb0036]`,
   },
   footer: {
     borderTopProperty: `border-[#fb0036]`,

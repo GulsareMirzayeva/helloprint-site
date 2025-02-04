@@ -9,12 +9,13 @@ import {
 } from '../../../lib/translationPaths';
 import SendMessage from '../../contact/SendMessage';
 import { TextBlock } from '../../elementTemplates/TextBlock';
-import { colorPresets } from '../../../lib/stylePresets';
 import { Notification } from '../../elementTemplates/Notification';
 import { Divider } from '@mui/material';
+import { useData } from '../../../context/DataContext';
 
 export default function Folders() {
   useTranslation();
+  const { stylePreset } = useData();
 
   return (
     <div className="grid grid-cols-[1fr,minmax(0,1200px),1fr] w-full">
@@ -22,14 +23,14 @@ export default function Folders() {
       <div className="flex flex-col items-start justify-start gap-4 w-full px-2 pt-12">
         <IntroductionFlyers />
         <FoldersDigitalPrintPricing
-          bgColor={colorPresets.card.backgroundColorDark}
+          bgColor={stylePreset.card.backgroundColorDark}
         />
         <div className="flex flex-col gap-12 sm:gap-0">
           <FoldersOffsetPrintPricingA4
-            bgColor={colorPresets.card.backgroundColorLight}
+            bgColor={stylePreset.card.backgroundColorLight}
           />
           <FoldersOffsetPrintPricingA3
-            bgColor={colorPresets.card.backgroundColorLight}
+            bgColor={stylePreset.card.backgroundColorLight}
           />
         </div>
         {/* Display notification message table */}
@@ -37,7 +38,7 @@ export default function Folders() {
           <Notification>
             <div className="flex items-end">
               <div
-                style={{ color: colorPresets.notification.asteriskColor }}
+                style={{ color: stylePreset.notification.asteriskColor }}
                 className="font-semibold"
               >
                 <span>*&nbsp;</span>

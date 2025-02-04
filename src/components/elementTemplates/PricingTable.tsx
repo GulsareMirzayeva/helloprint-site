@@ -2,7 +2,7 @@ import { useTranslation } from 'react-i18next';
 import { PricingOptions } from '../../lib/types/basicOptionsTypes';
 import { FC } from 'react';
 import i18n from '../../utils/i18';
-import { colorPresets } from '../../lib/stylePresets';
+import { useData } from '../../context/DataContext';
 
 type PricingTableTypes = {
   headerTitles: string[];
@@ -32,6 +32,8 @@ export default function PricingTable({
   prices,
 }: PricingTableTypes) {
   const { t } = useTranslation();
+  const { stylePreset } = useData();
+
   // Prepare data for easy access in the table
   const tableData = options.map((option, index) => ({
     option,
@@ -48,14 +50,14 @@ export default function PricingTable({
             <th
               key={title}
               style={{
-                backgroundColor: colorPresets.table.headBackgroundColor,
-                color: colorPresets.table.headTextColor,
-                borderColor: colorPresets.table.headBorderColor,
+                backgroundColor: stylePreset.table.headBackgroundColor,
+                color: stylePreset.table.headTextColor,
+                borderColor: stylePreset.table.headBorderColor,
               }}
               className={`border py-1 px-3 text-left`}
               scope="col"
             >
-              <div style={{ color: colorPresets.table.headTextColor }}>
+              <div style={{ color: stylePreset.table.headTextColor }}>
                 {title}
               </div>
             </th>
@@ -69,7 +71,7 @@ export default function PricingTable({
           {units.map((unit, index) => (
             <th
               key={index}
-              style={{ borderColor: colorPresets.table.unitsBorderColor }}
+              style={{ borderColor: stylePreset.table.unitsBorderColor }}
               className="border px-3 py-1 text-left font-medium italic"
               scope="row"
             >
@@ -87,13 +89,13 @@ export default function PricingTable({
               key={rowIndex}
               className={`
                 border 
-                ${colorPresets.table.highlightRowProperty}
-                ${colorPresets.table.cellBackgroundPropertyEven}
-                ${colorPresets.table.cellBackgroundPropertyOdd}
+                ${stylePreset.table.highlightRowProperty}
+                ${stylePreset.table.cellBackgroundPropertyEven}
+                ${stylePreset.table.cellBackgroundPropertyOdd}
               `}
             >
               <th
-                style={{ borderColor: colorPresets.table.cellBorderColor }}
+                style={{ borderColor: stylePreset.table.cellBorderColor }}
                 className={`border px-3 py-1 text-left`}
                 scope="row"
               >
@@ -102,7 +104,7 @@ export default function PricingTable({
 
               {rowPrices.map((price, priceIndex) => (
                 <td
-                  style={{ borderColor: colorPresets.table.cellBorderColor }}
+                  style={{ borderColor: stylePreset.table.cellBorderColor }}
                   key={priceIndex}
                   className={`border px-3 py-1 text-left`}
                 >

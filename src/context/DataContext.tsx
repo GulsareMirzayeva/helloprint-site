@@ -8,10 +8,13 @@ import {
 import { getPrices } from '../api/getPrices';
 import { DataContextType, Prices } from '../lib/types/dataContextTypes';
 import { FooterTermsOfSaleLinks } from '../lib/types/footerTermsofSaleLinkTypes';
+import { colorPresets } from '../lib/stylePresets';
+import { stylePresetType } from '../lib/types/stylePresetType';
 
 const DataContext = createContext<DataContextType | undefined>(undefined);
 
 export function DataProvider({ children }: { children: ReactNode }) {
+  const [stylePreset, setStylePreset] = useState<stylePresetType>(colorPresets);
   const [prices, setPrices] = useState<Prices | null>(null);
   const [error, setError] = useState<Error | null>(null);
   const [isLoading, setIsLoading] = useState<boolean>(true);
@@ -34,10 +37,12 @@ export function DataProvider({ children }: { children: ReactNode }) {
   return (
     <DataContext.Provider
       value={{
+        stylePreset,
         prices,
         error,
         isLoading,
         activeTerm,
+        setStylePreset,
         setPrices,
         setError,
         setIsLoading,

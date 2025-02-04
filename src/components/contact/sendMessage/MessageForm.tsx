@@ -9,10 +9,11 @@ import { useEffect, useState } from 'react';
 import i18n from '../../../utils/i18';
 import { FormProps } from '../../../lib/types/contactFormTypes';
 import { ConfirmMessage } from './ConfirmMessage';
-import { colorPresets } from '../../../lib/stylePresets';
+import { useData } from '../../../context/DataContext';
 
 export default function MessageForm() {
   const { t } = useTranslation();
+  const { stylePreset } = useData();
   const [showError, setShowError] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
 
@@ -107,7 +108,7 @@ export default function MessageForm() {
               />
               {errors.telNo?.message && (
                 <p
-                  style={{ color: colorPresets.notification.textColor }}
+                  style={{ color: stylePreset.notification.textColor }}
                   className="pl-1"
                 >
                   {String(errors.telNo.message)}
@@ -129,7 +130,7 @@ export default function MessageForm() {
               />
               {errors.email?.message && (
                 <p
-                  style={{ color: colorPresets.notification.textColor }}
+                  style={{ color: stylePreset.notification.textColor }}
                   className="pl-1"
                 >
                   {String(errors.email.message)}
@@ -178,7 +179,7 @@ export default function MessageForm() {
               {errors.message && (
                 <p
                   style={{
-                    color: colorPresets.notification.textColor,
+                    color: stylePreset.notification.textColor,
                   }}
                   className="pl-1"
                 >
@@ -191,7 +192,7 @@ export default function MessageForm() {
             {showError && !errors.email && !errors.telNo && (
               <p
                 style={{
-                  color: colorPresets.notification.textColor,
+                  color: stylePreset.notification.textColor,
                 }}
                 className="pl-1"
               >
@@ -204,9 +205,9 @@ export default function MessageForm() {
               type="submit"
               className={`
                 relative w-32 mt-1 h-10 rounded-sm transition-bg duration-100 ease-in
-                ${colorPresets.button.textProperty}
-                ${colorPresets.button.backgroundProperty}
-                ${colorPresets.button.backgroundHoverProperty}`}
+                ${stylePreset.button.textProperty}
+                ${stylePreset.button.backgroundProperty}
+                ${stylePreset.button.backgroundHoverProperty}`}
               style={{
                 backfaceVisibility: 'hidden',
                 willChange: 'transform',

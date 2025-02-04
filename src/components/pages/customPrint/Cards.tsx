@@ -9,11 +9,12 @@ import {
 import SendMessage from '../../contact/SendMessage';
 import { TextBlock } from '../../elementTemplates/TextBlock';
 import { Divider } from '@mui/material';
-import { colorPresets } from '../../../lib/stylePresets';
 import { Notification } from '../../elementTemplates/Notification';
+import { useData } from '../../../context/DataContext';
 
 export default function Cards() {
   useTranslation();
+  const { stylePreset } = useData();
 
   return (
     <div className="grid grid-cols-[1fr,minmax(0,1200px),1fr] w-full">
@@ -21,15 +22,15 @@ export default function Cards() {
       <div className="flex flex-col items-start justify-start gap-4 w-full px-2 pt-12">
         <IntroductionCards />
         <CardsDigitalPrintPricing
-          bgColor={colorPresets.card.backgroundColorDark}
+          bgColor={stylePreset.card.backgroundColorDark}
         />
-        <CardsOffsetPricing bgColor={colorPresets.card.backgroundColorLight} />
+        <CardsOffsetPricing bgColor={stylePreset.card.backgroundColorLight} />
         <div className="z-0 w-full">
           {/* Display notification message */}
           <Notification>
             <div className="flex items-end">
               <div
-                style={{ color: colorPresets.notification.asteriskColor }}
+                style={{ color: stylePreset.notification.asteriskColor }}
                 className="font-semibold"
               >
                 <span>*&nbsp;</span>

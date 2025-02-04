@@ -3,7 +3,7 @@ import { homeContentPaths } from '../../../lib/translationPaths';
 import { Link } from 'react-router-dom';
 import { t } from 'i18next';
 import { CategoryCardType } from '../../../lib/types/customPrintType';
-import { colorPresets } from '../../../lib/stylePresets';
+import { useData } from '../../../context/DataContext';
 
 /*
     Text content at the top of the page, the value in the TextBlock components refers to the content location
@@ -17,6 +17,8 @@ export default function OverviewCategoryCard({
   cardContent: CategoryCardType;
   bgColor: string;
 }) {
+  const { stylePreset } = useData();
+
   return (
     <section
       style={{ backgroundColor: bgColor }}
@@ -42,9 +44,9 @@ export default function OverviewCategoryCard({
             to={cardContent.pageLink}
             className={`
               relative w-32 pt-2 h-10 text-center rounded-sm transition-bg duration-100 ease-in
-              ${colorPresets.button.backgroundProperty}
-              ${colorPresets.button.backgroundHoverProperty}
-              ${colorPresets.button.textProperty}`}
+              ${stylePreset.button.backgroundProperty}
+              ${stylePreset.button.backgroundHoverProperty}
+              ${stylePreset.button.textProperty}`}
             style={{
               backfaceVisibility: 'hidden',
               willChange: 'transform',

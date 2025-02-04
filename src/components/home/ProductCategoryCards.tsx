@@ -6,10 +6,11 @@ import tshirt from '../../assets/icons/icons8-tshirt-100.png';
 import supplies from '../../assets/icons/office_supplies-100.png';
 import { homeContentPaths } from '../../lib/translationPaths';
 import { Link } from 'react-router-dom';
-import { colorPresets } from '../../lib/stylePresets';
+import { useData } from '../../context/DataContext';
 
 export default function ProductCategoryCards() {
   const { t } = useTranslation();
+  const { stylePreset } = useData();
   const icons = [paper, leaflet, tshirt, supplies];
 
   const categoryCardsContent = t('categoryCardsContent', {
@@ -25,12 +26,12 @@ export default function ProductCategoryCards() {
         >
           <div
             style={{
-              backgroundColor: colorPresets.productCard.headBackgroundColor,
+              backgroundColor: stylePreset.productCard.headBackgroundColor,
             }}
             className="flex justify-center p-2 shadow-[0_5px_5px_-5px_rgba(0,0,0,0.5)]"
           >
             <h2
-              style={{ color: colorPresets.productCard.textColor }}
+              style={{ color: stylePreset.productCard.textColor }}
               className="text-xl font-bold"
             >
               {value.title}
@@ -60,9 +61,9 @@ export default function ProductCategoryCards() {
               to={value.link}
               className={`
                 relative flex items-center justify-center w-32 mt-1 h-10 rounded-sm transition-bg duration-100 ease-in
-                ${colorPresets.button.textProperty}
-                ${colorPresets.button.backgroundProperty}
-                ${colorPresets.button.backgroundHoverProperty}`}
+                ${stylePreset.button.textProperty}
+                ${stylePreset.button.backgroundProperty}
+                ${stylePreset.button.backgroundHoverProperty}`}
               style={{
                 backfaceVisibility: 'hidden',
                 willChange: 'transform',
