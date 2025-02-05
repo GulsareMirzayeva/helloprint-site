@@ -58,16 +58,24 @@ export default function CustomPrint() {
               cardContent={item}
               bgColor={
                 index % 2 === 0
-                  ? stylePreset.card.backgroundColorLight
-                  : stylePreset.card.backgroundColorDark
+                  ? stylePreset.categoryCard.backgroundColorLight
+                  : stylePreset.categoryCard.backgroundColorDark
               }
             />
           ))}
         </div>
 
-        <Divider flexItem variant="fullWidth" />
+        <Divider
+          style={{
+            backgroundColor: `${stylePreset.overall.diverderColor}`,
+            marginTop: '64px',
+            marginBottom: '16px',
+          }}
+          flexItem
+          variant="fullWidth"
+        />
         {/* Display the contact section at the bottom of the page */}
-        <div className="pt-16 pb-2">
+        <div className="pb-2">
           <TextBlock value={shopInfoPaths.contactTitle} variant={'subTitle'} />
         </div>
         <div className="w-full">

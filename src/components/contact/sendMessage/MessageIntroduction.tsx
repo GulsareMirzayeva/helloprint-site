@@ -15,10 +15,7 @@ export default function MessageIntroduction() {
         variant="body"
       />
       <div className="pt-4">
-        <img
-          src={contactPicture}
-          className="max-w-[300px] sm:max-w-[360px] rounded-sm"
-        />
+        <img src={contactPicture} className="max-w-[300px] sm:max-w-[360px]" />
       </div>
     </div>
   );

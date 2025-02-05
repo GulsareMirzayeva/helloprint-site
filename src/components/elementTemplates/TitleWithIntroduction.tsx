@@ -14,7 +14,7 @@ export function TitleWithIntroduction({ props }: { props: PageTitleType }) {
           <span className="text-2xl"> - </span>
           &nbsp;
         </div>
-        <div>
+        <div className={`${stylePreset.overall.textColorSecondary}`}>
           <TextBlock value={props.subTitle} variant="tableSubTitle" />
         </div>
       </div>

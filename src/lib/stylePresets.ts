@@ -1,135 +1,192 @@
-// corporateIdentityColor: '#fb0036', // Red
-// secondaryColor: '#f3f4f6', // Light gray
-// secondaryDarkColor: '#c2c2c2', // Dark gray
-// lightColor: '#ffffff', // White
-// darkColor: '#202020', // Light black
+/*
+
+Light theme
+
+*/
 
 export const lightTheme = {
+  // Algemene stijlen die op meerdere pagina's worden gebruikt
   overall: {
-    textColorPrimary: 'text-gray-800',
-    textColorSecondary: 'text-gray-500',
-    textColorLight: 'text-white',
-    backgroundColor: 'bg-[#EAE0D5]',
-    formTextColor: 'text-gray-800',
+    textColorPrimary: 'text-gray-800', // Tekstkleur voor algemene tekst
+    textColorSecondary: 'text-gray-600', // Tekstkleur voor sub titels
+    textColorLight: 'text-gray-50', // Tekstkleur voor tekst op rode of donkere achtergronden
+    backgroundColor: 'bg-gray-50', // Algemene achtergrondkleur
+    formTextColor: 'text-gray-800', // Tekstkleur voor tekst in formulier invoervelden
+    diverderColor: '#c2c2c2', // Kleur van horizontale schedingslijn
   },
+
+  // Navigatiemenu container bovenaan de website
   header: {
-    backgroundColor: 'bg-white',
+    backgroundColor: 'bg-gray-50', // Achtergrondkleur van de navigatie container
   },
+
+  // Knoppen in het navigatiemenu
   navigation: {
-    backgroundColor: 'bg-[#ffffff]',
-    backgroundHover: 'hover:bg-[#f3f4f6]',
-    underlineActiveColor: 'border-b-[#fb0036]',
-    underlineInActiveColor: 'border-b-[#ffffff]',
-    underlineHoverColor: 'hover:border-b-[#f3f4f6]',
+    backgroundColor: 'bg-gray-50', // Achtergrondkleur van het submenu
+    backgroundHover: 'hover:bg-gray-300', // Achtergrondkleur van knoppen in het submenu
+    underlineActiveColor: 'border-b-[#fb0036]', // Kleur van streep onder actieve knop
+    underlineInActiveColor: 'border-b-gray-50', // Kleur van streep onder inactieve knop
+    underlineHoverColor: 'hover:border-b-gray-300', // Kleur van streep onder knop bij aanwijzen
   },
-  home: {
+
+  // Openingstijden en contactmogelijkheden component op de homepage
+  shopInfoCard: {
+    backgroundColor: 'bg-gradient-radial', // Achtergrond effect voor het rode/donkere gedeelte
     from: 'from-[#fd3964]',
     via: 'via-[#fa2150]',
     to: 'to-[#fb0036]',
   },
+
+  // Footer onderaan de pagina
   footer: {
-    borderTopColor: 'border-[#fb0036]',
-    backgroundColor: 'bg-white',
+    borderTopColor: 'border-[#fb0036]', // Kleur van streep boven footer gedeelte
+    backgroundColor: 'bg-gray-50', // Achtergrondkleur van footer gedeelte
   },
+
+  // Product kaarten op de homepage
   productCard: {
-    headBackgroundColor: 'bg-[#fb0036]',
-    textColor: 'text-[#ffffff]',
-    borderColor: 'border-[#EAE0D5]',
+    titleColor: 'text-gray-50', // Tekstkleur voor titels in de kaarten
+    headBackgroundColor: 'bg-[#fb0036]', // Achtergrondkleur van titels
+    borderColor: 'border-[#EAE0D5]', // Kleur van kaartranden
+    imageBackgroundColor: 'bg-gray-50', // Achtergrondkleur van afbeelding
   },
-  card: {
-    backgroundColorDark: 'bg-[#ffffff]',
-    backgroundColorLight: 'bg-[#f3f4f6]',
-    backgroundColorActive: 'bg-[#f3f4f6]',
+
+  // Categorie kaarten op pagina's waar prijstabellen worden weergegeven
+  // Wordt ook gebruikt in Terms of Sale pagina waar een geselecteerde sectie wordt gehighlight
+  categoryCard: {
+    backgroundColorDark: 'bg-gray-50', // Kaartkleur, zelfde kleur als achtergrond
+    backgroundColorLight: 'bg-gray-200', // Highlighted kaartkleur
+    backgroundColorActive: 'bg-gray-200', // Terms of Sale actieve sectie
   },
+
+  // Prijstabellen
   table: {
-    headBackgroundColor: 'bg-[#fb0036]',
-    headTextColor: 'text-[#ffffff]',
-    headBorderColor: 'border-[#ffffff]',
-    unitsBorderColor: 'border-[#c2c2c2]',
-    cellBackgroundEven: 'even:bg-[#ffffff]',
-    cellBackgroundOdd: 'odd:bg-[#f9fafb]',
-    cellBorderColor: 'border-[#c2c2c2]',
-    highlightRow: 'hover:bg-[#fb003620]', // 20% opacity
+    headBackgroundColor: 'bg-[#fb0036]', // Achtergrondkleur voor titel
+    headBorderColor: 'border-gray-50', // Randkleur voor titel header
+    unitsBorderColor: 'border-[#c2c2c2]', // Randkleur voor units rij
+    headTextColor: 'text-gray-50', // Tekstkleur voor titel
+    cellBackgroundEven: 'even:bg-gray-50', // Achtergrondkleur voor even regels
+    cellBackgroundOdd: 'odd:bg-gray-100', // Achtergrondkleur voor oneven regels
+    cellBorderColor: 'border-[#c2c2c2]', // Randkleur voor prijs sectie
+    highlightRow: 'hover:bg-gray-300', // Achtergrondkleur voor regel bij aanwijzen
   },
+
+  // Extra informatie onderaan de pagina content, wanneer van toepassing
   notification: {
-    textColor: 'text-[#fb0036]',
-    asteriskColor: 'text-[#fb0036]',
-    borderColor: 'border-[#c2c2c2]',
-    iconColor: 'text-[#1e40af]',
+    textColor: 'text-[#fb0036]', // Tekstkleur voor informatie sectie
+    asteriskColor: 'text-[#fb0036]', // Kleur van asterisk symbool
+    borderColor: 'border-[#c2c2c2]', // Randkleur voor notificatie bericht
+    iconColor: 'text-[#1e40af]', // Kleur van informatie icoon
   },
+
+  // Knoppen in kaarten of formulier
   button: {
-    backgroundColor: 'bg-[#fb0036]',
-    backgroundHover: 'hover:bg-[#ff3366]',
-    textColor: 'text-[#ffffff]',
+    backgroundColor: 'bg-[#fb0036]', // Achtergrondkleur van knop
+    backgroundHover: 'hover:bg-[#ff3366]', // Achtergrondkleur van knop bij aanwijzen
+    textColor: 'text-gray-50', //Tekstkleur van knop
   },
+
+  // Bevestigingsbericht na het versturen van een bericht via het formulier
   confirmMessage: {
-    textColor: 'text-[#166534]',
-    backgroundColor: 'bg-[#dcfce7]',
-    borderColor: 'border-green-300',
+    textColor: 'text-[#166534]', // Tekstkleur van bevestigingsbericht
+    backgroundColor: 'bg-[#dcfce7]', // Achtergrondkleur van bevestigingsbericht
+    borderColor: 'border-green-300', //Randkleur van bevestigingsbericht
   },
 };
 
+/*
+
+Dark theme
+
+*/
+
 export const darkTheme = {
+  // Algemene stijlen die op meerdere pagina's worden gebruikt
   overall: {
-    textColorPrimary: 'text-[#EAE0D5]',
-    textColorSecondary: 'text-gray-700',
-    textColorLight: 'text-white',
-    backgroundColor: 'bg-[#202020]',
-    formTextColor: 'text-gray-700',
+    textColorPrimary: 'text-[#EAE0D5]', // Tekstkleur voor algemene tekst
+    textColorSecondary: 'text-gray-400', // Tekstkleur voor sub titels
+    textColorLight: 'text-[#EAE0D5]', // Tekstkleur voor tekst op rode of donkere achtergronden
+    backgroundColor: 'bg-[#202020]', // Algemene achtergrondkleur
+    formTextColor: 'text-gray-700', // Tekstkleur voor tekst in formulier invoervelden
+    diverderColor: '#EAE0D5', // Kleur van horizontale schedingslijn
   },
+
+  // Navigatiemenu container bovenaan de website
   header: {
-    backgroundColor: 'bg-[#2c2c2c]',
+    backgroundColor: 'bg-[#2c2c2c]', // Achtergrondkleur van de navigatie container
   },
+
+  // Knoppen in het navigatiemenu
   navigation: {
-    backgroundColor: 'bg-[#2c2c2c]',
-    backgroundHover: 'hover:bg-gray-600',
-    underlineActiveColor: 'border-b-[#fb0036]',
-    underlineInActiveColor: 'border-b-[#2c2c2c]',
-    underlineHoverColor: 'hover:border-b-[#EAE0D5]',
+    backgroundColor: 'bg-[#2c2c2c]', // Achtergrondkleur van het submenu
+    backgroundHover: 'hover:bg-gray-600', // Achtergrondkleur van knoppen in het submenu
+    underlineActiveColor: 'border-b-[#c53030]', // Kleur van streep onder actieve knop
+    underlineInActiveColor: 'border-b-[#2c2c2c]', // Kleur van streep onder inactieve knop
+    underlineHoverColor: 'hover:border-b-[#EAE0D5]', // Kleur van streep onder knop bij aanwijzen
   },
-  home: {
-    from: 'from-[#fd3964]',
-    via: 'via-[#fa2150]',
-    to: 'to-[#fb0036]',
+
+  // Openingstijden en contactmogelijkheden component op de homepage
+  shopInfoCard: {
+    backgroundColor: 'bg-gradient-radial', // Achtergrond effect voor het rode/donkere gedeelte
+    from: 'from-[#3a3a3a]',
+    via: 'via-[#333333]',
+    to: 'to-[#2c2c2c]',
   },
+
+  // Footer onderaan de pagina
   footer: {
-    borderTopColor: 'border-[#fb0036]',
-    backgroundColor: 'bg-[#2c2c2c]',
+    borderTopColor: 'border-[#c53030]', // Kleur van streep boven footer gedeelte
+    backgroundColor: 'bg-[#202020]', // Achtergrondkleur van footer gedeelte
   },
+
+  // Product kaarten op de homepage
   productCard: {
-    headBackgroundColor: 'bg-[#fb0036]',
-    textColor: 'text-[#ffffff]',
-    borderColor: 'border-gray-700',
+    titleColor: 'text-gray-50', // Tekstkleur voor titels in de kaarten
+    headBackgroundColor: 'bg-[#c53030]', // Achtergrondkleur van titels
+    borderColor: 'border-gray-700', // Kleur van kaartranden
+    imageBackgroundColor: 'bg-gray-50', // Achtergrondkleur van afbeelding
   },
-  card: {
-    backgroundColorDark: 'bg-[#202020]',
-    backgroundColorLight: 'bg-[#2c2c2c]',
-    backgroundColorActive: 'bg-gray-600',
+
+  // Categorie kaarten op pagina's waar prijstabellen worden weergegeven
+  // Wordt ook gebruikt in Terms of Sale pagina waar een geselecteerde sectie wordt gehighlight
+  categoryCard: {
+    // ----------------------------------------------------------------hernoem
+    backgroundColorDark: 'bg-[#202020]', // Kaartkleur, zelfde kleur als achtergrond
+    backgroundColorLight: 'bg-[#2c2c2c]', // Highlighted kaartkleur
+    backgroundColorActive: 'bg-gray-600', // Terms of Sale actieve sectie
   },
+
+  // Prijstabellen
   table: {
-    headBackgroundColor: 'bg-[#fb0036]',
-    headTextColor: 'text-[#ffffff]',
-    headBorderColor: 'border-gray-700',
-    unitsBorderColor: 'border-gray-700',
-    cellBackgroundEven: 'even:bg-[#2c2c2c]',
-    cellBackgroundOdd: 'odd:bg-[#202020]',
-    cellBorderColor: 'border-gray-700',
-    highlightRow: 'hover:bg-gray-600', // 20% opacity
+    headBackgroundColor: 'bg-[#c53030]', // Achtergrondkleur voor titel
+    headTextColor: 'text-gray-50', // Tekstkleur voor titel
+    unitsBorderColor: 'border-gray-700', // Randkleur voor units rij
+    headBorderColor: 'border-gray-700', // Randkleur voor titel header
+    cellBackgroundEven: 'even:bg-[#202020]', // Achtergrondkleur voor even regels
+    cellBackgroundOdd: 'odd:bg-[#2c2c2c]', // Achtergrondkleur voor oneven regels
+    cellBorderColor: 'border-gray-700', // Randkleur voor prijs sectie
+    highlightRow: 'hover:bg-gray-600', // Achtergrondkleur voor regel bij aanwijzen
   },
+
+  // Extra informatie onderaan de pagina content, wanneer van toepassing
   notification: {
-    textColor: 'text-[#fb0036]',
-    asteriskColor: 'text-[#fb0036]',
-    borderColor: 'border-[#2c2c2c]',
-    iconColor: 'text-[#1e40af]',
+    textColor: 'text-[#c53030]', // Tekstkleur voor informatie sectie
+    asteriskColor: 'text-[#c53030]', // Kleur van asterisk symbool
+    borderColor: 'border-[#2c2c2c]', // Randkleur voor notificatie bericht
+    iconColor: 'text-[#1e40af]', // Kleur van informatie icoon
   },
+
+  // Knoppen in kaarten of formulier
   button: {
-    backgroundColor: 'bg-[#fb0036]',
-    backgroundHover: 'hover:bg-[#ff3366]',
-    textColor: 'text-[#ffffff]',
+    backgroundColor: 'bg-[#c53030]', // Achtergrondkleur van knop
+    backgroundHover: 'hover:bg-[#ff3366]', // Achtergrondkleur van knop bij aanwijzen
+    textColor: 'text-gray-50', //Tekstkleur van knop
   },
+
+  // Bevestigingsbericht na het versturen van een bericht via het formulier
   confirmMessage: {
-    textColor: 'text-[#166534]',
-    backgroundColor: 'bg-[#dcfce7]',
-    borderColor: 'border-green-300',
+    textColor: 'text-[#166534]', // Tekstkleur van bevestigingsbericht
+    backgroundColor: 'bg-[#dcfce7]', // Achtergrondkleur van bevestigingsbericht
+    borderColor: 'border-green-300', //Randkleur van bevestigingsbericht
   },
 };

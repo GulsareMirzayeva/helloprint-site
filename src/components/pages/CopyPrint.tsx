@@ -27,9 +27,11 @@ export default function CopyPrint() {
       <div className="flex flex-col items-start justify-start gap-4 w-full px-2 pt-12">
         <IntroductionCopyPrint />
         <CopyPrintBudgetPricing
-          bgColor={stylePreset.card.backgroundColorLight}
+          bgColor={stylePreset.categoryCard.backgroundColorLight}
         />
-        <CopyPrintHqPricing bgColor={stylePreset.card.backgroundColorDark} />
+        <CopyPrintHqPricing
+          bgColor={stylePreset.categoryCard.backgroundColorDark}
+        />
         <div className="z-0 w-full">
           <Notification>
             <div className="flex items-end">
@@ -56,11 +58,24 @@ export default function CopyPrint() {
             />
           </Notification>
         </div>
-        <Divider flexItem variant="fullWidth" />
-        <div className="pt-16 pb-2">
+        <Divider
+          style={{
+            backgroundColor: `${stylePreset.overall.diverderColor}`,
+            marginTop: '64px',
+            marginBottom: '16px',
+          }}
+          flexItem
+          variant="fullWidth"
+        />
+        <div
+          className={`
+          pb-2
+          ${stylePreset.overall.textColorPrimary}
+          `}
+        >
           <TextBlock value={shopInfoPaths.contactTitle} variant={'subTitle'} />
         </div>
-        <div className="w-full">
+        <div className="w-full m-">
           <SendMessage />
         </div>
       </div>

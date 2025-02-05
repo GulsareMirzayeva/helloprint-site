@@ -29,14 +29,14 @@ export default function Flyers() {
         <IntroductionFlyers />
         <div className="flex flex-col">
           <FlyersDigitalPrintA6Pricing
-            bgColor={stylePreset.card.backgroundColorLight}
+            bgColor={stylePreset.categoryCard.backgroundColorLight}
           />
           <FlyersDigitalPrintA5Pricing
-            bgColor={stylePreset.card.backgroundColorLight}
+            bgColor={stylePreset.categoryCard.backgroundColorLight}
           />
         </div>
         <FlyersOffsetPrintA5Pricing
-          bgColor={stylePreset.card.backgroundColorDark}
+          bgColor={stylePreset.categoryCard.backgroundColorDark}
         />
         {/* Display notification message */}
         <div className="z-0 w-full">
@@ -57,8 +57,16 @@ export default function Flyers() {
             </div>
           </Notification>
         </div>
-        <Divider flexItem variant="fullWidth" />
-        <div className="pt-16 pb-2">
+        <Divider
+          style={{
+            backgroundColor: `${stylePreset.overall.diverderColor}`,
+            marginTop: '64px',
+            marginBottom: '16px',
+          }}
+          flexItem
+          variant="fullWidth"
+        />
+        <div className="pb-2">
           <TextBlock value={shopInfoPaths.contactTitle} variant={'subTitle'} />
         </div>
         <div className="w-full">

@@ -13,7 +13,7 @@ export default function ContactDetails() {
     <section className="flex flex-col w-full">
       <div
         className={`
-          ${stylePreset.card.backgroundColorLight}
+          ${stylePreset.categoryCard.backgroundColorLight}
           flex flex-col p-2 mb-10 sm:p-8 rounded-xl
           `}
       >

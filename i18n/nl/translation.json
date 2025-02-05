@@ -215,9 +215,9 @@
     },
     "common": {
       "digitalPrint": "DIGITAAL GEPRINT",
-      "digitalPrintDeliveryTime": "Levertijd 1-2 werkdagen*",
+      "digitalPrintDeliveryTime": "Levertijd 1-2 werkdagen",
       "offsetPrint": "DRUKWERK",
-      "offsetPrintDeliveryTime": "Levertijd 7 werkdagen*",
+      "offsetPrintDeliveryTime": "Levertijd 7 werkdagen",
       "deliveryDisclaimer": "Levertijden altijd onder voorbehoud. Hier kunnen geen rechten aan verleend worden. Wij zijn niet verantwoordelijk voor eventuele vertraging door onze huisdrukker."
     }
   },

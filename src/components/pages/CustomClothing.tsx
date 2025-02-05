@@ -27,11 +27,13 @@ export default function CustomClothing() {
       <div className="flex flex-col items-start justify-start gap-4 w-full px-2 pt-12">
         <IntroductionCustomClothing />
         <ClothingPiecesPricing
-          bgColor={stylePreset.card.backgroundColorLight}
+          bgColor={stylePreset.categoryCard.backgroundColorLight}
         />
-        <FlexAndDtgPricing bgColor={stylePreset.card.backgroundColorLight} />
+        <FlexAndDtgPricing
+          bgColor={stylePreset.categoryCard.backgroundColorLight}
+        />
         {/* Display notification message */}
-        <div className="z-0 w-full">
+        <div className="z-0 pt-4 w-full">
           <Notification>
             <TextBlock
               value={customClotingContentPaths.notificationFirst}
@@ -43,8 +45,16 @@ export default function CustomClothing() {
             />
           </Notification>
         </div>
-        <Divider flexItem variant="fullWidth" />
-        <div className="pt-16 pb-2">
+        <Divider
+          style={{
+            backgroundColor: `${stylePreset.overall.diverderColor}`,
+            marginTop: '64px',
+            marginBottom: '16px',
+          }}
+          flexItem
+          variant="fullWidth"
+        />
+        <div className="pb-2">
           <TextBlock value={shopInfoPaths.contactTitle} variant={'subTitle'} />
         </div>
         <div className="w-full">

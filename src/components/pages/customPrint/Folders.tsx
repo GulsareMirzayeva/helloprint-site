@@ -28,14 +28,14 @@ export default function Folders() {
       <div className="flex flex-col items-start justify-start gap-4 w-full px-2 pt-12">
         <IntroductionFlyers />
         <FoldersDigitalPrintPricing
-          bgColor={stylePreset.card.backgroundColorLight}
+          bgColor={stylePreset.categoryCard.backgroundColorLight}
         />
         <div className="flex flex-col gap-12 sm:gap-0">
           <FoldersOffsetPrintPricingA4
-            bgColor={stylePreset.card.backgroundColorDark}
+            bgColor={stylePreset.categoryCard.backgroundColorDark}
           />
           <FoldersOffsetPrintPricingA3
-            bgColor={stylePreset.card.backgroundColorDark}
+            bgColor={stylePreset.categoryCard.backgroundColorDark}
           />
         </div>
         {/* Display notification message table */}
@@ -57,8 +57,16 @@ export default function Folders() {
             </div>
           </Notification>
         </div>
-        <Divider flexItem variant="fullWidth" />
-        <div className="pt-16 pb-2">
+        <Divider
+          style={{
+            backgroundColor: `${stylePreset.overall.diverderColor}`,
+            marginTop: '64px',
+            marginBottom: '16px',
+          }}
+          flexItem
+          variant="fullWidth"
+        />
+        <div className="pb-2">
           <TextBlock value={shopInfoPaths.contactTitle} variant={'subTitle'} />
         </div>
         <div className="w-full">

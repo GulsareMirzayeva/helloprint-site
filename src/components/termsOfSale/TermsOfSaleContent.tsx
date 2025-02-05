@@ -21,7 +21,7 @@ export default function TermsOfSaleContent() {
             key={term}
             className={
               activeTerm == term
-                ? `p-2 ${stylePreset.card.backgroundColorActive}`
+                ? `p-2 ${stylePreset.categoryCard.backgroundColorActive}`
                 : 'p-2'
             }
           >

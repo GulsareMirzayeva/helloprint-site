@@ -100,7 +100,7 @@ export default function Header() {
         onMouseLeave={handleMouseLeave}
       >
         <div
-          className={`p-1 flex items-center cursor-default border-b-2 
+          className={`flex items-center cursor-default border-b-2 
             ${
               location.pathname.startsWith('/custom-print')
                 ? `${stylePreset.navigation.underlineActiveColor}`
@@ -115,9 +115,9 @@ export default function Header() {
             {t(menuButtonNames.customPrinting)}
           </button>
           {isAccordionOpen ? (
-            <KeyboardArrowUpIcon className="mt-1 ml-2" />
+            <KeyboardArrowUpIcon className="ml-2" />
           ) : (
-            <KeyboardArrowDownIcon className="mt-1 ml-2" />
+            <KeyboardArrowDownIcon className="ml-2" />
           )}
         </div>
         {children}
@@ -132,11 +132,11 @@ export default function Header() {
   return (
     <header
       className={`
-        sticky top-0 z-20 shadow-md
+        sticky top-0 z-20 pt-2 pb-1 shadow-md text-sm
         ${stylePreset.header.backgroundColor}
       `}
     >
-      <nav className="flex flex-col lg:flex-row lg:justify-center lg:h-16 px-4">
+      <nav className="flex flex-col lg:flex-row lg:justify-center pb-1 px-4">
         {/* Logo + Hamburger menu */}
         <div>
           {/* Hamburger button - only visible at small screens */}
@@ -161,7 +161,7 @@ export default function Header() {
             {isAccordionOpen && (
               <ul
                 className={`
-                  absolute top-[calc(100%+6px)] min-w-[105%] shadow-md rounded-sm
+                  absolute z-20 top-[calc(100%)] lg:top-[calc(100%+8px)] min-w-[105%] shadow-md rounded-sm
                   ${stylePreset.navigation.backgroundColor}  
                 `}
               >
@@ -213,39 +213,37 @@ export default function Header() {
           />
 
           {/* Taalkeuze */}
-          <div className="flex items-center pb-2 pt-2 sm:pb-2 md:pb-2 md:pt-2 lg:pt-0 lg:pb-0 pl-1">
+          <div className="flex items-center py-2 lg:py-0 pl-1">
             <LanguageIcon fontSize={'small'} />
             <select
-              className="
-                text-xs ml-2 p-1 rounded-lg cursor-pointer border-2 border-gray-300 bg-gray-100 text-[#202020]
-                hover:ring-2 hover:ring-blue-500 focus:ring-2"
               name="language"
               value={language}
               onChange={(e) => changeLanguage(e.target.value)}
+              className="
+                text-xs ml-2 pl-1 py-1 rounded-lg cursor-pointer text-[#202020] bg-white border border-gray-400 
+                transition hover:ring-1 hover:ring-gray-300 focus:ring-[#fb0036] focus:ring-1"
             >
               <option value="nl">🇳🇱 NL</option>
               <option value="en">🇬🇧 EN</option>
             </select>
           </div>
-          <div className="flex items-center gap-1 pb-2 pt-2 sm:pb-2 md:pb-2 md:pt-2 lg:pt-0 lg:pb-0 pl-1">
+          <div className="flex items-center gap-1 py-2 lg:py-0 pl-1">
             <div className="text-yellow-500 pb-1">
               <LightModeIcon fontSize="small" />
             </div>
             <button
               onClick={() => setDarkMode(!darkMode)}
               className={`
-                relative w-10 h-5 flex items-center rounded-full p-1 transition border-2 border-gray-300
-                hover:ring-2 hover:ring-blue-500 dark:hover:ring-yellow-300 focus:outline-none focus:ring-2
-                ${
-                  darkMode
-                    ? 'bg-blue-500 dark:bg-yellow-500'
-                    : 'bg-gray-100 dark:bg-gray-600'
-                }
+                relative w-10 h-5 flex items-center rounded-full p-1 transition border border-gray-400
+                hover:ring-1 hover:ring-gray-400 focus:ring-[#fb0036] focus:ring-1
+                ${darkMode ? 'bg-yellow-500' : 'bg-gray-50'}
               `}
             >
               <span
-                className={`w-3 h-3 bg-gray-500 dark:bg-gray-700 rounded-full shadow-md transform transition 
-      ${darkMode ? 'translate-x-4' : 'translate-x-0'}`}
+                className={`
+                  w-4 h-4 bg-gray-700 dark:bg-gray-900 rounded-full shadow-md transform transition 
+                  ${darkMode ? 'translate-x-4' : 'translate-x-0'}
+                `}
               />
             </button>
             <div className="text-gray-500 pb-1">

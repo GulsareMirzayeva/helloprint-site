@@ -5,6 +5,7 @@ export type StylePresetType = {
     textColorLight: string;
     backgroundColor: string;
     formTextColor: string;
+    diverderColor: string;
   };
   header: {
     backgroundColor: string;
@@ -16,7 +17,8 @@ export type StylePresetType = {
     underlineInActiveColor: string;
     underlineHoverColor: string;
   };
-  home: {
+  shopInfoCard: {
+    backgroundColor: string;
     from: string;
     via: string;
     to: string;
@@ -26,11 +28,12 @@ export type StylePresetType = {
     backgroundColor: string;
   };
   productCard: {
+    titleColor: string;
     headBackgroundColor: string;
-    textColor: string;
     borderColor: string;
+    imageBackgroundColor: string;
   };
-  card: {
+  categoryCard: {
     backgroundColorDark: string;
     backgroundColorLight: string;
     backgroundColorActive: string;

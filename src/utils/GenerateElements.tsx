@@ -11,12 +11,15 @@ export const NavigationLink = (linkProps: NavigationType) => {
 
   return (
     <Link
-      className={`p-1 flex items-center cursor-default border-b-2 ${
-        location.pathname === linkProps.path
-          ? `${stylePreset.navigation.underlineActiveColor}`
-          : `${stylePreset.navigation.underlineInActiveColor} ${stylePreset.navigation.underlineHoverColor}`
-      }`}
       to={linkProps.path}
+      className={`
+        flex items-center cursor-default border-b-2 transition ${
+          location.pathname === linkProps.path
+            ? `${stylePreset.navigation.underlineActiveColor}`
+            : `${stylePreset.navigation.underlineInActiveColor}
+              ${stylePreset.navigation.underlineHoverColor}`
+        }
+      `}
     >
       {t(linkProps.value)}
     </Link>

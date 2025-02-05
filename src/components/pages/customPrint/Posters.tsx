@@ -29,18 +29,22 @@ export default function Posters() {
       <div></div> {/* Left empty colomn */}
       <div className="flex flex-col items-start justify-start gap-4 w-full px-2 pt-12">
         <IntroductionPosters />
-        <Posters80grPricing bgColor={stylePreset.card.backgroundColorLight} />
+        <Posters80grPricing
+          bgColor={stylePreset.categoryCard.backgroundColorLight}
+        />
         <div className="flex flex-col gap-12 sm:gap-0">
-          <Posters160grPricing bgColor={stylePreset.card.backgroundColorDark} />
+          <Posters160grPricing
+            bgColor={stylePreset.categoryCard.backgroundColorDark}
+          />
           <Posters190grAnd260grPricing
-            bgColor={stylePreset.card.backgroundColorDark}
+            bgColor={stylePreset.categoryCard.backgroundColorDark}
           />
         </div>
         <PostersSpecialPapersPricing
-          bgColor={stylePreset.card.backgroundColorLight}
+          bgColor={stylePreset.categoryCard.backgroundColorLight}
         />
         <PostersA3BudgetAndHqPricing
-          bgColor={stylePreset.card.backgroundColorDark}
+          bgColor={stylePreset.categoryCard.backgroundColorDark}
         />
         <div className="z-0 w-full">
           <Notification>
@@ -60,8 +64,16 @@ export default function Posters() {
             </div>
           </Notification>
         </div>
-        <Divider flexItem variant="fullWidth" />
-        <div className="pt-16 pb-2">
+        <Divider
+          style={{
+            backgroundColor: `${stylePreset.overall.diverderColor}`,
+            marginTop: '64px',
+            marginBottom: '16px',
+          }}
+          flexItem
+          variant="fullWidth"
+        />
+        <div className="pb-2">
           <TextBlock value={shopInfoPaths.contactTitle} variant={'subTitle'} />
         </div>
         <div className="w-full">

@@ -14,36 +14,43 @@ import { darkTheme, lightTheme } from '../lib/stylePresets';
 const DataContext = createContext<DataContextType | undefined>(undefined);
 
 export function DataProvider({ children }: { children: ReactNode }) {
+  const getStoredTheme = () => localStorage.getItem('theme');
+  const prefersDarkMode = window.matchMedia(
+    '(prefers-color-scheme: dark)'
+  ).matches;
+
+  // Use the local storage value for theme selection if it excists, otherwise use system preference
+  const initialDarkMode =
+    getStoredTheme() === 'dark' || (!getStoredTheme() && prefersDarkMode);
+  const [darkMode, setDarkMode] = useState(initialDarkMode);
+  const [stylePreset, setStylePreset] = useState<StylePresetType>(
+    darkMode ? darkTheme : lightTheme
+  );
+
   const [prices, setPrices] = useState<Prices | null>(null);
   const [error, setError] = useState<Error | null>(null);
   const [isLoading, setIsLoading] = useState<boolean>(true);
   const [activeTerm, setActiveTerm] = useState<FooterTermsOfSaleLinks>('none');
 
-  // Manage color themes
-  const [darkMode, setDarkMode] = useState(
-    localStorage.getItem('theme') === 'dark'
-  );
-  const [stylePreset, setStylePreset] = useState<StylePresetType>(
-    darkMode ? darkTheme : lightTheme
-  );
-
-  // Set theme class in HTML file
+  // Theme update: set class in <html> and update local storage
   useEffect(() => {
-    if (darkMode) {
-      document.documentElement.classList.add('dark');
-      localStorage.setItem('theme', 'dark');
-    } else {
-      document.documentElement.classList.remove('dark');
-      localStorage.setItem('theme', 'light');
-    }
+    document.documentElement.classList.toggle('dark', darkMode);
+    localStorage.setItem('theme', darkMode ? 'dark' : 'light');
+    setStylePreset(darkMode ? darkTheme : lightTheme);
   }, [darkMode]);
 
-  // Swap style presets when the toggle switch has changed position
+  // Use system preference when user has not changes theme in the navigation
   useEffect(() => {
-    setStylePreset((prev) => (prev === lightTheme ? darkTheme : lightTheme));
-  }, [darkMode]);
+    if (getStoredTheme()) return; // Only if local storage is empty, else do nothing
 
-  // Get all prices at once
+    const mq = window.matchMedia('(prefers-color-scheme: dark)');
+    const handleChange = (evt: MediaQueryListEvent) => setDarkMode(evt.matches);
+
+    mq.addEventListener('change', handleChange);
+    return () => mq.removeEventListener('change', handleChange);
+  }, []);
+
+  // Get prices
   useEffect(() => {
     const fetchData = async () => {
       try {
@@ -81,10 +88,8 @@ export function DataProvider({ children }: { children: ReactNode }) {
 
 export function useData() {
   const context = useContext(DataContext);
-
   if (!context) {
     throw new Error('useData must be used within a DataProvider');
   }
-
   return context;
 }

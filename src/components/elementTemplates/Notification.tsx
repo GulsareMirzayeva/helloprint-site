@@ -5,11 +5,11 @@ export function Notification({ children }: { children: React.ReactNode }) {
   const { stylePreset } = useData();
 
   return (
-    <div className="relative mt-8 mb-4">
+    <div className="relative pt-2 pl-5">
       {/* Info Icon */}
       <div
         className={`
-          absolute -top-1 -left-1 -translate-x-1/2 -translate-y-1/2 z-20
+          absolute top-1 -left-1 -translate-x-1/2 -translate-y-1/2 z-20 pl-10
           ${stylePreset.notification.iconColor}
           `}
       >

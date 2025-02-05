@@ -12,7 +12,7 @@ export default function Footer() {
   return (
     <footer
       className={`
-        border-t-2 grid grid-cols-[1fr,minmax(0,1200px),1fr] w-full px-4 py-2
+        border-t grid grid-cols-[1fr,minmax(0,1200px),1fr] w-full px-4 py-2
         ${stylePreset.footer.borderTopColor}
         ${stylePreset.footer.backgroundColor}
       `}

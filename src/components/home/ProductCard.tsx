@@ -8,7 +8,7 @@ import { homeContentPaths } from '../../lib/translationPaths';
 import { Link } from 'react-router-dom';
 import { useData } from '../../context/DataContext';
 
-export default function ProductCategoryCards() {
+export default function ProductCard() {
   const { t } = useTranslation();
   const { stylePreset } = useData();
   const icons = [paper, leaflet, tshirt, supplies];
@@ -36,20 +36,20 @@ export default function ProductCategoryCards() {
             <h2
               className={`
                 text-xl font-bold
-                ${stylePreset.productCard.textColor}
+                ${stylePreset.productCard.titleColor}
                 `}
             >
               {value.title}
             </h2>
           </div>
-          <div className="flex justify-center p-2">
+          <div className="flex justify-center p-2 ">
             <img
-              className="p-2 h-[100px] w-[100px]"
+              className="p-2 h-[100px] w-[100px] bg-gray-50 rounded-md"
               src={icons[value.icon]}
               alt="Category icon"
             />
           </div>
-          <div className="">
+          <div>
             <p className="h-full text-md px-4">{value.introduction}</p>
           </div>
           <div className="mt-4 px-2">
