@@ -30,10 +30,10 @@ export default function CustomClothing() {
           bgColor={stylePreset.categoryCard.backgroundColorLight}
         />
         <FlexAndDtgPricing
-          bgColor={stylePreset.categoryCard.backgroundColorLight}
+          bgColor={stylePreset.categoryCard.backgroundColorDark}
         />
         {/* Display notification message */}
-        <div className="z-0 pt-4 w-full">
+        <div className="z-0 w-full">
           <Notification>
             <TextBlock
               value={customClotingContentPaths.notificationFirst}

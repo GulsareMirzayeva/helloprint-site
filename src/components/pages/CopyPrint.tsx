@@ -34,7 +34,7 @@ export default function CopyPrint() {
         />
         <div className="z-0 w-full">
           <Notification>
-            <div className="flex items-end">
+            <div className="flex items-start">
               <div
                 className={`
                 font-semibold

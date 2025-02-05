@@ -35,7 +35,7 @@ export default function Cards() {
         <div className="z-0 w-full">
           {/* Display notification message */}
           <Notification>
-            <div className="flex items-end">
+            <div className="flex items-start">
               <div
                 className={`
                   font-semibold

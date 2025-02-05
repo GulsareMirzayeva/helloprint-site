@@ -32,7 +32,7 @@ export const SubNavigationLink = (linkProps: SubNavigationType) => {
   return (
     <Link to={linkProps.path} onClick={linkProps.callBack}>
       <li
-        className={`${stylePreset.navigation.backgroundHover} p-2 cursor-default`}
+        className={`${stylePreset.navigation.backgroundHover} p-2 cursor-pointer`}
       >
         {t(linkProps.value)}
       </li>

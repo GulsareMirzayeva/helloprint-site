@@ -82,7 +82,7 @@ export const lightTheme = {
   // Knoppen in kaarten of formulier
   button: {
     backgroundColor: 'bg-[#fb0036]', // Achtergrondkleur van knop
-    backgroundHover: 'hover:bg-[#ff3366]', // Achtergrondkleur van knop bij aanwijzen
+    backgroundHover: 'hover:bg-[#e00030]', // Achtergrondkleur van knop bij aanwijzen
     textColor: 'text-gray-50', //Tekstkleur van knop
   },
 
@@ -120,7 +120,7 @@ export const darkTheme = {
   navigation: {
     backgroundColor: 'bg-[#2c2c2c]', // Achtergrondkleur van het submenu
     backgroundHover: 'hover:bg-gray-600', // Achtergrondkleur van knoppen in het submenu
-    underlineActiveColor: 'border-b-[#c53030]', // Kleur van streep onder actieve knop
+    underlineActiveColor: 'border-b-[#b02a37]', // Kleur van streep onder actieve knop
     underlineInActiveColor: 'border-b-[#2c2c2c]', // Kleur van streep onder inactieve knop
     underlineHoverColor: 'hover:border-b-[#EAE0D5]', // Kleur van streep onder knop bij aanwijzen
   },
@@ -135,14 +135,14 @@ export const darkTheme = {
 
   // Footer onderaan de pagina
   footer: {
-    borderTopColor: 'border-[#c53030]', // Kleur van streep boven footer gedeelte
+    borderTopColor: 'border-[#b02a37]', // Kleur van streep boven footer gedeelte
     backgroundColor: 'bg-[#202020]', // Achtergrondkleur van footer gedeelte
   },
 
   // Product kaarten op de homepage
   productCard: {
     titleColor: 'text-gray-50', // Tekstkleur voor titels in de kaarten
-    headBackgroundColor: 'bg-[#c53030]', // Achtergrondkleur van titels
+    headBackgroundColor: 'bg-[#b02a37]', // Achtergrondkleur van titels
     borderColor: 'border-gray-700', // Kleur van kaartranden
     imageBackgroundColor: 'bg-gray-50', // Achtergrondkleur van afbeelding
   },
@@ -158,7 +158,7 @@ export const darkTheme = {
 
   // Prijstabellen
   table: {
-    headBackgroundColor: 'bg-[#c53030]', // Achtergrondkleur voor titel
+    headBackgroundColor: 'bg-[#b02a37]', // Achtergrondkleur voor titel
     headTextColor: 'text-gray-50', // Tekstkleur voor titel
     unitsBorderColor: 'border-gray-700', // Randkleur voor units rij
     headBorderColor: 'border-gray-700', // Randkleur voor titel header
@@ -170,16 +170,16 @@ export const darkTheme = {
 
   // Extra informatie onderaan de pagina content, wanneer van toepassing
   notification: {
-    textColor: 'text-[#c53030]', // Tekstkleur voor informatie sectie
-    asteriskColor: 'text-[#c53030]', // Kleur van asterisk symbool
+    textColor: 'text-[#b02a37]', // Tekstkleur voor informatie sectie
+    asteriskColor: 'text-[#b02a37]', // Kleur van asterisk symbool
     borderColor: 'border-[#2c2c2c]', // Randkleur voor notificatie bericht
     iconColor: 'text-[#1e40af]', // Kleur van informatie icoon
   },
 
   // Knoppen in kaarten of formulier
   button: {
-    backgroundColor: 'bg-[#c53030]', // Achtergrondkleur van knop
-    backgroundHover: 'hover:bg-[#ff3366]', // Achtergrondkleur van knop bij aanwijzen
+    backgroundColor: 'bg-[#b02a37]', // Achtergrondkleur van knop
+    backgroundHover: 'hover:bg-[#a82a2a]', // Achtergrondkleur van knop bij aanwijzen
     textColor: 'text-gray-50', //Tekstkleur van knop
   },
 

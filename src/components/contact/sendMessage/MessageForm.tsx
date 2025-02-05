@@ -78,75 +78,73 @@ export default function MessageForm() {
                 type="text"
                 id="name"
                 {...register('name')}
-                className="w-full min-w-[300px] sm:min-w-[400px] md:min-w-[500px] max-w-full rounded-sm mt-1 p-1 pl-2 border"
+                className="w-full max-w-[500px] rounded-sm mt-1 p-1 pl-2 border"
                 placeholder={t(contactFormTextContentPaths.formUserName)}
               />
             </div>
 
             {/* Telephone number input field */}
-            <div>
-              <label className="sr-only" htmlFor="telNo">
-                <TextBlock
-                  value={contactFormTextContentPaths.formUserTelNumber}
-                  variant="body"
-                />
-              </label>
-
-              <input
-                type="text"
-                id="telNo"
-                {...register('telNo', {
-                  pattern: {
-                    value: /^[0-9]+$/, // Only numbers
-                    message: t(contactFormErrorPaths.telNoOnlyNumbers),
-                  },
-                  minLength: {
-                    value: 10,
-                    message: t(contactFormErrorPaths.telNoMinNumbers),
-                  },
-                  maxLength: {
-                    value: 15,
-                    message: t(contactFormErrorPaths.telNoMaxNumbers),
-                  },
-                })}
-                className="w-full min-w-[300px] sm:min-w-[400px] md:min-w-[500px] max-w-full rounded-sm mt-1 p-1 pl-2 border"
-                placeholder={t(contactFormTextContentPaths.telephoneNo)}
+            <label className="sr-only" htmlFor="telNo">
+              <TextBlock
+                value={contactFormTextContentPaths.formUserTelNumber}
+                variant="body"
               />
-              {errors.telNo?.message && (
-                <p
-                  className={`
+            </label>
+
+            <input
+              type="text"
+              id="telNo"
+              {...register('telNo', {
+                pattern: {
+                  value: /^[0-9]+$/, // Only numbers
+                  message: t(contactFormErrorPaths.telNoOnlyNumbers),
+                },
+                minLength: {
+                  value: 10,
+                  message: t(contactFormErrorPaths.telNoMinNumbers),
+                },
+                maxLength: {
+                  value: 15,
+                  message: t(contactFormErrorPaths.telNoMaxNumbers),
+                },
+              })}
+              className="w-full max-w-[500px] rounded-sm mt-1 p-1 pl-2 border"
+              placeholder={t(contactFormTextContentPaths.telephoneNo)}
+            />
+            {errors.telNo?.message && (
+              <p
+                className={`
                     pl-1
                     ${stylePreset.notification.textColor}
                     `}
-                >
-                  {String(errors.telNo.message)}
-                </p>
-              )}
+              >
+                {String(errors.telNo.message)}
+              </p>
+            )}
 
-              {/* Email input field */}
-              <input
-                type="text"
-                id="email"
-                {...register('email', {
-                  pattern: {
-                    value: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/,
-                    message: t(contactFormErrorPaths.emailValidAddress),
-                  },
-                })}
-                className="w-full min-w-[300px] sm:min-w-[400px] md:min-w-[500px] max-w-full rounded-sm mt-1 p-1 pl-2 border"
-                placeholder={t(contactFormTextContentPaths.email)}
-              />
-              {errors.email?.message && (
-                <p
-                  className={`
+            {/* Email input field */}
+            <input
+              type="text"
+              id="email"
+              {...register('email', {
+                pattern: {
+                  value: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/,
+                  message: t(contactFormErrorPaths.emailValidAddress),
+                },
+              })}
+              className="w-full max-w-[500px] rounded-sm mt-1 p-1 pl-2 border"
+              placeholder={t(contactFormTextContentPaths.email)}
+            />
+            {errors.email?.message && (
+              <p
+                className={`
                     pl-1
                     ${stylePreset.notification.textColor}
                     `}
-                >
-                  {String(errors.email.message)}
-                </p>
-              )}
-            </div>
+              >
+                {String(errors.email.message)}
+              </p>
+            )}
 
             {/* Subject input field */}
             <div>
@@ -161,7 +159,7 @@ export default function MessageForm() {
                 type="text"
                 id="subject"
                 {...register('subject')}
-                className="w-full min-w-[300px] sm:min-w-[400px] md:min-w-[500px] max-w-full rounded-sm mt-1 p-1 pl-2 border"
+                className="w-full max-w-[500px] rounded-sm mt-1 p-1 pl-2 border"
                 placeholder={t(contactFormTextContentPaths.messageSubject)}
               />
             </div>
@@ -183,7 +181,7 @@ export default function MessageForm() {
                   },
                   required: t(contactFormErrorPaths.messageRequired),
                 })}
-                className="rounded-sm w-full min-w-[300px] sm:min-w-[400px] md:min-w-[500px] max-w-full h-[140px] mt-1 p-1 pl-2 border"
+                className="w-full max-w-[500px] md:min-w-[500px] h-[140px] rounded-sm mt-1 p-1 pl-2 border"
                 placeholder={t(contactFormTextContentPaths.messageContent)}
               />
               {errors.message && (

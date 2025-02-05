@@ -37,7 +37,7 @@ export default function CustomPrint() {
     `}
     >
       <div></div> {/* Left empty colomn */}
-      <div className="flex flex-col items-start justify-start w-full pt-12">
+      <div className="flex flex-col items-start justify-start w-full px-2 pt-12">
         {/* Title and introduction text at the top of the page */}
         <div className="flex flex-col pb-16 px-2">
           <TextBlock

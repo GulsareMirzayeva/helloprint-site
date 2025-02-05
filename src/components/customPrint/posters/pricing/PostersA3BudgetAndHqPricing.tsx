@@ -69,14 +69,6 @@ export default function PostersA3BudgetAndHqPricing({
                 value={postersContentPaths.fullColor}
                 variant="sectionTitle"
               />
-              <div
-                className={`
-                  font-semibold
-                  ${stylePreset.notification.asteriskColor}
-                `}
-              >
-                <span>*</span>
-              </div>
             </div>
             <TextBlock
               value={postersContentPaths.type150grLong}

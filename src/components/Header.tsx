@@ -115,9 +115,9 @@ export default function Header() {
             {t(menuButtonNames.customPrinting)}
           </button>
           {isAccordionOpen ? (
-            <KeyboardArrowUpIcon className="ml-2" />
+            <KeyboardArrowUpIcon className="" />
           ) : (
-            <KeyboardArrowDownIcon className="ml-2" />
+            <KeyboardArrowDownIcon className="" />
           )}
         </div>
         {children}
@@ -132,7 +132,7 @@ export default function Header() {
   return (
     <header
       className={`
-        sticky top-0 z-20 pt-2 pb-1 shadow-md text-sm
+        sticky top-0 pt-1 z-20 shadow-md text-sm
         ${stylePreset.header.backgroundColor}
       `}
     >
@@ -149,7 +149,7 @@ export default function Header() {
         <div
           className={`${
             isMobileMenuOpen ? 'flex' : 'hidden'
-          } flex-col lg:flex lg:flex-row lg:items-center md: items-start lg:gap-16`}
+          } flex-col gap-2 lg:flex lg:flex-row lg:items-center items-start lg:gap-16`}
         >
           <NavigationLink path={'/'} value={t(menuButtonNames.home)} />
 
@@ -161,7 +161,7 @@ export default function Header() {
             {isAccordionOpen && (
               <ul
                 className={`
-                  absolute z-20 top-[calc(100%)] lg:top-[calc(100%+8px)] min-w-[105%] shadow-md rounded-sm
+                  absolute z-20 top-[calc(100%)] lg:top-[calc(100%+4px)] w-[120px] shadow-md rounded-sm
                   ${stylePreset.navigation.backgroundColor}  
                 `}
               >
@@ -170,7 +170,13 @@ export default function Header() {
                   value={t(menuButtonNames.overview)}
                   callBack={handleAccordionLinkClick}
                 />
-                <Divider variant="fullWidth" />
+                <Divider
+                  style={{
+                    backgroundColor: `${stylePreset.overall.diverderColor}`,
+                  }}
+                  flexItem
+                  variant="fullWidth"
+                />
                 <SubNavigationLink
                   path={'/custom-print/stickers'}
                   value={t(menuButtonNames.stickers)}
@@ -213,41 +219,43 @@ export default function Header() {
           />
 
           {/* Taalkeuze */}
-          <div className="flex items-center py-2 lg:py-0 pl-1">
-            <LanguageIcon fontSize={'small'} />
-            <select
-              name="language"
-              value={language}
-              onChange={(e) => changeLanguage(e.target.value)}
-              className="
-                text-xs ml-2 pl-1 py-1 rounded-lg cursor-pointer text-[#202020] bg-white border border-gray-400 
+          <div className="flex flex-col lg:flex-row gap-1 lg:gap-6">
+            <div className="flex items-center pt-2 lg:pt-0">
+              <LanguageIcon fontSize={'small'} />
+              <select
+                name="language"
+                value={language}
+                onChange={(e) => changeLanguage(e.target.value)}
+                className="
+                text-xs w-15 h-5 ml-1 pl-1 rounded-lg cursor-pointer text-[#202020] bg-white border border-gray-400 
                 transition hover:ring-1 hover:ring-gray-300 focus:ring-[#fb0036] focus:ring-1"
-            >
-              <option value="nl">🇳🇱 NL</option>
-              <option value="en">🇬🇧 EN</option>
-            </select>
-          </div>
-          <div className="flex items-center gap-1 py-2 lg:py-0 pl-1">
-            <div className="text-yellow-500 pb-1">
-              <LightModeIcon fontSize="small" />
+              >
+                <option value="nl">🇳🇱 NL</option>
+                <option value="en">🇬🇧 EN</option>
+              </select>
             </div>
-            <button
-              onClick={() => setDarkMode(!darkMode)}
-              className={`
-                relative w-10 h-5 flex items-center rounded-full p-1 transition border border-gray-400
+            <div className="flex items-center gap-1 pt-1 lg:pt-0">
+              <div className="text-yellow-500 pb-1">
+                <LightModeIcon fontSize="small" />
+              </div>
+              <button
+                onClick={() => setDarkMode(!darkMode)}
+                className={`
+                relative w-8 h-4 flex items-center rounded-full p-1 transition border border-gray-400
                 hover:ring-1 hover:ring-gray-400 focus:ring-[#fb0036] focus:ring-1
                 ${darkMode ? 'bg-yellow-500' : 'bg-gray-50'}
               `}
-            >
-              <span
-                className={`
-                  w-4 h-4 bg-gray-700 dark:bg-gray-900 rounded-full shadow-md transform transition 
-                  ${darkMode ? 'translate-x-4' : 'translate-x-0'}
+              >
+                <span
+                  className={`
+                  w-3 h-3 bg-gray-700 dark:bg-gray-900 rounded-full shadow-md transform transition 
+                  ${darkMode ? 'translate-x-3' : 'translate-x-0'}
                 `}
-              />
-            </button>
-            <div className="text-gray-500 pb-1">
-              <DarkModeOutlinedIcon fontSize="small" />
+                />
+              </button>
+              <div className="text-gray-500 pb-1">
+                <DarkModeOutlinedIcon fontSize="small" />
+              </div>
             </div>
           </div>
         </div>
