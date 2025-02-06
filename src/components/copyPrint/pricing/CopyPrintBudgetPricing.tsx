@@ -68,7 +68,7 @@ export default function CopyPrintBudgetPricing({
           introduction: copyPrintContentPaths.introductionBudgetTable,
         }}
       />
-      <div className="flex flex-col sm:flex-row gap-16 pt-8">
+      <div className="flex flex-col sm:flex-row gap-8 sm:gap-16 pt-8">
         <div>
           {/* Display table name and the papertype */}
           <div className="flex flex-col">

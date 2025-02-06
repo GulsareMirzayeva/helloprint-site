@@ -6,6 +6,7 @@ import { TextBlock } from '../../elementTemplates/TextBlock';
 import { BeatLoader } from 'react-spinners';
 import { customClotingContentPaths } from '../../../lib/translationPaths';
 import { useMemo } from 'react';
+import { TitleWithIntroduction } from '../../elementTemplates/TitleWithIntroduction';
 
 /*
     Custom clothing - Flex and DTG section
@@ -76,20 +77,25 @@ export default function FlexAndDtgPricing({ bgColor }: { bgColor: string }) {
         ${bgColor}
       `}
     >
-      <div className="flex flex-col sm:flex-row gap-16">
+      {/* Title, subtitle and introduction text */}
+      <TitleWithIntroduction
+        props={{
+          mainTitle: customClotingContentPaths.FlexAndDtgTableTitle,
+          subTitle: customClotingContentPaths.FlexAndDtgTableSubTitle,
+          introduction: customClotingContentPaths.FlexAndDtgTableIntroduction,
+        }}
+      />
+      <div className="flex flex-col sm:flex-row gap-8 md:gap-16 pt-8">
         <div>
           {/* Display table name and the papertype */}
-          <div className="flex flex-col">
+          <div className="flex">
             <TextBlock
               value={customClotingContentPaths.FlexVinylTableTitle}
               variant="sectionTitle"
             />
-            <TextBlock
-              value={customClotingContentPaths.FlexVinylTableIntroduction}
-              variant="body"
-            />
           </div>
-          {/* Display pricing table */}
+
+          {/* Display pricing table*/}
           <PricingTable
             headerTitles={headerTitlesFlex}
             units={unitsFlex}
@@ -100,15 +106,14 @@ export default function FlexAndDtgPricing({ bgColor }: { bgColor: string }) {
         <div>
           {/* Display table name and the papertype */}
           <div className="flex flex-col">
-            <TextBlock
-              value={customClotingContentPaths.DtgTableTitle}
-              variant="sectionTitle"
-            />
-            <TextBlock
-              value={customClotingContentPaths.DtgTableIntroduction}
-              variant="body"
-            />
+            <div className="flex">
+              <TextBlock
+                value={customClotingContentPaths.DtgTableTitle}
+                variant="sectionTitle"
+              />
+            </div>
           </div>
+
           {/* Display pricing table */}
           <PricingTable
             headerTitles={headerTitlesDtg}

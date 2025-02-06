@@ -68,7 +68,7 @@ export default function CustomPrint() {
         <Divider
           style={{
             backgroundColor: `${stylePreset.overall.diverderColor}`,
-            marginTop: '64px',
+            marginTop: '16px',
             marginBottom: '16px',
           }}
           flexItem

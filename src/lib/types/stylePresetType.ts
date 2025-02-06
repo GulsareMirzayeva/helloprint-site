@@ -13,6 +13,8 @@ export type StylePresetType = {
   navigation: {
     backgroundColor: string;
     backgroundHover: string;
+    textColorHover: string;
+    textColor: string;
     underlineActiveColor: string;
     underlineInActiveColor: string;
     underlineHoverColor: string;

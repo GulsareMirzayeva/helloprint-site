@@ -14,7 +14,7 @@ export default function ContactDetails() {
       <div
         className={`
           ${stylePreset.categoryCard.backgroundColorLight}
-          flex flex-col p-2 mb-10 sm:p-8 rounded-xl
+          flex flex-col p-2 mb-8 sm:p-4 rounded-xl
           `}
       >
         <div className="flex flex-wrap md:justify-evenly sm:justify-start">

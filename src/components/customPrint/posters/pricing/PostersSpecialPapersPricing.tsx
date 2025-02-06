@@ -52,7 +52,7 @@ export default function PostersSpecialPapersPricing({
             introduction: postersContentPaths.introductionPolyAndHandMadeTable,
           }}
         />
-        <div className="flex flex-col md:flex-row gap-16 pt-8">
+        <div className="flex flex-col md:flex-row gap-8 md:gap-16 pt-8">
           <div>
             {/* Title, subtitle and introduction text */}
             <div className="flex flex-col">

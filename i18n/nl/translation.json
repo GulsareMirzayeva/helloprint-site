@@ -131,7 +131,9 @@
       "listItem1": "Kleding dient schoon/gewassen te zijn",
       "listItem2": "Bedrukken op uw eigen kleding is op eigen risico",
       "notificationFirst": "- Wilt u een kleur die wij niet op voorraad hebben? Dan komt er € 7,95 orderkosten bij.",
-      "notificationSecond": "- Voor grote maten, 3XL-5XL geldt een toeslag van € 2,00 per stuk."
+      "notificationSecond": "- Voor grote maten, 3XL-5XL geldt een toeslag van € 2,00 per stuk.",
+      "notificationThird": "- Bedrukken op uw eigen kleding is op eigen risico.",
+      "notificationFourth": "- Kleding dient schoon/gewassen te zijn."
     },
     "pricingTextile": {
       "tableIntroduction": "Onderstaande prijstabel geeft een overzicht van de kosten voor het bedrukken van diverse kledingstukken, zoals shirts, polo’s, truien en capuchontruien. Afhankelijk van uw keuze kan de bedrukking in zwart/wit of in kleur worden uitgevoerd. De uiteindelijke prijs is afhankelijk van het type kledingstuk en het formaat van de opdruk.",
@@ -140,10 +142,9 @@
       "sweater": "Trui",
       "hoody": "Capuchontrui",
       "tableTitle": "CREËER UNIEKE KLEDING",
-      "subTitle": "Meerdere mogelijkheden"
+      "subTitle": "Kies uw kledingstuk"
     },
     "pricingFlexVinyl": {
-      "tableIntroduction": "Flex-materiaal is perfect voor strakke, éénkleurige ontwerpen zoals logo’s en teksten. Hieronder vind je onze tarieven voor printen en snijden.",
       "tableHead": "Flex / Vinyl",
       "frontChestLogo": "Voorkant borst logo",
       "frontBackLarge": "Voor- of achterkant groot",
@@ -151,7 +152,6 @@
       "tableTitle": "Printen op flex materiaal"
     },
     "pricingDtg": {
-      "tableIntroduction": "Met onze DTG-printer kunnen we direct op kleding printen, perfect voor gedetailleerde en kleurrijke ontwerpen. Hieronder vind je de tarieven voor kledingbedrukking.",
       "tableHead": "DTG",
       "tableHeadWhiteTextile": "Textiel Wit",
       "tableHeadcolored": "Textiel Kleur",
@@ -159,6 +159,11 @@
       "frontBackLarge": "Voor- of achterkant groot",
       "frontSmallBackLarge": "Voorkant klein en achterkant groot",
       "tableTitle": "Print direct op kleding"
+    },
+    "pricingFlexAndDtg": {
+      "title": "FLEX-MATERIAAL OF DIRECT OP KLEDING",
+      "subTitle": "Extra mogelijkheden",
+      "tableIntroduction": "Flex-materiaal is perfect voor strakke, éénkleurige ontwerpen zoals logo’s en teksten. Hieronder vind je onze tarieven voor printen en snijden. Met onze DTG-printer kunnen we direct op kleding printen, perfect voor gedetailleerde en kleurrijke ontwerpen. Hieronder vind je de tarieven voor kledingbedrukking."
     }
   },
   "customPrintPage": {

@@ -74,14 +74,17 @@ export const customClotingContentPaths = {
   listItem1: 'customClothingPage.introduction.listItem1',
   listItem2: 'customClothingPage.introduction.listItem2',
   FlexVinylTableTitle: 'customClothingPage.pricingFlexVinyl.tableTitle',
-  FlexVinylTableIntroduction:
-    'customClothingPage.pricingFlexVinyl.tableIntroduction',
   DtgTableTitle: 'customClothingPage.pricingDtg.tableTitle',
-  DtgTableIntroduction: 'customClothingPage.pricingDtg.tableIntroduction',
   tableTitle: 'customClothingPage.pricingTextile.tableTitle',
   tableIntroduction: 'customClothingPage.pricingTextile.tableIntroduction',
+  FlexAndDtgTableTitle: 'customClothingPage.pricingFlexAndDtg.title',
+  FlexAndDtgTableSubTitle: 'customClothingPage.pricingFlexAndDtg.subTitle',
+  FlexAndDtgTableIntroduction:
+    'customClothingPage.pricingFlexAndDtg.tableIntroduction',
   notificationFirst: 'customClothingPage.introduction.notificationFirst',
   notificationSecond: 'customClothingPage.introduction.notificationSecond',
+  notificationThird: 'customClothingPage.introduction.notificationThird',
+  notificationFourth: 'customClothingPage.introduction.notificationFourth',
 };
 
 export const customPrintingContentPaths = {

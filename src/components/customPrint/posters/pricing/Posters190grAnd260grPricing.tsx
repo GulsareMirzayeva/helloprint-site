@@ -51,7 +51,7 @@ export default function Posters190grAnd260grPricing({
       `}
     >
       <div className="flex flex-col items-start">
-        <div className="flex flex-col md:flex-row gap-16">
+        <div className="flex flex-col md:flex-row gap-8 md:gap-16">
           <div>
             {/* Title, subtitle and introduction text */}
             <div className="flex flex-col">

@@ -31,9 +31,11 @@ export default function Flyers() {
           <FlyersDigitalPrintA6Pricing
             bgColor={stylePreset.categoryCard.backgroundColorLight}
           />
-          <FlyersDigitalPrintA5Pricing
-            bgColor={stylePreset.categoryCard.backgroundColorLight}
-          />
+          <div>
+            <FlyersDigitalPrintA5Pricing
+              bgColor={stylePreset.categoryCard.backgroundColorLight}
+            />
+          </div>
         </div>
         <FlyersOffsetPrintA5Pricing
           bgColor={stylePreset.categoryCard.backgroundColorDark}
@@ -60,7 +62,7 @@ export default function Flyers() {
         <Divider
           style={{
             backgroundColor: `${stylePreset.overall.diverderColor}`,
-            marginTop: '64px',
+            marginTop: '16px',
             marginBottom: '16px',
           }}
           flexItem

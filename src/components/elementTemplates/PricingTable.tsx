@@ -57,9 +57,7 @@ export default function PricingTable({
                 `}
               scope="col"
             >
-              <div className={`${stylePreset.table.headTextColor}`}>
-                {title}
-              </div>
+              <div>{title}</div>
             </th>
           ))}
         </tr>

@@ -1,8 +1,7 @@
 import { useTranslation } from 'react-i18next';
 import IntroductionFlyers from '../../customPrint/folders/introduction';
 import FoldersDigitalPrintPricing from '../../customPrint/folders/pricing/FoldersDigitalPrintPricing';
-import FoldersOffsetPrintPricingA4 from '../../customPrint/folders/pricing/FoldersOffsetPrintPricingA4';
-import FoldersOffsetPrintPricingA3 from '../../customPrint/folders/pricing/FoldersOffsetPrintPricingA3';
+import FoldersOffsetPrintPricingA4 from '../../customPrint/folders/pricing/FoldersOffsetPrintPricing';
 import {
   foldersContentPaths,
   shopInfoPaths,
@@ -30,14 +29,9 @@ export default function Folders() {
         <FoldersDigitalPrintPricing
           bgColor={stylePreset.categoryCard.backgroundColorLight}
         />
-        <div className="flex flex-col gap-12 sm:gap-0">
-          <FoldersOffsetPrintPricingA4
-            bgColor={stylePreset.categoryCard.backgroundColorDark}
-          />
-          <FoldersOffsetPrintPricingA3
-            bgColor={stylePreset.categoryCard.backgroundColorDark}
-          />
-        </div>
+        <FoldersOffsetPrintPricingA4
+          bgColor={stylePreset.categoryCard.backgroundColorDark}
+        />
         {/* Display notification message table */}
         <div className="z-0 w-full">
           <Notification>
@@ -60,7 +54,7 @@ export default function Folders() {
         <Divider
           style={{
             backgroundColor: `${stylePreset.overall.diverderColor}`,
-            marginTop: '64px',
+            marginTop: '16px',
             marginBottom: '16px',
           }}
           flexItem

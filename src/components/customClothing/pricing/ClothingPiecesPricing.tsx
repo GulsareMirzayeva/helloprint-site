@@ -64,7 +64,7 @@ export default function ClothingPiecesPricing({
   return (
     <section
       className={`
-        flex flex-col items-center gap-8 lg:items-start w-full p-2 sm:p-8 rounded-xl
+        flex flex-col items-center gap-4 lg:items-start w-full p-2 sm:p-8 rounded-xl
         ${bgColor}
       `}
     >

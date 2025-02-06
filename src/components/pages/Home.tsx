@@ -1,5 +1,5 @@
 import WelcomeMessage from '../home/WelcomeMessage';
-import ProductCard from '../home/ProductCard';
+import ProductCards from '../home/ProductCards';
 import ContactSection from '../home/ContactSection';
 import { useTranslation } from 'react-i18next';
 import SendMessage from '../contact/SendMessage';
@@ -16,7 +16,7 @@ export default function Home() {
     >
       <section className="grid grid-cols-[1fr,minmax(0,1200px),1fr]">
         <div></div> {/* Left empty colomn */}
-        <div>
+        <div className="pb-8 md:pb-12 pt-8 md:pt-20">
           <WelcomeMessage />
         </div>
         <div></div> {/* Right empty colomn */}
@@ -24,14 +24,14 @@ export default function Home() {
 
       <section className="grid grid-cols-[1fr,minmax(0,1200px),1fr]">
         <div></div> {/* Left empty colomn */}
-        <div>
-          <ProductCard />
+        <div className="pt-0 md:pt-16 pb-28">
+          <ProductCards />
         </div>
         <div></div> {/* Right empty colomn */}
       </section>
 
       {/* Contact section takes up the whole width of the screen so it must not be hindered by a grid */}
-      <div>
+      <div className="mb-10">
         <ContactSection />
       </div>
 

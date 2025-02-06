@@ -54,7 +54,7 @@ export default function Cards() {
         <Divider
           style={{
             backgroundColor: `${stylePreset.overall.diverderColor}`,
-            marginTop: '64px',
+            marginTop: '16px',
             marginBottom: '16px',
           }}
           flexItem

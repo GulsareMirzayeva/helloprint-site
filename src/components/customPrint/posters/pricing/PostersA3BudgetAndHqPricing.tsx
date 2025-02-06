@@ -55,7 +55,7 @@ export default function PostersA3BudgetAndHqPricing({
           introduction: postersContentPaths.introductionA3Table,
         }}
       />
-      <div className="flex flex-col md:flex-row gap-4 sm:gap-4">
+      <div className="flex flex-col md:flex-row gap-0 md:gap-16">
         <div className="pt-8">
           {/* Title, subtitle and introduction text */}
           <div className="flex flex-col">

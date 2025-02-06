@@ -23,7 +23,9 @@ export const lightTheme = {
   // Knoppen in het navigatiemenu
   navigation: {
     backgroundColor: 'bg-gray-50', // Achtergrondkleur van het submenu
-    backgroundHover: 'hover:bg-gray-300', // Achtergrondkleur van knoppen in het submenu
+    backgroundHover: 'hover:bg-gray-200', // Achtergrondkleur van knoppen in het submenu bij aanwijzen
+    textColor: 'text-gray-700', // Tekstkleur van knoppen in het submenu
+    textColorHover: 'hover:text-gray-700', // Tekstkleur van knoppen in het submenu bij aanwijzen
     underlineActiveColor: 'border-b-[#fb0036]', // Kleur van streep onder actieve knop
     underlineInActiveColor: 'border-b-gray-50', // Kleur van streep onder inactieve knop
     underlineHoverColor: 'hover:border-b-gray-300', // Kleur van streep onder knop bij aanwijzen
@@ -31,7 +33,7 @@ export const lightTheme = {
 
   // Openingstijden en contactmogelijkheden component op de homepage
   shopInfoCard: {
-    backgroundColor: 'bg-gradient-radial', // Achtergrond effect voor het rode/donkere gedeelte
+    backgroundColor: 'bg-gradient-radial', // Achtergrond effect voor het contact gedeelte
     from: 'from-[#fd3964]',
     via: 'via-[#fa2150]',
     to: 'to-[#fb0036]',
@@ -119,7 +121,9 @@ export const darkTheme = {
   // Knoppen in het navigatiemenu
   navigation: {
     backgroundColor: 'bg-[#2c2c2c]', // Achtergrondkleur van het submenu
-    backgroundHover: 'hover:bg-gray-600', // Achtergrondkleur van knoppen in het submenu
+    backgroundHover: 'hover:bg-gray-600', // Achtergrondkleur van knoppen in het submenu bij aanwijzen
+    textColorHover: 'text-[#EAE0D5]', // Tekstkleur van knoppen in het submenu bij aanwijzen
+    textColor: 'text-[#EAE0D5]', // Tekstkleur van knoppen in het submenu
     underlineActiveColor: 'border-b-[#b02a37]', // Kleur van streep onder actieve knop
     underlineInActiveColor: 'border-b-[#2c2c2c]', // Kleur van streep onder inactieve knop
     underlineHoverColor: 'hover:border-b-[#EAE0D5]', // Kleur van streep onder knop bij aanwijzen
@@ -127,7 +131,7 @@ export const darkTheme = {
 
   // Openingstijden en contactmogelijkheden component op de homepage
   shopInfoCard: {
-    backgroundColor: 'bg-gradient-radial', // Achtergrond effect voor het rode/donkere gedeelte
+    backgroundColor: 'bg-gradient-radial', // Achtergrond effect voor het contact gedeelte
     from: 'from-[#3a3a3a]',
     via: 'via-[#333333]',
     to: 'to-[#2c2c2c]',
@@ -159,7 +163,7 @@ export const darkTheme = {
   // Prijstabellen
   table: {
     headBackgroundColor: 'bg-[#b02a37]', // Achtergrondkleur voor titel
-    headTextColor: 'text-gray-50', // Tekstkleur voor titel
+    headTextColor: 'text-[#EAE0D5]', // Tekstkleur voor titel
     unitsBorderColor: 'border-gray-700', // Randkleur voor units rij
     headBorderColor: 'border-gray-700', // Randkleur voor titel header
     cellBackgroundEven: 'even:bg-[#202020]', // Achtergrondkleur voor even regels
@@ -170,7 +174,7 @@ export const darkTheme = {
 
   // Extra informatie onderaan de pagina content, wanneer van toepassing
   notification: {
-    textColor: 'text-[#b02a37]', // Tekstkleur voor informatie sectie
+    textColor: 'text-gray-500', // Tekstkleur voor informatie sectie
     asteriskColor: 'text-[#b02a37]', // Kleur van asterisk symbool
     borderColor: 'border-[#2c2c2c]', // Randkleur voor notificatie bericht
     iconColor: 'text-[#1e40af]', // Kleur van informatie icoon

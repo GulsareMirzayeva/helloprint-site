@@ -8,7 +8,7 @@ import { homeContentPaths } from '../../lib/translationPaths';
 import { Link } from 'react-router-dom';
 import { useData } from '../../context/DataContext';
 
-export default function ProductCard() {
+export default function ProductCards() {
   const { t } = useTranslation();
   const { stylePreset } = useData();
   const icons = [paper, leaflet, tshirt, supplies];
@@ -18,7 +18,7 @@ export default function ProductCard() {
   });
 
   return (
-    <section className="flex flex-wrap justify-center items-centerpx-2 pt-0 md:pt-16 pb-28 gap-12">
+    <section className="flex flex-wrap justify-center items-center gap-12">
       {Object.entries(categoryCardsContent).map(([key, value]) => (
         <div
           key={key}

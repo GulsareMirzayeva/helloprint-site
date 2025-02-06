@@ -5,11 +5,11 @@ export function Notification({ children }: { children: React.ReactNode }) {
   const { stylePreset } = useData();
 
   return (
-    <div className="relative pt-2 pl-5">
+    <div className="relative pt-16 pl-5">
       {/* Info Icon */}
       <div
         className={`
-          absolute top-1 -left-1 -translate-x-1/2 -translate-y-1/2 z-20 pl-10
+          absolute top-16 -left-1 -translate-x-1/2 -translate-y-1/2 z-20 pl-10
           ${stylePreset.notification.iconColor}
           `}
       >
@@ -18,9 +18,13 @@ export function Notification({ children }: { children: React.ReactNode }) {
 
       {/* Content Box */}
       <div
-        className={`border ${stylePreset.notification.borderColor} relative z-10 flex w-full px-3 py-2 rounded-sm shadow-sm`}
+        className={`
+          relative z-10 flex w-full px-3 py-2 border rounded-sm shadow-sm
+          ${stylePreset.notification.borderColor}
+          ${stylePreset.overall.textColorSecondary}
+        `}
       >
-        <span className="flex flex-col gap-2">{children}</span>
+        <span className="flex flex-col gap-1">{children}</span>
       </div>
     </div>
   );

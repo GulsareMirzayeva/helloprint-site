@@ -66,7 +66,7 @@ export default function Posters80grPricing({ bgColor }: { bgColor: string }) {
           introduction: postersContentPaths.introduction80GrTable,
         }}
       />
-      <div className="flex flex-col md:flex-row gap-8 md:gap-16">
+      <div className="flex flex-col md:flex-row gap-0 md:gap-16">
         <div className="pt-8">
           {/* Display a title and the papertype */}
           <div className="flex flex-col items-baseline">

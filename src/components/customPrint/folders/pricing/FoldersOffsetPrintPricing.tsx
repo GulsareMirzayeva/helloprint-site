@@ -37,6 +37,10 @@ export default function FoldersOffsetPrintPricingA4({
     ...Object.values(prices.customPrint.folders.offsetPrint.A4.color.triFold),
   ];
 
+  const pricesColorTrifoldA3 = [
+    ...Object.values(prices.customPrint.folders.offsetPrint.A3.color.triFold),
+  ];
+
   // Get the header titles
   const headerTitlesA4: string[] = [
     t('commonWords.folders'),
@@ -69,7 +73,7 @@ export default function FoldersOffsetPrintPricingA4({
           notification: foldersContentPaths.offsetPrintDeliveryTime,
         }}
       />
-      <div className="flex flex-col md:flex-row gap-16 pt-8">
+      <div className="flex flex-col md:flex-row gap-8 md:gap-16 pt-8">
         <div>
           {/* Display a title and the papertype */}
           <div className="flex flex-col items-baseline">
@@ -103,6 +107,23 @@ export default function FoldersOffsetPrintPricingA4({
             prices={pricesColorHalfFoldA4}
           />
         </div>
+      </div>
+      <div>
+        {/* Display table name and the papertype */}
+        <div className="flex flex-col pt-8">
+          <TextBlock
+            value={foldersContentPaths.A3Trifold}
+            variant="sectionTitle"
+          />
+          <TextBlock value={foldersContentPaths.color} variant="body" />
+        </div>
+        {/* Display pricing table */}
+        <PricingTable
+          headerTitles={headerTitlesA4}
+          units={unitsFolders}
+          options={bulkPriceOptions}
+          prices={pricesColorTrifoldA3}
+        />
       </div>
     </section>
   );

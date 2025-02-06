@@ -43,12 +43,20 @@ export default function CustomClothing() {
               value={customClotingContentPaths.notificationSecond}
               variant="bodySmall"
             />
+            <TextBlock
+              value={customClotingContentPaths.notificationThird}
+              variant="bodySmall"
+            />
+            <TextBlock
+              value={customClotingContentPaths.notificationFourth}
+              variant="bodySmall"
+            />
           </Notification>
         </div>
         <Divider
           style={{
             backgroundColor: `${stylePreset.overall.diverderColor}`,
-            marginTop: '64px',
+            marginTop: '16px',
             marginBottom: '16px',
           }}
           flexItem

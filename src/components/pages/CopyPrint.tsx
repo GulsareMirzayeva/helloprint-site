@@ -25,7 +25,9 @@ export default function CopyPrint() {
     >
       <div></div> {/* Left empty colomn */}
       <div className="flex flex-col items-start justify-start gap-4 w-full px-2 pt-12">
-        <IntroductionCopyPrint />
+        <div className="mb-16">
+          <IntroductionCopyPrint />
+        </div>
         <CopyPrintBudgetPricing
           bgColor={stylePreset.categoryCard.backgroundColorLight}
         />
@@ -61,7 +63,7 @@ export default function CopyPrint() {
         <Divider
           style={{
             backgroundColor: `${stylePreset.overall.diverderColor}`,
-            marginTop: '64px',
+            marginTop: '16px',
             marginBottom: '16px',
           }}
           flexItem

@@ -8,7 +8,7 @@ export default function ContactSection() {
   return (
     <section
       className={`
-        flex w-full justify-evenly mb-10 py-16
+        flex w-auto mx-4 rounded-xl justify-evenly py-16
         ${stylePreset.shopInfoCard.backgroundColor}
         ${stylePreset.shopInfoCard.from}
         ${stylePreset.shopInfoCard.via}

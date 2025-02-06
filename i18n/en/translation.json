@@ -124,7 +124,9 @@
       "listItem1": "Clothing must be clean/washed",
       "listItem2": "Printing on your own clothing is at your own risk",
       "notificationFirst": "- Would you like a color that we do not have in stock? Then an additional €7.95 order fee will be applied.",
-      "notificationSecond": "- For larger sizes, 3XL-5XL, a surcharge of €2.00 per piece applies."
+      "notificationSecond": "- For larger sizes, 3XL-5XL, a surcharge of €2.00 per piece applies.",
+      "notificationThird": "- Printing on your own clothing is at your own risk.",
+      "notificationFourth": "- Clothing must be clean/washed."
     },
     "pricingTextile": {
       "tableIntroduction": "The pricing table below provides an overview of the costs for printing on various garments, such as shirts, polos, sweaters, and hoodies. Depending on your preference, the print can be done in black and white or in color. The final price depends on the type of garment and the size of the print.",
@@ -133,10 +135,9 @@
       "sweater": "Sweater",
       "hoody": "Hoody",
       "tableTitle": "CREATE UNIQUE CLOTHING",
-      "subTitle": "Miltiple options"
+      "subTitle": "Choose your clothing "
     },
     "pricingFlexVinyl": {
-      "tableIntroduction": "Flex material works great for clean, single-color designs<br />like logos and text. Below are our rates for printing and cutting.",
       "tableHead": "Flex / Vinyl",
       "frontChestLogo": "Front chest logo",
       "frontBackLarge": "Front or back large",
@@ -144,7 +145,6 @@
       "tableTitle": "Print on flex material"
     },
     "pricingDtg": {
-      "tableIntroduction": "Our DTG printer allows us to print directly onto clothing, ideal for detailed<br />and vibrant designs. Below are the rates for garment printing.",
       "tableHead": "DTG",
       "tableHeadWhiteTextile": "Textile White",
       "tableHeadcolored": "Textile Color",
@@ -152,6 +152,11 @@
       "frontBackLarge": "Front or back large",
       "frontSmallBackLarge": "Front small and back large",
       "tableTitle": "Print directly on clothing"
+    },
+    "pricingFlexAndDtg": {
+      "title": "FLEX MATERIAL OR DIRECT ON CLOTHING",
+      "subTitle": "More options",
+      "tableIntroduction": "Flex material works great for clean, single-color designs like logos and text. Below are our rates for printing and cutting. Our DTG printer allows us to print directly onto clothing, ideal for detailed and vibrant designs. Below are the rates for garment printing."
     }
   },
   "customPrintPage": {

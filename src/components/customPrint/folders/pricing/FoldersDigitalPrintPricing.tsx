@@ -82,7 +82,7 @@ export default function FoldersDigitalPrintPricing({
           notification: foldersContentPaths.digitalPrintDeliveryTime,
         }}
       />
-      <div className="flex flex-col md:flex-row gap-16 pt-8">
+      <div className="flex flex-col md:flex-row gap-8 md:gap-16 pt-8">
         <div>
           {/* Display table name and the papertype */}
           <div className="flex flex-col">

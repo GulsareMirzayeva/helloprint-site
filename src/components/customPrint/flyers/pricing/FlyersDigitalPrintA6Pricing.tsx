@@ -68,7 +68,7 @@ export default function FlyersDigitalPrintA6Pricing({
           notification: flyersContentPaths.digitalPrintDeliveryTime,
         }}
       />
-      <div className="flex flex-col md:flex-row gap-16 pt-8">
+      <div className="flex flex-col md:flex-row gap-8 md:gap-16 pt-8">
         <div>
           {/* Title, subtitle and introduction text */}
           <div className="flex flex-col">

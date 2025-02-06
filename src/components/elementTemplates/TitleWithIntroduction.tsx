@@ -8,14 +8,14 @@ export function TitleWithIntroduction({ props }: { props: PageTitleType }) {
   return (
     <div>
       <div className="flex flex-col sm:flex-row py-4 sm:py-0">
-        <div className="flex">
+        <div className="flex flex-wrap">
           <TextBlock value={props.mainTitle} variant="subTitleMedium" />
           &nbsp;
           <span className="text-2xl"> - </span>
           &nbsp;
-        </div>
-        <div className={`${stylePreset.overall.textColorSecondary}`}>
-          <TextBlock value={props.subTitle} variant="tableSubTitle" />
+          <div className={`${stylePreset.overall.textColorSecondary}`}>
+            <TextBlock value={props.subTitle} variant="tableSubTitle" />
+          </div>
         </div>
       </div>
       {props.notification && (
