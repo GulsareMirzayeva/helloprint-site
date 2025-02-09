@@ -11,8 +11,14 @@ export const lightTheme = {
     textColorSecondary: 'text-gray-600', // Tekstkleur voor sub titels
     textColorLight: 'text-gray-50', // Tekstkleur voor tekst op rode of donkere achtergronden
     backgroundColor: 'bg-gray-50', // Algemene achtergrondkleur
-    formTextColor: 'text-gray-800', // Tekstkleur voor tekst in formulier invoervelden
     diverderColor: '#c2c2c2', // Kleur van horizontale schedingslijn
+  },
+
+  // Contact formulier
+  contactForm: {
+    textColor: 'text-gray-800', // Tekstkleur voor tekst in formulier invoervelden
+    backgroundColor: 'bg-gray-50', // Achtergrondkleur van invoervelden in formulier
+    borderColor: 'border-gray-300', // Kleur van de omlijning van de invoervelden
   },
 
   // Navigatiemenu container bovenaan de website
@@ -109,8 +115,14 @@ export const darkTheme = {
     textColorSecondary: 'text-gray-400', // Tekstkleur voor sub titels
     textColorLight: 'text-[#EAE0D5]', // Tekstkleur voor tekst op rode of donkere achtergronden
     backgroundColor: 'bg-[#202020]', // Algemene achtergrondkleur
-    formTextColor: 'text-gray-700', // Tekstkleur voor tekst in formulier invoervelden
     diverderColor: '#EAE0D5', // Kleur van horizontale schedingslijn
+  },
+
+  // Contact formulier
+  contactForm: {
+    textColor: 'text-gray-800', // Tekstkleur voor tekst in formulier invoervelden
+    backgroundColor: 'bg-[#EAE0D5]', // Achtergrondkleur van invoervelden in formulier
+    borderColor: 'border-gray-50', // Kleur van de omlijning van de invoervelden
   },
 
   // Navigatiemenu container bovenaan de website

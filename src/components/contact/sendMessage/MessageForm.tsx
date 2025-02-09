@@ -62,7 +62,7 @@ export default function MessageForm() {
             onSubmit={handleSubmit(onSubmit)}
             className={`
               flex flex-col
-              ${stylePreset.overall.formTextColor}
+              ${stylePreset.contactForm.textColor}
             `}
           >
             {/* Name input field */}
@@ -78,7 +78,11 @@ export default function MessageForm() {
                 type="text"
                 id="name"
                 {...register('name')}
-                className="w-full max-w-[500px] rounded-sm mt-1 p-1 pl-2 border"
+                className={`
+                  w-full max-w-[500px] rounded-sm mt-1 p-1 pl-2 border
+                  ${stylePreset.contactForm.backgroundColor}
+                  ${stylePreset.contactForm.borderColor}
+                `}
                 placeholder={t(contactFormTextContentPaths.formUserName)}
               />
             </div>
@@ -108,7 +112,11 @@ export default function MessageForm() {
                   message: t(contactFormErrorPaths.telNoMaxNumbers),
                 },
               })}
-              className="w-full max-w-[500px] rounded-sm mt-1 p-1 pl-2 border"
+              className={`
+                  w-full max-w-[500px] rounded-sm mt-1 p-1 pl-2 border
+                  ${stylePreset.contactForm.backgroundColor}
+                  ${stylePreset.contactForm.borderColor}
+                `}
               placeholder={t(contactFormTextContentPaths.telephoneNo)}
             />
             {errors.telNo?.message && (
@@ -132,7 +140,11 @@ export default function MessageForm() {
                   message: t(contactFormErrorPaths.emailValidAddress),
                 },
               })}
-              className="w-full max-w-[500px] rounded-sm mt-1 p-1 pl-2 border"
+              className={`
+                  w-full max-w-[500px] rounded-sm mt-1 p-1 pl-2 border
+                  ${stylePreset.contactForm.backgroundColor}
+                  ${stylePreset.contactForm.borderColor}
+                `}
               placeholder={t(contactFormTextContentPaths.email)}
             />
             {errors.email?.message && (
@@ -159,7 +171,11 @@ export default function MessageForm() {
                 type="text"
                 id="subject"
                 {...register('subject')}
-                className="w-full max-w-[500px] rounded-sm mt-1 p-1 pl-2 border"
+                className={`
+                  w-full max-w-[500px] rounded-sm mt-1 p-1 pl-2 border
+                  ${stylePreset.contactForm.backgroundColor}
+                  ${stylePreset.contactForm.borderColor}
+                `}
                 placeholder={t(contactFormTextContentPaths.messageSubject)}
               />
             </div>
@@ -181,7 +197,11 @@ export default function MessageForm() {
                   },
                   required: t(contactFormErrorPaths.messageRequired),
                 })}
-                className="w-full max-w-[500px] md:min-w-[500px] h-[140px] rounded-sm mt-1 p-1 pl-2 border"
+                className={`
+                  w-full max-w-[500px] md:min-w-[500px] h-[140px] rounded-sm mt-1 p-1 pl-2 border
+                  ${stylePreset.contactForm.backgroundColor}
+                  ${stylePreset.contactForm.borderColor}
+                  `}
                 placeholder={t(contactFormTextContentPaths.messageContent)}
               />
               {errors.message && (
