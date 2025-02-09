@@ -9,7 +9,7 @@ import { Divider } from '@mui/material';
 import { Notification } from '../elementTemplates/Notification';
 import { useData } from '../../context/DataContext';
 import PageTitleAndIntroduction from '../elementTemplates/PageTitleAndIntroduction';
-import ContentCard from '../elementTemplates/ContentCard';
+import ContentCard from '../elementTemplates/cards/ContentCard';
 import { t } from 'i18next';
 import imageTextileGarments from '../../assets/custom-clothing/clothing-images.png';
 

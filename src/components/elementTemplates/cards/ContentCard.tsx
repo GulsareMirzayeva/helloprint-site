@@ -1,7 +1,10 @@
-import PricingTable from '../elementTemplates/PricingTable';
-import { useData } from '../../context/DataContext';
-import { TextBlock } from '../elementTemplates/TextBlock';
-import { HeaderType, TableContentType } from '../../lib/types/contentCardTypes';
+import PricingTable from '../PricingTable';
+import { useData } from '../../../context/DataContext';
+import { TextBlock } from '../TextBlock';
+import {
+  HeaderType,
+  TableContentType,
+} from '../../../lib/types/contentCardTypes';
 
 /*
     The content card contains a title, subtile and an introcduction text followed by one ore more

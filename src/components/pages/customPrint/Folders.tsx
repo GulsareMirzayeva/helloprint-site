@@ -16,7 +16,7 @@ import {
   bulkPriceOptions,
   lowPriceOptions,
 } from '../../../lib/priceCategories';
-import ContentCard from '../../elementTemplates/ContentCard';
+import ContentCard from '../../elementTemplates/cards/ContentCard';
 
 export default function Folders() {
   useTranslation();

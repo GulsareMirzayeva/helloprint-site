@@ -1,5 +1,5 @@
 import { useTranslation } from 'react-i18next';
-import OfficeSuppliesLogosCard from '../officeSupplies/OfficeSuppliesLogosCard';
+import OfficeSuppliesLogosCard from '../elementTemplates/officeSupplies/OfficeSuppliesLogosCard';
 import { useData } from '../../context/DataContext';
 import PageTitleAndIntroduction from '../elementTemplates/PageTitleAndIntroduction';
 import { officeSuppliesPaths } from '../../lib/translationPaths';

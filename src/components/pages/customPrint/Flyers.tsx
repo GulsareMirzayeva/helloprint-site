@@ -18,7 +18,7 @@ import {
   shortBasePriceOptions,
 } from '../../../lib/priceCategories';
 import { BeatLoader } from 'react-spinners';
-import ContentCard from '../../elementTemplates/ContentCard';
+import ContentCard from '../../elementTemplates/cards/ContentCard';
 
 export default function Flyers() {
   useTranslation();

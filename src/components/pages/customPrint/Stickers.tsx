@@ -8,7 +8,7 @@ import { TextBlock } from '../../elementTemplates/TextBlock';
 import { Divider } from '@mui/material';
 import { useData } from '../../../context/DataContext';
 import PageTitleAndIntroduction from '../../elementTemplates/PageTitleAndIntroduction';
-import ContentCard from '../../elementTemplates/ContentCard';
+import ContentCard from '../../elementTemplates/cards/ContentCard';
 import { t } from 'i18next';
 
 export default function Stickers() {

@@ -1,4 +1,4 @@
-import { officeSuppliesPaths } from '../../lib/translationPaths';
+import { officeSuppliesPaths } from '../../../lib/translationPaths';
 
 /*
     Office supplies page, displays a list of logos next to each other

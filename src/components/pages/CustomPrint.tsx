@@ -1,4 +1,4 @@
-import OverviewCategoryCard from '../elementTemplates/categoryOverviewCard';
+import OverviewCategoryCard from '../elementTemplates/cards/categoryOverviewCard';
 import SendMessage from '../contact/SendMessage';
 import { TextBlock } from '../elementTemplates/TextBlock';
 import { useTranslation } from 'react-i18next';

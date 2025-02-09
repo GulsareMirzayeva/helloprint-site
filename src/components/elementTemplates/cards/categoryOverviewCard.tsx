@@ -1,9 +1,9 @@
-import { TextBlock } from '../elementTemplates/TextBlock';
-import { homeContentPaths } from '../../lib/translationPaths';
+import { TextBlock } from '../TextBlock';
+import { homeContentPaths } from '../../../lib/translationPaths';
 import { Link } from 'react-router-dom';
 import { t } from 'i18next';
-import { CategoryCardType } from '../../lib/types/customPrintType';
-import { useData } from '../../context/DataContext';
+import { CategoryCardType } from '../../../lib/types/customPrintType';
+import { useData } from '../../../context/DataContext';
 
 /*
     Text content at the top of the page, the value in the TextBlock components refers to the content location
