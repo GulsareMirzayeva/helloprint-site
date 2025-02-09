@@ -6,7 +6,7 @@ import { TextBlock } from '../../elementTemplates/TextBlock';
 import { BeatLoader } from 'react-spinners';
 import { customClotingContentPaths } from '../../../lib/translationPaths';
 import { useMemo } from 'react';
-import { TitleWithIntroduction } from '../../elementTemplates/TitleWithIntroduction';
+import { ContentCardTitleAndIntroduction } from '../../elementTemplates/ContentCardTitleAndIntroduction';
 
 /*
     Custom clothing - Flex and DTG section
@@ -51,14 +51,14 @@ export default function FlexAndDtgPricing({ bgColor }: { bgColor: string }) {
 
   // Get the header titles
   const headerTitlesFlex: string[] = [
-    t('customClothingPage.pricingFlexVinyl.tableHead'),
+    t('customClothingPage.cardFlexAndDtg.tableFlex.header'),
     t('commonWords.pricePerPrint'),
   ];
 
   const headerTitlesDtg: string[] = [
-    t('customClothingPage.pricingDtg.tableHead'),
-    t('customClothingPage.pricingDtg.tableHeadWhiteTextile'),
-    t('customClothingPage.pricingDtg.tableHeadcolored'),
+    t('customClothingPage.cardFlexAndDtg.tableDtg.header'),
+    t('customClothingPage.cardFlexAndDtg.tableDtg.headWhiteTextile'),
+    t('customClothingPage.cardFlexAndDtg.tableDtg.headcolored'),
   ];
 
   // Get the units
@@ -78,11 +78,11 @@ export default function FlexAndDtgPricing({ bgColor }: { bgColor: string }) {
       `}
     >
       {/* Title, subtitle and introduction text */}
-      <TitleWithIntroduction
+      <ContentCardTitleAndIntroduction
         props={{
-          mainTitle: customClotingContentPaths.FlexAndDtgTableTitle,
-          subTitle: customClotingContentPaths.FlexAndDtgTableSubTitle,
-          introduction: customClotingContentPaths.FlexAndDtgTableIntroduction,
+          mainTitle: customClotingContentPaths.cardFlexAndDtg.header.title,
+          introduction:
+            customClotingContentPaths.cardFlexAndDtg.header.introduction,
         }}
       />
       <div className="flex flex-col sm:flex-row gap-8 md:gap-16 pt-8">
@@ -90,7 +90,7 @@ export default function FlexAndDtgPricing({ bgColor }: { bgColor: string }) {
           {/* Display table name and the papertype */}
           <div className="flex">
             <TextBlock
-              value={customClotingContentPaths.FlexVinylTableTitle}
+              value={customClotingContentPaths.cardFlexAndDtg.tableFlex.title}
               variant="sectionTitle"
             />
           </div>
@@ -108,7 +108,7 @@ export default function FlexAndDtgPricing({ bgColor }: { bgColor: string }) {
           <div className="flex flex-col">
             <div className="flex">
               <TextBlock
-                value={customClotingContentPaths.DtgTableTitle}
+                value={customClotingContentPaths.cardFlexAndDtg.tableDtg.title}
                 variant="sectionTitle"
               />
             </div>

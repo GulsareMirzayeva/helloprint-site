@@ -124,120 +124,421 @@
     }
   },
   "customClothingPage": {
-    "introduction": {
+    "pageHeaderContent": {
       "title": "Bedrukken van kleding",
-      "introduction": "Voor het bedrukken van uw kleding hebben wij diverse technieken.<br />We kunnen printen en snijden op flex materiaal, dit is ideaal voor een logo of tekst in één kleur.<br />Daarnaast hebben wij ook een DTG machine, DTG staat voor Direct To Garment, hierbij printen we direct op kleding.",
-      "subText": "Wanneer u eigen kleding meeneemt, houd hier dan rekening mee:",
-      "listItem1": "Kleding dient schoon/gewassen te zijn",
-      "listItem2": "Bedrukken op uw eigen kleding is op eigen risico",
-      "notificationFirst": "- Wilt u een kleur die wij niet op voorraad hebben? Dan komt er € 7,95 orderkosten bij.",
-      "notificationSecond": "- Voor grote maten, 3XL-5XL geldt een toeslag van € 2,00 per stuk.",
-      "notificationThird": "- Bedrukken op uw eigen kleding is op eigen risico.",
-      "notificationFourth": "- Kleding dient schoon/gewassen te zijn."
+      "introduction": "Voor het bedrukken van uw kleding hebben wij diverse technieken. We kunnen printen en snijden op flex materiaal, dit is ideaal voor een logo of tekst in één kleur.<br /> <br />Daarnaast hebben wij ook een DTG machine, DTG staat voor Direct To Garment, hierbij printen we direct op kleding."
     },
-    "pricingTextile": {
-      "tableIntroduction": "Onderstaande prijstabel geeft een overzicht van de kosten voor het bedrukken van diverse kledingstukken, zoals shirts, polo’s, truien en capuchontruien. Afhankelijk van uw keuze kan de bedrukking in zwart/wit of in kleur worden uitgevoerd. De uiteindelijke prijs is afhankelijk van het type kledingstuk en het formaat van de opdruk.",
-      "shirt": "Shirt",
-      "polo": "Polo",
-      "sweater": "Trui",
-      "hoody": "Capuchontrui",
-      "tableTitle": "CREËER UNIEKE KLEDING",
-      "subTitle": "Kies uw kledingstuk"
+    "cardTextileGarments": {
+      "header": {
+        "title": "CREËER UNIEKE KLEDING",
+        "subTitle": "Kies een kledingstuk",
+        "introduction": "Onderstaande prijstabel geeft een overzicht van de kosten van diverse kledingstukken, zoals shirts, polo’s, truien en capuchontruien. Afhankelijk van uw keuze kan de bedrukking in zwart/wit of in kleur worden uitgevoerd. De uiteindelijke prijs is afhankelijk van het type kledingstuk en het formaat van de opdruk."
+      },
+      "tableTextileGarments": {
+        "header": {
+          "title": "",
+          "subTitle": ""
+        },
+        "variants": {
+          "shirt": "Shirt",
+          "polo": "Polo",
+          "sweater": "Trui",
+          "hoody": "Capuchontrui"
+        }
+      }
     },
-    "pricingFlexVinyl": {
-      "tableHead": "Flex / Vinyl",
-      "frontChestLogo": "Voorkant borst logo",
-      "frontBackLarge": "Voor- of achterkant groot",
-      "frontSmallBackLarge": "Voorkant klein en achterkant groot",
-      "tableTitle": "Printen op flex materiaal"
+    "cardFlexAndDtg": {
+      "header": {
+        "title": "FLEX OF DIRECT OP KLEDING",
+        "subTitle": "Kies een printtechniek",
+        "introduction": "Flex-materiaal is perfect voor strakke, éénkleurige ontwerpen zoals logo’s en teksten. Hieronder vind je onze tarieven voor printen en snijden. Met onze DTG-printer kunnen we direct op kleding printen, perfect voor gedetailleerde en kleurrijke ontwerpen. Hieronder vind je de tarieven voor kledingbedrukking."
+      },
+      "common": {
+        "headerOne": "Flex / Vinyl",
+        "headerTwo": "DTG"
+      },
+      "tableFlex": {
+        "header": {
+          "title": "Printen op flex materiaal",
+          "subTitle": ""
+        },
+        "variants": {
+          "frontChestLogo": "Voorkant borst logo",
+          "frontBackLarge": "Voor- of achterkant groot",
+          "frontSmallBackLarge": "Voorkant klein en achterkant groot"
+        }
+      },
+      "tableDtg": {
+        "header": {
+          "title": "Print direct op kleding",
+          "subTitle": ""
+        },
+        "columnHeaders": {
+          "headTextileWhite": "Textiel Wit",
+          "headTextileColor": "Textiel Gekleurd"
+        },
+        "variants": {
+          "frontChestLogo": "Voorkant borst logo",
+          "frontBackLarge": "Voor- of achterkant groot",
+          "frontSmallBackLarge": "Voorkant klein en achterkant groot"
+        }
+      }
     },
-    "pricingDtg": {
-      "tableHead": "DTG",
-      "tableHeadWhiteTextile": "Textiel Wit",
-      "tableHeadcolored": "Textiel Kleur",
-      "frontChestLogo": "Voorkant borst logo",
-      "frontBackLarge": "Voor- of achterkant groot",
-      "frontSmallBackLarge": "Voorkant klein en achterkant groot",
-      "tableTitle": "Print direct op kleding"
-    },
-    "pricingFlexAndDtg": {
-      "title": "FLEX-MATERIAAL OF DIRECT OP KLEDING",
-      "subTitle": "Extra mogelijkheden",
-      "tableIntroduction": "Flex-materiaal is perfect voor strakke, éénkleurige ontwerpen zoals logo’s en teksten. Hieronder vind je onze tarieven voor printen en snijden. Met onze DTG-printer kunnen we direct op kleding printen, perfect voor gedetailleerde en kleurrijke ontwerpen. Hieronder vind je de tarieven voor kledingbedrukking."
+    "notifications": {
+      "first": "- Wilt u een kleur die wij niet op voorraad hebben? Dan komt er € 7,95 orderkosten bij.",
+      "second": "- Voor grote maten, 3XL-5XL geldt een toeslag van € 2,00 per stuk.",
+      "third": "- Bedrukken op uw eigen kleding is op eigen risico.",
+      "fourth": "- Kleding dient schoon/gewassen te zijn."
     }
   },
   "customPrintPage": {
     "overviewTitle": "Een overzicht van ons aanbod in drukwerk",
     "overviewIntroduction": "Ontdek ons uitgebreide aanbod aan drukwerk mogelijkheden. Van visitekaartjes en flyers tot textielprints en grootformaat drukwerk, wij bieden oplossingen voor elke behoefte. Klik op een categorie voor meer informatie en laat je inspireren door de mogelijkheden",
     "stickers": {
-      "material": "Sticker",
-      "title": "Stickers",
-      "introduction": "Onze stickers zijn verkrijgbaar in diverse formaten, vormen en oplages, geheel afgestemd op uw wensen. Of u nu ronde, ovale, grote of kleine stickers nodig heeft, wij bieden de ideale oplossing.",
-      "introductionLargeFormatTable": "De onderstaande prijstabel geeft een overzicht van de kosten voor grootformaat drukwerk op vinyl. De prijzen worden berekend per A4-formaat of per vierkante meter, afhankelijk van de afmetingen van uw print. Zo kunt u eenvoudig het formaat kiezen dat het beste bij uw wensen past.",
-      "materialTitle": "Materiaal",
-      "materialContent": "Alle stickers worden geproduceerd op vinyl van hoogwaardige kwaliteit, perfect geschikt voor uiteenlopende toepassingen.",
-      "listItem1": "Wit vinyl",
-      "listItem2": "Hoogglans",
-      "listItem3": "Zelfklevend",
-      "listItem4": "UV bestendig",
-      "perSquareMeter": "Vierkante meter"
+      "pageHeader": {
+        "title": "Stickers",
+        "introduction": "Onze stickers zijn verkrijgbaar in diverse formaten, vormen en oplages, geheel afgestemd op uw wensen. Of u nu ronde, ovale, grote of kleine stickers nodig heeft, wij bieden de ideale oplossing.<br /><br />Alle stickers worden geproduceerd op vinyl van hoogwaardige kwaliteit, perfect geschikt voor uiteenlopende toepassingen."
+      },
+      "cardLargeFormat": {
+        "header": {
+          "title": "GROOT FORMAAT",
+          "subTitle": "Wit vinyl",
+          "introduction": "De onderstaande prijstabel geeft een overzicht van de kosten voor grootformaat drukwerk op vinyl. De prijzen worden berekend per A4-formaat of per vierkante meter, afhankelijk van de afmetingen van uw print. Zo kunt u eenvoudig het formaat kiezen dat het beste bij uw wensen past."
+        },
+        "tableLargeFormat": {
+          "header": {
+            "title": "Groot formaat",
+            "subTitle": "Wit vinyl, hoogglans, zelfklevend en UV bestendig"
+          },
+          "columnHeaders": {
+            "headerOne": "Formaat",
+            "headerTwo": "Prijs per print"
+          },
+          "rowHeaders": {
+            "headerOne": "A4",
+            "headerTwo": "Vierkante Meter"
+          }
+        }
+      }
     },
     "cards": {
-      "title": "Visitekaartjes",
-      "introduction": "Voor het afdrukken van visitekaartjes hanteren wij een minimale afname van 100 stuks. De kaartjes worden gedrukt op hoogwaardig 350 grams papier, wat zorgt voor een stevige en professionele uitstraling.<br /> <br />De genoemde prijzen zijn gebaseerd op één enkel bestand. Houd er rekening mee dat de prijs voor dubbelgevouwen visitekaartjes verdubbeld wordt. Na het drukken worden de kaartjes zorgvuldig gesneden en netjes verpakt in een plastic bewaardoosje, zodat ze in perfecte staat bij u worden afgeleverd.",
-      "introductionCardsTable": "Deze prijstabel betreft digitaal geprinte visitekaartjes op stevig 350 grams papier. U heeft de keuze tussen zwart-wit of kleurafdrukken en kunt kiezen voor enkelzijdige of dubbelzijdige bedrukking. Hiermee biedt u een professionele uitstraling, ongeacht de keuze die u maakt voor uw visitekaartjes.",
-      "introductionDigitalPrintTable": "Deze prijstabel betreft digitaal geprinte visitekaartjes op stevig 350 grams papier. U heeft de keuze tussen zwart-wit of kleurafdrukken en kunt kiezen voor enkelzijdige of dubbelzijdige bedrukking. Hiermee biedt u een professionele uitstraling, ongeacht de keuze die u maakt voor uw visitekaartjes.",
-      "introductionOffsetTable": "Deze prijstabel betreft visitekaartjes gedrukt op stevig 400 grams papier in kleur. U kunt kiezen voor enkelzijdige afdrukken met glanzend UV-lak, of voor dubbelzijdige afdrukken met matte dispersielak. Deze afwerkingsopties zorgen voor een verfijnde uitstraling, afhankelijk van uw voorkeur voor glans of een subtiele matte afwerking.",
-
-      "offsetPrintSingleSided": "Enkelzijdig - UV-lak glanzend",
-      "offsetPrintDoubleSided": "Dubbelzijdig - Dispersielak mat"
+      "pageHeader": {
+        "title": "Visitekaartjes",
+        "introduction": "Voor het afdrukken van visitekaartjes hanteren wij een minimale afname van 100 stuks. De kaartjes worden gedrukt op hoogwaardig 350 grams papier, wat zorgt voor een stevige en professionele uitstraling.<br /> <br />De genoemde prijzen zijn gebaseerd op één enkel bestand. Houd er rekening mee dat de prijs voor dubbelgevouwen visitekaartjes verdubbeld wordt. Na het drukken worden de kaartjes zorgvuldig gesneden en netjes verpakt in een plastic bewaardoosje, zodat ze in perfecte staat bij u worden afgeleverd."
+      },
+      "cardDigitalPrint": {
+        "header": {
+          "title": "DIGITAAL GEPRINT",
+          "subTitle": "350 grams papier",
+          "introduction": "Deze prijstabel betreft digitaal geprinte visitekaartjes op stevig 350 grams papier. U heeft de keuze tussen zwart-wit of kleurafdrukken en kunt kiezen voor enkelzijdige of dubbelzijdige bedrukking. Hiermee biedt u een professionele uitstraling, ongeacht de keuze die u maakt voor uw visitekaartjes."
+        },
+        "tableColor": {
+          "header": {
+            "title": "Kleur",
+            "subTitle": "350 grams papier"
+          },
+          "columnHeaders": {
+            "headerOne": "Kaarten",
+            "headerTwo": "Enkelzijdig",
+            "headerThree": "Dubbelzijdig"
+          }
+        },
+        "tableBlackAndWhite": {
+          "header": {
+            "title": "Zwart/wit",
+            "subTitle": "350 grams papier"
+          },
+          "columnHeaders": {
+            "headerOne": "Kaarten",
+            "headerTwo": "Enkelzijdig",
+            "headerThree": "Dubbelzijdig"
+          }
+        }
+      },
+      "cardOffsetPrint": {
+        "header": {
+          "title": "DRUKWERK",
+          "subTitle": "400 grams papier",
+          "introduction": "Deze prijstabel betreft visitekaartjes gedrukt op stevig 400 grams papier in kleur. U kunt kiezen voor enkelzijdige afdrukken met glanzend UV-lak, of voor dubbelzijdige afdrukken met matte dispersielak. Deze afwerkingsopties zorgen voor een verfijnde uitstraling, afhankelijk van uw voorkeur voor glans of een subtiele matte afwerking."
+        },
+        "tableOffsetPrint": {
+          "header": {
+            "title": "Kleur",
+            "subTitle": "400 grams houtvrij mc (maco) mat papier"
+          },
+          "columnHeaders": {
+            "headerOne": "Kaarten",
+            "headerTwo": "Enkelzijdig - UV-lak glanzend",
+            "headerThree": "Dubbelzijdig - Dispersielak mat"
+          }
+        }
+      }
     },
     "flyers": {
-      "title": "Flyers",
-      "introductionFlyers": "Hier vind je een overzicht van de kosten voor het afdrukken van flyers in A5- en A6-formaat, met de keuze voor zowel enkelzijdige als dubbelzijdige drukwerkopties.<br /><br />Je kunt kiezen uit verschillende papiersoorten om de ideale uitstraling voor jouw flyers te realiseren, afgestemd op je wensen en het beoogde gebruik.",
-      "introductionDigitalPrintTable": "Deze prijstabel betreft digitaal geprinte flyers in A5- of A6-formaat. U kunt kiezen uit drie verschillende papiersoorten: 90 grams, 150 grams of 250 grams, afhankelijk van uw voorkeur voor de dikte van het papier. De flyers kunnen zowel enkelzijdig als dubbelzijdig worden gedrukt, zodat u de opmaak kunt afstemmen op uw wensen. De digitale afdrukken garanderen scherpe en heldere kleuren voor een professionele uitstraling.",
-      "introductionOffsetTable": "Dit prijsvoorbeeld betreft flyers in A5-formaat, gedrukt op papier van 135 gram, 170 gram of 250 gram. Afhankelijk van uw voorkeur voor de dikte van het papier, kunt u de juiste keuze maken voor de uitstraling van uw flyer. De flyers kunnen zowel enkelzijdig als dubbelzijdig worden gedrukt, afhankelijk van hoe u uw boodschap wilt presenteren. Dit drukwerk biedt een professionele uitstraling en is ideaal voor zowel promotionele als informatieve doeleinden."
+      "pageHeader": {
+        "title": "Flyers",
+        "introduction": "Hier vind je een overzicht van de kosten voor het afdrukken van flyers in A5- en A6-formaat, met de keuze voor zowel enkelzijdige als dubbelzijdige drukwerkopties.<br /><br />Je kunt kiezen uit verschillende papiersoorten om de ideale uitstraling voor jouw flyers te realiseren, afgestemd op je wensen en het beoogde gebruik."
+      },
+      "cardDigitalPrint": {
+        "header": {
+          "title": "DIGITAAL GEPRINT",
+          "subTitle": "A6 en A5 Formaat",
+          "introduction": "Deze prijstabel betreft digitaal geprinte flyers in A5- of A6-formaat. U kunt kiezen uit drie verschillende papiersoorten: 90 grams, 150 grams of 250 grams, afhankelijk van uw voorkeur voor de dikte van het papier. De flyers kunnen zowel enkelzijdig als dubbelzijdig worden gedrukt, zodat u de opmaak kunt afstemmen op uw wensen. De digitale afdrukken garanderen scherpe en heldere kleuren voor een professionele uitstraling.",
+          "digitalPrintDeliveryTime": "Levertijd 1-2 werkdagen"
+        },
+        "common": {
+          "headerOne": "Flyers",
+          "headerTwo": "90gr",
+          "headerThree": "150gr",
+          "headerFour": "250gr",
+          "subTitleOne": "Enkelzijdig",
+          "subTitleTwo": "Dubbelzijdig"
+        },
+        "tableA6": {
+          "header": {
+            "title": "A6 Formaat"
+          }
+        },
+        "tableA5": {
+          "header": {
+            "title": "A5 Formaat"
+          }
+        }
+      },
+      "cardOffsetPrint": {
+        "header": {
+          "title": "DRUKWERK",
+          "subTitle": "A5 Formaat",
+          "introduction": "Dit prijsvoorbeeld betreft flyers in A5-formaat, gedrukt op papier van 135 gram, 170 gram of 250 gram. Afhankelijk van uw voorkeur voor de dikte van het papier, kunt u de juiste keuze maken voor de uitstraling van uw flyer. De flyers kunnen zowel enkelzijdig als dubbelzijdig worden gedrukt, afhankelijk van hoe u uw boodschap wilt presenteren. Dit drukwerk biedt een professionele uitstraling en is ideaal voor zowel promotionele als informatieve doeleinden.",
+          "offsetPrintDeliveryTime": "Levertijd 7 werkdagen"
+        },
+        "common": {
+          "headerOne": "Flyers",
+          "headerTwo": "90gr",
+          "headerThree": "150gr",
+          "headerFour": "250gr",
+          "subTitleOne": "Enkelzijdig",
+          "subTitleTwo": "Dubbelzijdig"
+        },
+        "tableA5": {
+          "header": {
+            "title": "A5 Formaat"
+          }
+        },
+        "tableA6": {
+          "header": {
+            "title": "A6 Formaat"
+          }
+        }
+      }
     },
     "folders": {
-      "title": "Folders",
-      "introductionFolders": "Hier vind je een overzicht van de kosten voor het afdrukken van folders in A3- en A4-formaat. Je kunt kiezen uit een 2-slag of 3-slag vouwwijze, afhankelijk van de boodschap die je wilt overbrengen en de ruimte die je hiervoor nodig hebt. De verschillende papiersoorten zorgen voor een professionele uitstraling die aansluit bij het doel van je folder.<br /><br />De prijzen worden overzichtelijk weergegeven per papiersoort en oplage, zodat je snel een keuze kunt maken die past bij je wensen en budget.",
-      "introductionDigitalPrintTable": "Dit overzciht is voor digitale A4-folders, beschikbaar in kleur op 150g, 170g of 250g papier, of zwart/wit op 80g papier. U kunt kiezen uit een 2- of 3-slag uitvoering, afhankelijk van de hoeveelheid informatie die u wilt presenteren. Dit formaat is ideaal voor het verspreiden van gedetailleerde informatie of promoties. Het materiaal biedt een professionele uitstraling, en de verschillende papiersoorten geven u de flexibiliteit om de juiste uitstraling voor uw boodschap te kiezen.",
-      "introductionOffsetTable": "Dit overzciht is voor A4-folders in 2- of 3-slag formaat, of A3-folders in 3-slag formaat. De folders worden in kleur geprint op 135 grams, 170 grams of 250 grams papier. Dit maakt ze ideaal voor het presenteren van gedetailleerde informatie of promoties op een professionele manier. Dankzij de verschillende papiersoorten kunt u de juiste uitstraling kiezen die past bij uw boodschap."
+      "pageHeader": {
+        "title": "Folders",
+        "introduction": "Hier vind je een overzicht van de kosten voor het afdrukken van folders in A3- en A4-formaat. Je kunt kiezen uit een 2-slag of 3-slag vouwwijze, afhankelijk van de boodschap die je wilt overbrengen en de ruimte die je hiervoor nodig hebt. De verschillende papiersoorten zorgen voor een professionele uitstraling die aansluit bij het doel van je folder.<br /><br />De prijzen worden overzichtelijk weergegeven per papiersoort en oplage, zodat je snel een keuze kunt maken die past bij je wensen en budget."
+      },
+      "common": {
+        "headerOne": "Folders",
+        "headerTwo": "80gr",
+        "headerThree": "135gr",
+        "headerFour": "150gr",
+        "headerFive": "170gr",
+        "headerSix": "250gr",
+        "subTitleOne": "Enkelzijdig",
+        "subTitleTwo": "Dubbelzijdig"
+      },
+      "cardDigitalPrint": {
+        "header": {
+          "title": "DIGITAAL GEPRINT",
+          "subTitle": "A4 Formaat",
+          "introduction": "Dit overzciht is voor digitale A4-folders, beschikbaar in kleur op 150g, 170g of 250g papier, of zwart/wit op 80g papier. U kunt kiezen uit een 2- of 3-slag uitvoering, afhankelijk van de hoeveelheid informatie die u wilt presenteren. Dit formaat is ideaal voor het verspreiden van gedetailleerde informatie of promoties. Het materiaal biedt een professionele uitstraling, en de verschillende papiersoorten geven u de flexibiliteit om de juiste uitstraling voor uw boodschap te kiezen.",
+          "notification": "Levertijd 7 werkdagen"
+        },
+        "tableColor": {
+          "header": {
+            "title": "A4 Formaat - 2 of 3-slag",
+            "subTitle": "Kleur"
+          }
+        },
+        "tableBlackAndWhite": {
+          "header": {
+            "title": "A4 Formaat - 2 of 3-slag",
+            "subTitle": "Zwart/wit - 80 grams wit of gekleurd papier"
+          }
+        }
+      },
+      "cardOffsetPrint": {
+        "header": {
+          "title": "DRUKWERK",
+          "subTitle": "A4 en A3 Formaat",
+          "introduction": "Dit overzciht is voor A4-folders in 2- of 3-slag formaat, of A3-folders in 3-slag formaat. De folders worden in kleur geprint op 135 grams, 170 grams of 250 grams papier. Dit maakt ze ideaal voor het presenteren van gedetailleerde informatie of promoties op een professionele manier. Dankzij de verschillende papiersoorten kunt u de juiste uitstraling kiezen die past bij uw boodschap.",
+          "offsetPrintDeliveryTime": "Levertijd 7 werkdagen"
+        },
+        "tableA4Trifold": {
+          "header": {
+            "title": "A4 formaat | 3-slag",
+            "subTitle": "Kleur"
+          }
+        },
+        "tableA4Bifold": {
+          "header": {
+            "title": "A4 Formaat | 2-slag",
+            "subTitle": "Kleur"
+          }
+        },
+        "tableA3": {
+          "header": {
+            "title": "A3 Formaat | 3-slag",
+            "subTitle": "Kleur"
+          }
+        }
+      }
     },
     "posters": {
-      "title": "Posters",
-      "introductionPosters": "Verken de beschikbare opties voor het printen van posters, waarbij je kunt kiezen uit verschillende formaten en papiersoorten. Deze keuzes stellen je in staat de presentatie van je poster nauwkeurig af te stemmen op het gewenste resultaat. Van een gedetailleerde zwart-wit afdruk tot een kleurrijke weergave, we bieden een scala aan mogelijkheden die aansluiten bij de specifieke eisen van je project.<br /><br />Raadpleeg de onderstaande opties voor een overzicht van de beschikbare combinaties",
-      "introduction80GrTable": "Wij bieden posters op 80 grams papier, beschikbaar in zowel kleur als zwart-wit. Dit papier is ideaal voor het printen van posters die een lichtgewicht, maar kwalitatief goed resultaat vereisen voor zowel binnen- als buitengebruik.",
-      "introduction160To260GrTable": "Daarnaast bieden we ook andere papiersoorten aan, te weten 160 grams mat, 160 grams satijn, 190 grams glanzend en 260 grams satijn papier. Al deze opties zijn beschikbaar voor kleurafdrukken en bieden een professionele afwerking, geschikt voor uiteenlopende toepassingen waarbij zowel duurzaamheid als visuele impact van belang zijn. Elk type papier biedt specifieke eigenschappen voor een optimale presentatie van uw ontwerp, afhankelijk van de gewenste uitstraling en het beoogde gebruik.",
-      "introductionPolyAndHandMadeTable": "Voor onze posters in speciale materialen bieden wij polypropyleen en 260 grams geschept papier aan. Deze materialen zijn beschikbaar voor kleurafdrukken en bieden unieke eigenschappen die ze geschikt maken voor specifieke toepassingen waarbij duurzaamheid en een onderscheidende uitstraling belangrijk zijn. Polypropyleen is waterbestendig en zeer stevig, ideaal voor buitengebruik of in omgevingen waar de poster langdurig moet blijven hangen. Het geschepte papier biedt een natuurlijke, handgemaakte uitstraling, wat het geschikt maakt voor luxe of artistieke projecten.",
-      "introductionA3Table": "Voor posters in A3-formaat bieden wij twee opties in verschillende kwaliteiten en materialen. De hoge kwaliteit variant is geprint op 150 grams papier en kan aflopend worden geleverd, ideaal voor een premium uitstraling. Daarnaast bieden we een budgetvriendelijke optie, gedrukt op 80 grams papier met een witrand. Beide beschikbaar voor full color afdrukken",
-      "notificationFirst": "Prijzen zijn gebaseerd op self-service.",
-      "postersAmount": {
-        "1-5": "1-5 stuks",
-        "6-10": "6-10 stuks",
-        "10Plus": "10+ stuks"
+      "pageHeader": {
+        "title": "Posters",
+        "introduction": "Verken de beschikbare opties voor het printen van posters, waarbij je kunt kiezen uit verschillende formaten en papiersoorten. Deze keuzes stellen je in staat de presentatie van je poster nauwkeurig af te stemmen op het gewenste resultaat. Van een gedetailleerde zwart-wit afdruk tot een kleurrijke weergave, we bieden een scala aan mogelijkheden die aansluiten bij de specifieke eisen van je project.<br /><br />Raadpleeg de onderstaande opties voor een overzicht van de beschikbare combinaties"
+      },
+      "common": {
+        "headerOne": "Posters",
+        "headerTwo": "1-5 stuks",
+        "headerThree": "6-10 stuks",
+        "headerFour": "10+ stuks",
+        "headerFive": "Per stuk"
+      },
+      "cardColorOrBlackAndWhite": {
+        "header": {
+          "title": "Kleur of Zwart/wit",
+          "subTitle": "80 grams papier",
+          "introduction": "Wij bieden posters op 80 grams papier, beschikbaar in zowel kleur als zwart-wit. Dit papier is ideaal voor het printen van posters die een lichtgewicht, maar kwalitatief goed resultaat vereisen voor zowel binnen- als buitengebruik.",
+          "notification": "Levertijd 1-2 werkdagen"
+        },
+        "tableColor": {
+          "header": {
+            "title": "Kleur",
+            "subTitle": "80 grams papier"
+          }
+        },
+        "tableBlackAndWhite": {
+          "header": {
+            "title": "Zwart/wit",
+            "subTitle": "80 grams papier"
+          }
+        }
+      },
+      "cardColorHeavyPaper": {
+        "header": {
+          "title": "Kleur",
+          "subTitle": "160 tot 260 grams papier",
+          "introduction": "Daarnaast bieden we ook andere papiersoorten aan, te weten 160 grams mat, 160 grams satijn, 190 grams glanzend en 260 grams satijn papier. Al deze opties zijn beschikbaar voor kleurafdrukken en bieden een professionele afwerking, geschikt voor uiteenlopende toepassingen waarbij zowel duurzaamheid als visuele impact van belang zijn. Elk type papier biedt specifieke eigenschappen voor een optimale presentatie van uw ontwerp, afhankelijk van de gewenste uitstraling en het beoogde gebruik."
+        },
+        "table160gsmMatte": {
+          "header": {
+            "title": "Kleur",
+            "subTitle": "160 grams mat papier"
+          }
+        },
+        "table160gsmSatin": {
+          "header": {
+            "title": "Kleur",
+            "subTitle": "160 grams satijn papier"
+          }
+        },
+        "table190gsmGloss": {
+          "header": {
+            "title": "Kleur",
+            "subTitle": "190 grams glanzend papier"
+          }
+        },
+        "table260gsmSatin": {
+          "header": {
+            "title": "Kleur",
+            "subTitle": "260 grams satijn papier"
+          }
+        }
+      },
+      "cardColorSpecialMaterials": {
+        "header": {
+          "title": "Kleur",
+          "subTitle": "Speciale materialen",
+          "introduction": "Voor onze posters in speciale materialen bieden wij polypropyleen en 260 grams geschept papier aan. Deze materialen zijn beschikbaar voor kleurafdrukken en bieden unieke eigenschappen die ze geschikt maken voor specifieke toepassingen waarbij duurzaamheid en een onderscheidende uitstraling belangrijk zijn. Polypropyleen is waterbestendig en zeer stevig, ideaal voor buitengebruik of in omgevingen waar de poster langdurig moet blijven hangen. Het geschepte papier biedt een natuurlijke, handgemaakte uitstraling, wat het geschikt maakt voor luxe of artistieke projecten."
+        },
+        "tablePolypropylene": {
+          "header": {
+            "title": "Kleur",
+            "subTitle": "Polypropyleen"
+          }
+        },
+        "table260gsmHandmade": {
+          "header": {
+            "title": "Kleur",
+            "subTitle": "260 grams geschept papier"
+          }
+        }
+      },
+      "cardColorA3": {
+        "header": {
+          "title": "Kleur",
+          "subTitle": "A3 Formaat",
+          "introduction": "Voor posters in A3-formaat bieden wij twee opties in verschillende kwaliteiten en materialen. De hoge kwaliteit variant is geprint op 150 grams papier en kan aflopend worden geleverd, ideaal voor een premium uitstraling. Daarnaast bieden we een budgetvriendelijke optie, gedrukt op 80 grams papier met een witrand. Beide beschikbaar voor full color afdrukken"
+        },
+        "table150gsm": {
+          "header": {
+            "title": "A3 Hoge kwaliteit - Full color",
+            "subTitle": "Aflopend geprint op 150 grams papier"
+          }
+        },
+        "table80gsm": {
+          "header": {
+            "title": "A3 Budget kwaliteit - Full color",
+            "subTitle": "Met witrand op 80 grams papier"
+          }
+        }
       }
     },
     "common": {
-      "digitalPrint": "DIGITAAL GEPRINT",
       "digitalPrintDeliveryTime": "Levertijd 1-2 werkdagen",
-      "offsetPrint": "DRUKWERK",
       "offsetPrintDeliveryTime": "Levertijd 7 werkdagen",
-      "deliveryDisclaimer": "Levertijden altijd onder voorbehoud. Hier kunnen geen rechten aan verleend worden. Wij zijn niet verantwoordelijk voor eventuele vertraging door onze huisdrukker."
+      "deliveryDisclaimer": "Levertijden altijd onder voorbehoud. Hier kunnen geen rechten aan verleend worden. Wij zijn niet verantwoordelijk voor eventuele vertraging door onze huisdrukker.",
+      "pricesBasedonSelfService": "Prijzen zijn gebaseerd op self-service."
     }
   },
   "copyPrintPage": {
-    "title": "Kopiëren en printen",
-    "titleLaminate": "Inbinden of lamineren",
-    "introduction": "Bij ons kunt u eenvoudig en snel uw kopieën en prints verzorgen. Met onze self-service printers kunt u direct documenten printen vanaf een USB-stick of downloaden vanuit uw e-mail.",
-    "introductionBinding": "Daarnaast bieden wij mogelijkheden voor inbinden en lamineren, zodat uw documenten een nette en professionele uitstraling krijgen. Ideaal voor zakelijke doeleinden, studieprojecten of persoonlijke documenten.",
-    "introductionBudgetTable": "Voor het kopiëren en printen bieden wij budgetvriendelijk A4-papier van 80 gram, geschikt voor zowel kleur- als zwart-witafdrukken. Dit papier is ideaal voor alledaagse print- en kopieerbehoeften. De genoemde prijzen zijn gebaseerd op self-service, waardoor u snel en voordelig uw documenten kunt verwerken. Gebruik hiervoor printers 1 t/m 3.",
-    "introductionHqTable": "Voor hoogwaardige kopieën en prints bieden wij A4-papier van 90 gram, geschikt voor zowel kleur- als zwart-witafdrukken. Dit papier zorgt voor een professionele uitstraling met een stevigere en gladdere afwerking. Voor het beste resultaat dient u gebruik te maken van printer 4, die speciaal is ingesteld voor deze papierkwaliteit.",
-    "printerOneToThree": "| Printer 1 t/m 3",
-    "printerFour": "| Printer 4",
-    "notificationFirst": "Budget prijzen zijn gebaseerd op self-service, aangeleverde opdrachten (per email) worden uitsluitend geprint op papier van hoge kwaliteit.",
-    "notificationSecond": "- A3 formaat is 2x de printprijs.",
-    "notificationThird": "- Dubbelzijdige prints tellen als 2 prints."
+    "pageHeaderContent": {
+      "title": "Kopiëren en printen",
+      "introduction": "Bij ons kunt u eenvoudig en snel uw kopieën en prints verzorgen. Met onze self-service printers kunt u direct documenten printen vanaf een USB-stick of downloaden vanuit uw e-mail.<br /><br />Daarnaast bieden wij mogelijkheden voor inbinden en lamineren, zodat uw documenten een nette en professionele uitstraling krijgen. Ideaal voor zakelijke doeleinden, studieprojecten of persoonlijke documenten."
+    },
+    "cardBudget": {
+      "header": {
+        "title": "BUDGET",
+        "subTitle": "Kleur of Zwart/wit",
+        "introduction": "Voor het kopiëren en printen bieden wij budgetvriendelijk A4-papier van 80 gram, geschikt voor zowel kleur- als zwart-witafdrukken. Dit papier is ideaal voor alledaagse print- en kopieerbehoeften. De genoemde prijzen zijn gebaseerd op self-service, waardoor u snel en voordelig uw documenten kunt verwerken. Gebruik hiervoor printers 1 t/m 3."
+      },
+      "tableColor": {
+        "title": "A4 Kleur | Printer 1 t/m 3",
+        "subTitle": "80 grams papier"
+      },
+      "tableBlackAndWhite": {
+        "title": "A4 Zwart/wit | Printer 1 t/m 3",
+        "subTitle": "80 grams papier"
+      }
+    },
+    "cardHq": {
+      "header": {
+        "title": "HOGE KWALITEIT",
+        "subTitle": "Kleur of Zwart/wit",
+        "introduction": "Voor hoogwaardige kopieën en prints bieden wij A4-papier van 90 gram, geschikt voor zowel kleur- als zwart-witafdrukken. Dit papier zorgt voor een professionele uitstraling met een stevigere en gladdere afwerking. Voor het beste resultaat dient u gebruik te maken van printer 4, die speciaal is ingesteld voor deze papierkwaliteit."
+      },
+      "tableHq": {
+        "title": "A4 Kleur of Zwart/wit | Printer 4",
+        "subTitle": "90 grams papier"
+      }
+    },
+    "notifications": {
+      "first": "Budget prijzen zijn gebaseerd op self-service, aangeleverde opdrachten (per email) worden uitsluitend geprint op papier van hoge kwaliteit.",
+      "second": "- A3 formaat is 2x de printprijs.",
+      "third": "- Dubbelzijdige prints tellen als 2 prints."
+    }
   },
   "officeSupplies": {
     "title": "Kantoor artikelen",
@@ -342,7 +643,7 @@
   "commonWords": {
     "color": "Kleur",
     "colorCapital": "KLEUR",
-    "blackWhite": "Zwart/wit",
+    "blackAndWhite": "Zwart/wit",
     "colorOrBlackWhite": "Kleur of zwart/wit",
     "colorOrBlackWhiteCapital": "KLEUR OF ZWART/WIT",
     "vinyl": "Vinyl",

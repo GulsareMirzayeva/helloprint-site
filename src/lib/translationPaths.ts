@@ -6,6 +6,22 @@ import image3 from '../assets/introduction-images/image3.jpg';
 import image2 from '../assets/introduction-images/image2.jpg';
 import image1 from '../assets/introduction-images/image1.jpg';
 
+import logo1 from '../assets/officeSupplies/logoipsum-214.png';
+import logo2 from '../assets/officeSupplies/logoipsum-245.png';
+import logo3 from '../assets/officeSupplies/logoipsum-264.png';
+import logo6 from '../assets/officeSupplies/logoipsum-317.png';
+import logo8 from '../assets/officeSupplies/logoipsum-332.png';
+import logo9 from '../assets/officeSupplies/logoipsum-333.png';
+
+// List of brands that are displayed on the Office Supplies page
+const logoList = [logo1, logo2, logo6, logo3, logo8, logo9];
+
+export const commonWords = {
+  color: 'commonWords.color',
+  blackAndWhite: 'commonWords.blackAndWhite',
+  prints: 'commonWords.prints',
+};
+
 export const homeContentPaths = {
   title: 'home.title',
   subTitle: 'home.subTitle',
@@ -66,164 +82,557 @@ export const menuButtonNames = {
 
 // Paths to text content in translation files
 export const customClotingContentPaths = {
-  image: image7,
-  title: 'customClothingPage.introduction.title',
-  subTitle: 'customClothingPage.pricingTextile.subTitle',
-  introduction: 'customClothingPage.introduction.introduction',
-  subText: 'customClothingPage.introduction.subText',
-  listItem1: 'customClothingPage.introduction.listItem1',
-  listItem2: 'customClothingPage.introduction.listItem2',
-  FlexVinylTableTitle: 'customClothingPage.pricingFlexVinyl.tableTitle',
-  DtgTableTitle: 'customClothingPage.pricingDtg.tableTitle',
-  tableTitle: 'customClothingPage.pricingTextile.tableTitle',
-  tableIntroduction: 'customClothingPage.pricingTextile.tableIntroduction',
-  FlexAndDtgTableTitle: 'customClothingPage.pricingFlexAndDtg.title',
-  FlexAndDtgTableSubTitle: 'customClothingPage.pricingFlexAndDtg.subTitle',
-  FlexAndDtgTableIntroduction:
-    'customClothingPage.pricingFlexAndDtg.tableIntroduction',
-  notificationFirst: 'customClothingPage.introduction.notificationFirst',
-  notificationSecond: 'customClothingPage.introduction.notificationSecond',
-  notificationThird: 'customClothingPage.introduction.notificationThird',
-  notificationFourth: 'customClothingPage.introduction.notificationFourth',
+  // Used data
+  data: {
+    image: image7,
+  },
+  pageHeaderContent: {
+    title: 'customClothingPage.pageHeaderContent.title',
+    introduction: 'customClothingPage.pageHeaderContent.introduction',
+  },
+  cardTextileGarments: {
+    header: {
+      title: 'customClothingPage.cardTextileGarments.header.title',
+      subTitle: 'customClothingPage.cardTextileGarments.header.subTitle',
+      introduction:
+        'customClothingPage.cardTextileGarments.header.introduction',
+    },
+    tableTextileGarments: {
+      header: {
+        title: '',
+        subTitle: '',
+      },
+      variants: {
+        shirt: 'customClothingPage.cardTextileGarments.variants.shirt',
+        polo: 'customClothingPage.cardTextileGarments.variants.polo',
+        sweater: 'customClothingPage.cardTextileGarments.variants.sweater',
+        hoody: 'customClothingPage.cardTextileGarments.variants.hoody',
+      },
+    },
+  },
+  cardFlexAndDtg: {
+    header: {
+      title: 'customClothingPage.cardFlexAndDtg.header.title',
+      subTitle: 'customClothingPage.cardFlexAndDtg.header.subTitle',
+      introduction: 'customClothingPage.cardFlexAndDtg.header.introduction',
+    },
+    common: {
+      headerOne: 'customClothingPage.cardFlexAndDtg.common.headerOne',
+      headerTwo: 'customClothingPage.cardFlexAndDtg.common.headerTwo',
+    },
+    tableFlex: {
+      header: {
+        title: 'customClothingPage.cardFlexAndDtg.tableFlex.header.title',
+        subTitle: 'customClothingPage.cardFlexAndDtg.tableFlex.header.subTitle',
+      },
+      variants: {
+        frontChestLogo:
+          'customClothingPage.cardFlexAndDtg.tableFlex.variants.frontChestLogo',
+        frontBackLarge:
+          'customClothingPage.cardFlexAndDtg.tableFlex.variants.frontBackLarge',
+        frontSmallBackLarge:
+          'customClothingPage.cardFlexAndDtg.tableFlex.variants.frontSmallBackLarge',
+      },
+    },
+    tableDtg: {
+      header: {
+        title: 'customClothingPage.cardFlexAndDtg.tableDtg.header.title',
+        subTitle: 'customClothingPage.cardFlexAndDtg.tableDtg.header.subTitle',
+      },
+      columnHeaders: {
+        headTextileWhite:
+          'customClothingPage.cardFlexAndDtg.tableDtg.columnHeaders.headTextileWhite',
+        headTextileColor:
+          'customClothingPage.cardFlexAndDtg.tableDtg.columnHeaders.headTextileColor',
+      },
+      variants: {
+        tableHeadWhiteTextile:
+          'customClothingPage.cardFlexAndDtg.tableDtg.variants.tableHeadWhiteTextile',
+        tableHeadcolored:
+          'customClothingPage.cardFlexAndDtg.tableDtg.variants.tableHeadcolored',
+        frontChestLogo:
+          'customClothingPage.cardFlexAndDtg.tableDtg.variants.frontChestLogo',
+        frontBackLarge:
+          'customClothingPage.cardFlexAndDtg.tableDtg.variants.frontBackLarge',
+        frontSmallBackLarge:
+          'customClothingPage.cardFlexAndDtg.tableDtg.variants.frontSmallBackLarge',
+      },
+    },
+  },
+  notifications: {
+    first: 'customClothingPage.notifications.first',
+    second: 'customClothingPage.notifications.second',
+    third: 'customClothingPage.notifications.third',
+    fourth: 'customClothingPage.notifications.fourth',
+  },
 };
 
+// Content that is shared with other categories in the Cutstom print category
 export const customPrintingContentPaths = {
   title: 'customPrintPage.overviewTitle',
   introduction: 'customPrintPage.overviewIntroduction',
   contactTitle: 'customPrintPage.contactTitle',
+  digitalPrintDeliveryTime: 'customPrintPage.common.digitalPrintDeliveryTime',
+  offsetPrintDeliveryTime: 'customPrintPage.common.offsetPrintDeliveryTime',
+  deliveryDisclaimer: 'customPrintPage.common.deliveryDisclaimer',
+  pricesBasedonSelfService: 'customPrintPage.common.pricesBasedonSelfService',
 };
+
+// Content displayed on the overview page of Custom print
+export const customPrintOverviewContentPaths = {
+  overviewTitle: 'customPrintPage.overviewTitle',
+  overviewIntroduction: 'customPrintPage.overviewIntroduction',
+};
+
+/*
+Custom Print - Business Cards
+*/
 
 export const cardsContentPaths = {
-  image: image6,
-  title: 'customPrintPage.cards.title',
-  introduction: 'customPrintPage.cards.introduction',
-  introductionDigitalPrintTable:
-    'customPrintPage.cards.introductionDigitalPrintTable',
-  introductionOffsetTable: 'customPrintPage.cards.introductionOffsetTable',
-  digitalPrint: 'customPrintPage.common.digitalPrint',
-  blackWhite: 'commonWords.blackWhite',
-  color: 'commonWords.color',
-  type350gr: 'PaperWeights.350gr',
-  offsetPrint: 'customPrintPage.common.offsetPrint',
-  type400gr: 'PaperWeights.400gr',
-  type400grMc: 'PaperWeights.400grMc',
-  digitalPrintDeliveryTime: 'customPrintPage.common.digitalPrintDeliveryTime',
-  offsetPrintDeliveryTime: 'customPrintPage.common.offsetPrintDeliveryTime',
-  deliveryDisclaimer: 'customPrintPage.common.deliveryDisclaimer',
+  data: {
+    image: image6,
+  },
+  pageHeader: {
+    title: 'customPrintPage.cards.pageHeader.title',
+    introduction: 'customPrintPage.cards.pageHeader.introduction',
+  },
+  cardDigitalPrint: {
+    header: {
+      title: 'customPrintPage.cards.cardDigitalPrint.header.title',
+      subTitle: 'customPrintPage.cards.cardDigitalPrint.header.subTitle',
+      introduction:
+        'customPrintPage.cards.cardDigitalPrint.header.introduction',
+    },
+    tableColor: {
+      header: {
+        title: 'customPrintPage.cards.cardDigitalPrint.tableColor.header.title',
+        subTitle:
+          'customPrintPage.cards.cardDigitalPrint.tableColor.header.subTitle',
+      },
+      columnHeaders: {
+        headerOne:
+          'customPrintPage.cards.cardDigitalPrint.tableColor.columnHeaders.headerOne',
+        headerTwo:
+          'customPrintPage.cards.cardDigitalPrint.tableColor.columnHeaders.headerTwo',
+        headerThree:
+          'customPrintPage.cards.cardDigitalPrint.tableColor.columnHeaders.headerThree',
+      },
+    },
+    tableBlackAndWhite: {
+      header: {
+        title:
+          'customPrintPage.cards.cardDigitalPrint.tableBlackAndWhite.header.title',
+        subTitle:
+          'customPrintPage.cards.cardDigitalPrint.tableBlackAndWhite.header.subTitle',
+      },
+      columnHeaders: {
+        headerOne:
+          'customPrintPage.cards.cardDigitalPrint.tableBlackAndWhite.columnHeaders.headerOne',
+        headerTwo:
+          'customPrintPage.cards.cardDigitalPrint.tableBlackAndWhite.columnHeaders.headerTwo',
+        headerThree:
+          'customPrintPage.cards.cardDigitalPrint.tableBlackAndWhite.columnHeaders.headerThree',
+      },
+    },
+  },
+  cardOffsetPrint: {
+    header: {
+      title: 'customPrintPage.cards.cardOffsetPrint.header.title',
+      subTitle: 'customPrintPage.cards.cardOffsetPrint.header.subTitle',
+      introduction: 'customPrintPage.cards.cardOffsetPrint.header.introduction',
+    },
+    tableOffsetPrint: {
+      header: {
+        title:
+          'customPrintPage.cards.cardOffsetPrint.tableOffsetPrint.header.title',
+        subTitle:
+          'customPrintPage.cards.cardOffsetPrint.tableOffsetPrint.header.subTitle',
+      },
+      columnHeaders: {
+        headerOne:
+          'customPrintPage.cards.cardOffsetPrint.columnHeaders.headerOne',
+        headerTwo:
+          'customPrintPage.cards.cardOffsetPrint.columnHeaders.headerTwo',
+        headerThree:
+          'customPrintPage.cards.cardOffsetPrint.columnHeaders.headerTwo',
+      },
+    },
+  },
 };
+
+/*
+Custom Print - Flyers
+*/
 
 export const flyersContentPaths = {
-  image: image1,
-  title: 'customPrintPage.flyers.title',
-  introduction: 'customPrintPage.flyers.introductionFlyers',
-  introductionDigitalPrintTable:
-    'customPrintPage.flyers.introductionDigitalPrintTable',
-  introductionOffsetTable: 'customPrintPage.flyers.introductionOffsetTable',
-  singleSided: 'commonWords.singleSided',
-  doubleSided: 'commonWords.doubleSided',
-  formatA5: 'paperFormats.A5',
-  formatA5Complete: 'paperFormats.A5FormatComplete',
-  formatA6: 'paperFormats.A6',
-  A6AndA5Format: 'paperFormats.A6AndA5Format',
-  digitalPrintDeliveryTime: 'customPrintPage.common.digitalPrintDeliveryTime',
-  offsetPrintDeliveryTime: 'customPrintPage.common.offsetPrintDeliveryTime',
-  deliveryDisclaimer: 'customPrintPage.common.deliveryDisclaimer',
+  data: {
+    image: image1,
+  },
+  pageHeader: {
+    title: 'customPrintPage.flyers.pageHeader.title',
+    introduction: 'customPrintPage.flyers.pageHeader.introduction',
+  },
+  cardDigitalPrint: {
+    header: {
+      title: 'customPrintPage.flyers.cardDigitalPrint.header.title',
+      subTitle: 'customPrintPage.flyers.cardDigitalPrint.header.subTitle',
+      introduction:
+        'customPrintPage.flyers.cardDigitalPrint.header.introduction',
+    },
+    common: {
+      headerOne: 'customPrintPage.flyers.cardDigitalPrint.common.headerOne',
+      headerTwo: 'customPrintPage.flyers.cardDigitalPrint.common.headerTwo',
+      headerThree: 'customPrintPage.flyers.cardDigitalPrint.common.headerThree',
+      headerFour: 'customPrintPage.flyers.cardDigitalPrint.common.headerFour',
+      subTitleOne: 'customPrintPage.flyers.cardDigitalPrint.common.subTitleOne',
+      subTitleTwo: 'customPrintPage.flyers.cardDigitalPrint.common.subTitleTwo',
+    },
+    tableA6: {
+      header: {
+        title: 'customPrintPage.flyers.cardDigitalPrint.tableA6.header.title',
+      },
+    },
+    tableA5: {
+      header: {
+        title: 'customPrintPage.flyers.cardDigitalPrint.tableA5.header.title',
+      },
+    },
+  },
+  cardOffsetPrint: {
+    header: {
+      title: 'customPrintPage.flyers.cardOffsetPrint.header.title',
+      subTitle: 'customPrintPage.flyers.cardOffsetPrint.header.subTitle',
+      introduction:
+        'customPrintPage.flyers.cardOffsetPrint.header.introduction',
+    },
+    common: {
+      headerOne: 'customPrintPage.flyers.cardOffsetPrint.common.headerOne',
+      headerTwo: 'customPrintPage.flyers.cardOffsetPrint.common.headerTwo',
+      headerThree: 'customPrintPage.flyers.cardOffsetPrint.common.headerThree',
+      headerFour: 'customPrintPage.flyers.cardOffsetPrint.common.headerFour',
+      subTitleOne: 'customPrintPage.flyers.cardOffsetPrint.common.subTitleOne',
+      subTitleTwo: 'customPrintPage.flyers.cardOffsetPrint.common.subTitleTwo',
+    },
+    tableA5: {
+      header: {
+        title: 'customPrintPage.flyers.cardOffsetPrint.tableA5.header.title',
+      },
+    },
+    tableA6: {
+      header: {
+        title: 'customPrintPage.flyers.cardOffsetPrint.tableA6.header.title',
+      },
+    },
+  },
 };
+
+/*
+Custom Print - Folders
+*/
 
 export const foldersContentPaths = {
-  image: image3,
-  title: 'customPrintPage.folders.title',
-  introduction: 'customPrintPage.folders.introductionFolders',
-  introductionDigitalPrintTable:
-    'customPrintPage.folders.introductionDigitalPrintTable',
-  introductionOffsetTable: 'customPrintPage.folders.introductionOffsetTable',
-  digitalPrintDeliveryTime: 'customPrintPage.common.digitalPrintDeliveryTime',
-  offsetPrintDeliveryTime: 'customPrintPage.common.offsetPrintDeliveryTime',
-  deliveryDisclaimer: 'customPrintPage.common.deliveryDisclaimer',
-  A4FormatComplete: 'paperFormats.A4FormatComplete',
-  A4AndA3Format: 'paperFormats.A4AndA3Format',
-  A4BifoldOrTrifold: 'paperFormats.A4BifoldOrTrifold',
-  A4Trifold: 'paperFormats.A4Trifold',
-  A4Bifold: 'paperFormats.A4Bifold',
-  A3Trifold: 'paperFormats.A3Trifold',
-  color: 'commonWords.color',
-  blackWhite: 'commonWords.blackWhite',
-  A4WhiteOrColoredPaper: 'paperFormats.A4WhiteOrColoredPaper',
+  data: {
+    image: image3,
+  },
+  pageHeader: {
+    title: 'customPrintPage.folders.pageHeader.title',
+    introduction: 'customPrintPage.folders.pageHeader.introduction',
+  },
+  common: {
+    headerOne: 'customPrintPage.folders.common.headerOne',
+    headerTwo: 'customPrintPage.folders.common.headerTwo',
+    headerThree: 'customPrintPage.folders.common.headerThree',
+    headerFour: 'customPrintPage.folders.common.headerFour',
+    headerFive: 'customPrintPage.folders.common.headerFive',
+    headerSix: 'customPrintPage.folders.common.headerSix',
+    subTitleOne: 'customPrintPage.folders.common.subTitleOne',
+    subTitleTwo: 'customPrintPage.folders.common.subTitleTwo',
+  },
+  cardDigitalPrint: {
+    header: {
+      title: 'customPrintPage.folders.cardDigitalPrint.header.title',
+      subTitle: 'customPrintPage.folders.cardDigitalPrint.header.subTitle',
+      introduction:
+        'customPrintPage.folders.cardDigitalPrint.header.introduction',
+    },
+    tableColor: {
+      header: {
+        title:
+          'customPrintPage.folders.cardDigitalPrint.tableColor.header.title',
+        subTitle:
+          'customPrintPage.folders.cardDigitalPrint.tableColor.header.subTitle',
+      },
+    },
+    tableBlackAndWhite: {
+      header: {
+        title:
+          'customPrintPage.folders.cardDigitalPrint.tableBlackAndWhite.header.title',
+        subTitle:
+          'customPrintPage.folders.cardDigitalPrint.tableBlackAndWhite.header.subTitle',
+      },
+    },
+  },
+  cardOffsetPrint: {
+    header: {
+      title: 'customPrintPage.folders.cardOffsetPrint.header.title',
+      subTitle: 'customPrintPage.folders.cardOffsetPrint.header.subTitle',
+      introduction:
+        'customPrintPage.folders.cardOffsetPrint.header.introduction',
+    },
+    tableA4Trifold: {
+      header: {
+        title:
+          'customPrintPage.folders.cardOffsetPrint.tableA4Trifold.header.title',
+        subTitle:
+          'customPrintPage.folders.cardOffsetPrint.tableA4Trifold.header.subTitle',
+      },
+    },
+    tableA4Bifold: {
+      header: {
+        title:
+          'customPrintPage.folders.cardOffsetPrint.tableA4Bifold.header.title',
+        subTitle:
+          'customPrintPage.folders.cardOffsetPrint.tableA4Bifold.header.subTitle',
+      },
+    },
+    tableA3: {
+      header: {
+        title: 'customPrintPage.folders.cardOffsetPrint.tableA3.header.title',
+        subTitle:
+          'customPrintPage.folders.cardOffsetPrint.tableA3.header.subTitle',
+      },
+    },
+  },
 };
+
+/*
+Custom Print - Posters
+*/
 
 export const postersContentPaths = {
-  image: image4,
-  title: 'customPrintPage.posters.title',
-  introduction: 'customPrintPage.posters.introductionPosters',
-  introduction80GrTable: 'customPrintPage.posters.introduction80GrTable',
-  introduction160To260GrTable:
-    'customPrintPage.posters.introduction160To260GrTable',
-  introductionPolyAndHandMadeTable:
-    'customPrintPage.posters.introductionPolyAndHandMadeTable',
-  introductionA3Table: 'customPrintPage.posters.introductionA3Table',
-  colorOrBlackWhite: 'commonWords.colorOrBlackWhite',
-  colorOrBlackWhiteCapital: 'commonWords.colorOrBlackWhiteCapital',
-  color: 'commonWords.color',
-  colorCapital: 'commonWords.colorCapital',
-  SpecialMaterials: 'commonWords.SpecialMaterials',
-  polypropylene: 'commonWords.polypropylene',
-  type260grHandMade: 'PaperWeights.260grHandMade',
-  typeA3Format: 'paperFormats.A3Format',
-  A3Hq: 'paperFormats.A3Hq',
-  A3Budget: 'paperFormats.A3Budget',
-  fullColor: 'paperFormats.fullColor',
-  type190grGloss: 'PaperWeights.190grGloss',
-  type260grSatin: 'PaperWeights.260grSatin',
-  type150grLong: 'PaperWeights.150grLong',
-  type160grMat: 'PaperWeights.160grMat',
-  type160grSatin: 'PaperWeights.160grSatin',
-  type80gr: 'PaperWeights.80gr',
-  type80grLong: 'PaperWeights.80grLong',
-  range160grTo260gr: 'PaperWeights.range160grTo260gr',
-  blackWhite: 'commonWords.blackWhite',
-  notificationFirst: 'customPrintPage.posters.notificationFirst',
+  data: {
+    image: image4,
+  },
+  pageHeader: {
+    title: 'customPrintPage.posters.pageHeader.title',
+    introduction: 'customPrintPage.posters.pageHeader.introduction',
+  },
+  common: {
+    headerOne: 'customPrintPage.posters.common.headerOne',
+    headerTwo: 'customPrintPage.posters.common.headerTwo',
+    headerThree: 'customPrintPage.posters.common.headerThree',
+    headerFour: 'customPrintPage.posters.common.headerFour',
+    headerFive: 'customPrintPage.posters.common.headerFive',
+  },
+  cardColorOrBlackAndWhite: {
+    header: {
+      title: 'customPrintPage.posters.cardColorOrBlackAndWhite.header.title',
+      subTitle:
+        'customPrintPage.posters.cardColorOrBlackAndWhite.header.subTitle',
+      introduction:
+        'customPrintPage.posters.cardColorOrBlackAndWhite.header.introduction',
+    },
+    tableColor: {
+      header: {
+        title:
+          'customPrintPage.posters.cardColorOrBlackAndWhite.tableColor.header.title',
+        subTitle:
+          'customPrintPage.posters.cardColorOrBlackAndWhite.tableColor.header.subTitle',
+      },
+    },
+    tableBlackAndWhite: {
+      header: {
+        title:
+          'customPrintPage.posters.cardColorOrBlackAndWhite.tableBlackAndWhite.header.title',
+        subTitle:
+          'customPrintPage.posters.cardColorOrBlackAndWhite.tableBlackAndWhite.header.subTitle',
+      },
+    },
+  },
+  cardColorHeavyPaper: {
+    header: {
+      title: 'customPrintPage.posters.cardColorHeavyPaper.header.title',
+      subTitle: 'customPrintPage.posters.cardColorHeavyPaper.header.subTitle',
+      introduction:
+        'customPrintPage.posters.cardColorHeavyPaper.header.introduction',
+    },
+    table160gsmMatte: {
+      header: {
+        title:
+          'customPrintPage.posters.cardColorHeavyPaper.table160gsmMatte.header.title',
+        subTitle:
+          'customPrintPage.posters.cardColorHeavyPaper.table160gsmMatte.header.subTitle',
+      },
+    },
+    table160gsmSatin: {
+      header: {
+        title:
+          'customPrintPage.posters.cardColorHeavyPaper.table160gsmSatin.header.title',
+        subTitle:
+          'customPrintPage.posters.cardColorHeavyPaper.table160gsmSatin.header.subTitle',
+      },
+    },
+    table190gsmGloss: {
+      header: {
+        title:
+          'customPrintPage.posters.cardColorHeavyPaper.table190gsmGloss.header.title',
+        subTitle:
+          'customPrintPage.posters.cardColorHeavyPaper.table190gsmGloss.header.subTitle',
+      },
+    },
+    table260gsmSatin: {
+      header: {
+        title:
+          'customPrintPage.posters.cardColorHeavyPaper.table260gsmSatin.header.title',
+        subTitle:
+          'customPrintPage.posters.cardColorHeavyPaper.table260gsmSatin.header.subTitle',
+      },
+    },
+  },
+  cardColorSpecialMaterials: {
+    header: {
+      title: 'customPrintPage.posters.cardColorSpecialMaterials.header.title',
+      subTitle:
+        'customPrintPage.posters.cardColorSpecialMaterials.header.subTitle',
+      introduction:
+        'customPrintPage.posters.cardColorSpecialMaterials.header.introduction',
+    },
+    tablePolypropylene: {
+      header: {
+        title:
+          'customPrintPage.posters.cardColorSpecialMaterials.tablePolypropylene.header.title',
+        subTitle:
+          'customPrintPage.posters.cardColorSpecialMaterials.tablePolypropylene.header.subTitle',
+      },
+    },
+    table260gsmHandmade: {
+      header: {
+        title:
+          'customPrintPage.posters.cardColorSpecialMaterials.table260gsmHandmade.header.title',
+        subTitle:
+          'customPrintPage.posters.cardColorSpecialMaterials.table260gsmHandmade.header.subTitle',
+      },
+    },
+  },
+  cardColorA3: {
+    header: {
+      title: 'customPrintPage.posters.cardColorA3.header.title',
+      subTitle: 'customPrintPage.posters.cardColorA3.header.subTitle',
+      introduction: 'customPrintPage.posters.cardColorA3.header.introduction',
+    },
+    table150gsm: {
+      header: {
+        title: 'customPrintPage.posters.cardColorA3.table150gsm.header.title',
+        subTitle:
+          'customPrintPage.posters.cardColorA3.table150gsm.header.subTitle',
+      },
+    },
+    table80gsm: {
+      header: {
+        title: 'customPrintPage.posters.cardColorA3.table80gsm.header.title',
+        subTitle:
+          'customPrintPage.posters.cardColorA3.table80gsm.header.subTitle',
+      },
+    },
+  },
 };
+
+/*
+Custom Print - Stickers
+*/
 
 export const stickersContentPaths = {
-  image: image2,
-  title: 'customPrintPage.stickers.title',
-  introductionLargeFormatTable:
-    'customPrintPage.stickers.introductionLargeFormatTable',
-  introduction: 'customPrintPage.stickers.introduction',
-  materialTitle: 'customPrintPage.stickers.materialTitle',
-  materialContent: 'customPrintPage.stickers.materialContent',
-  listItem1: 'customPrintPage.stickers.listItem1',
-  listItem2: 'customPrintPage.stickers.listItem2',
-  listItem3: 'customPrintPage.stickers.listItem3',
-  listItem4: 'customPrintPage.stickers.listItem4',
-  vinyl: 'commonWords.vinyl',
-  largeFormat: 'paperFormats.largeFormat',
-  largeFormatCapital: 'paperFormats.largeFormatCapital',
+  data: {
+    image: image2,
+  },
+  pageHeader: {
+    title: 'customPrintPage.stickers.pageHeader.title',
+    introduction: 'customPrintPage.stickers.pageHeader.introduction',
+  },
+  cardLargeFormat: {
+    header: {
+      title: 'customPrintPage.stickers.cardLargeFormat.header.title',
+      subTitle: 'customPrintPage.stickers.cardLargeFormat.header.subTitle',
+      introduction:
+        'customPrintPage.stickers.cardLargeFormat.header.introduction',
+    },
+    tableLargeFormat: {
+      header: {
+        title:
+          'customPrintPage.stickers.cardLargeFormat.tableLargeFormat.header.title',
+        subTitle:
+          'customPrintPage.stickers.cardLargeFormat.tableLargeFormat.header.subTitle',
+      },
+      columnHeaders: {
+        headerOne:
+          'customPrintPage.stickers.tableLargeFormat.columnHeaders.headerOne',
+        headerTwo:
+          'customPrintPage.stickers.tableLargeFormat.columnHeaders.headerTwo',
+      },
+      rowHeaders: {
+        headerOne:
+          'customPrintPage.stickers.tableLargeFormat.rowHeaders.headerOne',
+        headerTwo:
+          'customPrintPage.stickers.tableLargeFormat.rowHeaders.headerTwo',
+      },
+    },
+  },
 };
 
+/*
+Copy & Print
+*/
+
 export const copyPrintContentPaths = {
-  image: image5,
-  title: 'copyPrintPage.title',
-  introduction: 'copyPrintPage.introduction',
-  introductionBinding: 'copyPrintPage.introductionBinding',
-  introductionBudgetTable: 'copyPrintPage.introductionBudgetTable',
-  introductionHqTable: 'copyPrintPage.introductionHqTable',
-  titleLaminate: 'copyPrintPage.titleLaminate',
-  color: 'commonWords.color',
-  blackWhite: 'commonWords.blackWhite',
-  colorOrBlackWhite: 'paperFormats.A4ColorOrBlackWhite',
-  colorOrBlackWhiteStandard: 'commonWords.colorOrBlackWhite',
-  A4Color: 'paperFormats.A4Color',
-  printerFour: 'copyPrintPage.printerFour',
-  A4blackWhite: 'paperFormats.A4BlackWhite',
-  budget: 'commonWords.budgetCapital',
-  highQuality: 'commonWords.highQualityCapital',
-  type90gr: 'PaperWeights.90gr',
-  type80gr: 'PaperWeights.80gr',
-  notificationFirst: 'copyPrintPage.notificationFirst',
-  notificationSecond: 'copyPrintPage.notificationSecond',
-  notificationThird: 'copyPrintPage.notificationThird',
-  printerOneToThree: 'copyPrintPage.printerOneToThree',
+  // Used data
+  data: {
+    image: image5,
+  },
+
+  // Page header
+  pageHeaderContent: {
+    title: 'copyPrintPage.pageHeaderContent.title',
+    introduction: 'copyPrintPage.pageHeaderContent.introduction',
+    subTitle: 'copyPrintPage.pageHeaderContent.subTitle',
+    subIntroduction: 'copyPrintPage.pageHeaderContent.subIntroduction',
+  },
+
+  // Card - Budget
+  cardBudget: {
+    header: {
+      title: 'copyPrintPage.cardBudget.header.title',
+      subTitle: 'copyPrintPage.cardBudget.header.subTitle',
+      introduction: 'copyPrintPage.cardBudget.header.introduction',
+    },
+    tableColor: {
+      title: 'copyPrintPage.cardBudget.tableColor.title',
+      subTitle: 'copyPrintPage.cardBudget.tableColor.subTitle',
+    },
+    tableBlackAndWhite: {
+      title: 'copyPrintPage.cardBudget.tableBlackAndWhite.title',
+      subTitle: 'copyPrintPage.cardBudget.tableBlackAndWhite.subTitle',
+    },
+  },
+
+  // Card - High quality
+  cardHq: {
+    header: {
+      title: 'copyPrintPage.cardHq.header.title',
+      subTitle: 'copyPrintPage.cardHq.header.subTitle',
+      introduction: 'copyPrintPage.cardHq.header.introduction',
+    },
+    tableHq: {
+      title: 'copyPrintPage.cardHq.tableHq.title',
+      subTitle: 'copyPrintPage.cardHq.tableHq.subTitle',
+    },
+  },
+
+  // Notifications
+  notifications: {
+    first: 'copyPrintPage.notifications.first',
+    second: 'copyPrintPage.notifications.second',
+    third: 'copyPrintPage.notifications.third',
+  },
 };
 
 export const contactFormTextContentPaths = {
@@ -250,6 +659,9 @@ export const contactFormErrorPaths = {
 };
 
 export const officeSuppliesPaths = {
+  data: {
+    logoList: logoList,
+  },
   title: 'officeSupplies.title',
   introduction: 'officeSupplies.introduction',
 };

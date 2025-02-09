@@ -5,7 +5,7 @@ import { useTranslation } from 'react-i18next';
 import { TextBlock } from '../../elementTemplates/TextBlock';
 import { BeatLoader } from 'react-spinners';
 import { copyPrintContentPaths } from '../../../lib/translationPaths';
-import { TitleWithIntroduction } from '../../elementTemplates/TitleWithIntroduction';
+import { ContentCardTitleAndIntroduction } from '../../elementTemplates/ContentCardTitleAndIntroduction';
 
 /*
     Copy & Print - High Quality section
@@ -28,8 +28,8 @@ export default function CopyPrintHqPricing({ bgColor }: { bgColor: string }) {
   // Get the header titles
   const headerTitlesHq: string[] = [
     t('commonWords.prints'),
-    t(copyPrintContentPaths.blackWhite),
-    t(copyPrintContentPaths.color),
+    t('commonWords.color'),
+    t('commonWords.blackAndWhite'),
   ];
 
   // Get the units
@@ -47,11 +47,11 @@ export default function CopyPrintHqPricing({ bgColor }: { bgColor: string }) {
       `}
     >
       {/* Title, subtitle and introduction text */}
-      <TitleWithIntroduction
+      <ContentCardTitleAndIntroduction
         props={{
-          mainTitle: copyPrintContentPaths.highQuality,
-          subTitle: copyPrintContentPaths.colorOrBlackWhiteStandard,
-          introduction: copyPrintContentPaths.introductionHqTable,
+          mainTitle: copyPrintContentPaths.cardHq.header.title,
+          subTitle: copyPrintContentPaths.cardHq.header.subTitle,
+          introduction: copyPrintContentPaths.cardHq.header.introduction,
         }}
       />
       <div className="flex flex-col sm:flex-row gap-16 pt-8">
@@ -60,16 +60,14 @@ export default function CopyPrintHqPricing({ bgColor }: { bgColor: string }) {
           <div className="flex flex-col">
             <div className="flex justify-start ">
               <TextBlock
-                value={copyPrintContentPaths.colorOrBlackWhite}
-                variant="sectionTitle"
-              />
-              &nbsp;
-              <TextBlock
-                value={copyPrintContentPaths.printerFour}
+                value={copyPrintContentPaths.cardHq.tableHq.title}
                 variant="sectionTitle"
               />
             </div>
-            <TextBlock value={copyPrintContentPaths.type90gr} variant="body" />
+            <TextBlock
+              value={copyPrintContentPaths.cardHq.tableHq.subTitle}
+              variant="body"
+            />
           </div>
 
           {/* Display pricing table*/}

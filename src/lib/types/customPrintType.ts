@@ -63,7 +63,7 @@ export type CustomPrintType = {
 
 export type PageTitleType = {
   mainTitle: string;
-  subTitle: string;
+  subTitle?: string;
   introduction: string;
   notification?: string;
 };

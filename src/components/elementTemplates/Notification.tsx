@@ -1,6 +1,13 @@
 import InfoIcon from '@mui/icons-material/Info';
 import { useData } from '../../context/DataContext';
 
+/*
+
+Notification message at the bottom of a page with content that has some conditions
+or extra information
+
+*/
+
 export function Notification({ children }: { children: React.ReactNode }) {
   const { stylePreset } = useData();
 

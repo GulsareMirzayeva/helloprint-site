@@ -35,27 +35,27 @@ const paperSizes: string[] = ['A2', 'B2', 'A1', 'B1', 'A0'];
 const paperSizesExtended: string[] = ['A2', 'B2', 'A1', 'B1', 'A0'];
 
 const textileCategories: string[] = [
-  'customClothingPage.pricingTextile.shirt',
-  'customClothingPage.pricingTextile.polo',
-  'customClothingPage.pricingTextile.sweater',
-  'customClothingPage.pricingTextile.hoody',
+  'customClothingPage.cardTextileGarments.tableTextileGarments.variants.shirt',
+  'customClothingPage.cardTextileGarments.tableTextileGarments.variants.polo',
+  'customClothingPage.cardTextileGarments.tableTextileGarments.variants.sweater',
+  'customClothingPage.cardTextileGarments.tableTextileGarments.variants.hoody',
 ];
 
 const flexCategories: string[] = [
-  'customClothingPage.pricingFlexVinyl.frontChestLogo',
-  'customClothingPage.pricingFlexVinyl.frontBackLarge',
-  'customClothingPage.pricingFlexVinyl.frontSmallBackLarge',
+  'customClothingPage.cardFlexAndDtg.tableFlex.variants.frontChestLogo',
+  'customClothingPage.cardFlexAndDtg.tableFlex.variants.frontBackLarge',
+  'customClothingPage.cardFlexAndDtg.tableFlex.variants.frontSmallBackLarge',
 ];
 
 const dtgCategories: string[] = [
-  'customClothingPage.pricingDtg.frontChestLogo',
-  'customClothingPage.pricingDtg.frontBackLarge',
-  'customClothingPage.pricingDtg.frontSmallBackLarge',
+  'customClothingPage.cardFlexAndDtg.tableDtg.variants.frontChestLogo',
+  'customClothingPage.cardFlexAndDtg.tableDtg.variants.frontBackLarge',
+  'customClothingPage.cardFlexAndDtg.tableDtg.variants.frontSmallBackLarge',
 ];
 
 const stickersCategories: string[] = [
-  'paperFormats.A4',
-  'customPrintPage.stickers.perSquareMeter',
+  'customPrintPage.stickers.cardLargeFormat.tableLargeFormat.rowHeaders.headerOne',
+  'customPrintPage.stickers.cardLargeFormat.tableLargeFormat.rowHeaders.headerTwo',
 ];
 
 export {

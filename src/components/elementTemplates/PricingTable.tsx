@@ -8,7 +8,7 @@ type PricingTableTypes = {
   headerTitles: string[];
   units: string[];
   options: string[];
-  prices: PricingOptions[] | number[];
+  prices: PricingOptions[] | number[] | null;
 };
 
 // Function that displays prices with a dot or comma as decimal, depending on the selected language
@@ -34,6 +34,8 @@ export default function PricingTable({
   const { t } = useTranslation();
   const { stylePreset } = useData();
 
+  if (!prices) return <div>Loading...</div>;
+
   // Prepare data for easy access in the table
   const tableData = options.map((option, index) => ({
     option,
@@ -46,9 +48,9 @@ export default function PricingTable({
       <thead>
         <tr>
           {/* Create a header cell for each given header title */}
-          {headerTitles.map((title) => (
+          {headerTitles.map((title, index) => (
             <th
-              key={title}
+              key={index}
               className={`
                 ${stylePreset.table.headBackgroundColor}
                 ${stylePreset.table.headTextColor}

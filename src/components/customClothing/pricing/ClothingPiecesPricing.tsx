@@ -2,7 +2,7 @@ import { useTranslation } from 'react-i18next';
 import { useData } from '../../../context/DataContext';
 import { useMemo } from 'react';
 import { BeatLoader } from 'react-spinners';
-import { TitleWithIntroduction } from '../../elementTemplates/TitleWithIntroduction';
+import { ContentCardTitleAndIntroduction } from '../../elementTemplates/ContentCardTitleAndIntroduction';
 import PricingTable from '../../elementTemplates/PricingTable';
 import { textileCategories } from '../../../lib/priceCategories';
 import image1 from '../../../assets/custom-clothing/clothing-images.png';
@@ -44,17 +44,17 @@ export default function ClothingPiecesPricing({
     );
   }
 
-  // Haal prijzen op
+  // Get the prices
   const pricePathsTextile = [...Object.values(prices.customClothing.textile)];
 
-  // Header titels
+  // Header titles
   const headerTitlesTextile = [
     t('commonWords.textile'),
-    t('commonWords.blackWhite'),
+    t('commonWords.blackAndWhite'),
     t('commonWords.color'),
   ];
 
-  // Eenheden
+  // Units
   const unitsTextile = [
     t('commonWords.clothingPiece'),
     t('commonWords.pricePerPrint'),
@@ -68,17 +68,19 @@ export default function ClothingPiecesPricing({
         ${bgColor}
       `}
     >
-      {/* Titel, subtitel en inleiding */}
-      <TitleWithIntroduction
+      {/* Titel, subtitle and introduction */}
+      <ContentCardTitleAndIntroduction
         props={{
-          mainTitle: customClotingContentPaths.tableTitle,
-          subTitle: customClotingContentPaths.subTitle,
-          introduction: customClotingContentPaths.tableIntroduction,
+          mainTitle: customClotingContentPaths.cardTextileGarments.header.title,
+          subTitle:
+            customClotingContentPaths.cardTextileGarments.header.subTitle,
+          introduction:
+            customClotingContentPaths.cardTextileGarments.header.introduction,
         }}
       />
       <div className="flex flex-col md:flex-row justify-between gap-20 pt-8">
         <div>
-          {/* Toon de pricing table */}
+          {/* Display pricing table */}
           <PricingTable
             headerTitles={headerTitlesTextile}
             units={unitsTextile}

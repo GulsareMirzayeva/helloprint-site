@@ -117,120 +117,420 @@
     }
   },
   "customClothingPage": {
-    "introduction": {
+    "pageHeaderContent": {
       "title": "Clothing Printing",
-      "introduction": "We offer various techniques for printing your clothing.<br />We can print and cut on flex material, which is ideal for a logo or text in a single color.<br />Additionally, we have a DTG machine, which stands for Direct To Garment. This allows us to print directly onto clothing.",
-      "subText": "If you bring your own clothing, please keep the following in mind:",
-      "listItem1": "Clothing must be clean/washed",
-      "listItem2": "Printing on your own clothing is at your own risk",
-      "notificationFirst": "- Would you like a color that we do not have in stock? Then an additional €7.95 order fee will be applied.",
-      "notificationSecond": "- For larger sizes, 3XL-5XL, a surcharge of €2.00 per piece applies.",
-      "notificationThird": "- Printing on your own clothing is at your own risk.",
-      "notificationFourth": "- Clothing must be clean/washed."
+      "introduction": "We offer various techniques for printing your clothing. We can print and cut on flex material, which is ideal for a logo or text in a single color.<br /><br />Additionally, we have a DTG machine, which stands for Direct To Garment. This allows us to print directly onto clothing."
     },
-    "pricingTextile": {
-      "tableIntroduction": "The pricing table below provides an overview of the costs for printing on various garments, such as shirts, polos, sweaters, and hoodies. Depending on your preference, the print can be done in black and white or in color. The final price depends on the type of garment and the size of the print.",
-      "shirt": "T-shirt",
-      "polo": "Polo",
-      "sweater": "Sweater",
-      "hoody": "Hoody",
-      "tableTitle": "CREATE UNIQUE CLOTHING",
-      "subTitle": "Choose your clothing "
+    "cardTextileGarments": {
+      "header": {
+        "title": "CREATE UNIQUE CLOTHING",
+        "subTitle": "Choose a garment",
+        "introduction": "The pricing table below provides an overview of the costs for various garments, such as shirts, polos, sweaters, and hoodies. Depending on your preference, the print can be done in black and white or in color. The final price depends on the type of garment and the size of the print."
+      },
+      "tableTextileGarments": {
+        "header": {
+          "title": "",
+          "subTitle": ""
+        },
+        "variants": {
+          "shirt": "T-shirt",
+          "polo": "Polo",
+          "sweater": "Sweater",
+          "hoody": "Hoody"
+        }
+      }
     },
-    "pricingFlexVinyl": {
-      "tableHead": "Flex / Vinyl",
-      "frontChestLogo": "Front chest logo",
-      "frontBackLarge": "Front or back large",
-      "frontSmallBackLarge": "Front small and back large",
-      "tableTitle": "Print on flex material"
+    "cardFlexAndDtg": {
+      "header": {
+        "title": "FLEX OR DIRECT ON CLOTHING",
+        "subTitle": "Choose a printing technique",
+        "introduction": "Flex material works great for clean, single-color designs like logos and text. Below are our rates for printing and cutting. Our DTG printer allows us to print directly onto clothing, ideal for detailed and vibrant designs. Below are the rates for garment printing."
+      },
+      "common": {
+        "headerOne": "Flex / Vinyl",
+        "headerTwo": "DTG"
+      },
+      "tableFlex": {
+        "header": {
+          "title": "Print on flex material",
+          "subTitle": ""
+        },
+        "variants": {
+          "frontChestLogo": "Front chest logo",
+          "frontBackLarge": "Front or back large",
+          "frontSmallBackLarge": "Front small and back large"
+        }
+      },
+      "tableDtg": {
+        "header": {
+          "title": "Print directly on clothing",
+          "subTitle": ""
+        },
+        "columnHeaders": {
+          "headTextileWhite": "Textile White",
+          "headTextileColor": "Textile Colored"
+        },
+        "variants": {
+          "frontChestLogo": "Front chest logo",
+          "frontBackLarge": "Front or back large",
+          "frontSmallBackLarge": "Front small and back large"
+        }
+      }
     },
-    "pricingDtg": {
-      "tableHead": "DTG",
-      "tableHeadWhiteTextile": "Textile White",
-      "tableHeadcolored": "Textile Color",
-      "frontChestLogo": "Front chest logo",
-      "frontBackLarge": "Front or back large",
-      "frontSmallBackLarge": "Front small and back large",
-      "tableTitle": "Print directly on clothing"
-    },
-    "pricingFlexAndDtg": {
-      "title": "FLEX MATERIAL OR DIRECT ON CLOTHING",
-      "subTitle": "More options",
-      "tableIntroduction": "Flex material works great for clean, single-color designs like logos and text. Below are our rates for printing and cutting. Our DTG printer allows us to print directly onto clothing, ideal for detailed and vibrant designs. Below are the rates for garment printing."
+    "notifications": {
+      "first": "- Would you like a color that we do not have in stock? Then an additional €7.95 order fee will be applied.",
+      "second": "- For larger sizes, 3XL-5XL, a surcharge of €2.00 per piece applies.",
+      "third": "- Printing on your own clothing is at your own risk.",
+      "fourth": "- Clothing must be clean/washed."
     }
   },
   "customPrintPage": {
     "overviewTitle": "An Overview of Our Printing Services",
     "overviewIntroduction": "Explore our wide range of custom printing options. From business cards and flyers to textile prints and large-format printing, we have solutions for every need. Click on a category to learn more and get inspired by the possibilities.",
     "stickers": {
-      "material": "Sticker",
-      "title": "Stickers",
-      "introduction": "Our stickers are available in various sizes, shapes, and quantities, fully tailored to your needs. Whether you require round, oval, large, or small stickers, we offer the perfect solution.",
-      "introductionLargeFormatTable": "The pricing table below outlines the costs for large-format printing on vinyl. Prices are calculated per A4 size or per square meter, depending on the dimensions of your print. This ensures flexibility in selecting the format that best suits your needs.",
-      "materialTitle": "Material",
-      "materialContent": "All stickers are produced on high-gloss, self-adhesive white vinyl of premium quality, perfectly suited for a wide range of applications.",
-      "listItem1": "White vinyl",
-      "listItem2": "High gloss",
-      "listItem3": "Self-adhesive",
-      "listItem4": "UV resistant",
-      "perSquareMeter": "Square metre"
+      "pageHeader": {
+        "title": "Stickers",
+        "introduction": "Our stickers are available in various sizes, shapes, and quantities, fully tailored to your needs. Whether you require round, oval, large, or small stickers, we offer the perfect solution.<br /><br />All stickers are produced on high-gloss, self-adhesive white vinyl of premium quality, perfectly suited for a wide range of applications."
+      },
+      "cardLargeFormat": {
+        "header": {
+          "title": "LARGE FORMAT",
+          "subTitle": "White Vinyl",
+          "introduction": "The pricing table below outlines the costs for large-format printing on vinyl. Prices are calculated per A4 size or per square meter, depending on the dimensions of your print. This ensures flexibility in selecting the format that best suits your needs."
+        },
+        "tableLargeFormat": {
+          "header": {
+            "title": "Large-format",
+            "subTitle": "White Vinyl, High Gloss, Self-adhesive and UV resistant"
+          },
+          "columnHeaders": {
+            "headerOne": "Format",
+            "headerTwo": "Price per print"
+          },
+          "rowHeaders": {
+            "headerOne": "A4",
+            "headerTwo": "Square Metre"
+          }
+        }
+      }
     },
     "cards": {
-      "title": "Business Cards",
-      "introduction": "For printing business cards, we require a minimum order of 100 pieces. The cards are printed on high-quality 350 gsm paper, ensuring a sturdy and professional appearance.<br /> <br />The listed prices are based on a single file. Please note that the price for folded business cards will be doubled. Once printed, the cards are carefully cut and packaged in a plastic storage box, ensuring they are delivered in perfect condition.",
-      "introductionCardsTable": "This price table pertains to digitally printed business cards on sturdy 350 gsm paper. You can choose between black-and-white or color printing, and opt for single-sided or double-sided printing. This ensures a professional appearance, regardless of your choice for your business cards.",
-      "introductionDigitalPrintTable": "This price table pertains to digitally printed business cards on sturdy 350 gsm paper. You can choose between black-and-white or color printing, and opt for single-sided or double-sided printing. This ensures a professional appearance, regardless of your choice for your business cards.",
-      "introductionOffsetTable": "This price table pertains to business cards printed on sturdy 400gsm paper in color. You can choose between single-sided prints with glossy UV coating or double-sided prints with matte dispersion coating. These finishing options provide a refined look, depending on your preference for a glossy or subtle matte finish.",
-
-      "offsetPrintSingleSided": "Single-sided - UV varnish gloss",
-      "offsetPrintDoubleSided": "Double-sided - Dispersion varnish matte"
+      "pageHeader": {
+        "title": "Business Cards",
+        "introduction": "For printing business cards, we require a minimum order of 100 pieces. The cards are printed on high-quality 350 gsm paper, ensuring a sturdy and professional appearance.<br /> <br />The listed prices are based on a single file. Please note that the price for folded business cards will be doubled. Once printed, the cards are carefully cut and packaged in a plastic storage box, ensuring they are delivered in perfect condition."
+      },
+      "cardDigitalPrint": {
+        "header": {
+          "title": "DIGITAL PRINT",
+          "subTitle": "350 gsm paper",
+          "introduction": "This price table pertains to digitally printed business cards on sturdy 350 gsm paper. You can choose between black-and-white or color printing, and opt for single-sided or double-sided printing. This ensures a professional appearance, regardless of your choice for your business cards."
+        },
+        "tableColor": {
+          "header": {
+            "title": "Color",
+            "subTitle": "350 gsm paper"
+          },
+          "columnHeaders": {
+            "headerOne": "Cards",
+            "headerTwo": "Single-sided",
+            "headerThree": "Double-sided"
+          }
+        },
+        "tableBlackAndWhite": {
+          "header": {
+            "title": "Black and White",
+            "subTitle": "350 gsm paper"
+          },
+          "columnHeaders": {
+            "headerOne": "Cards",
+            "headerTwo": "Single-sided",
+            "headerThree": "Double-sided"
+          }
+        }
+      },
+      "cardOffsetPrint": {
+        "header": {
+          "title": "OFFSET PRINT",
+          "subTitle": "400 gsm paper",
+          "introduction": "This price table pertains to business cards printed on sturdy 400gsm paper in color. You can choose between single-sided prints with glossy UV coating or double-sided prints with matte dispersion coating. These finishing options provide a refined look, depending on your preference for a glossy or subtle matte finish."
+        },
+        "tableOffsetPrint": {
+          "header": {
+            "title": "Color",
+            "subTitle": "400 gsm woodfree mc (maco) matte paper"
+          },
+          "columnHeaders": {
+            "headerOne": "Cards",
+            "headerTwo": "Single-sided - UV varnish gloss",
+            "headerThree": "Double-sided - Dispersion varnish matte"
+          }
+        }
+      }
     },
     "flyers": {
-      "title": "Flyers",
-      "introductionFlyers": "Here you will find an overview of the costs for printing flyers in A5 and A6 formats, with options for both single-sided and double-sided printing.<br /><br />Choose from a variety of paper types to achieve the perfect look for your flyers, tailored to your preferences and intended use.",
-      "introductionDigitalPrintTable": "This price table pertains to digitally printed flyers in A5 or A6 format. You can choose from three different paper weights: 90 gsm, 150 gsm, or 250 gsm, depending on your preference for paper thickness. The flyers can be printed single-sided or double-sided, allowing you to tailor the layout to your needs. Digital printing ensures sharp and vibrant colors for a professional appearance.",
-      "introductionOffsetTable": "This pricing example is for A5 flyers printed on 135g, 170g, or 250g paper. Depending on your preference for paper weight, you can choose the option that best suits the desired look of your flyer. The flyers can be printed either single-sided or double-sided, depending on how you want to present your message. This print option offers a professional appearance, ideal for both promotional and informational purposes."
+      "pageHeader": {
+        "title": "Flyers",
+        "introduction": "Here you will find an overview of the costs for printing flyers in A5 and A6 formats, with options for both single-sided and double-sided printing.<br /><br />Choose from a variety of paper types to achieve the perfect look for your flyers, tailored to your preferences and intended use."
+      },
+      "cardDigitalPrint": {
+        "header": {
+          "title": "DIGITAL PRINT",
+          "subTitle": "A6 and A5 formats",
+          "introduction": "This price table pertains to digitally printed flyers in A5 or A6 format. You can choose from three different paper weights: 90 gsm, 150 gsm, or 250 gsm, depending on your preference for paper thickness. The flyers can be printed single-sided or double-sided, allowing you to tailor the layout to your needs. Digital printing ensures sharp and vibrant colors for a professional appearance.",
+          "notification": "Delivery in 1-2 working days"
+        },
+        "common": {
+          "headerOne": "Flyers",
+          "headerTwo": "90gsm",
+          "headerThree": "150gsm",
+          "headerFour": "250gsm",
+          "subTitleOne": "Single Sided",
+          "subTitleTwo": "Double sided"
+        },
+        "tableA6": {
+          "header": {
+            "title": "A6 Format"
+          }
+        },
+        "tableA5": {
+          "header": {
+            "title": "A5 Format"
+          }
+        }
+      },
+      "cardOffsetPrint": {
+        "header": {
+          "title": "OFFSET PRINT",
+          "subTitle": "A5 Format",
+          "introduction": "This pricing example is for A5 flyers printed on 135g, 170g, or 250g paper. Depending on your preference for paper weight, you can choose the option that best suits the desired look of your flyer. The flyers can be printed either single-sided or double-sided, depending on how you want to present your message. This print option offers a professional appearance, ideal for both promotional and informational purposes.",
+          "notification": "Delivery in 7 working days"
+        },
+        "common": {
+          "headerOne": "Flyers",
+          "headerTwo": "135 gsm",
+          "headerThree": "170 gsm",
+          "headerFour": "250 gsm",
+          "subTitleOne": "Single Sided",
+          "subTitleTwo": "Double sided"
+        },
+        "tableA5": {
+          "header": {
+            "title": "A5 Format"
+          }
+        },
+        "tableA6": {
+          "header": {
+            "title": "A6 Format"
+          }
+        }
+      }
     },
     "folders": {
-      "title": "Folders",
-      "introductionFolders": "Here you will find an overview of the costs for printing brochures in A3 and A4 formats. You can choose between a 2-fold or 3-fold option, depending on the message you wish to convey and the space required for it. The various paper types provide a professional look that aligns with the purpose of your brochure.<br /><br />Prices are clearly listed per paper type and quantity, enabling you to quickly make a decision that suits your needs and budget.",
-      "introductionDigitalPrintTable": "This overview is for digitally printed A4 brochures, available in color on 150g, 170g, or 250g paper, or black/white on 80g paper. You can choose between a 2 or 3-fold format, depending on the amount of information you wish to present. This size is perfect for distributing detailed information or promotions. The material offers a professional appearance, and the various paper options give you the flexibility to choose the right look for your message.",
-      "introductionOffsetTable": "This overview is for A4 folders in 2- or 3-fold format, or A3 folders in 3-fold format. The folders are printed in color on 135 gsm, 170 gsm, or 250 gsm paper. This makes them ideal for presenting detailed information or promotions in a professional manner. With the different paper weights available, you can choose the right look that fits your message."
+      "pageHeader": {
+        "title": "Folders",
+        "introduction": "Here you will find an overview of the costs for printing brochures in A3 and A4 formats. You can choose between a 2-fold or 3-fold option, depending on the message you wish to convey and the space required for it. The various paper types provide a professional look that aligns with the purpose of your brochure.<br /><br />Prices are clearly listed per paper type and quantity, enabling you to quickly make a decision that suits your needs and budget."
+      },
+      "common": {
+        "headerOne": "Folders",
+        "headerTwo": "80gsm",
+        "headerThree": "135gsm",
+        "headerFour": "150gsm",
+        "headerFive": "170gsm",
+        "headerSix": "250gsm",
+        "subTitleOne": "Single Sided",
+        "subTitleTwo": "Double sided"
+      },
+      "cardDigitalPrint": {
+        "header": {
+          "title": "DIGITAL PRINT",
+          "subTitle": "A4 Format",
+          "introduction": "This overview is for digitally printed A4 brochures, available in color on 150g, 170g, or 250g paper, or black/white on 80g paper. You can choose between a 2 or 3-fold format, depending on the amount of information you wish to present. This size is perfect for distributing detailed information or promotions. The material offers a professional appearance, and the various paper options give you the flexibility to choose the right look for your message.",
+          "notification": "Delivery in 1-2 working days"
+        },
+        "tableColor": {
+          "header": {
+            "title": "A4 format - Bifold or Trifold",
+            "subTitle": "Color"
+          }
+        },
+        "tableBlackAndWhite": {
+          "header": {
+            "title": "A4 format - Bifold or Trifold",
+            "subTitle": "Black and White - 80 gsm White or colored paper"
+          }
+        }
+      },
+      "cardOffsetPrint": {
+        "header": {
+          "title": "OFFSET PRINT",
+          "subTitle": "A4 and A3 Format",
+          "introduction": "This overview is for A4 folders in 2- or 3-fold format, or A3 folders in 3-fold format. The folders are printed in color on 135 gsm, 170 gsm, or 250 gsm paper. This makes them ideal for presenting detailed information or promotions in a professional manner. With the different paper weights available, you can choose the right look that fits your message.",
+          "notification": "Delivery in 7 working days"
+        },
+        "tableA4Trifold": {
+          "header": {
+            "title": "A4 size | Trifold",
+            "subTitle": "Color"
+          }
+        },
+        "tableA4Bifold": {
+          "header": {
+            "title": "A4 size | Bifold",
+            "subTitle": "Color"
+          }
+        },
+        "tableA3": {
+          "header": {
+            "title": "A3 size | Trifold",
+            "subTitle": "Color"
+          }
+        }
+      }
     },
     "posters": {
-      "title": "Posters",
-      "introductionPosters": "Explore the available options for printing posters, where you can choose from various formats and paper types. These options allow you to tailor the presentation of your poster to achieve the desired result. From detailed black-and-white prints to vibrant color displays, we offer a range of possibilities that meet the specific requirements of your project. <br /><br />Refer to the options below for an overview of the available combinations.",
-      "introduction80GrTable": "We offer posters on 80 gsm paper, available in both color and black and white. This paper is ideal for printing posters that require a lightweight yet high-quality result for both indoor and outdoor use.",
-      "introduction160To260GrTable": "Additionally, we offer other types of paper, including 160 gsm matte, 160 gsm satin, 190 gsm glossy, and 260 gsm satin paper. All of these options are available for color printing and provide a professional finish, suitable for a variety of applications where both durability and visual impact are important. Each type of paper offers specific qualities for optimal presentation of your design, depending on the desired appearance and intended use.",
-      "introductionPolyAndHandMadeTable": "For our posters in special materials, we offer polypropylene and 260 gsm laid paper. These materials are available for color prints and offer unique properties that make them suitable for specific applications where durability and a distinctive appearance are important. Polypropylene is water-resistant and very sturdy, making it ideal for outdoor use or environments where the poster needs to stay up for a long time. The laid paper provides a natural, handmade appearance, making it suitable for luxury or artistic projects.",
-      "introductionA3Table": " For A3 posters, we offer two options in different qualities and materials. The high-quality option is printed on 150 gsm paper with bleed, ideal for a premium finish. Additionally, we provide a budget-friendly option printed on 80 gsm paper with a white border. Both available for full color prints.",
-      "notificationFirst": "Prices are based on self-service.",
-      "postersAmount": {
-        "1-5": "1-5 prints",
-        "6-10": "6-10 prints",
-        "10Plus": "10+ prints"
+      "pageHeader": {
+        "title": "Posters",
+        "introduction": "Explore the available options for printing posters, where you can choose from various formats and paper types. These options allow you to tailor the presentation of your poster to achieve the desired result. From detailed black-and-white prints to vibrant color displays, we offer a range of possibilities that meet the specific requirements of your project. <br /><br />Refer to the options below for an overview of the available combinations."
+      },
+      "common": {
+        "headerOne": "Posters",
+        "headerTwo": "1-5 pcs",
+        "headerThree": "6-10 pcs",
+        "headerFour": "10+ pcs",
+        "headerFive": "Per piece"
+      },
+      "cardColorOrBlackAndWhite": {
+        "header": {
+          "title": "Color or Black and White",
+          "subTitle": "80 gsm paper",
+          "introduction": "We offer posters on 80 gsm paper, available in both color and black and white. This paper is ideal for printing posters that require a lightweight yet high-quality result for both indoor and outdoor use."
+        },
+        "tableColor": {
+          "header": {
+            "title": "Color",
+            "subTitle": "80 gsm paper"
+          }
+        },
+        "tableBlackAndWhite": {
+          "header": {
+            "title": "Black and White",
+            "subTitle": "80 gsm paper"
+          }
+        }
+      },
+      "cardColorHeavyPaper": {
+        "header": {
+          "title": "Color",
+          "subTitle": "160 to 260 gsm paper",
+          "introduction": "Additionally, we offer other types of paper, including 160 gsm matte, 160 gsm satin, 190 gsm glossy, and 260 gsm satin paper. All of these options are available for color printing and provide a professional finish, suitable for a variety of applications where both durability and visual impact are important. Each type of paper offers specific qualities for optimal presentation of your design, depending on the desired appearance and intended use."
+        },
+        "table160gsmMatte": {
+          "header": {
+            "title": "Color",
+            "subTitle": "160 gsm Matte paper"
+          }
+        },
+        "table160gsmSatin": {
+          "header": {
+            "title": "Color",
+            "subTitle": "160 gsm Satin paper"
+          }
+        },
+        "table190gsmGloss": {
+          "header": {
+            "title": "Color",
+            "subTitle": "190 gsm Gloss paper"
+          }
+        },
+        "table260gsmSatin": {
+          "header": {
+            "title": "Color",
+            "subTitle": "260 gsm Satin paper"
+          }
+        }
+      },
+      "cardColorSpecialMaterials": {
+        "header": {
+          "title": "Color",
+          "subTitle": "Special materials",
+          "introduction": "For our posters in special materials, we offer polypropylene and 260 gsm laid paper. These materials are available for color prints and offer unique properties that make them suitable for specific applications where durability and a distinctive appearance are important. Polypropylene is water-resistant and very sturdy, making it ideal for outdoor use or environments where the poster needs to stay up for a long time. The laid paper provides a natural, handmade appearance, making it suitable for luxury or artistic projects."
+        },
+        "tablePolypropylene": {
+          "header": {
+            "title": "Color",
+            "subTitle": "Polypropylene"
+          }
+        },
+        "table260gsmHandmade": {
+          "header": {
+            "title": "Color",
+            "subTitle": "260 gsm Handmade paper"
+          }
+        }
+      },
+      "cardColorA3": {
+        "header": {
+          "title": "Color",
+          "subTitle": "A4 Format",
+          "introduction": "For A3 posters, we offer two options in different qualities and materials. The high-quality option is printed on 150 gsm paper with bleed, ideal for a premium finish. Additionally, we provide a budget-friendly option printed on 80 gsm paper with a white border. Both available for full color prints."
+        },
+        "table150gsm": {
+          "header": {
+            "title": "A3 High Quality - Full color",
+            "subTitle": "Edge-to-edge printed on 150 gsm paper"
+          }
+        },
+        "table80gsm": {
+          "header": {
+            "title": "A3 Budget Quality - Full color",
+            "subTitle": "With white border on 80 gsm paper"
+          }
+        }
       }
     },
     "common": {
-      "digitalPrint": "DIGITAL PRINTING",
       "digitalPrintDeliveryTime": "Delivery in 1-2 working days",
-      "offsetPrint": "OFFSET PRINTING",
       "offsetPrintDeliveryTime": "Delivery in 7 working days",
-      "deliveryDisclaimer": "Delivery times are always subject to change. No rights can be derived from them. We are not responsible for any delays caused by our in-house printer."
+      "deliveryDisclaimer": "Delivery times are always subject to change. No rights can be derived from them. We are not responsible for any delays caused by our in-house printer.",
+      "pricesBasedonSelfService": "Prices are based on self-service."
     }
   },
   "copyPrintPage": {
-    "title": "Copy and Print",
-    "titleLaminate": "Binding or laminating",
-    "introduction": "Easily and quickly take care of your copies and prints using our services. Our self-service printers allow you to print documents directly from a USB stick or download them from your email.",
-    "introductionBinding": "We also offer binding and laminating services to give your documents a neat and professional finish. Perfect for business purposes, school projects, or personal documents!",
-    "introductionBudgetTable": "For copying and printing, we offer budget-friendly 80 gsm A4 paper, suitable for both color and black-and-white prints. This paper is ideal for everyday printing and copying needs. The listed prices are based on self-service, allowing you to process your documents quickly and affordably. Please use printers 1 to 3 for this paper.",
-    "introductionHqTable": "For high-quality copies and prints, we offer 90 gsm A4 paper, suitable for both color and black-and-white printing. This paper provides a professional appearance with a sturdier and smoother finish. For the best results, please use printer 4, which is specifically configured for this paper quality.",
-    "printerOneToThree": "| Printer 1 to 3",
-    "printerFour": "| Printer 4",
-    "notificationFirst": "Budget prices are based on self-service; submitted orders (via email) are printed exclusively on High Quality printers.",
-    "notificationSecond": "- A3 sized paper is 2x the printing price.",
-    "notificationThird": "- Double sided prints count as 2 prints."
+    "pageHeaderContent": {
+      "title": "Copy and Print",
+      "introduction": "Easily and quickly take care of your copies and prints using our services. Our self-service printers allow you to print documents directly from a USB stick or download them from your email.<br /><br />We also offer binding and laminating services to give your documents a neat and professional finish. Perfect for business purposes, school projects, or personal documents."
+    },
+    "cardBudget": {
+      "header": {
+        "title": "BUDGET",
+        "subTitle": "Color or Black and White",
+        "introduction": "For copying and printing, we offer budget-friendly 80 gsm A4 paper, suitable for both color and black-and-white prints. This paper is ideal for everyday printing and copying needs. The listed prices are based on self-service, allowing you to process your documents quickly and affordably. Please use printers 1 to 3 for this paper."
+      },
+      "tableColor": {
+        "title": "A4 Color | Printer 1 to 3",
+        "subTitle": "80 gsm paper"
+      },
+      "tableBlackAndWhite": {
+        "title": "A4 Black and White | Printer 4",
+        "subTitle": "80 gsm paper"
+      }
+    },
+    "cardHq": {
+      "header": {
+        "title": "HIGH QUALITY",
+        "subTitle": "Color or Black and White",
+        "introduction": "For high-quality copies and prints, we offer 90 gsm A4 paper, suitable for both color and black-and-white printing. This paper provides a professional appearance with a sturdier and smoother finish. For the best results, please use printer 4, which is specifically configured for this paper quality."
+      },
+      "tableHq": {
+        "title": "A4 Black and White | Printer 4",
+        "subTitle": "90 gsm paper"
+      }
+    },
+    "notifications": {
+      "first": "Budget prices are based on self-service; submitted orders (via email) are printed exclusively on High Quality printers.",
+      "second": "- A3 sized paper is 2x the printing price.",
+      "third": "- Double sided prints count as 2 prints."
+    }
   },
   "officeSupplies": {
     "title": "Office supplies",
@@ -335,7 +635,7 @@
   "commonWords": {
     "color": "Color",
     "colorCapital": "COLOR",
-    "blackWhite": "Black and White",
+    "blackAndWhite": "Black and White",
     "colorOrBlackWhite": "Color or Black and White",
     "colorOrBlackWhiteCapital": "COLOR OR BLACK AND WHITE",
     "vinyl": "Vinyl",

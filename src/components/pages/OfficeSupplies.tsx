@@ -1,7 +1,8 @@
 import { useTranslation } from 'react-i18next';
-import IntroductionOfficeSupplies from '../officeSupplies/Introduction';
 import OfficeSuppliesLogosCard from '../officeSupplies/OfficeSuppliesLogosCard';
 import { useData } from '../../context/DataContext';
+import PageTitleAndIntroduction from '../elementTemplates/PageTitleAndIntroduction';
+import { officeSuppliesPaths } from '../../lib/translationPaths';
 
 export default function OfficeSupplies() {
   useTranslation();
@@ -17,7 +18,10 @@ export default function OfficeSupplies() {
     >
       <div></div> {/* Left empty colomn */}
       <div className="flex flex-col items-start justify-start w-full px-2 pt-12">
-        <IntroductionOfficeSupplies />
+        <PageTitleAndIntroduction
+          title={officeSuppliesPaths.title}
+          introduction={officeSuppliesPaths.introduction}
+        />
         <OfficeSuppliesLogosCard />
       </div>
       <div></div> {/* Right empty colomn */}

@@ -1,15 +1,46 @@
 import { useTranslation } from 'react-i18next';
-import IntroductionStickers from '../../customPrint/stickers/Introduction';
-import StickersPricing from '../../customPrint/stickers/pricing/StickersPricing';
-import { shopInfoPaths } from '../../../lib/translationPaths';
+import {
+  shopInfoPaths,
+  stickersContentPaths,
+} from '../../../lib/translationPaths';
 import SendMessage from '../../contact/SendMessage';
 import { TextBlock } from '../../elementTemplates/TextBlock';
 import { Divider } from '@mui/material';
 import { useData } from '../../../context/DataContext';
+import PageTitleAndIntroduction from '../../elementTemplates/PageTitleAndIntroduction';
+import ContentCard from '../../elementTemplates/ContentCard';
+import { t } from 'i18next';
 
 export default function Stickers() {
   useTranslation();
-  const { stylePreset } = useData();
+  const { stylePreset, prices } = useData();
+
+  // Get prices, if available
+  const pricePathStickers = prices
+    ? [...Object.values(prices.customPrint.stickers)]
+    : [];
+
+  // Stickers Large Format - Collect data for pricing table
+  const tableLargeFormat = {
+    hasAsterisk: false,
+    tableTitle:
+      stickersContentPaths.cardLargeFormat.tableLargeFormat.header.title,
+    tableSubTitle:
+      stickersContentPaths.cardLargeFormat.tableLargeFormat.header.subTitle,
+    data: {
+      headerTitles: [t('commonWords.format'), t('commonWords.pricePerPrint')],
+      units: [],
+      options: [
+        t(
+          'customPrintPage.stickers.cardLargeFormat.tableLargeFormat.rowHeaders.headerOne'
+        ),
+        t(
+          'customPrintPage.stickers.cardLargeFormat.tableLargeFormat.rowHeaders.headerTwo'
+        ),
+      ],
+      prices: pricePathStickers,
+    },
+  };
 
   return (
     <div
@@ -18,13 +49,32 @@ export default function Stickers() {
       ${stylePreset.overall.backgroundColor}
     `}
     >
-      <div></div> {/* Left empty colomn */}
+      {/* Left empty colomn */}
+      <div></div>
+
+      {/* Page introduction - Introduction text with or without an image */}
       <div className="flex flex-col items-start justify-start gap-4 w-full px-2 pt-12">
-        <IntroductionStickers />
-        <StickersPricing
+        <div className="mb-16">
+          <PageTitleAndIntroduction
+            image={stickersContentPaths.data.image}
+            title={stickersContentPaths.pageHeader.title}
+            introduction={stickersContentPaths.pageHeader.introduction}
+          />
+        </div>
+        {/* Stickers Large format content card*/}
+        <ContentCard
           bgColor={stylePreset.categoryCard.backgroundColorLight}
+          headerContent={{
+            cardTitle: stickersContentPaths.cardLargeFormat.header.title,
+            cardSubTitle: stickersContentPaths.cardLargeFormat.header.subTitle,
+            cardIntroduction:
+              stickersContentPaths.cardLargeFormat.header.introduction,
+            notification: undefined,
+          }}
+          tableContent={[tableLargeFormat]}
         />
-        <br />
+
+        {/* Divider - Visually create the end of the pricing content  */}
         <Divider
           style={{
             backgroundColor: `${stylePreset.overall.diverderColor}`,
@@ -34,6 +84,8 @@ export default function Stickers() {
           flexItem
           variant="fullWidth"
         />
+
+        {/* Message section at the bottom, introduced by an introduction text */}
         <div className="pb-2">
           <TextBlock value={shopInfoPaths.contactTitle} variant={'subTitle'} />
         </div>
@@ -41,7 +93,9 @@ export default function Stickers() {
           <SendMessage />
         </div>
       </div>
-      <div></div> {/* Right empty colomn */}
+
+      {/* Right empty colomn */}
+      <div></div>
     </div>
   );
 }

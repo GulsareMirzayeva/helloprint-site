@@ -2,20 +2,37 @@ import { useData } from '../../context/DataContext';
 import { PageTitleType } from '../../lib/types/customPrintType';
 import { TextBlock } from './TextBlock';
 
-export function TitleWithIntroduction({ props }: { props: PageTitleType }) {
+/* 
+
+The title and introduction text on a categorycard
+
+*/
+
+export function ContentCardTitleAndIntroduction({
+  props,
+}: {
+  props: PageTitleType;
+}) {
   const { stylePreset } = useData();
 
   return (
     <div>
       <div className="flex flex-col sm:flex-row py-4 sm:py-0">
         <div className="flex flex-wrap">
+          {/* Title */}
           <TextBlock value={props.mainTitle} variant="subTitleMedium" />
-          &nbsp;
-          <span className="text-2xl"> - </span>
-          &nbsp;
-          <div className={`${stylePreset.overall.textColorSecondary}`}>
-            <TextBlock value={props.subTitle} variant="tableSubTitle" />
-          </div>
+
+          {/* If there is a subtitle, display a dash symbol between maintitle and subtitle as a divider */}
+          {props.subTitle && (
+            <div className={`flex ${stylePreset.overall.textColorSecondary}`}>
+              &nbsp;
+              <span className="text-2xl"> - </span>
+              &nbsp;
+              <div>
+                <TextBlock value={props.subTitle} variant="tableSubTitle" />
+              </div>
+            </div>
+          )}
         </div>
       </div>
       {props.notification && (

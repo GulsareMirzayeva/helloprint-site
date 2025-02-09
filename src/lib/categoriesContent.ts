@@ -9,36 +9,36 @@ import {
 // Card background colors to choose from, displayed on the 'custom print'-overview page
 
 export const stickersContent = {
-  titlePath: stickersContentPaths.title,
-  textContentPath: stickersContentPaths.introduction,
+  titlePath: stickersContentPaths.pageHeader.title,
+  textContentPath: stickersContentPaths.pageHeader.introduction,
   pageLink: '/custom-print/stickers',
-  image: stickersContentPaths.image,
+  image: stickersContentPaths.data.image,
 };
 
 export const cardsContent = {
-  titlePath: cardsContentPaths.title,
-  textContentPath: cardsContentPaths.introduction,
+  titlePath: cardsContentPaths.pageHeader.title,
+  textContentPath: cardsContentPaths.pageHeader.introduction,
   pageLink: '/custom-print/cards',
-  image: cardsContentPaths.image,
+  image: cardsContentPaths.data.image,
 };
 
 export const flyersContent = {
-  titlePath: flyersContentPaths.title,
-  textContentPath: flyersContentPaths.introduction,
+  titlePath: flyersContentPaths.pageHeader.title,
+  textContentPath: flyersContentPaths.pageHeader.introduction,
   pageLink: '/custom-print/flyers',
-  image: flyersContentPaths.image,
+  image: flyersContentPaths.data.image,
 };
 
 export const foldersContent = {
-  titlePath: foldersContentPaths.title,
-  textContentPath: foldersContentPaths.introduction,
+  titlePath: foldersContentPaths.pageHeader.title,
+  textContentPath: foldersContentPaths.pageHeader.introduction,
   pageLink: '/custom-print/folders',
-  image: foldersContentPaths.image,
+  image: foldersContentPaths.data.image,
 };
 
 export const postersContent = {
-  titlePath: postersContentPaths.title,
-  textContentPath: postersContentPaths.introduction,
+  titlePath: postersContentPaths.pageHeader.title,
+  textContentPath: postersContentPaths.pageHeader.introduction,
   pageLink: '/custom-print/posters',
-  image: postersContentPaths.image,
+  image: postersContentPaths.data.image,
 };

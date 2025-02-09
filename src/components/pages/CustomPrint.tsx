@@ -1,9 +1,9 @@
-import OverviewCategoryCard from '../customPrint/overview/OverviewCategoryCard';
+import OverviewCategoryCard from '../elementTemplates/categoryOverviewCard';
 import SendMessage from '../contact/SendMessage';
 import { TextBlock } from '../elementTemplates/TextBlock';
 import { useTranslation } from 'react-i18next';
 import {
-  customPrintingContentPaths,
+  customPrintOverviewContentPaths,
   shopInfoPaths,
 } from '../../lib/translationPaths';
 import {
@@ -15,6 +15,7 @@ import {
 } from '../../lib/categoriesContent';
 import { Divider } from '@mui/material';
 import { useData } from '../../context/DataContext';
+import PageTitleAndIntroduction from '../elementTemplates/PageTitleAndIntroduction';
 
 export default function CustomPrint() {
   useTranslation(); // Make the content directly translatable
@@ -37,21 +38,15 @@ export default function CustomPrint() {
     `}
     >
       <div></div> {/* Left empty colomn */}
-      <div className="flex flex-col items-start justify-start w-full px-2 pt-12">
-        {/* Title and introduction text at the top of the page */}
-        <div className="flex flex-col pb-16 px-2">
-          <TextBlock
-            value={customPrintingContentPaths.title}
-            variant={'pageTitle'}
-          />
-          <TextBlock
-            value={customPrintingContentPaths.introduction}
-            variant={'body'}
-          />
-        </div>
+      {/* Title and introduction text at the top of the page */}
+      <div className="flex flex-col items-start justify-start w-full px-2 py-12">
+        <PageTitleAndIntroduction
+          title={customPrintOverviewContentPaths.overviewTitle}
+          introduction={customPrintOverviewContentPaths.overviewIntroduction}
+        />
 
         {/* Create a overview card for each category */}
-        <div className="flex flex-col gap-8 pb-8">
+        <div className="flex flex-col gap-8 py-8">
           {cardItems.map((item, index) => (
             <OverviewCategoryCard
               key={index}
