@@ -21,6 +21,7 @@ const logoList = [logo1, logo2, logo6, logo3, logo8, logo9];
 // Common used words
 export const commonWords = {
   color: 'commonWords.color',
+  colored: 'commonWords.colored',
   blackAndWhite: 'commonWords.blackAndWhite',
   prints: 'commonWords.prints',
 };

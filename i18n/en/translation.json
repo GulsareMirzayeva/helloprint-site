@@ -167,8 +167,8 @@
           "subTitle": ""
         },
         "columnHeaders": {
-          "headTextileWhite": "Textile White",
-          "headTextileColor": "Textile Colored"
+          "headTextileWhite": "White Textile",
+          "headTextileColor": "Colored Textile"
         },
         "variants": {
           "frontChestLogo": "Front chest logo",
@@ -634,6 +634,7 @@
   },
   "commonWords": {
     "color": "Color",
+    "colored": "Colored",
     "colorCapital": "COLOR",
     "blackAndWhite": "Black and White",
     "colorOrBlackWhite": "Color or Black and White",
@@ -647,7 +648,7 @@
     "perPiece": "Per piece",
     "prints": "Prints",
     "price": "Price",
-    "clothingPiece": "Clothing piece",
+    "clothingGarment": "Garment",
     "format": "Size",
     "cards": "Cards",
     "flyers": "Flyers",

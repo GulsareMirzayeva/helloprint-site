@@ -30,10 +30,10 @@ export function getTableTextileGarments() {
       headerTitles: [
         t('commonWords.textile'),
         t('commonWords.blackAndWhite'),
-        t('commonWords.color'),
+        t('commonWords.colored'),
       ],
       units: [
-        t('commonWords.clothingPiece'),
+        t('commonWords.clothingGarment'),
         t('commonWords.pricePerPrint'),
         t('commonWords.pricePerPrint'),
       ],

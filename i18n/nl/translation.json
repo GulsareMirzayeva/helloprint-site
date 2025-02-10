@@ -174,8 +174,8 @@
           "subTitle": ""
         },
         "columnHeaders": {
-          "headTextileWhite": "Textiel Wit",
-          "headTextileColor": "Textiel Gekleurd"
+          "headTextileWhite": "Wit textiel",
+          "headTextileColor": "Gekleurd textiel"
         },
         "variants": {
           "frontChestLogo": "Voorkant borst logo",
@@ -642,6 +642,7 @@
   },
   "commonWords": {
     "color": "Kleur",
+    "colored": "Gekleurd",
     "colorCapital": "KLEUR",
     "blackAndWhite": "Zwart/wit",
     "colorOrBlackWhite": "Kleur of zwart/wit",
@@ -655,7 +656,7 @@
     "perPiece": "Per stuk",
     "prints": "Prints",
     "price": "Prijs",
-    "clothingPiece": "Kledingstuk",
+    "clothingGarment": "Kledingstuk",
     "format": "Formaat",
     "cards": "Kaarten",
     "flyers": "Flyers",

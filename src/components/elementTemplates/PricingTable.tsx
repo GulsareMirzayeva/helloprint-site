@@ -12,16 +12,24 @@ type PricingTableTypes = {
 };
 
 // Function that displays prices with a dot or comma as decimal, depending on the selected language
-const PriceDisplay: FC<{ price: number; language: string }> = ({
-  price,
-  language,
-}) => {
-  const formattedPrice = new Intl.NumberFormat(language, {
-    style: 'currency',
-    currency: 'EUR',
-  }).format(price);
+const PriceDisplay: FC<{
+  value: string | number;
+  language: string;
+  isCurrency?: boolean;
+}> = ({ value, language, isCurrency = false }) => {
+  // Controleren of de waarde een geldig nummer is
+  const numericValue = Number(value);
+  const isNumber = !isNaN(numericValue);
 
-  return <span>{formattedPrice}</span>;
+  // Formatteren als valuta of als duizendtal
+  const formattedValue = isNumber
+    ? new Intl.NumberFormat(language, {
+        style: isCurrency ? 'currency' : 'decimal',
+        currency: 'EUR',
+      }).format(numericValue)
+    : value; // Geen nummer? Toon de originele waarde
+
+  return <span>{formattedValue}</span>;
 };
 
 // Dynamicly render a pricing table
@@ -103,7 +111,7 @@ export default function PricingTable({
                 `}
                 scope="row"
               >
-                <b>{row.option}</b>
+                <PriceDisplay value={row.option} language={i18n.language} />
               </th>
 
               {rowPrices.map((price, priceIndex) => (
@@ -114,7 +122,11 @@ export default function PricingTable({
                     ${stylePreset.table.cellBorderColor}
                   `}
                 >
-                  <PriceDisplay price={price} language={i18n.language} />
+                  <PriceDisplay
+                    value={price}
+                    language={i18n.language}
+                    isCurrency={true}
+                  />
                 </td>
               ))}
             </tr>

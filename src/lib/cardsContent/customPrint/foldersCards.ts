@@ -1,6 +1,10 @@
 import { t } from 'i18next';
 import { prices } from '../../../api/data/prices';
-import { lowPriceOptions, bulkPriceOptions } from '../../priceCategories';
+import {
+  lowPriceOptions,
+  bulkPriceOptions,
+  basePriceOptions,
+} from '../../priceCategories';
 import { foldersContentPaths } from '../../translationPaths';
 
 // Digital print Color or Black and White - Collect data for pricing table
@@ -21,6 +25,7 @@ export function getTableDigitalPrintColor() {
         t('commonWords.amount'),
         t('commonWords.price'),
         t('commonWords.price'),
+        t('commonWords.price'),
       ],
       options: lowPriceOptions,
       prices: [...Object.values(prices.customPrint.folders.print.A4.color)],
@@ -39,7 +44,7 @@ export function getTableDigitalPrintBlackAndWhite() {
     data: {
       headerTitles: [t('commonWords.folders'), t('PaperWeights.80grShort')],
       units: [t('commonWords.amount'), t('commonWords.price')],
-      options: lowPriceOptions,
+      options: basePriceOptions,
       prices: [
         ...Object.values(prices.customPrint.folders.print.A4.blackWhite),
       ],

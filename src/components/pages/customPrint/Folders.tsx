@@ -15,13 +15,11 @@ import {
   getTableOffsetPrintA3Trifold,
   getTableOffsetPrintA4Bifold,
   getTableOffsetPrintA4Trifold,
+  getTableDigitalPrintBlackAndWhite,
+  getTableDigitalPrintColor,
 } from '../../../lib/cardsContent/customPrint/foldersCards';
 import { useEffect, useState } from 'react';
 import i18n from '../../../utils/i18';
-import {
-  getTableDigitalPrintBlackAndWhite,
-  getTableDigitalPrintColor,
-} from '../../../lib/cardsContent/customPrint/businessCards';
 
 export default function Folders() {
   // Make text content translatable

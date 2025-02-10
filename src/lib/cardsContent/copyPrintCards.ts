@@ -1,6 +1,7 @@
 import { t } from 'i18next';
 import { prices } from '../../api/data/prices';
 import {
+  splitPriceOptions,
   splitPriceOptionsExtendedHigh,
   splitPriceOptionsExtendedLow,
 } from '../priceCategories';
@@ -15,7 +16,7 @@ export function getTableDataBudgetColor() {
     data: {
       headerTitles: [t('commonWords.prints'), t('commonWords.color')],
       units: [t('commonWords.amount'), t('commonWords.pricePerPrint')],
-      options: splitPriceOptionsExtendedHigh,
+      options: splitPriceOptions,
       prices: [...Object.values(prices.copyPrint.A4.color)],
     },
   };
@@ -45,8 +46,8 @@ export function getTableDataHq() {
     data: {
       headerTitles: [
         t('commonWords.prints'),
-        t('commonWords.color'),
         t('commonWords.blackAndWhite'),
+        t('commonWords.color'),
       ],
       units: [
         t('commonWords.amount'),
