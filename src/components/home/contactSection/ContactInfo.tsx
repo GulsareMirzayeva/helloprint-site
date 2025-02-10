@@ -11,7 +11,10 @@ import {
 import { useData } from '../../../context/DataContext';
 
 export default function ContactInfo() {
+  // Make text content translatable
   const { t } = useTranslation();
+
+  // Get acces to styling preset colors
   const { stylePreset } = useData();
 
   return (

@@ -3,8 +3,10 @@ import TermsOfSaleContent from '../termsOfSale/TermsOfSaleContent';
 import { useData } from '../../context/DataContext';
 
 export default function TermsOfSalePage() {
+  // Make text content translatable
   useTranslation();
 
+  // Get acces to styling preset colors
   const { stylePreset } = useData();
 
   return (

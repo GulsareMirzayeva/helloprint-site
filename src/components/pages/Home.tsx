@@ -7,7 +7,10 @@ import SkylineStrip from '../SkylineStrip';
 import { useData } from '../../context/DataContext';
 
 export default function Home() {
+  // Make text content translatable
   useTranslation();
+
+  // Get acces to styling preset colors
   const { stylePreset } = useData();
 
   return (

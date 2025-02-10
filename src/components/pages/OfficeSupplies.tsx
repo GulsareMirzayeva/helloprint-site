@@ -5,8 +5,10 @@ import PageTitleAndIntroduction from '../elementTemplates/PageTitleAndIntroducti
 import { officeSuppliesPaths } from '../../lib/translationPaths';
 
 export default function OfficeSupplies() {
+  // Make text content translatable
   useTranslation();
 
+  // Get acces to styling preset colors
   const { stylePreset } = useData();
 
   return (

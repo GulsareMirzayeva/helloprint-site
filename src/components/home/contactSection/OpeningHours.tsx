@@ -6,6 +6,7 @@ import {
 import { useData } from '../../../context/DataContext';
 
 export default function OpeningHours() {
+  // Get acces to styling preset colors
   const { stylePreset } = useData();
 
   return (

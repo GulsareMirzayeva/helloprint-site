@@ -1,3 +1,4 @@
+// Page heading images
 import image7 from '../assets/introduction-images/image7.jpg';
 import image6 from '../assets/introduction-images/image6.jpg';
 import image5 from '../assets/introduction-images/image5.jpg';
@@ -6,6 +7,7 @@ import image3 from '../assets/introduction-images/image3.jpg';
 import image2 from '../assets/introduction-images/image2.jpg';
 import image1 from '../assets/introduction-images/image1.jpg';
 
+// Logo's for Office supplies page
 import logo1 from '../assets/officeSupplies/logoipsum-214.png';
 import logo2 from '../assets/officeSupplies/logoipsum-245.png';
 import logo3 from '../assets/officeSupplies/logoipsum-264.png';
@@ -16,12 +18,14 @@ import logo9 from '../assets/officeSupplies/logoipsum-333.png';
 // List of brands that are displayed on the Office Supplies page
 const logoList = [logo1, logo2, logo6, logo3, logo8, logo9];
 
+// Common used words
 export const commonWords = {
   color: 'commonWords.color',
   blackAndWhite: 'commonWords.blackAndWhite',
   prints: 'commonWords.prints',
 };
 
+// Paths to homepage information content in translation files
 export const homeContentPaths = {
   title: 'home.title',
   subTitle: 'home.subTitle',
@@ -29,6 +33,7 @@ export const homeContentPaths = {
   readMore: 'home.readMore',
 };
 
+// Paths to Shop information information content in translation files
 export const shopInfoPaths = {
   name: "Copy & Print shop 't Hartje",
   adress: 'Straatnaam 123',
@@ -178,16 +183,100 @@ export const customPrintingContentPaths = {
   pricesBasedonSelfService: 'customPrintPage.common.pricesBasedonSelfService',
 };
 
+// Contact form
+export const contactFormTextContentPaths = {
+  sendMessage: 'contactPage.sendMessage',
+  formUserName: 'contactPage.formUserName',
+  formUserTelNumber: 'contactPage.formUserTelNumber',
+  formUserEmailAdress: 'contactPage.formUserEmailAdress',
+  messageContent: 'contactPage.messageContent',
+  messageSubject: 'contactPage.messageSubject',
+  messageSubmit: 'contactPage.messageSubmit',
+  telephoneNo: 'commonWords.telephoneNo',
+  email: 'commonWords.email',
+  confirmMessage: 'shopInfo.contact.confirmMessage',
+};
+
+// Contact form error messages
+export const contactFormErrorPaths = {
+  telNoOnlyNumbers: 'shopInfo.contact.errors.telNoOnlyNumbers',
+  telNoMinNumbers: 'shopInfo.contact.errors.telNoMinNumbers',
+  telNoMaxNumbers: 'shopInfo.contact.errors.telNoMaxNumbers',
+  emailValidAddress: 'shopInfo.contact.errors.emailValidAddress',
+  messageMinChars: 'shopInfo.contact.errors.messageMinChars',
+  messageRequired: 'shopInfo.contact.errors.messageRequired',
+  requiredEmailOrTelNo: 'shopInfo.contact.errors.requiredEmailOrTelNo',
+};
+
+// Content for Office supplies page
+export const officeSuppliesPaths = {
+  data: {
+    logoList: logoList,
+  },
+  title: 'officeSupplies.title',
+  introduction: 'officeSupplies.introduction',
+};
+
 // Content displayed on the overview page of Custom print
 export const customPrintOverviewContentPaths = {
   overviewTitle: 'customPrintPage.overviewTitle',
   overviewIntroduction: 'customPrintPage.overviewIntroduction',
 };
 
-/*
-Custom Print - Business Cards
-*/
+// Copy & Print
+export const copyPrintContentPaths = {
+  // Used data
+  data: {
+    image: image5,
+  },
 
+  // Page header
+  pageHeaderContent: {
+    title: 'copyPrintPage.pageHeaderContent.title',
+    introduction: 'copyPrintPage.pageHeaderContent.introduction',
+    subTitle: 'copyPrintPage.pageHeaderContent.subTitle',
+    subIntroduction: 'copyPrintPage.pageHeaderContent.subIntroduction',
+  },
+
+  // Card - Budget
+  cardBudget: {
+    header: {
+      title: 'copyPrintPage.cardBudget.header.title',
+      subTitle: 'copyPrintPage.cardBudget.header.subTitle',
+      introduction: 'copyPrintPage.cardBudget.header.introduction',
+    },
+    tableColor: {
+      title: 'copyPrintPage.cardBudget.tableColor.title',
+      subTitle: 'copyPrintPage.cardBudget.tableColor.subTitle',
+    },
+    tableBlackAndWhite: {
+      title: 'copyPrintPage.cardBudget.tableBlackAndWhite.title',
+      subTitle: 'copyPrintPage.cardBudget.tableBlackAndWhite.subTitle',
+    },
+  },
+
+  // Card - High quality
+  cardHq: {
+    header: {
+      title: 'copyPrintPage.cardHq.header.title',
+      subTitle: 'copyPrintPage.cardHq.header.subTitle',
+      introduction: 'copyPrintPage.cardHq.header.introduction',
+    },
+    tableHq: {
+      title: 'copyPrintPage.cardHq.tableHq.title',
+      subTitle: 'copyPrintPage.cardHq.tableHq.subTitle',
+    },
+  },
+
+  // Notifications
+  notifications: {
+    first: 'copyPrintPage.notifications.first',
+    second: 'copyPrintPage.notifications.second',
+    third: 'copyPrintPage.notifications.third',
+  },
+};
+
+// Custom Print - Business Cards
 export const cardsContentPaths = {
   data: {
     image: image6,
@@ -260,10 +349,7 @@ export const cardsContentPaths = {
   },
 };
 
-/*
-Custom Print - Flyers
-*/
-
+// Custom Print - Flyers
 export const flyersContentPaths = {
   data: {
     image: image1,
@@ -326,10 +412,7 @@ export const flyersContentPaths = {
   },
 };
 
-/*
-Custom Print - Folders
-*/
-
+// Custom Print - Folders
 export const foldersContentPaths = {
   data: {
     image: image3,
@@ -405,10 +488,7 @@ export const foldersContentPaths = {
   },
 };
 
-/*
-Custom Print - Posters
-*/
-
+// Custom Print - Posters
 export const postersContentPaths = {
   data: {
     image: image4,
@@ -537,10 +617,7 @@ export const postersContentPaths = {
   },
 };
 
-/*
-Custom Print - Stickers
-*/
-
+// Custom Print - Stickers
 export const stickersContentPaths = {
   data: {
     image: image2,
@@ -577,91 +654,4 @@ export const stickersContentPaths = {
       },
     },
   },
-};
-
-/*
-Copy & Print
-*/
-
-export const copyPrintContentPaths = {
-  // Used data
-  data: {
-    image: image5,
-  },
-
-  // Page header
-  pageHeaderContent: {
-    title: 'copyPrintPage.pageHeaderContent.title',
-    introduction: 'copyPrintPage.pageHeaderContent.introduction',
-    subTitle: 'copyPrintPage.pageHeaderContent.subTitle',
-    subIntroduction: 'copyPrintPage.pageHeaderContent.subIntroduction',
-  },
-
-  // Card - Budget
-  cardBudget: {
-    header: {
-      title: 'copyPrintPage.cardBudget.header.title',
-      subTitle: 'copyPrintPage.cardBudget.header.subTitle',
-      introduction: 'copyPrintPage.cardBudget.header.introduction',
-    },
-    tableColor: {
-      title: 'copyPrintPage.cardBudget.tableColor.title',
-      subTitle: 'copyPrintPage.cardBudget.tableColor.subTitle',
-    },
-    tableBlackAndWhite: {
-      title: 'copyPrintPage.cardBudget.tableBlackAndWhite.title',
-      subTitle: 'copyPrintPage.cardBudget.tableBlackAndWhite.subTitle',
-    },
-  },
-
-  // Card - High quality
-  cardHq: {
-    header: {
-      title: 'copyPrintPage.cardHq.header.title',
-      subTitle: 'copyPrintPage.cardHq.header.subTitle',
-      introduction: 'copyPrintPage.cardHq.header.introduction',
-    },
-    tableHq: {
-      title: 'copyPrintPage.cardHq.tableHq.title',
-      subTitle: 'copyPrintPage.cardHq.tableHq.subTitle',
-    },
-  },
-
-  // Notifications
-  notifications: {
-    first: 'copyPrintPage.notifications.first',
-    second: 'copyPrintPage.notifications.second',
-    third: 'copyPrintPage.notifications.third',
-  },
-};
-
-export const contactFormTextContentPaths = {
-  sendMessage: 'contactPage.sendMessage',
-  formUserName: 'contactPage.formUserName',
-  formUserTelNumber: 'contactPage.formUserTelNumber',
-  formUserEmailAdress: 'contactPage.formUserEmailAdress',
-  messageContent: 'contactPage.messageContent',
-  messageSubject: 'contactPage.messageSubject',
-  messageSubmit: 'contactPage.messageSubmit',
-  telephoneNo: 'commonWords.telephoneNo',
-  email: 'commonWords.email',
-  confirmMessage: 'shopInfo.contact.confirmMessage',
-};
-
-export const contactFormErrorPaths = {
-  telNoOnlyNumbers: 'shopInfo.contact.errors.telNoOnlyNumbers',
-  telNoMinNumbers: 'shopInfo.contact.errors.telNoMinNumbers',
-  telNoMaxNumbers: 'shopInfo.contact.errors.telNoMaxNumbers',
-  emailValidAddress: 'shopInfo.contact.errors.emailValidAddress',
-  messageMinChars: 'shopInfo.contact.errors.messageMinChars',
-  messageRequired: 'shopInfo.contact.errors.messageRequired',
-  requiredEmailOrTelNo: 'shopInfo.contact.errors.requiredEmailOrTelNo',
-};
-
-export const officeSuppliesPaths = {
-  data: {
-    logoList: logoList,
-  },
-  title: 'officeSupplies.title',
-  introduction: 'officeSupplies.introduction',
 };

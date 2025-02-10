@@ -4,7 +4,10 @@ import { useData } from '../../context/DataContext';
 import { terms } from '../../lib/termsOfSaleItems';
 
 export default function TermsOfSaleContent() {
+  // Make text content translatable
   useTranslation();
+
+  // Get acces to styling preset colors and selected term
   const { activeTerm, stylePreset } = useData();
 
   return (
@@ -15,7 +18,6 @@ export default function TermsOfSaleContent() {
         </div>
 
         {/* Display all terms from the termsOfSaleItems list, highlight the background if the term is active */}
-
         {terms.map(({ term }) => (
           <div
             key={term}

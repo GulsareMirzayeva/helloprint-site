@@ -1,3 +1,10 @@
+const basePriceOptions: string[] = ['100', '250', '500', '1000'];
+const bulkPriceOptions: string[] = ['500', '1000', '2500', '5000', '10000'];
+const lowPriceOptions: string[] = ['50', '100', '250', '500'];
+const paperSizes: string[] = ['A2', 'B2', 'A1', 'B1', 'A0'];
+const shortBasePriceOptions: string[] = ['100', '250', '500'];
+const shortBulkPriceOptions: string[] = ['500', '1000', '2500', '5000'];
+const splitPriceOptions: string[] = ['1-100', '101-250', '251-500', '501-1000'];
 const splitPriceOptionsShort: string[] = ['1-100', '101-250', '251-500'];
 const splitPriceOptionsShortLow: string[] = ['1-10', '11-100', '101-250'];
 const splitPriceOptionsExtendedLow: string[] = [
@@ -12,14 +19,6 @@ const splitPriceOptionsExtendedHigh: string[] = [
   '101-1000',
   '1000+',
 ];
-const splitPriceOptions: string[] = ['1-100', '101-250', '251-500', '501-1000'];
-const mediumSplitPriceOptions: string[] = ['1-100', '101-250', '251-500'];
-const lowSplitPriceOptions: string[] = ['1-5', '6-10', '10Plus'];
-const lowPriceOptions: string[] = ['50', '100', '250', '500'];
-const basePriceOptions: string[] = ['100', '250', '500', '1000'];
-const shortBasePriceOptions: string[] = ['100', '250', '500'];
-const bulkPriceOptions: string[] = ['500', '1000', '2500', '5000', '10000'];
-const shortBulkPriceOptions: string[] = ['500', '1000', '2500', '5000'];
 const extendedBulkPriceOptions: string[] = [
   '500',
   '1000',
@@ -28,35 +27,6 @@ const extendedBulkPriceOptions: string[] = [
   '10000',
   '20000',
 ];
-const amountSelection: string[] = ['1-5', '6-10', '10+'];
-
-const paperSizes: string[] = ['A2', 'B2', 'A1', 'B1', 'A0'];
-
-const paperSizesExtended: string[] = ['A2', 'B2', 'A1', 'B1', 'A0'];
-
-const textileCategories: string[] = [
-  'customClothingPage.cardTextileGarments.tableTextileGarments.variants.shirt',
-  'customClothingPage.cardTextileGarments.tableTextileGarments.variants.polo',
-  'customClothingPage.cardTextileGarments.tableTextileGarments.variants.sweater',
-  'customClothingPage.cardTextileGarments.tableTextileGarments.variants.hoody',
-];
-
-const flexCategories: string[] = [
-  'customClothingPage.cardFlexAndDtg.tableFlex.variants.frontChestLogo',
-  'customClothingPage.cardFlexAndDtg.tableFlex.variants.frontBackLarge',
-  'customClothingPage.cardFlexAndDtg.tableFlex.variants.frontSmallBackLarge',
-];
-
-const dtgCategories: string[] = [
-  'customClothingPage.cardFlexAndDtg.tableDtg.variants.frontChestLogo',
-  'customClothingPage.cardFlexAndDtg.tableDtg.variants.frontBackLarge',
-  'customClothingPage.cardFlexAndDtg.tableDtg.variants.frontSmallBackLarge',
-];
-
-const stickersCategories: string[] = [
-  'customPrintPage.stickers.cardLargeFormat.tableLargeFormat.rowHeaders.headerOne',
-  'customPrintPage.stickers.cardLargeFormat.tableLargeFormat.rowHeaders.headerTwo',
-];
 
 export {
   splitPriceOptionsShort,
@@ -64,19 +34,11 @@ export {
   splitPriceOptionsExtendedLow,
   splitPriceOptionsExtendedHigh,
   splitPriceOptions,
-  mediumSplitPriceOptions,
-  lowSplitPriceOptions,
   lowPriceOptions,
   basePriceOptions,
   shortBasePriceOptions,
   bulkPriceOptions,
   shortBulkPriceOptions,
   extendedBulkPriceOptions,
-  amountSelection,
   paperSizes,
-  paperSizesExtended,
-  textileCategories,
-  flexCategories,
-  dtgCategories,
-  stickersCategories,
 };

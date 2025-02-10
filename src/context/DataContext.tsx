@@ -15,12 +15,13 @@ import { darkTheme, lightTheme } from '../lib/stylePresets';
 const DataContext = createContext<DataContextType | undefined>(undefined);
 
 export function DataProvider({ children }: { children: ReactNode }) {
+  // Manage color themes
+  // Use the local storage value for theme selection if it excists, otherwise use system preference
   const getStoredTheme = () => localStorage.getItem('theme');
   const prefersDarkMode = window.matchMedia(
     '(prefers-color-scheme: dark)'
   ).matches;
 
-  // Use the local storage value for theme selection if it excists, otherwise use system preference
   const initialDarkMode =
     getStoredTheme() === 'dark' || (!getStoredTheme() && prefersDarkMode);
   const [darkMode, setDarkMode] = useState(initialDarkMode);
@@ -28,6 +29,7 @@ export function DataProvider({ children }: { children: ReactNode }) {
     darkMode ? darkTheme : lightTheme
   );
 
+  // Initialize all data
   // const [prices] = useState<Prices | null>(null); // Enable when using API endpoint
   const [prices] = useState<Prices | null>(localPrices as unknown as Prices); // Quick type fix
   const [error, setError] = useState<Error | null>(null);

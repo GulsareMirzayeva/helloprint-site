@@ -6,6 +6,7 @@ import {
 } from '../lib/types/headerNavigationTypes';
 import { useData } from '../context/DataContext';
 
+// This returns a custom navigation links with a dynamic value
 export const NavigationLink = (linkProps: NavigationType) => {
   const { stylePreset } = useData();
 
@@ -26,6 +27,7 @@ export const NavigationLink = (linkProps: NavigationType) => {
   );
 };
 
+// This returns a custom subnavigation links with a dynamic value
 export const SubNavigationLink = (linkProps: SubNavigationType) => {
   const { stylePreset } = useData();
 

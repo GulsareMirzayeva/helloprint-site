@@ -3,6 +3,7 @@ import ContactInfo from './contactSection/ContactInfo';
 import OpeningHours from './contactSection/OpeningHours';
 
 export default function ContactSection() {
+  // Get acces to styling preset colors
   const { stylePreset } = useData();
 
   return (

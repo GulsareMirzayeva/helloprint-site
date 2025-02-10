@@ -6,7 +6,10 @@ import { useTranslation } from 'react-i18next';
 import { useData } from '../context/DataContext';
 
 export default function Footer() {
+  // Make text content translatable
   useTranslation();
+
+  // Get acces to styling preset colors
   const { stylePreset } = useData();
 
   return (

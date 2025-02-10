@@ -9,7 +9,10 @@ import { TextBlock } from '../elementTemplates/TextBlock';
 import { useData } from '../../context/DataContext';
 
 export default function Contact() {
+  // Make text content translatable
   useTranslation();
+
+  // Get acces to styling preset colors
   const { stylePreset } = useData();
 
   return (

@@ -9,10 +9,16 @@ import { Link } from 'react-router-dom';
 import { useData } from '../../context/DataContext';
 
 export default function ProductCards() {
+  // Make text content translatable
   const { t } = useTranslation();
+
+  // Get acces to styling preset colors
   const { stylePreset } = useData();
+
+  // Create a list of icons
   const icons = [paper, leaflet, tshirt, supplies];
 
+  // Get text content for product cards on the homepage
   const categoryCardsContent = t('categoryCardsContent', {
     returnObjects: true,
   });

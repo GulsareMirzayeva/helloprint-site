@@ -18,7 +18,10 @@ import { useData } from '../../context/DataContext';
 import PageTitleAndIntroduction from '../elementTemplates/PageTitleAndIntroduction';
 
 export default function CustomPrint() {
-  useTranslation(); // Make the content directly translatable
+  // Make text content translatable
+  useTranslation();
+
+  // Get acces to styling preset colors
   const { stylePreset } = useData();
 
   // Collect the content of categories that will be displayed in a card on the overview page
