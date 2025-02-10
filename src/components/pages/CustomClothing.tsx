@@ -123,7 +123,7 @@ export default function CustomClothing() {
           style={{
             backgroundColor: `${stylePreset.overall.diverderColor}`,
             marginTop: '16px',
-            marginBottom: '32px',
+            marginBottom: '64px',
           }}
           flexItem
           variant="fullWidth"

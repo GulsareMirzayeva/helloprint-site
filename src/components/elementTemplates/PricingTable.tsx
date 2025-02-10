@@ -68,6 +68,7 @@ export default function PricingTable({
               className={`
                 border px-3 py-1 text-left font-medium italic
                 ${stylePreset.table.unitsBorderColor}
+                ${stylePreset.table.unitsBackgroundColor}
                 `}
               scope="row"
             >

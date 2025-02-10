@@ -23,11 +23,11 @@ export function TextBlock({ value, variant }: TextBlockType) {
   const classNames = {
     pageTitle: 'text-4xl pb-4 font-medium',
     subTitle: 'text-2xl pb-2 font-normal',
-    subTitleMedium: 'text-2xl pb-0 md:pb-3 font-bold',
+    subTitleMedium: 'text-2xl font-bold',
     tableSubTitle: 'text-large',
     sectionTitle: 'text-large font-bold',
     tableTitle: 'text-large font-bold',
-    cardTitle: 'text-2xl pb-0 md:pb-3 font-bold',
+    cardTitle: 'text-2xl font-bold',
     xl5Title: 'text-5xl font-bold',
     xl4Title: 'text-4xl font-bold',
     xl2Title: 'text-2xl font-bold',

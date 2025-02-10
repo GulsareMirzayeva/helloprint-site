@@ -53,10 +53,11 @@ export type StylePresetType = {
   };
 
   table: {
+    headTextColor: string;
     headBackgroundColor: string;
     headBorderColor: string;
     unitsBorderColor: string;
-    headTextColor: string;
+    unitsBackgroundColor: string;
     cellBackgroundEven: string;
     cellBackgroundOdd: string;
     cellBorderColor: string;

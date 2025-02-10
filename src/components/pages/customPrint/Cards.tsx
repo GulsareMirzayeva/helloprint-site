@@ -115,7 +115,7 @@ export default function Cards() {
           style={{
             backgroundColor: `${stylePreset.overall.diverderColor}`,
             marginTop: '16px',
-            marginBottom: '24px',
+            marginBottom: '64px',
           }}
           flexItem
           variant="fullWidth"

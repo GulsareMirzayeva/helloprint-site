@@ -62,21 +62,22 @@ export const lightTheme = {
   // Categorie kaarten op pagina's waar prijstabellen worden weergegeven
   // Wordt ook gebruikt in Terms of Sale pagina waar een geselecteerde sectie wordt gehighlight
   categoryCard: {
-    backgroundColorDark: 'bg-gray-100', // Kaartkleur, zelfde kleur als achtergrond
+    backgroundColorDark: 'bg-gray-200', // Kaartkleur, zelfde kleur als achtergrond
     backgroundColorLight: 'bg-gray-200', // Highlighted kaartkleur
     backgroundColorActive: 'bg-gray-200', // Terms of Sale actieve sectie
   },
 
   // Prijstabellen
   table: {
+    headTextColor: 'text-gray-50', // Tekstkleur voor titel
     headBackgroundColor: 'bg-[#fb0036]', // Achtergrondkleur voor titel
     headBorderColor: 'border-gray-50', // Randkleur voor titel header
     unitsBorderColor: 'border-[#c2c2c2]', // Randkleur voor units rij
-    headTextColor: 'text-gray-50', // Tekstkleur voor titel
-    cellBackgroundEven: 'even:bg-gray-50', // Achtergrondkleur voor even regels
-    cellBackgroundOdd: 'odd:bg-gray-100', // Achtergrondkleur voor oneven regels
+    unitsBackgroundColor: 'bg-gray-50', // Randkleur voor units rij
+    cellBackgroundEven: 'even:bg-gray-200', // Achtergrondkleur voor even regels
+    cellBackgroundOdd: 'odd:bg-gray-50', // Achtergrondkleur voor oneven regels
     cellBorderColor: 'border-[#c2c2c2]', // Randkleur voor prijs sectie
-    highlightRow: 'hover:bg-gray-300', // Achtergrondkleur voor regel bij aanwijzen
+    highlightRow: 'hover:bg-gray-400', // Achtergrondkleur voor regel bij aanwijzen
   },
 
   // Extra informatie onderaan de pagina content, wanneer van toepassing
@@ -166,19 +167,20 @@ export const darkTheme = {
   // Categorie kaarten op pagina's waar prijstabellen worden weergegeven
   // Wordt ook gebruikt in Terms of Sale pagina waar een geselecteerde sectie wordt gehighlight
   categoryCard: {
-    backgroundColorDark: 'bg-[#242425]', // Kaartkleur, zelfde kleur als achtergrond
+    backgroundColorDark: 'bg-[#2c2c2c]', // Kaartkleur, zelfde kleur als achtergrond
     backgroundColorLight: 'bg-[#2c2c2c]', // Highlighted kaartkleur
     backgroundColorActive: 'bg-gray-600', // Terms of Sale actieve sectie
   },
 
   // Prijstabellen
   table: {
-    headBackgroundColor: 'bg-[#b02a37]', // Achtergrondkleur voor titel
     headTextColor: 'text-[#EAE0D5]', // Tekstkleur voor titel
-    unitsBorderColor: 'border-gray-700', // Randkleur voor units rij
+    headBackgroundColor: 'bg-[#b02a37]', // Achtergrondkleur voor titel
     headBorderColor: 'border-gray-700', // Randkleur voor titel header
-    cellBackgroundEven: 'even:bg-[#202020]', // Achtergrondkleur voor even regels
-    cellBackgroundOdd: 'odd:bg-[#2c2c2c]', // Achtergrondkleur voor oneven regels
+    unitsBorderColor: 'border-gray-700', // Randkleur voor units rij
+    unitsBackgroundColor: 'bg-[#202020]', // Randkleur voor units rij
+    cellBackgroundEven: 'even:bg-[#2c2c2c]', // Achtergrondkleur voor even regels
+    cellBackgroundOdd: 'odd:bg-[#252525]', // Achtergrondkleur voor oneven regels
     cellBorderColor: 'border-gray-700', // Randkleur voor prijs sectie
     highlightRow: 'hover:bg-gray-600', // Achtergrondkleur voor regel bij aanwijzen
   },

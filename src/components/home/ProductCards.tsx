@@ -24,7 +24,7 @@ export default function ProductCards() {
   });
 
   return (
-    <section className="flex flex-wrap justify-center items-center gap-12">
+    <section className="flex flex-wrap justify-center items-start gap-12">
       {Object.entries(categoryCardsContent).map(([key, value]) => (
         <div
           key={key}
