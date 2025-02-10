@@ -1,35 +1,15 @@
 import { useTranslation } from 'react-i18next';
 import { PricingOptions } from '../../lib/types/basicOptionsTypes';
-import { FC } from 'react';
 import i18n from '../../utils/i18';
 import { useData } from '../../context/DataContext';
+import { QuantityDisplay } from '../../utils/helperFunctions';
+import { BeatLoader } from 'react-spinners';
 
 type PricingTableTypes = {
   headerTitles: string[];
   units: string[];
   options: string[];
   prices: PricingOptions[] | number[] | null;
-};
-
-// Function that displays prices with a dot or comma as decimal, depending on the selected language
-const PriceDisplay: FC<{
-  value: string | number;
-  language: string;
-  isCurrency?: boolean;
-}> = ({ value, language, isCurrency = false }) => {
-  // Controleren of de waarde een geldig nummer is
-  const numericValue = Number(value);
-  const isNumber = !isNaN(numericValue);
-
-  // Formatteren als valuta of als duizendtal
-  const formattedValue = isNumber
-    ? new Intl.NumberFormat(language, {
-        style: isCurrency ? 'currency' : 'decimal',
-        currency: 'EUR',
-      }).format(numericValue)
-    : value; // Geen nummer? Toon de originele waarde
-
-  return <span>{formattedValue}</span>;
 };
 
 // Dynamicly render a pricing table
@@ -42,7 +22,13 @@ export default function PricingTable({
   const { t } = useTranslation();
   const { stylePreset } = useData();
 
-  if (!prices) return <div>Loading...</div>;
+  // Show loader icon if prices are not received yet
+  if (!prices)
+    return (
+      <div>
+        <BeatLoader />
+      </div>
+    );
 
   // Prepare data for easy access in the table
   const tableData = options.map((option, index) => ({
@@ -111,7 +97,7 @@ export default function PricingTable({
                 `}
                 scope="row"
               >
-                <PriceDisplay value={row.option} language={i18n.language} />
+                <QuantityDisplay value={row.option} language={i18n.language} />
               </th>
 
               {rowPrices.map((price, priceIndex) => (
@@ -122,7 +108,7 @@ export default function PricingTable({
                     ${stylePreset.table.cellBorderColor}
                   `}
                 >
-                  <PriceDisplay
+                  <QuantityDisplay
                     value={price}
                     language={i18n.language}
                     isCurrency={true}
