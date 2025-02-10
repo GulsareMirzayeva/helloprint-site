@@ -5,7 +5,8 @@ import {
   useEffect,
   useState,
 } from 'react';
-import { getPrices } from '../api/getPrices';
+// import { getPrices } from '../api/getPrices'; // Enable when use API endpoint
+import { prices as localPrices } from '../api/data/prices.ts';
 import { DataContextType, Prices } from '../lib/types/dataContextTypes';
 import { FooterTermsOfSaleLinks } from '../lib/types/footerTermsofSaleLinkTypes';
 import { StylePresetType } from '../lib/types/stylePresetType';
@@ -27,7 +28,8 @@ export function DataProvider({ children }: { children: ReactNode }) {
     darkMode ? darkTheme : lightTheme
   );
 
-  const [prices, setPrices] = useState<Prices | null>(null);
+  // const [prices] = useState<Prices | null>(null); // Enable when using API endpoint
+  const [prices] = useState<Prices | null>(localPrices as unknown as Prices); // Quick type fix
   const [error, setError] = useState<Error | null>(null);
   const [isLoading, setIsLoading] = useState<boolean>(true);
   const [activeTerm, setActiveTerm] = useState<FooterTermsOfSaleLinks>('none');
@@ -50,19 +52,20 @@ export function DataProvider({ children }: { children: ReactNode }) {
     return () => mq.removeEventListener('change', handleChange);
   }, []);
 
-  // Get prices
-  useEffect(() => {
-    const fetchData = async () => {
-      try {
-        await getPrices(setPrices, setError, setIsLoading);
-      } catch (error) {
-        setError(error as Error);
-        setIsLoading(false);
-      }
-    };
+  // Enable when using API endpoint:
 
-    fetchData();
-  }, []);
+  // useEffect(() => {
+  //   const fetchData = async () => {
+  //     try {
+  //       await getPrices(setPrices, setError, setIsLoading);
+  //     } catch (error) {
+  //       setError(error as Error);
+  //       setIsLoading(false);
+  //     }
+  //   };
+
+  //   fetchData();
+  // }, []);
 
   return (
     <DataContext.Provider
@@ -74,7 +77,7 @@ export function DataProvider({ children }: { children: ReactNode }) {
         isLoading,
         activeTerm,
         setStylePreset,
-        setPrices,
+        // setPrices,
         setError,
         setIsLoading,
         setActiveTerm,

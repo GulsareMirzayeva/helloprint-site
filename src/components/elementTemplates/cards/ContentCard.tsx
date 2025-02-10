@@ -63,7 +63,7 @@ export default function ContentCard({
   return (
     <section
       className={`
-        flex flex-col p-4 sm:p-8 w-full rounded-xl
+        flex flex-col p-4 sm:p-8 w-full rounded-md shadow-sm
         ${bgColor}
       `}
     >

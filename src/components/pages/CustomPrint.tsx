@@ -12,7 +12,7 @@ import {
   foldersContent,
   postersContent,
   stickersContent,
-} from '../../lib/categoriesContent';
+} from '../../lib/cardsContent/customPrintOverviewCards';
 import { Divider } from '@mui/material';
 import { useData } from '../../context/DataContext';
 import PageTitleAndIntroduction from '../elementTemplates/PageTitleAndIntroduction';
@@ -64,7 +64,7 @@ export default function CustomPrint() {
           style={{
             backgroundColor: `${stylePreset.overall.diverderColor}`,
             marginTop: '16px',
-            marginBottom: '16px',
+            marginBottom: '32px',
           }}
           flexItem
           variant="fullWidth"

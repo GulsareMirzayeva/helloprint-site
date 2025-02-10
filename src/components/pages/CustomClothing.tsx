@@ -10,122 +10,38 @@ import { Notification } from '../elementTemplates/Notification';
 import { useData } from '../../context/DataContext';
 import PageTitleAndIntroduction from '../elementTemplates/PageTitleAndIntroduction';
 import ContentCard from '../elementTemplates/cards/ContentCard';
-import { t } from 'i18next';
-import imageTextileGarments from '../../assets/custom-clothing/clothing-images.png';
+import {
+  getTableDtg,
+  getTableFlexMaterial,
+  getTableTextileGarments,
+} from '../../lib/cardsContent/customClothingCards';
+import { useEffect, useState } from 'react';
+import i18n from '../../utils/i18';
 
 export default function CustomClothing() {
+  // Make text content translatable
   useTranslation();
-  const { stylePreset, prices } = useData();
 
-  const pricePathTextile = prices
-    ? [...Object.values(prices.customClothing.textile)]
-    : [];
+  // Get acces to styling presets
+  const { stylePreset } = useData();
 
-  const pricePathFlex = prices
-    ? [...Object.values(prices.customClothing.flex)]
-    : [];
+  // Get table data with a function so the content is directly translatable in this component
+  const [tableTextileGarments, setTableTextileGarments] = useState(
+    getTableTextileGarments()
+  );
 
-  const pricePathDtg = prices
-    ? [...Object.values(prices.customClothing.dtg)]
-    : [];
+  const [tableFlexMaterial, setTableFlexMaterial] = useState(
+    getTableFlexMaterial()
+  );
 
-  // Textile garments - Collect data for pricing table
-  const tableTextileGarments = {
-    hasAsterisk: false,
-    tableTitle:
-      customClotingContentPaths.cardTextileGarments.tableTextileGarments.header
-        .title,
-    tableSubTitle:
-      customClotingContentPaths.cardTextileGarments.tableTextileGarments.header
-        .subTitle,
-    data: {
-      image: imageTextileGarments,
-      headerTitles: [
-        t('commonWords.textile'),
-        t('commonWords.blackAndWhite'),
-        t('commonWords.color'),
-      ],
-      units: [
-        t('commonWords.clothingPiece'),
-        t('commonWords.pricePerPrint'),
-        t('commonWords.pricePerPrint'),
-      ],
-      options: [
-        t(
-          'customClothingPage.cardTextileGarments.tableTextileGarments.variants.shirt'
-        ),
-        t(
-          'customClothingPage.cardTextileGarments.tableTextileGarments.variants.polo'
-        ),
-        t(
-          'customClothingPage.cardTextileGarments.tableTextileGarments.variants.sweater'
-        ),
-        t(
-          'customClothingPage.cardTextileGarments.tableTextileGarments.variants.hoody'
-        ),
-      ],
-      prices: pricePathTextile,
-    },
-  };
+  const [tableDtg, setTableDtg] = useState(getTableDtg());
 
-  // Flex material - Collect data for pricing table
-  const tableFlexMaterial = {
-    hasAsterisk: false,
-    tableTitle: customClotingContentPaths.cardFlexAndDtg.tableFlex.header.title,
-    tableSubTitle:
-      customClotingContentPaths.cardFlexAndDtg.tableFlex.header.subTitle,
-    data: {
-      headerTitles: [
-        t('customClothingPage.cardFlexAndDtg.common.headerOne'),
-        t('commonWords.pricePerPrint'),
-      ],
-      units: [],
-      options: [
-        t(
-          'customClothingPage.cardFlexAndDtg.tableFlex.variants.frontChestLogo'
-        ),
-        t(
-          'customClothingPage.cardFlexAndDtg.tableFlex.variants.frontBackLarge'
-        ),
-        t(
-          'customClothingPage.cardFlexAndDtg.tableFlex.variants.frontSmallBackLarge'
-        ),
-      ],
-      prices: pricePathFlex,
-    },
-  };
-
-  // DTG printing - Collect data for pricing table
-  const tableDtg = {
-    hasAsterisk: false,
-    tableTitle: customClotingContentPaths.cardFlexAndDtg.tableDtg.header.title,
-    tableSubTitle:
-      customClotingContentPaths.cardFlexAndDtg.tableDtg.header.subTitle,
-    data: {
-      headerTitles: [
-        t('customClothingPage.cardFlexAndDtg.common.headerTwo'),
-        t(
-          'customClothingPage.cardFlexAndDtg.tableDtg.columnHeaders.headTextileWhite'
-        ),
-        t(
-          'customClothingPage.cardFlexAndDtg.tableDtg.columnHeaders.headTextileColor'
-        ),
-      ],
-      units: [
-        t('commonWords.prints'),
-        t('commonWords.pricePerPrint'),
-        t('commonWords.pricePerPrint'),
-      ],
-      options: [
-        t('customClothingPage.cardFlexAndDtg.tableDtg.variants.frontChestLogo'),
-        t('customClothingPage.cardFlexAndDtg.tableDtg.variants.frontBackLarge'),
-        t(
-          'customClothingPage.cardFlexAndDtg.tableDtg.variants.frontSmallBackLarge'
-        ),
-      ],
-      prices: pricePathDtg,
-    },
-  };
+  // When the language is changed, update the table content directly
+  useEffect(() => {
+    setTableTextileGarments(getTableTextileGarments());
+    setTableFlexMaterial(getTableFlexMaterial());
+    setTableDtg(getTableDtg());
+  }, [i18n.language]);
 
   return (
     <div
@@ -149,33 +65,36 @@ export default function CustomClothing() {
         </div>
 
         {/* Custom clothing  - Textile garments content card */}
-        <ContentCard
-          bgColor={stylePreset.categoryCard.backgroundColorLight}
-          headerContent={{
-            cardTitle:
-              customClotingContentPaths.cardTextileGarments.header.title,
-            cardSubTitle:
-              customClotingContentPaths.cardTextileGarments.header.subTitle,
-            cardIntroduction:
-              customClotingContentPaths.cardTextileGarments.header.introduction,
-            notification: undefined,
-          }}
-          tableContent={[tableTextileGarments]}
-        />
+        <div className="flex flex-col gap-16">
+          <ContentCard
+            bgColor={stylePreset.categoryCard.backgroundColorLight}
+            headerContent={{
+              cardTitle:
+                customClotingContentPaths.cardTextileGarments.header.title,
+              cardSubTitle:
+                customClotingContentPaths.cardTextileGarments.header.subTitle,
+              cardIntroduction:
+                customClotingContentPaths.cardTextileGarments.header
+                  .introduction,
+              notification: undefined,
+            }}
+            tableContent={[tableTextileGarments]}
+          />
 
-        {/* Custom clothing  - Flex/Vinyl and DTG printing content card */}
-        <ContentCard
-          bgColor={stylePreset.categoryCard.backgroundColorDark}
-          headerContent={{
-            cardTitle: customClotingContentPaths.cardFlexAndDtg.header.title,
-            cardSubTitle:
-              customClotingContentPaths.cardFlexAndDtg.header.subTitle,
-            cardIntroduction:
-              customClotingContentPaths.cardFlexAndDtg.header.introduction,
-            notification: undefined,
-          }}
-          tableContent={[tableFlexMaterial, tableDtg]}
-        />
+          {/* Custom clothing  - Flex/Vinyl and DTG printing content card */}
+          <ContentCard
+            bgColor={stylePreset.categoryCard.backgroundColorDark}
+            headerContent={{
+              cardTitle: customClotingContentPaths.cardFlexAndDtg.header.title,
+              cardSubTitle:
+                customClotingContentPaths.cardFlexAndDtg.header.subTitle,
+              cardIntroduction:
+                customClotingContentPaths.cardFlexAndDtg.header.introduction,
+              notification: undefined,
+            }}
+            tableContent={[tableFlexMaterial, tableDtg]}
+          />
+        </div>
 
         {/* Display notification message */}
         <div className="z-0 w-full">
@@ -204,7 +123,7 @@ export default function CustomClothing() {
           style={{
             backgroundColor: `${stylePreset.overall.diverderColor}`,
             marginTop: '16px',
-            marginBottom: '16px',
+            marginBottom: '32px',
           }}
           flexItem
           variant="fullWidth"

@@ -149,7 +149,7 @@ export default function Header() {
         <div
           className={`${
             isMobileMenuOpen ? 'flex' : 'hidden'
-          } flex-col gap-2 lg:flex lg:flex-row lg:items-center items-start lg:gap-12`}
+          } flex-col gap-2 pl-1 lg:flex lg:flex-row lg:items-center items-start lg:gap-12`}
         >
           <NavigationLink path={'/'} value={t(menuButtonNames.home)} />
 

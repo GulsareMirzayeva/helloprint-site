@@ -10,174 +10,48 @@ import { Divider } from '@mui/material';
 import { Notification } from '../../elementTemplates/Notification';
 import { useData } from '../../../context/DataContext';
 import PageTitleAndIntroduction from '../../elementTemplates/PageTitleAndIntroduction';
-import { t } from 'i18next';
-import {
-  basePriceOptions,
-  bulkPriceOptions,
-  extendedBulkPriceOptions,
-  shortBasePriceOptions,
-} from '../../../lib/priceCategories';
-import { BeatLoader } from 'react-spinners';
 import ContentCard from '../../elementTemplates/cards/ContentCard';
+import { useEffect, useState } from 'react';
+import i18n from '../../../utils/i18';
+import {
+  getTableDigitalPrintA6SingleSided,
+  getTableDigitalPrintA6DoubleSided,
+  getTableDigitalPrintA5SingleSided,
+  getTableDigitalPrintA5DoubleSided,
+  getTableOffsetPrintA5DoubleSided,
+  getTableOffsetPrintA6DoubleSided,
+} from '../../../lib/cardsContent/customPrint/FlyersCards';
 
 export default function Flyers() {
+  // Make text content translatable
   useTranslation();
-  const { stylePreset, prices } = useData();
 
-  // Let user know if data is loading
-  if (!prices) {
-    return <BeatLoader color="#FB0036" />;
-  }
+  // Get acces to styling preset colors
+  const { stylePreset } = useData();
 
-  // Digital print A6 Single sided - Collect data for pricing table
-  const tableDigitalPrintA6SingleSided = {
-    hasAsterisk: false,
-    tableTitle: flyersContentPaths.cardDigitalPrint.tableA6.header.title,
-    tableSubTitle: flyersContentPaths.cardDigitalPrint.common.subTitleOne,
-    data: {
-      headerTitles: [
-        t('commonWords.flyers'),
-        t('PaperWeights.90grShort'),
-        t('PaperWeights.150grShort'),
-        t('PaperWeights.250grShort'),
-      ],
-      units: [
-        t('commonWords.amount'),
-        t('commonWords.price'),
-        t('commonWords.price'),
-        t('commonWords.price'),
-      ],
-      options: basePriceOptions,
-      prices: [
-        ...Object.values(prices.customPrint.flyers.print.A6.singleSided),
-      ],
-    },
-  };
+  // Get table data with a function so the content is directly translatable in this component
+  const [tableDigitalPrintA6SingleSided, setTableDigitalPrintA6SingleSided] =
+    useState(getTableDigitalPrintA6SingleSided());
+  const [tableDigitalPrintA6DoubleSided, setTableDigitalPrintA6DoubleSided] =
+    useState(getTableDigitalPrintA6DoubleSided());
+  const [tableDigitalPrintA5SingleSided, setTableDigitalPrintA5SingleSided] =
+    useState(getTableDigitalPrintA5SingleSided());
+  const [tableDigitalPrintA5DoubleSided, setTableDigitalPrintA5DoubleSided] =
+    useState(getTableDigitalPrintA5DoubleSided());
+  const [tableOffsetPrintA6DoubleSided, setTableOffsetPrintA6DoubleSided] =
+    useState(getTableOffsetPrintA5DoubleSided());
+  const [tableOffsetPrintA5DoubleSided, setTableOffsetPrintA5DoubleSided] =
+    useState(getTableOffsetPrintA6DoubleSided());
 
-  // Digital print A6 Double sided - Collect data for pricing table
-  const tableDigitalPrintA6DoubleSided = {
-    hasAsterisk: false,
-    tableTitle: flyersContentPaths.cardDigitalPrint.tableA6.header.title,
-    tableSubTitle: flyersContentPaths.cardDigitalPrint.common.subTitleTwo,
-    data: {
-      headerTitles: [
-        t('commonWords.flyers'),
-        t('PaperWeights.90grShort'),
-        t('PaperWeights.150grShort'),
-        t('PaperWeights.250grShort'),
-      ],
-      units: [
-        t('commonWords.amount'),
-        t('commonWords.price'),
-        t('commonWords.price'),
-        t('commonWords.price'),
-      ],
-      options: basePriceOptions,
-      prices: [
-        ...Object.values(prices.customPrint.flyers.print.A6.doubleSided),
-      ],
-    },
-  };
-
-  // Digital print A5 Single sided - Collect data for pricing table
-  const tableDigitalPrintA5SingleSided = {
-    hasAsterisk: false,
-    tableTitle: flyersContentPaths.cardDigitalPrint.tableA5.header.title,
-    tableSubTitle: flyersContentPaths.cardDigitalPrint.common.subTitleOne,
-    data: {
-      headerTitles: [
-        t('commonWords.flyers'),
-        t('PaperWeights.90grShort'),
-        t('PaperWeights.150grShort'),
-        t('PaperWeights.250grShort'),
-      ],
-      units: [
-        t('commonWords.amount'),
-        t('commonWords.price'),
-        t('commonWords.price'),
-        t('commonWords.price'),
-      ],
-      options: basePriceOptions,
-      prices: [
-        ...Object.values(prices.customPrint.flyers.print.A5.singleSided),
-      ],
-    },
-  };
-
-  // Digital print A5 Double sided - Collect data for pricing table
-  const tableDigitalPrintA5DoubleSided = {
-    hasAsterisk: false,
-    tableTitle: flyersContentPaths.cardDigitalPrint.tableA5.header.title,
-    tableSubTitle: flyersContentPaths.cardDigitalPrint.common.subTitleTwo,
-    data: {
-      headerTitles: [
-        t('commonWords.flyers'),
-        t('PaperWeights.90grShort'),
-        t('PaperWeights.150grShort'),
-        t('PaperWeights.250grShort'),
-      ],
-      units: [
-        t('commonWords.amount'),
-        t('commonWords.price'),
-        t('commonWords.price'),
-        t('commonWords.price'),
-      ],
-      options: shortBasePriceOptions,
-      prices: [
-        ...Object.values(prices.customPrint.flyers.print.A5.doubleSided),
-      ],
-    },
-  };
-
-  // Offset print A5 Double sided - Collect data for pricing table
-  const tableOffsetPrintA5DoubleSided = {
-    hasAsterisk: false,
-    tableTitle: flyersContentPaths.cardOffsetPrint.tableA5.header.title,
-    tableSubTitle: flyersContentPaths.cardOffsetPrint.common.subTitleTwo,
-    data: {
-      headerTitles: [
-        t('commonWords.flyers'),
-        t('PaperWeights.135grShort'),
-        t('PaperWeights.170grShort'),
-        t('PaperWeights.250grShort'),
-      ],
-      units: [
-        t('commonWords.amount'),
-        t('commonWords.price'),
-        t('commonWords.price'),
-        t('commonWords.price'),
-      ],
-      options: bulkPriceOptions,
-      prices: [
-        ...Object.values(prices.customPrint.flyers.offsetPrint.A5.doubleSided),
-      ],
-    },
-  };
-
-  // Offset print A6 Double sided - Collect data for pricing table
-  const tableOffsetPrintA6DoubleSided = {
-    hasAsterisk: false,
-    tableTitle: flyersContentPaths.cardOffsetPrint.tableA6.header.title,
-    tableSubTitle: flyersContentPaths.cardOffsetPrint.common.subTitleTwo,
-    data: {
-      headerTitles: [
-        t('commonWords.flyers'),
-        t('PaperWeights.135grShort'),
-        t('PaperWeights.170grShort'),
-        t('PaperWeights.250grShort'),
-      ],
-      units: [
-        t('commonWords.amount'),
-        t('commonWords.price'),
-        t('commonWords.price'),
-        t('commonWords.price'),
-      ],
-      options: extendedBulkPriceOptions,
-      prices: [
-        ...Object.values(prices.customPrint.flyers.offsetPrint.A6.doubleSided),
-      ],
-    },
-  };
+  // When the language is changed, update the table content directly
+  useEffect(() => {
+    setTableDigitalPrintA6SingleSided(getTableDigitalPrintA6SingleSided());
+    setTableDigitalPrintA6DoubleSided(getTableDigitalPrintA6DoubleSided());
+    setTableDigitalPrintA5SingleSided(getTableDigitalPrintA5SingleSided());
+    setTableDigitalPrintA5DoubleSided(getTableDigitalPrintA5DoubleSided());
+    setTableOffsetPrintA6DoubleSided(getTableOffsetPrintA5DoubleSided());
+    setTableOffsetPrintA5DoubleSided(getTableOffsetPrintA6DoubleSided());
+  }, [i18n.language]);
 
   return (
     <div
@@ -189,7 +63,7 @@ export default function Flyers() {
       {/* Left empty colomn */}
       <div></div>
       {/* Page introduction - Introduction text with or without an image */}
-      <div className="flex flex-col items-start justify-start gap-4 w-full px-2 pt-12">
+      <div className="flex flex-col px-2 pt-12">
         <div className="mb-16">
           <PageTitleAndIntroduction
             image={flyersContentPaths.data.image}
@@ -198,38 +72,40 @@ export default function Flyers() {
           />
         </div>
         {/* Digital print card */}
-        <ContentCard
-          bgColor={stylePreset.categoryCard.backgroundColorLight}
-          headerContent={{
-            cardTitle: flyersContentPaths.cardDigitalPrint.header.title,
-            cardSubTitle: flyersContentPaths.cardDigitalPrint.header.subTitle,
-            cardIntroduction:
-              flyersContentPaths.cardDigitalPrint.header.introduction,
-            notification: customPrintingContentPaths.digitalPrintDeliveryTime,
-          }}
-          tableContent={[
-            tableDigitalPrintA6SingleSided,
-            tableDigitalPrintA6DoubleSided,
-            tableDigitalPrintA5SingleSided,
-            tableDigitalPrintA5DoubleSided,
-          ]}
-        />
+        <div className="flex flex-col gap-16">
+          <ContentCard
+            bgColor={stylePreset.categoryCard.backgroundColorLight}
+            headerContent={{
+              cardTitle: flyersContentPaths.cardDigitalPrint.header.title,
+              cardSubTitle: flyersContentPaths.cardDigitalPrint.header.subTitle,
+              cardIntroduction:
+                flyersContentPaths.cardDigitalPrint.header.introduction,
+              notification: customPrintingContentPaths.digitalPrintDeliveryTime,
+            }}
+            tableContent={[
+              tableDigitalPrintA6SingleSided,
+              tableDigitalPrintA6DoubleSided,
+              tableDigitalPrintA5SingleSided,
+              tableDigitalPrintA5DoubleSided,
+            ]}
+          />
 
-        {/* Offset print card */}
-        <ContentCard
-          bgColor={stylePreset.categoryCard.backgroundColorDark}
-          headerContent={{
-            cardTitle: flyersContentPaths.cardOffsetPrint.header.title,
-            cardSubTitle: flyersContentPaths.cardOffsetPrint.header.subTitle,
-            cardIntroduction:
-              flyersContentPaths.cardOffsetPrint.header.introduction,
-            notification: customPrintingContentPaths.offsetPrintDeliveryTime,
-          }}
-          tableContent={[
-            tableOffsetPrintA6DoubleSided,
-            tableOffsetPrintA5DoubleSided,
-          ]}
-        />
+          {/* Offset print card */}
+          <ContentCard
+            bgColor={stylePreset.categoryCard.backgroundColorDark}
+            headerContent={{
+              cardTitle: flyersContentPaths.cardOffsetPrint.header.title,
+              cardSubTitle: flyersContentPaths.cardOffsetPrint.header.subTitle,
+              cardIntroduction:
+                flyersContentPaths.cardOffsetPrint.header.introduction,
+              notification: customPrintingContentPaths.offsetPrintDeliveryTime,
+            }}
+            tableContent={[
+              tableOffsetPrintA6DoubleSided,
+              tableOffsetPrintA5DoubleSided,
+            ]}
+          />
+        </div>
 
         {/* Display notification message */}
         <div className="z-0 w-full">
@@ -254,7 +130,7 @@ export default function Flyers() {
           style={{
             backgroundColor: `${stylePreset.overall.diverderColor}`,
             marginTop: '16px',
-            marginBottom: '16px',
+            marginBottom: '24px',
           }}
           flexItem
           variant="fullWidth"

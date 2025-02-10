@@ -9,38 +9,26 @@ import { Divider } from '@mui/material';
 import { useData } from '../../../context/DataContext';
 import PageTitleAndIntroduction from '../../elementTemplates/PageTitleAndIntroduction';
 import ContentCard from '../../elementTemplates/cards/ContentCard';
-import { t } from 'i18next';
+import { getTableLargeFormat } from '../../../lib/cardsContent/customPrint/stickersCards';
+import { useEffect, useState } from 'react';
+import i18n from '../../../utils/i18';
 
 export default function Stickers() {
+  // Make text content translatable
   useTranslation();
-  const { stylePreset, prices } = useData();
 
-  // Get prices, if available
-  const pricePathStickers = prices
-    ? [...Object.values(prices.customPrint.stickers)]
-    : [];
+  // Get acces to styling presets
+  const { stylePreset } = useData();
 
-  // Stickers Large Format - Collect data for pricing table
-  const tableLargeFormat = {
-    hasAsterisk: false,
-    tableTitle:
-      stickersContentPaths.cardLargeFormat.tableLargeFormat.header.title,
-    tableSubTitle:
-      stickersContentPaths.cardLargeFormat.tableLargeFormat.header.subTitle,
-    data: {
-      headerTitles: [t('commonWords.format'), t('commonWords.pricePerPrint')],
-      units: [],
-      options: [
-        t(
-          'customPrintPage.stickers.cardLargeFormat.tableLargeFormat.rowHeaders.headerOne'
-        ),
-        t(
-          'customPrintPage.stickers.cardLargeFormat.tableLargeFormat.rowHeaders.headerTwo'
-        ),
-      ],
-      prices: pricePathStickers,
-    },
-  };
+  // Get table data with a function so the content is directly translatable in this component
+  const [tableLargeFormat, setTableLargeFormat] = useState(
+    getTableLargeFormat()
+  );
+
+  // When the language is changed, update the table content directly
+  useEffect(() => {
+    setTableLargeFormat(getTableLargeFormat());
+  }, [i18n.language]);
 
   return (
     <div
@@ -53,7 +41,7 @@ export default function Stickers() {
       <div></div>
 
       {/* Page introduction - Introduction text with or without an image */}
-      <div className="flex flex-col items-start justify-start gap-4 w-full px-2 pt-12">
+      <div className="flex flex-col px-2 pt-12">
         <div className="mb-16">
           <PageTitleAndIntroduction
             image={stickersContentPaths.data.image}
@@ -62,24 +50,27 @@ export default function Stickers() {
           />
         </div>
         {/* Stickers Large format content card*/}
-        <ContentCard
-          bgColor={stylePreset.categoryCard.backgroundColorLight}
-          headerContent={{
-            cardTitle: stickersContentPaths.cardLargeFormat.header.title,
-            cardSubTitle: stickersContentPaths.cardLargeFormat.header.subTitle,
-            cardIntroduction:
-              stickersContentPaths.cardLargeFormat.header.introduction,
-            notification: undefined,
-          }}
-          tableContent={[tableLargeFormat]}
-        />
+        <div className="flex flex-col gap-16">
+          <ContentCard
+            bgColor={stylePreset.categoryCard.backgroundColorLight}
+            headerContent={{
+              cardTitle: stickersContentPaths.cardLargeFormat.header.title,
+              cardSubTitle:
+                stickersContentPaths.cardLargeFormat.header.subTitle,
+              cardIntroduction:
+                stickersContentPaths.cardLargeFormat.header.introduction,
+              notification: undefined,
+            }}
+            tableContent={[tableLargeFormat]}
+          />
+        </div>
 
         {/* Divider - Visually create the end of the pricing content  */}
         <Divider
           style={{
             backgroundColor: `${stylePreset.overall.diverderColor}`,
             marginTop: '16px',
-            marginBottom: '16px',
+            marginBottom: '24px',
           }}
           flexItem
           variant="fullWidth"

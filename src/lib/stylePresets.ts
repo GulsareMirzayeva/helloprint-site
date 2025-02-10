@@ -62,7 +62,7 @@ export const lightTheme = {
   // Categorie kaarten op pagina's waar prijstabellen worden weergegeven
   // Wordt ook gebruikt in Terms of Sale pagina waar een geselecteerde sectie wordt gehighlight
   categoryCard: {
-    backgroundColorDark: 'bg-gray-50', // Kaartkleur, zelfde kleur als achtergrond
+    backgroundColorDark: 'bg-gray-100', // Kaartkleur, zelfde kleur als achtergrond
     backgroundColorLight: 'bg-gray-200', // Highlighted kaartkleur
     backgroundColorActive: 'bg-gray-200', // Terms of Sale actieve sectie
   },
@@ -166,8 +166,7 @@ export const darkTheme = {
   // Categorie kaarten op pagina's waar prijstabellen worden weergegeven
   // Wordt ook gebruikt in Terms of Sale pagina waar een geselecteerde sectie wordt gehighlight
   categoryCard: {
-    // ----------------------------------------------------------------hernoem
-    backgroundColorDark: 'bg-[#202020]', // Kaartkleur, zelfde kleur als achtergrond
+    backgroundColorDark: 'bg-[#242425]', // Kaartkleur, zelfde kleur als achtergrond
     backgroundColorLight: 'bg-[#2c2c2c]', // Highlighted kaartkleur
     backgroundColorActive: 'bg-gray-600', // Terms of Sale actieve sectie
   },

@@ -10,71 +10,37 @@ import { Notification } from '../elementTemplates/Notification';
 import { useData } from '../../context/DataContext';
 import PageTitleAndIntroduction from '../elementTemplates/PageTitleAndIntroduction';
 import ContentCard from '../elementTemplates/cards/ContentCard';
-import { t } from 'i18next';
 import {
-  splitPriceOptionsExtendedHigh,
-  splitPriceOptionsExtendedLow,
-} from '../../lib/priceCategories';
-import { BeatLoader } from 'react-spinners';
+  getTableDataBudgetBlackAndWhite,
+  getTableDataBudgetColor,
+  getTableDataHq,
+} from '../../lib/cardsContent/copyPrintCards';
+import { useEffect, useState } from 'react';
+import i18n from '../../utils/i18';
 
 export default function CopyPrint() {
   // Make text content translatable
   useTranslation();
 
   // Get acces to styling preset colors
-  const { prices, stylePreset } = useData();
+  const { stylePreset } = useData();
 
-  // Let user know if data is loading
-  if (!prices) {
-    return <BeatLoader color="#FB0036" />;
-  }
+  // Get table data with a function so the content is directly translatable in this component
+  const [tableDataBudgetColor, setTableDataBudgetColor] = useState(
+    getTableDataBudgetColor()
+  );
 
-  // Budget Color- Collect data for pricing table
-  const tableDataBudgetColor = {
-    hasAsterisk: true,
-    tableTitle: copyPrintContentPaths.cardBudget.tableColor.title,
-    tableSubTitle: copyPrintContentPaths.cardBudget.tableColor.subTitle,
-    data: {
-      headerTitles: [t('commonWords.prints'), t('commonWords.color')],
-      units: [t('commonWords.amount'), t('commonWords.pricePerPrint')],
-      options: splitPriceOptionsExtendedHigh,
-      prices: [...Object.values(prices.copyPrint.A4.color)],
-    },
-  };
+  const [tableDataBudgetBlackAndWhite, setTableDataBudgetBlackAndWhite] =
+    useState(getTableDataBudgetBlackAndWhite());
 
-  // Budget Black and White - Collect data for pricing table
-  const tableDataBudgetBlackAndWhite = {
-    hasAsterisk: true,
-    tableTitle: copyPrintContentPaths.cardBudget.tableBlackAndWhite.title,
-    tableSubTitle: copyPrintContentPaths.cardBudget.tableBlackAndWhite.subTitle,
-    data: {
-      headerTitles: [t('commonWords.prints'), t('commonWords.blackAndWhite')],
-      units: [t('commonWords.amount'), t('commonWords.pricePerPrint')],
-      options: splitPriceOptionsExtendedHigh,
-      prices: [...Object.values(prices.copyPrint.A4.blackWhite)],
-    },
-  };
+  const [tableDataHq, setTableDataHq] = useState(getTableDataHq());
 
-  // High Quality - Color or Black and White - Collect data for pricing table
-  const tableDataHq = {
-    hasAsterisk: false,
-    tableTitle: copyPrintContentPaths.cardHq.tableHq.title,
-    tableSubTitle: copyPrintContentPaths.cardHq.tableHq.subTitle,
-    data: {
-      headerTitles: [
-        t('commonWords.prints'),
-        t('commonWords.color'),
-        t('commonWords.blackAndWhite'),
-      ],
-      units: [
-        t('commonWords.amount'),
-        t('commonWords.pricePerPrint'),
-        t('commonWords.pricePerPrint'),
-      ],
-      options: splitPriceOptionsExtendedLow,
-      prices: [...Object.values(prices.copyPrint.A4.hq)],
-    },
-  };
+  // When the language is changed, update the table content directly
+  useEffect(() => {
+    setTableDataBudgetColor(getTableDataBudgetColor());
+    setTableDataBudgetBlackAndWhite(getTableDataBudgetBlackAndWhite());
+    setTableDataHq(getTableDataHq());
+  }, [i18n.language]);
 
   return (
     <div
@@ -96,7 +62,7 @@ export default function CopyPrint() {
         </div>
 
         {/* Budget pricing tables */}
-        <div className="flex flex-col gap-8">
+        <div className="flex flex-col gap-16">
           <ContentCard
             bgColor={stylePreset.categoryCard.backgroundColorLight}
             headerContent={{
@@ -154,7 +120,7 @@ export default function CopyPrint() {
           style={{
             backgroundColor: `${stylePreset.overall.diverderColor}`,
             marginTop: '16px',
-            marginBottom: '16px',
+            marginBottom: '32px',
           }}
           flexItem
           variant="fullWidth"

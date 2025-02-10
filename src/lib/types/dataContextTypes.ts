@@ -18,7 +18,7 @@ export type DataContextType = {
   isLoading: boolean;
   activeTerm: FooterTermsOfSaleLinks;
   setStylePreset: React.Dispatch<React.SetStateAction<StylePresetType>>;
-  setPrices: React.Dispatch<React.SetStateAction<Prices | null>>;
+  // setPrices: React.Dispatch<React.SetStateAction<Prices | null>>;
   setError: React.Dispatch<React.SetStateAction<Error | null>>;
   setIsLoading: React.Dispatch<React.SetStateAction<boolean>>;
   setActiveTerm: React.Dispatch<React.SetStateAction<FooterTermsOfSaleLinks>>;

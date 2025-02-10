@@ -4,7 +4,7 @@ import {
   flyersContentPaths,
   foldersContentPaths,
   postersContentPaths,
-} from './translationPaths';
+} from '../translationPaths';
 
 // Card background colors to choose from, displayed on the 'custom print'-overview page
 
