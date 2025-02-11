@@ -230,11 +230,11 @@ export default function Header() {
                 value={language}
                 onChange={(e) => changeLanguage(e.target.value)}
                 className="
-                text-xs w-15 h-5 ml-2 pl-1 rounded-lg cursor-pointer text-[#202020] bg-white border border-gray-400 
+                text-xs w-15 h-5 ml-2 pl-2 rounded-lg cursor-pointer text-[#202020] bg-white border border-gray-400 
                 transition hover:ring-1 hover:ring-gray-300 focus:ring-[#fb0036] focus:ring-1"
               >
-                <option value="nl">🇳🇱 NL</option>
-                <option value="en">🇬🇧 EN</option>
+                <option value="nl">NL</option>
+                <option value="en">EN</option>
               </select>
             </div>
             <div className="flex items-center gap-1 pt-1 lg:pt-0">

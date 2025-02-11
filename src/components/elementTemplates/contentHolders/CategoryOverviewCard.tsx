@@ -24,6 +24,7 @@ export default function OverviewCategoryCard({
       className={`
         flex flex-col items-start md:flex-row p-4 w-full rounded-lg shadow-sm
         ${bgColor}
+        ${stylePreset.categoryCard.borderColor}
       `}
     >
       {/* Place image left to the content */}
