@@ -37,65 +37,59 @@ export default function PricingTable({
   }));
 
   return (
-    <table className="table-auto" role="table">
+    <table className="table-auto border-collapse w-full" role="table">
+      {/* Caption - Stays visible for screenreaders */}
       <caption className="sr-only">{t('commonSentences.tableCaption')}</caption>
+
       <thead>
         <tr>
-          {/* Create a header cell for each given header title */}
           {headerTitles.map((title, index) => (
             <th
               key={index}
               className={`
-                ${stylePreset.table.headBackgroundColor}
-                ${stylePreset.table.headTextColor}
-                ${stylePreset.table.headBorderColor}
-                border py-1 px-3 text-left
-                `}
+              ${stylePreset.table.headBackgroundColor} 
+              ${stylePreset.table.headTextColor} 
+              ${stylePreset.table.headBorderColor} 
+              border py-1 px-3 text-left
+            `}
               scope="col"
             >
-              <div>{title}</div>
+              {title}
             </th>
           ))}
         </tr>
       </thead>
 
       <tbody>
-        {/* Row for units */}
+        {/* Rows for units */}
         <tr>
           {units.map((unit, index) => (
             <th
               key={index}
               className={`
-                border px-3 py-1 text-left font-medium italic
-                ${stylePreset.table.unitsBorderColor}
-                ${stylePreset.table.unitsBackgroundColor}
-                `}
+              border px-3 py-1 text-left font-medium italic
+              ${stylePreset.table.unitsBorderColor}
+              ${stylePreset.table.unitsBackgroundColor}
+            `}
               scope="row"
             >
-              <i>{unit}</i>
+              {unit}
             </th>
           ))}
         </tr>
 
-        {/* Rows for options and corresponding prices */}
+        {/* Dynamic rows */}
         {tableData.map((row, rowIndex) => {
           const rowPrices = [...Object.values(row.prices)];
 
           return (
             <tr
               key={rowIndex}
-              className={`
-                border 
-                ${stylePreset.table.highlightRow}
-                ${stylePreset.table.cellBackgroundEven}
-                ${stylePreset.table.cellBackgroundOdd}
-              `}
+              className={`border ${stylePreset.table.highlightRow} ${stylePreset.table.cellBackgroundEven} ${stylePreset.table.cellBackgroundOdd}`}
+              tabIndex={-1} // Rows are not interactible for keyboard
             >
               <th
-                className={`
-                  border px-3 py-1 text-left
-                  ${stylePreset.table.cellBorderColor}
-                `}
+                className={`border px-3 py-1 text-left ${stylePreset.table.cellBorderColor}`}
                 scope="row"
               >
                 <QuantityDisplay value={row.option} language={i18n.language} />
@@ -104,10 +98,8 @@ export default function PricingTable({
               {rowPrices.map((price, priceIndex) => (
                 <td
                   key={priceIndex}
-                  className={`
-                    border px-3 py-1 text-left
-                    ${stylePreset.table.cellBorderColor}
-                  `}
+                  className={`border px-3 py-1 text-left ${stylePreset.table.cellBorderColor}`}
+                  tabIndex={0} // Cells are accessible with keyboard
                 >
                   <QuantityDisplay
                     value={price}

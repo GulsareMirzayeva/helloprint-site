@@ -77,6 +77,8 @@ export default function MessageForm() {
               <input
                 type="text"
                 id="name"
+                inputMode="text"
+                autoComplete="name"
                 {...register('name')}
                 className={`
                   w-full max-w-[500px] rounded-sm mt-1 p-1 pl-2 border
@@ -96,8 +98,12 @@ export default function MessageForm() {
             </label>
 
             <input
-              type="text"
+              type="tel"
               id="telNo"
+              inputMode="numeric"
+              autoComplete="tel"
+              aria-describedby={errors.telNo ? 'tel-error' : undefined}
+              aria-invalid={errors.telNo ? 'true' : 'false'}
               {...register('telNo', {
                 pattern: {
                   value: /^[0-9]+$/, // Only numbers
@@ -121,6 +127,7 @@ export default function MessageForm() {
             />
             {errors.telNo?.message && (
               <p
+                id="tel-error"
                 className={`
                     pl-1
                     ${stylePreset.notification.textColor}
@@ -131,9 +138,18 @@ export default function MessageForm() {
             )}
 
             {/* Email input field */}
+            <label className="sr-only" htmlFor="email">
+              <TextBlock
+                value={contactFormTextContentPaths.formUserEmailAdress}
+                variant="body"
+              />
+            </label>
             <input
-              type="text"
+              type="email"
               id="email"
+              autoComplete="email"
+              aria-describedby={errors.email ? 'email-error' : undefined}
+              aria-invalid={errors.email ? 'true' : 'false'}
               {...register('email', {
                 pattern: {
                   value: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/,
@@ -149,6 +165,7 @@ export default function MessageForm() {
             />
             {errors.email?.message && (
               <p
+                id="email-error"
                 className={`
                     pl-1
                     ${stylePreset.notification.textColor}
@@ -190,6 +207,8 @@ export default function MessageForm() {
               </label>
               <textarea
                 id="message"
+                aria-describedby={errors.message ? 'message-error' : undefined}
+                aria-invalid={errors.message ? 'true' : 'false'}
                 {...register('message', {
                   minLength: {
                     value: 10,
@@ -206,6 +225,7 @@ export default function MessageForm() {
               />
               {errors.message && (
                 <p
+                  id="message-error"
                   className={`
                   pl-1
                   ${stylePreset.notification.textColor}
