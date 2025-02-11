@@ -136,6 +136,9 @@ export const customClotingContentPaths = {
         title: 'customClothingPage.cardFlexAndDtg.tableFlex.header.title',
         subTitle: 'customClothingPage.cardFlexAndDtg.tableFlex.header.subTitle',
       },
+      columnHeaders: {
+        headSingleColored: 'Single',
+      },
       variants: {
         frontChestLogo:
           'customClothingPage.cardFlexAndDtg.tableFlex.variants.frontChestLogo',

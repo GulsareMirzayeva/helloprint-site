@@ -162,6 +162,9 @@
           "title": "Printen op flex materiaal",
           "subTitle": ""
         },
+        "columnHeaders": {
+          "headSingleColored": "Éénkleurig"
+        },
         "variants": {
           "frontChestLogo": "Voorkant borst logo",
           "frontBackLarge": "Voor- of achterkant groot",

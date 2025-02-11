@@ -155,6 +155,9 @@
           "title": "Print on flex material",
           "subTitle": ""
         },
+        "columnHeaders": {
+          "headSingleColored": "Single Color"
+        },
         "variants": {
           "frontChestLogo": "Front chest logo",
           "frontBackLarge": "Front or back large",

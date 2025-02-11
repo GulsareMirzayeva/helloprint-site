@@ -66,9 +66,11 @@ export function getTableFlexMaterial() {
     data: {
       headerTitles: [
         t('customClothingPage.cardFlexAndDtg.common.headerOne'),
-        t('commonWords.pricePerPrint'),
+        t(
+          'customClothingPage.cardFlexAndDtg.tableFlex.columnHeaders.headSingleColored'
+        ),
       ],
-      units: [],
+      units: [t('commonWords.prints'), t('commonWords.pricePerPrint')],
       options: [
         t(
           'customClothingPage.cardFlexAndDtg.tableFlex.variants.frontChestLogo'
