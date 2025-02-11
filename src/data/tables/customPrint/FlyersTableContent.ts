@@ -1,12 +1,12 @@
 import { t } from 'i18next';
-import { prices } from '../../../api/data/prices';
+import { prices } from '../../prices/prices';
 import {
   basePriceOptions,
   shortBasePriceOptions,
   bulkPriceOptions,
   extendedBulkPriceOptions,
-} from '../../priceCategories';
-import { flyersContentPaths } from '../../translationPaths';
+} from '../../../lib/priceOptions';
+import { flyersContentPaths } from '../../../lib/translationPaths';
 
 // Digital print A6 Single sided - Collect data for pricing table
 export function getTableDigitalPrintA6SingleSided() {

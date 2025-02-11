@@ -3,8 +3,8 @@ import { Link } from 'react-router-dom';
 import {
   SubNavigationType,
   NavigationType,
-} from '../lib/types/headerNavigationTypes';
-import { useData } from '../context/DataContext';
+} from '../../lib/types/headerNavigationTypes';
+import { useData } from '../../context/DataContext';
 
 // This returns a custom navigation links with a dynamic value
 export const NavigationLink = (linkProps: NavigationType) => {

@@ -1,10 +1,10 @@
 import { t } from 'i18next';
-import { prices } from '../../../api/data/prices';
+import { prices } from '../../prices/prices';
 import {
   shortBasePriceOptions,
   shortBulkPriceOptions,
-} from '../../priceCategories';
-import { cardsContentPaths } from '../../translationPaths';
+} from '../../../lib/priceOptions';
+import { cardsContentPaths } from '../../../lib/translationPaths';
 
 // Digital print Black and White - Collect data for pricing table
 export function getTableDigitalPrintBlackAndWhite() {

@@ -9,7 +9,10 @@ import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 import LanguageIcon from '@mui/icons-material/Language';
 import { menuButtonNames } from '../lib/translationPaths';
 import { ExpandableLinkType } from '../lib/types/headerNavigationTypes';
-import { NavigationLink, SubNavigationLink } from '../utils/GenerateElements';
+import {
+  NavigationLink,
+  SubNavigationLink,
+} from './elementTemplates/NavigationButtons';
 import { Divider } from '@mui/material';
 import { useData } from '../context/DataContext';
 

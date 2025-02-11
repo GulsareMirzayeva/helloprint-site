@@ -38,8 +38,8 @@ export default function OverviewCategoryCard({
       {/* Introduction cardContent */}
       <div className="flex flex-col">
         <div className="flex flex-col justify-start">
-          <TextBlock value={cardContent.titlePath} variant="subTitle" />
-          <TextBlock value={cardContent.textContentPath} variant="body" />
+          <TextBlock value={cardContent.pageTitle} variant="subTitle" />
+          <TextBlock value={cardContent.pageIntroduction} variant="body" />
         </div>
         <div className="flex justify-start pt-4">
           <Link

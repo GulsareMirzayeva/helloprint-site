@@ -1,11 +1,11 @@
 import { t } from 'i18next';
-import { prices } from '../../../api/data/prices';
+import { prices } from '../../prices/prices';
 import {
   lowPriceOptions,
   bulkPriceOptions,
   basePriceOptions,
-} from '../../priceCategories';
-import { foldersContentPaths } from '../../translationPaths';
+} from '../../../lib/priceOptions';
+import { foldersContentPaths } from '../../../lib/translationPaths';
 
 // Digital print Color or Black and White - Collect data for pricing table
 export function getTableDigitalPrintColor() {

@@ -9,14 +9,15 @@ import { Divider } from '@mui/material';
 import { Notification } from '../elementTemplates/Notification';
 import { useData } from '../../context/DataContext';
 import PageTitleAndIntroduction from '../elementTemplates/PageTitleAndIntroduction';
-import ContentCard from '../elementTemplates/cards/ContentCard';
+import ContentCard from '../elementTemplates/contentHolders/ContentCard';
 import {
   getTableDtg,
   getTableFlexMaterial,
   getTableTextileGarments,
-} from '../../lib/cardsContent/customClothingCards';
+} from '../../data/tables/customClothingTableContent';
 import { useEffect, useState } from 'react';
 import i18n from '../../utils/i18';
+import { customClothingPageContent } from '../../data/pages/pagesContent';
 
 export default function CustomClothing() {
   // Make text content translatable
@@ -56,11 +57,9 @@ export default function CustomClothing() {
       <div className="flex flex-col px-2 pt-12">
         <div className="mb-16">
           <PageTitleAndIntroduction
-            image={customClotingContentPaths.data.image}
-            title={customClotingContentPaths.pageHeaderContent.title}
-            introduction={
-              customClotingContentPaths.pageHeaderContent.introduction
-            }
+            image={customClothingPageContent.image}
+            title={customClothingPageContent.pageTitle}
+            introduction={customClothingPageContent.pageIntroduction}
           />
         </div>
 

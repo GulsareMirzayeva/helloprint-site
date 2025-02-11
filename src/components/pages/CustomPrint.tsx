@@ -1,4 +1,4 @@
-import OverviewCategoryCard from '../elementTemplates/cards/categoryOverviewCard';
+import OverviewCategoryCard from '../elementTemplates/contentHolders/CategoryOverviewCard';
 import SendMessage from '../contact/SendMessage';
 import { TextBlock } from '../elementTemplates/TextBlock';
 import { useTranslation } from 'react-i18next';
@@ -7,12 +7,12 @@ import {
   shopInfoPaths,
 } from '../../lib/translationPaths';
 import {
-  cardsContent,
-  flyersContent,
-  foldersContent,
-  postersContent,
-  stickersContent,
-} from '../../lib/cardsContent/customPrintOverviewCards';
+  cardsPageContent,
+  flyersPageContent,
+  foldersPageContent,
+  postersPageContent,
+  stickersPageContent,
+} from '../../data/pages/pagesContent';
 import { Divider } from '@mui/material';
 import { useData } from '../../context/DataContext';
 import PageTitleAndIntroduction from '../elementTemplates/PageTitleAndIntroduction';
@@ -26,11 +26,11 @@ export default function CustomPrint() {
 
   // Collect the content of categories that will be displayed in a card on the overview page
   const cardItems = [
-    stickersContent,
-    cardsContent,
-    flyersContent,
-    foldersContent,
-    postersContent,
+    stickersPageContent,
+    cardsPageContent,
+    flyersPageContent,
+    foldersPageContent,
+    postersPageContent,
   ];
 
   return (

@@ -1,11 +1,11 @@
 import { t } from 'i18next';
-import { prices } from '../../../api/data/prices';
+import { prices } from '../../prices/prices';
 import {
   paperSizes,
   splitPriceOptionsShort,
   splitPriceOptionsShortLow,
-} from '../../priceCategories';
-import { postersContentPaths } from '../../translationPaths';
+} from '../../../lib/priceOptions';
+import { postersContentPaths } from '../../../lib/translationPaths';
 
 // 80 gsm Color - Collect data for pricing table
 export function getTable80gsmColor() {

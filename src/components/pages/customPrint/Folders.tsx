@@ -10,16 +10,17 @@ import { Notification } from '../../elementTemplates/Notification';
 import { Divider } from '@mui/material';
 import { useData } from '../../../context/DataContext';
 import PageTitleAndIntroduction from '../../elementTemplates/PageTitleAndIntroduction';
-import ContentCard from '../../elementTemplates/cards/ContentCard';
+import ContentCard from '../../elementTemplates/contentHolders/ContentCard';
 import {
   getTableOffsetPrintA3Trifold,
   getTableOffsetPrintA4Bifold,
   getTableOffsetPrintA4Trifold,
   getTableDigitalPrintBlackAndWhite,
   getTableDigitalPrintColor,
-} from '../../../lib/cardsContent/customPrint/foldersCards';
+} from '../../../data/tables/customPrint/foldersTableContent';
 import { useEffect, useState } from 'react';
 import i18n from '../../../utils/i18';
+import { foldersPageContent } from '../../../data/pages/pagesContent';
 
 export default function Folders() {
   // Make text content translatable
@@ -66,9 +67,9 @@ export default function Folders() {
       <div className="flex flex-col px-2 pt-12">
         <div className="mb-16">
           <PageTitleAndIntroduction
-            image={foldersContentPaths.data.image}
-            title={foldersContentPaths.pageHeader.title}
-            introduction={foldersContentPaths.pageHeader.introduction}
+            image={foldersPageContent.image}
+            title={foldersPageContent.pageTitle}
+            introduction={foldersPageContent.pageIntroduction}
           />
         </div>
 

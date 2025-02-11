@@ -92,7 +92,7 @@ export const customClotingContentPaths = {
   data: {
     image: image7,
   },
-  pageHeaderContent: {
+  header: {
     title: 'customClothingPage.pageHeaderContent.title',
     introduction: 'customClothingPage.pageHeaderContent.introduction',
   },
@@ -232,7 +232,7 @@ export const copyPrintContentPaths = {
   },
 
   // Page header
-  pageHeaderContent: {
+  pageHeader: {
     title: 'copyPrintPage.pageHeaderContent.title',
     introduction: 'copyPrintPage.pageHeaderContent.introduction',
     subTitle: 'copyPrintPage.pageHeaderContent.subTitle',

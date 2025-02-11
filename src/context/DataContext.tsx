@@ -6,7 +6,7 @@ import {
   useState,
 } from 'react';
 // import { getPrices } from '../api/getPrices'; // Enable when use API endpoint
-import { prices as localPrices } from '../api/data/prices.ts';
+import { prices as localPrices } from '../data/prices/prices.ts';
 import { DataContextType, Prices } from '../lib/types/dataContextTypes';
 import { FooterTermsOfSaleLinks } from '../lib/types/footerTermsofSaleLinkTypes';
 import { StylePresetType } from '../lib/types/stylePresetType';

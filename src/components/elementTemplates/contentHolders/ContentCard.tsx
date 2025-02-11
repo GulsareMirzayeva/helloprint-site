@@ -1,4 +1,4 @@
-import PricingTable from '../PricingTable';
+import PricingTable from './PricingTable';
 import { useData } from '../../../context/DataContext';
 import { TextBlock } from '../TextBlock';
 import {

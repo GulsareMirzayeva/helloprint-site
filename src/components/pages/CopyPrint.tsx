@@ -9,14 +9,15 @@ import { Divider } from '@mui/material';
 import { Notification } from '../elementTemplates/Notification';
 import { useData } from '../../context/DataContext';
 import PageTitleAndIntroduction from '../elementTemplates/PageTitleAndIntroduction';
-import ContentCard from '../elementTemplates/cards/ContentCard';
+import ContentCard from '../elementTemplates/contentHolders/ContentCard';
 import {
   getTableDataBudgetBlackAndWhite,
   getTableDataBudgetColor,
   getTableDataHq,
-} from '../../lib/cardsContent/copyPrintCards';
+} from '../../data/tables/copyPrintTableContent';
 import { useEffect, useState } from 'react';
 import i18n from '../../utils/i18';
+import { copyPrintPageContent } from '../../data/pages/pagesContent';
 
 export default function CopyPrint() {
   // Make text content translatable
@@ -55,9 +56,9 @@ export default function CopyPrint() {
       <div className="flex flex-col px-2 pt-12">
         <div className="mb-16">
           <PageTitleAndIntroduction
-            image={copyPrintContentPaths.data.image}
-            title={copyPrintContentPaths.pageHeaderContent.title}
-            introduction={copyPrintContentPaths.pageHeaderContent.introduction}
+            image={copyPrintPageContent.image}
+            title={copyPrintPageContent.pageTitle}
+            introduction={copyPrintPageContent.pageIntroduction}
           />
         </div>
 

@@ -1,16 +1,9 @@
 import { useTranslation } from 'react-i18next';
-import { PricingOptions } from '../../lib/types/basicOptionsTypes';
-import i18n from '../../utils/i18';
-import { useData } from '../../context/DataContext';
-import { QuantityDisplay } from '../../utils/helperFunctions';
+import i18n from '../../../utils/i18';
+import { useData } from '../../../context/DataContext';
+import { QuantityDisplay } from '../../../utils/helperFunctions';
 import { BeatLoader } from 'react-spinners';
-
-type PricingTableTypes = {
-  headerTitles: string[];
-  units: string[];
-  options: string[];
-  prices: PricingOptions[] | number[] | null;
-};
+import { PricingTableTypes } from '../../../lib/types/contentCardTypes';
 
 // Dynamicly render a pricing table
 export default function PricingTable({

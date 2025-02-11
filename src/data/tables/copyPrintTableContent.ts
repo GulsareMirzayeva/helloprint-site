@@ -1,11 +1,11 @@
 import { t } from 'i18next';
-import { prices } from '../../api/data/prices';
+import { prices } from '../prices/prices';
 import {
   splitPriceOptions,
   splitPriceOptionsExtendedHigh,
   splitPriceOptionsExtendedLow,
-} from '../priceCategories';
-import { copyPrintContentPaths } from '../translationPaths';
+} from '../../lib/priceOptions';
+import { copyPrintContentPaths } from '../../lib/translationPaths';
 
 // Budget Color- Collect data for pricing table
 export function getTableDataBudgetColor() {

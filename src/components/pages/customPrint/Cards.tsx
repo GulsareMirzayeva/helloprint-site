@@ -10,12 +10,13 @@ import { Divider } from '@mui/material';
 import { Notification } from '../../elementTemplates/Notification';
 import { useData } from '../../../context/DataContext';
 import PageTitleAndIntroduction from '../../elementTemplates/PageTitleAndIntroduction';
-import ContentCard from '../../elementTemplates/cards/ContentCard';
+import ContentCard from '../../elementTemplates/contentHolders/ContentCard';
 import {
   getTableDigitalPrintBlackAndWhite,
   getTableDigitalPrintColor,
   getTableOffsetPrintColor,
-} from '../../../lib/cardsContent/customPrint/businessCards';
+} from '../../../data/tables/customPrint/businessTableContent';
+import { cardsPageContent } from '../../../data/pages/pagesContent';
 import { useEffect, useState } from 'react';
 import i18n from '../../../utils/i18';
 
@@ -58,9 +59,9 @@ export default function Cards() {
       <div className="flex flex-col px-2 pt-12">
         <div className="mb-16">
           <PageTitleAndIntroduction
-            image={cardsContentPaths.data.image}
-            title={cardsContentPaths.pageHeader.title}
-            introduction={cardsContentPaths.pageHeader.introduction}
+            image={cardsPageContent.image}
+            title={cardsPageContent.pageTitle}
+            introduction={cardsPageContent.pageIntroduction}
           />
         </div>
         <div className="flex flex-col gap-12">

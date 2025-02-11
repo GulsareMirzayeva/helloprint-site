@@ -10,7 +10,7 @@ import { Divider } from '@mui/material';
 import { Notification } from '../../elementTemplates/Notification';
 import { useData } from '../../../context/DataContext';
 import PageTitleAndIntroduction from '../../elementTemplates/PageTitleAndIntroduction';
-import ContentCard from '../../elementTemplates/cards/ContentCard';
+import ContentCard from '../../elementTemplates/contentHolders/ContentCard';
 import { useEffect, useState } from 'react';
 import i18n from '../../../utils/i18';
 import {
@@ -20,7 +20,8 @@ import {
   getTableDigitalPrintA5DoubleSided,
   getTableOffsetPrintA5DoubleSided,
   getTableOffsetPrintA6DoubleSided,
-} from '../../../lib/cardsContent/customPrint/FlyersCards';
+} from '../../../data/tables/customPrint/FlyersTableContent';
+import { flyersPageContent } from '../../../data/pages/pagesContent';
 
 export default function Flyers() {
   // Make text content translatable
@@ -66,9 +67,9 @@ export default function Flyers() {
       <div className="flex flex-col px-2 pt-12">
         <div className="mb-16">
           <PageTitleAndIntroduction
-            image={flyersContentPaths.data.image}
-            title={flyersContentPaths.pageHeader.title}
-            introduction={flyersContentPaths.pageHeader.introduction}
+            image={flyersPageContent.image}
+            title={flyersPageContent.pageTitle}
+            introduction={flyersPageContent.pageIntroduction}
           />
         </div>
         {/* Digital print card */}

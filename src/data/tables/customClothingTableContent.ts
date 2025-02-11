@@ -1,7 +1,7 @@
 import { t } from 'i18next';
 import imageTextileGarments from '../../assets/custom-clothing/clothing-images.png';
-import { customClotingContentPaths } from '../translationPaths';
-import { prices } from '../../api/data/prices';
+import { customClotingContentPaths } from '../../lib/translationPaths';
+import { prices } from '../prices/prices';
 
 const pricePathTextile = prices
   ? [...Object.values(prices.customClothing.textile)]

@@ -10,7 +10,7 @@ import { Notification } from '../../elementTemplates/Notification';
 import { Divider } from '@mui/material';
 import { useData } from '../../../context/DataContext';
 import PageTitleAndIntroduction from '../../elementTemplates/PageTitleAndIntroduction';
-import ContentCard from '../../elementTemplates/cards/ContentCard';
+import ContentCard from '../../elementTemplates/contentHolders/ContentCard';
 import { useEffect, useState } from 'react';
 import {
   getTable160gsmMatte,
@@ -23,8 +23,9 @@ import {
   getTableColorA3Budget,
   getTableColorA3Hq,
   getTablePolypropylene,
-} from '../../../lib/cardsContent/customPrint/postersCards';
+} from '../../../data/tables/customPrint/postersTableContent';
 import i18n from '../../../utils/i18';
+import { postersPageContent } from '../../../data/pages/pagesContent';
 
 export default function Posters() {
   // Make text content translatable
@@ -88,9 +89,9 @@ export default function Posters() {
       <div className="flex flex-col px-2 pt-12">
         <div className="mb-16">
           <PageTitleAndIntroduction
-            image={postersContentPaths.data.image}
-            title={postersContentPaths.pageHeader.title}
-            introduction={postersContentPaths.pageHeader.introduction}
+            image={postersPageContent.image}
+            title={postersPageContent.pageTitle}
+            introduction={postersPageContent.pageIntroduction}
           />
         </div>
 

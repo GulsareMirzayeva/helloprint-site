@@ -1,5 +1,5 @@
 import { t } from 'i18next';
-import { prices } from '../../../api/data/prices';
+import { prices } from '../../prices/prices';
 
 export function getTableLargeFormat() {
   return {

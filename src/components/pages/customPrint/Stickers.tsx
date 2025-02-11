@@ -8,10 +8,11 @@ import { TextBlock } from '../../elementTemplates/TextBlock';
 import { Divider } from '@mui/material';
 import { useData } from '../../../context/DataContext';
 import PageTitleAndIntroduction from '../../elementTemplates/PageTitleAndIntroduction';
-import ContentCard from '../../elementTemplates/cards/ContentCard';
-import { getTableLargeFormat } from '../../../lib/cardsContent/customPrint/stickersCards';
+import ContentCard from '../../elementTemplates/contentHolders/ContentCard';
+import { getTableLargeFormat } from '../../../data/tables/customPrint/stickersTableContent';
 import { useEffect, useState } from 'react';
 import i18n from '../../../utils/i18';
+import { stickersPageContent } from '../../../data/pages/pagesContent';
 
 export default function Stickers() {
   // Make text content translatable
@@ -44,9 +45,9 @@ export default function Stickers() {
       <div className="flex flex-col px-2 pt-12">
         <div className="mb-16">
           <PageTitleAndIntroduction
-            image={stickersContentPaths.data.image}
-            title={stickersContentPaths.pageHeader.title}
-            introduction={stickersContentPaths.pageHeader.introduction}
+            image={stickersPageContent.image}
+            title={stickersPageContent.pageTitle}
+            introduction={stickersPageContent.pageIntroduction}
           />
         </div>
         {/* Stickers Large format content card*/}
