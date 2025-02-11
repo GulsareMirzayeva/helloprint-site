@@ -47,6 +47,7 @@ export type StylePresetType = {
   };
 
   categoryCard: {
+    borderColor: string;
     backgroundColorDark: string;
     backgroundColorLight: string;
     backgroundColorActive: string;

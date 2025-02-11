@@ -65,6 +65,7 @@ export default function ContentCard({
       className={`
         flex flex-col p-4 sm:p-8 w-full rounded-lg shadow-sm
         ${bgColor}
+        ${stylePreset.categoryCard.borderColor}
       `}
     >
       {/* Card title */}

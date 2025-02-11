@@ -62,8 +62,9 @@ export const lightTheme = {
   // Categorie kaarten op pagina's waar prijstabellen worden weergegeven
   // Wordt ook gebruikt in Terms of Sale pagina waar een geselecteerde sectie wordt gehighlight
   categoryCard: {
-    backgroundColorDark: 'bg-gray-200', // Kaartkleur, zelfde kleur als achtergrond
-    backgroundColorLight: 'bg-gray-200', // Highlighted kaartkleur
+    borderColor: 'border border-gray-200', // Randkleur van kaart
+    backgroundColorDark: 'bg-gradient-to-br from-gray-200 to-[#f5f5f5]', // Kaartkleur, zelfde kleur als achtergrond
+    backgroundColorLight: 'bg-gradient-to-br from-gray-200 to-[#f5f5f5]', // Highlighted kaartkleur
     backgroundColorActive: 'bg-gray-200', // Terms of Sale actieve sectie
   },
 
@@ -74,10 +75,10 @@ export const lightTheme = {
     headBorderColor: 'border-gray-400', // Randkleur voor titel header
     unitsBorderColor: 'border-gray-400', // Randkleur voor units rij
     unitsBackgroundColor: 'bg-gray-50', // Randkleur voor units rij
-    cellBackgroundEven: 'even:bg-gray-200', // Achtergrondkleur voor even regels
+    cellBackgroundEven: 'even:bg-[#ebebeb]', // Achtergrondkleur voor even regels
     cellBackgroundOdd: 'odd:bg-gray-50', // Achtergrondkleur voor oneven regels
     cellBorderColor: 'border-gray-400', // Randkleur voor prijs sectie
-    highlightRow: 'hover:bg-[#C0C5CE]', // Achtergrondkleur voor regel bij aanwijzen
+    highlightRow: 'hover:bg-gray-300', // Achtergrondkleur voor regel bij aanwijzen
   },
 
   // Extra informatie onderaan de pagina content, wanneer van toepassing
@@ -167,8 +168,9 @@ export const darkTheme = {
   // Categorie kaarten op pagina's waar prijstabellen worden weergegeven
   // Wordt ook gebruikt in Terms of Sale pagina waar een geselecteerde sectie wordt gehighlight
   categoryCard: {
-    backgroundColorDark: 'bg-[#2c2c2c]', // Kaartkleur, zelfde kleur als achtergrond
-    backgroundColorLight: 'bg-[#2c2c2c]', // Highlighted kaartkleur
+    borderColor: 'border border-[#202020]', // Randkleur van kaart
+    backgroundColorDark: 'bg-gradient-to-br from-[#2c2c2c] to-[#2e2e2e]', // Kaartkleur, zelfde kleur als achtergrond
+    backgroundColorLight: 'bg-gradient-to-br from-[#2c2c2c] to-[#2e2e2e]', // Highlighted kaartkleur
     backgroundColorActive: 'bg-gray-600', // Terms of Sale actieve sectie
   },
 

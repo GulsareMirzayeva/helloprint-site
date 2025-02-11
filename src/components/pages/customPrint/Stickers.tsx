@@ -70,7 +70,7 @@ export default function Stickers() {
         <Divider
           style={{
             backgroundColor: `${stylePreset.overall.diverderColor}`,
-            marginTop: '16px',
+            marginTop: '32px',
             marginBottom: '64px',
           }}
           flexItem
