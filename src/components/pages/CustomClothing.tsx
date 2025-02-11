@@ -65,7 +65,7 @@ export default function CustomClothing() {
         </div>
 
         {/* Custom clothing  - Textile garments content card */}
-        <div className="flex flex-col gap-16">
+        <div className="flex flex-col gap-12">
           <ContentCard
             bgColor={stylePreset.categoryCard.backgroundColorLight}
             headerContent={{

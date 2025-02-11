@@ -63,7 +63,7 @@ export default function Cards() {
             introduction={cardsContentPaths.pageHeader.introduction}
           />
         </div>
-        <div className="flex flex-col gap-16">
+        <div className="flex flex-col gap-12">
           <ContentCard
             bgColor={stylePreset.categoryCard.backgroundColorLight}
             headerContent={{

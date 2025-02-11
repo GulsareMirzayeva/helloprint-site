@@ -93,8 +93,9 @@ export default function Posters() {
             introduction={postersContentPaths.pageHeader.introduction}
           />
         </div>
-        <div className="flex flex-col gap-16">
-          {/* 80 gsm color and Black and White */}
+
+        {/* 80 gsm color and Black and White */}
+        <div className="flex flex-col gap-12">
           <ContentCard
             bgColor={stylePreset.categoryCard.backgroundColorLight}
             headerContent={{

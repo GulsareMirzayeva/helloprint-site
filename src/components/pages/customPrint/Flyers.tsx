@@ -72,7 +72,7 @@ export default function Flyers() {
           />
         </div>
         {/* Digital print card */}
-        <div className="flex flex-col gap-16">
+        <div className="flex flex-col gap-12">
           <ContentCard
             bgColor={stylePreset.categoryCard.backgroundColorLight}
             headerContent={{

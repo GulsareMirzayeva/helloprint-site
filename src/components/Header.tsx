@@ -243,7 +243,7 @@ export default function Header() {
                 className={`
                 relative w-8 h-4 flex items-center rounded-full p-1 transition
                 hover:ring-1 hover:ring-gray-400 focus:ring-[#fb0036] focus:ring-1
-                ${darkMode ? 'bg-yellow-400' : 'bg-gray-600'}
+                ${darkMode ? 'bg-gray-50' : 'bg-gray-600'}
               `}
               >
                 <span

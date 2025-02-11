@@ -28,7 +28,7 @@ export default function ContactDetails() {
             <OpeningHoursSection />
           </div>
         </div>
-        <div className="pt-8">
+        <div className="py-4">
           <GoogleMap />
         </div>
       </div>
