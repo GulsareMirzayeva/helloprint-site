@@ -1,6 +1,7 @@
 import {
   cardsContentPaths,
   copyPrintContentPaths,
+  customClotingContentPaths,
   flyersContentPaths,
   foldersContentPaths,
   postersContentPaths,
@@ -50,8 +51,8 @@ export const copyPrintPageContent = {
 };
 
 export const customClothingPageContent = {
-  pageTitle: copyPrintContentPaths.pageHeader.title,
-  pageIntroduction: copyPrintContentPaths.pageHeader.introduction,
+  pageTitle: customClotingContentPaths.pageHeader.title,
+  pageIntroduction: customClotingContentPaths.pageHeader.introduction,
   pageLink: '/copy-print',
-  image: copyPrintContentPaths.data.image,
+  image: customClotingContentPaths.data.image,
 };

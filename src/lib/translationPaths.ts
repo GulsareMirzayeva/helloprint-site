@@ -97,7 +97,7 @@ export const customClotingContentPaths = {
   data: {
     image: image7,
   },
-  header: {
+  pageHeader: {
     title: 'customClothingPage.pageHeaderContent.title',
     introduction: 'customClothingPage.pageHeaderContent.introduction',
   },
