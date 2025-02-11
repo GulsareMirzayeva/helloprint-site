@@ -63,7 +63,7 @@ export default function ContentCard({
   return (
     <section
       className={`
-        flex flex-col p-4 sm:p-8 w-full rounded-md shadow-sm
+        flex flex-col p-4 sm:p-8 w-full rounded-lg shadow-sm
         ${bgColor}
       `}
     >
@@ -91,7 +91,7 @@ export default function ContentCard({
       {headerContent.notification && (
         <div
           className={`
-            pb-6 font-medium
+            pb-2 font-medium
             ${stylePreset.notification.textColor}
           `}
         >
@@ -110,7 +110,7 @@ export default function ContentCard({
       )}
 
       {/* Introduction text content */}
-      <div>
+      <div className="pt-1">
         <TextBlock value={headerContent.cardIntroduction} variant="body" />
       </div>
 

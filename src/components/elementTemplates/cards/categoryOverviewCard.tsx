@@ -22,7 +22,7 @@ export default function OverviewCategoryCard({
   return (
     <section
       className={`
-        flex flex-col items-start md:flex-row p-4  w-full rounded-md
+        flex flex-col items-start md:flex-row p-4  w-full rounded-lg
         ${bgColor}
       `}
     >

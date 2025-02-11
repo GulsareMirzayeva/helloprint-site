@@ -243,12 +243,12 @@ export default function Header() {
                 className={`
                 relative w-8 h-4 flex items-center rounded-full p-1 transition
                 hover:ring-1 hover:ring-gray-400 focus:ring-[#fb0036] focus:ring-1
-                ${darkMode ? 'bg-yellow-500' : 'bg-gray-700'}
+                ${darkMode ? 'bg-yellow-400' : 'bg-gray-600'}
               `}
               >
                 <span
                   className={`
-                  w-3 h-3 bg-gray-50 dark:bg-gray-900 rounded-full shadow-md transform transition 
+                  w-3 h-3 bg-gray-50 dark:bg-gray-800 rounded-full shadow-md transform transition 
                   ${darkMode ? 'translate-x-3' : 'translate-x-0'}
                 `}
                 />

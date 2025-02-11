@@ -71,13 +71,13 @@ export const lightTheme = {
   table: {
     headTextColor: 'text-gray-50', // Tekstkleur voor titel
     headBackgroundColor: 'bg-[#fb0036]', // Achtergrondkleur voor titel
-    headBorderColor: 'border-gray-50', // Randkleur voor titel header
-    unitsBorderColor: 'border-[#c2c2c2]', // Randkleur voor units rij
+    headBorderColor: 'border-gray-400', // Randkleur voor titel header
+    unitsBorderColor: 'border-gray-400', // Randkleur voor units rij
     unitsBackgroundColor: 'bg-gray-50', // Randkleur voor units rij
     cellBackgroundEven: 'even:bg-gray-200', // Achtergrondkleur voor even regels
     cellBackgroundOdd: 'odd:bg-gray-50', // Achtergrondkleur voor oneven regels
-    cellBorderColor: 'border-[#c2c2c2]', // Randkleur voor prijs sectie
-    highlightRow: 'hover:bg-gray-400', // Achtergrondkleur voor regel bij aanwijzen
+    cellBorderColor: 'border-gray-400', // Randkleur voor prijs sectie
+    highlightRow: 'hover:bg-[#C0C5CE]', // Achtergrondkleur voor regel bij aanwijzen
   },
 
   // Extra informatie onderaan de pagina content, wanneer van toepassing
