@@ -18,6 +18,11 @@ import logo9 from '../assets/officeSupplies/logoipsum-333.png';
 // List of brands that are displayed on the Office Supplies page
 const logoList = [logo1, logo2, logo6, logo3, logo8, logo9];
 
+// Common sentences
+export const commonSentences = {
+  tableCaption: 'commonSentences.tableCaption',
+};
+
 // Common used words
 export const commonWords = {
   color: 'commonWords.color',

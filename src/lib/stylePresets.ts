@@ -62,9 +62,9 @@ export const lightTheme = {
   // Categorie kaarten op pagina's waar prijstabellen worden weergegeven
   // Wordt ook gebruikt in Terms of Sale pagina waar een geselecteerde sectie wordt gehighlight
   categoryCard: {
-    borderColor: 'border border-gray-200', // Randkleur van kaart
-    backgroundColorDark: 'bg-gradient-to-br from-gray-200 to-[#f5f5f5]', // Kaartkleur, zelfde kleur als achtergrond
-    backgroundColorLight: 'bg-gradient-to-br from-gray-200 to-[#f5f5f5]', // Highlighted kaartkleur
+    borderColor: 'border border-gray-300', // Randkleur van kaart
+    backgroundColorDark: 'bg-gradient-to-br from-gray-100 to-[#e8e8e8]', // Kaartkleur, zelfde kleur als achtergrond
+    backgroundColorLight: 'bg-gradient-to-br from-gray-100 to-[#e8e8e8]', // Highlighted kaartkleur
     backgroundColorActive: 'bg-gray-200', // Terms of Sale actieve sectie
   },
 

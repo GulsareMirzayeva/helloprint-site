@@ -4,6 +4,7 @@ import { useData } from '../../../context/DataContext';
 import { QuantityDisplay } from '../../../utils/helperFunctions';
 import { BeatLoader } from 'react-spinners';
 import { PricingTableTypes } from '../../../lib/types/contentCardTypes';
+import { commonSentences } from '../../../lib/translationPaths';
 
 // Dynamicly render a pricing table
 export default function PricingTable({
@@ -32,7 +33,7 @@ export default function PricingTable({
   return (
     <table className="table-auto border-collapse w-full" role="table">
       {/* Caption - Stays visible for screenreaders */}
-      <caption className="sr-only">{t('commonSentences.tableCaption')}</caption>
+      <caption className="sr-only">{t(commonSentences.tableCaption)}</caption>
 
       <thead>
         <tr>

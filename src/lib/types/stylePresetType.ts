@@ -7,6 +7,11 @@ export type StylePresetType = {
     diverderColor: string;
   };
 
+  commonSentences: {
+    tableCaption: string;
+    errorPageMessage: string;
+  };
+
   contactForm: {
     textColor: string;
     backgroundColor: string;
