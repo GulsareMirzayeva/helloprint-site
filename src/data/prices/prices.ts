@@ -1,6 +1,9 @@
 export const prices = {
+  // Kopieren en printen
   copyPrint: {
+    // Kopieren en printen - A4
     A4: {
+      // Kopieren/printen - A4 - Zwart/wit (budget)
       blackWhite: {
         '1-00': {
           budget: 0.15,
@@ -15,6 +18,7 @@ export const prices = {
           budget: 0.06,
         },
       },
+      // Kopieren/printen - A4 - Kleur (budget)
       color: {
         '1-00': {
           budget: 0.35,
@@ -29,6 +33,7 @@ export const prices = {
           budget: 0.02,
         },
       },
+      // Kopieren/printen - A4 - HQ - Kleur en zwart/wit
       hq: {
         '1-00': {
           blackWhite: 0.2,
@@ -49,10 +54,15 @@ export const prices = {
       },
     },
   },
+  // Drukwerk
   customPrint: {
+    // Drukwerk - Folders
     folders: {
+      // Drukwerk - Folders - Digitaal geprint
       print: {
+        // Drukwerk - Folders - Digitaal geprint - A4
         A4: {
+          // Drukwerk - Folders - Digitaal geprint A4 - Zwart/wit
           blackWhite: {
             100: {
               '80gr': 28,
@@ -68,6 +78,7 @@ export const prices = {
             },
           },
           color: {
+            // Drukwerk - Folders - Digitaal geprint - A4 - Kleur
             50: {
               '150gr': 47,
               '170gr': 52,
@@ -91,9 +102,13 @@ export const prices = {
           },
         },
       },
+      // Drukwerk - Folders - Drukwerk
       offsetPrint: {
+        // Drukwerk - Folders - Drukwerk - A4
         A4: {
+          // Drukwerk - Folders - Drukwerk - A4 - Kleur
           color: {
+            // Drukwerk - Folders - Drukwerk - A4 - Kleur- 2-slag
             halfFold: {
               500: {
                 '135gr': 105,
@@ -121,6 +136,7 @@ export const prices = {
                 '250gr': 947,
               },
             },
+            // Drukwerk - Folders - Drukwerk - A4 - Kleur - 3-slag
             triFold: {
               500: {
                 '135gr': 99,
@@ -150,8 +166,11 @@ export const prices = {
             },
           },
         },
+        // Drukwerk - Folders - Drukwerk - A3
         A3: {
+          // Drukwerk - Folders - Drukwerk - A3 - Kleur
           color: {
+            // Drukwerk - Folders - Drukwerk - A3 - Kleur - 3-slag
             triFold: {
               500: {
                 '135gr': 167,
@@ -183,9 +202,13 @@ export const prices = {
         },
       },
     },
+    // Drukwerk - Flyers
     flyers: {
+      // Drukwerk - Flyers - Digitaal geprint
       print: {
+        // Drukwerk - Flyers - Digitaal geprint - A5
         A5: {
+          // Drukwerk - Flyers - Digitaal geprint - A5 - Enkelzijdig
           singleSided: {
             100: {
               '90gr': 28,
@@ -208,6 +231,7 @@ export const prices = {
               '250gr': 275,
             },
           },
+          // Drukwerk - Flyers - Digitaal geprint - A5 - Dubbelzijdig
           doubleSided: {
             100: {
               '90gr': 55,
@@ -226,7 +250,9 @@ export const prices = {
             },
           },
         },
+        // Drukwerk - Flyers - Digitaal geprint - A6
         A6: {
+          // Drukwerk - Flyers - Digitaal geprint - A6 - Enkelzijdig
           singleSided: {
             100: {
               '90gr': 14,
@@ -249,6 +275,7 @@ export const prices = {
               '250gr': 175,
             },
           },
+          // Drukwerk - Flyers - Digitaal geprint - A6 - Dubbelzijdig
           doubleSided: {
             100: {
               '90gr': 27.5,
@@ -273,9 +300,13 @@ export const prices = {
           },
         },
       },
+      // Drukwerk - Flyers - Drukwerk
       offsetPrint: {
+        // Drukwerk - Flyers - Drukwerk - A5
         A5: {
+          // Drukwerk - Flyers - Drukwerk - A5 - Enkelzijdig (leeg want niet van toepassing)
           singleSided: {},
+          // Drukwerk - Flyers - Drukwerk - A5 - Dubbelzijdig
           doubleSided: {
             500: {
               '135gr': 60,
@@ -304,8 +335,11 @@ export const prices = {
             },
           },
         },
+        // Drukwerk - Flyers - Drukwerk - A6
         A6: {
+          // Drukwerk - Flyers - Drukwerk - A6 - Enkelzijdig (leeg want niet van toepassing)
           singleSided: {},
+          // Drukwerk - Flyers - Drukwerk - A6 - Dubbelzijdig
           doubleSided: {
             500: {
               '135gr': 47,
@@ -341,7 +375,9 @@ export const prices = {
         },
       },
     },
+    // Drukwerk - Posters
     posters: {
+      // Drukwerk - Posters - Zwart/wit
       blackWhite: {
         A2: {
           '42x59.4': 2.75,
@@ -359,6 +395,7 @@ export const prices = {
           '84.1x118.9': 4.5,
         },
       },
+      // Drukwerk - Posters - Kleur - 80 grams
       color: {
         '80gr': {
           A2: {
@@ -387,6 +424,7 @@ export const prices = {
             '10+': 16,
           },
         },
+        // Drukwerk - Posters - Kleur - 160 grams Mat
         '160grMat': {
           A2: {
             '1-5': 11,
@@ -414,6 +452,7 @@ export const prices = {
             '10+': 21.5,
           },
         },
+        // Drukwerk - Posters - Kleur - 160 grams Satijn
         '160grSatin': {
           A2: {
             '1-5': 13.5,
@@ -441,6 +480,7 @@ export const prices = {
             '10+': 23.5,
           },
         },
+        // Drukwerk - Posters - Kleur - 190 grams Glans
         '190grGloss': {
           A2: {
             '1-5': 13.5,
@@ -468,6 +508,7 @@ export const prices = {
             '10+': 23.5,
           },
         },
+        // Drukwerk - Posters - Kleur - 260 grams Satijn
         '260grSatin': {
           A2: {
             '1-5': 14.5,
@@ -495,6 +536,7 @@ export const prices = {
             '10+': 27.5,
           },
         },
+        // Drukwerk - Posters - Kleur - Polypropyleen
         polypropylene: {
           A2: {
             perPiece: 17.5,
@@ -512,6 +554,7 @@ export const prices = {
             perPiece: 37.5,
           },
         },
+        // Drukwerk - Posters - Kleur - 260 grams Geschept papier
         '260grHandMade': {
           A2: {
             perPiece: 17.5,
@@ -529,6 +572,7 @@ export const prices = {
             perPiece: 37.5,
           },
         },
+        // Drukwerk - Posters - Budget Full color
         fullColorBudget: {
           '1-100': {
             perPiece: 0.7,
@@ -540,6 +584,7 @@ export const prices = {
             perPiece: 0.5,
           },
         },
+        // Drukwerk - Posters - HQ Full color
         fullColorHq: {
           '1-100': {
             perPiece: 1.9,
@@ -553,16 +598,22 @@ export const prices = {
         },
       },
     },
+    // Drukwerk - Stickers
     stickers: {
+      // Drukwerk - Stickers - A4
       A4: {
         perA4: 8.95,
       },
+      // Drukwerk - Stickers - Vierkante meter
       squareMeter: {
         perMeter: 69,
       },
     },
+    // Drukwerk - Kaarten
     cards: {
+      // Drukwerk - Kaarten - Digitaal geprint
       print: {
+        // Drukwerk - Kaarten - Digitaal geprint - Zwart/wit - Enkel- en dubbelzijdig
         blackWhite: {
           100: {
             singleSide: 9.5,
@@ -577,6 +628,7 @@ export const prices = {
             doubleSide: 38,
           },
         },
+        // Drukwerk - Kaarten - Digitaal geprint - Kleur - Enkel- en dubbelzijdig
         color: {
           100: {
             singleSide: 14,
@@ -592,7 +644,9 @@ export const prices = {
           },
         },
       },
+      // Drukwerk - Kaarten - Drukwerk
       offsetPrint: {
+        // Drukwerk - Kaarten - Drukwerk - Kleur
         color: {
           500: {
             singleSide: 55,
@@ -614,45 +668,57 @@ export const prices = {
       },
     },
   },
+  // Kleding en textiel
   customClothing: {
+    // Kleding en textiel - Kledingstukken
     textile: {
+      // Kleding en textiel - Kledingstukken - T-shirt
       tShirt: {
         blackWhite: 5.95,
         color: 6.95,
       },
+      // Kleding en textiel - Kledingstukken - Polo
       polo: {
         blackWhite: 14.95,
         color: 16.95,
       },
+      // Kleding en textiel - Kledingstukken - Sweater
       sweaters: {
         blackWhite: 29.95,
         color: 32.95,
       },
+      // Kleding en textiel - Kledingstukken - Hoody
       hoody: {
         blackWhite: 37.95,
         color: 39.95,
       },
     },
     flex: {
+      // Kleding en textiel - Flex - Voorkant borst logo
       frontChestLogo: {
         allColors: 9.95,
       },
+      // Kleding en textiel - Flex - Voor- of achterkant groot
       frontOrBacklarge: {
         allColors: 12.95,
       },
+      // Kleding en textiel - Flex - Voorkant klein en achterkant groot
       frontSmallBackLarge: {
         allColors: 19.95,
       },
     },
     dtg: {
+      // Kleding en textiel - DTG - Voorkant borst logo
       frontChestLogo: {
         white: 8.95,
         color: 9.95,
       },
+      // Kleding en textiel - DTG - Voor- of achterkant groot
       frontOrBacklarge: {
         white: 11.95,
         color: 12.95,
       },
+      // Kleding en textiel - DTG - Voorkant klein en achterkant groot
       frontSmallBackLarge: {
         white: 18.95,
         color: 19.95,

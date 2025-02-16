@@ -102,8 +102,8 @@ export default function Flyers() {
               notification: customPrintingContentPaths.offsetPrintDeliveryTime,
             }}
             tableContent={[
-              tableOffsetPrintA6DoubleSided,
               tableOffsetPrintA5DoubleSided,
+              tableOffsetPrintA6DoubleSided,
             ]}
           />
         </div>
