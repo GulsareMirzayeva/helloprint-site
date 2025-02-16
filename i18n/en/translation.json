@@ -397,9 +397,9 @@
       },
       "common": {
         "headerOne": "Posters",
-        "headerTwo": "1-5 pcs",
-        "headerThree": "6-10 pcs",
-        "headerFour": "10+ pcs",
+        "headerTwo": "1-5 pieces",
+        "headerThree": "6-10 pieces",
+        "headerFour": "10+ pieces",
         "headerFive": "Per piece"
       },
       "cardColorOrBlackAndWhite": {
@@ -647,7 +647,7 @@
     "textile": "Textile",
     "amount": "Amount",
     "pricePerPrint": "Price per print",
-    "pricePerPiece": "Price per print",
+    "pricePerPiece": "Price per piece",
     "perPiece": "Per piece",
     "prints": "Prints",
     "price": "Price",

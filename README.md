@@ -1,5 +1,26 @@
-# Copy & Print Shop Redesign
+# Shop Website Redesign
 
-This project is a personal exercise in front-end development, creating a redesign of an existing website using React. All content, including text and price tables, is fictional and intended for demonstration purposes only. This project is not affiliated with or endorsed by the original website owner.
+This project is a complete redesign of a local print shop’s website, created as a self-initiated learning project. The goal was to modernize the interface, improve usability, and enhance maintainability with a structured and scalable codebase.
 
-**Status:** In progress - Not intended for publication.
+## Introduction
+
+This project showcases **dynamic content rendering**, **state management**, and **responsive design** while focusing on **accessibility** and **SEO optimization**.
+
+## Features
+
+- Fully responsive layout with a clean, modern UI
+- Dynamic pricing tables with real-time updates
+- Multilingual support with instant content translation
+- Light and dark mode options
+- Accessibility enhancements following WCAG guidelines
+
+## Technologies Used
+
+- **TypeScript**
+- **React**
+- **React Router**
+- **Tailwind CSS**
+- **Data context for state management**
+- **Vite for build and development**
+- **i18next for translations**
+- **Netlify for deployment**

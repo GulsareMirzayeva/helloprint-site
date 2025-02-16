@@ -42,11 +42,11 @@ export const homeContentPaths = {
 // Paths to Shop information information content in translation files
 export const shopInfoPaths = {
   name: "Copy & Print shop 't Hartje",
-  adress: 'Straatnaam 123',
-  zipCode: '1234 AZ',
+  adress: 'Korreweg 38',
+  zipCode: '9715 AB',
   town: 'Groningen',
-  telNo: '050-1234567',
-  email: 'info@mail.nl',
+  telNo: '050-5779365',
+  email: 'info@thartje.nl',
   facebookUrl: 'https://www.facebook.com/copyshopthartje/',
   openingHoursMondayToFriday: '09:00 - 18:00',
   openingHoursSaturday: '10:00 - 17:00',

@@ -34,8 +34,8 @@ export function getTableTextileGarments() {
       ],
       units: [
         t('commonWords.clothingGarment'),
-        t('commonWords.pricePerPrint'),
-        t('commonWords.pricePerPrint'),
+        t('commonWords.pricePerPiece'),
+        t('commonWords.pricePerPiece'),
       ],
       options: [
         t(
