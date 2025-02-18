@@ -7,7 +7,7 @@ Light theme
 export const lightTheme = {
   // Algemene stijlen die op meerdere pagina's worden gebruikt
   overall: {
-    textColorPrimary: 'text-gray-800', // Tekstkleur voor algemene tekst
+    textColorPrimary: 'text-gray-900', // Tekstkleur voor algemene tekst
     textColorSecondary: 'text-gray-600', // Tekstkleur voor sub titels
     textColorLight: 'text-gray-50', // Tekstkleur voor tekst op rode of donkere achtergronden
     backgroundColor: 'bg-gray-50', // Algemene achtergrondkleur
