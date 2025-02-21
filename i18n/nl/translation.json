@@ -26,7 +26,7 @@
       "introduction": "Snel printen of kopiëren, van brieven tot verslagen. Maak gebruik van onze self-service",
       "content": [
         "Kleur",
-        "Zwart/Wit",
+        "Zwart-wit",
         "Budgetoptie",
         "Hoge kwaliteit",
         "Inbinden",
@@ -109,7 +109,7 @@
       "subtitle": "Wilt u een prijsopgave voor een product ontvangen? Wij voorzien u graag van een offerte op maat. Het aanvragen van een offerte is kosteloos en eenvoudig.",
       "homePageSubtitle": "Wilt u een prijsopgave voor een product ontvangen?<br >Wij voorzien u graag van een offerte op maat.<br >Het aanvragen van een offerte is kosteloos en eenvoudig.",
       "contactTitle": "Kunt u het juiste product of een prijs niet vinden? Of wilt u meer weten over het aanleveren van opdrachten? Het is altijd mogelijk om hieronder een vrijblijvende offerte aan te vragen",
-      "messageTitle": "Offerte op maat",
+      "messageTitle": "Stuur een bericht of vraag vrijblijvend een offerte aan",
       "contactForm": "Stuur bericht",
       "confirmMessage": "<b>Bericht verzonden!</b><br />Wij zullen zo spoedig contact met u opnemen.",
       "errors": {
@@ -132,7 +132,7 @@
       "header": {
         "title": "CREËER UNIEKE KLEDING",
         "subTitle": "Kies een kledingstuk",
-        "introduction": "Onderstaande prijstabel geeft een overzicht van de kosten van diverse kledingstukken, zoals shirts, polo’s, truien en capuchontruien. Afhankelijk van uw keuze kan de bedrukking in zwart/wit of in kleur worden uitgevoerd. De uiteindelijke prijs is afhankelijk van het type kledingstuk en het formaat van de opdruk."
+        "introduction": "Onderstaande prijstabel geeft een overzicht van de kosten van diverse kledingstukken, zoals shirts, polo’s, truien en capuchontruien. Afhankelijk van uw keuze kan de bedrukking in zwart-wit of in kleur worden uitgevoerd. De uiteindelijke prijs is afhankelijk van het type kledingstuk en het formaat van de opdruk."
       },
       "tableTextileGarments": {
         "header": {
@@ -151,7 +151,7 @@
       "header": {
         "title": "FLEX OF DIRECT OP KLEDING",
         "subTitle": "Kies een printtechniek",
-        "introduction": "Flex-materiaal is perfect voor strakke, éénkleurige ontwerpen zoals logo’s en teksten. Hieronder vind je onze tarieven voor printen en snijden. Met onze DTG-printer kunnen we direct op kleding printen, perfect voor gedetailleerde en kleurrijke ontwerpen. Hieronder vind je de tarieven voor kledingbedrukking."
+        "introduction": "Flex-materiaal is perfect voor strakke, éénkleurige ontwerpen zoals logo’s en teksten. Hieronder vindt u links onze tarieven voor printen en snijden. Met onze DTG-printer kunnen we direct op kleding printen, perfect voor gedetailleerde en kleurrijke ontwerpen. Hieronder vindt u rechts de tarieven voor kledingbedrukking."
       },
       "common": {
         "headerOne": "Flex / Vinyl",
@@ -196,7 +196,7 @@
   },
   "customPrintPage": {
     "overviewTitle": "Een overzicht van ons aanbod in drukwerk",
-    "overviewIntroduction": "Ontdek ons uitgebreide aanbod aan drukwerk mogelijkheden. Van visitekaartjes en flyers tot textielprints en grootformaat drukwerk, wij bieden oplossingen voor elke behoefte. Klik op een categorie voor meer informatie en laat je inspireren door de mogelijkheden",
+    "overviewIntroduction": "Ontdek ons uitgebreide aanbod aan drukwerk mogelijkheden. Van visitekaartjes en flyers tot textielprints en grootformaat drukwerk, wij bieden oplossingen voor elke behoefte. Klik op een categorie voor meer informatie en laat u inspireren door de mogelijkheden",
     "stickers": {
       "pageHeader": {
         "title": "Stickers",
@@ -248,7 +248,7 @@
         },
         "tableBlackAndWhite": {
           "header": {
-            "title": "Zwart/wit",
+            "title": "Zwart-wit",
             "subTitle": "350 grams papier"
           },
           "columnHeaders": {
@@ -280,7 +280,7 @@
     "flyers": {
       "pageHeader": {
         "title": "Flyers",
-        "introduction": "Hier vind je een overzicht van de kosten voor het afdrukken van flyers in A5- en A6-formaat, met de keuze voor zowel enkelzijdige als dubbelzijdige drukwerkopties.<br /><br />Je kunt kiezen uit verschillende papiersoorten om de ideale uitstraling voor jouw flyers te realiseren, afgestemd op je wensen en het beoogde gebruik."
+        "introduction": "Hier vindt u een overzicht van de kosten voor het afdrukken van flyers in A5- en A6-formaat, met de keuze voor zowel enkelzijdige als dubbelzijdige drukwerkopties.<br /><br />U kunt kiezen uit verschillende papiersoorten om de ideale uitstraling voor uw flyers te realiseren, afgestemd op uw wensen en het beoogde gebruik."
       },
       "cardDigitalPrint": {
         "header": {
@@ -338,7 +338,7 @@
     "folders": {
       "pageHeader": {
         "title": "Folders",
-        "introduction": "Hier vind je een overzicht van de kosten voor het afdrukken van folders in A3- en A4-formaat. Je kunt kiezen uit een 2-slag of 3-slag vouwwijze, afhankelijk van de boodschap die je wilt overbrengen en de ruimte die je hiervoor nodig hebt. De verschillende papiersoorten zorgen voor een professionele uitstraling die aansluit bij het doel van je folder.<br /><br />De prijzen worden overzichtelijk weergegeven per papiersoort en oplage, zodat je snel een keuze kunt maken die past bij je wensen en budget."
+        "introduction": "Hier vindt u een overzicht van de kosten voor het afdrukken van folders in A3- en A4-formaat. U kunt kiezen uit een 2-slag of 3-slag vouwwijze, afhankelijk van de boodschap die u wilt overbrengen en de ruimte die u hiervoor nodig hebt. De verschillende papiersoorten zorgen voor een professionele uitstraling die aansluit bij het doel van uw folder.<br /><br />De prijzen worden overzichtelijk weergegeven per papiersoort en oplage, zodat u snel een keuze kunt maken die past bij uw wensen en budget."
       },
       "common": {
         "headerOne": "Folders",
@@ -354,7 +354,7 @@
         "header": {
           "title": "DIGITAAL GEPRINT",
           "subTitle": "A4 Formaat",
-          "introduction": "Dit overzciht is voor digitale A4-folders, beschikbaar in kleur op 150g, 170g of 250g papier, of zwart/wit op 80g papier. U kunt kiezen uit een 2- of 3-slag uitvoering, afhankelijk van de hoeveelheid informatie die u wilt presenteren. Dit formaat is ideaal voor het verspreiden van gedetailleerde informatie of promoties. Het materiaal biedt een professionele uitstraling, en de verschillende papiersoorten geven u de flexibiliteit om de juiste uitstraling voor uw boodschap te kiezen.",
+          "introduction": "Dit overzciht is voor digitale A4-folders, beschikbaar in kleur op 150g, 170g of 250g papier, of zwart-wit op 80g papier. U kunt kiezen uit een 2- of 3-slag uitvoering, afhankelijk van de hoeveelheid informatie die u wilt presenteren. Dit formaat is ideaal voor het verspreiden van gedetailleerde informatie of promoties. Het materiaal biedt een professionele uitstraling, en de verschillende papiersoorten geven u de flexibiliteit om de juiste uitstraling voor uw boodschap te kiezen.",
           "notification": "Levertijd 7 werkdagen"
         },
         "tableColor": {
@@ -366,7 +366,7 @@
         "tableBlackAndWhite": {
           "header": {
             "title": "A4 Formaat - 2 of 3-slag",
-            "subTitle": "Zwart/wit - 80 grams wit of gekleurd papier"
+            "subTitle": "Zwart-wit - 80 grams wit of gekleurd papier"
           }
         }
       },
@@ -400,7 +400,7 @@
     "posters": {
       "pageHeader": {
         "title": "Posters",
-        "introduction": "Verken de beschikbare opties voor het printen van posters, waarbij je kunt kiezen uit verschillende formaten en papiersoorten. Deze keuzes stellen je in staat de presentatie van je poster nauwkeurig af te stemmen op het gewenste resultaat. Van een gedetailleerde zwart-wit afdruk tot een kleurrijke weergave, we bieden een scala aan mogelijkheden die aansluiten bij de specifieke eisen van je project.<br /><br />Raadpleeg de onderstaande opties voor een overzicht van de beschikbare combinaties"
+        "introduction": "Verken de beschikbare opties voor het printen van posters, waarbij u kunt kiezen uit verschillende formaten en papiersoorten. Deze keuzes stellen u in staat de presentatie van uw poster nauwkeurig af te stemmen op het gewenste resultaat. Van een gedetailleerde zwart-wit afdruk tot een kleurrijke weergave, we bieden een scala aan mogelijkheden die aansluiten bij de specifieke eisen van uw project.<br /><br />Raadpleeg de onderstaande opties voor een overzicht van de beschikbare combinaties"
       },
       "common": {
         "headerOne": "Posters",
@@ -411,7 +411,7 @@
       },
       "cardColorOrBlackAndWhite": {
         "header": {
-          "title": "Kleur of Zwart/wit",
+          "title": "Kleur of Zwart-wit",
           "subTitle": "80 grams papier",
           "introduction": "Wij bieden posters op 80 grams papier, beschikbaar in zowel kleur als zwart-wit. Dit papier is ideaal voor het printen van posters die een lichtgewicht, maar kwalitatief goed resultaat vereisen voor zowel binnen- als buitengebruik.",
           "notification": "Levertijd 1-2 werkdagen"
@@ -424,7 +424,7 @@
         },
         "tableBlackAndWhite": {
           "header": {
-            "title": "Zwart/wit",
+            "title": "Zwart-wit",
             "subTitle": "80 grams papier"
           }
         }
@@ -509,31 +509,33 @@
   "copyPrintPage": {
     "pageHeaderContent": {
       "title": "Kopiëren en printen",
-      "introduction": "Bij ons kunt u eenvoudig en snel uw kopieën en prints verzorgen. Met onze self-service printers kunt u direct documenten printen vanaf een USB-stick of downloaden vanuit uw e-mail.<br /><br />Daarnaast bieden wij mogelijkheden voor inbinden en lamineren, zodat uw documenten een nette en professionele uitstraling krijgen. Ideaal voor zakelijke doeleinden, studieprojecten of persoonlijke documenten."
+      "introduction": "Bij ons kunt u eenvoudig en snel uw kopieën en prints verzorgen. Met onze self-service printers kunt u direct documenten printen vanaf een USB-stick of downloaden vanuit uw e-mail.",
+      "subTitle": "Lamineren",
+      "subText": "Daarnaast bieden wij mogelijkheden voor inbinden en lamineren, zodat uw documenten een nette en professionele uitstraling krijgen. Ideaal voor zakelijke doeleinden, studieprojecten of persoonlijke documenten."
     },
     "cardBudget": {
       "header": {
         "title": "BUDGET",
-        "subTitle": "Kleur of Zwart/wit",
-        "introduction": "Voor het kopiëren en printen bieden wij budgetvriendelijk A4-papier van 80 gram, geschikt voor zowel kleur- als zwart-witafdrukken. Dit papier is ideaal voor alledaagse print- en kopieerbehoeften. De genoemde prijzen zijn gebaseerd op self-service, waardoor u snel en voordelig uw documenten kunt verwerken. Gebruik hiervoor printers 1 t/m 3."
+        "subTitle": "Kleur of Zwart-wit",
+        "introduction": "Voor het kopiëren en printen bieden wij budgetvriendelijk A4-papier van 80 gram, geschikt voor zowel kleur- als zwart-wit afdrukken. Dit papier is ideaal voor alledaagse print- en kopieerbehoeften. De genoemde prijzen zijn gebaseerd op self-service, waardoor u snel en voordelig uw documenten kunt verwerken. Gebruik hiervoor printers 1 t/m 3."
       },
       "tableColor": {
         "title": "A4 Kleur | Printer 1 t/m 3",
         "subTitle": "80 grams papier"
       },
       "tableBlackAndWhite": {
-        "title": "A4 Zwart/wit | Printer 1 t/m 3",
+        "title": "A4 Zwart-wit | Printer 1 t/m 3",
         "subTitle": "80 grams papier"
       }
     },
     "cardHq": {
       "header": {
         "title": "HOGE KWALITEIT",
-        "subTitle": "Kleur of Zwart/wit",
-        "introduction": "Voor hoogwaardige kopieën en prints bieden wij A4-papier van 90 gram, geschikt voor zowel kleur- als zwart-witafdrukken. Dit papier zorgt voor een professionele uitstraling met een stevigere en gladdere afwerking. Voor het beste resultaat dient u gebruik te maken van printer 4, die speciaal is ingesteld voor deze papierkwaliteit."
+        "subTitle": "Kleur of Zwart-wit",
+        "introduction": "Voor hoogwaardige kopieën en prints bieden wij A4-papier van 90 gram, geschikt voor zowel kleur- als zwart-wit afdrukken. Dit papier zorgt voor een professionele uitstraling met een stevigere en gladdere afwerking. Voor het beste resultaat dient u gebruik te maken van printer 4, die speciaal is ingesteld voor deze papierkwaliteit."
       },
       "tableHq": {
-        "title": "A4 Kleur of Zwart/wit | Printer 4",
+        "title": "A4 Kleur of Zwart-wit | Printer 4",
         "subTitle": "90 grams papier"
       }
     },
@@ -545,7 +547,7 @@
   },
   "officeSupplies": {
     "title": "Kantoor artikelen",
-    "introduction": "Efficiënt werken begint met de juiste kantoorbenodigdheden. In onze winkel vind je een breed assortiment kantoorartikelen, van schrijfwaren en ordners tot enveloppen en etiketten. Daarnaast bieden we een grote selectie cartridges voor diverse printers, zodat je altijd scherp en helder kunt afdrukken.<br /><br />Ons aanbod bestaat uit producten van bekende merken, geselecteerd op kwaliteit en betrouwbaarheid."
+    "introduction": "Efficiënt werken begint met de juiste kantoorbenodigdheden. In onze winkel vindt u een breed assortiment kantoorartikelen, van schrijfwaren en ordners tot enveloppen en etiketten. Daarnaast bieden we een grote selectie cartridges voor diverse printers, zodat u altijd scherp en helder kunt afdrukken.<br /><br />Ons aanbod bestaat uit producten van bekende merken, geselecteerd op kwaliteit en betrouwbaarheid."
   },
   "PaperWeights": {
     "80gr": "80 grams papier",
@@ -583,9 +585,9 @@
     "A4": "A4",
     "A4Bifold": "A4 formaat | 2-slag",
     "A4BifoldOrTrifold": "A4 formaat | 2 of 3-slag",
-    "A4BlackWhite": "A4 Zwart/wit",
+    "A4BlackWhite": "A4 Zwart-wit",
     "A4Color": "A4 Kleur",
-    "A4ColorOrBlackWhite": "A4 Kleur of zwart/wit",
+    "A4ColorOrBlackWhite": "A4 Kleur of zwart-wit",
     "A4FormatComplete": "A4 formaat",
     "A4Trifold": "A4 formaat | 3-slag",
     "A4WhiteOrColoredPaper": "| Wit of gekleurd papier",
@@ -647,8 +649,8 @@
     "color": "Kleur",
     "colored": "Gekleurd",
     "colorCapital": "KLEUR",
-    "blackAndWhite": "Zwart/wit",
-    "colorOrBlackWhite": "Kleur of zwart/wit",
+    "blackAndWhite": "Zwart-wit",
+    "colorOrBlackWhite": "Kleur of zwart-wit",
     "colorOrBlackWhiteCapital": "KLEUR OF ZWART/WIT",
     "singleSided": "Enkelzijdig",
     "doubleSided": "Dubbelzijdig",

@@ -54,10 +54,6 @@ export default function MessageForm() {
         <ConfirmMessage />
       ) : (
         <>
-          <TextBlock
-            value={contactFormTextContentPaths.sendMessage}
-            variant="subTitle"
-          />
           <form
             onSubmit={handleSubmit(onSubmit)}
             className={`

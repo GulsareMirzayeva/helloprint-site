@@ -98,7 +98,10 @@ export default function Header() {
     return (
       <div
         ref={accordionRef}
-        className="relative"
+        className={`
+          relative
+          ${stylePreset.navigation.textSize}
+          `}
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
       >
@@ -118,9 +121,9 @@ export default function Header() {
             {t(menuButtonNames.customPrinting)}
           </button>
           {isAccordionOpen ? (
-            <KeyboardArrowUpIcon fontSize="small" />
+            <KeyboardArrowUpIcon fontSize="medium" />
           ) : (
-            <KeyboardArrowDownIcon fontSize="small" />
+            <KeyboardArrowDownIcon fontSize="medium" />
           )}
         </div>
         {children}

@@ -2,8 +2,8 @@ import { t } from 'i18next';
 import { prices } from '../prices/prices';
 import {
   splitPriceOptions,
-  splitPriceOptionsExtendedHigh,
   splitPriceOptionsExtendedLow,
+  splitPriceOptionsExtendedMedium,
 } from '../../lib/priceOptions';
 import { copyPrintContentPaths } from '../../lib/translationPaths';
 
@@ -31,7 +31,7 @@ export function getTableDataBudgetBlackAndWhite() {
     data: {
       headerTitles: [t('commonWords.prints'), t('commonWords.blackAndWhite')],
       units: [t('commonWords.amount'), t('commonWords.pricePerPrint')],
-      options: splitPriceOptionsExtendedHigh,
+      options: splitPriceOptionsExtendedMedium,
       prices: [...Object.values(prices.copyPrint.A4.blackWhite)],
     },
   };

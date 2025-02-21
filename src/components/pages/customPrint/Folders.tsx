@@ -138,7 +138,10 @@ export default function Folders() {
           variant="fullWidth"
         />
         <div className="pb-2">
-          <TextBlock value={shopInfoPaths.contactTitle} variant={'subTitle'} />
+          <TextBlock
+            value={shopInfoPaths.contactTitle}
+            variant={'subTitleMedium'}
+          />
         </div>
         <div className="w-full">
           <SendMessage />

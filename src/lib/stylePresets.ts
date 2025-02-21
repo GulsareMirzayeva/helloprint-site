@@ -28,13 +28,14 @@ export const lightTheme = {
 
   // Knoppen in het navigatiemenu
   navigation: {
+    textSize: 'text-lg', // Tekstgrootte van menuknoppen
     backgroundColor: 'bg-gray-50', // Achtergrondkleur van het submenu
-    backgroundHover: 'hover:bg-gray-200', // Achtergrondkleur van knoppen in het submenu bij aanwijzen
-    textColor: 'text-gray-700', // Tekstkleur van knoppen in het submenu
-    textColorHover: 'hover:text-gray-700', // Tekstkleur van knoppen in het submenu bij aanwijzen
+    backgroundHover: 'hover:bg-[#fb0036]', // Achtergrondkleur van knoppen in het submenu bij aanwijzen
+    textColor: 'text-gray-800', // Tekstkleur van knoppen in het submenu
+    textColorHover: 'hover:text-gray-50', // Tekstkleur van knoppen in het submenu bij aanwijzen
     underlineActiveColor: 'border-b-[#fb0036]', // Kleur van streep onder actieve knop
     underlineInActiveColor: 'border-b-gray-50', // Kleur van streep onder inactieve knop
-    underlineHoverColor: 'hover:border-b-gray-300', // Kleur van streep onder knop bij aanwijzen
+    underlineHoverColor: 'hover:border-b-gray-400', // Kleur van streep onder knop bij aanwijzen
   },
 
   // Openingstijden en contactmogelijkheden component op de homepage
@@ -134,6 +135,7 @@ export const darkTheme = {
 
   // Knoppen in het navigatiemenu
   navigation: {
+    textSize: 'text-lg', // Tekstgrootte van menuknoppen
     backgroundColor: 'bg-[#2c2c2c]', // Achtergrondkleur van het submenu
     backgroundHover: 'hover:bg-gray-600', // Achtergrondkleur van knoppen in het submenu bij aanwijzen
     textColorHover: 'text-[#EAE0D5]', // Tekstkleur van knoppen in het submenu bij aanwijzen

@@ -79,7 +79,10 @@ export default function Stickers() {
 
         {/* Message section at the bottom, introduced by an introduction text */}
         <div className="pb-2">
-          <TextBlock value={shopInfoPaths.contactTitle} variant={'subTitle'} />
+          <TextBlock
+            value={shopInfoPaths.contactTitle}
+            variant={'subTitleMedium'}
+          />
         </div>
         <div className="w-full">
           <SendMessage />

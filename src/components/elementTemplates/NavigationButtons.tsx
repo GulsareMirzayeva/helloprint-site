@@ -14,7 +14,9 @@ export const NavigationLink = (linkProps: NavigationType) => {
     <Link
       to={linkProps.path}
       className={`
-        flex items-center cursor-default border-b-2 transition ${
+        flex items-center cursor-default border-b-2 transition 
+        ${stylePreset.navigation.textSize}
+        ${
           location.pathname === linkProps.path
             ? `${stylePreset.navigation.underlineActiveColor}`
             : `${stylePreset.navigation.underlineInActiveColor}
@@ -36,6 +38,7 @@ export const SubNavigationLink = (linkProps: SubNavigationType) => {
       <li
         className={`
           p-1 cursor-pointer
+          ${stylePreset.navigation.textSize}
           ${stylePreset.navigation.backgroundHover}
           ${stylePreset.navigation.textColorHover}
           ${stylePreset.navigation.textColor}

@@ -1,22 +1,31 @@
 // Page heading images
-import image7 from '../assets/introduction-images/image7.jpg';
-import image6 from '../assets/introduction-images/image6.jpg';
-import image5 from '../assets/introduction-images/image5.jpg';
-import image4 from '../assets/introduction-images/image4.jpg';
-import image3 from '../assets/introduction-images/image3.jpg';
-import image2 from '../assets/introduction-images/image2.jpg';
-import image1 from '../assets/introduction-images/image1.jpg';
+import copyPrintIntroduction from '../assets/introduction-images/copyPrintIntroduction.jpg';
+import customClothingIntroductionMale from '../assets/introduction-images/customPrintIntroduction-male-med.jpg';
+import stickersIntroduction from '../assets/introduction-images/stickersIntroduction.jpg';
+import flyersIntroduction from '../assets/introduction-images/flyersIntroduction.jpg';
+import foldersIntroduction from '../assets/introduction-images/foldersIntroduction.jpg';
+import postersIntroduction from '../assets/introduction-images/postersIntroduction.jpg';
+import cardsIntroduction from '../assets/introduction-images/cardsIntroduction.jpg';
 
 // Logo's for Office supplies page
-import logo1 from '../assets/officeSupplies/logoipsum-214.png';
-import logo2 from '../assets/officeSupplies/logoipsum-245.png';
-import logo3 from '../assets/officeSupplies/logoipsum-264.png';
-import logo6 from '../assets/officeSupplies/logoipsum-317.png';
-import logo8 from '../assets/officeSupplies/logoipsum-332.png';
-import logo9 from '../assets/officeSupplies/logoipsum-333.png';
+import quantoreLogo from '../assets/officeSupplies/quantore-logo-sm.png';
+import leitzLogo from '../assets/officeSupplies/leitz-logo-sm.png';
+import hpLogo from '../assets/officeSupplies/hewlett-packard-logo-sm.png';
+import hermaLogo from '../assets/officeSupplies/Herma-logo-sm.png';
+import epsonLogo from '../assets/officeSupplies/Epson-logo-sm.png';
+import dymoLogo from '../assets/officeSupplies/DYMO_logo-sm.png';
+import canonLogo from '../assets/officeSupplies/Canon_logo_sm.png';
 
 // List of brands that are displayed on the Office Supplies page
-const logoList = [logo1, logo2, logo6, logo3, logo8, logo9];
+const logoList = [
+  hpLogo,
+  canonLogo,
+  dymoLogo,
+  epsonLogo,
+  quantoreLogo,
+  leitzLogo,
+  hermaLogo,
+];
 
 // Common sentences
 export const commonSentences = {
@@ -95,7 +104,7 @@ export const menuButtonNames = {
 export const customClotingContentPaths = {
   // Used data
   data: {
-    image: image7,
+    image: customClothingIntroductionMale,
   },
   pageHeader: {
     title: 'customClothingPage.pageHeaderContent.title',
@@ -236,7 +245,7 @@ export const customPrintOverviewContentPaths = {
 export const copyPrintContentPaths = {
   // Used data
   data: {
-    image: image5,
+    image: copyPrintIntroduction,
   },
 
   // Page header
@@ -244,7 +253,7 @@ export const copyPrintContentPaths = {
     title: 'copyPrintPage.pageHeaderContent.title',
     introduction: 'copyPrintPage.pageHeaderContent.introduction',
     subTitle: 'copyPrintPage.pageHeaderContent.subTitle',
-    subIntroduction: 'copyPrintPage.pageHeaderContent.subIntroduction',
+    subText: 'copyPrintPage.pageHeaderContent.subText',
   },
 
   // Card - Budget
@@ -288,7 +297,7 @@ export const copyPrintContentPaths = {
 // Custom Print - Business Cards
 export const cardsContentPaths = {
   data: {
-    image: image6,
+    image: cardsIntroduction,
   },
   pageHeader: {
     title: 'customPrintPage.cards.pageHeader.title',
@@ -361,7 +370,7 @@ export const cardsContentPaths = {
 // Custom Print - Flyers
 export const flyersContentPaths = {
   data: {
-    image: image1,
+    image: flyersIntroduction,
   },
   pageHeader: {
     title: 'customPrintPage.flyers.pageHeader.title',
@@ -424,7 +433,7 @@ export const flyersContentPaths = {
 // Custom Print - Folders
 export const foldersContentPaths = {
   data: {
-    image: image3,
+    image: foldersIntroduction,
   },
   pageHeader: {
     title: 'customPrintPage.folders.pageHeader.title',
@@ -500,7 +509,7 @@ export const foldersContentPaths = {
 // Custom Print - Posters
 export const postersContentPaths = {
   data: {
-    image: image4,
+    image: postersIntroduction,
   },
   pageHeader: {
     title: 'customPrintPage.posters.pageHeader.title',
@@ -629,7 +638,7 @@ export const postersContentPaths = {
 // Custom Print - Stickers
 export const stickersContentPaths = {
   data: {
-    image: image2,
+    image: stickersIntroduction,
   },
   pageHeader: {
     title: 'customPrintPage.stickers.pageHeader.title',

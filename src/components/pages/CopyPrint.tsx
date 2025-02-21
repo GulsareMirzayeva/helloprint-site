@@ -8,7 +8,6 @@ import { TextBlock } from '../elementTemplates/TextBlock';
 import { Divider } from '@mui/material';
 import { Notification } from '../elementTemplates/Notification';
 import { useData } from '../../context/DataContext';
-import PageTitleAndIntroduction from '../elementTemplates/PageTitleAndIntroduction';
 import ContentCard from '../elementTemplates/contentHolders/ContentCard';
 import {
   getTableDataBudgetBlackAndWhite,
@@ -18,6 +17,7 @@ import {
 import { useEffect, useState } from 'react';
 import i18n from '../../utils/i18';
 import { copyPrintPageContent } from '../../data/pages/pagesContent';
+import PageTitleAndIntroduction from '../elementTemplates/PageTitleAndIntroduction';
 
 export default function CopyPrint() {
   // Make text content translatable
@@ -59,6 +59,8 @@ export default function CopyPrint() {
             image={copyPrintPageContent.image}
             title={copyPrintPageContent.pageTitle}
             introduction={copyPrintPageContent.pageIntroduction}
+            subTitle={copyPrintContentPaths.pageHeader.subTitle}
+            subText={copyPrintContentPaths.pageHeader.subText}
           />
         </div>
 
@@ -130,11 +132,14 @@ export default function CopyPrint() {
         {/* Message section at the bottom, introduced by an introduction text */}
         <div
           className={`
-          pb-2
+          pb-8
           ${stylePreset.overall.textColorPrimary}
           `}
         >
-          <TextBlock value={shopInfoPaths.contactTitle} variant={'subTitle'} />
+          <TextBlock
+            value={shopInfoPaths.contactTitle}
+            variant={'subTitleMedium'}
+          />
         </div>
         <div className="w-full m-">
           <SendMessage />

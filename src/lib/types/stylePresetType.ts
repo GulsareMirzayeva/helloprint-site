@@ -18,6 +18,7 @@ export type StylePresetType = {
   };
 
   navigation: {
+    textSize: string;
     backgroundColor: string;
     backgroundHover: string;
     textColorHover: string;

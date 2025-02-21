@@ -1,4 +1,4 @@
-import contactPicture from '../../../assets/PHOTO-2022-01-26-18-36-39-scaled-370px-263px.jpg';
+// import contactPicture from '../../../assets/PHOTO-2022-01-26-18-36-39-scaled-370px-263px.jpg';
 import { TextBlock } from '../../elementTemplates/TextBlock';
 import { contactInfoTextContent } from '../../../lib/translationPaths';
 
@@ -14,9 +14,9 @@ export default function MessageIntroduction() {
         value={contactInfoTextContent.contactIntroduction}
         variant="body"
       />
-      <div className="pt-4">
+      {/* <div className="pt-4">
         <img src={contactPicture} className="max-w-[300px] sm:max-w-[360px]" />
-      </div>
+      </div> */}
     </div>
   );
 }

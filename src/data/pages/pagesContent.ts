@@ -46,6 +46,8 @@ export const postersPageContent = {
 export const copyPrintPageContent = {
   pageTitle: copyPrintContentPaths.pageHeader.title,
   pageIntroduction: copyPrintContentPaths.pageHeader.introduction,
+  pageSubTitle: copyPrintContentPaths.pageHeader.subTitle,
+  pageSubText: copyPrintContentPaths.pageHeader.subText,
   pageLink: '/copy-print',
   image: copyPrintContentPaths.data.image,
 };

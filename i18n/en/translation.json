@@ -103,7 +103,7 @@
       "homePageSubtitle": "Would you like to receive a quote for a product?<br />We would be happy to provide you with a tailored quote.<br />Requesting a quote is free and easy.",
       "contactTitle": "Can't find the right product or price? Or would you like to know more about submitting assignments? You can always request a free, no-obligation quote via:",
       "contactForm": "Send message",
-      "messageTitle": "Custom quote",
+      "messageTitle": "Send a message or request a quote without obligation",
       "confirmMessage": "Message sent!<br />We will contact you as soon as possible.",
       "errors": {
         "telNoOnlyNumbers": "Phone number must contain only digits.",
@@ -144,7 +144,7 @@
       "header": {
         "title": "FLEX OR DIRECT ON CLOTHING",
         "subTitle": "Choose a printing technique",
-        "introduction": "Flex material works great for clean, single-color designs like logos and text. Below are our rates for printing and cutting. Our DTG printer allows us to print directly onto clothing, ideal for detailed and vibrant designs. Below are the rates for garment printing."
+        "introduction": "Flex material works great for clean, single-color designs like logos and text. Below on the left side are our rates for printing and cutting. Our DTG printer allows us to print directly onto clothing, ideal for detailed and vibrant designs. Below on the right side are the rates for garment printing."
       },
       "common": {
         "headerOne": "Flex / Vinyl",
@@ -501,7 +501,9 @@
   "copyPrintPage": {
     "pageHeaderContent": {
       "title": "Copy and Print",
-      "introduction": "Easily and quickly take care of your copies and prints using our services. Our self-service printers allow you to print documents directly from a USB stick or download them from your email.<br /><br />We also offer binding and laminating services to give your documents a neat and professional finish. Perfect for business purposes, school projects, or personal documents."
+      "introduction": "Easily and quickly take care of your copies and prints using our services. Our self-service printers allow you to print documents directly from a USB stick or download them from your email.",
+      "subTitle": "Laminating",
+      "subText": "We also offer binding and laminating services to give your documents a neat and professional finish. Perfect for business purposes, school projects, or personal documents."
     },
     "cardBudget": {
       "header": {

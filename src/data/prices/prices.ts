@@ -30,7 +30,7 @@ export const prices = {
           budget: 0.25,
         },
         '501-1000': {
-          budget: 0.02,
+          budget: 0.2,
         },
       },
       // Kopieren/printen - A4 - HQ - Kleur en zwart/wit
@@ -241,7 +241,7 @@ export const prices = {
             250: {
               '90gr': 125,
               '150gr': 144,
-              '250gr': 144,
+              '250gr': 157,
             },
             500: {
               '90gr': 225,
