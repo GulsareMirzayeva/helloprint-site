@@ -6,8 +6,9 @@ export function FooterCopyright() {
         &nbsp;|&nbsp;Built by&nbsp;
         <a
           className="cursor-pointer"
-          href="http://www.robverplankejr.nl"
+          href="https://www.robverplankejr.nl"
           target="_blank"
+          rel="noopener noreferrer"
         >
           Rob Verplanke
         </a>
