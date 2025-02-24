@@ -103,7 +103,7 @@
       "homePageSubtitle": "Would you like to receive a quote for a product?<br />We would be happy to provide you with a tailored quote.<br />Requesting a quote is free and easy.",
       "contactTitle": "Can't find the right product or price? Or would you like to know more about submitting assignments? You can always request a free, no-obligation quote via:",
       "contactForm": "Send message",
-      "messageTitle": "Send a message or request a quote without obligation",
+      "messageTitle": "Send a message or request a quote",
       "confirmMessage": "Message sent!<br />We will contact you as soon as possible.",
       "errors": {
         "telNoOnlyNumbers": "Phone number must contain only digits.",
