@@ -112,7 +112,8 @@
         "emailValidAddress": "Please enter a valid email address.",
         "messageMinChars": "Message must be at least 10 characters long.",
         "messageRequired": "Message is required.",
-        "requiredEmailOrTelNo": "Please provide either an email address or a phone number."
+        "requiredEmailOrTelNo": "Please provide either an email address or a phone number.",
+        "errorSendingMail": "Error sending email: "
       }
     }
   },
@@ -601,6 +602,7 @@
     "messageSubject": "Subject",
     "messageContent": "Message",
     "messageSubmit": "Send",
+    "messageSubmitLoading": "Sending message...",
     "closed": "closed"
   },
   "termsOfSale": {

@@ -137,7 +137,7 @@ export default function Folders() {
           flexItem
           variant="fullWidth"
         />
-        <div className="pb-2">
+        <div className="pb-8">
           <TextBlock
             value={shopInfoPaths.contactTitle}
             variant={'subTitleMedium'}

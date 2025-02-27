@@ -10,12 +10,19 @@ import i18n from '../../../utils/i18';
 import { FormProps } from '../../../lib/types/contactFormTypes';
 import { ConfirmMessage } from './ConfirmMessage';
 import { useData } from '../../../context/DataContext';
+import emailjs from '@emailjs/browser';
+import { emailJSKeys } from '../../../lib/emailSettings/emailJsSettings';
+// import { stackApiSettings } from '../../../lib/emailSettings/transIpStackSettings';
 
 export default function MessageForm() {
   const { t } = useTranslation();
   const { stylePreset } = useData();
   const [showError, setShowError] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
+  const [isLoadingFile] = useState(false);
+
+  // When using TransIP API replace with
+  // const [isLoadingFile, setIsLoadingFile] = useState(false);
 
   const {
     register,
@@ -32,20 +39,99 @@ export default function MessageForm() {
     }
   }, [i18n.language]);
 
+  // When using TransIP API - Upload the file to TransIP Stack with an API request and get the link to the file location on Stack
+  // const uploadToStack = async (file: File) => {
+  //   try {
+  //     // Skip when there is no file selected
+  //     if (!file) return null;
+
+  //     // Double check if file has correct size
+  //     if (file.size > 25 * 1024 * 1024) {
+  //       console.error('Bestand is te groot (max. 25MB toegestaan)');
+  //       return null;
+  //     }
+
+  //     setIsLoadingFile(true);
+
+  //     // Collect the needed API settings
+  //     const stackURL = stackApiSettings.stackURL;
+  //     const apiToken = stackApiSettings.apiToken;
+  //     const formData = new FormData();
+
+  //     formData.append('file', file);
+  //     formData.append('path', `/uploads/${file.name}`);
+
+  //     // Send file to TransIP Stack
+  //     const response = await fetch(stackURL, {
+  //       method: 'POST',
+  //       headers: { Authorization: `Bearer ${apiToken}` },
+  //       body: formData,
+  //     });
+
+  //     if (!response.ok) {
+  //       const errorText = await response.text();
+  //       throw new Error(`Upload mislukt: ${errorText}`);
+  //     }
+
+  //     const data = await response.json();
+
+  //     // URL of the uploaded file, or nothing due to error
+  //     return data.download_url || null;
+  //   } catch (error: any) {
+  //     console.error('Error uploading file:', error);
+  //     return null;
+  //   } finally {
+  //     // Reset loading state
+  //     setIsLoadingFile(false);
+  //   }
+  // };
+
   // Show error message if both 'Telephone number' and 'E-mail address' input fields are empty
   // hide error message if one of the two is filled in
-  const onSubmit = (data: FormProps) => {
+  const onSubmit = async (data: FormProps) => {
     if (!data.email && !data.telNo) {
       setShowError(true);
       return;
     }
-    console.log(data);
 
-    // No errors present
-    setShowError(false);
+    // Send the form data to the company email adress with a link to an image on stack (if present)
+    try {
+      // If there is no file selected, the URL will be empty
+      let fileURL = null;
 
-    // Data is validated succesfully, show confirm message
-    setIsSubmitted(true);
+      // When using TransIP API - If there is a file selected, send a mail with a link to the file
+
+      // const selectedFile = data.file[0];
+
+      // if (selectedFile instanceof File) {
+      //   fileURL = await uploadToStack(selectedFile);
+      // }
+
+      const emailData = {
+        from_name: data.name,
+        from_telNo: data.telNo,
+        from_email: data.email,
+        subject: data.subject,
+        message: data.message,
+        file_link: fileURL || 'Geen bestand bijgevoegd',
+      };
+
+      await emailjs.send(
+        emailJSKeys.serviceId, // EmailJS Service ID
+        emailJSKeys.templateId, // EmailJS Template ID
+        emailData, // Form data
+        emailJSKeys.publicKey // EmailJS Public Key
+      );
+
+      // No errors present
+      setShowError(false);
+
+      // Data is validated succesfully, show confirm message
+      setIsSubmitted(true);
+    } catch (error: any) {
+      // Data failed validation, show alert with error message
+      alert(`${contactFormErrorPaths.errorSendingMail}${error}`);
+    }
   };
 
   return (
@@ -244,6 +330,58 @@ export default function MessageForm() {
               </p>
             )}
 
+            {/* File upload option */}
+
+            {/* <div className="flex flex-col">
+              <label htmlFor="file">Upload een bestand</label>
+              <input
+                type="file"
+                id="file"
+                accept=".pdf,.jpg,.jpeg,.eps"
+                {...register('file', {
+                  // Validate selected file
+                  validate: (fileList) => {
+                    // Do nothing when no file is selected
+                    if (!fileList || fileList.length === 0) return true;
+
+                    // Validate file when there is one selected
+                    const file = fileList[0];
+
+                    // Check file size (max 25MB)
+                    if (file.size > 25 * 1024 * 1024) {
+                      return 'Bestand mag maximaal 25MB zijn.';
+                    }
+
+                    // Check extension
+                    const allowedExtensions = ['pdf', 'jpg', 'jpeg', 'eps'];
+                    const fileExtension = file.name
+                      .split('.')
+                      .pop()
+                      ?.toLowerCase();
+                    if (
+                      !fileExtension ||
+                      !allowedExtensions.includes(fileExtension)
+                    ) {
+                      return 'Alleen PDF, JPG, JPEG of EPS bestanden zijn toegestaan.';
+                    }
+
+                    return true;
+                  },
+                })}
+              />
+              {isLoadingFile && <p>Uploading file...</p>}
+              {errors.file && (
+                <p
+                  className={`
+                  pl-1
+                  ${stylePreset.notification.textColor}
+                  `}
+                >
+                  {errors.file.message}
+                </p>
+              )}
+            </div> */}
+
             {/* Send button */}
             <button
               type="submit"
@@ -257,7 +395,9 @@ export default function MessageForm() {
                 willChange: 'transform',
               }}
             >
-              {t(contactFormTextContentPaths.messageSubmit)}
+              {isLoadingFile
+                ? t(contactFormTextContentPaths.messageSubmitLoading)
+                : t(contactFormTextContentPaths.messageSubmit)}
             </button>
           </form>
         </>

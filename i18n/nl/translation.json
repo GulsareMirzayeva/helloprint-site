@@ -119,7 +119,8 @@
         "emailValidAddress": "Voer een geldig e-mailadres in",
         "messageMinChars": "Bericht moet minimaal 10 tekens zijn",
         "messageRequired": "Bericht is verplicht",
-        "requiredEmailOrTelNo": "Vul of een e-mailadres of telefoonnummer in."
+        "requiredEmailOrTelNo": "Vul of een e-mailadres of telefoonnummer in.",
+        "errorSendingMail": "Fout bij het versturen: "
       }
     }
   },
@@ -609,6 +610,7 @@
     "messageSubject": "Onderwerp",
     "messageContent": "Bericht",
     "messageSubmit": "Versturen",
+    "messageSubmitLoading": "Bezig met versturen...",
     "closed": "gesloten"
   },
   "termsOfSale": {

@@ -4,4 +4,5 @@ export type FormProps = {
   email: string;
   subject: string;
   message: string;
+  file: File[];
 };

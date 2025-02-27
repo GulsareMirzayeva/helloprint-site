@@ -73,8 +73,11 @@ export default function CustomPrint() {
           variant="fullWidth"
         />
         {/* Display the contact section at the bottom of the page */}
-        <div className="pb-2">
-          <TextBlock value={shopInfoPaths.contactTitle} variant={'subTitle'} />
+        <div className="pb-8">
+          <TextBlock
+            value={shopInfoPaths.contactTitle}
+            variant={'subTitleMedium'}
+          />
         </div>
         <div className="w-full">
           <SendMessage />

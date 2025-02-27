@@ -210,6 +210,7 @@ export const contactFormTextContentPaths = {
   messageContent: 'contactPage.messageContent',
   messageSubject: 'contactPage.messageSubject',
   messageSubmit: 'contactPage.messageSubmit',
+  messageSubmitLoading: 'contactPage.messageSubmitLoading',
   telephoneNo: 'commonWords.telephoneNo',
   email: 'commonWords.email',
   confirmMessage: 'shopInfo.contact.confirmMessage',
@@ -224,6 +225,7 @@ export const contactFormErrorPaths = {
   messageMinChars: 'shopInfo.contact.errors.messageMinChars',
   messageRequired: 'shopInfo.contact.errors.messageRequired',
   requiredEmailOrTelNo: 'shopInfo.contact.errors.requiredEmailOrTelNo',
+  errorSendingMail: 'shopInfo.contact.errors.errorSendingMail',
 };
 
 // Content for Office supplies page
