@@ -30,7 +30,7 @@
         "Budgetoptie",
         "Hoge kwaliteit",
         "Inbinden",
-        "lamineren"
+        "Lamineren"
       ],
       "link": "/copy-print"
     },
@@ -68,7 +68,7 @@
       "introduction": "Alles wat u nodig heeft om uw werkplek optimaal in te richten en efficiënt te maken.",
       "content": [
         "Papier",
-        "Cardridges",
+        "Cartridges",
         "Ordners",
         "Pennen",
         "Markers",
@@ -212,7 +212,7 @@
         "tableLargeFormat": {
           "header": {
             "title": "Groot formaat",
-            "subTitle": "Wit vinyl, hoogglans, zelfklevend en UV bestendig"
+            "subTitle": "Zelfklevend, UV bestendig, glans, mat of transparant, wit vinyl"
           },
           "columnHeaders": {
             "headerOne": "Formaat",

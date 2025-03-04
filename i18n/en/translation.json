@@ -66,7 +66,7 @@
       "title": "Office Supplies",
       "icon": 3,
       "introduction": "Everything you need to set up and optimize your workspace for efficiency.",
-      "content": ["Paper", "Cardridges", "Maps", "Pencils", "Markers", "etc."],
+      "content": ["Paper", "Cartridges", "Maps", "Pencils", "Markers", "etc."],
       "link": "/office-supplies"
     }
   },
@@ -205,7 +205,7 @@
         "tableLargeFormat": {
           "header": {
             "title": "Large-format",
-            "subTitle": "White Vinyl, High Gloss, Self-adhesive and UV resistant"
+            "subTitle": "Self-adhesive, UV resistant, gloss, matte or transparent, white vinyl"
           },
           "columnHeaders": {
             "headerOne": "Format",
