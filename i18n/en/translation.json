@@ -101,7 +101,7 @@
       "title": "Got a question?",
       "subtitle": "Would you like to receive a quote for a product? We would be happy to provide you with a tailored quote. Requesting a quote is free and easy.",
       "homePageSubtitle": "Would you like to receive a quote for a product?<br />We would be happy to provide you with a tailored quote.<br />Requesting a quote is free and easy.",
-      "contactTitle": "Can't find the right product or price? Or would you like to know more about submitting assignments? You can always request a free, no-obligation quote via:",
+      "contactTitle": "Can't find the right product or price? Or would you like to know more about submitting assignments? You can always request a free, no-obligation quote.",
       "contactForm": "Send message",
       "messageTitle": "Send a message or request a quote",
       "confirmMessage": "Message sent!<br />We will contact you as soon as possible.",
@@ -190,11 +190,11 @@
   },
   "customPrintPage": {
     "overviewTitle": "An Overview of Our Printing Services",
-    "overviewIntroduction": "Explore our wide range of custom printing options. From business cards and flyers to textile prints and large-format printing, we have solutions for every need. Click on a category to learn more and get inspired by the possibilities.",
+    "overviewIntroduction": "Explore our wide range of custom printing options. From business cards and flyers to stickers and large-format printing, we have solutions for every need. Click on a category to learn more and get inspired by the possibilities.",
     "stickers": {
       "pageHeader": {
         "title": "Stickers",
-        "introduction": "Our stickers are available in various sizes, shapes, and quantities, fully tailored to your needs. Whether you require round, oval, large, or small stickers, we offer the perfect solution.<br /><br />All stickers are produced on high-gloss, self-adhesive white vinyl of premium quality, perfectly suited for a wide range of applications."
+        "introduction": "Our stickers are available in various sizes, shapes, and quantities, fully tailored to your needs. Whether you require round, oval, large, or small stickers, we offer the perfect solution.<br /><br />All stickers are produced on self-adhesive vinyl of premium quality, perfectly suited for a wide range of applications."
       },
       "cardLargeFormat": {
         "header": {
@@ -221,7 +221,7 @@
     "cards": {
       "pageHeader": {
         "title": "Business Cards",
-        "introduction": "For printing business cards, we require a minimum order of 100 pieces. The cards are printed on high-quality 350 gsm paper, ensuring a sturdy and professional appearance.<br /> <br />The listed prices are based on a single file. Please note that the price for folded business cards will be doubled. Once printed, the cards are carefully cut and packaged in a plastic storage box, ensuring they are delivered in perfect condition."
+        "introduction": "For printing business cards, we require a minimum order of 100 pieces. The cards are printed on high-quality 350 gsm or 400 gsm paper, ensuring a sturdy and professional appearance.<br /> <br />The listed prices are based on a single file. Please note that the price for folded business cards will be doubled. Once printed, the cards are carefully cut and packaged in a plastic storage box, ensuring they are delivered in perfect condition."
       },
       "cardDigitalPrint": {
         "header": {
@@ -256,7 +256,7 @@
         "header": {
           "title": "OFFSET PRINT",
           "subTitle": "400 gsm paper",
-          "introduction": "This price table pertains to business cards printed on sturdy 400gsm paper in color. You can choose between single-sided prints with glossy UV coating or double-sided prints with matte dispersion coating. These finishing options provide a refined look, depending on your preference for a glossy or subtle matte finish."
+          "introduction": "This price table pertains to business cards printed on sturdy 400 gsm paper in color. You can choose between single-sided prints with glossy UV coating or double-sided prints with matte dispersion coating. These finishing options provide a refined look, depending on your preference for a glossy or subtle matte finish."
         },
         "tableOffsetPrint": {
           "header": {
@@ -274,13 +274,13 @@
     "flyers": {
       "pageHeader": {
         "title": "Flyers",
-        "introduction": "Here you will find an overview of the costs for printing flyers in A5 and A6 formats, with options for both single-sided and double-sided printing.<br /><br />Choose from a variety of paper types to achieve the perfect look for your flyers, tailored to your preferences and intended use."
+        "introduction": "Here you will find an overview of the costs for printing flyers in A6 and A5 formats, with options for both single-sided and double-sided printing.<br /><br />Choose from a variety of paper types to achieve the perfect look for your flyers, tailored to your preferences and intended use."
       },
       "cardDigitalPrint": {
         "header": {
           "title": "DIGITAL PRINT",
           "subTitle": "A6 and A5 formats",
-          "introduction": "This price table pertains to digitally printed flyers in A5 or A6 format. You can choose from three different paper weights: 90 gsm, 150 gsm, or 250 gsm, depending on your preference for paper thickness. The flyers can be printed single-sided or double-sided, allowing you to tailor the layout to your needs. Digital printing ensures sharp and vibrant colors for a professional appearance.",
+          "introduction": "This price table pertains to digitally printed flyers in A6 or A5 format. You can choose from three different paper weights: 90 gsm, 150 gsm, or 250 gsm, depending on your preference for paper thickness. The flyers can be printed single-sided or double-sided, allowing you to tailor the layout to your needs. Digital printing ensures sharp and vibrant colors for a professional appearance.",
           "notification": "Delivery in 1-2 working days"
         },
         "common": {
@@ -306,7 +306,7 @@
         "header": {
           "title": "OFFSET PRINT",
           "subTitle": "A6 and A5 formats",
-          "introduction": "This pricing example is for A5 or A6 flyers printed on 135g, 170g, or 250g paper. Depending on your preference for paper weight, you can choose the option that best suits the desired look of your flyer. The flyers can be printed either single-sided or double-sided, depending on how you want to present your message. This print option offers a professional appearance, ideal for both promotional and informational purposes.",
+          "introduction": "This pricing example is for A6 or A5 flyers printed on 135g, 170g, or 250g paper. Depending on your preference for paper weight, you can choose the option that best suits the desired look of your flyer. The flyers will be printed double-sided, this offers a professional appearance, ideal for both promotional and informational purposes.",
           "notification": "Delivery in 7 working days"
         },
         "common": {
@@ -348,7 +348,7 @@
         "header": {
           "title": "DIGITAL PRINT",
           "subTitle": "A4 Format",
-          "introduction": "This overview is for digitally printed A4 brochures, available in color on 150g, 170g, or 250g paper, or black/white on 80g paper. You can choose between a 2 or 3-fold format, depending on the amount of information you wish to present. This size is perfect for distributing detailed information or promotions. The material offers a professional appearance, and the various paper options give you the flexibility to choose the right look for your message.",
+          "introduction": "This overview is for digitally printed A4 brochures, available in color on 150 gsm, 170 gsm, or 250 gsm paper, or black and white on 80 gsm paper. You can choose between a 2 or 3-fold format, depending on the amount of information you wish to present. This size is perfect for distributing detailed information or promotions. The material offers a professional appearance, and the various paper options give you the flexibility to choose the right look for your message.",
           "notification": "Delivery in 1-2 working days"
         },
         "tableColor": {
@@ -373,19 +373,19 @@
         },
         "tableA4Trifold": {
           "header": {
-            "title": "A4 size | Trifold",
+            "title": "A4 format | Trifold",
             "subTitle": "Color"
           }
         },
         "tableA4Bifold": {
           "header": {
-            "title": "A4 size | Bifold",
+            "title": "A4 format | Bifold",
             "subTitle": "Color"
           }
         },
         "tableA3": {
           "header": {
-            "title": "A3 size | Trifold",
+            "title": "A3 format | Trifold",
             "subTitle": "Color"
           }
         }
@@ -475,7 +475,7 @@
       "cardColorA3": {
         "header": {
           "title": "Color",
-          "subTitle": "A4 Format",
+          "subTitle": "A3 Format",
           "introduction": "For A3 posters, we offer two options in different qualities and materials. The high-quality option is printed on 150 gsm paper with bleed, ideal for a premium finish. Additionally, we provide a budget-friendly option printed on 80 gsm paper with a white border. Both available for full color prints."
         },
         "table150gsm": {

@@ -58,7 +58,7 @@
         "Flex/Vinyl",
         "Polo",
         "Trui",
-        "Vest"
+        "Capuchontrui"
       ],
       "link": "/custom-clothing"
     },
@@ -197,7 +197,7 @@
   },
   "customPrintPage": {
     "overviewTitle": "Een overzicht van ons aanbod in drukwerk",
-    "overviewIntroduction": "Ontdek ons uitgebreide aanbod aan drukwerk mogelijkheden. Van visitekaartjes en flyers tot textielprints en grootformaat drukwerk, wij bieden oplossingen voor elke behoefte. Klik op een categorie voor meer informatie en laat u inspireren door de mogelijkheden",
+    "overviewIntroduction": "Ontdek ons uitgebreide aanbod aan drukwerk mogelijkheden. Van visitekaartjes en flyers tot stickers en grootformaat drukwerk, wij bieden oplossingen voor elke behoefte. Klik op een categorie voor meer informatie en laat u inspireren door de mogelijkheden",
     "stickers": {
       "pageHeader": {
         "title": "Stickers",
@@ -228,7 +228,7 @@
     "cards": {
       "pageHeader": {
         "title": "Visitekaartjes",
-        "introduction": "Voor het afdrukken van visitekaartjes hanteren wij een minimale afname van 100 stuks. De kaartjes worden gedrukt op hoogwaardig 350 grams papier, wat zorgt voor een stevige en professionele uitstraling.<br /> <br />De genoemde prijzen zijn gebaseerd op één enkel bestand. Houd er rekening mee dat de prijs voor dubbelgevouwen visitekaartjes verdubbeld wordt. Na het drukken worden de kaartjes zorgvuldig gesneden en netjes verpakt in een plastic bewaardoosje, zodat ze in perfecte staat bij u worden afgeleverd."
+        "introduction": "Voor het afdrukken van visitekaartjes hanteren wij een minimale afname van 100 stuks. De kaartjes worden gedrukt op hoogwaardig 350 grams of 400 grams papier, wat zorgt voor een stevige en professionele uitstraling.<br /> <br />De genoemde prijzen zijn gebaseerd op één enkel bestand. Houd er rekening mee dat de prijs voor dubbelgevouwen visitekaartjes verdubbeld wordt. Na het drukken worden de kaartjes zorgvuldig gesneden en netjes verpakt in een plastic bewaardoosje, zodat ze in perfecte staat bij u worden afgeleverd."
       },
       "cardDigitalPrint": {
         "header": {
@@ -281,13 +281,13 @@
     "flyers": {
       "pageHeader": {
         "title": "Flyers",
-        "introduction": "Hier vindt u een overzicht van de kosten voor het afdrukken van flyers in A5- en A6-formaat, met de keuze voor zowel enkelzijdige als dubbelzijdige drukwerkopties.<br /><br />U kunt kiezen uit verschillende papiersoorten om de ideale uitstraling voor uw flyers te realiseren, afgestemd op uw wensen en het beoogde gebruik."
+        "introduction": "Hier vindt u een overzicht van de kosten voor het afdrukken van flyers in A6- en A5-formaat, met de keuze voor zowel enkelzijdige als dubbelzijdige drukwerkopties.<br /><br />U kunt kiezen uit verschillende papiersoorten om de ideale uitstraling voor uw flyers te realiseren, afgestemd op uw wensen en het beoogde gebruik."
       },
       "cardDigitalPrint": {
         "header": {
           "title": "DIGITAAL GEPRINT",
           "subTitle": "A6 en A5 Formaat",
-          "introduction": "Deze prijstabel betreft digitaal geprinte flyers in A5- of A6-formaat. U kunt kiezen uit drie verschillende papiersoorten: 90 grams, 150 grams of 250 grams, afhankelijk van uw voorkeur voor de dikte van het papier. De flyers kunnen zowel enkelzijdig als dubbelzijdig worden gedrukt, zodat u de opmaak kunt afstemmen op uw wensen. De digitale afdrukken garanderen scherpe en heldere kleuren voor een professionele uitstraling.",
+          "introduction": "Deze prijstabel betreft digitaal geprinte flyers in A6- of A5-formaat. U kunt kiezen uit drie verschillende papiersoorten: 90 grams, 150 grams of 250 grams, afhankelijk van uw voorkeur voor de dikte van het papier. De flyers kunnen zowel enkelzijdig als dubbelzijdig worden gedrukt, zodat u de opmaak kunt afstemmen op uw wensen. De digitale afdrukken garanderen scherpe en heldere kleuren voor een professionele uitstraling.",
           "digitalPrintDeliveryTime": "Levertijd 1-2 werkdagen"
         },
         "common": {
@@ -313,7 +313,7 @@
         "header": {
           "title": "DRUKWERK",
           "subTitle": "A6 en A5 Formaat",
-          "introduction": "Dit prijsvoorbeeld betreft flyers in A5- of A6-formaat, gedrukt op papier van 135 gram, 170 gram of 250 gram. Afhankelijk van uw voorkeur voor de dikte van het papier, kunt u de juiste keuze maken voor de uitstraling van uw flyer. De flyers kunnen zowel enkelzijdig als dubbelzijdig worden gedrukt, afhankelijk van hoe u uw boodschap wilt presenteren. Dit drukwerk biedt een professionele uitstraling en is ideaal voor zowel promotionele als informatieve doeleinden.",
+          "introduction": "Dit prijsvoorbeeld betreft flyers in A6- of A5-formaat, gedrukt op papier van 135 gram, 170 gram of 250 gram. Afhankelijk van uw voorkeur voor de dikte van het papier, kunt u de juiste keuze maken voor de uitstraling van uw flyer. De flyers worden dubbelzijdig worden gedrukt, dit biedt een professionele uitstraling en is ideaal voor zowel promotionele als informatieve doeleinden.",
           "offsetPrintDeliveryTime": "Levertijd 7 werkdagen"
         },
         "common": {
@@ -355,7 +355,7 @@
         "header": {
           "title": "DIGITAAL GEPRINT",
           "subTitle": "A4 Formaat",
-          "introduction": "Dit overzciht is voor digitale A4-folders, beschikbaar in kleur op 150g, 170g of 250g papier, of zwart-wit op 80g papier. U kunt kiezen uit een 2- of 3-slag uitvoering, afhankelijk van de hoeveelheid informatie die u wilt presenteren. Dit formaat is ideaal voor het verspreiden van gedetailleerde informatie of promoties. Het materiaal biedt een professionele uitstraling, en de verschillende papiersoorten geven u de flexibiliteit om de juiste uitstraling voor uw boodschap te kiezen.",
+          "introduction": "Dit overzciht is voor digitale A4-folders, beschikbaar in kleur op 150 grams, 170 grams of 250 grams papier, of zwart-wit op 80 grams papier. U kunt kiezen uit een 2- of 3-slag uitvoering, afhankelijk van de hoeveelheid informatie die u wilt presenteren. Dit formaat is ideaal voor het verspreiden van gedetailleerde informatie of promoties. Het materiaal biedt een professionele uitstraling, en de verschillende papiersoorten geven u de flexibiliteit om de juiste uitstraling voor uw boodschap te kiezen.",
           "notification": "Levertijd 7 werkdagen"
         },
         "tableColor": {
@@ -484,7 +484,7 @@
         "header": {
           "title": "Kleur",
           "subTitle": "A3 Formaat",
-          "introduction": "Voor posters in A3-formaat bieden wij twee opties in verschillende kwaliteiten en materialen. De hoge kwaliteit variant is geprint op 150 grams papier en kan aflopend worden geleverd, ideaal voor een premium uitstraling. Daarnaast bieden we een budgetvriendelijke optie, gedrukt op 80 grams papier met een witrand. Beide beschikbaar voor full color afdrukken"
+          "introduction": "Voor posters in A3-formaat bieden wij twee opties in verschillende kwaliteiten en materialen. De hoge kwaliteit variant is geprint op 150 grams papier en kan aflopend worden geleverd, ideaal voor een premium uitstraling. Daarnaast bieden we een budgetvriendelijke optie, gedrukt op 80 grams papier met een witrand. Beide beschikbaar voor full color afdrukken."
         },
         "table150gsm": {
           "header": {
