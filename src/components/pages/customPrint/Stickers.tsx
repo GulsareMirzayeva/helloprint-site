@@ -55,9 +55,8 @@ export default function Stickers() {
           <ContentCard
             bgColor={stylePreset.categoryCard.backgroundColorLight}
             headerContent={{
-              cardTitle: stickersContentPaths.cardLargeFormat.header.title,
-              cardSubTitle:
-                stickersContentPaths.cardLargeFormat.header.subTitle,
+              cardTitle: '',
+              cardSubTitle: '',
               cardIntroduction:
                 stickersContentPaths.cardLargeFormat.header.introduction,
               notification: undefined,

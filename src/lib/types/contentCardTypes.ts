@@ -1,7 +1,7 @@
 import { PricingOptions } from './basicOptionsTypes';
 
 export type HeaderType = {
-  cardTitle: string;
+  cardTitle?: string;
   cardSubTitle?: string;
   cardIntroduction: string;
   notification?: string;
@@ -17,7 +17,7 @@ export type PricingTableTypes = {
 
 export type TableContentType = {
   hasAsterisk?: boolean;
-  tableTitle: string;
-  tableSubTitle: string;
+  tableTitle?: string;
+  tableSubTitle?: string;
   data: PricingTableTypes;
 };

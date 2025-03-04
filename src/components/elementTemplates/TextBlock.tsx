@@ -1,7 +1,7 @@
 import { Trans } from 'react-i18next';
 
 type TextBlockType = {
-  value: string;
+  value?: string;
   variant:
     | 'pageTitle'
     | 'subTitle'

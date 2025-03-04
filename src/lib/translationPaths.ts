@@ -648,8 +648,6 @@ export const stickersContentPaths = {
   },
   cardLargeFormat: {
     header: {
-      title: 'customPrintPage.stickers.cardLargeFormat.header.title',
-      subTitle: 'customPrintPage.stickers.cardLargeFormat.header.subTitle',
       introduction:
         'customPrintPage.stickers.cardLargeFormat.header.introduction',
     },

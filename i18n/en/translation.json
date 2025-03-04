@@ -145,7 +145,7 @@
       "header": {
         "title": "FLEX OR DIRECT ON CLOTHING",
         "subTitle": "Choose a printing technique",
-        "introduction": "Flex material works great for clean, single-color designs like logos and text. Below on the left side are our rates for printing and cutting. Our DTG printer allows us to print directly onto clothing, ideal for detailed and vibrant designs. Below on the right side are the rates for garment printing."
+        "introduction": "Flex material works great for clean, single-color designs like logos and text. Below on the left side are our rates for printing and cutting. Our DTG printer allows us to print directly onto clothing, ideal for detailed and vibrant designs. Below on the right side are the rates for garment printing.<br /><br /><b>Note</b>: We can only print on colored or black textiles from our own supplier. Unfortunately, you cannot provide your own colored or black textiles, as we cannot guarantee the quality of the print."
       },
       "common": {
         "headerOne": "Flex / Vinyl",
@@ -153,7 +153,7 @@
       },
       "tableFlex": {
         "header": {
-          "title": "Print on flex material",
+          "title": "Contour-cut from Flex Vinyl or Full Color on SportFilm",
           "subTitle": ""
         },
         "columnHeaders": {
@@ -194,13 +194,11 @@
     "stickers": {
       "pageHeader": {
         "title": "Stickers",
-        "introduction": "Our stickers are available in various sizes, shapes, and quantities, fully tailored to your needs. Whether you require round, oval, large, or small stickers, we offer the perfect solution.<br /><br />All stickers are produced on self-adhesive vinyl of premium quality, perfectly suited for a wide range of applications."
+        "introduction": "Our stickers are available in various sizes, shapes, and quantities. Small quantities are calculated per A4 sheet, while larger quantities are measured per square meter. This is first calculated by us and discussed with the customer.<br /><br />Whether you need round, oval, large, or small stickers, you will find the perfect option with us. The stickers are printed on self-adhesive white vinyl."
       },
       "cardLargeFormat": {
         "header": {
-          "title": "LARGE FORMAT",
-          "subTitle": "White Vinyl",
-          "introduction": "The pricing table below outlines the costs for large-format printing on vinyl. Prices are calculated per A4 size or per square meter, depending on the dimensions of your print. This ensures flexibility in selecting the format that best suits your needs."
+          "introduction": "You can choose from Glossy White Vinyl, Matte White Vinyl, or Transparent Vinyl, depending on the look you prefer. Glossy vinyl enhances colors and gives a premium finish, while matte vinyl offers a subtle, elegant appearance. Transparent vinyl is ideal if you want the background to remain partially visible."
         },
         "tableLargeFormat": {
           "header": {
@@ -209,7 +207,7 @@
           },
           "columnHeaders": {
             "headerOne": "Format",
-            "headerTwo": "Price per print"
+            "headerTwo": "Price"
           },
           "rowHeaders": {
             "headerOne": "A4",

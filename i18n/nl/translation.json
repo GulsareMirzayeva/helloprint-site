@@ -152,7 +152,7 @@
       "header": {
         "title": "FLEX OF DIRECT OP KLEDING",
         "subTitle": "Kies een printtechniek",
-        "introduction": "Flex-materiaal is perfect voor strakke, éénkleurige ontwerpen zoals logo’s en teksten. Hieronder vindt u links onze tarieven voor printen en snijden. Met onze DTG-printer kunnen we direct op kleding printen, perfect voor gedetailleerde en kleurrijke ontwerpen. Hieronder vindt u rechts de tarieven voor kledingbedrukking."
+        "introduction": "Flex-materiaal is perfect voor strakke, éénkleurige ontwerpen zoals logo’s en teksten. Hieronder vindt u links onze tarieven voor printen en snijden. Met onze DTG-printer kunnen we direct op kleding printen, perfect voor gedetailleerde en kleurrijke ontwerpen. Hieronder vindt u rechts de tarieven voor kledingbedrukking.<br /><br /><b>Let op</b>: Wij kunnen uitsluitend op gekleurd of zwart textiel van onze eigen leverancier drukken, u kunt helaas niet gekleurd of zwart textiel aanleveren, daar waar wij dan niet de kwaliteit van de opdruk kunnen garanderen."
       },
       "common": {
         "headerOne": "Flex / Vinyl",
@@ -160,7 +160,7 @@
       },
       "tableFlex": {
         "header": {
-          "title": "Printen op flex materiaal",
+          "title": "Contour gesneden uit Flex Vinyl of Full Colour op SportFilm",
           "subTitle": ""
         },
         "columnHeaders": {
@@ -201,13 +201,11 @@
     "stickers": {
       "pageHeader": {
         "title": "Stickers",
-        "introduction": "Onze stickers zijn verkrijgbaar in diverse formaten, vormen en oplages, geheel afgestemd op uw wensen. Of u nu ronde, ovale, grote of kleine stickers nodig heeft, wij bieden de ideale oplossing.<br /><br />Alle stickers worden geproduceerd op vinyl van hoogwaardige kwaliteit, perfect geschikt voor uiteenlopende toepassingen."
+        "introduction": "Onze stickers zijn in verschillende formaten, vormen en oplages verkrijgbaar. Kleine oplagen worden per A4 berekend, grote oplagen gaan per vierkante meter. Dit wordt eerst door ons berekend en overlegd met de klant.<br /><br />Of het nu ronde, ovale, grote of kleine stickers moeten worden, bij ons vindt u de perfecte sticker. De stickers worden geprint op zelfklevend wit vinyl."
       },
       "cardLargeFormat": {
         "header": {
-          "title": "GROOT FORMAAT",
-          "subTitle": "Wit vinyl",
-          "introduction": "De onderstaande prijstabel geeft een overzicht van de kosten voor grootformaat drukwerk op vinyl. De prijzen worden berekend per A4-formaat of per vierkante meter, afhankelijk van de afmetingen van uw print. Zo kunt u eenvoudig het formaat kiezen dat het beste bij uw wensen past."
+          "introduction": "U heeft de keuze uit wit glans vinyl, wit mat vinyl of transparant vinyl, afhankelijk van de uitstraling die u wenst. Glans vinyl zorgt voor heldere kleuren en een luxe afwerking, terwijl mat vinyl een subtiele, elegante look biedt. Transparant vinyl is ideaal als u de ondergrond deels zichtbaar wilt houden."
         },
         "tableLargeFormat": {
           "header": {
@@ -216,7 +214,7 @@
           },
           "columnHeaders": {
             "headerOne": "Formaat",
-            "headerTwo": "Prijs per print"
+            "headerTwo": "Prijs"
           },
           "rowHeaders": {
             "headerOne": "A4",
