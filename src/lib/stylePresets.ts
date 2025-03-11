@@ -114,17 +114,17 @@ Dark theme
 export const darkTheme = {
   // Algemene stijlen die op meerdere pagina's worden gebruikt
   overall: {
-    textColorPrimary: 'text-[#EAE0D5]', // Tekstkleur voor algemene tekst
+    textColorPrimary: 'text-[#ffffff]', // Tekstkleur voor algemene tekst
     textColorSecondary: 'text-gray-400', // Tekstkleur voor sub titels
-    textColorLight: 'text-[#EAE0D5]', // Tekstkleur voor tekst op rode of donkere achtergronden
+    textColorLight: 'text-[#ffffff]', // Tekstkleur voor tekst op rode of donkere achtergronden
     backgroundColor: 'bg-[#202020]', // Algemene achtergrondkleur
-    diverderColor: '#EAE0D5', // Kleur van horizontale schedingslijn
+    diverderColor: '#ffffff', // Kleur van horizontale schedingslijn
   },
 
   // Contact formulier
   contactForm: {
     textColor: 'text-gray-800', // Tekstkleur voor tekst in formulier invoervelden
-    backgroundColor: 'bg-[#EAE0D5]', // Achtergrondkleur van invoervelden in formulier
+    backgroundColor: 'bg-[#ffffff]', // Achtergrondkleur van invoervelden in formulier
     borderColor: 'border-gray-50', // Kleur van de omlijning van de invoervelden
   },
 
@@ -138,11 +138,11 @@ export const darkTheme = {
     textSize: 'text-lg', // Tekstgrootte van menuknoppen
     backgroundColor: 'bg-[#2c2c2c]', // Achtergrondkleur van het submenu
     backgroundHover: 'hover:bg-gray-600', // Achtergrondkleur van knoppen in het submenu bij aanwijzen
-    textColorHover: 'text-[#EAE0D5]', // Tekstkleur van knoppen in het submenu bij aanwijzen
-    textColor: 'text-[#EAE0D5]', // Tekstkleur van knoppen in het submenu
+    textColorHover: 'text-[#ffffff]', // Tekstkleur van knoppen in het submenu bij aanwijzen
+    textColor: 'text-[#ffffff]', // Tekstkleur van knoppen in het submenu
     underlineActiveColor: 'border-b-[#b02a37]', // Kleur van streep onder actieve knop
     underlineInActiveColor: 'border-b-[#2c2c2c]', // Kleur van streep onder inactieve knop
-    underlineHoverColor: 'hover:border-b-[#EAE0D5]', // Kleur van streep onder knop bij aanwijzen
+    underlineHoverColor: 'hover:border-b-[#ffffff]', // Kleur van streep onder knop bij aanwijzen
   },
 
   // Openingstijden en contactmogelijkheden component op de homepage
@@ -178,7 +178,7 @@ export const darkTheme = {
 
   // Prijstabellen
   table: {
-    headTextColor: 'text-[#EAE0D5]', // Tekstkleur voor titel
+    headTextColor: 'text-[#ffffff]', // Tekstkleur voor titel
     headBackgroundColor: 'bg-[#b02a37]', // Achtergrondkleur voor titel
     headBorderColor: 'border-gray-700', // Randkleur voor titel header
     unitsBorderColor: 'border-gray-700', // Randkleur voor units rij

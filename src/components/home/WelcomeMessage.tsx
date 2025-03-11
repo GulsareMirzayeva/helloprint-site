@@ -1,6 +1,8 @@
-import logo from '../../assets/logo-2020.png';
+import logo_light from '../../assets/logo-2020-lightmodus.png';
+import logo_dark from '../../assets/logo-2020-darkmodus.png';
 import { homeContentPaths } from '../../lib/translationPaths';
 import { TextBlock } from '../elementTemplates/TextBlock';
+import { useData } from '../../context/DataContext';
 
 /*
     Text content at the top of the page, the value in the TextBlock components refers to the content location
@@ -8,13 +10,15 @@ import { TextBlock } from '../elementTemplates/TextBlock';
 */
 
 export default function WelcomeMessage() {
+  const { darkMode } = useData();
+
   return (
     <section className="flex items-center flex-col lg:flex-row px-2 gap-8 md:gap-20">
       {/* Image next to the text content */}
       <div>
         <img
           className="max-w-[320px]"
-          src={logo}
+          src={darkMode ? logo_dark : logo_light}
           alt="Logo Copy& Printshop 't Hartje"
         />
       </div>
