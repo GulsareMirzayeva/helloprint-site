@@ -55,7 +55,7 @@ export default function MessageForm() {
       const emailData = {
         from_name: data.name,
         from_telNo: data.telNo,
-        from_email: data.email || 'info@thartje.nl', // Fallback when e-mail value is empty
+        from_email: data.email,
         subject: data.subject,
         message: data.message,
         file_link: fileURL || 'Geen bestand bijgevoegd',
