@@ -608,7 +608,7 @@
     "messageSubject": "Onderwerp",
     "messageContent": "Bericht",
     "messageSubmit": "Versturen",
-    "messageSubmitLoading": "Bezig met versturen...",
+    "messageSubmitLoading": "Versturen...",
     "closed": "gesloten"
   },
   "termsOfSale": {

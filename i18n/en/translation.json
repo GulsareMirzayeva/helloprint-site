@@ -104,7 +104,7 @@
       "contactTitle": "Can't find the right product or price? Or would you like to know more about submitting assignments? You can always request a free, no-obligation quote.",
       "contactForm": "Send message",
       "messageTitle": "Send a message or request a quote",
-      "confirmMessage": "Message sent!<br />We will contact you as soon as possible.",
+      "confirmMessage": "<b>Message sent!</b><br />We will contact you as soon as possible.",
       "errors": {
         "telNoOnlyNumbers": "Phone number must contain only digits.",
         "telNoMinNumbers": "Phone number must be at least 10 digits long.",
@@ -526,7 +526,7 @@
         "introduction": "For high-quality copies and prints, we offer 90 gsm A4 paper, suitable for both color and black-and-white printing. This paper provides a professional appearance with a sturdier and smoother finish. For the best results, please use printer 4, which is specifically configured for this paper quality."
       },
       "tableHq": {
-        "title": "A4 Black and White | Printer 4",
+        "title": "A4 Color or Black and White | Printer 4",
         "subTitle": "90 gsm paper"
       }
     },
@@ -600,7 +600,7 @@
     "messageSubject": "Subject",
     "messageContent": "Message",
     "messageSubmit": "Send",
-    "messageSubmitLoading": "Sending message...",
+    "messageSubmitLoading": "Sending...",
     "closed": "closed"
   },
   "termsOfSale": {

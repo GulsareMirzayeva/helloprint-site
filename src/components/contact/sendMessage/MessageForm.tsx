@@ -19,10 +19,7 @@ export default function MessageForm() {
   const { stylePreset } = useData();
   const [showError, setShowError] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
-  const [isLoadingFile] = useState(false);
-
-  // When using TransIP API replace with
-  // const [isLoadingFile, setIsLoadingFile] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
   const {
     register,
@@ -39,53 +36,6 @@ export default function MessageForm() {
     }
   }, [i18n.language]);
 
-  // When using TransIP API - Upload the file to TransIP Stack with an API request and get the link to the file location on Stack
-  // const uploadToStack = async (file: File) => {
-  //   try {
-  //     // Skip when there is no file selected
-  //     if (!file) return null;
-
-  //     // Double check if file has correct size
-  //     if (file.size > 25 * 1024 * 1024) {
-  //       console.error('Bestand is te groot (max. 25MB toegestaan)');
-  //       return null;
-  //     }
-
-  //     setIsLoadingFile(true);
-
-  //     // Collect the needed API settings
-  //     const stackURL = stackApiSettings.stackURL;
-  //     const apiToken = stackApiSettings.apiToken;
-  //     const formData = new FormData();
-
-  //     formData.append('file', file);
-  //     formData.append('path', `/uploads/${file.name}`);
-
-  //     // Send file to TransIP Stack
-  //     const response = await fetch(stackURL, {
-  //       method: 'POST',
-  //       headers: { Authorization: `Bearer ${apiToken}` },
-  //       body: formData,
-  //     });
-
-  //     if (!response.ok) {
-  //       const errorText = await response.text();
-  //       throw new Error(`Upload mislukt: ${errorText}`);
-  //     }
-
-  //     const data = await response.json();
-
-  //     // URL of the uploaded file, or nothing due to error
-  //     return data.download_url || null;
-  //   } catch (error: any) {
-  //     console.error('Error uploading file:', error);
-  //     return null;
-  //   } finally {
-  //     // Reset loading state
-  //     setIsLoadingFile(false);
-  //   }
-  // };
-
   // Show error message if both 'Telephone number' and 'E-mail address' input fields are empty
   // hide error message if one of the two is filled in
   const onSubmit = async (data: FormProps) => {
@@ -94,18 +44,13 @@ export default function MessageForm() {
       return;
     }
 
+    // Deactivate sumbit button so it can be clicked only once
+    setIsSubmitting(true);
+
     // Send the form data to the company email adress with a link to an image on stack (if present)
     try {
       // If there is no file selected, the URL will be empty
       let fileURL = null;
-
-      // When using TransIP API - If there is a file selected, send a mail with a link to the file
-
-      // const selectedFile = data.file[0];
-
-      // if (selectedFile instanceof File) {
-      //   fileURL = await uploadToStack(selectedFile);
-      // }
 
       const emailData = {
         from_name: data.name,
@@ -123,11 +68,11 @@ export default function MessageForm() {
         emailJSKeys.publicKey // EmailJS Public Key
       );
 
-      // No errors present
-      setShowError(false);
-
       // Data is validated succesfully, show confirm message
       setIsSubmitted(true);
+
+      // No errors present
+      setShowError(false);
     } catch (error: any) {
       // Data failed validation, show alert with error message
       alert(`${contactFormErrorPaths.errorSendingMail}${error}`);
@@ -330,7 +275,7 @@ export default function MessageForm() {
               </p>
             )}
 
-            {/* File upload option */}
+            {/* File upload feature */}
 
             {/* <div className="flex flex-col">
               <label htmlFor="file">Upload een bestand</label>
@@ -385,6 +330,7 @@ export default function MessageForm() {
             {/* Send button */}
             <button
               type="submit"
+              disabled={isSubmitting}
               className={`
                 relative w-32 mt-1 h-10 rounded-sm transition-bg duration-100 ease-in
                 ${stylePreset.button.textColor}
@@ -395,7 +341,7 @@ export default function MessageForm() {
                 willChange: 'transform',
               }}
             >
-              {isLoadingFile
+              {isSubmitting
                 ? t(contactFormTextContentPaths.messageSubmitLoading)
                 : t(contactFormTextContentPaths.messageSubmit)}
             </button>
