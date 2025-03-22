@@ -20,7 +20,18 @@ const router = createBrowserRouter([
   {
     path: '/',
     element: <App />,
-    errorElement: <ErrorPage error={`This page doesn't exist`} />,
+    errorElement: (
+      <ErrorPage
+        error={
+          <>
+            Het lijkt erop dat de pagina die u zoekt niet bestaat of is
+            verplaatst.
+            <br />
+            Controleer de URL of ga terug naar de startpagina.
+          </>
+        }
+      />
+    ),
     children: [
       {
         index: true, // Set this page as default "Homepage"
