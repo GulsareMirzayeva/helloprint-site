@@ -41,7 +41,7 @@ export default function ContactInfo() {
       <div>
         {/* Link to cantact form */}
         <div className="flex pt-2">
-          <Link to="/contact" className="flex pt-8 cursor-pointer">
+          <Link to="/contact" className="flex mt-8 cursor-pointer">
             <span className="text-xl font-semibold">
               <EmailIcon className="mr-2 mb-1" />
               {t(contactInfoTextContent.contactForm)}
