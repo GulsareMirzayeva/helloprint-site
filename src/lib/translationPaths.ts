@@ -65,6 +65,14 @@ export const shopInfoPaths = {
   telePhone: 'shopInfo.openingHours.telePhone',
   contactTitle: 'shopInfo.contact.contactTitle',
   contact: 'shopInfo.contact.contactDetails',
+  adjustedHoursAttention: 'shopInfo.openingHours.adjustedHoursAttention',
+  adjustedHoursIntroduction: 'shopInfo.openingHours.adjustedHoursIntroduction',
+  adjustedHoursTitle: 'shopInfo.openingHours.adjustedHoursTitle',
+  holidayOne: 'shopInfo.openingHours.holidayOne',
+  holidayTwo: 'shopInfo.openingHours.holidayTwo',
+  holidayThree: 'shopInfo.openingHours.holidayThree',
+  holidayFour: 'shopInfo.openingHours.holidayFour',
+  holidayFive: 'shopInfo.openingHours.holidayFive',
 };
 
 // Paths to contact information content in translation files

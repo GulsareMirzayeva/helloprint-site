@@ -94,7 +94,15 @@
       "saturday": "Saturday",
       "sunday": "Sunday",
       "closed": "Closed",
-      "telePhone": "On business days, we are available by phone from"
+      "telePhone": "On business days, we are available by phone from",
+      "adjustedHoursAttention": "Attention! Adjusted opening hours",
+      "adjustedHoursIntroduction": "<br />The holidays are just around the corner.<br />Please note that we will have different opening hours on the<br />mentioned days.<br /><br />See the overview of the adjusted opening hours on the right.",
+      "adjustedHoursTitle": "We are closed on:",
+      "holidayOne": "<br /><b>April 21</b><i> (Monday) </i><b> - Easter Monday</b>",
+      "holidayTwo": "<b>April 26</b><i> (Saturday) </i><b> - King's Day</b>",
+      "holidayThree": "<b>May 5</b><i> (Monday) </i><b> - Liberation Day</b>",
+      "holidayFour": "<b>May 29</b><i> (Thursday) </i><b> - Ascension Day</b>",
+      "holidayFive": "<b>June 9</b><i> (Monday) </i><b> - Whit Monday (Pentecost Monday)</b>"
     },
     "contact": {
       "contactDetails": "Contact details",

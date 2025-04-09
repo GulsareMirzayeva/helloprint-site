@@ -1,5 +1,6 @@
 export type StylePresetType = {
   overall: {
+    textColorCompanyColor: string;
     textColorPrimary: string;
     textColorSecondary: string;
     textColorLight: string;

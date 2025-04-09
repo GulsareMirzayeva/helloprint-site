@@ -10,6 +10,7 @@ export const lightTheme = {
     textColorPrimary: 'text-gray-900', // Tekstkleur voor algemene tekst
     textColorSecondary: 'text-gray-600', // Tekstkleur voor sub titels
     textColorLight: 'text-gray-50', // Tekstkleur voor tekst op rode of donkere achtergronden
+    textColorCompanyColor: 'text-[#fb0036]', // Tekstkleur in bedrijfs kleur (rood)
     backgroundColor: 'bg-gray-50', // Algemene achtergrondkleur
     diverderColor: '#c2c2c2', // Kleur van horizontale schedingslijn
   },
@@ -117,6 +118,7 @@ export const darkTheme = {
     textColorPrimary: 'text-[#ffffff]', // Tekstkleur voor algemene tekst
     textColorSecondary: 'text-gray-400', // Tekstkleur voor sub titels
     textColorLight: 'text-[#ffffff]', // Tekstkleur voor tekst op rode of donkere achtergronden
+    textColorCompanyColor: 'text-[#ffffff]', // Tekstkleur in bedrijfs kleur (rood)
     backgroundColor: 'bg-[#202020]', // Algemene achtergrondkleur
     diverderColor: '#ffffff', // Kleur van horizontale schedingslijn
   },
