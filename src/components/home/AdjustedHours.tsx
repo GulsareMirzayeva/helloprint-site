@@ -12,7 +12,7 @@ export default function AdjustedHoursSection() {
   const { stylePreset } = useData();
 
   return (
-    <section className="flex flex-col place-content-start lg:flex-row px-2 gap-10 lg:gap-48">
+    <section className="flex flex-col place-content-start lg:flex-row px-2 gap-10 lg:gap-28">
       {/* Attention section */}
       <div>
         <div
