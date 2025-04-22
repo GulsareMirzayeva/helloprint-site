@@ -45,10 +45,11 @@ export default function AdjustedHoursSection() {
           />
         </div>
         <div className="space-y-1">
-          <TextBlock
+          {/* <TextBlock
             value={shopInfoPaths.holidayOne}
             variant="xlTitleRegular"
-          />
+            /> */}
+          <br />
           <TextBlock
             value={shopInfoPaths.holidayTwo}
             variant="xlTitleRegular"
