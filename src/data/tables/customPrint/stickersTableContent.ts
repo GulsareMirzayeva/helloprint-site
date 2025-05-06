@@ -20,9 +20,6 @@ export function getTableLargeFormat() {
         t(
           'customPrintPage.stickers.cardLargeFormat.tableLargeFormat.rowHeaders.headerOne'
         ),
-        t(
-          'customPrintPage.stickers.cardLargeFormat.tableLargeFormat.rowHeaders.headerTwo'
-        ),
       ],
       prices: prices ? [...Object.values(prices.customPrint.stickers)] : [],
     },

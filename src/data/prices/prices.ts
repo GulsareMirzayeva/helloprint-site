@@ -605,9 +605,9 @@ export const prices = {
         perA4: 8.95,
       },
       // Drukwerk - Stickers - Vierkante meter
-      squareMeter: {
-        perMeter: 69,
-      },
+      // squareMeter: {
+      //   perMeter: 69,
+      // },
     },
     // Drukwerk - Kaarten
     cards: {

@@ -53,11 +53,11 @@ export default function AdjustedHoursSection() {
             value={shopInfoPaths.holidayTwo}
             variant="xlTitleRegular"
           /> */}
-          <br />
-          <TextBlock
+          {/* <TextBlock
             value={shopInfoPaths.holidayThree}
             variant="xlTitleRegular"
-          />
+          /> */}
+          <br />
           <TextBlock
             value={shopInfoPaths.holidayFour}
             variant="xlTitleRegular"
