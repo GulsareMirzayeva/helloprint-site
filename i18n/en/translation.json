@@ -168,7 +168,7 @@
           "headSingleColored": "Single Color"
         },
         "variants": {
-          "frontChestLogo": "Front chest logo",
+          "frontChestLogo": "Front chest logo (max. 10 x 10 cm)",
           "frontBackLarge": "Front or back large",
           "frontSmallBackLarge": "Front small and back large"
         }
@@ -183,7 +183,7 @@
           "headTextileColor": "Colored Textile"
         },
         "variants": {
-          "frontChestLogo": "Front chest logo",
+          "frontChestLogo": "Front chest logo (max. 10 x 10 cm)",
           "frontBackLarge": "Front or back large",
           "frontSmallBackLarge": "Front small and back large"
         }
