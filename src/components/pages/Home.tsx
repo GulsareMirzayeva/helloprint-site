@@ -5,7 +5,7 @@ import { useTranslation } from 'react-i18next';
 import SendMessage from '../contact/SendMessage';
 import SkylineStrip from '../SkylineStrip';
 import { useData } from '../../context/DataContext';
-import AdjustedHoursSection from '../home/AdjustedHours';
+// import AdjustedHoursSection from '../home/AdjustedHours';
 
 export default function Home() {
   // Make text content translatable
@@ -33,14 +33,16 @@ export default function Home() {
         </div>
         <div></div> {/* Right empty colomn */}
       </section>
-
+      {/* 
       <section className="grid grid-cols-[1fr,minmax(0,1200px),1fr]">
-        <div></div> {/* Left empty colomn */}
+        <div></div> 
         <div className="pt-0 md:pt-6 pb-4">
           <AdjustedHoursSection />
         </div>
-        <div></div> {/* Right empty colomn */}
+        <div></div> 
       </section>
+        */}
+
       {/* Contact section takes up the whole width of the screen so it must not be hindered by a grid */}
       <div className="mb-10 mt-16">
         <ContactSection />
