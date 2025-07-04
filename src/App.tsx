@@ -5,9 +5,21 @@ import Footer from './components/Footer';
 import { ScrollToTop } from './utils/helperFunctions';
 import { useData } from './context/DataContext';
 import { FooterCopyright } from './components/elementTemplates/FooterCopyright ';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import { useEffect } from 'react';
+import { ShowVacationToast } from './ShowVacationToast';
 
 export default function App() {
   const { stylePreset } = useData();
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      ShowVacationToast(); // Add subtile delay to draw the attention more effectivly
+    }, 1000); // Delay
+
+    return () => clearTimeout(timer); // cleanup at unmount
+  }, []);
 
   return (
     <div
@@ -25,6 +37,16 @@ export default function App() {
       </div>
       <Footer />
       <FooterCopyright />
+      <ToastContainer
+        position="bottom-right"
+        autoClose={10000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        pauseOnHover
+        draggable
+        theme="light"
+      />
     </div>
   );
 }
