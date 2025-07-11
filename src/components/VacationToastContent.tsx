@@ -1,3 +1,5 @@
+import newPic from '../assets/vakantietijd-small.jpg';
+
 export default function VacationToastContent() {
   return (
     <div
@@ -9,7 +11,7 @@ export default function VacationToastContent() {
       }}
     >
       <img
-        src="../assets/IMG-20250630-WA0000.jpg"
+        src={newPic}
         alt="Vakantie"
         style={{ width: '100%', borderRadius: '6px' }}
       />
