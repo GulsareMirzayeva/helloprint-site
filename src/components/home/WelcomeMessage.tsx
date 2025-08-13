@@ -1,5 +1,5 @@
-import logo_light from '../../assets/logo-2020-lightmodus.png';
-import logo_dark from '../../assets/logo-2020-darkmodus.png';
+import logo_light from '../../assets/helloprint_logo_light.svg';
+import logo_dark from '../../assets/helloprint_logo_dark.svg';
 import { homeContentPaths } from '../../lib/translationPaths';
 import { TextBlock } from '../elementTemplates/TextBlock';
 import { useData } from '../../context/DataContext';
@@ -19,7 +19,7 @@ export default function WelcomeMessage() {
         <img
           className="max-w-[320px]"
           src={darkMode ? logo_dark : logo_light}
-          alt="Logo Copy& Printshop 't Hartje"
+          alt="Helloprint.az loqo"
         />
       </div>
 
